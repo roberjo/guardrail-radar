@@ -2,7 +2,7 @@
 
 from datetime import datetime, timezone
 
-from pipeline.filter import filter_and_rank, passes_filter
+from pipeline.filter import _velocity_threshold, filter_and_rank, passes_filter
 from pipeline.score import score_items
 
 CORE = ["copilot", "claude code", "cursor"]
@@ -130,6 +130,28 @@ def test_filter_and_rank_representative_picked_by_engagement_not_source_alphabet
     ranked = filter_and_rank(scored)
     assert len(ranked) == 1
     assert ranked[0]["source"] == "reddit"
+
+
+def test_velocity_threshold_is_top_decile_score():
+    # 10 items -> top decile is the single highest score (index 0).
+    items = [{"velocity_score": float(i)} for i in range(10)]
+    assert _velocity_threshold(items) == 9.0
+
+
+def test_velocity_threshold_scales_cutoff_with_item_count():
+    # 30 items -> top decile is 3 items -> cutoff is the 3rd-highest score.
+    items = [{"velocity_score": float(i)} for i in range(30)]
+    assert _velocity_threshold(items) == 27.0
+
+
+def test_velocity_threshold_with_no_items_is_unreachable():
+    # An empty week should never let anything pass on velocity alone.
+    assert _velocity_threshold([]) == float("inf")
+
+
+def test_velocity_threshold_defaults_missing_score_to_zero():
+    items = [{"title": "no velocity_score field"}, {"velocity_score": 5.0}]
+    assert _velocity_threshold(items) == 5.0
 
 
 def test_filter_and_rank_respects_top_n(monkeypatch):

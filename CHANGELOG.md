@@ -40,6 +40,37 @@ the project's pre-launch planning and scaffolding.
   source being unavailable doesn't block the rest (`docs/technical-spec.md`
   §3).
 
+### Fixed — small robustness/coverage gaps left from the earlier reviewer passes
+- `pipeline/verify.py`'s `check_link` opened its GET fallback with
+  `stream=True` (only the status line is needed, not the body) but never
+  closed the response — the underlying connection stayed open until
+  garbage collection instead of being released back to the pool. Now
+  explicitly closed in a `finally` block.
+- `pipeline/filter.py`'s `_velocity_threshold` (the top-decile cutoff used
+  by `passes_filter`) had no direct unit test — existing tests always
+  injected a `velocity_threshold` value, bypassing the cutoff arithmetic
+  itself. Added direct tests for the decile-scaling math, the empty-input
+  case (`float("inf")`, so nothing passes on velocity alone in a week with
+  no data), and the missing-field default.
+- Repo setup: created the `review-packet` and `connector` GitHub labels —
+  `pipeline/notify.py` (see the Gmail-SMTP-replacement change) and
+  `.github/ISSUE_TEMPLATE/connector-broken.md` both reference these by
+  name, but neither existed yet in a brand-new repo.
+- Total suite: 132 tests, all passing; ruff and mypy clean on touched
+  files.
+- Not fixed, flagged for a deliberate follow-up: `_is_safe_host` (in both
+  `pipeline/excerpt.py` and `pipeline/verify.py`) resolves a hostname once
+  to check it's not private/loopback/link-local, but the actual
+  `requests` call re-resolves independently — a DNS-rebinding attacker
+  could swap the answer between the check and the connection. Closing
+  this fully requires pinning the request to the validated IP (a custom
+  transport adapter) without breaking TLS certificate/SNI validation in
+  the process — worth doing carefully in its own change rather than
+  rushed alongside unrelated fixes; the current behavior is a known,
+  pre-existing, low-severity gap (this pipeline isn't fetching
+  attacker-controlled domains by design — sources are HN/Reddit/GitHub/
+  Lobsters/Product Hunt content only).
+
 ### Added — mypy, made real
 - A concurrent session's changelog entry claimed "ruff and mypy clean on
   touched files," but mypy wasn't installed, configured, or run anywhere in

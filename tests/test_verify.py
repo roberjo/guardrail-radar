@@ -57,6 +57,21 @@ def test_check_link_falls_back_to_get_on_405(_mock_dns):
     assert ok is True
 
 
+@patch("pipeline.verify.socket.getaddrinfo", return_value=[(2, 1, 6, "", ("93.184.216.34", 0))])
+def test_check_link_closes_the_streamed_get_fallback_response(_mock_dns):
+    # The GET fallback is opened with stream=True (we only need the status
+    # line), so it must be explicitly closed — otherwise the connection is
+    # never released back to the pool.
+    head_resp = _ok_response(405)
+    get_resp = _ok_response(200)
+    with (
+        patch("pipeline.verify.requests.head", return_value=head_resp),
+        patch("pipeline.verify.requests.get", return_value=get_resp),
+    ):
+        check_link("https://example.com/head-not-allowed")
+    get_resp.close.assert_called_once()
+
+
 def test_check_link_rejects_private_host():
     with patch("pipeline.verify.socket.getaddrinfo", return_value=[(2, 1, 6, "", ("10.0.0.1", 0))]):
         ok, detail = check_link("http://10.0.0.1/internal")

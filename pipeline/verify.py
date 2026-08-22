@@ -70,12 +70,20 @@ def check_link(url: str, session: requests.Session | None = None) -> tuple[bool,
 
     getter = session.head if session is not None else requests.head
     getter_fallback = session.get if session is not None else requests.get
+    fallback_resp = None
     try:
         resp = getter(url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
         if resp.status_code >= 400 or resp.status_code == 405:
-            resp = getter_fallback(url, timeout=REQUEST_TIMEOUT, allow_redirects=True, stream=True)
+            # stream=True: we only need the status line, not the body — but
+            # that means the connection stays open until explicitly closed
+            # below, unlike a normal (buffered) response.
+            fallback_resp = getter_fallback(url, timeout=REQUEST_TIMEOUT, allow_redirects=True, stream=True)
+            resp = fallback_resp
     except requests.RequestException as exc:
         return False, f"request failed: {exc}"
+    finally:
+        if fallback_resp is not None:
+            fallback_resp.close()
 
     if resp.status_code >= 400:
         return False, f"HTTP {resp.status_code}"
