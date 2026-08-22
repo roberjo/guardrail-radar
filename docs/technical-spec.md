@@ -285,7 +285,7 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 - Trigger: `schedule: cron: '0 13 * * 1'` (Monday) + `workflow_dispatch`.
 - Steps: `pipeline/dedup.py` → `pipeline/score.py` → `pipeline/filter.py` → `pipeline/render.py` (review-packet target only).
 - Commit `data/ranked/**` and `digest/review/**` back to the repo.
-- Final step: `pipeline/notify.py` sends an **internal notification** — "review packet ready for `<iso-week>`, N candidates" plus a link to the packet — via SMTP (Python `smtplib` + `ssl`) to the maintainer's own address. This is the same mechanism the Rev. 1 spec used for a subscriber-facing send; it's repurposed here per the project plan (§01, §05) because the actual subscriber send happens on Substack/Beehiiv, manually, and neither platform is reachable from this step. `DIGEST_RECIPIENT` is renamed `MAINTAINER_EMAIL` to make that scope explicit (§16).
+- Final step: `pipeline/notify.py` sends an **internal notification** — opens a GitHub Issue titled "Review packet ready for `<iso-week>`", body "N candidates ranked" plus a link to the packet, labeled `review-packet` — via the REST API, authenticated with the workflow's own `GITHUB_TOKEN` (no external service or long-lived credential; see CHANGELOG.md for why this replaced an earlier Gmail-SMTP mechanism). If `MAINTAINER_GITHUB_USERNAME` is set (a repo *variable*, not a secret — it's not sensitive), the issue is also assigned to that user, so their own GitHub notification settings (email/mobile/etc.) fire.
 - Does **not** deploy to Pages and does **not** touch `digest/<iso-week>.md` — those only exist after verification (§15.3).
 
 ### 15.3 `.github/workflows/weekly-verify-and-publish.yml`
@@ -301,7 +301,13 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 | `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | reddit.py |
 | `GH_SEARCH_TOKEN` | github.py (search API rate limit) |
 | `PRODUCTHUNT_TOKEN` | producthunt.py |
-| `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`, `MAINTAINER_EMAIL` | weekly-review-packet.yml's internal notification step only — never a subscriber send |
+
+No secret is needed for the internal review-packet notification —
+`pipeline/notify.py` uses the built-in `secrets.GITHUB_TOKEN` that every
+Actions job already has, mapped to the `GITHUB_TOKEN` env var in
+`weekly-review-packet.yml` (§15.2). The optional
+`MAINTAINER_GITHUB_USERNAME` is a repo **variable** (`vars.`), not a
+secret — a GitHub username isn't sensitive.
 
 No secrets needed for `hn.py`, `lobsters.py`, `pipeline/excerpt.py`'s primary fetch path, or `pipeline/verify.py`.
 

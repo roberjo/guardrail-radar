@@ -1,21 +1,25 @@
 """pipeline.notify — see docs/technical-spec.md §15.2.
 
-Sends the internal "review packet ready" email to the maintainer via Gmail
-SMTP. Never sends to subscribers — see docs/technical-spec.md §1, §20. Not
-one of the modules enumerated in the original §4 sketch; added during
-implementation so the repurposed SMTP step has a concrete home. See
-CHANGELOG.md.
+Notifies the maintainer that a review packet is ready by opening a GitHub
+Issue via the REST API, using the workflow's own GITHUB_TOKEN — no external
+notification service or long-lived credential required. Never sends
+anything to subscribers — see docs/technical-spec.md §1, §20. Not one of
+the modules enumerated in the original §4 sketch; added during
+implementation so this step has a concrete home. See CHANGELOG.md.
 """
 
 from __future__ import annotations
 
 import argparse
 import os
-import smtplib
-import ssl
-from email.message import EmailMessage
+
+import requests
 
 from pipeline.io_utils import iso_week_str, read_json
+
+API_ROOT = "https://api.github.com"
+REQUEST_TIMEOUT = 10
+ISSUE_LABEL = "review-packet"
 
 
 def _ranked_count(iso_week: str) -> int:
@@ -29,24 +33,33 @@ def _ranked_count(iso_week: str) -> int:
 
 
 def send_review_packet_ready(iso_week: str, item_count: int) -> None:
-    address = os.environ["GMAIL_ADDRESS"]
-    app_password = os.environ["GMAIL_APP_PASSWORD"]
-    recipient = os.environ["MAINTAINER_EMAIL"]
+    token = os.environ["GITHUB_TOKEN"]
+    repo = os.environ["GITHUB_REPOSITORY"]
 
-    msg = EmailMessage()
-    msg["Subject"] = f"Guardrail Radar: review packet ready for {iso_week}"
-    msg["From"] = address
-    msg["To"] = recipient
-    msg.set_content(
-        f"{item_count} candidates ranked for {iso_week}.\n\n"
-        f"Review packet: digest/review/{iso_week}.md\n\n"
-        "Next: run the draft-digest skill, then verify-and-ship-digest."
+    payload: dict[str, object] = {
+        "title": f"Review packet ready for {iso_week}",
+        "body": (
+            f"{item_count} candidates ranked for {iso_week}.\n\n"
+            f"Review packet: `digest/review/{iso_week}.md`\n\n"
+            "Next: run the draft-digest skill, then verify-and-ship-digest."
+        ),
+        "labels": [ISSUE_LABEL],
+    }
+    assignee = os.environ.get("MAINTAINER_GITHUB_USERNAME")
+    if assignee:
+        payload["assignees"] = [assignee]
+
+    resp = requests.post(
+        f"{API_ROOT}/repos/{repo}/issues",
+        json=payload,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+        timeout=REQUEST_TIMEOUT,
     )
-
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-        server.login(address, app_password)
-        server.send_message(msg)
+    resp.raise_for_status()
 
 
 def main() -> None:

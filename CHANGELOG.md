@@ -40,6 +40,23 @@ the project's pre-launch planning and scaffolding.
   source being unavailable doesn't block the rest (`docs/technical-spec.md`
   §3).
 
+### Changed — internal notification: Gmail SMTP → GitHub Issue
+- `pipeline/notify.py` no longer sends email. It now opens a GitHub Issue
+  (title "Review packet ready for `<iso-week>`", labeled `review-packet`)
+  via the REST API, authenticated with the Actions job's own
+  `secrets.GITHUB_TOKEN` — no external service, app password, or
+  long-lived credential required at all. `GMAIL_ADDRESS`,
+  `GMAIL_APP_PASSWORD`, and `MAINTAINER_EMAIL` are gone; replaced by the
+  optional `MAINTAINER_GITHUB_USERNAME` (a repo *variable*, not a secret —
+  assigns the issue so the maintainer's own GitHub notification settings
+  fire). `weekly-review-packet.yml`'s job now declares explicit
+  `permissions: {contents: write, issues: write}`.
+- Updated `tests/test_notify.py` (mocks `requests.post` to the GitHub API
+  instead of `smtplib.SMTP_SSL`), `.env.example`, `docs/technical-spec.md`
+  §15.2/§16, `docs/weekly-runbook.md`, and `docs/project-plan.md` §6.1 to
+  match. Suite: 6/6 in `tests/test_notify.py`, full repo unaffected
+  elsewhere.
+
 ### Added — mypy, made real
 - A concurrent session's changelog entry claimed "ruff and mypy clean on
   touched files," but mypy wasn't installed, configured, or run anywhere in

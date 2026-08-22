@@ -1,7 +1,8 @@
 """Tests for pipeline.notify — see docs/technical-spec.md §15.2, §18.
 
-No live SMTP connections — smtplib.SMTP_SSL is mocked. Confirms this stays
-an internal maintainer notification, never a subscriber-facing send.
+No live GitHub API calls — requests.post is mocked. Confirms this stays an
+internal maintainer notification (a GitHub Issue in this repo), never a
+subscriber-facing send.
 """
 
 import os
@@ -12,60 +13,80 @@ import pytest
 from pipeline.notify import _ranked_count, send_review_packet_ready
 
 
-def test_sends_via_ssl_to_maintainer_only():
-    server = MagicMock()
-    server.__enter__.return_value = server
-    server.__exit__.return_value = False
+def _env(**extra):
+    base = {"GITHUB_TOKEN": "tok_123", "GITHUB_REPOSITORY": "someuser/guardrail-radar"}
+    base.update(extra)
+    return base
+
+
+def test_opens_a_github_issue_via_the_rest_api():
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
 
     with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL", return_value=server) as mock_smtp,
+        patch.dict(os.environ, _env(), clear=False),
+        patch("pipeline.notify.requests.post", return_value=resp) as mock_post,
     ):
         send_review_packet_ready("2026-W01", 12)
 
-    mock_smtp.assert_called_once_with("smtp.gmail.com", 465, context=mock_smtp.call_args.kwargs["context"])
-    server.login.assert_called_once_with("sender@example.com", "app-password")
+    mock_post.assert_called_once()
+    url, kwargs = mock_post.call_args.args[0], mock_post.call_args.kwargs
+    assert url == "https://api.github.com/repos/someuser/guardrail-radar/issues"
+    assert kwargs["headers"]["Authorization"] == "Bearer tok_123"
+    assert kwargs["headers"]["Accept"] == "application/vnd.github+json"
+    payload = kwargs["json"]
+    assert "2026-W01" in payload["title"]
+    assert payload["labels"] == ["review-packet"]
+    assert "assignees" not in payload
+    resp.raise_for_status.assert_called_once()
 
-    sent_msg = server.send_message.call_args.args[0]
-    assert sent_msg["To"] == "maintainer@example.com"
-    assert sent_msg["From"] == "sender@example.com"
-    assert "2026-W01" in sent_msg["Subject"]
-    # Never a subscriber-facing send — no recipient beyond the maintainer.
-    assert sent_msg["To"] != sent_msg["From"] or True  # explicit: single recipient only
-    assert "Cc" not in sent_msg
-    assert "Bcc" not in sent_msg
 
-
-def test_message_body_mentions_item_count_and_review_packet_path():
-    server = MagicMock()
-    server.__enter__.return_value = server
-    server.__exit__.return_value = False
+def test_issue_body_mentions_item_count_and_review_packet_path():
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
 
     with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL", return_value=server),
+        patch.dict(os.environ, _env(), clear=False),
+        patch("pipeline.notify.requests.post", return_value=resp) as mock_post,
     ):
         send_review_packet_ready("2026-W07", 9)
 
-    sent_msg = server.send_message.call_args.args[0]
-    body = sent_msg.get_content()
-    assert "9 candidates" in body
-    assert "2026-W07" in body
-    assert "digest/review/2026-W07.md" in body
+    payload = mock_post.call_args.kwargs["json"]
+    assert "9 candidates" in payload["body"]
+    assert "2026-W07" in payload["body"]
+    assert "digest/review/2026-W07.md" in payload["body"]
+
+
+def test_assigns_maintainer_when_username_configured():
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
+
+    with (
+        patch.dict(os.environ, _env(MAINTAINER_GITHUB_USERNAME="octocat"), clear=False),
+        patch("pipeline.notify.requests.post", return_value=resp) as mock_post,
+    ):
+        send_review_packet_ready("2026-W01", 3)
+
+    payload = mock_post.call_args.kwargs["json"]
+    assert payload["assignees"] == ["octocat"]
+
+
+def test_never_sends_to_a_subscriber_or_email_address():
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
+
+    with (
+        patch.dict(os.environ, _env(), clear=False),
+        patch("pipeline.notify.requests.post", return_value=resp) as mock_post,
+    ):
+        send_review_packet_ready("2026-W01", 1)
+
+    payload = mock_post.call_args.kwargs["json"]
+    # An internal repo issue has no email recipient concept at all —
+    # confirm no such field ever gets attached to the request.
+    assert "to" not in payload
+    assert "cc" not in payload
+    assert "bcc" not in payload
 
 
 def test_missing_ranked_file_raises_instead_of_reporting_zero_candidates(tmp_path, monkeypatch):
@@ -75,21 +96,14 @@ def test_missing_ranked_file_raises_instead_of_reporting_zero_candidates(tmp_pat
         _ranked_count("2026-W99")
 
 
-def test_missing_ranked_file_never_sends_a_misleading_email(tmp_path, monkeypatch):
+def test_missing_ranked_file_never_opens_a_misleading_issue(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
 
     with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL") as mock_smtp,
+        patch.dict(os.environ, _env(), clear=False),
+        patch("pipeline.notify.requests.post") as mock_post,
         pytest.raises(FileNotFoundError),
     ):
         send_review_packet_ready("2026-W99", _ranked_count("2026-W99"))
 
-    mock_smtp.assert_not_called()
+    mock_post.assert_not_called()
