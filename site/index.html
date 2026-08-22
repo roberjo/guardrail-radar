@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardrail Radar</title>
+  <meta name="description" content="Signal on AI-assisted software development for engineers working under regulated/enterprise constraints.">
+  <style>
+    :root{
+      color-scheme: light dark;
+      --bg: #f3f4ee;
+      --ink: #1b241e;
+      --ink-soft: #4b564d;
+      --line: #d8dacd;
+      --amber: #b8791e;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c; --amber:#e3a94b; }
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    main{ max-width: 640px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+    h1{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 2rem; margin: 0 0 0.5rem; }
+    p.lede{ color: var(--ink-soft); margin: 0 0 2rem; }
+    .archive{ border-top: 1px solid var(--line); padding-top: 1.5rem; }
+    .archive h2{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; color: var(--ink-soft); }
+    .archive ul{ list-style: none; padding: 0; margin: 0; }
+    .archive li{ padding: 0.4rem 0; border-bottom: 1px solid var(--line); }
+    .archive a{ color: var(--amber); text-decoration: none; }
+    .archive a:hover{ text-decoration: underline; }
+    .empty{ color: var(--ink-soft); font-style: italic; }
+    footer{ margin-top: 3rem; font-size: 0.85rem; color: var(--ink-soft); }
+    footer a{ color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Guardrail Radar</h1>
+    <p class="lede">Signal on AI-assisted software development for engineers working under regulated/enterprise constraints — fintech, banking, and adjacent industries where compliance, data governance, and vendor risk shape how AI coding tools actually get adopted.</p>
+
+    <div class="archive">
+      <h2>Archive</h2>
+      <ul>
+        <!-- pipeline/render.py appends one <li> per published week here, per docs/technical-spec.md §14 -->
+      </ul>
+      <p class="empty">First issue coming soon.</p>
+    </div>
+
+    <footer>
+      <p>Built in the open — source, connectors, and verification pipeline live in this project's public repository.</p>
+    </footer>
+  </main>
+</body>
+</html>

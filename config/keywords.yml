@@ -1,0 +1,30 @@
+# Relevance filtering term sets — see docs/technical-spec.md §11.
+#
+# An item passes pipeline/filter.py if it matches at least one term from
+# EACH set below, OR matches 2+ core_terms with top-decile velocity_score
+# (a very hot pure-AI-dev story gets through even without an explicit
+# fintech/regulated mention).
+#
+# Tuned quarterly against real reply/click data — see the tune-scoring
+# skill (.claude/skills/tune-scoring) and docs/technical-spec.md §10, §19.
+# Do not hand-edit outside of that quarterly review without a reason
+# recorded in CHANGELOG.md.
+
+core_terms:
+  - copilot
+  - claude code
+  - cursor
+  - llm coding
+  - ai pair programming
+  - code generation
+
+context_terms:
+  - compliance
+  - fintech
+  - banking
+  - audit
+  - data governance
+  - vendor risk
+  - sox
+  - air-gapped
+  - on-prem llm

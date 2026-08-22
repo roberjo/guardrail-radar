@@ -1,0 +1,34 @@
+name: weekly-review-packet
+
+# Produces this week's ranked data + extractive review packet, and notifies
+# the maintainer that it's ready to draft against. Never sends anything to
+# subscribers — see docs/technical-spec.md §15.2 and docs/project-plan.md.
+
+on:
+  schedule:
+    - cron: '0 13 * * 1' # Monday
+  workflow_dispatch: {}
+
+jobs:
+  build-packet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m pipeline.dedup
+      - run: python -m pipeline.score
+      - run: python -m pipeline.filter
+      - run: python -m pipeline.render --target review-packet
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'data: review packet for week of ${{ github.run_id }}'
+          file_pattern: 'data/ranked/** digest/review/**'
+      - name: Notify maintainer
+        run: python -m pipeline.notify --kind review-packet-ready
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAINTAINER_EMAIL: ${{ secrets.MAINTAINER_EMAIL }}

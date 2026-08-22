@@ -1,0 +1,46 @@
+name: daily-ingest
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # adjust to preferred UTC time
+  workflow_dispatch: {}
+
+jobs:
+  connector:
+    strategy:
+      fail-fast: false
+      matrix:
+        source: [hn, reddit, github, lobsters, producthunt]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m connectors.${{ matrix.source }}
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          GH_SEARCH_TOKEN: ${{ secrets.GH_SEARCH_TOKEN }}
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          # Name must equal matrix.source (not prefixed) — download-artifact
+          # extracts each artifact into path/<artifact-name>/, so this is
+          # what makes it land at data/raw/<source>/ below.
+          name: ${{ matrix.source }}
+          path: data/raw/${{ matrix.source }}/
+
+  commit:
+    needs: connector
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: data/raw/
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'data: daily ingest ${{ github.run_id }}'
+          file_pattern: 'data/raw/**'

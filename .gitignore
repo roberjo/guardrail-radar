@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Secrets — never commit real credentials; see .env.example
+.env
+.env.*
+!.env.example
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+.idea/
+
+# Note: data/, digest/, and site/ are intentionally NOT ignored — the
+# pipeline's git-committed JSON/markdown output is the store (no database),
+# per docs/technical-spec.md §2, §20.

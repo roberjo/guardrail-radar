@@ -1,0 +1,35 @@
+# Per-source connector configuration — see docs/technical-spec.md §7, §8.
+
+reddit:
+  subreddits:
+    - fintech
+    - programming
+    - MachineLearning
+    - artificial
+    - ExperiencedDevs
+    - devops
+    - sre
+  listings:
+    - new
+    - top?t=week
+
+github:
+  topics:
+    - ai-coding
+    - llm-tools
+    - terraform
+    - compliance
+    - fintech
+  window_days: 30
+
+lobsters:
+  tags:
+    - ai
+    - security
+    - finance
+
+producthunt:
+  topics:
+    - artificial-intelligence
+    - developer-tools
+  window_days: 7

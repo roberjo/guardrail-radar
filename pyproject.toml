@@ -1,0 +1,8 @@
+# Tool config only — this project is a set of scripts run via
+# `python -m connectors.X` / `python -m pipeline.X`, not a packaged
+# distribution, so there's no [build-system]/[project] table here.
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true

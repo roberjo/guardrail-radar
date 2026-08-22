@@ -1,0 +1,69 @@
+name: weekly-verify-and-publish
+
+# Manual trigger only — run once digest/draft/<iso-week>.json has been
+# committed (i.e. the draft-digest skill's output). Verifies the draft,
+# then renders and deploys the final digest. Never sends to subscribers:
+# that paste-and-send step happens by hand on Substack/Beehiiv, outside
+# this repo. See docs/technical-spec.md §15.3 and the verify-and-ship-digest
+# skill (.claude/skills/verify-and-ship-digest).
+
+on:
+  workflow_dispatch:
+    inputs:
+      iso_week:
+        description: 'ISO week to verify and publish, e.g. 2026-W34'
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    outputs:
+      all_clear: ${{ steps.check.outputs.all_clear }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      # --assert-clear already runs every check, prints the summary, and
+      # writes digest/verification/<week>.json — a second bare run before
+      # this was a redundant duplicate sweep of live link checks against
+      # every URL in the draft, and worse, meant the committed verification
+      # file only reflected whichever run happened last.
+      - id: check
+        run: python -m pipeline.verify --iso-week "${{ github.event.inputs.iso_week }}" --assert-clear
+      # if: always() matters here — `check` exits non-zero when anything is
+      # blocked (by design, see pipeline/verify.py), and a failed step skips
+      # subsequent ones by default. Without this, the one run where a human
+      # most needs to see digest/verification/<week>.json (something got
+      # blocked) is exactly the run where it would never get committed.
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        if: always()
+        with:
+          commit_message: 'verify: ${{ github.event.inputs.iso_week }}'
+          file_pattern: 'digest/verification/**'
+
+  render-and-deploy:
+    needs: verify
+    if: needs.verify.outputs.all_clear == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m pipeline.render --target final-digest --iso-week "${{ github.event.inputs.iso_week }}"
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'digest: ${{ github.event.inputs.iso_week }}'
+          file_pattern: 'digest/*.md site/**'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+      - uses: actions/deploy-pages@v4
