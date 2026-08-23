@@ -16,7 +16,8 @@ audience, business plan, and roadmap.
 ## How it works
 
 ```
-daily   → 5 connectors discover candidates + capture source excerpts
+daily   → 4 active connectors discover candidates + capture source excerpts
+          (a 5th, Reddit, is implemented but deferred — see below)
 weekly  → dedup, score, filter → an extractive review packet (automated, no generation)
 weekly  → a human, with Claude, drafts source-grounded "why this matters" notes
 weekly  → an automated pass verifies every link and citation before anything ships
@@ -86,9 +87,17 @@ python -m pipeline.render --target review-packet
 ```
 
 `connectors/reddit.py` and `connectors/producthunt.py` require credentials
-(`.env.example`) neither live here nor in CI by default — they're verified
-by mocked unit tests only until real credentials are configured. See
+(`.env.example`) — verified by mocked unit tests only, not a live run. See
 `CHANGELOG.md` for exactly what's been live-tested versus mock-tested.
+
+**Reddit is currently deferred**, not just uncredentialed: script-app
+creation is blocked for this account, and Reddit network-level 403s its
+unauthenticated `.json` endpoints from both a dev sandbox and GitHub
+Actions runner IPs (confirmed live, not assumed — see `CHANGELOG.md`).
+`reddit` is removed from `daily-ingest.yml`'s connector matrix so it isn't
+guaranteed-failing on a schedule; the connector and its tests are untouched
+and it's a one-line matrix change to re-add once a working credential path
+exists.
 
 ## Constraints
 

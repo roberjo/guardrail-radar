@@ -9,8 +9,14 @@ jobs:
   connector:
     strategy:
       fail-fast: false
+      # reddit deferred: Reddit blocks script-app creation for this account
+      # and network-level 403s its unauthenticated .json endpoints from both
+      # this sandbox's IP and GitHub Actions runner IPs (confirmed via a
+      # live probe, not assumed) — see CHANGELOG.md. connectors/reddit.py
+      # and its tests are untouched; re-add "reddit" here once a working
+      # credential path exists.
       matrix:
-        source: [hn, reddit, github, lobsters, producthunt]
+        source: [hn, github, lobsters, producthunt]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,8 +26,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m connectors.${{ matrix.source }}
         env:
-          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          # REDDIT_CLIENT_ID/SECRET intentionally omitted — reddit isn't in
+          # the matrix above right now. Add both back here when it is.
           GH_SEARCH_TOKEN: ${{ secrets.GH_SEARCH_TOKEN }}
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
       - uses: actions/upload-artifact@v4

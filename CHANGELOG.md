@@ -6,6 +6,25 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — Reddit deferred
+- Reddit script-app creation is currently blocked for the project's Reddit
+  account, ruling out the OAuth path `connectors/reddit.py` was built
+  against. Before deferring, tried the common fallback of Reddit's public
+  `.json` endpoints (no auth) — both `www.reddit.com` and `old.reddit.com`
+  return `403` with an explicit "blocked by network security" page,
+  regardless of User-Agent. Confirmed this isn't a local-network fluke by
+  pushing a temporary `workflow_dispatch` probe and running it for real on
+  a GitHub Actions runner: same `403`s from that IP range too, meaning
+  Reddit is blocking the shared runner IPs outright, not just this one
+  sandbox. `reddit` removed from `daily-ingest.yml`'s connector matrix
+  (four connectors run daily now: hn, github, lobsters, producthunt) so it
+  isn't a guaranteed-failing scheduled job — `connectors/reddit.py` and its
+  test coverage are otherwise untouched, and re-adding it is a one-line
+  matrix change once a working credential path exists. Consistent with the
+  architecture's own design: each connector is isolated specifically so one
+  source being unavailable doesn't block the rest (`docs/technical-spec.md`
+  §3).
+
 ### Added — mypy, made real
 - A concurrent session's changelog entry claimed "ruff and mypy clean on
   touched files," but mypy wasn't installed, configured, or run anywhere in

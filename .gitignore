@@ -17,6 +17,9 @@ venv/
 .vscode/
 .idea/
 
+# Claude Code session-local worktrees — nested git repos, never tracked here
+.claude/worktrees/
+
 # Note: data/, digest/, and site/ are intentionally NOT ignored — the
 # pipeline's git-committed JSON/markdown output is the store (no database),
 # per docs/technical-spec.md §2, §20.
