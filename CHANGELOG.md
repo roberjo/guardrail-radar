@@ -6,6 +6,19 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Fixed — non-fast-forward push race between weekly-verify-and-publish.yml's two jobs
+- With both prior bugs fixed, `verify` passed clean for real — but
+  `render-and-deploy`'s own commit push was then rejected: `! [rejected]
+  main -> main (non-fast-forward)`. Checked the actual commit history
+  before assuming a cause: no other author pushed in that window, so this
+  wasn't a collision with the other concurrent session — it was the same
+  workflow run's own two jobs racing each other on `main` roughly 10
+  seconds apart (`render-and-deploy`'s checkout landed just behind
+  `verify`'s own commit-and-push a moment earlier). Added `git pull
+  --rebase origin main` immediately before `render-and-deploy`'s commit
+  step, rather than trust a job-start checkout stays current through
+  everything that job does before it pushes.
+
 ### Fixed — two real verify.py bugs, found on the pipeline's first real drafted issue
 - **False-positive claim flags on verbatim quotes.** Drafted `digest/draft/
   2026-W34.json` (three source-grounded items) and ran real verification —

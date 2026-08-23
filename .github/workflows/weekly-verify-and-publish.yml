@@ -59,6 +59,12 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m pipeline.render --target final-digest --iso-week "${{ github.event.inputs.iso_week }}"
+      # Confirmed live: this job's checkout can race the verify job's own
+      # commit (same run, same branch, ~10s apart) and land just behind it,
+      # so this job's later push gets rejected as non-fast-forward even
+      # though nothing else touched main in between. Re-sync immediately
+      # before committing rather than trust the checkout is still current.
+      - run: git pull --rebase origin main
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'digest: ${{ github.event.inputs.iso_week }}'
