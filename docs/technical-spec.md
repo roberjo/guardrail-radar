@@ -246,6 +246,7 @@ Authored by the maintainer, Claude-assisted, working from the review packet. A J
       "title": "string",
       "url": "string",
       "franchise": "weekly | vendor_watch | policy_corner | reader_qa",
+      "category": "breaking | new_product | notable | field_notes — the table-of-contents grouping, required on every item",
       "hook": "one plain-English sentence, front-running the item, on why it's worth a look — required on every item",
       "note": "the generative \"why this matters\" text — written only from the cluster's stored excerpt",
       "claims": [
@@ -262,6 +263,8 @@ The `claims` array is the claims ledger referenced in the project plan §06 — 
 `intro` was added after real user feedback on the first live issue: three isolated per-item notes with no frame or synthesis read as a bare link list, not a newsletter. It's connective tissue for the whole issue — a shared theme across the included items, or an honest "thin week" note — not a factual claim about any one source, so `verify.py` doesn't check it against an excerpt or a claims ledger; it still must not invent specifics that aren't grounded in the items it introduces. `pipeline/render.py` renders it once, at the top of the issue, in both `digest/<iso-week>.md` and `site/index.html`.
 
 `hook` was added after real user feedback on the next issue: readers need a one-sentence, plain-English reason an item is worth their time — what's genuinely interesting or useful about it — before the longer, more skeptical `note`. Unlike `intro` it's required on every item, not optional, and it's usually a tight paraphrase of the excerpt's own stated pitch rather than something invented. Like `intro`, it doesn't get its own claims-ledger entries and isn't checked against an excerpt by `verify.py`, but it must still be grounded only in the excerpt — no invented superlatives, stats, or specifics. `pipeline/render.py` renders it once per item, immediately after the title and before the excerpt/note.
+
+`category` was added after a direct user request for a table of contents grouped by area/criticality rather than a flat list. It's a required, fixed four-value enum — `breaking` (urgent: incidents, compromises, outages, a vendor silently changing behavior), `new_product` (a launch), `notable` (impressive/surprising, not urgent — used sparingly), or `field_notes` (practitioner commentary/culture, not a product or news event) — distinct from `franchise`, which is about the newsletter's recurring column format and doesn't have to line up with it. `pipeline/render.py` builds one table-of-contents block per issue from it, in a fixed display order, omitting any category with no items that week; each item gets a stable `id="item-<cluster_id>"` anchor in `site/index.html` for the TOC to link to. `verify.py` doesn't check `category` — it's a classification, not a factual claim.
 
 ## 13. Verification (`pipeline/verify.py`)
 

@@ -13,6 +13,7 @@ and `items` (an array — one element per item the issue will include).
       "title": "string",
       "url": "string",
       "franchise": "weekly | vendor_watch | policy_corner | reader_qa",
+      "category": "breaking | new_product | notable | field_notes — the table-of-contents grouping",
       "hook": "one plain-English sentence, front-running the item, on why it's worth a look — the pitch, not the skepticism",
       "note": "the generative \"why this matters\" text — written only from the cluster's stored excerpt",
       "claims": [
@@ -49,6 +50,31 @@ superlatives, stats, or specifics beyond what the excerpt itself states.
 title and before the excerpt/note, in both `digest/<iso-week>.md` and
 `site/index.html`.
 
+`category` is added after a direct user request for a table of contents,
+grouped by area/criticality rather than just a flat list. It's a fixed,
+required, four-value enum — distinct from `franchise` (which is about the
+newsletter's recurring column format: Vendor Watch, Policy Corner, Reader
+Q&A). `pipeline/render.py` builds one table-of-contents block per issue
+from it, in a fixed display order, omitting any category with no items
+that week:
+
+- `breaking` — urgent and time-sensitive: security incidents,
+  compromises, outages, a vendor silently changing behavior. The "you
+  need to know this now" bucket.
+- `new_product` — a new tool, product, or feature launch worth knowing
+  about. Most weeks' most common category.
+- `notable` — genuinely impressive, surprising, or eyebrow-raising, but
+  not urgent — the "wow" bucket. Use sparingly; if everything is notable,
+  nothing is.
+- `field_notes` — practitioner commentary, culture, or opinion pieces —
+  not a product or a news event, but a real voice worth surfacing.
+
+Like `hook`, `category` is required on every item and doesn't get its own
+claims-ledger entry — it's a classification, not a factual claim about
+the source — but pick it honestly: a routine product launch dressed up
+as `breaking` undermines the one bucket readers should trust to actually
+be urgent.
+
 ## Worked example
 
 ```json
@@ -60,6 +86,7 @@ title and before the excerpt/note, in both `digest/<iso-week>.md` and
       "title": "Bank X publishes internal Copilot rollout retro",
       "url": "https://example.com/bank-x-copilot-retro",
       "franchise": "weekly",
+      "category": "field_notes",
       "hook": "A real bank's own account of what it actually took to get Copilot approved for internal use.",
       "note": "The retro is notable less for the adoption numbers and more for how the team scoped Copilot's suggestions away from any file touching customer PII before rollout — a pattern other regulated teams keep re-deriving from scratch.",
       "claims": [
@@ -74,6 +101,7 @@ title and before the excerpt/note, in both `digest/<iso-week>.md` and
       "title": "Vendor Y adds SOC 2 Type II report to enterprise tier",
       "url": "https://example.com/vendor-y-blog/soc2",
       "franchise": "vendor_watch",
+      "category": "new_product",
       "hook": "One less procurement blocker: Vendor Y's enterprise tier now ships with a SOC 2 Type II report on request.",
       "note": "Vendor Y now offers a SOC 2 Type II report on request for its enterprise tier, closing one of the more common blockers this list hears about from bank security teams evaluating it.",
       "claims": [
@@ -106,3 +134,10 @@ Notes on the example:
 - `hook` is likewise not checked against any excerpt, but is required on
   every item (unlike `intro`) — one plain-English sentence on why the
   item is worth a look, grounded in the excerpt's own pitch.
+- `category` (`breaking | new_product | notable | field_notes`) is also
+  required on every item — it's the table-of-contents grouping, separate
+  from `franchise`. The Bank X entry above is `field_notes` (a rollout
+  retro, not a product launch or breaking news); the Vendor Y entry is
+  `new_product` (a shipped feature), even though its `franchise` is
+  `vendor_watch` — the two fields answer different questions and don't
+  have to line up.

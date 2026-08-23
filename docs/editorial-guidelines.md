@@ -74,6 +74,14 @@ standards because only one of them is generated:
   secondhand commentary on it. Same primary-source rule as Vendor Watch.
 - **Reader Q&A** (occasional) — one real subscriber question, answered
   publicly. Cheap to produce, and a strong reply-rate signal.
+- **Table of contents** — every issue with more than a couple of items,
+  grouping them by `category` (`breaking` / `new_product` / `notable` /
+  `field_notes` — see `docs/technical-spec.md` §12.2), not by the formats
+  above. `category` and `franchise` answer different questions and don't
+  have to line up: a Vendor Watch item can be a `new_product`, a plain
+  `weekly` item can be `breaking`. Classify `breaking` honestly — it's
+  the one bucket readers should be able to trust means "urgent," so a
+  routine launch dressed up as breaking news costs more than it gains.
 
 ## The one rule that matters most
 

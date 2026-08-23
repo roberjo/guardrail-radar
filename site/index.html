@@ -39,6 +39,19 @@
       color: var(--ink-soft); margin: 0 0 1rem;
     }
     .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
+    .toc{
+      display: flex; flex-wrap: wrap; gap: 1.25rem 2rem;
+      margin: 0 0 1.5rem; padding: 0.9rem 1rem; border: 1px solid var(--line); border-radius: 6px;
+    }
+    .toc-group h4{
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--amber); margin: 0 0 0.4rem;
+    }
+    .toc-group ul{ list-style: none; margin: 0; padding: 0; }
+    .toc-group li{ font-size: 0.88rem; margin: 0 0 0.25rem; }
+    .toc-group a{ color: var(--ink); text-decoration: none; }
+    .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
     .issue-items{ list-style: none; padding: 0; margin: 0; }
     .issue-item{ padding: 1.1rem 0; border-top: 1px solid var(--line); }
     .issue-item:first-child{ border-top: none; padding-top: 0; }

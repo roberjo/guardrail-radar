@@ -6,6 +6,30 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — table of contents, grouped by category
+- Direct user request: the newsletter needed a table of contents, with
+  items grouped by area/category and criticality (breaking news, new
+  products, wow-factor, etc.), not a flat list. Added a required
+  `category` field per item — `breaking | new_product | notable |
+  field_notes` — deliberately separate from `franchise` (the recurring
+  column format: Vendor Watch, Policy Corner, Reader Q&A); the two
+  answer different questions and don't have to line up. Confirmed the
+  category set and definitions with the user before implementing, since
+  it's a taxonomy every future issue will reuse.
+- `pipeline/render.py` builds one TOC block per issue in a fixed display
+  order (breaking, new_product, notable, field_notes), omitting any
+  category with no items that week rather than showing it empty. The
+  markdown digest gets a grouped, readable (non-linked) list; `site/
+  index.html` gets a real `<nav class="toc">` with working anchor
+  links — each item's `<li>` now carries a stable `id="item-<cluster_id>"`
+  for the TOC to jump to. New `.toc`/`.toc-group` CSS. `verify.py`
+  doesn't check `category` — it's a classification, not a factual claim.
+  Updated `docs/technical-spec.md` §12.2, `docs/editorial-guidelines.md`,
+  the `draft-digest` skill and its `draft-schema.md` reference,
+  `tests/test_render.py` (2 new tests, 2 existing tests fixed for the
+  changed HTML structure), and retrofitted the live
+  `digest/draft/2026-W34.json` with a category for each of its 7 items.
+
 ### Added — per-item `hook`: a one-sentence, plain-English reason to care
 - User feedback on the W34 refresh: readers need to know why an item is
   worth their time — what's cool or useful about it — in plain English,

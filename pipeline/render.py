@@ -26,6 +26,21 @@ SITE_ARCHIVE_MARKER = (
     "per docs/technical-spec.md §14 -->"
 )
 
+# Fixed table-of-contents display order and labels — see docs/technical-spec.md
+# §12.2. A category absent from the week's draft is simply omitted, not shown
+# empty.
+CATEGORY_ORDER = ["breaking", "new_product", "notable", "field_notes"]
+CATEGORY_LABELS = {
+    "breaking": "Breaking News",
+    "new_product": "New Products & Tools",
+    "notable": "Notable / Wow",
+    "field_notes": "Field Notes",
+}
+
+
+def _item_anchor(cluster_id: str) -> str:
+    return f"item-{cluster_id}"
+
 
 def _md_escape(text: str) -> str:
     return re.sub(r"([\\`*_\[\]])", r"\\\1", text or "")
@@ -116,6 +131,34 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         lines_md.append(intro)
         lines_md.append("")
         intro_html = f"<p class=\"issue-intro\">{html.escape(intro)}</p>"
+
+    # Table of contents, grouped by category (breaking/new_product/notable/
+    # field_notes — see docs/technical-spec.md §12.2), added after a direct
+    # user request. Preserves each item's ranked order within its category;
+    # a category with no items that week is omitted, not shown empty.
+    toc_groups: dict[str, list[tuple[str, str]]] = {c: [] for c in CATEGORY_ORDER}
+    for entry in draft:
+        category = entry.get("category", "new_product")
+        title = entry.get("title") or ranked_by_cluster.get(entry["cluster_id"], {}).get("title", "(untitled)")
+        toc_groups.setdefault(category, []).append((title, entry["cluster_id"]))
+
+    toc_html_parts = []
+    for category in CATEGORY_ORDER:
+        items = toc_groups.get(category, [])
+        if not items:
+            continue
+        label = CATEGORY_LABELS[category]
+        lines_md.append(f"**{label}**")
+        for title, cluster_id in items:
+            lines_md.append(f"- {_md_escape(title)}")
+        lines_md.append("")
+
+        toc_links = "".join(
+            f'<li><a href="#{_item_anchor(cid)}">{html.escape(title)}</a></li>' for title, cid in items
+        )
+        toc_html_parts.append(f'<div class="toc-group"><h4>{html.escape(label)}</h4><ul>{toc_links}</ul></div>')
+    toc_html = f'<nav class="toc">{"".join(toc_html_parts)}</nav>' if toc_html_parts else ""
+
     archive_items_html = []
 
     for entry in draft:
@@ -146,19 +189,21 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"\nPrimary source: {_md_escape(entry['primary_source_url'])}")
         lines_md.append("")
 
-        archive_items_html.append(_render_archive_item_html(title, url, hook, excerpt, note, franchise, entry))
+        archive_items_html.append(
+            _render_archive_item_html(entry["cluster_id"], title, url, hook, excerpt, note, franchise, entry)
+        )
 
     digest_md = "\n".join(lines_md)
     digest_path = os.path.join("digest", f"{iso_week}.md")
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(digest_md)
 
-    site_path = _update_site_archive(iso_week, archive_items_html, intro_html)
+    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html)
     return digest_path, site_path
 
 
 def _render_archive_item_html(
-    title: str, url: str, hook: str, excerpt: str, note: str, franchise: str, entry: dict
+    cluster_id: str, title: str, url: str, hook: str, excerpt: str, note: str, franchise: str, entry: dict
 ) -> str:
     """One item's full content for the site — title, hook, excerpt, note,
     franchise label, primary source. Previously this rendered only a bare
@@ -172,6 +217,10 @@ def _render_archive_item_html(
     added after real user feedback that readers need a one-sentence,
     plain-English reason an item is worth their time before the longer,
     more skeptical note (see docs/technical-spec.md §12.2).
+
+    The returned <li> carries a stable id="item-<cluster_id>" so the
+    table-of-contents nav built in render_final_digest can link straight
+    to it.
     """
     heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
     parts = [f"<h4>{heading}</h4>"]
@@ -196,10 +245,13 @@ def _render_archive_item_html(
             f'<a href="{html.escape(primary)}">{html.escape(primary)}</a></p>'
         )
 
-    return f'<li class="issue-item">{"".join(parts)}</li>'
+    anchor = html.escape(_item_anchor(cluster_id), quote=True)
+    return f'<li class="issue-item" id="{anchor}">{"".join(parts)}</li>'
 
 
-def _update_site_archive(iso_week: str, item_html_list: list[str], intro_html: str = "") -> str:
+def _update_site_archive(
+    iso_week: str, item_html_list: list[str], intro_html: str = "", toc_html: str = ""
+) -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
     Re-running weekly-verify-and-publish for a week that already has an
@@ -227,6 +279,7 @@ def _update_site_archive(iso_week: str, item_html_list: list[str], intro_html: s
     week_block = (
         f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
         + intro_html
+        + toc_html
         + '<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"
     )
 

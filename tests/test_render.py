@@ -69,6 +69,7 @@ def _draft_entry(cluster_id="c1", franchise="weekly", **overrides):
         "title": "A real story",
         "url": "https://example.com/story",
         "franchise": franchise,
+        "category": "new_product",
         "hook": "Why it's worth a look at all.",
         "note": "Why this matters to a compliance-constrained engineer.",
         "claims": [],
@@ -210,6 +211,58 @@ def test_final_digest_escapes_hook_html(project):
     assert "&lt;script&gt;" in site_content
 
 
+def test_final_digest_toc_groups_by_category_in_fixed_order(project):
+    # Added after a direct user request for a table of contents grouped by
+    # area/criticality — see docs/technical-spec.md §12.2. CATEGORY_ORDER
+    # is breaking, new_product, notable, field_notes regardless of input
+    # order, and a category absent from the draft is omitted entirely.
+    _write(
+        "data/ranked/2026-W01.json",
+        [
+            _ranked_cluster(cluster_id="c1", title="A notable one"),
+            _ranked_cluster(cluster_id="c2", title="A breaking one"),
+            _ranked_cluster(cluster_id="c3", title="A new product one"),
+        ],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [
+            _draft_entry(cluster_id="c1", title="A notable one", category="notable"),
+            _draft_entry(cluster_id="c2", title="A breaking one", category="breaking"),
+            _draft_entry(cluster_id="c3", title="A new product one", category="new_product"),
+        ],
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    # Fixed order: Breaking News, then New Products & Tools, then Notable.
+    # site_content has "&" html-escaped to "&amp;" in the category label.
+    assert digest_content.index("Breaking News") < digest_content.index("New Products & Tools")
+    assert digest_content.index("New Products & Tools") < digest_content.index("Notable / Wow")
+    assert site_content.index("Breaking News") < site_content.index("New Products &amp; Tools")
+    assert site_content.index("New Products &amp; Tools") < site_content.index("Notable / Wow")
+
+    # A category with no items (field_notes here) isn't shown at all.
+    assert "Field Notes" not in digest_content
+    assert "Field Notes" not in site_content
+
+    assert 'class="toc"' in site_content
+    assert '<a href="#item-c2">A breaking one</a>' in site_content
+
+
+def test_final_digest_toc_anchor_matches_item_id(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1", title="A real story")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1")])
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert 'href="#item-c1"' in site_content
+    assert 'id="item-c1"' in site_content
+
+
 def test_final_digest_shows_non_weekly_franchise_label(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft(
@@ -248,7 +301,12 @@ def test_final_digest_omits_link_when_no_http_url_available(project, capsys):
     assert "javascript:" not in digest_content
     assert "javascript:" not in site_content
     assert "A real story" in digest_content
-    assert "<a href" not in site_content.split('data-week="2026-W01"')[1].split("</li>")[0]
+    # Scope to the actual issue-item, not the TOC above it — the TOC
+    # legitimately contains its own <a href="#item-..."> anchor link to
+    # this same item, which isn't the unsafe url this test is guarding
+    # against.
+    item_html = site_content.split('class="issue-items"')[1].split("</li>")[0]
+    assert "<a href" not in item_html
 
 
 def test_final_digest_refuses_when_blocked_and_unapproved(project):

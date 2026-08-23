@@ -62,6 +62,14 @@ substitutes for it.
    do not skip it even for an obvious-seeming claim.
 5. Classify the item's `franchise`: `weekly`, `vendor_watch`,
    `policy_corner`, or `reader_qa`.
+5a. Classify the item's `category` — the table-of-contents grouping,
+   separate from `franchise`: `breaking` (urgent — incidents, compromises,
+   outages, a vendor silently changing behavior), `new_product` (a new
+   tool/product/feature launch), `notable` (impressive or surprising, not
+   urgent — use sparingly), or `field_notes` (practitioner commentary,
+   culture, opinion — not a product or a news event). Required on every
+   item. Pick it honestly: don't dress up a routine launch as `breaking`
+   just to get it more attention.
 6. For `vendor_watch` or `policy_corner` items, find and attach a
    `primary_source_url` — the vendor's own changelog/release notes, or the
    official regulatory text/guidance being referenced. This is required, not
@@ -94,6 +102,7 @@ Check, don't assume:
   appears in the item's stored excerpt.
 - Every item has a non-empty `hook` — unlike `intro`, this one isn't
   optional.
+- Every item has a `category` set to one of the four valid values.
 
 ## Handoff
 
