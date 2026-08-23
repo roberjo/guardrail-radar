@@ -218,9 +218,10 @@ def test_final_digest_escapes_hook_html(project):
 
 def test_final_digest_toc_groups_by_category_in_fixed_order(project):
     # Added after a direct user request for a table of contents grouped by
-    # area/criticality — see docs/technical-spec.md §12.2. CATEGORY_ORDER
-    # is breaking, new_product, notable, field_notes regardless of input
-    # order, and a category absent from the draft is omitted entirely.
+    # area/criticality — see docs/technical-spec.md §12.2. Order is
+    # hottest-to-coldest (notable, breaking, field_notes, new_product),
+    # per a follow-up user request, not urgency-first — regardless of
+    # input order — and a category absent from the draft is omitted.
     _write(
         "data/ranked/2026-W01.json",
         [
@@ -243,12 +244,12 @@ def test_final_digest_toc_groups_by_category_in_fixed_order(project):
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
 
-    # Fixed order: Breaking News, then New Products & Tools, then Notable.
+    # Fixed order: Notable / Wow, then Breaking News, then New Products & Tools.
     # site_content has "&" html-escaped to "&amp;" in the category label.
+    assert digest_content.index("Notable / Wow") < digest_content.index("Breaking News")
     assert digest_content.index("Breaking News") < digest_content.index("New Products & Tools")
-    assert digest_content.index("New Products & Tools") < digest_content.index("Notable / Wow")
+    assert site_content.index("Notable / Wow") < site_content.index("Breaking News")
     assert site_content.index("Breaking News") < site_content.index("New Products &amp; Tools")
-    assert site_content.index("New Products &amp; Tools") < site_content.index("Notable / Wow")
 
     # A category with no items (field_notes here) isn't shown at all.
     assert "Field Notes" not in digest_content
@@ -256,6 +257,47 @@ def test_final_digest_toc_groups_by_category_in_fixed_order(project):
 
     assert 'class="toc"' in site_content
     assert '<a href="#item-c2">A breaking one</a>' in site_content
+
+
+def test_final_digest_item_body_order_matches_toc_order_not_draft_order(project):
+    # The core of the hottest-to-coldest request: previously the TOC
+    # grouped by category but the actual item bodies below it stayed in
+    # whatever order the draft happened to list them in — so the TOC
+    # could promise "Notable first" while the reader scrolled straight
+    # into a new_product item instead. Draft order here is deliberately
+    # the reverse of CATEGORY_ORDER to prove the body gets re-sorted, not
+    # just the TOC.
+    _write(
+        "data/ranked/2026-W01.json",
+        [
+            _ranked_cluster(cluster_id="c1", title="Routine launch"),
+            _ranked_cluster(cluster_id="c2", title="Personal essay"),
+            _ranked_cluster(cluster_id="c3", title="Urgent incident"),
+            _ranked_cluster(cluster_id="c4", title="Wow factor"),
+        ],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [
+            _draft_entry(cluster_id="c1", title="Routine launch", category="new_product"),
+            _draft_entry(cluster_id="c2", title="Personal essay", category="field_notes"),
+            _draft_entry(cluster_id="c3", title="Urgent incident", category="breaking"),
+            _draft_entry(cluster_id="c4", title="Wow factor", category="notable"),
+        ],
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    for content in (digest_content, site_content):
+        assert (
+            content.index("Wow factor")
+            < content.index("Urgent incident")
+            < content.index("Personal essay")
+            < content.index("Routine launch")
+        )
 
 
 def test_final_digest_toc_anchor_matches_item_id(project):
@@ -377,7 +419,7 @@ def test_final_digest_shows_issue_stats_line(project):
         digest_content = f.read()
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
-    assert "In this issue: 2 items across 1 source — 1 breaking, 1 notable." in digest_content
+    assert "In this issue: 2 items across 1 source — 1 notable, 1 breaking." in digest_content
     assert 'class="issue-stats"' in site_content
     assert "In this issue: 2 items across 1 source" in site_content
 

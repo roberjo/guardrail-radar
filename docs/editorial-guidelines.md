@@ -82,6 +82,13 @@ standards because only one of them is generated:
   `weekly` item can be `breaking`. Classify `breaking` honestly — it's
   the one bucket readers should be able to trust means "urgent," so a
   routine launch dressed up as breaking news costs more than it gains.
+- **Reading order is hottest-to-coldest, not urgency-first**: `notable`,
+  then `breaking`, then `field_notes`, then `new_product` last. This is a
+  deliberate choice, not the inverted-pyramid convention most comparable
+  newsletters use — the lead slot goes to whatever's most interesting
+  that day, saving routine product launches for the end rather than
+  opening with them. The item order in the issue body follows this same
+  sequence, not just the table of contents.
 
 ## The one rule that matters most
 

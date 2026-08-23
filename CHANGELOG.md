@@ -6,6 +6,40 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — reading order is now hottest-to-coldest, not urgency-first
+- Direct user request: lead with the most interesting item (`notable`),
+  not the most urgent one (`breaking`) — and put routine `new_product`
+  launches last, since they're "usually boring." `CATEGORY_ORDER` changed
+  from `breaking, new_product, notable, field_notes` to `notable,
+  breaking, field_notes, new_product`. `field_notes`' position wasn't
+  specified by the request; placed third (more engaging than a routine
+  launch, less urgent than breaking) as a judgment call, easy to move.
+- Compared against the same three newsletters from the earlier format
+  audit: TLDR, tl;dr sec, and The Batch all lead with the day's biggest
+  or most urgent story — the inverted-pyramid convention borrowed from
+  journalism. This request follows a different, equally real convention
+  instead: engagement-first newsletters (Morning Brew is the standard
+  example) deliberately open with whatever's most compelling that day to
+  hook the reader immediately, saving lower-engagement routine content
+  for once momentum is established — a known email-marketing principle
+  ("lead with your best hook"), not unique to Guardrail Radar.
+- This is a real, user-facing ordering change, not just a relabel: the
+  table of contents already grouped by category, but the actual item
+  bodies below it stayed in whatever order the draft happened to list
+  them in — so the TOC could promise "Notable first" while the reader
+  scrolled straight into a `new_product` item instead. `render_final_
+  digest` now sorts `draft` by category rank once, right after loading
+  it (stable sort — items keep their relative order within a category),
+  so both the TOC and the item bodies follow the same order. The
+  "in this issue" stats-line breakdown inherits the same order as a
+  side effect, which is itself an improvement (was arbitrary before).
+- 2 new/updated tests in `tests/test_render.py`, including one that
+  deliberately drafts items in the *reverse* of the new order to prove
+  the body gets re-sorted, not just the TOC. `docs/technical-spec.md`
+  §14 and `docs/editorial-guidelines.md` updated. Retrofitted the live
+  issue by re-running `weekly-verify-and-publish.yml` against the
+  unchanged draft.
+
 ### Changed — 4-color category system across badges, TOC, and item hooks
 - Direct user feedback: the just-shipped category badges, TOC, and item
   summary text still needed work for readability and at-a-glance

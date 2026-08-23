@@ -26,10 +26,22 @@ SITE_ARCHIVE_MARKER = (
     "per docs/technical-spec.md §14 -->"
 )
 
-# Fixed table-of-contents display order and labels — see docs/technical-spec.md
-# §12.2. A category absent from the week's draft is simply omitted, not shown
-# empty.
-CATEGORY_ORDER = ["breaking", "new_product", "notable", "field_notes"]
+# Fixed reading order — hottest to coldest, not urgency-first — applied to
+# both the table of contents and the actual item order in the issue body.
+# See docs/technical-spec.md §12.2. A category absent from the week's draft
+# is simply omitted, not shown empty.
+#
+# Direct user request: lead with the most interesting item (notable/"wow"),
+# not the most urgent one — the opposite of the inverted-pyramid convention
+# most comparable digest newsletters (TLDR, tl;dr sec, The Batch) use, where
+# the lead slot goes to the day's biggest/most urgent story. This follows a
+# different, equally real convention instead — engagement-first newsletters
+# (Morning Brew is the standard example) deliberately open with whatever's
+# most compelling that day to hook the reader, saving routine content for
+# when momentum is already established, rather than leading with duty-read
+# urgency. new_product goes last on the user's own read that routine
+# launches are the least engaging category most weeks.
+CATEGORY_ORDER = ["notable", "breaking", "field_notes", "new_product"]
 CATEGORY_LABELS = {
     "breaking": "Breaking News",
     "new_product": "New Products & Tools",
@@ -167,6 +179,17 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
 
     intro, draft = _load_draft(draft_path)
     ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
+
+    # Reorder items hottest-to-coldest (CATEGORY_ORDER) before anything
+    # renders, so the actual reading order in digest/<week>.md and
+    # site/index.html matches the table of contents instead of just the
+    # TOC reflecting it while the body stays in whatever order the draft
+    # happened to list items in. Stable sort: items keep their relative
+    # order within a category (their original ranked order).
+    category_rank = {c: i for i, c in enumerate(CATEGORY_ORDER)}
+    draft = sorted(
+        draft, key=lambda e: category_rank.get(e.get("category", "new_product"), len(CATEGORY_ORDER))
+    )
 
     verification_by_cluster = {}
     if os.path.exists(verification_path):
