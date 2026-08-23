@@ -14,7 +14,7 @@ just puts the steps in order.
 | Monday, automatic | `weekly-review-packet.yml` dedups/scores/filters, renders `digest/review/<iso-week>.md`, opens a GitHub Issue that it's ready | GitHub Actions |
 | Monday–Tuesday | Draft the issue: source-grounded notes, claims ledger, franchise tags, primary sources for Vendor Watch/Policy Corner | Maintainer + Claude, via the **`draft-digest`** skill |
 | Once the draft is committed | Trigger `weekly-verify-and-publish.yml`, resolve any `blocked`/`flagged` entries, run the bounded checklist, approve | Maintainer, via the **`verify-and-ship-digest`** skill |
-| Same session | Paste `digest/<iso-week>.md` into Substack/Beehiiv, confirm links, send | Maintainer (manual — no free publish API exists on either platform) |
+| Same session | Paste `digest/<iso-week>.md` into Beehiiv, confirm links, send | Maintainer (manual — no free publish API on the Launch tier) |
 | Quarterly | Review reply/click data, propose small changes to `config/keywords.yml` or `pipeline/score.py`'s constants | Maintainer, via the **`tune-scoring`** skill |
 
 ## Time budget

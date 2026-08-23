@@ -69,7 +69,7 @@ The wedge is narrow on purpose: most AI-dev content assumes unrestricted access 
 | `guardrail-radar` repo (research pipeline) | Automated discovery/scoring of candidate content — see prior technical spec |
 | Curation step | Manual — you review the top-ranked weekly items and select ~5–8 for the issue |
 | Drafting | AI-assisted first draft (Claude) from curated links/notes, edited by you for voice |
-| Publishing platform | Free-tier Substack or Beehiiv (see Hosting) |
+| Publishing platform | Beehiiv, free "Launch" tier (see Hosting) |
 | Public digest site | GitHub Pages, generated from the same pipeline (see technical spec, Section 11) |
 
 ### 4.2 Build reference
@@ -104,7 +104,7 @@ All channels below are free/organic — no paid acquisition, consistent with the
 ### 6.1 Cost structure — target $0
 | Item | Cost | Notes |
 |---|---|---|
-| Newsletter platform (Substack/Beehiiv free tier) | $0 | Free tier limits are generous at <1,000 subscribers |
+| Newsletter platform (Beehiiv free "Launch" tier) | $0 | Free forever up to 2,500 active subscribers — well above the 6-month, 500–1,000 target |
 | GitHub (public repo + Actions + Pages) | $0 | Public repos get free unlimited Actions minutes |
 | Domain name | $0 initially | Defer — use platform subdomain until there's real traction |
 | Internal "review packet ready" notification | $0 | A GitHub Issue, opened with the built-in `GITHUB_TOKEN` — no email service, no app password to configure |
@@ -123,7 +123,7 @@ All channels below are free/organic — no paid acquisition, consistent with the
 
 | Surface | Host | Cost |
 |---|---|---|
-| Newsletter (email + landing page) | Substack or Beehiiv free tier | $0 |
+| Newsletter (email + landing page) | Beehiiv free "Launch" tier | $0 |
 | Research pipeline compute | GitHub Actions (scheduled workflows) | $0 |
 | Pipeline data store | Git-committed JSON in the repo | $0 |
 | Public weekly digest site | GitHub Pages | $0 |
@@ -170,5 +170,8 @@ Worth flagging explicitly given your employer is a regulated bank — I'm not a 
 ## 11. Open Decisions
 
 - Final newsletter brand name (Guardrail Radar assumed here — confirm or revise).
-- Substack vs. Beehiiv (both free-tier viable — worth a quick hands-on comparison before committing).
 - Publishing cadence (weekly assumed — could start biweekly if curation time is tight in Phase 1).
+
+### Resolved
+
+- **Publishing platform: Beehiiv** (decided 2026-08-23). Checked which platform newsletters closest to Guardrail Radar's actual format use, not just generic pros/cons: tl;dr sec, TLDR/TLDR AI, and The Neuron — all curated-digest newsletters with short per-item practitioner commentary, the same structure this issue uses — run on Beehiiv. Substack's comparable examples (Ben's Bites, The Pragmatic Engineer) are either a named competitor to avoid resembling or a different format (single-author long-form essay), not a structural match. Trade-off accepted: gives up Substack's Notes-driven organic discovery network in exchange for a closer format fit, free segmentation/analytics/API on the Launch tier, and a 2,500-subscriber free cap well above the 6-month 500–1,000 target. Growth per Section 5 still leans on LinkedIn/HN/repo, not platform-native discovery, so the Notes trade-off costs less than it would for a single-author essay newsletter.

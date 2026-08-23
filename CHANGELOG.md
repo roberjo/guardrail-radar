@@ -6,6 +6,34 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Decided — 2026-08-23: publishing platform is Beehiiv
+- Resolved the open decision in `docs/project-plan.md` §11 (Substack vs.
+  Beehiiv). Rather than relying only on generic platform comparisons,
+  checked which platform newsletters closest to Guardrail Radar's actual
+  format actually use: tl;dr sec, TLDR/TLDR AI, and The Neuron — all
+  curated-digest newsletters with short per-item practitioner commentary,
+  the same structure this project's `render.py` produces — run on Beehiiv.
+  The comparable Substack examples found (Ben's Bites, The Pragmatic
+  Engineer) are either a named competitor this project's own audience
+  section says to avoid resembling, or a different format (single-author
+  long-form essay) than a curated digest.
+- Trade-off accepted knowingly: gives up Substack's Notes-driven organic
+  discovery network — a real asset for small/niche newsletters — in
+  exchange for a closer format fit, free segmentation/analytics/API access
+  on Beehiiv's Launch (free) tier, and a 2,500-active-subscriber free cap
+  well above the 6-month, 500–1,000-subscriber target in the project plan.
+  Growth per §5 already leans on LinkedIn/HN/the repo rather than
+  platform-native discovery, so the Notes trade-off costs less here than it
+  would for a single-author essay newsletter.
+- Updated every reference in `docs/project-plan.md` (§4.1, §6.1, §7, §11),
+  `docs/technical-spec.md` (§15.2-adjacent flow diagram, the collapsible-
+  excerpt rationale, the notify.py rationale, §16.3-adjacent verification
+  summary), and `docs/weekly-runbook.md`'s loop table from "Substack/
+  Beehiiv" to Beehiiv specifically. No code changed — this is a platform
+  choice, not a pipeline behavior; the manual paste-and-send step (§15.3)
+  is unaffected either way, since neither platform exposes a free publish
+  API.
+
 ### Changed — continuous red-to-green hotness gradient, not 4 fixed colors
 - Direct user follow-up: even the just-shipped 4-color category system
   was too coarse — the user wants "a true gradient value from red hot to

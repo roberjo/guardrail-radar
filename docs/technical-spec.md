@@ -50,9 +50,9 @@ GitHub Actions (workflow_dispatch, run once the draft above is committed)
         deploys site/ to GitHub Pages
 
 [human, outside CI]
-  pastes digest/<iso-week>.md into Substack/Beehiiv and sends
-  (no free-tier publish API exists on either platform — this is the one
-  irreducible manual step; see §15.3 and the project plan's open decisions)
+  pastes digest/<iso-week>.md into Beehiiv and sends
+  (no free-tier publish API — this is the one irreducible manual step;
+  see §15.3 and the project plan's resolved platform decision)
 ```
 
 All state lives in the git repo (JSON/markdown files). GitHub Actions provides the compute and the scheduler. GitHub Pages provides free static hosting for the public digest.
@@ -292,7 +292,7 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 
 - **Read-time estimate** — `_read_time_minutes(hook, excerpt, note)` computes `max(1, round(word_count / 200))` per item and renders it as a badge (`site/index.html`) or a `N min read` suffix (`digest/<iso-week>.md`), next to the category badge.
 - **Category badge per item** — `category` (§12.2) was previously only surfaced in the table of contents; it now also renders on every item itself, so it registers before a reader parses the headline.
-- **Collapsible excerpt** — on `site/index.html` only, the verbatim excerpt is wrapped in `<details><summary>Read the source excerpt</summary>…</details>`, collapsed by default; hook and note stay always-visible. `digest/<iso-week>.md` keeps the excerpt as a plain blockquote — `<details>` can't be relied on to survive a paste into Substack/Beehiiv.
+- **Collapsible excerpt** — on `site/index.html` only, the verbatim excerpt is wrapped in `<details><summary>Read the source excerpt</summary>…</details>`, collapsed by default; hook and note stay always-visible. `digest/<iso-week>.md` keeps the excerpt as a plain blockquote — `<details>` can't be relied on to survive a paste into Beehiiv.
 - **"In this issue" stats line** — `_issue_stats_line` computes item count, distinct source count, and a category breakdown entirely from `draft`/`ranked_by_cluster`, already loaded for other purposes; renders once per issue, above the `intro`. The category breakdown follows `CATEGORY_ORDER` (below), so its phrasing stays consistent with the TOC and item order.
 - **Hottest-to-coldest ordering and gradient** — `CATEGORY_ORDER` is `notable, breaking, field_notes, new_product`, not urgency-first. Direct user request: lead with the most interesting item, not the most urgent one — the opposite of the inverted-pyramid convention TLDR/tl;dr sec/The Batch all use, closer to how engagement-first newsletters like Morning Brew choose a lead story for interest value over urgency. `CATEGORY_ORDER` alone only went as far as 4 discrete swatches; a follow-up request asked for a true continuous gradient instead, so every colored element (category badge, its dot, the item hook's callout, the item's own left-border, and the matching TOC group/link) now reads its color from a single per-item `--hot-hue` CSS custom property (`hsl(var(--hot-hue) var(--hot-s) var(--hot-l))`) rather than a category-keyed class. `_hotness_order` (`pipeline/render.py`) computes it: category sets the coarse band (`HOTTEST_HUE`..`COOLEST_HUE`, red through orange and yellow to green, one band per `CATEGORY_ORDER` entry — still the dominant, editorially-judged signal), and each item's real `cluster_score` (already computed by `pipeline/score.py`, already used to rank it into `data/ranked/<iso-week>.json` — nothing new drafted) places it within that band, so items are ordered and colored hottest-scoring-first within their category too, not just band-to-band. This drives both the table of contents *and* the actual item order in the issue body — `render_final_digest` calls `_hotness_order` once, right after loading `draft`, so the body reads in the same order (and gradient) the TOC promises instead of the TOC grouping by category while the body stayed in whatever order the draft happened to list items in.
 
@@ -307,7 +307,7 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 - Trigger: `schedule: cron: '0 13 * * 1'` (Monday) + `workflow_dispatch`.
 - Steps: `pipeline/dedup.py` → `pipeline/score.py` → `pipeline/filter.py` → `pipeline/render.py` (review-packet target only).
 - Commit `data/ranked/**` and `digest/review/**` back to the repo.
-- Final step: `pipeline/notify.py` opens (or, idempotently, finds and reuses) a **GitHub Issue** — "Review packet ready: `<iso-week>`" with the candidate count and a link to the packet in its body. Originally SMTP to the maintainer's own address (the Rev. 1 spec's repurposed subscriber-send mechanism); replaced because a Gmail app password is real setup friction for a notification GitHub can deliver for free — the built-in `GITHUB_TOKEN` can open issues once the job grants `issues: write`, and GitHub's own notification system pings the repo owner exactly the way the SMTP step used to. Confirmed against the real API before adopting it, not assumed. Never a subscriber-facing send — that still only happens by hand on Substack/Beehiiv.
+- Final step: `pipeline/notify.py` opens (or, idempotently, finds and reuses) a **GitHub Issue** — "Review packet ready: `<iso-week>`" with the candidate count and a link to the packet in its body. Originally SMTP to the maintainer's own address (the Rev. 1 spec's repurposed subscriber-send mechanism); replaced because a Gmail app password is real setup friction for a notification GitHub can deliver for free — the built-in `GITHUB_TOKEN` can open issues once the job grants `issues: write`, and GitHub's own notification system pings the repo owner exactly the way the SMTP step used to. Confirmed against the real API before adopting it, not assumed. Never a subscriber-facing send — that still only happens by hand on Beehiiv.
 - Does **not** deploy to Pages and does **not** touch `digest/<iso-week>.md` — those only exist after verification (§15.3).
 
 ### 15.3 `.github/workflows/weekly-verify-and-publish.yml`
@@ -370,7 +370,7 @@ Test/lint/type-check tooling (`pytest`, `ruff`, `mypy` + `types-*` stubs) lives 
 
 - No ML/embedding-based relevance scoring (cost and complexity not justified at this scale).
 - No database — git-committed JSON is the store.
-- No auto-publishing to the newsletter platform — output is a curation and verification aid only; a human always pastes the final digest into Substack/Beehiiv and sends it.
+- No auto-publishing to the newsletter platform — output is a curation and verification aid only; a human always pastes the final digest into Beehiiv and sends it.
 - No unsupervised generative drafting — every "why this matters" note is written in a human/Claude-assisted session and gated by `verify.py` plus a bounded human checklist before it can ship (project plan §06). This is permanent, not a temporary safeguard to automate away later.
 - No paid LLM API calls from CI — drafting happens interactively, not as a scripted call, so it never conflicts with the zero-budget constraint.
 - No automated scoring-weight tuning off engagement data — reviewed by hand, quarterly, to avoid overfitting a filter to a small, noisy sample (project plan §05).
