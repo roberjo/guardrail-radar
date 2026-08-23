@@ -1,0 +1,18 @@
+name: _tmp-reddit-json-probe
+on:
+  workflow_dispatch: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: try reddit .json unauthenticated
+        run: |
+          for host in www.reddit.com old.reddit.com; do
+            echo "--- $host ---"
+            code=$(curl -s -o /tmp/out.json -w "%{http_code}" -m 10 \
+              -A "guardrail-radar-bot/1.0 (+https://github.com/roberjo/guardrail-radar)" \
+              "https://$host/r/programming/new.json?limit=3")
+            echo "http_code=$code"
+            head -c 300 /tmp/out.json
+            echo
+          done
