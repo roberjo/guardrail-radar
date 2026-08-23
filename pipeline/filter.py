@@ -7,6 +7,7 @@ data/ranked/<iso-week>.json.
 
 from __future__ import annotations
 
+import argparse
 import os
 
 import yaml
@@ -82,7 +83,11 @@ def filter_and_rank(items: list[dict]) -> list[dict]:
 
 
 def main() -> None:
-    iso_week = iso_week_str()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--iso-week", default=None)
+    args = parser.parse_args()
+
+    iso_week = args.iso_week or iso_week_str()
     interim_path = os.path.join("data", "interim", f"{iso_week}.json")
     items = read_json(interim_path)
     ranked = filter_and_rank(items)

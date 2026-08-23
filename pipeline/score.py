@@ -7,6 +7,7 @@ file — pipeline.filter reads it next.
 
 from __future__ import annotations
 
+import argparse
 import os
 import sys
 from datetime import datetime, timezone
@@ -72,7 +73,11 @@ def score_items(items: list[dict], now: datetime | None = None) -> list[dict]:
 
 
 def main() -> None:
-    iso_week = iso_week_str()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--iso-week", default=None)
+    args = parser.parse_args()
+
+    iso_week = args.iso_week or iso_week_str()
     path = os.path.join("data", "interim", f"{iso_week}.json")
     items = read_json(path)
     scored = score_items(items)

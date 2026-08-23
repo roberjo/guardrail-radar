@@ -6,6 +6,28 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Fixed — weekly-review-packet.yml computed the wrong ISO week
+- Found by inspection while explaining the weekly cadence, before it ever
+  shipped a broken packet for real: `pipeline.dedup`/`score`/`filter`
+  defaulted to `iso_week_str()` = "now" when run with no `--iso-week`, and
+  `weekly-review-packet.yml`'s cron fires Monday 13:00 UTC. Under ISO
+  rules Monday is day 1 of a *new* week, so the scheduled run would have
+  computed the week that had just started an hour earlier — not the week
+  `daily-ingest.yml` spent the prior 7 days filling, which by Monday
+  afternoon already belongs to the *previous* ISO week number. Every real
+  run so far was a same-day manual `workflow_dispatch`, where "now" always
+  happened to be the right week by coincidence, so this never surfaced.
+- Added `--iso-week` to `pipeline/dedup.py` and `pipeline/score.py`
+  (matching the flag `pipeline/render.py`/`verify.py` already had;
+  `pipeline/filter.py` also gained it). `weekly-review-packet.yml` now
+  computes yesterday's (Sunday's) ISO week explicitly in a `week` step and
+  passes it to every stage — `dedup`, `score`, `filter`, `render
+  --target review-packet`, and `notify` — instead of letting each one
+  default to "now". Verified the CLI wiring end-to-end locally
+  (`python -m pipeline.dedup --iso-week 2026-W34` etc.), then discarded
+  the regenerated `data/ranked/`/`data/interim/` output rather than
+  commit it — real pipeline output only ships from an actual CI run.
+
 ### Changed — 2026-08-23: loosened the relevance filter's AND-requirement
 - User asked why nothing outside Product Hunt was ever clearing the
   relevance bar. Investigated against the real, current day's pull

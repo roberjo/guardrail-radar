@@ -26,15 +26,32 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python -m pipeline.dedup
-      - run: python -m pipeline.score
-      - run: python -m pipeline.filter
-      - run: python -m pipeline.render --target review-packet
+      # This job runs Monday, and pipeline.dedup/score/filter default to
+      # iso_week_str() = "now" when no --iso-week is given. Under ISO
+      # rules Monday is day 1 of a *new* week, so that default would
+      # compute the week that just started (with ~1 hour of data) instead
+      # of the week daily-ingest spent all week filling — found by
+      # inspection before it ever shipped a near-empty packet for real;
+      # see CHANGELOG.md. Compute yesterday's (Sunday's) ISO week
+      # explicitly and pass it to every stage below instead of relying on
+      # each one's "now" default.
+      - id: week
+        run: |
+          python -c "
+          import datetime
+          from pipeline.io_utils import iso_week_str
+          yesterday = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=1)
+          print(f'iso_week={iso_week_str(yesterday)}')
+          " >> "$GITHUB_OUTPUT"
+      - run: python -m pipeline.dedup --iso-week "${{ steps.week.outputs.iso_week }}"
+      - run: python -m pipeline.score --iso-week "${{ steps.week.outputs.iso_week }}"
+      - run: python -m pipeline.filter --iso-week "${{ steps.week.outputs.iso_week }}"
+      - run: python -m pipeline.render --target review-packet --iso-week "${{ steps.week.outputs.iso_week }}"
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'data: review packet for week of ${{ github.run_id }}'
+          commit_message: 'data: review packet for ${{ steps.week.outputs.iso_week }}'
           file_pattern: 'data/ranked/** digest/review/**'
       - name: Notify maintainer
-        run: python -m pipeline.notify --kind review-packet-ready
+        run: python -m pipeline.notify --kind review-packet-ready --iso-week "${{ steps.week.outputs.iso_week }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
