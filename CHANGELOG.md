@@ -6,6 +6,21 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Fixed — first real daily-ingest.yml run, found by actually running it
+- All four active connectors (hn, github, lobsters, producthunt) succeeded
+  and pulled real data (6,274 lines across 4 files) on the first live run
+  against real GitHub Actions infrastructure with real credentials — but
+  the `commit` job's push back to the repo 403'd: `git-auto-commit-action`
+  built the commit locally, then failed with "Permission to
+  roberjo/guardrail-radar.git denied to github-actions[bot]". Neither
+  `daily-ingest.yml` nor `weekly-review-packet.yml` declared a `permissions:`
+  block, so their default `GITHUB_TOKEN` was read-only — only
+  `weekly-verify-and-publish.yml` had one, added earlier this session and
+  never actually exercised until now. Both now declare `contents: write`,
+  scoped to just the job that commits (the connector matrix itself never
+  needs write access). Confirmed by re-running daily-ingest.yml for real
+  after the fix — see the next entry for the result.
+
 ### Changed — Reddit deferred
 - Reddit script-app creation is currently blocked for the project's Reddit
   account, ruling out the OAuth path `connectors/reddit.py` was built

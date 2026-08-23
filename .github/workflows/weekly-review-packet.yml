@@ -12,6 +12,11 @@ on:
 jobs:
   build-packet:
     runs-on: ubuntu-latest
+    # Default GITHUB_TOKEN is read-only unless declared otherwise — same gap
+    # confirmed by a real failed daily-ingest.yml run (git-auto-commit-action
+    # built the commit locally, then 403'd pushing it). See CHANGELOG.md.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

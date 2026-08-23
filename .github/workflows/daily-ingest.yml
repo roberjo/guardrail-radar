@@ -41,6 +41,12 @@ jobs:
   commit:
     needs: connector
     runs-on: ubuntu-latest
+    # Default GITHUB_TOKEN is read-only unless a job declares otherwise —
+    # confirmed by an actual failed run: git-auto-commit-action built the
+    # commit locally then got a 403 pushing it. contents:write is scoped to
+    # just this job; the connector matrix above never needs to write.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
