@@ -192,6 +192,86 @@ def test_final_digest_html_escapes_untrusted_title_and_url(project):
     assert "&lt;script&gt;" in site_html
 
 
+# ---------- site archive: full content (not just a bare title link) ----------
+
+
+def test_site_archive_includes_excerpt_and_note_not_just_title(project):
+    # Regression test: the site previously rendered only a bare
+    # <li><a>title</a></li> per item — the actual commentary (note) and
+    # excerpt went into digest/<week>.md but never reached site/index.html,
+    # despite docs/technical-spec.md §14 saying the site gets "the same
+    # content." Found by the user looking at the real deployed site, not
+    # by a test — there wasn't one that checked this.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
+    _write(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(note="Why this matters to a compliance-constrained engineer.")],
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_html = f.read()
+    assert "a real excerpt" in site_html
+    assert "Why this matters to a compliance-constrained engineer." in site_html
+
+
+def test_site_archive_shows_franchise_tag_and_primary_source(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_html = f.read()
+    assert "Vendor Watch" in site_html
+    assert 'href="https://vendor.example.com/changelog"' in site_html
+
+
+def test_site_archive_omits_franchise_tag_for_plain_weekly_items(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write("digest/draft/2026-W01.json", [_draft_entry(franchise="weekly")])
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_html = f.read()
+    assert "franchise-tag" not in site_html
+
+
+def test_site_archive_escapes_note_and_excerpt_html(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt='<img src=x onerror="alert(1)">')])
+    _write("digest/draft/2026-W01.json", [_draft_entry(note='<script>alert(2)</script>')])
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_html = f.read()
+    assert "<script>alert(2)</script>" not in site_html
+    assert "<img src=x" not in site_html
+    assert "&lt;script&gt;" in site_html
+
+
+def test_site_archive_survives_rerender_with_rich_nested_content(project):
+    # Regression test for the boundary-detection fix: the old idempotent
+    # replace matched on a bare `</ul></li>` terminator, which worked only
+    # because a bare-title item had no internal tags of its own. Once items
+    # carry their own <blockquote>/<p> markup (this fix), that terminator
+    # could match an inner tag sequence instead of the real block end.
+    # Comment markers replace it specifically to stay correct here.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
+    _write(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
+    )
+
+    render_final_digest("2026-W01")
+    render_final_digest("2026-W01")
+    render_final_digest("2026-W01")
+
+    with open("site/index.html", encoding="utf-8") as f:
+        site_html = f.read()
+    assert site_html.count('data-week="2026-W01"') == 1
+    assert site_html.count("<li data-week=") == 1
+    assert site_html.count("a real excerpt") == 1
+    assert site_html.count("Vendor Watch") == 1
+
+
 # ---------- site archive: idempotency regression ----------
 
 

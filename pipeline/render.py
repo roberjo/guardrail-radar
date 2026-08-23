@@ -123,10 +123,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"\nPrimary source: {_md_escape(entry['primary_source_url'])}")
         lines_md.append("")
 
-        if url:
-            archive_items_html.append(f'<li><a href="{html.escape(url)}">{html.escape(title)}</a></li>')
-        else:
-            archive_items_html.append(f"<li>{html.escape(title)}</li>")
+        archive_items_html.append(_render_archive_item_html(title, url, excerpt, note, franchise, entry))
 
     digest_md = "\n".join(lines_md)
     digest_path = os.path.join("digest", f"{iso_week}.md")
@@ -137,36 +134,71 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     return digest_path, site_path
 
 
+def _render_archive_item_html(
+    title: str, url: str, excerpt: str, note: str, franchise: str, entry: dict
+) -> str:
+    """One item's full content for the site — title, excerpt, note, franchise
+    label, primary source. Previously this rendered only a bare linked
+    title, dropping the actual commentary (the entire point of the
+    newsletter) from the one place the public site shows it — the full
+    text still went into digest/<week>.md, just never into site/index.html,
+    despite docs/technical-spec.md §14 saying the site gets "the same
+    content." Found by the user looking at the real deployed site.
+    """
+    heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
+    parts = [f"<h4>{heading}</h4>"]
+
+    if franchise and franchise != "weekly":
+        label = html.escape(franchise.replace("_", " ").title())
+        parts.append(f'<span class="franchise-tag">{label}</span>')
+
+    if excerpt:
+        parts.append(f"<blockquote>{html.escape(excerpt)}</blockquote>")
+
+    if note:
+        parts.append(f"<p>{html.escape(note)}</p>")
+
+    primary = entry.get("primary_source_url")
+    if primary and _is_http_url(primary):
+        parts.append(
+            f'<p class="primary-source">Primary source: '
+            f'<a href="{html.escape(primary)}">{html.escape(primary)}</a></p>'
+        )
+
+    return f'<li class="issue-item">{"".join(parts)}</li>'
+
+
 def _update_site_archive(iso_week: str, item_html_list: list[str]) -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
     Re-running weekly-verify-and-publish for a week that already has an
     archive entry (e.g. to fix a typo and re-render) used to append a
     second <li> instead of replacing the first — found by the reviewer
-    agent via an actual reproduction, not a hypothetical. Each entry now
-    carries a data-week attribute so a re-run finds and replaces its own
-    prior entry instead of duplicating it.
+    agent via an actual reproduction, not a hypothetical.
+
+    Each week's block is now wrapped in a pair of HTML-comment markers
+    rather than located by matching structural tags: the first fix used
+    `data-week` plus a `</ul></li>` terminator, which broke again the
+    moment item content grew past a bare linked title (`_render_archive_
+    item_html` above nests its own <blockquote>/<p> tags, and any of those
+    can end in `</li>`-adjacent sequences a generic tag-matching regex
+    can't tell apart from the block's real end). Comment markers can't be
+    confused with structural HTML at any nesting depth, so this stays
+    correct regardless of how much richer an item's content gets.
     """
     site_path = os.path.join("site", "index.html")
     with open(site_path, encoding="utf-8") as f:
         html_text = f.read()
 
     week_attr = html.escape(iso_week, quote=True)
+    start_marker = f"<!-- week:{week_attr} -->"
+    end_marker = f"<!-- /week:{week_attr} -->"
     week_block = (
-        f'<li data-week="{week_attr}"><strong>{html.escape(iso_week)}</strong><ul>'
-        + "".join(item_html_list)
-        + "</ul></li>"
+        f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
+        f'<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"
     )
 
-    # Terminate on the literal `</ul></li>` sequence, not a bare `</li>` —
-    # the block contains nested per-story <li> elements, and a bare `.*?</li>`
-    # matches the FIRST inner one, truncating the replacement and leaving a
-    # stray `</ul></li>` behind. Confirmed by reproducing it: the first fix
-    # attempt passed the "no duplicate entry" check but still corrupted the
-    # HTML on a second render.
-    existing_pattern = re.compile(
-        rf'<li data-week="{re.escape(week_attr)}">.*?</ul></li>', re.DOTALL
-    )
+    existing_pattern = re.compile(re.escape(start_marker) + r".*?" + re.escape(end_marker), re.DOTALL)
     if existing_pattern.search(html_text):
         html_text = existing_pattern.sub(week_block, html_text, count=1)
     elif SITE_ARCHIVE_MARKER in html_text:

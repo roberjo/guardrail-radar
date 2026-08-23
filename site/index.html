@@ -30,10 +30,34 @@
     p.lede{ color: var(--ink-soft); margin: 0 0 2rem; }
     .archive{ border-top: 1px solid var(--line); padding-top: 1.5rem; }
     .archive h2{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; color: var(--ink-soft); }
-    .archive ul{ list-style: none; padding: 0; margin: 0; }
-    .archive li{ padding: 0.4rem 0; border-bottom: 1px solid var(--line); }
-    .archive a{ color: var(--amber); text-decoration: none; }
-    .archive a:hover{ text-decoration: underline; }
+    .archive > ul{ list-style: none; padding: 0; margin: 0; }
+    .archive > ul > li{ padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
+    .archive > ul > li:last-child{ border-bottom: none; }
+    .week-heading{
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.95rem; font-weight: 600; letter-spacing: 0.03em;
+      color: var(--ink-soft); margin: 0 0 1rem;
+    }
+    .issue-items{ list-style: none; padding: 0; margin: 0; }
+    .issue-item{ padding: 1.1rem 0; border-top: 1px solid var(--line); }
+    .issue-item:first-child{ border-top: none; padding-top: 0; }
+    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.05rem; margin: 0 0 0.5rem; }
+    .issue-item h4 a{ color: var(--amber); text-decoration: none; }
+    .issue-item h4 a:hover{ text-decoration: underline; }
+    .franchise-tag{
+      display: inline-block; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--amber); border: 1px solid var(--amber); border-radius: 3px;
+      padding: 0.12rem 0.4rem; margin: 0 0 0.6rem;
+    }
+    .issue-item blockquote{
+      margin: 0 0 0.6rem; padding-left: 0.75rem; border-left: 2px solid var(--line);
+      color: var(--ink-soft); font-style: italic; font-size: 0.92rem;
+    }
+    .issue-item p{ margin: 0 0 0.5rem; }
+    .issue-item p:last-child{ margin-bottom: 0; }
+    .primary-source{ font-size: 0.85rem; color: var(--ink-soft); }
+    .primary-source a{ color: inherit; }
     .empty{ color: var(--ink-soft); font-style: italic; }
     footer{ margin-top: 3rem; font-size: 0.85rem; color: var(--ink-soft); }
     footer a{ color: inherit; }
@@ -48,8 +72,8 @@
       <h2>Archive</h2>
       <ul>
         <!-- pipeline/render.py appends one <li> per published week here, per docs/technical-spec.md §14 -->
-        <li data-week="2026-W34"><strong>2026-W34</strong><ul><li><a href="https://www.producthunt.com/products/mustel">Mustel</a></li><li><a href="https://www.producthunt.com/products/quantdinger">QuantDinger</a></li><li><a href="https://www.producthunt.com/products/basalt-3">Basalt</a></li></ul></li>
       </ul>
+      <p class="empty">First issue coming soon.</p>
     </div>
 
     <footer>

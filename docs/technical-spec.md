@@ -273,7 +273,7 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 - **Review packet** (§12.1): extractive-only, generated straight from `data/ranked/<iso-week>.json`, no dependency on drafting or verification.
 - **Final digest**, generated only after a draft's entries are all `clear` or explicitly human-approved past a `flagged`/`blocked` state:
   - Output 1: `digest/<iso-week>.md` — ranked list, each entry: title (linked), source(s), score, the extractive excerpt, and the verified generative note.
-  - Output 2: `site/index.html` — same content rendered as a simple static page (plain HTML + minimal CSS, no framework) for GitHub Pages. Include past weeks as an archive list.
+  - Output 2: `site/index.html` — same content rendered as a simple static page (plain HTML + minimal CSS, no framework) for GitHub Pages. Include past weeks as an archive list. Each week's block is wrapped in a matched pair of `<!-- week:<iso-week> -->` / `<!-- /week:<iso-week> -->` HTML comments so a re-render can find and replace its own prior block unambiguously, regardless of how much markup an item's excerpt/note/franchise-tag content nests inside it — found necessary after the site initially shipped with only a bare linked title per item (the excerpt and note went into `digest/<iso-week>.md` but never reached the public page), and the first fix for that used a structural-tag terminator that broke again the moment items carried real nested markup.
 
 ## 15. GitHub Actions workflows
 

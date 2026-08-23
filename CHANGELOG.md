@@ -6,6 +6,30 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Fixed — public site was missing the actual newsletter content
+- `site/index.html` rendered only a bare linked title per item — the
+  excerpt and the drafted "why this matters" note (the entire point of the
+  newsletter) went into `digest/<iso-week>.md` but never reached the
+  public page, despite `docs/technical-spec.md` §14 saying the site gets
+  "the same content." Present since the pipeline was first built; not
+  caught by any test, because no test asserted this content reached the
+  site specifically — found by the user looking at the real deployed page
+  after the first real issue went live. `_render_archive_item_html` now
+  renders each item's excerpt (as a blockquote), note, a franchise-tag
+  badge for non-weekly franchises, and a primary-source link when present
+  — matching `digest/<iso-week>.md`'s structure. Six new tests assert this
+  content actually reaches `site/index.html`, not just the digest file.
+- That fix required touching the idempotent-replace logic again: items now
+  nest their own `<blockquote>`/`<p>` markup, so the existing `</ul></li>`
+  structural terminator (from the earlier duplication fix) could match an
+  inner tag sequence instead of the block's real end. Replaced with a
+  matched pair of `<!-- week:<iso-week> -->` / `<!-- /week:<iso-week> -->`
+  HTML-comment markers, which can't be confused with structural HTML at
+  any nesting depth. Verified locally in a real browser (screenshot-level
+  check, not just HTML-string assertions) before shipping, and added a
+  regression test that re-renders three times with rich nested content to
+  confirm the boundary detection still holds.
+
 ### Fixed — non-fast-forward push race between weekly-verify-and-publish.yml's two jobs
 - With both prior bugs fixed, `verify` passed clean for real — but
   `render-and-deploy`'s own commit push was then rejected: `! [rejected]
