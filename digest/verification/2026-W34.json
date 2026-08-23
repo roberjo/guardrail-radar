@@ -1,26 +1,50 @@
 [
   {
-    "cluster_id": "63bc54cf4ef97ee03869ad562f6b260d145a6d1ae6136201c974dfd18c2b09a4",
-    "title": "Mustel",
+    "cluster_id": "57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459",
+    "title": "FetchSandbox MCP",
     "status": "flagged",
     "reasons": [
       "url unverifiable: HTTP 403 (bot-protection challenge, not confirmed dead) — confirm by hand"
     ]
   },
   {
-    "cluster_id": "a599956986caea7d1036f29e164f913050c25cb0f92c979512edb980056a0731",
-    "title": "QuantDinger",
+    "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
+    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
+    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
+    "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc",
+    "title": "Coding Agents killed my identity. How do you feel?",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6",
+    "title": "Slack Code",
     "status": "flagged",
     "reasons": [
       "url unverifiable: HTTP 403 (bot-protection challenge, not confirmed dead) — confirm by hand"
     ]
   },
   {
-    "cluster_id": "0dde1c09131bec3dde413cb7f732aa1b648a600f2802f69e8fd5f115068e90e1",
-    "title": "Basalt",
+    "cluster_id": "6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27",
+    "title": "Show HN: Hands-Rust MCP/CLI that sees the Windows desktop and clicks real Chrome",
     "status": "flagged",
     "reasons": [
-      "url unverifiable: HTTP 403 (bot-protection challenge, not confirmed dead) — confirm by hand"
+      "url unverifiable: HTTP 429 (rate-limited, not confirmed dead) — confirm by hand"
     ]
   }
 ]
