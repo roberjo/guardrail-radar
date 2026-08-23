@@ -59,14 +59,35 @@ def _is_safe_host(hostname: str) -> bool:
     return True
 
 
-def check_link(url: str, session: requests.Session | None = None) -> tuple[bool, str]:
+def _is_bot_challenge(resp: requests.Response) -> bool:
+    """True if a 4xx looks like a bot-protection challenge, not a dead link.
+
+    Found live, on this pipeline's own first real draft: producthunt.com
+    403s *every* automated request — default headers, a full realistic
+    browser header set, didn't matter — serving a Cloudflare "Just a
+    moment..." JS challenge page (`cf-mitigated: challenge`). No HTTP-only
+    client can pass that, ever, so treating it as a confirmed-dead link
+    would permanently hard-block every Product Hunt-sourced item, forever.
+    """
+    if resp.headers.get("cf-mitigated") == "challenge":
+        return True
+    return "cloudflare" in resp.headers.get("server", "").lower() and resp.status_code == 403
+
+
+def check_link(url: str, session: requests.Session | None = None) -> tuple[str, str]:
+    """Returns (status, detail). status is "ok", "dead", or "unverifiable".
+
+    "unverifiable" means a bot-protection challenge blocked the check
+    itself, not that the URL was confirmed to not exist — treated as a
+    flag for the human checklist to click through by hand, not a block.
+    """
     if not url:
-        return False, "missing URL"
+        return "dead", "missing URL"
     parts = urlsplit(url)
     if parts.scheme not in ("http", "https"):
-        return False, f"unsupported scheme: {parts.scheme!r}"
+        return "dead", f"unsupported scheme: {parts.scheme!r}"
     if not parts.hostname or not _is_safe_host(parts.hostname):
-        return False, "URL resolves to a private/unsafe host"
+        return "dead", "URL resolves to a private/unsafe host"
 
     getter = session.head if session is not None else requests.head
     getter_fallback = session.get if session is not None else requests.get
@@ -75,28 +96,46 @@ def check_link(url: str, session: requests.Session | None = None) -> tuple[bool,
         if resp.status_code >= 400 or resp.status_code == 405:
             resp = getter_fallback(url, timeout=REQUEST_TIMEOUT, allow_redirects=True, stream=True)
     except requests.RequestException as exc:
-        return False, f"request failed: {exc}"
+        return "dead", f"request failed: {exc}"
 
     if resp.status_code >= 400:
-        return False, f"HTTP {resp.status_code}"
-    return True, f"HTTP {resp.status_code}"
+        if _is_bot_challenge(resp):
+            return "unverifiable", f"HTTP {resp.status_code} (bot-protection challenge, not confirmed dead)"
+        return "dead", f"HTTP {resp.status_code}"
+    return "ok", f"HTTP {resp.status_code}"
 
 
 def _fuzzy_contains(claim_text: str, excerpt: str, threshold: float = CLAIM_MATCH_THRESHOLD) -> bool:
-    """True if some window of excerpt plausibly supports claim_text."""
+    """True if some window of excerpt plausibly supports claim_text.
+
+    Found live, on the pipeline's own first real draft: a claim whose
+    supported_by was a *verbatim* substring of the excerpt still got
+    flagged. Root cause was the old fixed `claim_length + 20` window —
+    SequenceMatcher.ratio() = 2*M/(len(a)+len(b)), so padding a perfect
+    match with 20 irrelevant characters mathematically caps the achievable
+    ratio (~0.836 for a 51-char claim) *below* the 0.85 threshold, no
+    matter how exact the match is. Shorter, more precisely quoted claims
+    were paradoxically the ones most likely to get wrongly flagged. An
+    exact-substring check now short-circuits before any fuzzy scoring is
+    needed, and the sliding window is sized to the claim itself (no fixed
+    padding) for the genuine near-match case.
+    """
     if not claim_text or not excerpt:
         return False
     claim_lower = claim_text.lower()
     excerpt_lower = excerpt.lower()
 
+    if claim_lower in excerpt_lower:
+        return True
+
     whole_ratio = difflib.SequenceMatcher(None, claim_lower, excerpt_lower).ratio()
     if whole_ratio >= threshold:
         return True
 
-    window = max(len(claim_lower) + 20, 40)
-    step = max(window // 2, 1)
+    window = max(len(claim_lower), 40)
+    step = max(window // 4, 1)
     best = 0.0
-    for start in range(0, max(1, len(excerpt_lower) - window // 2), step):
+    for start in range(0, max(1, len(excerpt_lower) - window + 1), step):
         chunk = excerpt_lower[start:start + window]
         best = max(best, difflib.SequenceMatcher(None, claim_lower, chunk).ratio())
         if best >= threshold:
@@ -145,10 +184,14 @@ def verify_entry(entry: dict, ranked_by_cluster: dict, session: requests.Session
             f"entry url {entry.get('url')!r} does not match cited cluster_id {cid!r}'s url {cluster.get('url')!r}"
         )
 
-    ok, detail = check_link(entry.get("url", ""), session=session)
-    if not ok:
+    url_status, detail = check_link(entry.get("url", ""), session=session)
+    if url_status == "dead":
         status = "blocked"
         reasons.append(f"url failed: {detail}")
+    elif url_status == "unverifiable":
+        if status == "clear":
+            status = "flagged"
+        reasons.append(f"url unverifiable: {detail} — confirm by hand")
 
     franchise = entry.get("franchise", "weekly")
     primary = entry.get("primary_source_url", "")
@@ -156,10 +199,14 @@ def verify_entry(entry: dict, ranked_by_cluster: dict, session: requests.Session
         status = "blocked"
         reasons.append(f"franchise {franchise!r} requires primary_source_url")
     elif primary:
-        ok, detail = check_link(primary, session=session)
-        if not ok:
+        primary_status, detail = check_link(primary, session=session)
+        if primary_status == "dead":
             status = "blocked"
             reasons.append(f"primary_source_url failed: {detail}")
+        elif primary_status == "unverifiable":
+            if status == "clear":
+                status = "flagged"
+            reasons.append(f"primary_source_url unverifiable: {detail} — confirm by hand")
 
     excerpt = (cluster or {}).get("cluster_excerpt", "")
     unsupported = []

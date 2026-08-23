@@ -4,7 +4,7 @@
     "title": "Mustel",
     "url": "https://www.producthunt.com/products/mustel",
     "franchise": "weekly",
-    "note": "Mustel wires Bandit (security) and pip-audit (dependency vulnerabilities) directly into the agent loop for Cursor, Claude Code, and Windsurf, compressing findings into a prompt an agent can act on instead of surfacing raw linter noise. The framing is worth noting on its own: it bills itself as \"non-AI\" static analysis feeding an AI agent — a deterministic, auditable check sitting in front of a coding agent's output, not another agent wrapper. A separate Audit Mode runs deeper checks in CI, distinct from the fast local dev-mode scan.",
+    "note": "Mustel wires Bandit (security) and pip-audit (dependency vulnerabilities) directly into the agent loop for Cursor, Claude Code, and Windsurf, compressing findings into a prompt an agent can act on instead of surfacing raw linter noise. The framing is worth noting on its own: it bills itself as \"non-AI\" static analysis feeding an AI agent \u2014 a deterministic, auditable check sitting in front of a coding agent's output, not another agent wrapper. A separate Audit Mode runs deeper checks in CI, distinct from the fast local dev-mode scan.",
     "claims": [
       {
         "text": "bills itself as non-AI static analysis for AI coding agents",
@@ -26,14 +26,16 @@
         "text": "a separate Audit Mode runs deeper checks in CI",
         "supported_by": "Audit Mode runs deeper checks in CI"
       }
-    ]
+    ],
+    "approved": true,
+    "approved_reason": "url flagged unverifiable (Cloudflare bot-challenge on producthunt.com, not a dead link) \u2014 confirmed real in an actual browser: page title matches exactly"
   },
   {
     "cluster_id": "a599956986caea7d1036f29e164f913050c25cb0f92c979512edb980056a0731",
     "title": "QuantDinger",
     "url": "https://www.producthunt.com/products/quantdinger",
     "franchise": "weekly",
-    "note": "QuantDinger is a self-hosted, open-source quant trading OS that connects Cursor, Claude Code, or Codex through 25 scoped MCP tools — with strategies, credentials, and trading data explicitly kept on the user's own infrastructure rather than a vendor's cloud. For a fintech engineering team that can't send trading credentials or proprietary strategy logic to a third-party API, that's the adoption question answered by architecture rather than by a compliance add-on bolted onto a SaaS product. It also markets producing \"auditable\" Python strategies from LLM-assisted research — worth watching for how that claim gets substantiated as the project matures, since the excerpt doesn't say what makes a generated strategy auditable beyond being readable Python.",
+    "note": "QuantDinger is a self-hosted, open-source quant trading OS that connects Cursor, Claude Code, or Codex through 25 scoped MCP tools \u2014 with strategies, credentials, and trading data explicitly kept on the user's own infrastructure rather than a vendor's cloud. For a fintech engineering team that can't send trading credentials or proprietary strategy logic to a third-party API, that's the adoption question answered by architecture rather than by a compliance add-on bolted onto a SaaS product. It also markets producing \"auditable\" Python strategies from LLM-assisted research \u2014 worth watching for how that claim gets substantiated as the project matures, since the excerpt doesn't say what makes a generated strategy auditable beyond being readable Python.",
     "claims": [
       {
         "text": "open-source and self-hosted",
@@ -51,23 +53,27 @@
         "text": "markets producing auditable Python strategies from LLM-assisted research",
         "supported_by": "turn ideas into auditable Python strategies"
       }
-    ]
+    ],
+    "approved": true,
+    "approved_reason": "url flagged unverifiable (Cloudflare bot-challenge on producthunt.com, not a dead link) \u2014 confirmed real in an actual browser: page title matches exactly"
   },
   {
     "cluster_id": "0dde1c09131bec3dde413cb7f732aa1b648a600f2802f69e8fd5f115068e90e1",
     "title": "Basalt",
     "url": "https://www.producthunt.com/products/basalt-3",
     "franchise": "weekly",
-    "note": "Basalt generates architecture diagrams from a plain-English stack description, and explicitly extends into OT/ICS (operational technology/industrial control systems) with what it describes as compliance checks built into that layer — a category most architecture-diagramming tools stop short of. For engineers documenting infrastructure spanning cloud and industrial/OT environments, a tool treating OT/ICS as first-class rather than an afterthought is worth a look. The excerpt doesn't say which compliance frameworks those built-in checks actually cover, which is the first question to ask before relying on them.",
+    "note": "Basalt generates architecture diagrams from a plain-English stack description, and explicitly extends into OT/ICS (operational technology/industrial control systems) with what it describes as compliance checks built into that layer \u2014 a category most architecture-diagramming tools stop short of. For engineers documenting infrastructure spanning cloud and industrial/OT environments, a tool treating OT/ICS as first-class rather than an afterthought is worth a look. The excerpt doesn't say which compliance frameworks those built-in checks actually cover, which is the first question to ask before relying on them.",
     "claims": [
       {
         "text": "generates a diagram from a plain-English description of cloud, hybrid, or industrial stacks",
-        "supported_by": "Describe your stack in plain English — cloud, hybrid, or industrial — and get a clean diagram in seconds"
+        "supported_by": "Describe your stack in plain English \u2014 cloud, hybrid, or industrial \u2014 and get a clean diagram in seconds"
       },
       {
         "text": "extends into OT/ICS with compliance checks built in",
         "supported_by": "Basalt goes deeper: first-class OT/ICS, with compliance checks built in"
       }
-    ]
+    ],
+    "approved": true,
+    "approved_reason": "url flagged unverifiable (Cloudflare bot-challenge on producthunt.com, not a dead link) \u2014 confirmed real in an actual browser: page title matches exactly"
   }
 ]

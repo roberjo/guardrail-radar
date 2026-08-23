@@ -6,6 +6,36 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Fixed — two real verify.py bugs, found on the pipeline's first real drafted issue
+- **False-positive claim flags on verbatim quotes.** Drafted `digest/draft/
+  2026-W34.json` (three source-grounded items) and ran real verification —
+  3 of 9 claims got flagged as "unsupported" despite `supported_by` being
+  an exact, verbatim substring of the stored excerpt. Root cause:
+  `_fuzzy_contains`'s sliding window padded every comparison chunk with a
+  fixed +20 characters. Since `SequenceMatcher.ratio() = 2*M/(len(a)+len(b))`,
+  that padding mathematically caps the achievable ratio for a perfect match
+  (~0.836 for a 51-character claim) *below* the 0.85 threshold, regardless
+  of match quality — and shorter, more precisely quoted claims were
+  paradoxically the ones most likely to get wrongly flagged. Fixed with an
+  exact-substring short-circuit before any fuzzy scoring, and a window
+  sized to the claim itself instead of claim-length-plus-a-constant.
+- **False `blocked` on bot-protected but real links.** All three drafted
+  items link to producthunt.com, which 403s every automated request —
+  confirmed live with `curl`, default headers and a full realistic browser
+  header set alike — serving a Cloudflare "Just a moment..." JS challenge
+  (`cf-mitigated: challenge`). No HTTP-only client can ever pass that, so
+  treating it as a confirmed-dead link would have permanently hard-blocked
+  every Product Hunt-sourced item, forever. `check_link` now returns a
+  three-state status (`ok`/`dead`/`unverifiable`) instead of a bool;
+  bot-challenge signatures downgrade an entry to `flagged` rather than
+  `blocked`. Verified this doesn't just paper over real failures: a plain
+  403 with no Cloudflare signature is still `dead`. Closed the loop
+  properly rather than just trusting the theory — used Claude-in-Chrome to
+  actually load all three producthunt.com URLs in a real browser (which
+  passes the JS challenge fine) and confirmed each page's title matches
+  the drafted item exactly, then marked all three `approved: true` in the
+  draft with that reasoning, per the documented flagged-claim process.
+
 ### Changed — Gmail SMTP replaced with a GitHub Issue
 - `pipeline/notify.py` no longer sends email at all. A Gmail app password is
   real setup friction (2FA prerequisite, a Google-account-specific manual
