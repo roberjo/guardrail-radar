@@ -113,6 +113,19 @@ def capture_excerpt(
         return primary[:MAX_EXCERPT_CHARS], "ok"
     cleaned_fallback = (fallback_text or "").strip()
     if cleaned_fallback:
+        # HN's Algolia API returns story_text as raw HTML — literal <p> tags
+        # and entity-encoded characters (HN encodes "/" as "&#x2F;" in its
+        # own stored text), not plain text. Left as-is, those entities
+        # survive verbatim into the excerpt, and pipeline.render's
+        # html.escape() then double-escapes the leading "&" into "&amp;",
+        # so a reader sees the literal string "&#x2F;" instead of "/" —
+        # found live on the site, not in a test. hn_comment_fallback below
+        # already strips this correctly via BeautifulSoup.get_text(); this
+        # path didn't. Other connectors' fallback_text is already plain
+        # text, so running it through the same stripping is a safe no-op
+        # for them (get_text on tag-free text just normalizes whitespace).
+        cleaned_fallback = BeautifulSoup(cleaned_fallback, "html.parser").get_text(" ", strip=True)
+    if cleaned_fallback:
         return cleaned_fallback[:MAX_EXCERPT_CHARS], "partial"
     return "", "none"
 

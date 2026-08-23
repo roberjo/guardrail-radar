@@ -26,7 +26,8 @@
         }
       ],
       "approved": true,
-      "approved_reason": "URL check flagged HTTP 403 with a Cloudflare bot-protection challenge (producthunt.com blocks all automated requests, see verify.py's _is_bot_challenge). Verified by hand in a real browser 2026-08-23: page title 'FetchSandbox: API integration testing that remembers what breaks | Product Hunt' confirms the real, live product matching the excerpt."
+      "approved_reason": "URL check flagged HTTP 403 with a Cloudflare bot-protection challenge (producthunt.com blocks all automated requests, see verify.py's _is_bot_challenge). Verified by hand in a real browser 2026-08-23: page title 'FetchSandbox: API integration testing that remembers what breaks | Product Hunt' confirms the real, live product matching the excerpt.",
+      "hook": "Proves an AI agent's fix actually held, not just that it passed CI."
     },
     {
       "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
@@ -51,7 +52,8 @@
           "text": "The report describes this as probably an A/B test that not everyone will see",
           "supported_by": "probably an a/b test, so not everyone will see it"
         }
-      ]
+      ],
+      "hook": "Claude Code may quietly be running on a lower effort setting for you right now, with no client update or announcement."
     },
     {
       "cluster_id": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
@@ -68,7 +70,8 @@
           "text": "The entry point was a flaw introduced through a GitHub Copilot-assisted pull request",
           "supported_by": "through a flaw in a GitHub Copilot–Assisted PR"
         }
-      ]
+      ],
+      "hook": "A real security compromise that started with an AI-assisted pull request, not a hypothetical one."
     },
     {
       "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
@@ -85,7 +88,8 @@
           "text": "It can run agents in parallel, locally or in the cloud, with reusable workflows",
           "supported_by": "Run agents in parallel, locally or in the cloud, and build reusable workflows."
         }
-      ]
+      ],
+      "hook": "Run every major coding agent from one open-source IDE you can self-host."
     },
     {
       "cluster_id": "1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc",
@@ -106,7 +110,8 @@
           "text": "Agents progressed to proposing plans and architectures, leaving the author mostly supplying context and infrastructure details",
           "supported_by": "agents also became pretty good at proposing plans and architectures, and I was mostly providing missing context and technical details of our infrastructure"
         }
-      ]
+      ],
+      "hook": "One senior engineer's unfiltered account of what full agent delegation actually feels like."
     },
     {
       "cluster_id": "2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6",
@@ -125,7 +130,8 @@
         }
       ],
       "approved": true,
-      "approved_reason": "URL check flagged HTTP 403 with a Cloudflare bot-protection challenge (same producthunt.com pattern as FetchSandbox). Verified by hand in a real browser 2026-08-23: the canonical /products/slack page currently renders Slack's generic evergreen tagline rather than today's specific 'Slack Code' launch blurb -- a normal Product Hunt page-freshness quirk, not a bad link. The excerpt itself is confirmed authentic against the connector's raw capture: real ph_id 1228168, fetched 2026-08-23T12:14:08Z, matching Product Hunt's own API exactly."
+      "approved_reason": "URL check flagged HTTP 403 with a Cloudflare bot-protection challenge (same producthunt.com pattern as FetchSandbox). Verified by hand in a real browser 2026-08-23: the canonical /products/slack page currently renders Slack's generic evergreen tagline rather than today's specific 'Slack Code' launch blurb -- a normal Product Hunt page-freshness quirk, not a bad link. The excerpt itself is confirmed authentic against the connector's raw capture: real ph_id 1228168, fetched 2026-08-23T12:14:08Z, matching Product Hunt's own API exactly.",
+      "hook": "Turns a solo, unreviewed agent session into a team-visible review-and-approve workflow, right in Slack."
     },
     {
       "cluster_id": "6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27",
@@ -150,7 +156,8 @@
           "text": "It works with harnesses including Grok, Codex, Claude Code, and OpenCode",
           "supported_by": "A harness (Grok, Codex, Claude Code, OpenCode, etc.) calls tools like observe, click, type, scroll."
         }
-      ]
+      ],
+      "hook": "Lets an agent click and type on a real desktop convincingly enough to dodge most automation detection."
     }
   ]
 }

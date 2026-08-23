@@ -76,6 +76,19 @@ def test_primary_fetch_failure_uses_fallback_text():
     assert status == "partial"
 
 
+def test_fallback_text_decodes_html_entities_and_strips_tags():
+    # Regression test: found live on the real deployed site. HN's Algolia
+    # API returns story_text as raw HTML — literal <p> tags and HN's own
+    # "/" -> "&#x2F;" entity encoding — not plain text. Left undecoded, a
+    # reader sees the literal string "&#x2F;" after render.py's
+    # html.escape() double-escapes the leading "&".
+    raw = "first part<p>second part with a CDP&#x2F;automation flag"
+    with patch("pipeline.excerpt.requests.get", side_effect=requests.RequestException("boom")):
+        excerpt, status = capture_excerpt("https://example.com/a", fallback_text=raw)
+    assert excerpt == "first part second part with a CDP/automation flag"
+    assert status == "partial"
+
+
 def test_no_primary_and_no_fallback_yields_none_status():
     with patch("pipeline.excerpt.requests.get", side_effect=requests.RequestException("boom")):
         excerpt, status = capture_excerpt("https://example.com/a", fallback_text="   ")

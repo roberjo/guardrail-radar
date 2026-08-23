@@ -6,6 +6,38 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — per-item `hook`: a one-sentence, plain-English reason to care
+- User feedback on the W34 refresh: readers need to know why an item is
+  worth their time — what's cool or useful about it — in plain English,
+  before the longer, more skeptical `note` kicks in. `digest/draft/
+  <iso-week>.json` items gained a required `hook` field, rendered
+  immediately after the title and before the excerpt/note, in both
+  `digest/<iso-week>.md` (bold line) and `site/index.html` (new
+  `.item-hook` CSS class). Like `intro`, it isn't checked against the
+  excerpt by `pipeline/verify.py` — it's a one-line framing, not a
+  specific factual claim — but it must still be grounded only in the
+  excerpt, usually as a tight paraphrase of the excerpt's own stated
+  pitch. Updated `docs/technical-spec.md` §12.2, the `draft-digest` skill
+  and its `draft-schema.md` reference, `tests/test_render.py` (3 new
+  tests), and retrofitted the live `digest/draft/2026-W34.json` with a
+  hook for each of its 7 items before re-publishing.
+
+### Fixed — HN connector left raw HTML entities/tags in captured excerpts
+- Found on the live site while reviewing the W34 refresh: the Hands item's
+  excerpt showed the literal text `&#x2F;` instead of `/` (e.g. "CDP&#x2F;
+  automation flags"). Root cause: `pipeline/excerpt.py`'s `capture_excerpt`
+  used its `fallback_text` argument verbatim (just `.strip()`) instead of
+  stripping it through BeautifulSoup like `hn_comment_fallback` already
+  did — and HN's Algolia API returns `story_text` as raw HTML, literal
+  `<p>` tags and HN's own `/` -> `&#x2F;` entity encoding included, not
+  plain text. Left undecoded, `pipeline/render.py`'s `html.escape()` then
+  double-escaped the leading `&` into `&amp;`, so a reader saw the literal
+  entity string instead of `/`. Fixed by running `fallback_text` through
+  the same `BeautifulSoup(...).get_text(" ", strip=True)` stripping —
+  a safe no-op for the other 4 connectors, whose fallback text is already
+  plain. Regression test added; verified the fix against the exact string
+  captured from the real Hands item before shipping.
+
 ### Fixed — weekly-review-packet.yml computed the wrong ISO week
 - Found by inspection while explaining the weekly cadence, before it ever
   shipped a broken packet for real: `pipeline.dedup`/`score`/`filter`

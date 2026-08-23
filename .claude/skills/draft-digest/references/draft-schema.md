@@ -13,6 +13,7 @@ and `items` (an array — one element per item the issue will include).
       "title": "string",
       "url": "string",
       "franchise": "weekly | vendor_watch | policy_corner | reader_qa",
+      "hook": "one plain-English sentence, front-running the item, on why it's worth a look — the pitch, not the skepticism",
       "note": "the generative \"why this matters\" text — written only from the cluster's stored excerpt",
       "claims": [
         { "text": "a specific claim made in note", "supported_by": "the excerpt phrase that supports it" }
@@ -32,6 +33,22 @@ specifics that aren't grounded in the items it introduces. `pipeline/
 render.py` renders it once, at the top of the issue, in both
 `digest/<iso-week>.md` and `site/index.html`.
 
+`hook` is added after real user feedback on the first two live issues:
+readers need one plain-English sentence, right up front, on why an item
+is worth their time before the longer, more skeptical `note` — what's
+actually cool or useful about it, not the compliance-angle caveat. It's
+required on every item, not optional like `intro`. Usually it's a tight
+paraphrase of the excerpt's own stated pitch (most excerpts already open
+with a tagline — "The MCP that proves your AI's integration fixes work,"
+"Turn coding with AI into a team sport") rather than something invented
+from scratch. Like `intro`, it doesn't get its own claims-ledger
+entries — it's a one-line framing of the item, not a specific factual
+claim — but it must still be grounded only in the excerpt: no invented
+superlatives, stats, or specifics beyond what the excerpt itself states.
+`pipeline/render.py` renders it once per item, immediately after the
+title and before the excerpt/note, in both `digest/<iso-week>.md` and
+`site/index.html`.
+
 ## Worked example
 
 ```json
@@ -43,6 +60,7 @@ render.py` renders it once, at the top of the issue, in both
       "title": "Bank X publishes internal Copilot rollout retro",
       "url": "https://example.com/bank-x-copilot-retro",
       "franchise": "weekly",
+      "hook": "A real bank's own account of what it actually took to get Copilot approved for internal use.",
       "note": "The retro is notable less for the adoption numbers and more for how the team scoped Copilot's suggestions away from any file touching customer PII before rollout — a pattern other regulated teams keep re-deriving from scratch.",
       "claims": [
         {
@@ -56,6 +74,7 @@ render.py` renders it once, at the top of the issue, in both
       "title": "Vendor Y adds SOC 2 Type II report to enterprise tier",
       "url": "https://example.com/vendor-y-blog/soc2",
       "franchise": "vendor_watch",
+      "hook": "One less procurement blocker: Vendor Y's enterprise tier now ships with a SOC 2 Type II report on request.",
       "note": "Vendor Y now offers a SOC 2 Type II report on request for its enterprise tier, closing one of the more common blockers this list hears about from bank security teams evaluating it.",
       "claims": [
         {
@@ -84,3 +103,6 @@ Notes on the example:
 - `intro` is not checked against any excerpt — it's connective narrative
   for the whole issue, not a per-source claim — but it must still not
   invent specifics that aren't grounded in the items it introduces.
+- `hook` is likewise not checked against any excerpt, but is required on
+  every item (unlike `intro`) — one plain-English sentence on why the
+  item is worth a look, grounded in the excerpt's own pitch.

@@ -126,6 +126,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             print(f"[render] WARNING: entry {entry['cluster_id']!r} has no safe http(s) url — rendering title only, no link", file=sys.stderr)
             url = ""
         excerpt = cluster.get("cluster_excerpt", "")
+        hook = entry.get("hook", "")
         note = entry.get("note", "")
         franchise = entry.get("franchise", "weekly")
 
@@ -135,6 +136,8 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"### {_md_escape(title)}")
         if franchise != "weekly":
             lines_md.append(f"_{franchise.replace('_', ' ').title()}_")
+        if hook:
+            lines_md.append(f"**{_md_escape(hook)}**")
         if excerpt:
             lines_md.append(f"> {_md_escape(excerpt)}")
         lines_md.append("")
@@ -143,7 +146,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"\nPrimary source: {_md_escape(entry['primary_source_url'])}")
         lines_md.append("")
 
-        archive_items_html.append(_render_archive_item_html(title, url, excerpt, note, franchise, entry))
+        archive_items_html.append(_render_archive_item_html(title, url, hook, excerpt, note, franchise, entry))
 
     digest_md = "\n".join(lines_md)
     digest_path = os.path.join("digest", f"{iso_week}.md")
@@ -155,15 +158,20 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
 
 
 def _render_archive_item_html(
-    title: str, url: str, excerpt: str, note: str, franchise: str, entry: dict
+    title: str, url: str, hook: str, excerpt: str, note: str, franchise: str, entry: dict
 ) -> str:
-    """One item's full content for the site — title, excerpt, note, franchise
-    label, primary source. Previously this rendered only a bare linked
-    title, dropping the actual commentary (the entire point of the
+    """One item's full content for the site — title, hook, excerpt, note,
+    franchise label, primary source. Previously this rendered only a bare
+    linked title, dropping the actual commentary (the entire point of the
     newsletter) from the one place the public site shows it — the full
     text still went into digest/<week>.md, just never into site/index.html,
     despite docs/technical-spec.md §14 saying the site gets "the same
     content." Found by the user looking at the real deployed site.
+
+    `hook` renders right after the title, ahead of the excerpt/note —
+    added after real user feedback that readers need a one-sentence,
+    plain-English reason an item is worth their time before the longer,
+    more skeptical note (see docs/technical-spec.md §12.2).
     """
     heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
     parts = [f"<h4>{heading}</h4>"]
@@ -171,6 +179,9 @@ def _render_archive_item_html(
     if franchise and franchise != "weekly":
         label = html.escape(franchise.replace("_", " ").title())
         parts.append(f'<span class="franchise-tag">{label}</span>')
+
+    if hook:
+        parts.append(f'<p class="item-hook">{html.escape(hook)}</p>')
 
     if excerpt:
         parts.append(f"<blockquote>{html.escape(excerpt)}</blockquote>")

@@ -46,6 +46,15 @@ substitutes for it.
    compliance, audit, or vendor-risk constraints?* Write in the newsletter's
    practitioner-to-practitioner voice — skeptical of hype, concrete over
    abstract.
+3a. Write a one-sentence `hook` for the item, front-running the note —
+   plain English, on why it's worth a look at all: what's genuinely
+   interesting, useful, or notable about it, before the skepticism kicks
+   in. Usually this is a tight paraphrase of the excerpt's own stated
+   pitch (most excerpts already open with one — "The MCP that proves your
+   AI's integration fixes work," "Turn coding with AI into a team sport")
+   rather than something invented from scratch. Required on every item,
+   grounded only in the excerpt like the note — no invented superlatives,
+   stats, or specifics the excerpt doesn't state.
 4. For every factual claim the note makes, add an entry to that item's
    `claims` array pointing at the exact excerpt phrase that supports it.
    This claims ledger is what makes the verification pass (see
@@ -83,6 +92,8 @@ Check, don't assume:
 - Every `vendor_watch`/`policy_corner` entry has `primary_source_url` set.
 - Every claim in `claims` has a `supported_by` excerpt phrase that actually
   appears in the item's stored excerpt.
+- Every item has a non-empty `hook` — unlike `intro`, this one isn't
+  optional.
 
 ## Handoff
 

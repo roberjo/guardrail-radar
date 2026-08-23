@@ -69,6 +69,7 @@ def _draft_entry(cluster_id="c1", franchise="weekly", **overrides):
         "title": "A real story",
         "url": "https://example.com/story",
         "franchise": franchise,
+        "hook": "Why it's worth a look at all.",
         "note": "Why this matters to a compliance-constrained engineer.",
         "claims": [],
     }
@@ -162,6 +163,50 @@ def test_final_digest_escapes_intro_html(project):
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
     assert "<script>alert(3)</script>" not in site_content
+
+
+def test_final_digest_renders_hook_before_excerpt_and_note(project):
+    # Added after real user feedback: readers need a one-sentence,
+    # plain-English reason an item is worth their time, front-running the
+    # item, before the longer skeptical note — see docs/technical-spec.md
+    # §12.2.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(hook="Proves the agent fix actually held, not just that it passed CI.")],
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    hook_text = "Proves the agent fix actually held, not just that it passed CI."
+    assert hook_text in digest_content
+    assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
+    assert 'class="item-hook"' in site_content
+    assert hook_text in site_content
+    assert site_content.index(hook_text) < site_content.index("a real excerpt")
+
+
+def test_final_digest_omits_hook_block_when_not_provided(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(hook="")])
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "item-hook" not in site_content
+
+
+def test_final_digest_escapes_hook_html(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry(hook='<script>alert(4)</script>')]
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "<script>alert(4)</script>" not in site_content
     assert "&lt;script&gt;" in site_content
 
 
