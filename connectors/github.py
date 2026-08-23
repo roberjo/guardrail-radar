@@ -3,11 +3,21 @@
 Uses GH_SEARCH_TOKEN if set (5000 req/hr) for production runs; falls back to
 unauthenticated (much lower limits) for local/dev use so this is runnable
 without a token, per docs/technical-spec.md §16.
+
+raw_score is log-scaled total stargazers_count, not true 7-day star
+velocity — GitHub's stargazers endpoint now 404s for any repo the token
+holder doesn't own/collaborate on, confirmed live against torvalds/linux
+and octocat/Hello-World with a fully-scoped token (both 404; a repo the
+token owner actually owns succeeds). This isn't a scope or auth problem —
+GitHub has restricted third-party stargazer-timestamp enumeration
+entirely, so per-repo velocity is no longer obtainable through this API
+for the repos this connector actually searches. See CHANGELOG.md.
 """
 
 from __future__ import annotations
 
 import base64
+import math
 import os
 import sys
 import time
@@ -23,6 +33,7 @@ from pipeline.schema import NormalizedItem
 API_ROOT = "https://api.github.com"
 REQUEST_TIMEOUT = 10
 MAX_REPOS_PER_TOPIC = 10
+STAR_SCALE = 100
 
 
 def _headers() -> dict:
@@ -52,29 +63,16 @@ def _search_repos(topic: str, since: datetime, headers: dict, session: requests.
     return resp.json().get("items", [])
 
 
-def _stars_last_7d(full_name: str, headers: dict, session: requests.Session) -> int:
-    star_headers = dict(headers)
-    star_headers["Accept"] = "application/vnd.github.star+json"
-    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
-    count = 0
-    try:
-        resp = session.get(
-            f"{API_ROOT}/repos/{full_name}/stargazers",
-            params={"per_page": 100},
-            headers=star_headers,
-            timeout=REQUEST_TIMEOUT,
-        )
-        resp.raise_for_status()
-        for entry in resp.json():
-            starred_at = entry.get("starred_at")
-            if not starred_at:
-                continue
-            parsed = datetime.fromisoformat(starred_at.replace("Z", "+00:00"))
-            if parsed >= cutoff:
-                count += 1
-    except requests.RequestException as exc:
-        print(f"[github] stargazers fetch failed for {full_name}: {exc}", file=sys.stderr)
-    return count
+def _star_score(stargazers_count: int) -> int:
+    """Log-scale total stars into roughly the same magnitude as other
+    sources' point-based raw_score (HN points, Reddit ups — typically
+    single-to-quadruple digits). A repo with 250k stars would otherwise
+    swamp the shared velocity formula in pipeline/score.py against every
+    other source, on nothing more than a routine push. Monotonic (more
+    stars still always ranks higher) but compressed:
+      0 stars -> 0, 100 -> 461, 1,000 -> 690, 100,000 -> 1,151
+    """
+    return int(math.log1p(max(stargazers_count, 0)) * STAR_SCALE)
 
 
 def _readme_first_paragraph(content: str) -> str:
@@ -119,18 +117,6 @@ def fetch_items() -> list[NormalizedItem]:
     seen_full_names: set[str] = set()
     items: list[NormalizedItem] = []
 
-    has_token = "Authorization" in headers
-    if not has_token:
-        # The star+json media type 401s even for public repos without auth —
-        # confirmed by a live test run. Skip it entirely rather than burning
-        # unauthenticated rate-limit budget on calls known to fail.
-        print(
-            "[github] no GH_SEARCH_TOKEN: skipping stars_last_7d lookups "
-            "(GitHub requires auth for starred_at timestamps even on public "
-            "repos) — raw_score will be 0 for this run",
-            file=sys.stderr,
-        )
-
     with requests.Session() as session:
         for i, topic in enumerate(topics):
             if i > 0:
@@ -155,7 +141,7 @@ def fetch_items() -> list[NormalizedItem]:
                     print(f"[github] skipping {full_name!r} with no html_url", file=sys.stderr)
                     continue
 
-                stars_7d = _stars_last_7d(full_name, headers, session) if has_token else 0
+                total_stars = repo.get("stargazers_count") or 0
                 fallback = _readme_excerpt(full_name, repo.get("description", ""), headers, session)
                 excerpt, status = capture_excerpt(url, fallback_text=fallback, session=session)
 
@@ -164,7 +150,7 @@ def fetch_items() -> list[NormalizedItem]:
                         source="github",
                         title=full_name,
                         url=url,
-                        raw_score=stars_7d,
+                        raw_score=_star_score(total_stars),
                         comment_count=0,
                         posted_at=repo.get("pushed_at") or repo.get("created_at") or now,
                         fetched_at=now,
@@ -172,7 +158,7 @@ def fetch_items() -> list[NormalizedItem]:
                         excerpt_status=status,
                         source_meta={
                             "open_issues_count": repo.get("open_issues_count"),
-                            "total_stars": repo.get("stargazers_count"),
+                            "total_stars": total_stars,
                             "topic": topic,
                         },
                     )

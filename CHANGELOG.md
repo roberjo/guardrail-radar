@@ -6,6 +6,33 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — GitHub star velocity replaced with log-scaled total stars
+- Found on the same real run above: with a valid `GH_SEARCH_TOKEN`, every
+  one of 49 stargazers-endpoint calls returned `404`, not the `401` seen
+  earlier without a token. Isolated it live with a separate, fully-scoped
+  token: `repos/torvalds/linux/stargazers` and
+  `repos/octocat/Hello-World/stargazers` both `404`; `repos/roberjo/
+  guardrail-radar/stargazers` (a repo that token's own account owns)
+  succeeds. This is GitHub restricting third-party stargazer-timestamp
+  enumeration outright, not a scope or auth problem — no token, however
+  broadly scoped, gets `stars_last_7d` for a repo the token holder doesn't
+  own. The original §7.3 design (`stars_last_7d` via `starred_at`
+  timestamps) is no longer achievable through this API.
+  `connectors/github.py` now uses `raw_score = int(math.log1p
+  (stargazers_count) * 100)` — the search endpoint already returns total
+  star count for free, so this also removes the 49 now-always-failing
+  per-repo calls entirely. The log scale matters, not just the fallback
+  metric choice: total stars for a popular repo can be in the hundreds of
+  thousands, versus HN points or Reddit ups typically in the dozens to
+  low thousands — feeding that raw into the shared velocity formula
+  (`pipeline/score.py`) would let one popular repo's routine push swamp
+  every other source's ranking. The log scale keeps it monotonic (more
+  stars still ranks higher) while compressing it into a comparable
+  magnitude (250,000 stars → ~1,151, not 250,000). Raw `total_stars` is
+  still kept in `source_meta` for reference. `docs/technical-spec.md` §7.3
+  updated to match; this is a real, permanent capability loss, not a bug
+  to route around later.
+
 ### Fixed — first real daily-ingest.yml run, found by actually running it
 - All four active connectors (hn, github, lobsters, producthunt) succeeded
   and pulled real data (6,274 lines across 4 files) on the first live run

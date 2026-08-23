@@ -121,7 +121,7 @@ Every connector must output a list of items in this shape (JSON):
   "excerpt": "string — captured source text, see §6",
   "excerpt_status": "ok | partial | none",
   "source_meta": {
-    "_comment": "source-specific extras, e.g. subreddit name, repo stars_last_7d"
+    "_comment": "source-specific extras, e.g. subreddit name, repo total_stars"
   }
 }
 ```
@@ -164,10 +164,10 @@ No new secrets are required — this reuses the same per-source auth already in 
 - Respect Reddit's rate limit (60 req/min per OAuth client) — add throttling.
 
 ### 7.3 GitHub (`connectors/github.py`)
-- API: GitHub REST API (`/search/repositories`), auth via a free personal access token (`GITHUB_TOKEN` — GitHub Actions provides this automatically for API calls against the repo, but a separate PAT with broader scope should be stored as `GH_SEARCH_TOKEN` secret for search API rate limits — 5000 req/hr authenticated vs 10/min unauthenticated).
+- API: GitHub REST API (`/search/repositories`), auth via a free personal access token (`GITHUB_TOKEN` — GitHub Actions provides this automatically for API calls against the repo, but a separate PAT with broader scope should be stored as `GH_SEARCH_TOKEN` secret for search API rate limits — 5000 req/hr authenticated vs 10/min unauthenticated). No scopes are required on that PAT — it's used purely to raise the rate limit for public read-only endpoints.
 - Query: repos matching keyword topics (`ai-coding`, `llm-tools`, `terraform`, `compliance`, `fintech`) created or pushed in the last 30 days.
-- **Key signal: star velocity, not total stars.** Compute `stars_last_7d = current_stars - stars_7_days_ago`. Since the API doesn't give historical star counts directly, approximate using the GitHub Events API (`/repos/{owner}/{repo}/stargazers` with `Accept: application/vnd.github.star+json` to get starred_at timestamps) — count stars with `starred_at` in the last 7 days.
-- Extract: `full_name` → `title`, `html_url` → `url`, `stars_last_7d` → `raw_score`, `open_issues_count` as a secondary signal in `source_meta`, plus excerpt capture per §6 (repo description + README first paragraph).
+- **Signal: log-scaled total stargazers_count, not true velocity.** The original design called for `stars_last_7d` via the stargazers endpoint's `starred_at` timestamps (`Accept: application/vnd.github.star+json`) — confirmed against the real API (not assumed) that this endpoint now 404s for any repo the token holder doesn't own or collaborate on, regardless of token scope: tested against `torvalds/linux` and `octocat/Hello-World` with a fully-scoped token (both 404), versus a repo the token's own account owns (succeeds). GitHub has restricted third-party stargazer-timestamp enumeration outright, so true velocity is no longer obtainable through this API for the repos this connector actually searches. `raw_score` is instead `int(math.log1p(stargazers_count) * 100)` — the search endpoint already returns total star count for free, and the log scale keeps a repo with hundreds of thousands of stars from swamping the shared cross-source velocity formula in §10 on the strength of nothing but a routine push. Monotonic, but a popularity proxy, not a momentum one.
+- Extract: `full_name` → `title`, `html_url` → `url`, log-scaled `stargazers_count` → `raw_score` (raw count also kept in `source_meta.total_stars`), `open_issues_count` as a secondary signal in `source_meta`, plus excerpt capture per §6 (repo description + README first paragraph).
 
 ## 8. Connectors — Phase 2
 
