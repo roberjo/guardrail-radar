@@ -101,6 +101,14 @@ def check_link(url: str, session: requests.Session | None = None) -> tuple[str, 
     if resp.status_code >= 400:
         if _is_bot_challenge(resp):
             return "unverifiable", f"HTTP {resp.status_code} (bot-protection challenge, not confirmed dead)"
+        if resp.status_code == 429:
+            # Found live: news.ycombinator.com 429'd two real, browser-confirmed
+            # links in the same run this pipeline had made dozens of prior
+            # requests to today (connectors + repeated dedup/verify testing).
+            # 429 means "too many requests," never "this resource doesn't
+            # exist" — hard-blocking on it would penalize a draft for this
+            # pipeline's own request volume, not for a bad citation.
+            return "unverifiable", "HTTP 429 (rate-limited, not confirmed dead)"
         return "dead", f"HTTP {resp.status_code}"
     return "ok", f"HTTP {resp.status_code}"
 

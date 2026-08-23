@@ -89,6 +89,23 @@ def test_check_link_unverifiable_on_cloudflare_server_403_without_explicit_heade
 
 
 @patch("pipeline.verify.socket.getaddrinfo", return_value=[(2, 1, 6, "", ("93.184.216.34", 0))])
+def test_check_link_unverifiable_on_429(_mock_dns):
+    # Regression test: found live drafting the 2026-W34 refresh — two real,
+    # browser-confirmed news.ycombinator.com links 429'd after this
+    # pipeline's own heavy request volume that day. 429 means "too many
+    # requests," never "confirmed doesn't exist," so it must not hard-block
+    # a draft for this pipeline's own traffic rather than a bad citation.
+    resp = _ok_response(429, headers={"server": "nginx"})
+    with (
+        patch("pipeline.verify.requests.head", return_value=resp),
+        patch("pipeline.verify.requests.get", return_value=resp),
+    ):
+        status, detail = check_link("https://news.ycombinator.com/item?id=1")
+    assert status == "unverifiable"
+    assert "429" in detail
+
+
+@patch("pipeline.verify.socket.getaddrinfo", return_value=[(2, 1, 6, "", ("93.184.216.34", 0))])
 def test_check_link_plain_403_without_cloudflare_signature_is_dead(_mock_dns):
     # A 403 with no bot-challenge signature is treated as a real failure,
     # not given the benefit of the doubt.
