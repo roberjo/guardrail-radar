@@ -150,7 +150,7 @@
         },
         {
           "text": "It's built so sites that detect automation via CDP/automation flags mostly don't see it as automated",
-          "supported_by": "Sites that key on CDP&#x2F;automation flags mostly don’t see that."
+          "supported_by": "Sites that key on CDP/automation flags mostly don’t see that."
         },
         {
           "text": "It works with harnesses including Grok, Codex, Claude Code, and OpenCode",
