@@ -15,8 +15,11 @@ jobs:
     # Default GITHUB_TOKEN is read-only unless declared otherwise — same gap
     # confirmed by a real failed daily-ingest.yml run (git-auto-commit-action
     # built the commit locally, then 403'd pushing it). See CHANGELOG.md.
+    # issues:write is for the notify step below — opening the "review packet
+    # ready" issue instead of sending a Gmail SMTP notification.
     permissions:
       contents: write
+      issues: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,6 +37,4 @@ jobs:
       - name: Notify maintainer
         run: python -m pipeline.notify --kind review-packet-ready
         env:
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          MAINTAINER_EMAIL: ${{ secrets.MAINTAINER_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

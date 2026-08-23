@@ -10,8 +10,8 @@ just puts the steps in order.
 
 | When | What happens | Who/what does it |
 |---|---|---|
-| Daily, automatic | `daily-ingest.yml` runs all five connectors, captures excerpts, commits `data/raw/**` | GitHub Actions |
-| Monday, automatic | `weekly-review-packet.yml` dedups/scores/filters, renders `digest/review/<iso-week>.md`, emails the maintainer that it's ready | GitHub Actions |
+| Daily, automatic | `daily-ingest.yml` runs the four active connectors (hn, github, lobsters, producthunt — reddit deferred, see CHANGELOG.md), captures excerpts, commits `data/raw/**` | GitHub Actions |
+| Monday, automatic | `weekly-review-packet.yml` dedups/scores/filters, renders `digest/review/<iso-week>.md`, opens a GitHub Issue that it's ready | GitHub Actions |
 | Monday–Tuesday | Draft the issue: source-grounded notes, claims ledger, franchise tags, primary sources for Vendor Watch/Policy Corner | Maintainer + Claude, via the **`draft-digest`** skill |
 | Once the draft is committed | Trigger `weekly-verify-and-publish.yml`, resolve any `blocked`/`flagged` entries, run the bounded checklist, approve | Maintainer, via the **`verify-and-ship-digest`** skill |
 | Same session | Paste `digest/<iso-week>.md` into Substack/Beehiiv, confirm links, send | Maintainer (manual — no free publish API exists on either platform) |

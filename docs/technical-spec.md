@@ -31,8 +31,9 @@ GitHub Actions (cron schedule, daily)
   └─ job: render review packet
         reads data/ranked/<iso-week>.json → writes digest/review/<iso-week>.md
         (extractive summaries only — no generation, nothing to verify here)
-        sends an internal "review packet ready" notification to the maintainer
-        (repurposed SMTP step — never a subscriber-facing send, see §15.2)
+        opens a "review packet ready" GitHub Issue as the internal notification
+        (no external service, no new secret — never a subscriber-facing send,
+        see §15.2)
 
 [human + Claude, outside CI]
   reads digest/review/<iso-week>.md → writes digest/draft/<iso-week>.json
@@ -79,7 +80,7 @@ research-pipeline/
 │   ├── filter.py                  # keyword/tag relevance filtering
 │   ├── verify.py                  # link resolution, citation cross-check, claims-ledger diff (§13)
 │   ├── render.py                  # review-packet + final digest + HTML rendering
-│   └── notify.py                  # internal "review packet ready" email to the maintainer (§15.2)
+│   └── notify.py                  # opens a "review packet ready" GitHub Issue (§15.2)
 ├── data/
 │   ├── raw/<source>/<YYYY-MM-DD>.json
 │   ├── interim/<YYYY-Www>.json      # dedup'd + scored working file, overwritten by each stage (§9-§11)
@@ -285,23 +286,24 @@ Two distinct render targets, reflecting the two-layer content model in the proje
 - Trigger: `schedule: cron: '0 13 * * 1'` (Monday) + `workflow_dispatch`.
 - Steps: `pipeline/dedup.py` → `pipeline/score.py` → `pipeline/filter.py` → `pipeline/render.py` (review-packet target only).
 - Commit `data/ranked/**` and `digest/review/**` back to the repo.
-- Final step: `pipeline/notify.py` sends an **internal notification** — "review packet ready for `<iso-week>`, N candidates" plus a link to the packet — via SMTP (Python `smtplib` + `ssl`) to the maintainer's own address. This is the same mechanism the Rev. 1 spec used for a subscriber-facing send; it's repurposed here per the project plan (§01, §05) because the actual subscriber send happens on Substack/Beehiiv, manually, and neither platform is reachable from this step. `DIGEST_RECIPIENT` is renamed `MAINTAINER_EMAIL` to make that scope explicit (§16).
+- Final step: `pipeline/notify.py` opens (or, idempotently, finds and reuses) a **GitHub Issue** — "Review packet ready: `<iso-week>`" with the candidate count and a link to the packet in its body. Originally SMTP to the maintainer's own address (the Rev. 1 spec's repurposed subscriber-send mechanism); replaced because a Gmail app password is real setup friction for a notification GitHub can deliver for free — the built-in `GITHUB_TOKEN` can open issues once the job grants `issues: write`, and GitHub's own notification system pings the repo owner exactly the way the SMTP step used to. Confirmed against the real API before adopting it, not assumed. Never a subscriber-facing send — that still only happens by hand on Substack/Beehiiv.
 - Does **not** deploy to Pages and does **not** touch `digest/<iso-week>.md` — those only exist after verification (§15.3).
 
 ### 15.3 `.github/workflows/weekly-verify-and-publish.yml`
 - Trigger: `workflow_dispatch` only — run by hand once `digest/draft/<iso-week>.json` has been committed (i.e., once the maintainer's Claude-assisted drafting session is done).
 - Steps: `pipeline/verify.py` → write `digest/verification/<iso-week>.json` → if every entry is `clear` (or has been hand-approved past a flag, tracked via a simple `approved: true` field the maintainer adds to a flagged/blocked entry before re-running), run `pipeline/render.py` (final-digest target) → commit `digest/<iso-week>.md`, `site/**` → deploy `site/` to GitHub Pages (`actions/deploy-pages` — free, official Action).
 - If any entry is still `blocked` and unapproved, the job fails loudly rather than partially publishing — a compliance-adjacent newsletter shouldn't ship an issue with an unresolved citation or a vendor claim it couldn't verify.
-- No email step here — sending to subscribers is the one manual, outside-of-CI step described in §3 and the project plan §05/§13.
+- No subscriber-notification step here either — sending to subscribers is the one manual, outside-of-CI step described in §3 and the project plan §05/§13.
 
 ## 16. Required GitHub Actions secrets
 
 | Secret | Used by |
 |---|---|
-| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | reddit.py |
-| `GH_SEARCH_TOKEN` | github.py (search API rate limit) |
+| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | reddit.py — connector currently deferred, see §7.2 non-goals note / CHANGELOG |
+| `GH_SEARCH_TOKEN` | github.py (search API rate limit); no scopes required, public-data read only |
 | `PRODUCTHUNT_TOKEN` | producthunt.py |
-| `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`, `MAINTAINER_EMAIL` | weekly-review-packet.yml's internal notification step only — never a subscriber send |
+
+`pipeline/notify.py` needs no repo secret at all — it uses `secrets.GITHUB_TOKEN`, which every workflow already gets automatically, gated by an explicit `issues: write` permission on the job (§15.2).
 
 No secrets needed for `hn.py`, `lobsters.py`, `pipeline/excerpt.py`'s primary fetch path, or `pipeline/verify.py`.
 

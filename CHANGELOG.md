@@ -6,6 +6,24 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — Gmail SMTP replaced with a GitHub Issue
+- `pipeline/notify.py` no longer sends email at all. A Gmail app password is
+  real setup friction (2FA prerequisite, a Google-account-specific manual
+  step) for a notification GitHub can already deliver for free. It now
+  opens a GitHub Issue — "Review packet ready: `<iso-week>`" with the
+  candidate count and a link to the review packet — using the `GITHUB_TOKEN`
+  every Actions run already gets, gated by an explicit `issues: write`
+  permission on the job (no repo secret to configure at all). GitHub's own
+  notification system pings the repo owner exactly the way the SMTP step
+  used to. Idempotent the same way the site archive fix was: searches for
+  an existing open issue with this week's exact title before opening a new
+  one, so a re-run never duplicates the notification. Confirmed against the
+  real API (opened and closed a real test issue on the live repo) before
+  adopting it, not assumed. `GMAIL_ADDRESS`/`GMAIL_APP_PASSWORD`/
+  `MAINTAINER_EMAIL` are gone from `.env.example`, the secrets table, and
+  the workflow; `docs/project-plan.md`'s cost table and `docs/weekly-
+  runbook.md` updated to match.
+
 ### Changed — GitHub star velocity replaced with log-scaled total stars
 - Found on the same real run above: with a valid `GH_SEARCH_TOKEN`, every
   one of 49 stargazers-endpoint calls returned `404`, not the `401` seen

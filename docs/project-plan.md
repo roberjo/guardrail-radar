@@ -107,7 +107,7 @@ All channels below are free/organic — no paid acquisition, consistent with the
 | Newsletter platform (Substack/Beehiiv free tier) | $0 | Free tier limits are generous at <1,000 subscribers |
 | GitHub (public repo + Actions + Pages) | $0 | Public repos get free unlimited Actions minutes |
 | Domain name | $0 initially | Defer — use platform subdomain until there's real traction |
-| Email delivery for digest (Gmail SMTP) | $0 | Within Gmail's free sending limits at this volume |
+| Internal "review packet ready" notification | $0 | A GitHub Issue, opened with the built-in `GITHUB_TOKEN` — no email service, no app password to configure |
 
 ### 6.2 Trigger thresholds (when to reconsider $0)
 - Custom domain (~$12/year): once subscriber count or brand identity justifies moving off a subdomain.

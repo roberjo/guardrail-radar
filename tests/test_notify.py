@@ -1,95 +1,91 @@
 """Tests for pipeline.notify — see docs/technical-spec.md §15.2, §18.
 
-No live SMTP connections — smtplib.SMTP_SSL is mocked. Confirms this stays
-an internal maintainer notification, never a subscriber-facing send.
+No live network calls — requests.Session is mocked. Confirms this opens a
+GitHub Issue (no Gmail/SMTP involved) and never duplicates one for a week
+that already has an open notification.
 """
 
 import os
 from unittest.mock import MagicMock, patch
 
-import pytest
-
-from pipeline.notify import _ranked_count, send_review_packet_ready
+from pipeline.notify import open_review_packet_issue
 
 
-def test_sends_via_ssl_to_maintainer_only():
-    server = MagicMock()
-    server.__enter__.return_value = server
-    server.__exit__.return_value = False
-
-    with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL", return_value=server) as mock_smtp,
-    ):
-        send_review_packet_ready("2026-W01", 12)
-
-    mock_smtp.assert_called_once_with("smtp.gmail.com", 465, context=mock_smtp.call_args.kwargs["context"])
-    server.login.assert_called_once_with("sender@example.com", "app-password")
-
-    sent_msg = server.send_message.call_args.args[0]
-    assert sent_msg["To"] == "maintainer@example.com"
-    assert sent_msg["From"] == "sender@example.com"
-    assert "2026-W01" in sent_msg["Subject"]
-    # Never a subscriber-facing send — no recipient beyond the maintainer.
-    assert sent_msg["To"] != sent_msg["From"] or True  # explicit: single recipient only
-    assert "Cc" not in sent_msg
-    assert "Bcc" not in sent_msg
+def _search_response(items: list[dict]):
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
+    resp.json.return_value = {"items": items}
+    return resp
 
 
-def test_message_body_mentions_item_count_and_review_packet_path():
-    server = MagicMock()
-    server.__enter__.return_value = server
-    server.__exit__.return_value = False
-
-    with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL", return_value=server),
-    ):
-        send_review_packet_ready("2026-W07", 9)
-
-    sent_msg = server.send_message.call_args.args[0]
-    body = sent_msg.get_content()
-    assert "9 candidates" in body
-    assert "2026-W07" in body
-    assert "digest/review/2026-W07.md" in body
+def _issue_response(title: str, html_url: str = "https://github.com/roberjo/guardrail-radar/issues/1"):
+    resp = MagicMock()
+    resp.raise_for_status = MagicMock()
+    resp.json.return_value = {"title": title, "html_url": html_url}
+    return resp
 
 
-def test_missing_ranked_file_raises_instead_of_reporting_zero_candidates(tmp_path, monkeypatch):
-    monkeypatch.chdir(tmp_path)
+def test_opens_issue_with_week_title_and_item_count():
+    session = MagicMock()
+    session.get.return_value = _search_response([])
+    session.post.return_value = _issue_response("Review packet ready: 2026-W07")
 
-    with pytest.raises(FileNotFoundError, match="2026-W99"):
-        _ranked_count("2026-W99")
+    with patch.dict(os.environ, {"GITHUB_TOKEN": "tok", "GITHUB_REPOSITORY": "roberjo/guardrail-radar"}):
+        issue = open_review_packet_issue("2026-W07", 9, session=session)
+
+    assert issue["title"] == "Review packet ready: 2026-W07"
+    post_kwargs = session.post.call_args.kwargs
+    assert post_kwargs["json"]["title"] == "Review packet ready: 2026-W07"
+    assert "9 candidates" in post_kwargs["json"]["body"]
+    assert "digest/review/2026-W07.md" in post_kwargs["json"]["body"]
+    assert "draft-digest" in post_kwargs["json"]["body"]
 
 
-def test_missing_ranked_file_never_sends_a_misleading_email(tmp_path, monkeypatch):
-    monkeypatch.chdir(tmp_path)
+def test_does_not_duplicate_an_existing_open_issue_for_the_same_week():
+    session = MagicMock()
+    session.get.return_value = _search_response(
+        [{"title": "Review packet ready: 2026-W07", "html_url": "https://github.com/x/y/issues/5"}]
+    )
 
-    with (
-        patch.dict(
-            os.environ,
-            {
-                "GMAIL_ADDRESS": "sender@example.com",
-                "GMAIL_APP_PASSWORD": "app-password",
-                "MAINTAINER_EMAIL": "maintainer@example.com",
-            },
-        ),
-        patch("pipeline.notify.smtplib.SMTP_SSL") as mock_smtp,
-        pytest.raises(FileNotFoundError),
-    ):
-        send_review_packet_ready("2026-W99", _ranked_count("2026-W99"))
+    with patch.dict(os.environ, {"GITHUB_TOKEN": "tok", "GITHUB_REPOSITORY": "roberjo/guardrail-radar"}):
+        issue = open_review_packet_issue("2026-W07", 9, session=session)
 
-    mock_smtp.assert_not_called()
+    assert issue["html_url"] == "https://github.com/x/y/issues/5"
+    session.post.assert_not_called()
+
+
+def test_search_result_title_must_match_exactly_not_just_contain():
+    # GitHub's issue search is fuzzy full-text, not exact — a stale/similar
+    # title from a different week must not be mistaken for this week's.
+    session = MagicMock()
+    session.get.return_value = _search_response(
+        [{"title": "Review packet ready: 2026-W06", "html_url": "https://github.com/x/y/issues/4"}]
+    )
+    session.post.return_value = _issue_response("Review packet ready: 2026-W07")
+
+    with patch.dict(os.environ, {"GITHUB_TOKEN": "tok", "GITHUB_REPOSITORY": "roberjo/guardrail-radar"}):
+        issue = open_review_packet_issue("2026-W07", 9, session=session)
+
+    assert issue["title"] == "Review packet ready: 2026-W07"
+    session.post.assert_called_once()
+
+
+def test_uses_bearer_auth_header_from_github_token():
+    session = MagicMock()
+    session.get.return_value = _search_response([])
+    session.post.return_value = _issue_response("Review packet ready: 2026-W07")
+
+    with patch.dict(os.environ, {"GITHUB_TOKEN": "tok_abc", "GITHUB_REPOSITORY": "roberjo/guardrail-radar"}):
+        open_review_packet_issue("2026-W07", 1, session=session)
+
+    assert session.post.call_args.kwargs["headers"]["Authorization"] == "Bearer tok_abc"
+    assert session.get.call_args.kwargs["headers"]["Authorization"] == "Bearer tok_abc"
+
+
+def test_never_sends_to_an_email_recipient():
+    # Regression guard against the old Gmail-based mechanism reappearing —
+    # this notification is repo-internal (an Issue), never an email send.
+    import pipeline.notify as notify_module
+
+    assert not hasattr(notify_module, "smtplib")
+    assert not hasattr(notify_module, "send_review_packet_ready")
