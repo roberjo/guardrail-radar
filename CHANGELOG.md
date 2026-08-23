@@ -17,7 +17,13 @@ the project's pre-launch planning and scaffolding.
   `verify`'s own commit-and-push a moment earlier). Added `git pull
   --rebase origin main` immediately before `render-and-deploy`'s commit
   step, rather than trust a job-start checkout stays current through
-  everything that job does before it pushes.
+  everything that job does before it pushes. That fix's first real run
+  then failed differently: "cannot pull with rebase: you have unstaged
+  changes" — `pipeline.render` had already written uncommitted digest/site
+  changes to the working tree earlier in the same job, and a plain
+  `git pull --rebase` refuses to run against a dirty tree at all. Added
+  `--autostash` so the pull stashes those uncommitted changes, rebases,
+  and reapplies them before the commit step runs.
 
 ### Fixed — two real verify.py bugs, found on the pipeline's first real drafted issue
 - **False-positive claim flags on verbatim quotes.** Drafted `digest/draft/

@@ -64,7 +64,12 @@ jobs:
       # so this job's later push gets rejected as non-fast-forward even
       # though nothing else touched main in between. Re-sync immediately
       # before committing rather than trust the checkout is still current.
-      - run: git pull --rebase origin main
+      # --autostash matters: pipeline.render already wrote uncommitted
+      # digest/site changes to the working tree above — a plain
+      # `git pull --rebase` refuses to run against a dirty tree at all
+      # ("cannot pull with rebase: you have unstaged changes"), confirmed
+      # live on the very next run after the fix above.
+      - run: git pull --rebase --autostash origin main
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'digest: ${{ github.event.inputs.iso_week }}'
