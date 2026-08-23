@@ -1,50 +1,134 @@
 [
   {
-    "cluster_id": "9dabdbfdd26ba32ee97cc6b4a7dda3a5dffc7b48bea4cf1b9de770b56a5e8c40",
-    "title": "KMRVID Skills",
-    "url": "https://www.producthunt.com/products/kmrvid-skills",
+    "cluster_id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 69.0,
+    "cluster_excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459",
+    "title": "FetchSandbox MCP",
+    "url": "https://www.producthunt.com/products/fetchsandbox",
     "source": "producthunt",
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 0.1975033048247884,
-    "cluster_excerpt": "58 production skills connecting Figma AI to Claude Code — Stop generic AI slop and broken design handoffs. KMRVID Skills provides 58 battle-tested custom skills across Figma Design Agent and Claude Code. Automate audits, tokens, Modern Tailwind CSS based frontend pipelines (React / Astro / Vanilla), and WCAG a11y. Built for production, open for learning.",
+    "cluster_score": 20.90980690734565,
+    "cluster_excerpt": "The MCP that proves your AI's integration fixes work — Your agent's integration fix passes CI. The data is still wrong. FetchSandbox MCP reproduces the real failure on your code, fixes it, and proves the fix held. A receipt, not a vibe. 70+ API sandboxes. One config block in Cursor or Claude Code.",
     "excerpt_status": "partial"
   },
   {
-    "cluster_id": "63bc54cf4ef97ee03869ad562f6b260d145a6d1ae6136201c974dfd18c2b09a4",
-    "title": "Mustel",
-    "url": "https://www.producthunt.com/products/mustel",
+    "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
+    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+    "url": "https://twitter.com/argofowl/status/2091150597374537729",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 18.83682545808126,
+    "cluster_excerpt": "update: it's server-side, not the app\n\nanthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone\n\nprobably an a/b test, so not everyone will see it\n\nif \"high\" feels like \"low\" for you,",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
+    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 4.0856244848773065,
+    "cluster_excerpt": "Wiz Red Agent finds its way into Snowflake's internal Jira through a flaw in a GitHub Copilot–Assisted PR.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160",
+    "title": "Pawvis",
+    "url": "https://www.producthunt.com/products/pawvis",
     "source": "producthunt",
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 0.045194854117139145,
-    "cluster_excerpt": "Non-AI static analysis, built for AI coding agents — Mustel is a local-first static analysis layer built specifically for AI coding agents like Cursor, Claude Code, and Windsurf. It runs Ruff, Bandit, and pip-audit under the hood, then compresses the output into a single sub-200-char agent_prompt field agents can act on directly - no wasted turns re-reading files or parsing raw linter noise. Dev Mode scans in under 30ms via mtime+size caching; Audit Mode runs deeper checks in CI. Auto-registers as an MCP server across major editors.",
+    "cluster_score": 3.898329972242258,
+    "cluster_excerpt": "Control your Mac via camera & train gestures, local & FOSS — PawVis turns your Mac’s webcam into a hand-tracked mouse, no extra hardware required. Raise your hand and the cursor follows, dip a finger to click, and fold two fingers to scroll. Map gestures to custom actions like window management or any app/command from a series of common gestures or train your own. Everything runs 100% on-device, and PawVis is free and open source. Enable optional voice control for hands-free commands, or pass computer-use tasks to Codex or Claude Code.",
     "excerpt_status": "partial"
   },
   {
-    "cluster_id": "a599956986caea7d1036f29e164f913050c25cb0f92c979512edb980056a0731",
-    "title": "QuantDinger",
-    "url": "https://www.producthunt.com/products/quantdinger",
+    "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
+    "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+    "url": "https://github.com/proliferate-ai/proliferate",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 1.372087853073375,
+    "cluster_excerpt": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows. - proliferate-ai/proliferate",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e468e98ad96b7d13e0637a6e2af6da2fb81b87ab0ba7f4f77c02af0cf440caf7",
+    "title": "Why Target Common Lisp for Code Generation?",
+    "url": "http://funcall.blogspot.com/2026/08/why-vibe-code-in-lisp.html",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 1.146227705397077,
+    "cluster_excerpt": "A blog about computers, functional languages, Lisp, and Scheme.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc",
+    "title": "Coding Agents killed my identity. How do you feel?",
+    "url": "https://news.ycombinator.com/item?id=49389408",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.8837320288118801,
+    "cluster_excerpt": "Programming is like a game of chess for me: winning (i.e. delivering a product) is important, but only if I played this game myself. I don't enjoy winning if my opponent disconnected. I don't enjoy beating people who don't know how to move pieces. I don't enjoy winning with an engine, and coding agents are basically \"winning with a chess engine\". I started to use AI for coding a long time ago, when copilot was first introduced. At first, I was happy: \"wow, this can write boring boilerplate and unit tests\". Time went by, agents got better, time spent writing code myself went down. Half a year ago I suddenly realized I hadn't written any code for over a month, and I am a full-time software dev without any managing work. Not only did I stop writing code, but agents also became pretty good at proposing plans and architectures, and I was mostly providing missing context and technical details of our infrastructure. One day the realization hit hard. Coding agents removed everything I loved, a",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6",
+    "title": "Slack Code",
+    "url": "https://www.producthunt.com/products/slack",
     "source": "producthunt",
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 0.0,
-    "cluster_excerpt": "Self-hosted AI quant OS for research, backtests & trading — QuantDinger v5.0.1 is an open-source, self-hosted AI quant operating system. Research markets with multiple LLMs, turn ideas into auditable Python strategies, run deterministic backtests, then move safely from paper to live execution across crypto, stocks and forex. Connect Cursor, Claude Code or Codex through 25 scoped MCP tools. Your strategies, credentials and trading data stay on your infrastructure. Already trusted by 10,000+ GitHub stars.",
+    "cluster_score": 0.7272976315598487,
+    "cluster_excerpt": "Turn coding with AI into a team sport — Slack Code turns coding with AI from a solo session into a team sport. Mention a coding agent and Slack creates a dedicated code channel where teammates can plan together, watch the agent work, review code diffs, test live previews, give feedback, and approve what ships. Bring Claude, Devin, GitHub Copilot, ChatGPT, Vercel agents, and your team into the same place—with all the context already in Slack.",
     "excerpt_status": "partial"
   },
   {
-    "cluster_id": "0dde1c09131bec3dde413cb7f732aa1b648a600f2802f69e8fd5f115068e90e1",
-    "title": "Basalt",
-    "url": "https://www.producthunt.com/products/basalt-3",
+    "cluster_id": "fe5160c6648cfa21283d553dbdd6e4067f192a006747a0b41b832d54d1c60cd1",
+    "title": "Meteorra AI — Live Scoring for Youtubers",
+    "url": "https://www.producthunt.com/products/meteorra-ai",
     "source": "producthunt",
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 0.0,
-    "cluster_excerpt": "Basalt is an AI copilot for system architecture. — Basalt is an AI copilot for system architecture. Describe your stack in plain English — cloud, hybrid, or industrial — and get a clean diagram in seconds. And where most tools stop at the cloud, Basalt goes deeper: first-class OT/ICS, with compliance checks built in.",
+    "cluster_score": 0.3636488157799244,
+    "cluster_excerpt": "Write, score, and publish YouTube content with confidence — Most creators publish and hope. Meteorra AI changes that. Creator Copilot scores your title, description and topic alignment in real time — as you type. Every edit updates your score instantly. By the time you're done writing, you know exactly how ready your video is. No more guessing. No more publishing weak content by accident. Write, score, and publish with confidence. Free to try — no signup needed.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27",
+    "title": "Show HN: Hands-Rust MCP/CLI that sees the Windows desktop and clicks real Chrome",
+    "url": "https://news.ycombinator.com/item?id=49405405",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.2669545689035247,
+    "cluster_excerpt": "I built Hands because I wanted a coding agent to use this Windows PC and a real Chrome profile the way I do: look at the screen, move the real mouse, type, click , without turning Chrome into an automation browser.<p>It is a Rust MCP&#x2F;CLI. A harness (Grok, Codex, Claude Code, OpenCode, etc.) calls tools like observe, click, type, scroll. Observe is a screenshot path plus a small element list (UIA + optional Chrome DOM ids). Click is OS SendInput on a Bézier path, not a Chrome DevTools click.<p>There is no Playwright, no Puppeteer, no remote debugging port. Daily Chrome is launched with no extra flags, or attached if it’s already open. Sites that key on CDP&#x2F;automation flags mostly don’t see that. They can still see injected input (LLMHF_INJECTED).<p>A tiny unpacked Chrome extension can fuse page structure (chr: ids, listing cards) so the model isn’t guessing from pixels. Sideload is manual. Fusion dies if the service worker goes inactive; reload the card.<p>What it is good for:",
     "excerpt_status": "partial"
   }
 ]
