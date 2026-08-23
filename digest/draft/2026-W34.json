@@ -1,5 +1,5 @@
 {
-  "intro": "A broader pull this week thanks to a filter fix — GitHub and Hacker News finally show up alongside Product Hunt, and the result reads less like a product showcase and more like a status report on what happens once agents get real autonomy. A Copilot-assisted PR became the entry point for an actual compromise at Snowflake. Claude Code got a silent server-side change to how hard it tries, no client update required. And two tools showed up on opposite ends of the accountability spectrum: one puts a team review gate in front of what an agent ships, another quietly defeats the automation-detection your security tooling probably assumes still works. Progress, mostly — read the fine print.",
+  "intro": "A broader pull this week thanks to a filter fix — GitHub and Hacker News finally show up alongside Product Hunt, and the result reads less like a product showcase and more like a status report on what happens once agents get real autonomy. A Copilot-assisted PR became the entry point for an actual compromise at Snowflake. Claude Code got a silent server-side change to how hard it tries, no client update required. And a run of tools showed up on opposite ends of the accountability spectrum: one puts a team review gate in front of what an agent ships, another quietly defeats the automation-detection your security tooling probably assumes still works, and a third — a free, on-device Mac gesture tool — quietly adds Claude Code and Codex as valid hands on the keyboard too. Progress, mostly — read the fine print.",
   "items": [
     {
       "cluster_id": "57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459",
@@ -165,6 +165,31 @@
       ],
       "hook": "Lets an agent click and type on a real desktop convincingly enough to dodge most automation detection.",
       "category": "notable"
+    },
+    {
+      "cluster_id": "9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160",
+      "title": "Pawvis",
+      "url": "https://www.producthunt.com/products/pawvis",
+      "franchise": "weekly",
+      "note": "PawVis turns a Mac's webcam into a hand-tracked mouse and gesture controller, running entirely on-device and shipping free and open source — the same \"nothing leaves the machine\" architecture this list keeps flagging as the practical answer to data-governance objections about AI tooling. It's mostly a hands-free input/accessibility tool, but one of its listed use cases is handing computer-use tasks directly to Codex or Claude Code, which adds another local automation surface worth knowing about alongside this week's browser-driving Hands entry for anyone auditing what can now operate a workstation without a human directly at the keyboard.",
+      "claims": [
+        {
+          "text": "PawVis turns a Mac's webcam into a hand-tracked mouse, requiring no extra hardware",
+          "supported_by": "PawVis turns your Mac’s webcam into a hand-tracked mouse, no extra hardware required."
+        },
+        {
+          "text": "It runs 100% on-device and is free and open source",
+          "supported_by": "Everything runs 100% on-device, and PawVis is free and open source."
+        },
+        {
+          "text": "It can pass computer-use tasks to Codex or Claude Code",
+          "supported_by": "pass computer-use tasks to Codex or Claude Code"
+        }
+      ],
+      "approved": true,
+      "approved_reason": "URL check flagged HTTP 403 with a Cloudflare bot-protection challenge (same producthunt.com pattern as FetchSandbox/Slack Code). Verified by hand in a real browser 2026-08-23: page title 'Pawvis: Control your Mac via camera & train gestures, local & FOSS | Product Hunt' confirms the real, live product matching the excerpt.",
+      "hook": "A free, fully on-device Mac gesture-control tool that can also hand off computer-use tasks to Codex or Claude Code.",
+      "category": "new_product"
     }
   ]
 }
