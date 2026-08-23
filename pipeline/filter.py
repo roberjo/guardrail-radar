@@ -26,12 +26,24 @@ def _text(item: dict) -> str:
     return f"{item.get('title', '')} {item.get('excerpt', '')}".lower()
 
 
-def _velocity_threshold(items: list[dict]) -> float:
-    """Top-decile velocity_score across the week's items (§11)."""
+def _velocity_threshold(items: list[dict], percentile: float = 0.25) -> float:
+    """velocity_score cutoff for the top `percentile` fraction of the week's items (§11).
+
+    Was a fixed top-decile (0.1) gating a 2+-core-terms bypass. Found live,
+    against a real 345-item single-day pull (see CHANGELOG.md): the
+    core+context AND-requirement below is a poor fit for how HN/GitHub
+    titles are actually phrased — 49/111 HN items mentioned an AI-coding
+    term, 0 also mentioned a fintech/compliance term in the same
+    title+excerpt text, so literally nothing outside Product Hunt could
+    ever pass. Loosened to top-quartile (0.25) so a single core-term hit
+    with real engagement is enough on its own — the human curator in
+    draft-digest still decides what actually ships, so a broader ranked
+    pool here is a curation-material problem, not a hallucination risk.
+    """
     scores = sorted((it.get("velocity_score", 0) for it in items), reverse=True)
     if not scores:
         return float("inf")
-    cutoff_index = max(0, int(len(scores) * 0.1) - 1)
+    cutoff_index = max(0, int(len(scores) * percentile) - 1)
     return scores[cutoff_index]
 
 
@@ -44,7 +56,7 @@ def passes_filter(
 
     if core_hits and context_hits:
         return True
-    return bool(len(core_hits) >= 2 and item.get("velocity_score", 0) >= velocity_threshold)
+    return bool(core_hits and item.get("velocity_score", 0) >= velocity_threshold)
 
 
 def filter_and_rank(items: list[dict]) -> list[dict]:

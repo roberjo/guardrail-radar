@@ -1,9 +1,12 @@
 # Relevance filtering term sets — see docs/technical-spec.md §11.
 #
 # An item passes pipeline/filter.py if it matches at least one term from
-# EACH set below, OR matches 2+ core_terms with top-decile velocity_score
-# (a very hot pure-AI-dev story gets through even without an explicit
-# fintech/regulated mention).
+# EACH set below, OR matches 1+ core_terms with top-quartile velocity_score
+# (a well-engaged pure-AI-dev story gets through even without an explicit
+# fintech/regulated mention — see 2026-08-23 CHANGELOG.md entry: real data
+# showed the AND-requirement structurally excludes HN/GitHub, since their
+# titles almost never spell out the regulated-industry angle even when
+# it's editorially relevant).
 #
 # Tuned quarterly against real reply/click data — see the tune-scoring
 # skill (.claude/skills/tune-scoring) and docs/technical-spec.md §10, §19.

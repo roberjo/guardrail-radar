@@ -2,7 +2,7 @@
 
 from datetime import datetime, timezone
 
-from pipeline.filter import filter_and_rank, passes_filter
+from pipeline.filter import _velocity_threshold, filter_and_rank, passes_filter
 from pipeline.score import score_items
 
 CORE = ["copilot", "claude code", "cursor"]
@@ -21,9 +21,12 @@ def test_fails_with_only_core_terms_and_low_velocity():
     assert passes_filter(item, CORE, CONTEXT, velocity_threshold=1.0) is False
 
 
-def test_passes_with_two_core_terms_and_high_velocity():
+def test_passes_with_one_core_term_and_high_velocity():
+    # Loosened from a 2-core-terms requirement after real data showed the
+    # AND-with-context rule passed zero HN/GitHub items — see
+    # CHANGELOG.md. A single core term plus real engagement is now enough.
     item = {
-        "title": "Copilot and Cursor both add the same feature this week",
+        "title": "Copilot gets a new autocomplete mode",
         "excerpt": "",
         "velocity_score": 5.0,
     }
@@ -45,6 +48,12 @@ def test_matches_terms_in_excerpt_not_just_title():
     assert passes_filter(item, CORE, CONTEXT, velocity_threshold=999) is False
     item["excerpt"] += " using claude code"
     assert passes_filter(item, CORE, CONTEXT, velocity_threshold=999) is True
+
+
+def test_velocity_threshold_defaults_to_top_quartile():
+    items = [{"velocity_score": v} for v in [10, 8, 6, 4, 2, 0, 0, 0]]
+    # top 25% of 8 items = 2 items -> cutoff is the 2nd-highest score
+    assert _velocity_threshold(items) == 8
 
 
 def test_filter_and_rank_picks_best_scoring_item_per_cluster(monkeypatch):

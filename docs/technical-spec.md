@@ -222,7 +222,7 @@ Scoring weights (the constants above) are tuned by hand, quarterly, against real
 ## 11. Relevance filtering (`pipeline/filter.py`)
 
 - `config/keywords.yml` defines two term sets: `core_terms` (AI-assisted dev: "copilot", "claude code", "cursor", "llm coding", "ai pair programming", "code generation") and `context_terms` (regulated/enterprise: "compliance", "fintech", "banking", "audit", "data governance", "vendor risk", "sox", "air-gapped", "on-prem llm").
-- An item passes the filter if it matches **at least one term from each set** OR matches 2+ terms from `core_terms` with high engagement (top-decile velocity_score) — this lets a very hot pure-AI-dev story through even without an explicit fintech mention, since compliance-minded readers still want to know about it.
+- An item passes the filter if it matches **at least one term from each set** OR matches 1+ terms from `core_terms` with high engagement (top-quartile velocity_score) — this lets a well-engaged pure-AI-dev story through even without an explicit fintech mention, since compliance-minded readers still want to know about it. Loosened from an original top-decile/2+-terms bypass after real data showed the AND-requirement passed zero HN or GitHub items in a 345-item single-day pull — regulated-industry relevance is rarely spelled out explicitly in a terse title even when the story is a good editorial fit, and the human curator in `draft-digest` still decides what actually ships, so a broader ranked pool here only affects curation material, not what readers see.
 - Keep this rules-based for now (explicitly not an ML/embedding step) — no paid API dependency, fully deterministic, easy to tune by editing YAML.
 
 ## 12. Review packet & drafting handoff

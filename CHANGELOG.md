@@ -6,6 +6,35 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — 2026-08-23: loosened the relevance filter's AND-requirement
+- User asked why nothing outside Product Hunt was ever clearing the
+  relevance bar. Investigated against the real, current day's pull
+  (345 items: 50 GitHub, 111 HN, 5 Lobsters, 179 Product Hunt): 49/111 HN
+  items mentioned a `core_terms` AI-coding tool (Copilot, Cursor, Claude
+  Code, ...) but **zero** also mentioned a `context_terms` fintech/
+  compliance word in the same title+excerpt text — same for GitHub (5
+  core hits, 9 context hits, 0 overlap). The `core AND context` rule is a
+  poor fit for how HN/GitHub titles are actually phrased: they're terse
+  and rarely spell out the regulated-industry angle explicitly even when
+  the story is a genuinely good fit (e.g. a Copilot CVE, or a self-hosted
+  AI trading OS that keeps credentials off a vendor's cloud). The
+  existing "hot story" bypass (2+ core terms, top-decile velocity) didn't
+  help either — HN's engagement metric runs orders of magnitude cooler
+  than Product Hunt's vote counts on a given day, so the 4 HN items that
+  did hit 2+ core terms had velocity scores of 0.001–0.067 against a 4.79
+  top-decile threshold.
+- `pipeline/filter.py`: `passes_filter` now accepts a single `core_terms`
+  hit (was 2+) gated by `_velocity_threshold`'s default percentile, which
+  moved from top-decile (0.1) to top-quartile (0.25) — `core AND context`
+  is still an automatic, velocity-independent pass. Simulated against the
+  real pull above before committing: old rule passed 4 items (all
+  Product Hunt); new rule passes 25 (4 GitHub, 15 HN, 6 Product Hunt).
+  Recorded here per `config/keywords.yml`'s own instruction not to
+  hand-edit outside a quarterly review without a reason on file. This is
+  a filter/ranking change, not an editorial one — the human curator in
+  `draft-digest` still decides what actually ships, so a broader ranked
+  pool only changes what material is available to choose from.
+
 ### Added — issue intro (connective narrative at the top of each issue)
 - Real user feedback on the first live issue: three isolated per-item
   summaries with no frame or synthesis read as a bare link list, not a
