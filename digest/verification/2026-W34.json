@@ -48,5 +48,13 @@
     "reasons": [
       "url unverifiable: HTTP 429 (rate-limited, not confirmed dead) — confirm by hand"
     ]
+  },
+  {
+    "cluster_id": "9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160",
+    "title": "Pawvis",
+    "status": "flagged",
+    "reasons": [
+      "url unverifiable: HTTP 403 (bot-protection challenge, not confirmed dead) — confirm by hand"
+    ]
   }
 ]
