@@ -51,6 +51,20 @@ standards because only one of them is generated:
 
 ## Formats
 
+- **Subject line** — one sentence, every issue, required (unlike `intro`).
+  It's the copy that has to work before anything else gets read, so give
+  it its own pass rather than truncating `intro`'s opening clause.
+  Specific beats clever, same as everywhere else. Not part of the issue
+  body — it's the text a human copies into Beehiiv's subject field during
+  the manual send step.
+- **Item headline** — the hand-written `hook`, not the item's raw source
+  title. The title still renders, as a small caption under the headline,
+  but the hook is what a reader (and the table of contents) sees first.
+  Keep the source title itself clean — strip anything that isn't part of
+  the actual title (a platform prefix like "Show HN:" is stripped
+  automatically at render time; a scrape artifact like a missing space
+  isn't, and needs a human's light edit — `title` is the one field you're
+  expected to touch).
 - **Issue intro** — a short connective narrative at the top of the issue,
   every issue where one earns its place. Ties the included items together
   (a shared theme, a pattern across sources) or, on a thin week, says so
@@ -88,7 +102,11 @@ standards because only one of them is generated:
   newsletters use — the lead slot goes to whatever's most interesting
   that day, saving routine product launches for the end rather than
   opening with them. The item order in the issue body follows this same
-  sequence, not just the table of contents.
+  sequence, not just the table of contents. This reading order is
+  separate from which category gets the hottest (reddest) color in the
+  gradient — `breaking` always owns that end, regardless of where it
+  falls in reading order, since red reads as "incident" to this audience
+  specifically.
 
 ## The one rule that matters most
 

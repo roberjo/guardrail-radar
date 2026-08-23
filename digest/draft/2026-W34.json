@@ -1,5 +1,6 @@
 {
-  "intro": "A broader pull this week thanks to a filter fix — GitHub and Hacker News finally show up alongside Product Hunt, and the result reads less like a product showcase and more like a status report on what happens once agents get real autonomy. A Copilot-assisted PR became the entry point for an actual compromise at Snowflake. Claude Code got a silent server-side change to how hard it tries, no client update required. And a run of tools showed up on opposite ends of the accountability spectrum: one puts a team review gate in front of what an agent ships, another quietly defeats the automation-detection your security tooling probably assumes still works, and a third — a free, on-device Mac gesture tool — quietly adds Claude Code and Codex as valid hands on the keyboard too. Progress, mostly — read the fine print.",
+  "subject": "A Copilot PR became a real breach. Claude Code might be throttled too.",
+  "intro": "A Copilot-assisted PR became the entry point for a real compromise at Snowflake, and Claude Code quietly got throttled server-side with no client update — neither is a variable you control. The rest of the week splits between tools that add a human review gate before an agent ships and tools that quietly hand it more of the keyboard — read the fine print either way.",
   "items": [
     {
       "cluster_id": "57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459",
@@ -78,7 +79,7 @@
     },
     {
       "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
-      "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+      "title": "Show HN: Proliferate — open-source, self-hostable Codex for any coding agent",
       "url": "https://github.com/proliferate-ai/proliferate",
       "franchise": "weekly",
       "note": "Proliferate is an open-source IDE layer for running Claude Code, Codex, OpenCode, and other coding agents in parallel, locally or in the cloud, with reusable workflows. Running it locally is the operative option for this audience: keeping the orchestration layer on infrastructure you control, rather than a vendor's, is the same architectural answer this list keeps seeing to the \"can we actually adopt this\" question — not a compliance feature bolted on, but a deployment model that avoids the question in the first place.",

@@ -14,7 +14,7 @@ import re
 import pytest
 
 from pipeline.render import (
-    _issue_stats_line,
+    _clean_display_title,
     _read_time_minutes,
     render_final_digest,
     render_review_packet,
@@ -47,13 +47,15 @@ def _write(path: str, data) -> None:
         json.dump(data, f)
 
 
-def _write_draft(path: str, items: list, intro: str = "") -> None:
-    """digest/draft/<week>.json is {"intro": ..., "items": [...]} — see
-    docs/technical-spec.md §12.2. intro is optional connective narrative
-    for the whole issue, added after real user feedback that isolated
-    per-item summaries with no frame read as a link list, not a newsletter.
+def _write_draft(path: str, items: list, intro: str = "", subject: str = "A test subject line") -> None:
+    """digest/draft/<week>.json is {"subject": ..., "intro": ..., "items": [...]}
+    — see docs/technical-spec.md §12.2. intro is optional connective
+    narrative for the whole issue, added after real user feedback that
+    isolated per-item summaries with no frame read as a link list, not a
+    newsletter. subject is the Beehiiv subject line, required in practice
+    but not enforced by the pipeline (defaulted here like intro).
     """
-    _write(path, {"intro": intro, "items": items})
+    _write(path, {"subject": subject, "intro": intro, "items": items})
 
 
 def _ranked_cluster(cluster_id="c1", title="A real story", excerpt="a real excerpt", status="ok"):
@@ -172,15 +174,16 @@ def test_final_digest_escapes_intro_html(project):
     assert "<script>alert(3)</script>" not in site_content
 
 
-def test_final_digest_renders_hook_before_excerpt_and_note(project):
-    # Added after real user feedback: readers need a one-sentence,
-    # plain-English reason an item is worth their time, front-running the
-    # item, before the longer skeptical note — see docs/technical-spec.md
-    # §12.2.
-    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+def test_final_digest_renders_hook_as_headline_title_as_caption(project):
+    # A design-critique pass found every item leading with its raw source
+    # title (jargon-dense, often carrying platform metadata) while the
+    # hand-written hook — the actual reason to care — rendered as a
+    # subordinate line underneath. hook is now the headline itself; the
+    # cleaned title becomes a small secondary caption below it.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story")])
     _write_draft(
         "digest/draft/2026-W01.json",
-        [_draft_entry(hook="Proves the agent fix actually held, not just that it passed CI.")],
+        [_draft_entry(title="A real story", hook="Proves the agent fix actually held, not just that it passed CI.")],
     )
     digest_path, site_path = render_final_digest("2026-W01")
     with open(digest_path, encoding="utf-8") as f:
@@ -189,20 +192,56 @@ def test_final_digest_renders_hook_before_excerpt_and_note(project):
         site_content = f.read()
 
     hook_text = "Proves the agent fix actually held, not just that it passed CI."
-    assert hook_text in digest_content
+    # digest markdown: the H3 heading is the hook, not the title; the title
+    # appears afterward as a small italic caption.
+    assert f"### [{hook_text}]" in digest_content
+    assert digest_content.index(hook_text) < digest_content.index("A real story")
     assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
-    assert 'class="item-hook"' in site_content
-    assert hook_text in site_content
+    # site: the <h4> headline is the hook; the title is a secondary caption.
+    assert f"<h4><a href=\"https://example.com/story\">{hook_text}</a></h4>" in site_content
+    assert 'class="item-source-title">A real story</p>' in site_content
     assert site_content.index(hook_text) < site_content.index("a real excerpt")
 
 
-def test_final_digest_omits_hook_block_when_not_provided(project):
-    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write_draft("digest/draft/2026-W01.json", [_draft_entry(hook="")])
-    _, site_path = render_final_digest("2026-W01")
+def test_final_digest_falls_back_to_title_as_headline_when_no_hook(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(title="A real story", hook="")])
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
-    assert "item-hook" not in site_content
+    assert "### [A real story]" in digest_content
+    assert "<h4><a href=\"https://example.com/story\">A real story</a></h4>" in site_content
+    # No hook means no secondary caption either — the title is already the
+    # headline, so repeating it as a caption underneath would be redundant.
+    assert "item-source-title" not in site_content
+
+
+def test_final_digest_strips_show_hn_prefix_for_display(project):
+    # _clean_display_title strips HN's own submission-type metadata
+    # ("Show HN:"/"Ask HN:"/"Tell HN:") — it's not part of the author's
+    # title, and left in it reads as "this was scraped," not curated.
+    raw_title = "Show HN: Proliferate - open source coding agent IDE"
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(title=raw_title)])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(title=raw_title, hook="Run every agent from one IDE.")])
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "Show HN:" not in digest_content
+    assert "Show HN:" not in site_content
+    assert "Proliferate - open source coding agent IDE" in digest_content
+    assert "Proliferate - open source coding agent IDE" in site_content
+
+
+def test_clean_display_title_strips_hn_prefixes():
+    assert _clean_display_title("Show HN: A real tool") == "A real tool"
+    assert _clean_display_title("Ask HN: What do you use?") == "What do you use?"
+    assert _clean_display_title("Tell HN: I built a thing") == "I built a thing"
+    assert _clean_display_title("A plain title, no prefix") == "A plain title, no prefix"
+    assert _clean_display_title("") == ""
 
 
 def test_final_digest_escapes_hook_html(project):
@@ -234,9 +273,12 @@ def test_final_digest_toc_groups_by_category_in_fixed_order(project):
     _write_draft(
         "digest/draft/2026-W01.json",
         [
-            _draft_entry(cluster_id="c1", title="A notable one", category="notable"),
-            _draft_entry(cluster_id="c2", title="A breaking one", category="breaking"),
-            _draft_entry(cluster_id="c3", title="A new product one", category="new_product"),
+            # hook="" here so the TOC (which prefers hook, falling back to
+            # the cleaned title) links with each item's distinct title,
+            # not a shared default hook — see _draft_entry's default hook.
+            _draft_entry(cluster_id="c1", title="A notable one", category="notable", hook=""),
+            _draft_entry(cluster_id="c2", title="A breaking one", category="breaking", hook=""),
+            _draft_entry(cluster_id="c3", title="A new product one", category="new_product", hook=""),
         ],
     )
     digest_path, site_path = render_final_digest("2026-W01")
@@ -332,7 +374,9 @@ def test_final_digest_shows_category_badge_and_read_time(project):
 
     assert "`Notable` ·" in digest_content
     assert "min read" in digest_content
-    assert 'class="category-badge"><span class="dot"></span>Notable</span>' in site_content
+    assert 'class="category-badge">' in site_content
+    assert 'category-icon' in site_content
+    assert "Notable</span>" in site_content
     assert 'class="read-time">' in site_content and "min read" in site_content
 
 
@@ -393,11 +437,44 @@ def test_final_digest_each_category_renders_a_hot_hue_style(project):
         with open(site_path, encoding="utf-8") as f:
             site_content = f.read()
         assert 'class="category-badge">' in site_content
-        assert 'class="item-hook">' in site_content
+        assert '<h4><a href=' in site_content  # hook renders as the headline
         match = re.search(r'--hot-hue:(\d+)', site_content)
         assert match, f"no --hot-hue found for category {category!r}"
         seen_hues.add(int(match.group(1)))
     assert len(seen_hues) == 4  # each category lands in a distinct hue band
+
+
+def test_hue_band_order_gives_breaking_the_hottest_hue_despite_reading_order(project):
+    # A design-critique pass found CATEGORY_ORDER's reading-order rank
+    # (notable, breaking, field_notes, new_product — notable reads first)
+    # had been silently reused to also drive hue-band assignment, so
+    # `notable` (a curiosity item) owned the alarm-red end of the gradient
+    # while `breaking` (an actual incident) rendered in a calmer amber.
+    # HUE_BAND_ORDER decouples them: breaking must own the hottest hue
+    # regardless of where it falls in reading order.
+    _write(
+        "data/ranked/2026-W01.json",
+        [_ranked_cluster(cluster_id="c1", title="A notable one"), _ranked_cluster(cluster_id="c2", title="A breaking one")],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [
+            _draft_entry(cluster_id="c1", title="A notable one", category="notable", hook=""),
+            _draft_entry(cluster_id="c2", title="A breaking one", category="breaking", hook=""),
+        ],
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    def item_hue(cid: str) -> int:
+        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', site_content)
+        assert match, f"no --hot-hue found on item {cid!r}"
+        return int(match.group(1))
+
+    # notable reads first (per CATEGORY_ORDER) but breaking must render hotter.
+    assert site_content.index("A notable one") < site_content.index("A breaking one")
+    assert item_hue("c2") < item_hue("c1")
 
 
 def test_final_digest_toc_group_shows_item_count(project):
@@ -439,22 +516,11 @@ def test_final_digest_markdown_bolds_breaking_but_not_other_categories(project):
     assert "**NOTABLE**" not in notable_content
 
 
-def test_issue_stats_line_counts_items_sources_and_categories():
-    draft = [
-        {"cluster_id": "c1", "category": "breaking"},
-        {"cluster_id": "c2", "category": "breaking"},
-        {"cluster_id": "c3", "category": "new_product"},
-    ]
-    ranked_by_cluster = {
-        "c1": {"cluster_sources": ["hn"]},
-        "c2": {"cluster_sources": ["github"]},
-        "c3": {"cluster_sources": ["hn", "producthunt"]},
-    }
-    line = _issue_stats_line(draft, ranked_by_cluster)
-    assert line == "In this issue: 3 items across 3 sources — 2 breaking, 1 new product."
-
-
-def test_final_digest_shows_issue_stats_line(project):
+def test_final_digest_omits_redundant_stats_line(project):
+    # The "In this issue: N items across N sources — ..." line was cut
+    # after a design-critique pass found it repeated, almost verbatim,
+    # what the table of contents already conveys better, one scroll below
+    # it. Regression guard against reintroducing it.
     _write(
         "data/ranked/2026-W01.json",
         [_ranked_cluster(cluster_id="c1"), _ranked_cluster(cluster_id="c2", title="Second story")],
@@ -468,9 +534,37 @@ def test_final_digest_shows_issue_stats_line(project):
         digest_content = f.read()
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
-    assert "In this issue: 2 items across 1 source — 1 notable, 1 breaking." in digest_content
-    assert 'class="issue-stats"' in site_content
-    assert "In this issue: 2 items across 1 source" in site_content
+    assert "In this issue:" not in digest_content
+    assert "issue-stats" not in site_content
+    assert "In this issue:" not in site_content
+
+
+def test_final_digest_renders_subject_line_in_markdown_only(project):
+    # subject is the Beehiiv subject-field text — required practice, not
+    # part of the issue body. Surfaced as a clearly-labeled line at the top
+    # of digest/<iso-week>.md for the manual paste-and-send step; never
+    # rendered on site/index.html (email-only concept).
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry()], subject="A real, specific subject line"
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "A real, specific subject line" in digest_content
+    assert digest_content.index("A real, specific subject line") < digest_content.index("# Guardrail Radar")
+    assert "A real, specific subject line" not in site_content
+
+
+def test_final_digest_omits_subject_line_when_not_provided(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()], subject="")
+    digest_path, _ = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    assert "Subject line" not in digest_content
 
 
 def test_final_digest_excerpt_collapsed_on_site_not_in_markdown(project):

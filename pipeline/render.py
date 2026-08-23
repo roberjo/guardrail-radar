@@ -42,6 +42,18 @@ SITE_ARCHIVE_MARKER = (
 # urgency. new_product goes last on the user's own read that routine
 # launches are the least engaging category most weeks.
 CATEGORY_ORDER = ["notable", "breaking", "field_notes", "new_product"]
+
+# Separate from CATEGORY_ORDER above: which category owns the hottest
+# (reddest) end of the color gradient. A design-critique pass found these
+# two concerns had been silently coupled — reusing CATEGORY_ORDER's reading-
+# order rank to also drive hue meant `notable` (a curiosity item) rendered
+# as the alarm-red end of the gradient while `breaking` (an actual security
+# incident) sat in a calmer amber. For this audience specifically, red
+# reads as "incident" — so `breaking` owns that end of the gradient
+# regardless of where it falls in reading order. The engagement-first
+# reading order above is unchanged; only which color each category gets is
+# decoupled from it.
+HUE_BAND_ORDER = ["breaking", "notable", "field_notes", "new_product"]
 CATEGORY_LABELS = {
     "breaking": "Breaking News",
     "new_product": "New Products & Tools",
@@ -55,6 +67,35 @@ CATEGORY_BADGE_LABELS = {
     "new_product": "New Product",
     "notable": "Notable",
     "field_notes": "Field Notes",
+}
+
+# One small inline glyph per category, added after a design-critique pass
+# flagged the page as pure text with no visual texture anywhere. Each is a
+# minimal 16x16 path using currentColor, so it inherits the item's own
+# --hot-hue automatically with no separate color wiring — same mechanism
+# the badge/border/dot already use. Kept intentionally tiny and simple
+# (site-only, not in the plain-text markdown digest).
+CATEGORY_ICON_SVG = {
+    "breaking": (
+        '<svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true">'
+        '<path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/>'
+        "</svg>"
+    ),
+    "notable": (
+        '<svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true">'
+        '<path fill="currentColor" d="M8 0l1.6 5.4L15 7l-5.4 1.6L8 14l-1.6-5.4L1 7l5.4-1.6L8 0Z"/>'
+        "</svg>"
+    ),
+    "field_notes": (
+        '<svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true">'
+        '<path fill="currentColor" d="M3 3h3.2c0 3-1 4.6-2.6 5.2L3 6.7V3Zm6.8 0H13c0 3-1 4.6-2.6 5.2L9.8 6.7V3Z"/>'
+        "</svg>"
+    ),
+    "new_product": (
+        '<svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true">'
+        '<path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/>'
+        "</svg>"
+    ),
 }
 
 WORDS_PER_MINUTE = 200
@@ -88,7 +129,7 @@ def _hotness_order(draft: list[dict], ranked_by_cluster: dict) -> list[tuple[dic
     color — they fall wherever their band naturally lands on the same
     gradient as everything else.
     """
-    category_rank = {c: i for i, c in enumerate(CATEGORY_ORDER)}
+    hue_band_rank = {c: i for i, c in enumerate(HUE_BAND_ORDER)}
     n_categories = len(CATEGORY_ORDER)
     band_width = (COOLEST_HUE - HOTTEST_HUE) / n_categories
 
@@ -107,7 +148,7 @@ def _hotness_order(draft: list[dict], ranked_by_cluster: dict) -> list[tuple[dic
             key=lambda e: ranked_by_cluster.get(e["cluster_id"], {}).get("cluster_score", 0),
             reverse=True,
         )
-        rank = category_rank[category]
+        rank = hue_band_rank[category]
         band_start = HOTTEST_HUE + band_width * rank
         group_size = len(items)
         for i, entry in enumerate(items):
@@ -120,7 +161,7 @@ def _hotness_order(draft: list[dict], ranked_by_cluster: dict) -> list[tuple[dic
     # Any category not in CATEGORY_ORDER (shouldn't happen with a valid
     # draft, but not verify.py-enforced — see draft-schema.md) sorts last,
     # coolest hue, rather than silently vanishing from the issue.
-    unknown = [e for e in draft if e.get("category", "new_product") not in category_rank]
+    unknown = [e for e in draft if e.get("category", "new_product") not in hue_band_rank]
     for entry in unknown:
         ordered.append((entry, COOLEST_HUE))
 
@@ -142,12 +183,38 @@ def _md_escape(text: str) -> str:
     return re.sub(r"([\\`*_\[\]])", r"\\\1", text or "")
 
 
+_SOURCE_POST_PREFIX_RE = re.compile(r"^(?:Show HN|Ask HN|Tell HN)\s*:\s*", re.IGNORECASE)
+
+
+def _clean_display_title(title: str) -> str:
+    """Strips source-platform metadata prefixes for display.
+
+    A design-critique pass flagged that item titles were rendered verbatim
+    from the source (e.g. "Show HN: ..."), which reads as "this was
+    scraped" rather than "our editors picked this." `Show HN:`/`Ask HN:`/
+    `Tell HN:` are HN's own submission-type metadata, not part of the
+    author's actual title, so they're stripped for display only — the
+    underlying `entry["title"]` used for citation matching is untouched.
+    """
+    return _SOURCE_POST_PREFIX_RE.sub("", title or "").strip()
+
+
 def _is_http_url(url: str) -> bool:
     return bool(url) and urlsplit(url).scheme in ("http", "https")
 
 
-def _load_draft(draft_path: str) -> tuple[str, list[dict]]:
-    """Returns (intro, items). See digest-draft-schema §12.2.
+def _load_draft(draft_path: str) -> tuple[str, str, list[dict]]:
+    """Returns (subject, intro, items). See digest-draft-schema §12.2.
+
+    `subject` is the line that goes in the email platform's subject field —
+    added after a design-critique pass found no field anywhere in the
+    pipeline produced one, leaving it improvised at send time, disconnected
+    from drafting/verification. Not rendered into site/index.html (a
+    subject line is an email-only concept); surfaced at the top of
+    digest/<iso-week>.md instead, clearly labeled, so the human doing the
+    manual paste-and-send step (see docs/weekly-runbook.md) can copy it
+    straight into Beehiiv. Optional in code (older drafts won't have it)
+    but treated as required practice by the draft-digest skill.
 
     `intro` is a short connective narrative for the whole issue — dry wit,
     still professional (see docs/editorial-guidelines.md) — written once
@@ -158,45 +225,7 @@ def _load_draft(draft_path: str) -> tuple[str, list[dict]]:
     a forced-sounding intro.
     """
     data = read_json(draft_path)
-    return data.get("intro", ""), data.get("items", [])
-
-
-# (singular, plural) phrasing per category for _issue_stats_line below.
-_CATEGORY_STAT_WORDS = {
-    "breaking": ("breaking", "breaking"),
-    "new_product": ("new product", "new products"),
-    "notable": ("notable", "notable"),
-    "field_notes": ("field note", "field notes"),
-}
-
-
-def _issue_stats_line(draft: list[dict], ranked_by_cluster: dict) -> str:
-    if not draft:
-        return ""
-
-    sources: set[str] = set()
-    category_counts: dict[str, int] = {}
-    for entry in draft:
-        cluster = ranked_by_cluster.get(entry["cluster_id"], {})
-        item_sources = cluster.get("cluster_sources") or ([cluster["source"]] if cluster.get("source") else [])
-        sources.update(item_sources)
-        category = entry.get("category", "new_product")
-        category_counts[category] = category_counts.get(category, 0) + 1
-
-    parts = []
-    for category in CATEGORY_ORDER:
-        count = category_counts.get(category, 0)
-        if not count:
-            continue
-        singular, plural = _CATEGORY_STAT_WORDS[category]
-        parts.append(f"{count} {singular if count == 1 else plural}")
-
-    item_word = "item" if len(draft) == 1 else "items"
-    source_word = "source" if len(sources) == 1 else "sources"
-    summary = f"In this issue: {len(draft)} {item_word} across {len(sources)} {source_word}"
-    if parts:
-        summary += " — " + ", ".join(parts)
-    return summary + "."
+    return data.get("subject", ""), data.get("intro", ""), data.get("items", [])
 
 
 def render_review_packet(iso_week: str) -> str:
@@ -240,7 +269,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
     verification_path = os.path.join("digest", "verification", f"{iso_week}.json")
 
-    intro, draft = _load_draft(draft_path)
+    subject, intro, draft = _load_draft(draft_path)
     ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
 
     # Reorder items hottest-to-coldest before anything renders, so the
@@ -268,18 +297,26 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             "Fix the draft or drop the item — see docs/technical-spec.md §13."
         )
 
-    lines_md = [f"# Guardrail Radar — {iso_week}", ""]
+    lines_md = []
 
-    # "In this issue" line — item count, distinct source count, category
-    # breakdown. Entirely derived from data already loaded above; no new
-    # drafted field needed. See docs/technical-spec.md §14 (format audit).
-    stats_line = _issue_stats_line(draft, ranked_by_cluster)
-    stats_html = ""
-    if stats_line:
-        lines_md.append(stats_line)
+    # Subject line — the text that goes in Beehiiv's subject field, not
+    # part of the issue body. Rendered as its own clearly-labeled line at
+    # the very top of digest/<iso-week>.md, above the H1, so the human
+    # doing the manual paste-and-send step (docs/weekly-runbook.md) can
+    # copy it straight into the platform's subject field before pasting
+    # everything below into the body. Not rendered on site/index.html — a
+    # subject line is an email-only concept, not part of the public archive.
+    if subject:
+        lines_md.append(f"**Subject line (paste into Beehiiv, not part of the issue body):** {_md_escape(subject)}")
         lines_md.append("")
-        stats_html = f'<p class="issue-stats">{html.escape(stats_line)}</p>'
 
+    lines_md.append(f"# Guardrail Radar — {iso_week}")
+    lines_md.append("")
+
+    # The redundant "In this issue: N items across N sources — ..." stats
+    # line was cut after a design-critique pass found it repeated, almost
+    # verbatim, information the table of contents below already conveys
+    # better (with working links, right after it).
     intro_html = ""
     if intro:
         lines_md.append(intro)
@@ -294,7 +331,14 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     for entry in draft:
         category = entry.get("category", "new_product")
         title = entry.get("title") or ranked_by_cluster.get(entry["cluster_id"], {}).get("title", "(untitled)")
-        toc_groups.setdefault(category, []).append((title, entry["cluster_id"]))
+        # The TOC links with the same text used as each item's own headline
+        # below (hook first, cleaned title as fallback) — a design-critique
+        # pass found the page taught readers two different labels for the
+        # same item (a raw scraped title in the TOC, a hand-written hook in
+        # the body), and had the raw title doing the headline's job in both
+        # places even though the hook is the actually-written pitch.
+        toc_text = entry.get("hook") or _clean_display_title(title)
+        toc_groups.setdefault(category, []).append((toc_text, entry["cluster_id"]))
 
     toc_html_parts = []
     for category in CATEGORY_ORDER:
@@ -342,11 +386,23 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         category = entry.get("category", "new_product")
         hue = hue_by_cluster_id[entry["cluster_id"]]
         read_minutes = _read_time_minutes(hook, excerpt, note)
+        display_title = _clean_display_title(title)
 
+        # Headline hierarchy flip, per a design-critique pass: every item
+        # used to lead with its raw scraped source title (jargon-dense,
+        # often carrying platform metadata like "Show HN:") and demote the
+        # hand-written hook — the actual reason to care — to a bold line
+        # underneath. The hook now IS the headline; the cleaned source
+        # title becomes a small secondary caption, present only when a
+        # hook exists to be secondary to (older/hookless entries keep the
+        # title as the headline, unchanged).
+        headline_text = hook or display_title
         if url:
-            lines_md.append(f"### [{_md_escape(title)}]({url})")
+            lines_md.append(f"### [{_md_escape(headline_text)}]({url})")
         else:
-            lines_md.append(f"### {_md_escape(title)}")
+            lines_md.append(f"### {_md_escape(headline_text)}")
+        if hook:
+            lines_md.append(f"_{_md_escape(display_title)}_")
         if franchise != "weekly":
             lines_md.append(f"_{franchise.replace('_', ' ').title()}_")
         badge_label = CATEGORY_BADGE_LABELS.get(category, category)
@@ -358,19 +414,22 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"**{badge_label.upper()}** · {read_minutes} min read")
         else:
             lines_md.append(f"`{badge_label}` · {read_minutes} min read")
-        if hook:
-            lines_md.append(f"**{_md_escape(hook)}**")
-        if excerpt:
-            lines_md.append(f"> {_md_escape(excerpt)}")
         lines_md.append("")
         lines_md.append(note)
+        # Excerpt moved after the note, not between the hook and the note —
+        # a design-critique pass found the old placement broke the
+        # hook-to-note reading flow for what's supporting evidence, not the
+        # main copy.
+        if excerpt:
+            lines_md.append("")
+            lines_md.append(f"> {_md_escape(excerpt)}")
         if entry.get("primary_source_url"):
             lines_md.append(f"\nPrimary source: {_md_escape(entry['primary_source_url'])}")
         lines_md.append("")
 
         archive_items_html.append(
             _render_archive_item_html(
-                entry["cluster_id"], title, url, hook, excerpt, note, franchise, category, hue, read_minutes, entry
+                entry["cluster_id"], display_title, url, hook, excerpt, note, franchise, category, hue, read_minutes, entry
             )
         )
 
@@ -379,7 +438,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(digest_md)
 
-    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html, stats_html)
+    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html)
     return digest_path, site_path
 
 
@@ -396,66 +455,77 @@ def _render_archive_item_html(
     read_minutes: int,
     entry: dict,
 ) -> str:
-    """One item's full content for the site — title, hook, excerpt, note,
-    franchise label, primary source. Previously this rendered only a bare
-    linked title, dropping the actual commentary (the entire point of the
-    newsletter) from the one place the public site shows it — the full
-    text still went into digest/<week>.md, just never into site/index.html,
-    despite docs/technical-spec.md §14 saying the site gets "the same
-    content." Found by the user looking at the real deployed site.
+    """One item's full content for the site — headline, hook, badges, note,
+    excerpt, franchise label, primary source. Previously this rendered only
+    a bare linked title, dropping the actual commentary (the entire point
+    of the newsletter) from the one place the public site shows it — the
+    full text still went into digest/<week>.md, just never into
+    site/index.html, despite docs/technical-spec.md §14 saying the site
+    gets "the same content." Found by the user looking at the real
+    deployed site.
 
-    `hook` renders right after the title, ahead of the excerpt/note —
-    added after real user feedback that readers need a one-sentence,
-    plain-English reason an item is worth their time before the longer,
-    more skeptical note (see docs/technical-spec.md §12.2).
+    `title` here is already display-cleaned (source-platform prefixes like
+    "Show HN:" stripped — see _clean_display_title) by the caller.
+
+    Headline is `hook`, not `title` — a design-critique pass found every
+    item leading with its raw scraped source title (jargon-dense, often
+    carrying platform metadata) while the hand-written hook, the actual
+    reason to care, rendered as a subordinate line underneath. The hook is
+    now the <h4>; the cleaned title becomes a small secondary caption,
+    shown only when there's a hook for it to be secondary to (an entry with
+    no hook falls back to the title as its own headline, unchanged).
 
     The returned <li> carries a stable id="item-<cluster_id>" so the
     table-of-contents nav built in render_final_digest can link straight
     to it.
 
-    badge-row (franchise tag + category badge + read-time) and the
-    <details>-collapsed excerpt were added after a format audit against
-    comparable newsletters (TLDR, tl;dr sec, The Batch) — category is
-    meant to register before a reader parses the headline, and the
-    verbatim source excerpt is one click deeper rather than always-open
-    text, matching the audit's scanability recommendations. The excerpt
-    collapse is site-only: <details> can't be relied on to survive a
-    paste into Substack/Beehiiv, so digest/<week>.md keeps the excerpt
-    always visible.
+    badge-row (franchise tag + category badge + read-time) was added after
+    a format audit against comparable newsletters (TLDR, tl;dr sec, The
+    Batch) — category is meant to register before a reader parses the
+    headline. Each category badge also carries a small inline-SVG icon
+    (CATEGORY_ICON_SVG) — added after a design-critique pass found the page
+    was pure text with zero visual texture anywhere.
 
-    Color is now a continuous per-item gradient (red -> orange -> yellow ->
-    green), not 4 fixed category swatches — a follow-up to real feedback
-    that even 4 colors were too coarse: the user wants a "true gradient,"
-    with items ordered and colored hottest-to-coolest so the whole issue
-    visibly cools down top to bottom (see _hotness_order). `hue` (0-360,
-    computed there) drives every colored element here via the CSS custom
-    property --hot-hue, set once on the outer <li> and inherited by the
-    badge, dot, and hook's callout accent — one continuous system instead
-    of a category-keyed one.
+    The <details>-collapsed excerpt now renders *after* the note, not
+    between the hook and the note — a design-critique pass found the old
+    placement broke the hook-to-note reading flow for what's supporting
+    evidence, not the main copy. The collapse is site-only: <details> can't
+    be relied on to survive a paste into Beehiiv, so digest/<week>.md keeps
+    the excerpt always visible (also after the note, for the same reason).
+
+    Color is a continuous per-item gradient (red -> orange -> yellow ->
+    green), not fixed category swatches — see _hotness_order for how the
+    hue itself is computed, and HUE_BAND_ORDER (separate from CATEGORY_ORDER)
+    for which category owns which end of it. `hue` (0-360, computed there)
+    drives every colored element here via the CSS custom property
+    --hot-hue, set once on the outer <li> and inherited by the badge, dot,
+    icon, and headline color — one continuous system instead of a
+    category-keyed one.
     """
-    heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
+    headline_text = hook or title
+    heading = f'<a href="{html.escape(url)}">{html.escape(headline_text)}</a>' if url else html.escape(headline_text)
     parts = [f"<h4>{heading}</h4>"]
+    if hook:
+        parts.append(f'<p class="item-source-title">{html.escape(title)}</p>')
 
     badges = []
     if franchise and franchise != "weekly":
         label = html.escape(franchise.replace("_", " ").title())
         badges.append(f'<span class="franchise-tag">{label}</span>')
     category_label = html.escape(CATEGORY_BADGE_LABELS.get(category, category))
-    badges.append(f'<span class="category-badge"><span class="dot"></span>{category_label}</span>')
+    category_icon = CATEGORY_ICON_SVG.get(category, "")
+    badges.append(f'<span class="category-badge">{category_icon}{category_label}</span>')
     badges.append(f'<span class="read-time">{read_minutes} min read</span>')
     parts.append(f'<div class="badge-row">{"".join(badges)}</div>')
 
-    if hook:
-        parts.append(f'<p class="item-hook">{html.escape(hook)}</p>')
+    if note:
+        parts.append(f"<p>{html.escape(note)}</p>")
 
     if excerpt:
         parts.append(
             "<details><summary>Read the source excerpt</summary>"
             f"<blockquote>{html.escape(excerpt)}</blockquote></details>"
         )
-
-    if note:
-        parts.append(f"<p>{html.escape(note)}</p>")
 
     primary = entry.get("primary_source_url")
     if primary and _is_http_url(primary):
@@ -473,7 +543,6 @@ def _update_site_archive(
     item_html_list: list[str],
     intro_html: str = "",
     toc_html: str = "",
-    stats_html: str = "",
 ) -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
@@ -501,7 +570,6 @@ def _update_site_archive(
     end_marker = f"<!-- /week:{week_attr} -->"
     week_block = (
         f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
-        + stats_html
         + intro_html
         + toc_html
         + '<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"

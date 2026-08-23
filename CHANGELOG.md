@@ -6,6 +6,99 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — brand mark, favicon, and a design-critique pass across the pipeline and site
+- Asked for a brutal graphic-design/content-marketing critique of the live
+  W34 issue (layout, fonts, readability, hooks, punchiness, professionalism)
+  before asking to implement every finding. Full list of findings and fixes:
+  - **Headline hierarchy was backwards.** Every item led with its raw
+    scraped source title (jargon-dense, often carrying platform metadata
+    like "Show HN:") and demoted the hand-written `hook` — the actual
+    reason to care — to a subordinate line underneath. `pipeline/render.py`
+    now renders `hook` as the item's headline (linked to `url`) in both
+    `digest/<iso-week>.md` and `site/index.html`; the cleaned title becomes
+    a small secondary caption. An item with no `hook` falls back to the
+    title as its own headline, unchanged. The table of contents follows
+    the same precedence (hook, falling back to cleaned title).
+  - **Color semantics fought the reading order.** The red-to-green hue
+    gradient assigned hue bands using the same `CATEGORY_ORDER` that also
+    controls reading order (`notable, breaking, field_notes, new_product`
+    — notable reads first, per an earlier deliberate "lead with your best
+    hook" decision). That meant `notable` (a curiosity item) owned the
+    alarm-red end of the gradient while `breaking` (an actual incident)
+    rendered in a calmer amber — a real mismatch for an audience where red
+    specifically reads as "incident." New `HUE_BAND_ORDER` (`breaking,
+    notable, field_notes, new_product`) now controls hue-band assignment
+    separately from `CATEGORY_ORDER`'s reading order — `breaking` owns the
+    hottest hue regardless of where it falls in reading order. Reading
+    order itself is unchanged.
+  - **Source-platform metadata leaked into headlines.** `Show HN:`/
+    `Ask HN:`/`Tell HN:` are HN's own submission-type metadata, not part of
+    the author's title, and rendering it verbatim reads as "this was
+    scraped," not curated. New `_clean_display_title` strips it for
+    display everywhere (TOC, headline/caption, markdown heading); the
+    underlying `title` used for citation matching is untouched.
+  - **Redundant stats line cut.** "In this issue: N items across N
+    sources — ..." (`_issue_stats_line`) repeated, almost verbatim, what
+    the table of contents already conveys better, with working links, one
+    scroll below it. Removed entirely, not just hidden.
+  - **No subject line existed anywhere in the pipeline.** Nothing produced
+    the text for the email platform's subject field, leaving it improvised
+    at send time, disconnected from drafting/verification. New required
+    `subject` field on `digest/draft/<iso-week>.json`, surfaced as a
+    clearly-labeled line at the top of `digest/<iso-week>.md` (above the
+    issue's own heading) for the manual paste-and-send step — not rendered
+    on `site/index.html`, since a subject line is an email-only concept.
+  - **Excerpt placement broke the reading flow.** The collapsible source
+    excerpt rendered between the hook and the note, interrupting the one
+    flow that mattered. Moved to after the note, in both outputs (the
+    markdown version stays always-visible; `<details>` can't be relied on
+    to survive a paste into Beehiiv).
+  - **Zero visual texture.** The page was pure text top to bottom. Each
+    category badge now carries a small inline-SVG icon (`CATEGORY_ICON_SVG`
+    in `pipeline/render.py`) that inherits the item's own hue via
+    `currentColor` — no separate color wiring needed.
+  - **No subscribe path anywhere on the site** — verified by grepping the
+    shipped HTML, not assumed. `site/index.html`'s masthead gained a
+    styled `.subscribe-btn` CTA, but it ships commented out: no Beehiiv
+    publication exists yet (`docs/project-plan.md` §11), and a link to a
+    guessed or placeholder URL on a live public page is worse than no link.
+  - **No credibility signal.** Added a one-line byline ("Curated by John B.
+    Roberts.") to the masthead — the project's own marketing plan leans on
+    that credibility, but none of it reached the actual page.
+  - **No brand mark.** Designed and published an exploratory logo — a
+    radar sweep (a fading eight-slice trail, not a flat wedge, so it reads
+    as "sweeping" even completely static) held inside four monitoring
+    brackets, the visual shorthand security/trading-floor instruments use
+    for "actively watched, kept in bounds." Colored across the site's own
+    red-to-green scoring gradient, so the mark and the newsletter's scoring
+    system are visually the same idea. Typography is IBM Plex Sans/Mono,
+    not the Inter/Space Grotesk default. Approved and wired into
+    `site/index.html`'s masthead (inline SVG, static) and `site/favicon.svg`
+    (browser-tab icon, with a dark backing plate for tab-contrast
+    consistency and a simplified 1-wedge treatment — the full 8-slice trail
+    doesn't resolve at 16px).
+  - **Not fixed**: the reading-order-vs-urgency tension itself (`notable`
+    leads, not `breaking`) was flagged but deliberately left as-is — it's a
+    real trade-off from an earlier explicit decision, not a bug, and
+    changing it needs its own decision rather than folding into a design
+    pass.
+- `pipeline/render.py`: `_hotness_order` now takes a separate
+  `HUE_BAND_ORDER`; `_clean_display_title` added; `_issue_stats_line` and
+  `_CATEGORY_STAT_WORDS` removed entirely (not deprecated); `_load_draft`
+  now returns `(subject, intro, items)`; `_render_archive_item_html`
+  restructured for the headline flip and excerpt reposition;
+  `CATEGORY_ICON_SVG` added. `tests/test_render.py`: 2 tests removed
+  (tested the deleted stats line), 8 new/rewritten (headline hierarchy,
+  title cleanup, hue-band decoupling, subject line rendering) — 166 tests
+  total, all passing; ruff and mypy clean. Retrofitted the live
+  `digest/draft/2026-W34.json` (added `subject`, trimmed `intro` to 2
+  sentences per the same critique, fixed a scrape-artifact typo in one
+  title) and re-ran `weekly-verify-and-publish.yml` against it.
+  `docs/technical-spec.md` §12.2/§14 and `docs/editorial-guidelines.md`
+  updated; `.claude/skills/draft-digest/SKILL.md` and its
+  `references/draft-schema.md` updated for the `subject` field and title
+  hygiene.
+
 ### Decided — 2026-08-23: publishing platform is Beehiiv
 - Resolved the open decision in `docs/project-plan.md` §11 (Substack vs.
   Beehiiv). Rather than relying only on generic platform comparisons,

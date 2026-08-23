@@ -18,7 +18,7 @@ because an ungrounded claim reaching this audience has real consequences.
 - Input: `digest/review/<iso-week>.md` — the auto-generated, extractive-only
   review packet. Every entry carries a verbatim stored excerpt of the
   original source text.
-- Output: `digest/draft/<iso-week>.json` — `{"intro": ..., "items": [...]}`,
+- Output: `digest/draft/<iso-week>.json` — `{"subject": ..., "intro": ..., "items": [...]}`,
   one entry per item the issue will include, in the schema documented in
   `references/draft-schema.md`.
 
@@ -87,7 +87,14 @@ substitutes for it.
    quotes) that aren't grounded in the items it's introducing. Optional —
    an empty string is valid on a week where a forced intro would read
    worse than none.
-8. Write `{"intro": ..., "items": [...]}` to `digest/draft/<iso-week>.json`.
+7a. Write `subject` — the literal text for the email platform's subject
+   field, distinct from `intro`. This is the one sentence that has to work
+   before anything else gets read, so give it its own pass rather than
+   reusing the intro's opening clause: specific over clever, and grounded
+   the same way everything else is (no invented specifics). Required, not
+   optional — unlike `intro`, a thin week still needs a real subject line.
+8. Write `{"subject": ..., "intro": ..., "items": [...]}` to
+   `digest/draft/<iso-week>.json`.
 
 ## Before finishing
 
@@ -103,6 +110,12 @@ Check, don't assume:
 - Every item has a non-empty `hook` — unlike `intro`, this one isn't
   optional.
 - Every item has a `category` set to one of the four valid values.
+- The draft has a non-empty `subject` line.
+- `title` reads clean — it's the one field you're expected to lightly edit
+  (see `references/draft-schema.md`). `pipeline/render.py` automatically
+  strips a leading `Show HN:`/`Ask HN:`/`Tell HN:` for display, but a
+  scrape artifact specific to one title (a missing space, a stray
+  character) won't fix itself — clean it by hand before finishing.
 
 ## Handoff
 

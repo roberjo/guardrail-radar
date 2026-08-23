@@ -1,11 +1,13 @@
 # `digest/draft/<iso-week>.json` schema
 
-Matches `docs/technical-spec.md` §12.2. The file is a JSON object with two
-top-level keys: `intro` (a string, the whole issue's connective narrative)
-and `items` (an array — one element per item the issue will include).
+Matches `docs/technical-spec.md` §12.2. The file is a JSON object with three
+top-level keys: `subject` (a string, the email platform's subject line),
+`intro` (a string, the whole issue's connective narrative), and `items`
+(an array — one element per item the issue will include).
 
 ```json
 {
+  "subject": "the literal subject line for Beehiiv — required, distinct from intro",
   "intro": "a short connective narrative for the whole issue — dry wit, still professional; optional, empty string is valid",
   "items": [
     {
@@ -24,6 +26,19 @@ and `items` (an array — one element per item the issue will include).
   ]
 }
 ```
+
+`subject` is added after a design-critique pass found no field anywhere in
+the pipeline produced an email subject line, leaving it improvised at send
+time, disconnected from drafting/verification. It's the text that goes in
+Beehiiv's subject field — required, and distinct from `intro`: give it its
+own sentence rather than reusing the intro's opening clause, since it's the
+one piece of copy that has to work before anything else gets read. Not
+rendered on `site/index.html` (a subject line is an email-only concept);
+`pipeline/render.py` surfaces it as a clearly-labeled line at the very top
+of `digest/<iso-week>.md`, above the issue's own `# Guardrail Radar — ...`
+heading, so the human doing the manual paste-and-send step
+(`docs/weekly-runbook.md`) can copy it straight into the platform's subject
+field before pasting the rest into the body.
 
 `intro` is added after real user feedback on the first live issue: three
 isolated per-item summaries with no frame or synthesis read as a bare link
@@ -46,9 +61,14 @@ from scratch. Like `intro`, it doesn't get its own claims-ledger
 entries — it's a one-line framing of the item, not a specific factual
 claim — but it must still be grounded only in the excerpt: no invented
 superlatives, stats, or specifics beyond what the excerpt itself states.
-`pipeline/render.py` renders it once per item, immediately after the
-title and before the excerpt/note, in both `digest/<iso-week>.md` and
-`site/index.html`.
+
+A design-critique pass found `hook` was being rendered as a subordinate
+line under the item's raw, often jargon-dense source `title` — readers'
+best-written copy demoted under scraped metadata. `pipeline/render.py` now
+renders `hook` *as the item's headline* (linked to `url`), with the
+cleaned `title` demoted to a small secondary caption underneath, in both
+`digest/<iso-week>.md` and `site/index.html`. An item with no `hook` still
+falls back to `title` as its own headline.
 
 `category` is added after a direct user request for a table of contents,
 grouped by area/criticality rather than just a flat list. It's a fixed,
@@ -79,6 +99,7 @@ be urgent.
 
 ```json
 {
+  "subject": "Three tools, one theme: nobody trusts the model unsupervised anymore",
   "intro": "Three items this week, and a real theme underneath the sales copy: every one of them puts the AI agent behind a deterministic check it doesn't control — a static analyzer, a keep-it-local architecture, an OT/ICS compliance layer. Nobody's shipping \"trust the model\" anymore, on purpose or not.",
   "items": [
     {
@@ -128,6 +149,9 @@ Notes on the example:
   wording that the fuzzy-match diff in `pipeline/verify.py` will confirm it.
   A `supported_by` value that paraphrases too loosely is exactly what gets
   flagged for the human checklist to re-check by hand.
+- `subject` is required, not optional like `intro` — a thin week still
+  needs a real subject line. Not checked against any excerpt, but write it
+  as its own sentence rather than truncating `intro`'s opening clause.
 - `intro` is not checked against any excerpt — it's connective narrative
   for the whole issue, not a per-source claim — but it must still not
   invent specifics that aren't grounded in the items it introduces.
