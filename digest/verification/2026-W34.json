@@ -1,0 +1,29 @@
+[
+  {
+    "cluster_id": "63bc54cf4ef97ee03869ad562f6b260d145a6d1ae6136201c974dfd18c2b09a4",
+    "title": "Mustel",
+    "status": "blocked",
+    "reasons": [
+      "url failed: HTTP 403",
+      "unsupported claims (re-check against excerpt): ['bills itself as non-AI static analysis for AI coding agents', 'runs Bandit and pip-audit', 'a separate Audit Mode runs deeper checks in CI']"
+    ]
+  },
+  {
+    "cluster_id": "a599956986caea7d1036f29e164f913050c25cb0f92c979512edb980056a0731",
+    "title": "QuantDinger",
+    "status": "blocked",
+    "reasons": [
+      "url failed: HTTP 403",
+      "unsupported claims (re-check against excerpt): ['connects Cursor, Claude Code, or Codex through 25 scoped MCP tools', \"strategies, credentials, and trading data stay on the user's own infrastructure\", 'markets producing auditable Python strategies from LLM-assisted research']"
+    ]
+  },
+  {
+    "cluster_id": "0dde1c09131bec3dde413cb7f732aa1b648a600f2802f69e8fd5f115068e90e1",
+    "title": "Basalt",
+    "status": "blocked",
+    "reasons": [
+      "url failed: HTTP 403",
+      "unsupported claims (re-check against excerpt): ['generates a diagram from a plain-English description of cloud, hybrid, or industrial stacks']"
+    ]
+  }
+]
