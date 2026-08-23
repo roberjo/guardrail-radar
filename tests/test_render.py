@@ -12,7 +12,12 @@ import os
 
 import pytest
 
-from pipeline.render import render_final_digest, render_review_packet
+from pipeline.render import (
+    _issue_stats_line,
+    _read_time_minutes,
+    render_final_digest,
+    render_review_packet,
+)
 
 PLACEHOLDER_SITE_HTML = """<!doctype html>
 <html><body>
@@ -261,6 +266,91 @@ def test_final_digest_toc_anchor_matches_item_id(project):
         site_content = f.read()
     assert 'href="#item-c1"' in site_content
     assert 'id="item-c1"' in site_content
+
+
+def test_read_time_minutes_rounds_and_has_a_floor():
+    # Added after a format audit against comparable newsletters (TLDR, The
+    # Batch) that all surface a read-time signal — pure text-derived, no
+    # new drafted field. WORDS_PER_MINUTE = 200.
+    assert _read_time_minutes("word " * 10) == 1  # floor: never 0, even for a handful of words
+    assert _read_time_minutes("word " * 200) == 1  # exactly 1 minute's worth
+    assert _read_time_minutes("word " * 450) == 2  # round(450/200) == round(2.25) == 2
+    assert _read_time_minutes("word " * 250, "word " * 200) == 2  # summed across multiple text args (450 total)
+
+
+def test_final_digest_shows_category_badge_and_read_time(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="notable")])
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    assert "`Notable` ·" in digest_content
+    assert "min read" in digest_content
+    assert 'class="category-badge other">Notable</span>' in site_content
+    assert 'class="read-time">' in site_content and "min read" in site_content
+
+
+def test_final_digest_breaking_category_gets_distinct_badge_class(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="breaking")])
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert 'class="category-badge breaking">Breaking</span>' in site_content
+
+
+def test_issue_stats_line_counts_items_sources_and_categories():
+    draft = [
+        {"cluster_id": "c1", "category": "breaking"},
+        {"cluster_id": "c2", "category": "breaking"},
+        {"cluster_id": "c3", "category": "new_product"},
+    ]
+    ranked_by_cluster = {
+        "c1": {"cluster_sources": ["hn"]},
+        "c2": {"cluster_sources": ["github"]},
+        "c3": {"cluster_sources": ["hn", "producthunt"]},
+    }
+    line = _issue_stats_line(draft, ranked_by_cluster)
+    assert line == "In this issue: 3 items across 3 sources — 2 breaking, 1 new product."
+
+
+def test_final_digest_shows_issue_stats_line(project):
+    _write(
+        "data/ranked/2026-W01.json",
+        [_ranked_cluster(cluster_id="c1"), _ranked_cluster(cluster_id="c2", title="Second story")],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(cluster_id="c1", category="breaking"), _draft_entry(cluster_id="c2", category="notable")],
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "In this issue: 2 items across 1 source — 1 breaking, 1 notable." in digest_content
+    assert 'class="issue-stats"' in site_content
+    assert "In this issue: 2 items across 1 source" in site_content
+
+
+def test_final_digest_excerpt_collapsed_on_site_not_in_markdown(project):
+    # Site-only: <details> can't be relied on to survive a paste into
+    # Substack/Beehiiv, so the emailed digest keeps the excerpt always
+    # visible as a plain blockquote.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "<details>" not in digest_content
+    assert "> a real excerpt" in digest_content
+    assert "<details><summary>Read the source excerpt</summary>" in site_content
+    assert "a real excerpt" in site_content
 
 
 def test_final_digest_shows_non_weekly_franchise_label(project):

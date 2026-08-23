@@ -36,10 +36,31 @@ CATEGORY_LABELS = {
     "notable": "Notable / Wow",
     "field_notes": "Field Notes",
 }
+# Short badge label per item — distinct from CATEGORY_LABELS' longer TOC
+# section headings. See docs/technical-spec.md §14 (format audit).
+CATEGORY_BADGE_LABELS = {
+    "breaking": "Breaking",
+    "new_product": "New Product",
+    "notable": "Notable",
+    "field_notes": "Field Notes",
+}
+
+WORDS_PER_MINUTE = 200
 
 
 def _item_anchor(cluster_id: str) -> str:
     return f"item-{cluster_id}"
+
+
+def _read_time_minutes(*texts: str) -> int:
+    """Rounded reading-time estimate at WORDS_PER_MINUTE, minimum 1.
+
+    Added after a format audit against comparable newsletters (TLDR, The
+    Batch) that all surface a read-time signal per item — pure text-derived
+    from fields already on the entry, no new drafted data needed.
+    """
+    word_count = sum(len(t.split()) for t in texts)
+    return max(1, round(word_count / WORDS_PER_MINUTE))
 
 
 def _md_escape(text: str) -> str:
@@ -63,6 +84,44 @@ def _load_draft(draft_path: str) -> tuple[str, list[dict]]:
     """
     data = read_json(draft_path)
     return data.get("intro", ""), data.get("items", [])
+
+
+# (singular, plural) phrasing per category for _issue_stats_line below.
+_CATEGORY_STAT_WORDS = {
+    "breaking": ("breaking", "breaking"),
+    "new_product": ("new product", "new products"),
+    "notable": ("notable", "notable"),
+    "field_notes": ("field note", "field notes"),
+}
+
+
+def _issue_stats_line(draft: list[dict], ranked_by_cluster: dict) -> str:
+    if not draft:
+        return ""
+
+    sources: set[str] = set()
+    category_counts: dict[str, int] = {}
+    for entry in draft:
+        cluster = ranked_by_cluster.get(entry["cluster_id"], {})
+        item_sources = cluster.get("cluster_sources") or ([cluster["source"]] if cluster.get("source") else [])
+        sources.update(item_sources)
+        category = entry.get("category", "new_product")
+        category_counts[category] = category_counts.get(category, 0) + 1
+
+    parts = []
+    for category in CATEGORY_ORDER:
+        count = category_counts.get(category, 0)
+        if not count:
+            continue
+        singular, plural = _CATEGORY_STAT_WORDS[category]
+        parts.append(f"{count} {singular if count == 1 else plural}")
+
+    item_word = "item" if len(draft) == 1 else "items"
+    source_word = "source" if len(sources) == 1 else "sources"
+    summary = f"In this issue: {len(draft)} {item_word} across {len(sources)} {source_word}"
+    if parts:
+        summary += " — " + ", ".join(parts)
+    return summary + "."
 
 
 def render_review_packet(iso_week: str) -> str:
@@ -126,6 +185,17 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         )
 
     lines_md = [f"# Guardrail Radar — {iso_week}", ""]
+
+    # "In this issue" line — item count, distinct source count, category
+    # breakdown. Entirely derived from data already loaded above; no new
+    # drafted field needed. See docs/technical-spec.md §14 (format audit).
+    stats_line = _issue_stats_line(draft, ranked_by_cluster)
+    stats_html = ""
+    if stats_line:
+        lines_md.append(stats_line)
+        lines_md.append("")
+        stats_html = f'<p class="issue-stats">{html.escape(stats_line)}</p>'
+
     intro_html = ""
     if intro:
         lines_md.append(intro)
@@ -172,6 +242,8 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         hook = entry.get("hook", "")
         note = entry.get("note", "")
         franchise = entry.get("franchise", "weekly")
+        category = entry.get("category", "new_product")
+        read_minutes = _read_time_minutes(hook, excerpt, note)
 
         if url:
             lines_md.append(f"### [{_md_escape(title)}]({url})")
@@ -179,6 +251,8 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"### {_md_escape(title)}")
         if franchise != "weekly":
             lines_md.append(f"_{franchise.replace('_', ' ').title()}_")
+        badge_label = CATEGORY_BADGE_LABELS.get(category, category)
+        lines_md.append(f"`{badge_label}` · {read_minutes} min read")
         if hook:
             lines_md.append(f"**{_md_escape(hook)}**")
         if excerpt:
@@ -190,7 +264,9 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         lines_md.append("")
 
         archive_items_html.append(
-            _render_archive_item_html(entry["cluster_id"], title, url, hook, excerpt, note, franchise, entry)
+            _render_archive_item_html(
+                entry["cluster_id"], title, url, hook, excerpt, note, franchise, category, read_minutes, entry
+            )
         )
 
     digest_md = "\n".join(lines_md)
@@ -198,12 +274,21 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(digest_md)
 
-    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html)
+    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html, stats_html)
     return digest_path, site_path
 
 
 def _render_archive_item_html(
-    cluster_id: str, title: str, url: str, hook: str, excerpt: str, note: str, franchise: str, entry: dict
+    cluster_id: str,
+    title: str,
+    url: str,
+    hook: str,
+    excerpt: str,
+    note: str,
+    franchise: str,
+    category: str,
+    read_minutes: int,
+    entry: dict,
 ) -> str:
     """One item's full content for the site — title, hook, excerpt, note,
     franchise label, primary source. Previously this rendered only a bare
@@ -221,19 +306,38 @@ def _render_archive_item_html(
     The returned <li> carries a stable id="item-<cluster_id>" so the
     table-of-contents nav built in render_final_digest can link straight
     to it.
+
+    badge-row (franchise tag + category badge + read-time) and the
+    <details>-collapsed excerpt were added after a format audit against
+    comparable newsletters (TLDR, tl;dr sec, The Batch) — category is
+    meant to register before a reader parses the headline, and the
+    verbatim source excerpt is one click deeper rather than always-open
+    text, matching the audit's scanability recommendations. The excerpt
+    collapse is site-only: <details> can't be relied on to survive a
+    paste into Substack/Beehiiv, so digest/<week>.md keeps the excerpt
+    always visible.
     """
     heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
     parts = [f"<h4>{heading}</h4>"]
 
+    badges = []
     if franchise and franchise != "weekly":
         label = html.escape(franchise.replace("_", " ").title())
-        parts.append(f'<span class="franchise-tag">{label}</span>')
+        badges.append(f'<span class="franchise-tag">{label}</span>')
+    category_label = html.escape(CATEGORY_BADGE_LABELS.get(category, category))
+    category_class = "breaking" if category == "breaking" else "other"
+    badges.append(f'<span class="category-badge {category_class}">{category_label}</span>')
+    badges.append(f'<span class="read-time">{read_minutes} min read</span>')
+    parts.append(f'<div class="badge-row">{"".join(badges)}</div>')
 
     if hook:
         parts.append(f'<p class="item-hook">{html.escape(hook)}</p>')
 
     if excerpt:
-        parts.append(f"<blockquote>{html.escape(excerpt)}</blockquote>")
+        parts.append(
+            "<details><summary>Read the source excerpt</summary>"
+            f"<blockquote>{html.escape(excerpt)}</blockquote></details>"
+        )
 
     if note:
         parts.append(f"<p>{html.escape(note)}</p>")
@@ -250,7 +354,11 @@ def _render_archive_item_html(
 
 
 def _update_site_archive(
-    iso_week: str, item_html_list: list[str], intro_html: str = "", toc_html: str = ""
+    iso_week: str,
+    item_html_list: list[str],
+    intro_html: str = "",
+    toc_html: str = "",
+    stats_html: str = "",
 ) -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
@@ -278,6 +386,7 @@ def _update_site_archive(
     end_marker = f"<!-- /week:{week_attr} -->"
     week_block = (
         f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
+        + stats_html
         + intro_html
         + toc_html
         + '<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"

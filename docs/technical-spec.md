@@ -288,6 +288,13 @@ Two distinct render targets, reflecting the two-layer content model in the proje
   - Output 1: `digest/<iso-week>.md` — ranked list, each entry: title (linked), source(s), score, the extractive excerpt, and the verified generative note.
   - Output 2: `site/index.html` — same content rendered as a simple static page (plain HTML + minimal CSS, no framework) for GitHub Pages. Include past weeks as an archive list. Each week's block is wrapped in a matched pair of `<!-- week:<iso-week> -->` / `<!-- /week:<iso-week> -->` HTML comments so a re-render can find and replace its own prior block unambiguously, regardless of how much markup an item's excerpt/note/franchise-tag content nests inside it — found necessary after the site initially shipped with only a bare linked title per item (the excerpt and note went into `digest/<iso-week>.md` but never reached the public page), and the first fix for that used a structural-tag terminator that broke again the moment items carried real nested markup.
 
+**Format-audit additions** (comparison against TLDR, tl;dr sec, and The Batch — see the published format-audit artifact): none require a new drafted field, so `verify.py` and the draft schema are unaffected.
+
+- **Read-time estimate** — `_read_time_minutes(hook, excerpt, note)` computes `max(1, round(word_count / 200))` per item and renders it as a badge (`site/index.html`) or a `N min read` suffix (`digest/<iso-week>.md`), next to the category badge.
+- **Category badge per item** — `category` (§12.2) was previously only surfaced in the table of contents; it now also renders on every item itself, so it registers before a reader parses the headline. `breaking` gets a distinct color (`--breaking` token); the other three categories share a neutral badge style deliberately, so the urgency signal stays rare and trustworthy rather than diluted across every item.
+- **Collapsible excerpt** — on `site/index.html` only, the verbatim excerpt is wrapped in `<details><summary>Read the source excerpt</summary>…</details>`, collapsed by default; hook and note stay always-visible. `digest/<iso-week>.md` keeps the excerpt as a plain blockquote — `<details>` can't be relied on to survive a paste into Substack/Beehiiv.
+- **"In this issue" stats line** — `_issue_stats_line` computes item count, distinct source count, and a category breakdown entirely from `draft`/`ranked_by_cluster`, already loaded for other purposes; renders once per issue, above the `intro`.
+
 ## 15. GitHub Actions workflows
 
 ### 15.1 `.github/workflows/daily-ingest.yml`

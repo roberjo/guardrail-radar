@@ -6,6 +6,41 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — format-audit improvements: read-time, per-item category badge, collapsible excerpt, issue stats
+- Published a format-audit artifact comparing Guardrail Radar's structure
+  against three real, currently-live newsletters (TLDR, tl;dr sec, The
+  Batch — fetched live, not recalled). Conclusion: Guardrail Radar's
+  per-item depth is a deliberate strength (matches tl;dr sec/The Batch,
+  not TLDR's headline-only style) — what was missing was the scanning
+  affordances the deep newsletters keep alongside their depth. User asked
+  to implement the recommendations.
+- All four additions are pure `render.py` computation or rendering
+  changes — no new drafted field, so `verify.py` and the draft schema are
+  unaffected:
+  - **Read-time estimate** per item (`_read_time_minutes`), derived from
+    existing `hook`/`excerpt`/`note` word count.
+  - **Category badge on every item**, not just the TOC — `category`
+    already existed per item but was previously invisible outside the
+    table of contents. `breaking` gets its own color (new `--breaking`
+    CSS token, light+dark); the other three categories deliberately share
+    one neutral badge style so urgency stays a rare, trustworthy signal.
+  - **Collapsible excerpt** on `site/index.html` only (`<details>`) —
+    hook and note stay always-visible; `digest/<iso-week>.md` keeps the
+    excerpt always-visible too, since `<details>` isn't reliable through
+    a Substack/Beehiiv paste.
+  - **"In this issue" stats line** (`_issue_stats_line`) — item count,
+    distinct source count, category breakdown — computed from data
+    already loaded for other purposes.
+- Skipped three audit recommendations that aren't real code tasks yet:
+  a Reader Q&A recurring slot (needs actual subscribers), testing the
+  Substack/Beehiiv paste rendering (no platform chosen yet), and a
+  sponsor-content visual convention (no sponsor content exists to
+  demonstrate it against).
+- 6 new tests in `tests/test_render.py`; `docs/technical-spec.md` §14
+  updated. Retrofitted the live `digest/2026-W34.md`/`site/index.html`
+  by re-running `weekly-verify-and-publish.yml` against the unchanged
+  draft — no draft content changed, only how it renders.
+
 ### Added — table of contents, grouped by category
 - Direct user request: the newsletter needed a table of contents, with
   items grouped by area/category and criticality (breaking news, new

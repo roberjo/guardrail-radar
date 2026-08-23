@@ -13,9 +13,10 @@
       --ink-soft: #4b564d;
       --line: #d8dacd;
       --amber: #b8791e;
+      --breaking: #a8402f;
     }
     @media (prefers-color-scheme: dark){
-      :root{ --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c; --amber:#e3a94b; }
+      :root{ --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c; --amber:#e3a94b; --breaking:#d97a6c; }
     }
     *{ box-sizing: border-box; }
     body{
@@ -38,6 +39,10 @@
       font-size: 0.95rem; font-weight: 600; letter-spacing: 0.03em;
       color: var(--ink-soft); margin: 0 0 1rem;
     }
+    .issue-stats{
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 0.75rem;
+    }
     .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
     .toc{
       display: flex; flex-wrap: wrap; gap: 1.25rem 2rem;
@@ -58,15 +63,26 @@
     .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.05rem; margin: 0 0 0.5rem; }
     .issue-item h4 a{ color: var(--amber); text-decoration: none; }
     .issue-item h4 a:hover{ text-decoration: underline; }
-    .franchise-tag{
+    .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
+    .franchise-tag, .category-badge, .read-time{
       display: inline-block; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
       font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em;
-      color: var(--amber); border: 1px solid var(--amber); border-radius: 3px;
-      padding: 0.12rem 0.4rem; margin: 0 0 0.6rem;
+      border-radius: 3px; padding: 0.12rem 0.4rem;
     }
+    .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }
+    .category-badge{ font-weight: 700; }
+    .category-badge.breaking{ color: var(--breaking); border: 1px solid var(--breaking); }
+    .category-badge.other{ color: var(--ink-soft); border: 1px solid var(--line); }
+    .read-time{ color: var(--ink-soft); border: 1px solid var(--line); font-weight: 600; }
     .item-hook{ font-weight: 700; margin: 0 0 0.6rem; }
+    .issue-item details{ margin: 0 0 0.6rem; }
+    .issue-item summary{
+      cursor: pointer; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.8rem; color: var(--ink-soft);
+    }
+    .issue-item details[open] summary{ margin-bottom: 0.4rem; }
     .issue-item blockquote{
-      margin: 0 0 0.6rem; padding-left: 0.75rem; border-left: 2px solid var(--line);
+      margin: 0; padding-left: 0.75rem; border-left: 2px solid var(--line);
       color: var(--ink-soft); font-style: italic; font-size: 0.92rem;
     }
     .issue-item p{ margin: 0 0 0.5rem; }
