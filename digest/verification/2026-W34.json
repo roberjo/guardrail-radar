@@ -28,8 +28,10 @@
   {
     "cluster_id": "1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc",
     "title": "Coding Agents killed my identity. How do you feel?",
-    "status": "clear",
-    "reasons": []
+    "status": "flagged",
+    "reasons": [
+      "url unverifiable: HTTP 429 (rate-limited, not confirmed dead) — confirm by hand"
+    ]
   },
   {
     "cluster_id": "2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6",
