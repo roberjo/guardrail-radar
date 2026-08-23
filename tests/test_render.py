@@ -190,7 +190,7 @@ def test_final_digest_renders_hook_before_excerpt_and_note(project):
     hook_text = "Proves the agent fix actually held, not just that it passed CI."
     assert hook_text in digest_content
     assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
-    assert 'class="item-hook"' in site_content
+    assert 'class="item-hook new_product"' in site_content  # default category from _draft_entry
     assert hook_text in site_content
     assert site_content.index(hook_text) < site_content.index("a real excerpt")
 
@@ -289,17 +289,63 @@ def test_final_digest_shows_category_badge_and_read_time(project):
 
     assert "`Notable` ·" in digest_content
     assert "min read" in digest_content
-    assert 'class="category-badge other">Notable</span>' in site_content
+    assert 'class="category-badge notable"><span class="dot"></span>Notable</span>' in site_content
     assert 'class="read-time">' in site_content and "min read" in site_content
 
 
-def test_final_digest_breaking_category_gets_distinct_badge_class(project):
-    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="breaking")])
-    _, site_path = render_final_digest("2026-W01")
+def test_final_digest_each_category_gets_its_own_badge_and_hook_class(project):
+    # Follow-up to real feedback that at-a-glance scanning needed more
+    # than "breaking vs. everything else" — all 4 categories now get
+    # distinct colors (via CSS classes), not just breaking.
+    for i, category in enumerate(["breaking", "new_product", "notable", "field_notes"]):
+        cid = f"c{i}"
+        _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id=cid)])
+        _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id=cid, category=category)])
+        _, site_path = render_final_digest("2026-W01")
+        with open(site_path, encoding="utf-8") as f:
+            site_content = f.read()
+        assert f'class="category-badge {category}">' in site_content
+        assert f'class="item-hook {category}"' in site_content
+        assert f'class="issue-item {category}"' in site_content
+
+
+def test_final_digest_toc_group_shows_item_count(project):
+    _write(
+        "data/ranked/2026-W01.json",
+        [_ranked_cluster(cluster_id="c1"), _ranked_cluster(cluster_id="c2", title="Second story")],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(cluster_id="c1", category="breaking"), _draft_entry(cluster_id="c2", category="breaking")],
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
-    assert 'class="category-badge breaking">Breaking</span>' in site_content
+    assert "Breaking News (2)" in digest_content
+    assert 'class="toc-group breaking"' in site_content
+    assert '<span class="count">(2)</span>' in site_content
+
+
+def test_final_digest_markdown_bolds_breaking_but_not_other_categories(project):
+    # Plain markdown has no color, so BREAKING gets bold+uppercase instead —
+    # the same "one category pops, the rest recede" rule the site's color
+    # coding follows, translated to what markdown can actually do.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="breaking")])
+    digest_path, _ = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        breaking_content = f.read()
+    assert "**BREAKING** ·" in breaking_content
+    assert "`Breaking`" not in breaking_content
+
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="notable")])
+    digest_path, _ = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        notable_content = f.read()
+    assert "`Notable` ·" in notable_content
+    assert "**NOTABLE**" not in notable_content
 
 
 def test_issue_stats_line_counts_items_sources_and_categories():

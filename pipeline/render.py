@@ -218,7 +218,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         if not items:
             continue
         label = CATEGORY_LABELS[category]
-        lines_md.append(f"**{label}**")
+        lines_md.append(f"**{label} ({len(items)})**")
         for title, cluster_id in items:
             lines_md.append(f"- {_md_escape(title)}")
         lines_md.append("")
@@ -226,7 +226,14 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         toc_links = "".join(
             f'<li><a href="#{_item_anchor(cid)}">{html.escape(title)}</a></li>' for title, cid in items
         )
-        toc_html_parts.append(f'<div class="toc-group"><h4>{html.escape(label)}</h4><ul>{toc_links}</ul></div>')
+        # category class drives the left-border/heading color per group in
+        # site CSS — same color used on that category's item badges, so the
+        # TOC and the items below it read as one consistent color system
+        # rather than two unrelated conventions.
+        toc_html_parts.append(
+            f'<div class="toc-group {category}"><h4>{html.escape(label)} '
+            f'<span class="count">({len(items)})</span></h4><ul>{toc_links}</ul></div>'
+        )
     toc_html = f'<nav class="toc">{"".join(toc_html_parts)}</nav>' if toc_html_parts else ""
 
     archive_items_html = []
@@ -252,7 +259,14 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         if franchise != "weekly":
             lines_md.append(f"_{franchise.replace('_', ' ').title()}_")
         badge_label = CATEGORY_BADGE_LABELS.get(category, category)
-        lines_md.append(f"`{badge_label}` · {read_minutes} min read")
+        # Plain markdown has no color, so urgency has to read from emphasis
+        # instead: BREAKING is bold+uppercase, every other category stays
+        # in quiet inline code — same "one category pops, the rest recede"
+        # rule the site's color-coding follows.
+        if category == "breaking":
+            lines_md.append(f"**{badge_label.upper()}** · {read_minutes} min read")
+        else:
+            lines_md.append(f"`{badge_label}` · {read_minutes} min read")
         if hook:
             lines_md.append(f"**{_md_escape(hook)}**")
         if excerpt:
@@ -316,6 +330,13 @@ def _render_archive_item_html(
     collapse is site-only: <details> can't be relied on to survive a
     paste into Substack/Beehiiv, so digest/<week>.md keeps the excerpt
     always visible.
+
+    Each of the 4 categories now gets its own color (not just breaking) —
+    a follow-up to real feedback that at-a-glance scanning needed more
+    than "breaking vs. everything else." The same category class drives
+    the badge dot, the hook's callout accent, the item's left-border
+    stripe, and the matching TOC group's heading color, so the whole page
+    reads as one consistent color system instead of an isolated badge.
     """
     heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
     parts = [f"<h4>{heading}</h4>"]
@@ -325,13 +346,14 @@ def _render_archive_item_html(
         label = html.escape(franchise.replace("_", " ").title())
         badges.append(f'<span class="franchise-tag">{label}</span>')
     category_label = html.escape(CATEGORY_BADGE_LABELS.get(category, category))
-    category_class = "breaking" if category == "breaking" else "other"
-    badges.append(f'<span class="category-badge {category_class}">{category_label}</span>')
+    badges.append(
+        f'<span class="category-badge {category}"><span class="dot"></span>{category_label}</span>'
+    )
     badges.append(f'<span class="read-time">{read_minutes} min read</span>')
     parts.append(f'<div class="badge-row">{"".join(badges)}</div>')
 
     if hook:
-        parts.append(f'<p class="item-hook">{html.escape(hook)}</p>')
+        parts.append(f'<p class="item-hook {category}">{html.escape(hook)}</p>')
 
     if excerpt:
         parts.append(
@@ -350,7 +372,8 @@ def _render_archive_item_html(
         )
 
     anchor = html.escape(_item_anchor(cluster_id), quote=True)
-    return f'<li class="issue-item" id="{anchor}">{"".join(parts)}</li>'
+    category_attr = html.escape(category, quote=True)
+    return f'<li class="issue-item {category_attr}" id="{anchor}">{"".join(parts)}</li>'
 
 
 def _update_site_archive(

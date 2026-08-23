@@ -6,6 +6,38 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — 4-color category system across badges, TOC, and item hooks
+- Direct user feedback: the just-shipped category badges, TOC, and item
+  summary text still needed work for readability and at-a-glance
+  understanding. The previous pass only distinguished `breaking` from
+  "everything else" (all 3 other categories shared one neutral badge
+  style) — not enough to tell `new_product`/`notable`/`field_notes` apart
+  without reading the label text.
+- All 4 categories now get their own color, applied consistently across
+  every place category already appeared, so the page reads as one color
+  system instead of an isolated badge:
+  - **Badge**: colored dot + tinted background + colored text, one style
+    per category (new `.category-badge.{category}` CSS, replacing the
+    old binary `breaking`/`other` split).
+  - **TOC**: each group gets a left-border stripe and heading color
+    matching its badge color, plus an item count (`Breaking News (2)`) —
+    previously every TOC heading was the same amber regardless of
+    category.
+  - **Item hook**: now a colored callout (tinted background + left
+    border in the category color) instead of a bare bold sentence — a
+    clearer visual tier between the title and the plain-paragraph note,
+    especially now that the excerpt sits collapsed between them.
+  - **Item itself**: a left-border color stripe on the whole `<li>`, so
+    the color registers scrolling past it even before reading the badge.
+  - **Markdown digest** (no color available): `BREAKING` renders
+    bold+uppercase; the other three categories stay in quiet inline
+    code — the same "one category pops, the rest recede" rule translated
+    to plain text.
+- New `--notable`/`--notable-soft`, `--amber-soft`, `--breaking-soft`,
+  `--field-soft` CSS tokens (light + dark). 6 new/updated tests in
+  `tests/test_render.py`. Retrofitted the live issue by re-running
+  `weekly-verify-and-publish.yml` against the unchanged draft.
+
 ### Added — format-audit improvements: read-time, per-item category badge, collapsible excerpt, issue stats
 - Published a format-audit artifact comparing Guardrail Radar's structure
   against three real, currently-live newsletters (TLDR, tl;dr sec, The
