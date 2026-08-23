@@ -241,10 +241,13 @@ def verify_draft(iso_week: str, session: requests.Session | None = None) -> list
     draft_path = os.path.join("digest", "draft", f"{iso_week}.json")
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
 
-    draft = read_json(draft_path)
+    # draft's top-level "intro" field (§12.2) is a connective narrative for
+    # the whole issue, not a per-item claim — nothing to verify against an
+    # excerpt or a citation, so only "items" goes through verify_entry.
+    items = read_json(draft_path).get("items", [])
     ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
 
-    return [verify_entry(entry, ranked_by_cluster, session=session) for entry in draft]
+    return [verify_entry(entry, ranked_by_cluster, session=session) for entry in items]
 
 
 def main() -> None:

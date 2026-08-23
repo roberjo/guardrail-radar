@@ -18,8 +18,9 @@ because an ungrounded claim reaching this audience has real consequences.
 - Input: `digest/review/<iso-week>.md` — the auto-generated, extractive-only
   review packet. Every entry carries a verbatim stored excerpt of the
   original source text.
-- Output: `digest/draft/<iso-week>.json` — one entry per item the issue will
-  include, in the schema documented in `references/draft-schema.md`.
+- Output: `digest/draft/<iso-week>.json` — `{"intro": ..., "items": [...]}`,
+  one entry per item the issue will include, in the schema documented in
+  `references/draft-schema.md`.
 
 Read the full review packet before drafting anything. An item marked
 `[insufficient source text]` in the packet has no usable excerpt — skip it
@@ -58,7 +59,18 @@ substitutes for it.
    optional, for these two franchises. If no primary source can be found,
    drop the item from this week's draft rather than draft it on a secondary
    or inferred citation.
-7. Write the completed entries to `digest/draft/<iso-week>.json`.
+7. Write a short `intro` — a connective narrative for the whole issue, not
+   a per-item summary. Tie the included items together (a shared theme, a
+   pattern across sources, why this particular set matters this week) or,
+   on a thin week, say so plainly rather than forcing a connection that
+   isn't there. Voice: dry wit, still professional — see
+   `docs/editorial-guidelines.md`. `intro` is connective tissue, not a
+   factual claim about any one source, so it doesn't need its own claims
+   ledger entries; it still must not invent specifics (numbers, names,
+   quotes) that aren't grounded in the items it's introducing. Optional —
+   an empty string is valid on a week where a forced intro would read
+   worse than none.
+8. Write `{"intro": ..., "items": [...]}` to `digest/draft/<iso-week>.json`.
 
 ## Before finishing
 

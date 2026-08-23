@@ -35,6 +35,21 @@ def _is_http_url(url: str) -> bool:
     return bool(url) and urlsplit(url).scheme in ("http", "https")
 
 
+def _load_draft(draft_path: str) -> tuple[str, list[dict]]:
+    """Returns (intro, items). See digest-draft-schema §12.2.
+
+    `intro` is a short connective narrative for the whole issue — dry wit,
+    still professional (see docs/editorial-guidelines.md) — written once
+    per issue, not per item. Added after real user feedback on the first
+    live issue: three isolated per-item summaries with no frame or
+    synthesis read as a bare link list, not a newsletter. Optional — an
+    empty string is valid and renders nothing, so a thin week doesn't force
+    a forced-sounding intro.
+    """
+    data = read_json(draft_path)
+    return data.get("intro", ""), data.get("items", [])
+
+
 def render_review_packet(iso_week: str) -> str:
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
     clusters = read_json(ranked_path)
@@ -76,7 +91,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
     verification_path = os.path.join("digest", "verification", f"{iso_week}.json")
 
-    draft = read_json(draft_path)
+    intro, draft = _load_draft(draft_path)
     ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
 
     verification_by_cluster = {}
@@ -96,6 +111,11 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         )
 
     lines_md = [f"# Guardrail Radar — {iso_week}", ""]
+    intro_html = ""
+    if intro:
+        lines_md.append(intro)
+        lines_md.append("")
+        intro_html = f"<p class=\"issue-intro\">{html.escape(intro)}</p>"
     archive_items_html = []
 
     for entry in draft:
@@ -130,7 +150,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(digest_md)
 
-    site_path = _update_site_archive(iso_week, archive_items_html)
+    site_path = _update_site_archive(iso_week, archive_items_html, intro_html)
     return digest_path, site_path
 
 
@@ -168,7 +188,7 @@ def _render_archive_item_html(
     return f'<li class="issue-item">{"".join(parts)}</li>'
 
 
-def _update_site_archive(iso_week: str, item_html_list: list[str]) -> str:
+def _update_site_archive(iso_week: str, item_html_list: list[str], intro_html: str = "") -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
     Re-running weekly-verify-and-publish for a week that already has an
@@ -195,7 +215,8 @@ def _update_site_archive(iso_week: str, item_html_list: list[str]) -> str:
     end_marker = f"<!-- /week:{week_attr} -->"
     week_block = (
         f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
-        f'<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"
+        + intro_html
+        + '<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"
     )
 
     existing_pattern = re.compile(re.escape(start_marker) + r".*?" + re.escape(end_marker), re.DOTALL)

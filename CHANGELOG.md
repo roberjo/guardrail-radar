@@ -6,6 +6,33 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — issue intro (connective narrative at the top of each issue)
+- Real user feedback on the first live issue: three isolated per-item
+  summaries with no frame or synthesis read as a bare link list, not a
+  newsletter — "no introductory narrative, no fun jokes, no substance
+  beyond summarizing three products." Investigated the content side
+  separately: re-ran `dedup`/`score`/`filter` against that week's real
+  345-item pull and confirmed only 4 clusters (all Product Hunt) passed
+  the relevance filter — a genuine single-day, single-source data
+  characteristic, not a drafting failure, and not something to paper
+  over by inventing content.
+- `digest/draft/<iso-week>.json` schema changed from a bare array to
+  `{"intro": ..., "items": [...]}` — `intro` is a short connective
+  narrative for the whole issue, optional (empty string is valid),
+  voice is "dry wit, still professional" per the user's explicit choice.
+  It is not a per-item factual claim, so `pipeline/verify.py` does not
+  check it against any excerpt or claims ledger, but it still must not
+  invent specifics not grounded in the items it introduces.
+  `pipeline/render.py` renders it once, at the top of the issue, in both
+  `digest/<iso-week>.md` and `site/index.html` (new `.issue-intro` CSS
+  rule). Updated `docs/technical-spec.md` §12.2,
+  `docs/editorial-guidelines.md` (Voice, Formats), the `draft-digest`
+  skill and its `draft-schema.md` reference, and all fixture data in
+  `tests/test_render.py` (3 new tests). Migrated the real, already-shipped
+  `digest/draft/2026-W34.json` to the new schema with an actual intro
+  written from its 3 real items' excerpts — including being upfront in
+  the intro itself about the single-source week, rather than hiding it.
+
 ### Fixed — public site was missing the actual newsletter content
 - `site/index.html` rendered only a bare linked title per item — the
   excerpt and the drafted "why this matters" note (the entire point of the

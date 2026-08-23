@@ -28,6 +28,11 @@ anything to a prospect.
   concerns" in the abstract.
 - No apologies, no hedging filler ("it's worth noting that…"). If a claim
   is uncertain, say so plainly and say why.
+- Dry wit, still professional — for the issue `intro` specifically (see
+  Formats below), and acceptable anywhere else in small doses. A dry aside
+  is fine; genuinely playful or joke-forward is not, and neither is
+  reaching for a laugh at the expense of accuracy. If a line can be cut
+  without losing anything, cut it rather than lean on it for tone.
 
 ## The two-layer content model
 
@@ -46,6 +51,17 @@ standards because only one of them is generated:
 
 ## Formats
 
+- **Issue intro** — a short connective narrative at the top of the issue,
+  every issue where one earns its place. Ties the included items together
+  (a shared theme, a pattern across sources) or, on a thin week, says so
+  plainly rather than forcing a connection that isn't there — an honest
+  "this week was quiet, here's why" beats a manufactured throughline.
+  Optional: an empty `intro` is valid when a forced one would read worse
+  than none. Not a per-item claim, so it isn't checked against any
+  excerpt or claims ledger — but it still can't invent specifics (names,
+  numbers, quotes) that aren't grounded in the items it introduces. Added
+  after real subscriber feedback that three isolated per-item summaries
+  with no frame read as a bare link list, not a newsletter.
 - **Weekly note** — 2–3 sentences per item, every issue. Answers: why does
   this matter to an engineer working under compliance/audit/vendor-risk
   constraints?

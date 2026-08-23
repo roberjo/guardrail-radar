@@ -41,6 +41,15 @@ def _write(path: str, data) -> None:
         json.dump(data, f)
 
 
+def _write_draft(path: str, items: list, intro: str = "") -> None:
+    """digest/draft/<week>.json is {"intro": ..., "items": [...]} — see
+    docs/technical-spec.md §12.2. intro is optional connective narrative
+    for the whole issue, added after real user feedback that isolated
+    per-item summaries with no frame read as a link list, not a newsletter.
+    """
+    _write(path, {"intro": intro, "items": items})
+
+
 def _ranked_cluster(cluster_id="c1", title="A real story", excerpt="a real excerpt", status="ok"):
     return {
         "cluster_id": cluster_id,
@@ -106,7 +115,7 @@ def test_review_packet_escapes_unbalanced_paren_in_url(project):
 
 def test_final_digest_renders_note_and_excerpt(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
     digest_path, _site_path = render_final_digest("2026-W01")
     with open(digest_path, encoding="utf-8") as f:
         content = f.read()
@@ -114,9 +123,51 @@ def test_final_digest_renders_note_and_excerpt(project):
     assert "a real excerpt" in content
 
 
+def test_final_digest_renders_intro_in_digest_and_site(project):
+    # Added after real user feedback: three isolated per-item summaries
+    # with no frame or synthesis read as a bare link list, not a
+    # newsletter. intro is optional connective narrative for the whole
+    # issue — see docs/technical-spec.md §12.2.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [_draft_entry()],
+        intro="A dry, professional aside that ties the week together.",
+    )
+    digest_path, site_path = render_final_digest("2026-W01")
+    with open(digest_path, encoding="utf-8") as f:
+        digest_content = f.read()
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "A dry, professional aside that ties the week together." in digest_content
+    assert "A dry, professional aside that ties the week together." in site_content
+    assert 'class="issue-intro"' in site_content
+
+
+def test_final_digest_omits_intro_block_when_not_provided(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])  # no intro
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "issue-intro" not in site_content
+
+
+def test_final_digest_escapes_intro_html(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry()], intro='<script>alert(3)</script>'
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+    assert "<script>alert(3)</script>" not in site_content
+    assert "&lt;script&gt;" in site_content
+
+
 def test_final_digest_shows_non_weekly_franchise_label(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
     )
@@ -129,7 +180,7 @@ def test_final_digest_shows_non_weekly_franchise_label(project):
 
 def test_final_digest_escapes_primary_source_url(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(primary_source_url="https://vendor.example.com/*not*markdown*")],
     )
@@ -143,7 +194,7 @@ def test_final_digest_omits_link_when_no_http_url_available(project, capsys):
     cluster = _ranked_cluster()
     cluster["url"] = "javascript:alert(1)"
     _write("data/ranked/2026-W01.json", [cluster])
-    _write("digest/draft/2026-W01.json", [_draft_entry(url="javascript:alert(1)")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(url="javascript:alert(1)")])
     digest_path, site_path = render_final_digest("2026-W01")
     with open(digest_path, encoding="utf-8") as f:
         digest_content = f.read()
@@ -157,7 +208,7 @@ def test_final_digest_omits_link_when_no_http_url_available(project, capsys):
 
 def test_final_digest_refuses_when_blocked_and_unapproved(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
     _write(
         "digest/verification/2026-W01.json",
         [{"cluster_id": "c1", "title": "A real story", "status": "blocked", "reasons": ["url failed"]}],
@@ -169,7 +220,7 @@ def test_final_digest_refuses_when_blocked_and_unapproved(project):
 
 def test_final_digest_proceeds_when_blocked_entry_is_approved(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry(approved=True, approved_reason="checked by hand")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(approved=True, approved_reason="checked by hand")])
     _write(
         "digest/verification/2026-W01.json",
         [{"cluster_id": "c1", "title": "A real story", "status": "blocked", "reasons": ["url failed"]}],
@@ -181,7 +232,7 @@ def test_final_digest_proceeds_when_blocked_entry_is_approved(project):
 def test_final_digest_html_escapes_untrusted_title_and_url(project):
     malicious_title = '<script>alert(1)</script>'
     _write("data/ranked/2026-W01.json", [_ranked_cluster(title=malicious_title)])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(title=malicious_title, url='https://example.com/"><script>x</script>')],
     )
@@ -203,7 +254,7 @@ def test_site_archive_includes_excerpt_and_note_not_just_title(project):
     # content." Found by the user looking at the real deployed site, not
     # by a test — there wasn't one that checked this.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(note="Why this matters to a compliance-constrained engineer.")],
     )
@@ -216,7 +267,7 @@ def test_site_archive_includes_excerpt_and_note_not_just_title(project):
 
 def test_site_archive_shows_franchise_tag_and_primary_source(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
     )
@@ -229,7 +280,7 @@ def test_site_archive_shows_franchise_tag_and_primary_source(project):
 
 def test_site_archive_omits_franchise_tag_for_plain_weekly_items(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry(franchise="weekly")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(franchise="weekly")])
     _, site_path = render_final_digest("2026-W01")
     with open(site_path, encoding="utf-8") as f:
         site_html = f.read()
@@ -238,7 +289,7 @@ def test_site_archive_omits_franchise_tag_for_plain_weekly_items(project):
 
 def test_site_archive_escapes_note_and_excerpt_html(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt='<img src=x onerror="alert(1)">')])
-    _write("digest/draft/2026-W01.json", [_draft_entry(note='<script>alert(2)</script>')])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(note='<script>alert(2)</script>')])
     _, site_path = render_final_digest("2026-W01")
     with open(site_path, encoding="utf-8") as f:
         site_html = f.read()
@@ -255,7 +306,7 @@ def test_site_archive_survives_rerender_with_rich_nested_content(project):
     # could match an inner tag sequence instead of the real block end.
     # Comment markers replace it specifically to stay correct here.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
-    _write(
+    _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
     )
@@ -281,7 +332,7 @@ def test_site_archive_replaces_not_duplicates_on_rerender(project):
     replacing the first, and the initial fix attempt still corrupted the
     HTML (stray trailing </ul></li>) on a second run."""
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
 
     render_final_digest("2026-W01")
     render_final_digest("2026-W01")
@@ -299,9 +350,9 @@ def test_site_archive_replaces_not_duplicates_on_rerender(project):
 
 def test_site_archive_keeps_distinct_weeks_separate(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1")])
-    _write("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1")])
     _write("data/ranked/2026-W02.json", [_ranked_cluster(cluster_id="c2", title="A second story")])
-    _write("digest/draft/2026-W02.json", [_draft_entry(cluster_id="c2", title="A second story")])
+    _write_draft("digest/draft/2026-W02.json", [_draft_entry(cluster_id="c2", title="A second story")])
 
     render_final_digest("2026-W01")
     render_final_digest("2026-W02")
@@ -316,11 +367,11 @@ def test_site_archive_keeps_distinct_weeks_separate(project):
 
 def test_site_archive_updated_entry_reflects_new_items(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1", title="Original title")])
-    _write("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1", title="Original title")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1", title="Original title")])
     render_final_digest("2026-W01")
 
     _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1", title="Corrected title")])
-    _write("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1", title="Corrected title")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1", title="Corrected title")])
     render_final_digest("2026-W01")
 
     with open("site/index.html", encoding="utf-8") as f:
@@ -335,7 +386,7 @@ def test_first_issue_placeholder_removed_after_first_render(project):
     with open("site/index.html", encoding="utf-8") as f:
         assert "First issue coming soon" in f.read()
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
-    _write("digest/draft/2026-W01.json", [_draft_entry()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
     render_final_digest("2026-W01")
     with open("site/index.html", encoding="utf-8") as f:
         assert "First issue coming soon" not in f.read()
