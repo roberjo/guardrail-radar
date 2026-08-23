@@ -9,6 +9,7 @@ corrupted the HTML on a second render) — see CHANGELOG.md.
 
 import json
 import os
+import re
 
 import pytest
 
@@ -190,7 +191,7 @@ def test_final_digest_renders_hook_before_excerpt_and_note(project):
     hook_text = "Proves the agent fix actually held, not just that it passed CI."
     assert hook_text in digest_content
     assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
-    assert 'class="item-hook new_product"' in site_content  # default category from _draft_entry
+    assert 'class="item-hook"' in site_content
     assert hook_text in site_content
     assert site_content.index(hook_text) < site_content.index("a real excerpt")
 
@@ -331,14 +332,59 @@ def test_final_digest_shows_category_badge_and_read_time(project):
 
     assert "`Notable` ·" in digest_content
     assert "min read" in digest_content
-    assert 'class="category-badge notable"><span class="dot"></span>Notable</span>' in site_content
+    assert 'class="category-badge"><span class="dot"></span>Notable</span>' in site_content
     assert 'class="read-time">' in site_content and "min read" in site_content
 
 
-def test_final_digest_each_category_gets_its_own_badge_and_hook_class(project):
-    # Follow-up to real feedback that at-a-glance scanning needed more
-    # than "breaking vs. everything else" — all 4 categories now get
-    # distinct colors (via CSS classes), not just breaking.
+def test_hotness_order_bands_by_category_and_ranks_by_score_within_it(project):
+    # Direct user request: a true continuous gradient, not 4 fixed
+    # swatches — hue must strictly decrease category-to-category
+    # (notable hottest, new_product coolest, per CATEGORY_ORDER) and, for
+    # items sharing a category, the higher real cluster_score item must
+    # get the hotter (lower) hue, not just retain its draft order.
+    c1 = _ranked_cluster(cluster_id="c1", title="Notable, low score")
+    c1["cluster_score"] = 1.0
+    c2 = _ranked_cluster(cluster_id="c2", title="Notable, high score")
+    c2["cluster_score"] = 99.0
+    c3 = _ranked_cluster(cluster_id="c3", title="A new product")
+    _write("data/ranked/2026-W01.json", [c1, c2, c3])
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [
+            _draft_entry(cluster_id="c1", title="Notable, low score", category="notable"),
+            _draft_entry(cluster_id="c2", title="Notable, high score", category="notable"),
+            _draft_entry(cluster_id="c3", title="A new product", category="new_product"),
+        ],
+    )
+    _, site_path = render_final_digest("2026-W01")
+    with open(site_path, encoding="utf-8") as f:
+        site_content = f.read()
+
+    # Item order: higher-scoring notable item first, then the lower-scoring
+    # one, then new_product last.
+    assert (
+        site_content.index("Notable, high score")
+        < site_content.index("Notable, low score")
+        < site_content.index("A new product")
+    )
+    # Hue: each item's own <li> carries a --hot-hue that strictly increases
+    # (cools) from the hottest notable item through to new_product. Scoped
+    # to each item's own <li id="item-<cid>"> specifically — the TOC
+    # renders its own, separate copy of these same hue values earlier in
+    # the page, so a page-wide scan isn't a single monotonic sequence.
+    def item_hue(cid: str) -> int:
+        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', site_content)
+        assert match, f"no --hot-hue found on item {cid!r}"
+        return int(match.group(1))
+
+    assert item_hue("c2") < item_hue("c1") < item_hue("c3")
+
+
+def test_final_digest_each_category_renders_a_hot_hue_style(project):
+    # All 4 categories get a real, distinct hue via inline --hot-hue —
+    # follow-up to real feedback that even 4 fixed swatches were too
+    # coarse; there is no more per-category CSS class to assert on.
+    seen_hues = set()
     for i, category in enumerate(["breaking", "new_product", "notable", "field_notes"]):
         cid = f"c{i}"
         _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id=cid)])
@@ -346,9 +392,12 @@ def test_final_digest_each_category_gets_its_own_badge_and_hook_class(project):
         _, site_path = render_final_digest("2026-W01")
         with open(site_path, encoding="utf-8") as f:
             site_content = f.read()
-        assert f'class="category-badge {category}">' in site_content
-        assert f'class="item-hook {category}"' in site_content
-        assert f'class="issue-item {category}"' in site_content
+        assert 'class="category-badge">' in site_content
+        assert 'class="item-hook">' in site_content
+        match = re.search(r'--hot-hue:(\d+)', site_content)
+        assert match, f"no --hot-hue found for category {category!r}"
+        seen_hues.add(int(match.group(1)))
+    assert len(seen_hues) == 4  # each category lands in a distinct hue band
 
 
 def test_final_digest_toc_group_shows_item_count(project):
@@ -366,7 +415,7 @@ def test_final_digest_toc_group_shows_item_count(project):
     with open(site_path, encoding="utf-8") as f:
         site_content = f.read()
     assert "Breaking News (2)" in digest_content
-    assert 'class="toc-group breaking"' in site_content
+    assert 'class="toc-group"' in site_content
     assert '<span class="count">(2)</span>' in site_content
 
 

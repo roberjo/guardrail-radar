@@ -13,20 +13,23 @@
       --ink-soft: #4b564d;
       --line: #d8dacd;
       --amber: #b8791e;
-      --amber-soft: #f2e6cc;
-      --breaking: #a8402f;
-      --breaking-soft: #f3ded9;
-      --notable: #3f6e6a;
-      --notable-soft: #dceae8;
-      --field-soft: #e9ebe2;
+      /* Continuous per-item "hotness" gradient (red -> orange -> yellow ->
+         green) — replaces the earlier 4 fixed category colors. Each
+         colored element sets --hot-hue inline (computed in pipeline/render.py,
+         see _hotness_order) and reads its actual color from these two
+         tokens, so the whole page shares one gradient instead of a
+         category-keyed palette. --hot-l is redefined for dark mode below;
+         --hot-s stays fixed across both. */
+      --hot-s: 62%;
+      --hot-l: 38%;
+      --surface-soft: #e9ebe2;
     }
     @media (prefers-color-scheme: dark){
       :root{
         --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
-        --amber:#e3a94b; --amber-soft: rgba(227,169,75,0.16);
-        --breaking:#d97a6c; --breaking-soft: rgba(217,122,108,0.16);
-        --notable:#8bbdb8; --notable-soft: rgba(139,189,184,0.15);
-        --field-soft: rgba(174,184,172,0.10);
+        --amber:#e3a94b;
+        --hot-l: 68%;
+        --surface-soft: rgba(174,184,172,0.10);
       }
     }
     *{ box-sizing: border-box; }
@@ -55,44 +58,43 @@
       font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 0.75rem;
     }
     .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
-    /* Table of contents — each group's left-border/heading color matches
-       that category's badge/hook color below, so the TOC and the items
-       it points to read as one color system, not two conventions. */
+    /* Table of contents — each group's left-border/heading color is its
+       hottest item's hue; each link gets a dot in its own item's hue, so
+       the gradient visibly continues both between and within groups. */
     .toc{
       display: flex; flex-direction: column; gap: 0.9rem;
       margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 8px;
     }
-    .toc-group{ border-left: 3px solid var(--line); padding-left: 0.75rem; }
+    .toc-group{
+      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      padding-left: 0.75rem;
+    }
     .toc-group h4{
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
       font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
-      color: var(--ink-soft); margin: 0 0 0.4rem;
+      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); margin: 0 0 0.4rem;
     }
     .toc-group .count{ font-weight: 400; opacity: 0.7; }
-    .toc-group.breaking{ border-left-color: var(--breaking); }
-    .toc-group.breaking h4{ color: var(--breaking); }
-    .toc-group.new_product{ border-left-color: var(--amber); }
-    .toc-group.new_product h4{ color: var(--amber); }
-    .toc-group.notable{ border-left-color: var(--notable); }
-    .toc-group.notable h4{ color: var(--notable); }
-    .toc-group.field_notes{ border-left-color: var(--ink-soft); }
     .toc-group ul{ list-style: none; margin: 0; padding: 0; }
-    .toc-group li{ font-size: 0.88rem; margin: 0 0 0.25rem; }
+    .toc-group li{
+      display: flex; align-items: baseline; gap: 0.4rem;
+      font-size: 0.88rem; margin: 0 0 0.25rem;
+    }
+    .toc-group .dot{
+      width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none;
+      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+    }
     .toc-group a{ color: var(--ink); text-decoration: none; }
     .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
     .issue-items{ list-style: none; padding: 0; margin: 0; }
-    /* Each item carries a left-border stripe in its own category color —
-       a reader scanning down the page sees the color band before
-       reading anything, the same signal the TOC and badge already give. */
+    /* Each item carries a left-border stripe in its own hue — a reader
+       scanning down the page sees the gradient cool off before reading
+       anything, the same signal the TOC and badge already give. */
     .issue-item{
       padding: 1.1rem 0 1.1rem 0.9rem; border-top: 1px solid var(--line);
-      border-left: 3px solid transparent;
+      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
     }
     .issue-item:first-child{ border-top: none; padding-top: 0; }
-    .issue-item.breaking{ border-left-color: var(--breaking); }
-    .issue-item.new_product{ border-left-color: var(--amber); }
-    .issue-item.notable{ border-left-color: var(--notable); }
-    .issue-item.field_notes{ border-left-color: var(--ink-soft); }
     .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.05rem; margin: 0 0 0.5rem; }
     .issue-item h4 a{ color: var(--amber); text-decoration: none; }
     .issue-item h4 a:hover{ text-decoration: underline; }
@@ -104,29 +106,25 @@
       border-radius: 3px; padding: 0.14rem 0.45rem;
     }
     .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }
-    .category-badge{ font-weight: 700; }
-    .category-badge .dot{ width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none; }
-    .category-badge.breaking{ color: var(--breaking); background: var(--breaking-soft); }
-    .category-badge.breaking .dot{ background: var(--breaking); }
-    .category-badge.new_product{ color: var(--amber); background: var(--amber-soft); }
-    .category-badge.new_product .dot{ background: var(--amber); }
-    .category-badge.notable{ color: var(--notable); background: var(--notable-soft); }
-    .category-badge.notable .dot{ background: var(--notable); }
-    .category-badge.field_notes{ color: var(--ink-soft); background: var(--field-soft); }
-    .category-badge.field_notes .dot{ background: var(--ink-soft); }
-    .read-time{ color: var(--ink-soft); background: var(--field-soft); font-weight: 600; }
+    .category-badge{
+      font-weight: 700;
+      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l) / 15%);
+    }
+    .category-badge .dot{
+      width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none;
+      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+    }
+    .read-time{ color: var(--ink-soft); background: var(--surface-soft); font-weight: 600; }
     /* The hook is the "why this made the issue" pitch — a colored callout
-       (color matches the item's category) so it reads as a distinct tier
-       from the plain-paragraph note below, even with the excerpt collapsed
+       in the item's own hue — so it reads as a distinct tier from the
+       plain-paragraph note below, even with the excerpt collapsed
        between them. */
     .item-hook{
       font-weight: 700; margin: 0 0 0.6rem; padding: 0.55rem 0.8rem;
-      border-radius: 6px; border-left: 3px solid var(--line);
+      border-radius: 6px; border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l) / 15%);
     }
-    .item-hook.breaking{ background: var(--breaking-soft); border-left-color: var(--breaking); }
-    .item-hook.new_product{ background: var(--amber-soft); border-left-color: var(--amber); }
-    .item-hook.notable{ background: var(--notable-soft); border-left-color: var(--notable); }
-    .item-hook.field_notes{ background: var(--field-soft); border-left-color: var(--ink-soft); }
     .issue-item details{ margin: 0 0 0.6rem; }
     .issue-item summary{
       cursor: pointer; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;

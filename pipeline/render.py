@@ -59,9 +59,72 @@ CATEGORY_BADGE_LABELS = {
 
 WORDS_PER_MINUTE = 200
 
+# Hue range for the per-item "hotness" gradient — HSL hue rotates red (0) ->
+# orange -> yellow -> green as it increases, so this pair alone produces the
+# whole red-to-green path. See docs/technical-spec.md §14 (hotness gradient).
+HOTTEST_HUE = 5
+COOLEST_HUE = 125
+HOT_SATURATION = "55%"
+
 
 def _item_anchor(cluster_id: str) -> str:
     return f"item-{cluster_id}"
+
+
+def _hotness_order(draft: list[dict], ranked_by_cluster: dict) -> list[tuple[dict, int]]:
+    """Returns (entry, hue) pairs sorted hottest to coolest.
+
+    Direct user request: a true gradient, not 4 fixed swatches — item order
+    and color should both reflect it, "best hook to less-best hook." A
+    category alone (see CATEGORY_ORDER) is too coarse for that, and asking
+    the drafting step to hand-assign a numeric hotness to every item would
+    add subjective, hard-to-calibrate busywork to every future issue. So
+    category sets the coarse band (unchanged from the earlier hottest-to-
+    coldest ordering — still the dominant, editorially-judged signal) and
+    each item's real cluster_score (already computed by pipeline.score,
+    already used to rank it into data/ranked/<iso-week>.json — nothing new
+    drafted) places it within that band, hottest-scoring item first. This
+    also means field_notes items are no longer hard-coded to one neutral
+    color — they fall wherever their band naturally lands on the same
+    gradient as everything else.
+    """
+    category_rank = {c: i for i, c in enumerate(CATEGORY_ORDER)}
+    n_categories = len(CATEGORY_ORDER)
+    band_width = (COOLEST_HUE - HOTTEST_HUE) / n_categories
+
+    groups: dict[str, list[dict]] = {c: [] for c in CATEGORY_ORDER}
+    for entry in draft:
+        category = entry.get("category", "new_product")
+        groups.setdefault(category, []).append(entry)
+
+    ordered: list[tuple[dict, int]] = []
+    for category in CATEGORY_ORDER:
+        items = groups.get(category, [])
+        if not items:
+            continue
+        items = sorted(
+            items,
+            key=lambda e: ranked_by_cluster.get(e["cluster_id"], {}).get("cluster_score", 0),
+            reverse=True,
+        )
+        rank = category_rank[category]
+        band_start = HOTTEST_HUE + band_width * rank
+        group_size = len(items)
+        for i, entry in enumerate(items):
+            # i=0 (hottest-scoring item in this category) sits at the band's
+            # hot edge; the coolest sits just short of the next band's start.
+            local_fraction = i / group_size
+            hue = round(band_start + band_width * local_fraction)
+            ordered.append((entry, hue))
+
+    # Any category not in CATEGORY_ORDER (shouldn't happen with a valid
+    # draft, but not verify.py-enforced — see draft-schema.md) sorts last,
+    # coolest hue, rather than silently vanishing from the issue.
+    unknown = [e for e in draft if e.get("category", "new_product") not in category_rank]
+    for entry in unknown:
+        ordered.append((entry, COOLEST_HUE))
+
+    return ordered
 
 
 def _read_time_minutes(*texts: str) -> int:
@@ -180,16 +243,14 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     intro, draft = _load_draft(draft_path)
     ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
 
-    # Reorder items hottest-to-coldest (CATEGORY_ORDER) before anything
-    # renders, so the actual reading order in digest/<week>.md and
-    # site/index.html matches the table of contents instead of just the
-    # TOC reflecting it while the body stays in whatever order the draft
-    # happened to list items in. Stable sort: items keep their relative
-    # order within a category (their original ranked order).
-    category_rank = {c: i for i, c in enumerate(CATEGORY_ORDER)}
-    draft = sorted(
-        draft, key=lambda e: category_rank.get(e.get("category", "new_product"), len(CATEGORY_ORDER))
-    )
+    # Reorder items hottest-to-coldest before anything renders, so the
+    # actual reading order in digest/<week>.md and site/index.html matches
+    # the table of contents instead of just the TOC reflecting it while the
+    # body stays in whatever order the draft happened to list items in. See
+    # _hotness_order's docstring for how the gradient itself is computed.
+    hotness = _hotness_order(draft, ranked_by_cluster)
+    draft = [entry for entry, _hue in hotness]
+    hue_by_cluster_id = {entry["cluster_id"]: hue for entry, hue in hotness}
 
     verification_by_cluster = {}
     if os.path.exists(verification_path):
@@ -246,15 +307,21 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
             lines_md.append(f"- {_md_escape(title)}")
         lines_md.append("")
 
+        # Each link gets a dot in that item's own hue (draft is already
+        # sorted hottest-first within the category, so the dots visibly
+        # cool down top-to-bottom within a group, not just group-to-group).
         toc_links = "".join(
-            f'<li><a href="#{_item_anchor(cid)}">{html.escape(title)}</a></li>' for title, cid in items
+            f'<li style="--hot-hue:{hue_by_cluster_id[cid]}">'
+            f'<span class="dot"></span><a href="#{_item_anchor(cid)}">{html.escape(title)}</a></li>'
+            for title, cid in items
         )
-        # category class drives the left-border/heading color per group in
-        # site CSS — same color used on that category's item badges, so the
-        # TOC and the items below it read as one consistent color system
-        # rather than two unrelated conventions.
+        # The group heading/left-border uses its hottest item's hue (items
+        # are sorted hottest-first within the category), so the TOC and the
+        # items below it read as one continuous gradient, not a fixed
+        # per-category color plus a separate per-item one.
+        group_hue = hue_by_cluster_id[items[0][1]]
         toc_html_parts.append(
-            f'<div class="toc-group {category}"><h4>{html.escape(label)} '
+            f'<div class="toc-group" style="--hot-hue:{group_hue}"><h4>{html.escape(label)} '
             f'<span class="count">({len(items)})</span></h4><ul>{toc_links}</ul></div>'
         )
     toc_html = f'<nav class="toc">{"".join(toc_html_parts)}</nav>' if toc_html_parts else ""
@@ -273,6 +340,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
         note = entry.get("note", "")
         franchise = entry.get("franchise", "weekly")
         category = entry.get("category", "new_product")
+        hue = hue_by_cluster_id[entry["cluster_id"]]
         read_minutes = _read_time_minutes(hook, excerpt, note)
 
         if url:
@@ -302,7 +370,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
 
         archive_items_html.append(
             _render_archive_item_html(
-                entry["cluster_id"], title, url, hook, excerpt, note, franchise, category, read_minutes, entry
+                entry["cluster_id"], title, url, hook, excerpt, note, franchise, category, hue, read_minutes, entry
             )
         )
 
@@ -324,6 +392,7 @@ def _render_archive_item_html(
     note: str,
     franchise: str,
     category: str,
+    hue: int,
     read_minutes: int,
     entry: dict,
 ) -> str:
@@ -354,12 +423,15 @@ def _render_archive_item_html(
     paste into Substack/Beehiiv, so digest/<week>.md keeps the excerpt
     always visible.
 
-    Each of the 4 categories now gets its own color (not just breaking) —
-    a follow-up to real feedback that at-a-glance scanning needed more
-    than "breaking vs. everything else." The same category class drives
-    the badge dot, the hook's callout accent, the item's left-border
-    stripe, and the matching TOC group's heading color, so the whole page
-    reads as one consistent color system instead of an isolated badge.
+    Color is now a continuous per-item gradient (red -> orange -> yellow ->
+    green), not 4 fixed category swatches — a follow-up to real feedback
+    that even 4 colors were too coarse: the user wants a "true gradient,"
+    with items ordered and colored hottest-to-coolest so the whole issue
+    visibly cools down top to bottom (see _hotness_order). `hue` (0-360,
+    computed there) drives every colored element here via the CSS custom
+    property --hot-hue, set once on the outer <li> and inherited by the
+    badge, dot, and hook's callout accent — one continuous system instead
+    of a category-keyed one.
     """
     heading = f'<a href="{html.escape(url)}">{html.escape(title)}</a>' if url else html.escape(title)
     parts = [f"<h4>{heading}</h4>"]
@@ -369,14 +441,12 @@ def _render_archive_item_html(
         label = html.escape(franchise.replace("_", " ").title())
         badges.append(f'<span class="franchise-tag">{label}</span>')
     category_label = html.escape(CATEGORY_BADGE_LABELS.get(category, category))
-    badges.append(
-        f'<span class="category-badge {category}"><span class="dot"></span>{category_label}</span>'
-    )
+    badges.append(f'<span class="category-badge"><span class="dot"></span>{category_label}</span>')
     badges.append(f'<span class="read-time">{read_minutes} min read</span>')
     parts.append(f'<div class="badge-row">{"".join(badges)}</div>')
 
     if hook:
-        parts.append(f'<p class="item-hook {category}">{html.escape(hook)}</p>')
+        parts.append(f'<p class="item-hook">{html.escape(hook)}</p>')
 
     if excerpt:
         parts.append(
@@ -395,8 +465,7 @@ def _render_archive_item_html(
         )
 
     anchor = html.escape(_item_anchor(cluster_id), quote=True)
-    category_attr = html.escape(category, quote=True)
-    return f'<li class="issue-item {category_attr}" id="{anchor}">{"".join(parts)}</li>'
+    return f'<li class="issue-item" id="{anchor}" style="--hot-hue:{hue}">{"".join(parts)}</li>'
 
 
 def _update_site_archive(

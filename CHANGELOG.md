@@ -6,6 +6,39 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Changed — continuous red-to-green hotness gradient, not 4 fixed colors
+- Direct user follow-up: even the just-shipped 4-color category system
+  was too coarse — the user wants "a true gradient value from red hot to
+  cool green" for both category and individual items within a category,
+  so the whole issue visibly flows from best hook to least, not in 4
+  discrete steps. Confirmed the hue path explicitly: red -> orange ->
+  yellow -> green.
+- Every colored element (category badge + its dot, the item hook's
+  callout, the item's own left-border, and the matching TOC group/link)
+  now reads its color from one per-item CSS custom property, `--hot-hue`,
+  via `hsl(var(--hot-hue) var(--hot-s) var(--hot-l))` — replacing the
+  per-category CSS classes from the previous change entirely.
+- `_hotness_order` (`pipeline/render.py`) computes the hue: category
+  still sets the coarse band (unchanged `CATEGORY_ORDER`, still the
+  dominant, editorially-judged signal — deliberately not asking the
+  drafting step to hand-assign a numeric hotness to every item, which
+  would add subjective, hard-to-calibrate busywork to every future
+  issue), and each item's real `cluster_score` — already computed by
+  `pipeline/score.py`, already used to rank it into `data/ranked/
+  <iso-week>.json`, nothing new drafted — places it within that band.
+  Items are now sorted by that same score within their category too
+  (previously just draft order), so "best hook first" actually holds
+  within a category, not only category-to-category.
+  `field_notes` items are no longer hard-coded to one neutral gray —
+  they fall wherever their band naturally lands on the same gradient as
+  everything else.
+- 2 new/updated tests in `tests/test_render.py`, including one that sets
+  distinct real `cluster_score` values on two same-category items to
+  prove the intra-category ordering and hue both follow score, not
+  original draft order. `docs/technical-spec.md` §14 updated.
+  Retrofitted the live issue by re-running `weekly-verify-and-publish.yml`
+  against the unchanged draft.
+
 ### Changed — reading order is now hottest-to-coldest, not urgency-first
 - Direct user request: lead with the most interesting item (`notable`),
   not the most urgent one (`breaking`) — and put routine `new_product`
