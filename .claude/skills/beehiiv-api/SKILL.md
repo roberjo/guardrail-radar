@@ -30,6 +30,27 @@ project. If you're ever asked to build actual automated sending, that's a
 deliberate scope change to flag explicitly to the user first, not something
 to infer from "the API supports it."
 
+## Beehiiv's official MCP server (added 2026-08-24, separate from the above)
+
+`claude mcp add --transport http beehiiv https://mcp.beehiiv.com/mcp` was
+run for this project (local config, private to the maintainer). It's not
+connected until the maintainer runs `claude mcp login beehiiv` themselves
+in an interactive terminal — that login can't be completed from a
+background/non-interactive session, since it opens a local OAuth callback
+listener. The authorization request asked for `scope=read+write`, so once
+connected its tools can very plausibly do more than `pipeline/beehiiv.py`
+does today — possibly including actions equivalent to publishing or
+sending, not just drafting.
+
+**The same rule applies regardless of which path is used.** If the
+Beehiiv MCP's tools are ever used instead of `pipeline/beehiiv.py`, the
+"never cause a post to be sent or go live without the user explicitly
+asking for that specific action" rule above still holds — check what an
+MCP tool actually does (its description, and its parameters like a
+status/publish field) before calling it, the same way `create_draft_post`
+was written only after confirming Beehiiv's real status-field behavior,
+not by assuming a tool named e.g. "create_post" defaults to safe.
+
 ## Credentials
 
 Two env vars, both already in `.env` locally (never in git — see
