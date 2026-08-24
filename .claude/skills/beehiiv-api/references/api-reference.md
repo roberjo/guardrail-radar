@@ -125,12 +125,19 @@ is exactly `"draft"`.
 Sources: [Create post](https://developers.beehiiv.com/api-reference/posts/create),
 [Using the Send API and Create post endpoint](https://www.beehiiv.com/support/article/36759164012439-using-the-send-api-and-create-post-endpoint).
 
+## Confirmed NOT possible via the API
+
+- **Updating publication settings (name, branding, custom domain) — there
+  is no such endpoint.** Confirmed 2026-08-24 against
+  `developers.beehiiv.com/api-reference/publications`: the entire
+  Publications section is `GET /v2/publications` (list) and
+  `GET /v2/publications/{id}` (show) only — no PUT/PATCH/POST/DELETE at
+  all. The "Guardrail-radar" vs. "Guardrail Radar" name mismatch found the
+  same day can only be fixed by hand in the Beehiiv dashboard
+  (Settings → Publication), not via this integration.
+
 ## Not yet confirmed / not implemented
 
-- Updating publication settings (name, branding, custom domain) — no
-  endpoint has been looked up yet. Don't guess the path or fields; check
-  `developers.beehiiv.com` first if this becomes needed (e.g. to fix the
-  "Guardrail-radar" vs. "Guardrail Radar" name mismatch found 2026-08-24).
 - Subscriber list / segment endpoints — not looked up, not implemented.
 - The dedicated Send API — deliberately out of scope for this project; see
   `SKILL.md`'s "one rule that matters more than anything else."

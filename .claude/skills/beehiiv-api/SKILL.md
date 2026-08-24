@@ -93,10 +93,11 @@ class-based CSS (Beehiiv's editor can't load `ISSUE_PAGE_CSS`) and without
 
 ## Known gaps / open questions
 
-- No "update publication settings" function exists yet (e.g. to fix a
-  name/branding mismatch between the Beehiiv publication and the site) —
-  scope and confirm the exact update endpoint against
-  `developers.beehiiv.com` before adding one; don't guess field names.
+- **Publication settings can't be updated via the API at all** — confirmed
+  2026-08-24, the Publications section of the API is list/show only, no
+  write endpoint exists (see `references/api-reference.md`). The
+  "Guardrail-radar" vs. "Guardrail Radar" name mismatch found the same day
+  has to be fixed by hand in the dashboard.
 - Whether Launch-tier API access covers subscriber-list/segment endpoints
   hasn't been checked — confirm against real docs before building anything
   that assumes it does.
