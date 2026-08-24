@@ -44,10 +44,8 @@
   {
     "cluster_id": "6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27",
     "title": "Show HN: Hands-Rust MCP/CLI that sees the Windows desktop and clicks real Chrome",
-    "status": "flagged",
-    "reasons": [
-      "url unverifiable: HTTP 429 (rate-limited, not confirmed dead) — confirm by hand"
-    ]
+    "status": "clear",
+    "reasons": []
   },
   {
     "cluster_id": "9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160",
