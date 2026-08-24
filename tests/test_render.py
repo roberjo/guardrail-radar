@@ -16,6 +16,7 @@ import pytest
 from pipeline.render import (
     _clean_display_title,
     _read_time_minutes,
+    build_beehiiv_draft_content,
     render_final_digest,
     render_review_packet,
 )
@@ -849,3 +850,64 @@ def test_first_issue_placeholder_removed_after_first_render(project):
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
     render_final_digest("2026-W01")
     assert "First issue coming soon" not in _read("site/index.html")
+
+
+# ---------- beehiiv draft content ----------
+
+
+def test_build_beehiiv_draft_content_uses_subject_as_title(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()], subject="A punchy subject line")
+    title, _body = build_beehiiv_draft_content("2026-W01")
+    assert title == "A punchy subject line"
+
+
+def test_build_beehiiv_draft_content_falls_back_to_generic_title_without_subject(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()], subject="")
+    title, _body = build_beehiiv_draft_content("2026-W01")
+    assert title == "Guardrail Radar — 2026-W01"
+
+
+def test_build_beehiiv_draft_content_body_has_no_site_only_markup(project):
+    # Beehiiv's editor can't load ISSUE_PAGE_CSS, so the body must not
+    # depend on it: no --hot-hue custom properties, no <details> collapse
+    # (same reason digest/<iso-week>.md avoids it).
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story", excerpt="a real excerpt")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(title="A real story")], intro="A short intro.")
+    _title, body = build_beehiiv_draft_content("2026-W01")
+    assert "--hot-hue" not in body
+    assert "<details>" not in body
+    assert "A short intro." in body
+    assert "A real story" in body
+    assert "a real excerpt" in body
+
+
+def test_build_beehiiv_draft_content_orders_items_hottest_first(project):
+    _write(
+        "data/ranked/2026-W01.json",
+        [
+            _ranked_cluster(cluster_id="c1", title="Routine launch"),
+            _ranked_cluster(cluster_id="c2", title="Wow factor"),
+        ],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [
+            _draft_entry(cluster_id="c1", title="Routine launch", category="new_product"),
+            _draft_entry(cluster_id="c2", title="Wow factor", category="notable"),
+        ],
+    )
+    _title, body = build_beehiiv_draft_content("2026-W01")
+    assert body.index("Wow factor") < body.index("Routine launch")
+
+
+def test_build_beehiiv_draft_content_refuses_unresolved_blocked_entries(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1")])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1")])
+    _write(
+        "digest/verification/2026-W01.json",
+        [{"cluster_id": "c1", "status": "blocked"}],
+    )
+    with pytest.raises(RuntimeError, match="unresolved blocked"):
+        build_beehiiv_draft_content("2026-W01")

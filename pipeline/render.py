@@ -562,24 +562,14 @@ def render_review_packet(iso_week: str) -> str:
     return "\n".join(lines)
 
 
-def render_final_digest(iso_week: str) -> tuple[str, str, str]:
-    draft_path = os.path.join("digest", "draft", f"{iso_week}.json")
-    ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
+def _assert_no_unresolved_blocked(iso_week: str, draft: list[dict]) -> dict:
+    """Loads digest/verification/<iso-week>.json (if it exists) and raises
+    if any entry is `blocked` without an explicit `approved` override on the
+    draft entry itself — see docs/technical-spec.md §13. Shared by every
+    renderer that turns a draft into audience-facing output (site, markdown
+    digest, Beehiiv draft post) so none of them can bypass this gate.
+    """
     verification_path = os.path.join("digest", "verification", f"{iso_week}.json")
-
-    subject, intro, draft = _load_draft(draft_path)
-    ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
-
-    # Reorder items hottest-to-coldest before anything renders, so the
-    # actual reading order in digest/<week>.md and site/index.html matches
-    # the table of contents instead of just the TOC reflecting it while the
-    # body stays in whatever order the draft happened to list items in. See
-    # _hotness_order's docstring for how the gradient itself is computed.
-    hotness = _hotness_order(draft, ranked_by_cluster)
-    draft = [entry for entry, _hue in hotness]
-    hue_by_cluster_id = {entry["cluster_id"]: hue for entry, hue in hotness}
-    summary_line = _teaser_summary_line(draft, ranked_by_cluster)
-
     verification_by_cluster = {}
     if os.path.exists(verification_path):
         for record in read_json(verification_path):
@@ -595,6 +585,27 @@ def render_final_digest(iso_week: str) -> tuple[str, str, str]:
             f"Refusing to render: unresolved blocked entries {unresolved}. "
             "Fix the draft or drop the item — see docs/technical-spec.md §13."
         )
+    return verification_by_cluster
+
+
+def render_final_digest(iso_week: str) -> tuple[str, str, str]:
+    draft_path = os.path.join("digest", "draft", f"{iso_week}.json")
+    ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
+
+    subject, intro, draft = _load_draft(draft_path)
+    ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
+
+    # Reorder items hottest-to-coldest before anything renders, so the
+    # actual reading order in digest/<week>.md and site/index.html matches
+    # the table of contents instead of just the TOC reflecting it while the
+    # body stays in whatever order the draft happened to list items in. See
+    # _hotness_order's docstring for how the gradient itself is computed.
+    hotness = _hotness_order(draft, ranked_by_cluster)
+    draft = [entry for entry, _hue in hotness]
+    hue_by_cluster_id = {entry["cluster_id"]: hue for entry, hue in hotness}
+    summary_line = _teaser_summary_line(draft, ranked_by_cluster)
+
+    _assert_no_unresolved_blocked(iso_week, draft)
 
     lines_md = []
 
@@ -849,6 +860,99 @@ def _render_archive_item_html(
 
     anchor = html.escape(_item_anchor(cluster_id), quote=True)
     return f'<li class="issue-item" id="{anchor}" style="--hot-hue:{hue}">{"".join(parts)}</li>'
+
+
+def _render_beehiiv_item_html(entry: dict, cluster: dict) -> str:
+    """One item's content as a self-contained, inline-styled HTML block for
+    a Beehiiv draft post body — see build_beehiiv_draft_content and
+    pipeline/beehiiv.py's create_draft_post.
+
+    Deliberately not a reuse of _render_archive_item_html: that function's
+    output depends on ISSUE_PAGE_CSS (class names, --hot-hue custom
+    properties) which only exists on this project's own site pages —
+    Beehiiv's editor has no way to load that stylesheet, so every colored/
+    classed element would silently render unstyled. Same reason
+    digest/<iso-week>.md skips <details> for its excerpt (see
+    render_final_digest) — this skips it too, plus drops the hotness hue
+    entirely rather than ship inert styling hooks into a third medium that
+    can't use them.
+    """
+    title = entry.get("title") or cluster.get("title", "(untitled)")
+    display_title = _clean_display_title(title)
+    url = entry.get("url") or cluster.get("url", "")
+    if not _is_http_url(url):
+        url = ""
+    hook = entry.get("hook", "")
+    note = entry.get("note", "")
+    excerpt = cluster.get("cluster_excerpt", "")
+    category = entry.get("category", "new_product")
+    read_minutes = _read_time_minutes(hook, excerpt, note)
+    badge_label = html.escape(CATEGORY_BADGE_LABELS.get(category, category))
+
+    heading = (
+        f'<a href="{html.escape(url, quote=True)}" style="color:#b8791e;text-decoration:none;">{html.escape(display_title)}</a>'
+        if url else html.escape(display_title)
+    )
+    parts = [f'<h3 style="margin:0 0 6px;font-family:Georgia,\'Times New Roman\',serif;">{heading}</h3>']
+    if hook:
+        parts.append(f'<p style="margin:0 0 10px;color:#4b564d;font-weight:600;">{html.escape(hook)}</p>')
+    parts.append(
+        '<p style="margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:#4b564d;">'
+        f"{badge_label} &middot; {read_minutes} min read</p>"
+    )
+    if note:
+        parts.append(f'<p style="margin:0 0 10px;">{html.escape(note)}</p>')
+    if excerpt:
+        parts.append(
+            '<blockquote style="margin:0 0 10px;padding-left:12px;border-left:2px solid #d8dacd;'
+            f'color:#4b564d;font-style:italic;">{html.escape(excerpt)}</blockquote>'
+        )
+    primary = entry.get("primary_source_url")
+    if primary and _is_http_url(primary):
+        parts.append(
+            '<p style="margin:0 0 10px;font-size:13px;color:#4b564d;">Primary source: '
+            f'<a href="{html.escape(primary, quote=True)}">{html.escape(primary)}</a></p>'
+        )
+
+    return (
+        '<div style="margin:0 0 28px;padding-bottom:20px;border-bottom:1px solid #d8dacd;">'
+        + "".join(parts) + "</div>"
+    )
+
+
+def build_beehiiv_draft_content(iso_week: str) -> tuple[str, str]:
+    """Returns (title, body_content_html) for a Beehiiv draft post — the two
+    fields pipeline/beehiiv.py's create_draft_post needs. Reuses the exact
+    same digest/draft/<iso-week>.json + data/ranked/<iso-week>.json and
+    hotness ordering as render_final_digest (see _hotness_order), and the
+    same _assert_no_unresolved_blocked safety gate — this must never be
+    callable against a draft with an unresolved blocked verification entry,
+    same as every other renderer.
+
+    `title` is the drafted `subject` line — already written as the one
+    sentence that has to work before anything else gets read (see
+    _load_draft's docstring) — falling back to a generic per-week title if
+    a draft somehow has none, same fallback _render_issue_page_html uses.
+    """
+    draft_path = os.path.join("digest", "draft", f"{iso_week}.json")
+    ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
+
+    subject, intro, draft = _load_draft(draft_path)
+    ranked_by_cluster = {c["cluster_id"]: c for c in read_json(ranked_path)}
+    _assert_no_unresolved_blocked(iso_week, draft)
+
+    hotness = _hotness_order(draft, ranked_by_cluster)
+    draft = [entry for entry, _hue in hotness]
+
+    title = subject or f"Guardrail Radar — {iso_week}"
+    body_parts = []
+    if intro:
+        body_parts.append(f'<p style="margin:0 0 24px;">{html.escape(intro)}</p>')
+    for entry in draft:
+        cluster = ranked_by_cluster.get(entry["cluster_id"], {})
+        body_parts.append(_render_beehiiv_item_html(entry, cluster))
+
+    return title, "".join(body_parts)
 
 
 def _update_site_archive(iso_week: str, teaser_html: str) -> str:
