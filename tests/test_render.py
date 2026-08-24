@@ -347,6 +347,18 @@ def test_final_digest_toc_anchor_matches_item_id(project):
     assert 'id="item-c1"' in issue_content
 
 
+def test_final_digest_issue_page_has_real_subscribe_link(project):
+    # The subscribe CTA was deliberately left commented out until a real
+    # Beehiiv URL existed (see docs/technical-spec.md §14) — now that one
+    # does (BEEHIIV_SUBSCRIBE_URL), every issue page should carry it.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_content = _read(issue_page_path)
+    assert 'class="subscribe-btn"' in issue_content
+    assert 'href="https://guardrail-radar.beehiiv.com/"' in issue_content
+
+
 def test_read_time_minutes_rounds_and_has_a_floor():
     # Added after a format audit against comparable newsletters (TLDR, The
     # Batch) that all surface a read-time signal — pure text-derived, no

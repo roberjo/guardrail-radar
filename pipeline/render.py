@@ -28,6 +28,12 @@ from pipeline.io_utils import iso_week_str, read_json
 # missing url falls back to whatever the crawler happened to fetch).
 SITE_BASE_URL = "https://roberjo.github.io/guardrail-radar"
 
+# The real, live Beehiiv publication URL — given directly by the maintainer
+# once the account existed (2026-08-24), not guessed. Until then the
+# subscribe CTA below was deliberately left out rather than pointing at a
+# placeholder (see docs/technical-spec.md §14).
+BEEHIIV_SUBSCRIBE_URL = "https://guardrail-radar.beehiiv.com/"
+
 SITE_ARCHIVE_MARKER = (
     "<!-- pipeline/render.py appends one <li> per published week here, "
     "per docs/technical-spec.md §14 -->"
@@ -492,12 +498,7 @@ def _render_issue_page_html(
     {intro_html}
     {toc_html}
     <ul class="issue-items">{items_html}</ul>
-    <!-- Subscribe CTA — styled and ready, left commented out rather than
-         pointing at a guessed or fabricated URL: no Beehiiv publication
-         exists yet (see docs/project-plan.md §11). Uncomment and set the
-         real href once the account is live.
-    <p class="subscribe-cta"><a class="subscribe-btn" href="https://REPLACE-WITH-REAL-BEEHIIV-URL">Subscribe for the weekly issue →</a></p>
-    -->
+    <p class="subscribe-cta"><a class="subscribe-btn" href="{html.escape(BEEHIIV_SUBSCRIBE_URL, quote=True)}">Subscribe for the weekly issue →</a></p>
     <footer>
       <p><a href="../index.html">← Back to all issues</a></p>
     </footer>
