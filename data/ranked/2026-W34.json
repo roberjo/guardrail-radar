@@ -1,14 +1,14 @@
 [
   {
-    "cluster_id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee",
-    "title": "opokumarvin/cli-agent-architects-notebook",
-    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
-    "source": "github",
+    "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
+    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+    "url": "https://twitter.com/argofowl/status/2091150597374537729",
+    "source": "hn",
     "cluster_sources": [
-      "github"
+      "hn"
     ],
-    "cluster_score": 69.0,
-    "cluster_excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "cluster_score": 8.22327810608898,
+    "cluster_excerpt": "update: it's server-side, not the app\n\nanthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone\n\nprobably an a/b test, so not everyone will see it\n\nif \"high\" feels like \"low\" for you,",
     "excerpt_status": "ok"
   },
   {
@@ -19,21 +19,9 @@
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 20.90980690734565,
+    "cluster_score": 3.7441451720754513,
     "cluster_excerpt": "The MCP that proves your AI's integration fixes work — Your agent's integration fix passes CI. The data is still wrong. FetchSandbox MCP reproduces the real failure on your code, fixes it, and proves the fix held. A receipt, not a vibe. 70+ API sandboxes. One config block in Cursor or Claude Code.",
     "excerpt_status": "partial"
-  },
-  {
-    "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
-    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
-    "url": "https://twitter.com/argofowl/status/2091150597374537729",
-    "source": "hn",
-    "cluster_sources": [
-      "hn"
-    ],
-    "cluster_score": 18.83682545808126,
-    "cluster_excerpt": "update: it's server-side, not the app\n\nanthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone\n\nprobably an a/b test, so not everyone will see it\n\nif \"high\" feels like \"low\" for you,",
-    "excerpt_status": "ok"
   },
   {
     "cluster_id": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
@@ -43,8 +31,20 @@
     "cluster_sources": [
       "hn"
     ],
-    "cluster_score": 4.0856244848773065,
+    "cluster_score": 3.4702990042407715,
     "cluster_excerpt": "Wiz Red Agent finds its way into Snowflake's internal Jira through a flaw in a GitHub Copilot–Assisted PR.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.7021254076098034,
+    "cluster_excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
     "excerpt_status": "ok"
   },
   {
@@ -55,21 +55,9 @@
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 3.898329972242258,
+    "cluster_score": 2.101814795725242,
     "cluster_excerpt": "Control your Mac via camera & train gestures, local & FOSS — PawVis turns your Mac’s webcam into a hand-tracked mouse, no extra hardware required. Raise your hand and the cursor follows, dip a finger to click, and fold two fingers to scroll. Map gestures to custom actions like window management or any app/command from a series of common gestures or train your own. Everything runs 100% on-device, and PawVis is free and open source. Enable optional voice control for hands-free commands, or pass computer-use tasks to Codex or Claude Code.",
     "excerpt_status": "partial"
-  },
-  {
-    "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
-    "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
-    "url": "https://github.com/proliferate-ai/proliferate",
-    "source": "hn",
-    "cluster_sources": [
-      "hn"
-    ],
-    "cluster_score": 1.372087853073375,
-    "cluster_excerpt": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows. - proliferate-ai/proliferate",
-    "excerpt_status": "ok"
   },
   {
     "cluster_id": "e468e98ad96b7d13e0637a6e2af6da2fb81b87ab0ba7f4f77c02af0cf440caf7",
@@ -79,8 +67,20 @@
     "cluster_sources": [
       "hn"
     ],
-    "cluster_score": 1.146227705397077,
+    "cluster_score": 1.0476031599417568,
     "cluster_excerpt": "A blog about computers, functional languages, Lisp, and Scheme.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e",
+    "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+    "url": "https://github.com/proliferate-ai/proliferate",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.870274204742752,
+    "cluster_excerpt": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows. - proliferate-ai/proliferate",
     "excerpt_status": "ok"
   },
   {
@@ -91,7 +91,7 @@
     "cluster_sources": [
       "hn"
     ],
-    "cluster_score": 0.8837320288118801,
+    "cluster_score": 0.5675578367386037,
     "cluster_excerpt": "Programming is like a game of chess for me: winning (i.e. delivering a product) is important, but only if I played this game myself. I don't enjoy winning if my opponent disconnected. I don't enjoy beating people who don't know how to move pieces. I don't enjoy winning with an engine, and coding agents are basically \"winning with a chess engine\". I started to use AI for coding a long time ago, when copilot was first introduced. At first, I was happy: \"wow, this can write boring boilerplate and unit tests\". Time went by, agents got better, time spent writing code myself went down. Half a year ago I suddenly realized I hadn't written any code for over a month, and I am a full-time software dev without any managing work. Not only did I stop writing code, but agents also became pretty good at proposing plans and architectures, and I was mostly providing missing context and technical details of our infrastructure. One day the realization hit hard. Coding agents removed everything I loved, a",
     "excerpt_status": "ok"
   },
@@ -103,21 +103,45 @@
     "cluster_sources": [
       "producthunt"
     ],
-    "cluster_score": 0.7272976315598487,
+    "cluster_score": 0.1302311364200157,
     "cluster_excerpt": "Turn coding with AI into a team sport — Slack Code turns coding with AI from a solo session into a team sport. Mention a coding agent and Slack creates a dedicated code channel where teammates can plan together, watch the agent work, review code diffs, test live previews, give feedback, and approve what ships. Bring Claude, Devin, GitHub Copilot, ChatGPT, Vercel agents, and your team into the same place—with all the context already in Slack.",
     "excerpt_status": "partial"
   },
   {
-    "cluster_id": "fe5160c6648cfa21283d553dbdd6e4067f192a006747a0b41b832d54d1c60cd1",
-    "title": "Meteorra AI — Live Scoring for Youtubers",
-    "url": "https://www.producthunt.com/products/meteorra-ai",
-    "source": "producthunt",
+    "cluster_id": "78c7021cdcc8a2215cd31cebd18aeeec6b88ff213cc2a042793415c77840de36",
+    "title": "Show HN: HarnessRouter: Unified interface for agent harnesses",
+    "url": "https://github.com/harnessrouter/harnessrouter",
+    "source": "hn",
     "cluster_sources": [
-      "producthunt"
+      "hn"
     ],
-    "cluster_score": 0.3636488157799244,
-    "cluster_excerpt": "Write, score, and publish YouTube content with confidence — Most creators publish and hope. Meteorra AI changes that. Creator Copilot scores your title, description and topic alignment in real time — as you type. Every edit updates your score instantly. By the time you're done writing, you know exactly how ready your video is. No more guessing. No more publishing weak content by accident. Write, score, and publish with confidence. Free to try — no signup needed.",
+    "cluster_score": 0.12257100117725628,
+    "cluster_excerpt": "HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, and more through one API, with sessions, streaming...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "808930d886cedffb43e8afc12f1826931ff1822870c14527fda779e78b9812e7",
+    "title": "Continue coding agent is dead. Alternatives?",
+    "url": "https://news.ycombinator.com/item?id=49398366",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.11750648901846457,
+    "cluster_excerpt": "It was nice to use on vscode with offline Ollama but today notices it is not updated anymore. So, alternatives you use?<p>From github:<p>&quot;Note: The continuedev&#x2F;continue repository is no longer actively maintained and is read-only for all users.&quot;<p>From continue.dev:<p>&quot;Continue has joined Cursor\nContinue was acquired by Cursor. Our mission was always to ensure developers are amplified, not automated, and that commitment carries on in the work ahead.<p>It was an honor to build with the Continue community. Thank you to each and every one of you who helped us create a pioneering open-source coding agent.<p>What we built together pushed the boundaries of what AI developer tooling could be, and our open-source codebase remains freely available as a foundation for others.&quot;",
     "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "e9387232d8fe8be6fa18a5f98c82dbc8acb248847e89436eba57bcb4bb545e6c",
+    "title": "Show HN: Open Bot – an open-source Grok Bot that works with any agent harness",
+    "url": "https://github.com/copilotkit/openbot",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.11307498748888299,
+    "cluster_excerpt": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent. - CopilotKit/OpenBot",
+    "excerpt_status": "ok"
   },
   {
     "cluster_id": "6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27",
@@ -127,8 +151,56 @@
     "cluster_sources": [
       "hn"
     ],
-    "cluster_score": 0.2669545689035247,
-    "cluster_excerpt": "I built Hands because I wanted a coding agent to use this Windows PC and a real Chrome profile the way I do: look at the screen, move the real mouse, type, click , without turning Chrome into an automation browser. It is a Rust MCP/CLI. A harness (Grok, Codex, Claude Code, OpenCode, etc.) calls tools like observe, click, type, scroll. Observe is a screenshot path plus a small element list (UIA + optional Chrome DOM ids). Click is OS SendInput on a Bézier path, not a Chrome DevTools click. There is no Playwright, no Puppeteer, no remote debugging port. Daily Chrome is launched with no extra flags, or attached if it’s already open. Sites that key on CDP/automation flags mostly don’t see that. They can still see injected input (LLMHF_INJECTED). A tiny unpacked Chrome extension can fuse page structure (chr: ids, listing cards) so the model isn’t guessing from pixels. Sideload is manual. Fusion dies if the service worker goes inactive; reload the card. What it is good for:",
+    "cluster_score": 0.08229848345630629,
+    "cluster_excerpt": "I built Hands because I wanted a coding agent to use this Windows PC and a real Chrome profile the way I do: look at the screen, move the real mouse, type, click , without turning Chrome into an automation browser.<p>It is a Rust MCP&#x2F;CLI. A harness (Grok, Codex, Claude Code, OpenCode, etc.) calls tools like observe, click, type, scroll. Observe is a screenshot path plus a small element list (UIA + optional Chrome DOM ids). Click is OS SendInput on a Bézier path, not a Chrome DevTools click.<p>There is no Playwright, no Puppeteer, no remote debugging port. Daily Chrome is launched with no extra flags, or attached if it’s already open. Sites that key on CDP&#x2F;automation flags mostly don’t see that. They can still see injected input (LLMHF_INJECTED).<p>A tiny unpacked Chrome extension can fuse page structure (chr: ids, listing cards) so the model isn’t guessing from pixels. Sideload is manual. Fusion dies if the service worker goes inactive; reload the card.<p>What it is good for:",
     "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "c315eeed323358e58660b76faf6b627957f92f118cf390f0940fc5db648cae3a",
+    "title": "Claude has a \"Concise\" output style",
+    "url": "https://code.claude.com/docs/en/output-styles",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.07521730414935984,
+    "cluster_excerpt": "Adapt Claude Code for uses beyond software engineering",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8aadc2d78ba05bf8991e2a75a0a91deb935c1b571ff80e148bb9a2c26c2cb78c",
+    "title": "Turn Claude Code into a 24/7 Agent",
+    "url": "https://github.com/gtapps/claude-code-hermit",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.0638180092843662,
+    "cluster_excerpt": "Turn Claude Code into an Always-on Agent. Contribute to gtapps/claude-code-hermit development by creating an account on GitHub.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8df86fedb2211dd3b3f9d933076a59b739e6be35806b1435bda4e6f6945a64be",
+    "title": "Microsoft is dropping its Excel Copilot function",
+    "url": "https://www.techradar.com/pro/microsoft-is-dropping-its-excel-copilot-function-after-only-a-year-and-without-ever-getting-a-full-public-launch",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.055635055333889086,
+    "cluster_excerpt": "COPILOT() function in Excel will soon be no more",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e88673bdeae2e4f481e551a08ecb6e31b5b32ce9f3dc073d22525969dc4c2c4c",
+    "title": "Show HN: Structo – Claude Code for short form writing",
+    "url": "https://structo.redbeardlab.com/",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.05090078998378684,
+    "cluster_excerpt": "",
+    "excerpt_status": "none"
   }
 ]
