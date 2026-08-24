@@ -131,11 +131,13 @@ ISSUE_PAGE_CSS = """
       --bg: #f3f4ee; --ink: #1b241e; --ink-soft: #4b564d; --line: #d8dacd;
       --amber: #b8791e; --amber-ink: #1a1408;
       --hot-s: 62%; --hot-l: 38%; --surface-soft: #e9ebe2;
+      --card-bg: #fffffe; --card-shadow: 0 1px 3px rgba(27,36,30,0.08);
     }
     @media (prefers-color-scheme: dark){
       :root{
         --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
         --amber:#e3a94b; --hot-l: 68%; --surface-soft: rgba(174,184,172,0.10);
+        --card-bg: #131a15; --card-shadow: 0 1px 2px rgba(0,0,0,0.3);
       }
     }
     *{ box-sizing: border-box; }
@@ -176,14 +178,16 @@ ISSUE_PAGE_CSS = """
     .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
     .issue-items{ list-style: none; padding: 0; margin: 0; }
     .issue-item{
-      padding: 1.1rem 0 1.1rem 0.9rem; border-top: 1px solid var(--line);
-      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      padding: 1.15rem 1.25rem 1.15rem 1.4rem; margin: 0 0 1rem;
+      background: var(--card-bg); border: 1px solid var(--line);
+      border-left: 4px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      border-radius: 10px; box-shadow: var(--card-shadow);
     }
-    .issue-item:first-child{ border-top: none; padding-top: 0; }
-    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.08rem; font-weight: 700; margin: 0 0 0.3rem; }
+    .issue-item:last-child{ margin-bottom: 0; }
+    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.08rem; font-weight: 700; margin: 0 0 0.5rem; }
     .issue-item h4 a{ color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); text-decoration: none; }
     .issue-item h4 a:hover{ text-decoration: underline; }
-    .item-source-title{ font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 0.7rem; font-style: italic; }
+    .item-dek{ font-size: 0.92rem; color: var(--ink-soft); font-weight: 600; margin: 0 0 0.7rem; }
     .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
     .franchise-tag, .category-badge, .read-time{
       display: inline-flex; align-items: center; gap: 0.32rem;
@@ -619,12 +623,11 @@ def render_final_digest(iso_week: str) -> tuple[str, str, str]:
         category = entry.get("category", "new_product")
         title = entry.get("title") or ranked_by_cluster.get(entry["cluster_id"], {}).get("title", "(untitled)")
         # The TOC links with the same text used as each item's own headline
-        # below (hook first, cleaned title as fallback) — a design-critique
-        # pass found the page taught readers two different labels for the
-        # same item (a raw scraped title in the TOC, a hand-written hook in
-        # the body), and had the raw title doing the headline's job in both
-        # places even though the hook is the actually-written pitch.
-        toc_text = entry.get("hook") or _clean_display_title(title)
+        # below (the cleaned source title) — see the headline-hierarchy note
+        # in the item-rendering loop just below for why the headline is the
+        # title and not the hook. Keeping these in sync avoids teaching
+        # readers two different labels for the same item.
+        toc_text = _clean_display_title(title)
         toc_groups.setdefault(category, []).append((toc_text, entry["cluster_id"]))
 
     toc_html_parts = []
@@ -675,21 +678,21 @@ def render_final_digest(iso_week: str) -> tuple[str, str, str]:
         read_minutes = _read_time_minutes(hook, excerpt, note)
         display_title = _clean_display_title(title)
 
-        # Headline hierarchy flip, per a design-critique pass: every item
-        # used to lead with its raw scraped source title (jargon-dense,
-        # often carrying platform metadata like "Show HN:") and demote the
-        # hand-written hook — the actual reason to care — to a bold line
-        # underneath. The hook now IS the headline; the cleaned source
-        # title becomes a small secondary caption, present only when a
-        # hook exists to be secondary to (older/hookless entries keep the
-        # title as the headline, unchanged).
-        headline_text = hook or display_title
+        # Headline is the cleaned source title, not the hand-written hook.
+        # This reverts an earlier flip: leading with the hook ("Proves an
+        # AI agent's fix actually held...") reads as generic ad copy and,
+        # worse, strips the proper nouns (product/company/tool names) a
+        # technical reader scans for to decide "is this about a vendor I
+        # use." The hook is a good *second* line, not a good first one — it
+        # now runs as a one-line "why this matters" dek right under the
+        # real headline instead.
+        headline_text = display_title
         if url:
             lines_md.append(f"### [{_md_escape(headline_text)}]({url})")
         else:
             lines_md.append(f"### {_md_escape(headline_text)}")
         if hook:
-            lines_md.append(f"_{_md_escape(display_title)}_")
+            lines_md.append(_md_escape(hook))
         if franchise != "weekly":
             lines_md.append(f"_{franchise.replace('_', ' ').title()}_")
         badge_label = CATEGORY_BADGE_LABELS.get(category, category)
@@ -767,13 +770,14 @@ def _render_archive_item_html(
     `title` here is already display-cleaned (source-platform prefixes like
     "Show HN:" stripped — see _clean_display_title) by the caller.
 
-    Headline is `hook`, not `title` — a design-critique pass found every
-    item leading with its raw scraped source title (jargon-dense, often
-    carrying platform metadata) while the hand-written hook, the actual
-    reason to care, rendered as a subordinate line underneath. The hook is
-    now the <h4>; the cleaned title becomes a small secondary caption,
-    shown only when there's a hook for it to be secondary to (an entry with
-    no hook falls back to the title as its own headline, unchanged).
+    Headline is `title`, not `hook` — reverted after brutal content-design
+    feedback on an earlier flip that made the hand-written hook the <h4>.
+    A hook-as-headline ("Proves an AI agent's fix actually held...") reads
+    as generic ad copy, and every hook that week shared the same verb-first
+    template, which made items blur together. Worse, it strips the proper
+    nouns (product/company/tool names) a technical reader scans for. The
+    hook still runs, right under the headline, as a one-line `.item-dek` —
+    a good second line, a bad first one.
 
     The returned <li> carries a stable id="item-<cluster_id>" so the
     table-of-contents nav built in render_final_digest can link straight
@@ -802,11 +806,9 @@ def _render_archive_item_html(
     icon, and headline color — one continuous system instead of a
     category-keyed one.
     """
-    headline_text = hook or title
+    headline_text = title
     heading = f'<a href="{html.escape(url)}">{html.escape(headline_text)}</a>' if url else html.escape(headline_text)
     parts = [f"<h4>{heading}</h4>"]
-    if hook:
-        parts.append(f'<p class="item-source-title">{html.escape(title)}</p>')
 
     badges = []
     if franchise and franchise != "weekly":
@@ -817,6 +819,9 @@ def _render_archive_item_html(
     badges.append(f'<span class="category-badge">{category_icon}{category_label}</span>')
     badges.append(f'<span class="read-time">{read_minutes} min read</span>')
     parts.append(f'<div class="badge-row">{"".join(badges)}</div>')
+
+    if hook:
+        parts.append(f'<p class="item-dek">{html.escape(hook)}</p>')
 
     if note:
         parts.append(f"<p>{html.escape(note)}</p>")

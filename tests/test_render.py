@@ -182,12 +182,12 @@ def test_final_digest_escapes_intro_html(project):
     assert "<script>alert(3)</script>" not in _read(issue_page_path)
 
 
-def test_final_digest_renders_hook_as_headline_title_as_caption(project):
-    # A design-critique pass found every item leading with its raw source
-    # title (jargon-dense, often carrying platform metadata) while the
-    # hand-written hook — the actual reason to care — rendered as a
-    # subordinate line underneath. hook is now the headline itself; the
-    # cleaned title becomes a small secondary caption below it.
+def test_final_digest_renders_title_as_headline_hook_as_dek(project):
+    # Reverted from an earlier flip that made the hand-written hook the
+    # headline: a hook-as-headline reads as generic ad copy and strips the
+    # proper nouns (product/company names) a technical reader scans for.
+    # The title is the headline again; the hook runs as a one-line "why
+    # this matters" dek right underneath it.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story")])
     _write_draft(
         "digest/draft/2026-W01.json",
@@ -198,18 +198,18 @@ def test_final_digest_renders_hook_as_headline_title_as_caption(project):
     issue_content = _read(issue_page_path)
 
     hook_text = "Proves the agent fix actually held, not just that it passed CI."
-    # digest markdown: the H3 heading is the hook, not the title; the title
-    # appears afterward as a small italic caption.
-    assert f"### [{hook_text}]" in digest_content
-    assert digest_content.index(hook_text) < digest_content.index("A real story")
+    # digest markdown: the H3 heading is the title; the hook follows as a
+    # plain dek line.
+    assert "### [A real story]" in digest_content
+    assert digest_content.index("A real story") < digest_content.index(hook_text)
     assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
-    # issue page: the <h4> headline is the hook; the title is a secondary caption.
-    assert f"<h4><a href=\"https://example.com/story\">{hook_text}</a></h4>" in issue_content
-    assert 'class="item-source-title">A real story</p>' in issue_content
+    # issue page: the <h4> headline is the title; the hook is a dek below it.
+    assert '<h4><a href="https://example.com/story">A real story</a></h4>' in issue_content
+    assert f'class="item-dek">{hook_text}</p>' in issue_content
     assert issue_content.index(hook_text) < issue_content.index("a real excerpt")
 
 
-def test_final_digest_falls_back_to_title_as_headline_when_no_hook(project):
+def test_final_digest_omits_dek_when_no_hook(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story")])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(title="A real story", hook="")])
     digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
@@ -217,9 +217,8 @@ def test_final_digest_falls_back_to_title_as_headline_when_no_hook(project):
     issue_content = _read(issue_page_path)
     assert "### [A real story]" in digest_content
     assert "<h4><a href=\"https://example.com/story\">A real story</a></h4>" in issue_content
-    # No hook means no secondary caption either — the title is already the
-    # headline, so repeating it as a caption underneath would be redundant.
-    assert '<p class="item-source-title"' not in issue_content
+    # No hook means no dek — nothing to summarize "why this matters" with.
+    assert '<p class="item-dek"' not in issue_content
 
 
 def test_final_digest_strips_show_hn_prefix_for_display(project):
@@ -274,9 +273,8 @@ def test_final_digest_toc_groups_by_category_in_fixed_order(project):
     _write_draft(
         "digest/draft/2026-W01.json",
         [
-            # hook="" here so the TOC (which prefers hook, falling back to
-            # the cleaned title) links with each item's distinct title,
-            # not a shared default hook — see _draft_entry's default hook.
+            # hook="" here — irrelevant to the TOC, which always links with
+            # each item's cleaned title, not the hook.
             _draft_entry(cluster_id="c1", title="A notable one", category="notable", hook=""),
             _draft_entry(cluster_id="c2", title="A breaking one", category="breaking", hook=""),
             _draft_entry(cluster_id="c3", title="A new product one", category="new_product", hook=""),
@@ -429,7 +427,7 @@ def test_final_digest_each_category_renders_a_hot_hue_style(project):
         _, _site_path, issue_page_path = render_final_digest("2026-W01")
         issue_content = _read(issue_page_path)
         assert 'class="category-badge">' in issue_content
-        assert '<h4><a href=' in issue_content  # hook renders as the headline
+        assert '<h4><a href=' in issue_content  # title renders as the headline
         match = re.search(r'--hot-hue:(\d+)', issue_content)
         assert match, f"no --hot-hue found for category {category!r}"
         seen_hues.add(int(match.group(1)))
