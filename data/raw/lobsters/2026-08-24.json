@@ -1,0 +1,118 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Building certgrep.sh: a free certificate transparency search engine",
+    "url": "https://haveibeensquatted.com/blog/building-certgrep",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-08-24T03:40:45.324-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "How we built certgrep.sh, a free regex search engine over certificate transparency, using an occurrence-only index, just-in-time hydration, and a Tantivy trigram index.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ihethb",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "493045f8180c597e73c056307238510245915ea77b4ea15275a11c45eb648b87"
+  },
+  {
+    "source": "lobsters",
+    "title": "Everything I own, owned",
+    "url": "https://schlarp.com/posts/everything-i-own-owned",
+    "raw_score": 28,
+    "comment_count": 12,
+    "posted_at": "2026-08-23T22:22:13.331-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "Turning Claude loose on the firmware of five USB and WiFi peripherals, and finding a command shell in a microphone, a defeatable webcam activity LED, and unauthenticated memory writes over the network.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vcdk2q",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "1e2ae53b3e47028b4e91d13e26e85e07fba4fec858128964d1a0f74921a47903"
+  },
+  {
+    "source": "lobsters",
+    "title": "AI Chip Architectures",
+    "url": "https://www.jepeake.com/ai-chip-architectures",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-23T20:37:10.494-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "A look at AI Chip Architectures. NVIDIA, AMD, TPUs, Trainium, Groq, Cerebras.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ebpnyk",
+      "tags": [
+        "ai",
+        "hardware"
+      ]
+    },
+    "id": "b007265302fcdb2b467f121e4560f955ea6da2ecbc6fcf7cce4a815765e07f66"
+  },
+  {
+    "source": "lobsters",
+    "title": "Critical Coldcard flaw: what happened, who is affected, and what to do",
+    "url": "https://wizardsardine.com/blog/coldcard-rng-vulnerability",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-08-23T19:26:14.346-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "Coldcard devices had an entropy bug since 2021, MK2, MK3, MK4, MK5 and Q wallets are being drained right now. Here is what happened in the code, exactly who is affected, what to do today, and how to build a setup that withstands this kind of flaw.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vni2id",
+      "tags": [
+        "cryptography",
+        "merkle-trees",
+        "security"
+      ]
+    },
+    "id": "8c9849a76ab7cd699866e5bf4205af1f2640a46792802e8c0adfbd022b4f8f8a"
+  },
+  {
+    "source": "lobsters",
+    "title": "tmp.0ut volume 5",
+    "url": "https://tmpout.sh/5",
+    "raw_score": 16,
+    "comment_count": 6,
+    "posted_at": "2026-08-23T13:49:26.422-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "xiwynb",
+      "tags": [
+        "linux",
+        "reversing",
+        "security"
+      ]
+    },
+    "id": "16b2f03118b77bc5384c9b0e3c70c16c31dd1aa581ef9f5100b012a11d6e322d"
+  },
+  {
+    "source": "lobsters",
+    "title": "And then the men with guns tell you to do it anyway",
+    "url": "https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway",
+    "raw_score": 101,
+    "comment_count": 21,
+    "posted_at": "2026-08-23T07:15:54.171-05:00",
+    "fetched_at": "2026-08-24T12:20:26.638477+00:00",
+    "excerpt": "In early February 2011 Egypt was in the middle of a political revolution. One morning, everyone's phones suddenly pinged with an alert.  The Armed Forces asks Egypt's honest and loyal men to confront the traitors and criminals and protect our people and honour and our precious Egypt.  A series of messages arrived all ostensibly from the network provider Vodafone. All pro-regime and all with the…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "u7v2sn",
+      "tags": [
+        "philosophy",
+        "privacy",
+        "security"
+      ]
+    },
+    "id": "b333f30ee3cd140ecc62b92686b5b752befe6f1ad720647af6aa6cfa31ae64f3"
+  }
+]
