@@ -132,12 +132,19 @@ ISSUE_PAGE_CSS = """
       --amber: #b8791e; --amber-ink: #1a1408;
       --hot-s: 62%; --hot-l: 38%; --surface-soft: #e9ebe2;
       --card-bg: #fffffe; --card-shadow: 0 1px 3px rgba(27,36,30,0.08);
+      /* Matches site/index.html's --font-mono — same rationale: the radar/
+         guardrail metaphor gets a small "instrument readout" typographic
+         layer (badges, TOC labels, read-time) without touching the serif
+         reading font. Zero external requests, same as the rest of the site. */
+      --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
     }
     @media (prefers-color-scheme: dark){
       :root{
         --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
         --amber:#e3a94b; --hot-l: 68%; --surface-soft: rgba(174,184,172,0.10);
-        --card-bg: #131a15; --card-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        /* Was too close to --bg to read as a lifted surface — bumped to
+           match site/index.html's fix for the same issue. */
+        --card-bg: #16201a; --card-shadow: 0 1px 2px rgba(0,0,0,0.3);
       }
     }
     *{ box-sizing: border-box; }
@@ -166,8 +173,8 @@ ISSUE_PAGE_CSS = """
     }
     .toc-group{ border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); padding-left: 0.75rem; }
     .toc-group h4{
-      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+      font-family: var(--font-mono);
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
       color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); margin: 0 0 0.4rem;
     }
     .toc-group .count{ font-weight: 400; opacity: 0.7; }
@@ -191,8 +198,8 @@ ISSUE_PAGE_CSS = """
     .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
     .franchise-tag, .category-badge, .read-time{
       display: inline-flex; align-items: center; gap: 0.32rem;
-      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em;
+      font-family: var(--font-mono);
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em;
       border-radius: 3px; padding: 0.14rem 0.45rem;
     }
     .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }

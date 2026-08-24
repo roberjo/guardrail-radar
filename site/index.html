@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guardrail Radar</title>
-  <meta name="description" content="Signal on AI-assisted software development for engineers working under regulated/enterprise constraints.">
+  <meta name="description" content="The weekly signal on AI coding tools, for engineers building under real compliance guardrails.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <style>
     :root{
@@ -25,6 +25,16 @@
       --hot-s: 62%;
       --hot-l: 38%;
       --surface-soft: #e9ebe2;
+      /* Card surface for archive teasers — matches pipeline/render.py's
+         ISSUE_PAGE_CSS so the homepage and per-issue pages read as one
+         system rather than two different sites glued together. */
+      --card-bg: #fffffe; --card-shadow: 0 1px 3px rgba(27,36,30,0.08);
+      /* System monospace stack, used only for the small "instrument
+         readout" bits (archive label, stats line, byline) — a deliberate
+         nod to the radar/guardrail metaphor in the name without turning
+         the reading font into anything gimmicky. Zero external requests,
+         in keeping with this project's $0-budget, self-hosted ethos. */
+      --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
     }
     @media (prefers-color-scheme: dark){
       :root{
@@ -32,6 +42,9 @@
         --amber:#e3a94b;
         --hot-l: 68%;
         --surface-soft: rgba(174,184,172,0.10);
+        /* Was too close to --bg to read as a lifted surface at all —
+           bumped the delta so cards are visibly elevated in dark mode too. */
+        --card-bg: #16201a; --card-shadow: 0 1px 2px rgba(0,0,0,0.3);
       }
     }
     *{ box-sizing: border-box; }
@@ -46,10 +59,21 @@
     .brand{ display: flex; align-items: center; gap: 0.85rem; margin: 0 0 0.5rem; }
     .brand-mark{ width: 44px; height: 44px; flex: none; }
     h1{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 2rem; margin: 0; }
+    /* The tagline is the one sentence a human actually reads before
+       deciding whether to keep scrolling — kept short, sans-serif (so it
+       reads as a spoken claim, not body copy), and in the brand accent so
+       it visually leads. The longer positioning paragraph (fintech/banking/
+       compliance specifics) moved to p.lede below it, where it belongs as
+       supporting detail, not the first thing a reader has to parse. */
+    p.tagline{
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.2rem; font-weight: 600; color: var(--amber);
+      margin: 1rem 0 0.9rem; line-height: 1.4;
+    }
     p.lede{ color: var(--ink-soft); margin: 0 0 0.9rem; }
     p.byline{
-      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 1.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem; color: var(--ink-soft); margin: 0 0 1.8rem; letter-spacing: 0.01em;
     }
     .subscribe-cta{ margin: 0 0 2.5rem; }
     .subscribe-btn{
@@ -59,11 +83,23 @@
       text-decoration: none; letter-spacing: 0.01em;
     }
     .subscribe-btn:hover{ filter: brightness(1.08); }
-    .archive{ border-top: 1px solid var(--line); padding-top: 1.5rem; }
-    .archive h2{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; color: var(--ink-soft); }
+    .archive{ border-top: 1px solid var(--line); padding-top: 1.75rem; }
+    .archive h2{
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-soft);
+      margin: 0 0 1.1rem;
+    }
     .archive > ul{ list-style: none; padding: 0; margin: 0; }
-    .archive > ul > li{ padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
-    .archive > ul > li:last-child{ border-bottom: none; }
+    /* Archive entries are now real cards — lifted surface, radius, shadow,
+       gap between them — matching the item cards on the per-issue pages
+       instead of the old shared-hairline list, which read as a table of
+       contents rather than a shelf of issues worth clicking into. */
+    .archive > ul > li{
+      padding: 1.4rem 1.5rem; margin: 0 0 1rem;
+      background: var(--card-bg); border: 1px solid var(--line);
+      border-radius: 10px; box-shadow: var(--card-shadow);
+    }
+    .archive > ul > li:last-child{ margin-bottom: 0; }
     /* Each archive entry is now a teaser card linking to that issue's own
        standalone page (site/issues/<iso-week>.html), not the full content
        inline — added so each issue has its own shareable URL with its own
@@ -79,8 +115,8 @@
     .week-heading a:hover{ color: var(--amber); text-decoration: underline; }
     .teaser-desc{ margin: 0 0 0.6rem; color: var(--ink); }
     .teaser-stats{
-      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 0.8rem;
+      font-family: var(--font-mono);
+      font-size: 0.76rem; color: var(--ink-soft); margin: 0 0 0.8rem; letter-spacing: 0.01em;
     }
     .teaser-link{
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
@@ -120,7 +156,8 @@
       </svg>
       <h1>Guardrail Radar</h1>
     </div>
-    <p class="lede">Signal on AI-assisted software development for engineers working under regulated/enterprise constraints — fintech, banking, and adjacent industries where compliance, data governance, and vendor risk shape how AI coding tools actually get adopted.</p>
+    <p class="tagline">The weekly signal on AI coding tools, for engineers building under real compliance guardrails.</p>
+    <p class="lede">Curated weekly for engineers at banks, fintechs, and insurers adopting Copilot, Claude Code, and Cursor — where audit requirements, data residency, and vendor risk decide what actually ships.</p>
     <p class="byline">Curated by John B. Roberts.</p>
     <!-- Subscribe CTA — styled and ready (.subscribe-btn below), left commented
          out rather than pointing at a guessed or fabricated URL: no Beehiiv
