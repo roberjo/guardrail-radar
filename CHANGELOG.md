@@ -6,6 +6,80 @@ the project's pre-launch planning and scaffolding.
 
 ## Unreleased
 
+### Added — per-issue permalink pages, a pipeline-status dashboard, and a social-share image
+- Direct user request: "more functionality including admin tasks, and
+  linkable past issues that can be used in social media marketing." Asked
+  a clarifying question on "admin tasks" first, since this site is
+  currently 100% static (GitHub Pages, no server, no database, no auth —
+  a deliberate zero-cost design choice, project plan §7) and different
+  readings of "admin" implied very different costs; user chose a
+  read-only ops dashboard needing no new infrastructure over an
+  authenticated content/curation panel.
+- **Every issue now has its own standalone, shareable page**
+  (`site/issues/<iso-week>.html`) — before this, the only referenceable
+  url for any issue was the homepage itself, which has no per-issue
+  title or description, so a link shared on LinkedIn/HN/Slack always
+  produced the same generic preview card regardless of which issue was
+  meant. Each page gets its own `<title>`, canonical url, and Open
+  Graph/Twitter Card tags (`summary_large_image`), with `subject`
+  (already written as one punchy sentence for the Beehiiv send) doing
+  double duty as the social description via a new `_meta_description`
+  fallback chain (subject → intro → a generic per-week line, never
+  empty). `SITE_BASE_URL` is the real, confirmed GitHub Pages url
+  (checked via `gh api repos/roberjo/guardrail-radar/pages`, not
+  guessed) — required for `og:url`/canonical to resolve correctly on a
+  crawler that doesn't share the page's own relative-path context.
+- **The homepage no longer inlines full issue content.** Each archive
+  entry is now a short teaser (`_render_homepage_teaser_html`: heading
+  linking to the issue's own page, a subject/intro-derived description,
+  an "N items across N sources — ..." summary line, "Read the full issue
+  →") — the rich TOC/item rendering that used to live there moved to the
+  new standalone pages, unchanged in behavior. This also fixes a real,
+  if secondary, problem: the homepage would otherwise grow without bound
+  as issues accumulate. The idempotent `<!-- week:X --> / <!-- /week:X -->`
+  marker mechanism protecting against re-render duplication (see the
+  entry below on the reviewer-agent-found bug) is unchanged — only the
+  content it wraps got smaller.
+- **`site/og-image.png`** — a static, real (not placeholder) 1200×630
+  branded social-share image, built by rendering an HTML card (brand
+  mark, wordmark, tagline) through an actual browser and screenshotting
+  it at exact dimensions, not hand-drawn or guessed at. Referenced by
+  every issue page's `og:image`/`twitter:image`. A per-issue custom
+  image is a real future enhancement, out of scope for what "linkable
+  past issues" needed.
+- **`site/status.html`** — a read-only, unauthenticated pipeline-status
+  dashboard: recent runs of all three GitHub Actions workflows, the
+  latest `daily-ingest.yml` run's per-connector job health (which of
+  hn/github/lobsters/producthunt succeeded), and the latest
+  `digest/verification/<iso-week>.json`'s clear/flagged/blocked counts.
+  Pure client-side JavaScript against the public, unauthenticated GitHub
+  REST API — no backend, no secrets, no new infrastructure, consistent
+  with the project's zero-server design. Verified against the real,
+  live repo (not just mocked data) before considering it done — actual
+  workflow runs, actual connector job names, actual verification counts
+  for 2026-W34 all rendered correctly. Linked from the homepage footer.
+- `pipeline/render.py`: `render_final_digest` now returns
+  `(digest_path, site_path, issue_page_path)` — a breaking signature
+  change for any caller, updated in `main()`. New `ISSUE_PAGE_CSS`,
+  `BRAND_MARK_SVG`, `SITE_BASE_URL` constants; new
+  `_render_issue_page_html`, `_render_homepage_teaser_html`,
+  `_teaser_summary_line`, `_meta_description` functions; `_update_site_archive`
+  simplified to take a pre-rendered teaser block instead of separate
+  item/intro/toc arguments. `site/index.html`'s `<style>` pruned of the
+  full-content rules that moved to `ISSUE_PAGE_CSS` (no shared stylesheet
+  file exists in this project — the two are kept in sync by eye, same
+  tradeoff already accepted elsewhere here). 170 tests total (up from
+  166; several rewritten to check `issue_page_path` instead of
+  `site_path` for full content, new tests for OG tags, the homepage
+  teaser, and meta-description fallback), ruff and mypy clean.
+  `docs/technical-spec.md` §14 updated. Verified live in a real browser
+  (a local `python -m http.server` against `site/`, not just string
+  assertions) before shipping — homepage teaser, issue page rendering,
+  hue-band colors, and the status dashboard's live GitHub API calls all
+  confirmed working end-to-end. Retrofitted `digest/draft/2026-W34.json`'s
+  existing content through the new pipeline (no content changes) and
+  re-ran `weekly-verify-and-publish.yml`.
+
 ### Added — brand mark, favicon, and a design-critique pass across the pipeline and site
 - Asked for a brutal graphic-design/content-marketing critique of the live
   W34 issue (layout, fonts, readability, hooks, punchiness, professionalism)

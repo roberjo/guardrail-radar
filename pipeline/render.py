@@ -21,6 +21,13 @@ from urllib.parse import urlsplit
 
 from pipeline.io_utils import iso_week_str, read_json
 
+# The real, live GitHub Pages URL for this project — confirmed via
+# `gh api repos/roberjo/guardrail-radar/pages`, not guessed. Used to build
+# absolute canonical/og:url values on each standalone issue page, which
+# social platforms require for a correct link preview (a relative or
+# missing url falls back to whatever the crawler happened to fetch).
+SITE_BASE_URL = "https://roberjo.github.io/guardrail-radar"
+
 SITE_ARCHIVE_MARKER = (
     "<!-- pipeline/render.py appends one <li> per published week here, "
     "per docs/technical-spec.md §14 -->"
@@ -106,6 +113,127 @@ WORDS_PER_MINUTE = 200
 HOTTEST_HUE = 5
 COOLEST_HUE = 125
 HOT_SATURATION = "55%"
+
+# Full-content stylesheet for a standalone site/issues/<iso-week>.html page
+# — a design-critique pass found the homepage had no way to link a single
+# issue on social media with its own title/description (a fragment link
+# still shows the homepage's generic preview), so each issue now gets its
+# own page. This constant duplicates the token/typography/brand rules also
+# hand-authored in site/index.html's <style> — there's no build step in
+# this project to share a stylesheet between a generated and a hand-authored
+# page, so keep the two in sync by eye when either changes. The homepage
+# itself now shows only a teaser per issue (see site/index.html's
+# .teaser-* rules) — the rich per-item rendering (TOC, badges, icons) that
+# used to live there moved here, unchanged in behavior.
+ISSUE_PAGE_CSS = """
+    :root{
+      color-scheme: light dark;
+      --bg: #f3f4ee; --ink: #1b241e; --ink-soft: #4b564d; --line: #d8dacd;
+      --amber: #b8791e; --amber-ink: #1a1408;
+      --hot-s: 62%; --hot-l: 38%; --surface-soft: #e9ebe2;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
+        --amber:#e3a94b; --hot-l: 68%; --surface-soft: rgba(174,184,172,0.10);
+      }
+    }
+    *{ box-sizing: border-box; }
+    body{ margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
+    main{ max-width: 640px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+    .brand{ display: flex; align-items: center; gap: 0.6rem; margin: 0 0 1.5rem; }
+    .brand-mark{ width: 30px; height: 30px; flex: none; }
+    .brand a{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+    .brand a:hover{ color: var(--amber); }
+    .back-link{ margin: 0 0 1.5rem; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 0.85rem; }
+    .back-link a{ color: var(--ink-soft); text-decoration: none; }
+    .back-link a:hover{ color: var(--amber); text-decoration: underline; }
+    h1.issue-heading{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.7rem; margin: 0 0 1rem; }
+    .subscribe-cta{ margin: 2.5rem 0; }
+    .subscribe-btn{
+      display: inline-block; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600; font-size: 0.9rem; color: var(--amber-ink);
+      background: var(--amber); padding: 0.6rem 1.2rem; border-radius: 4px;
+      text-decoration: none; letter-spacing: 0.01em;
+    }
+    .subscribe-btn:hover{ filter: brightness(1.08); }
+    .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
+    .toc{
+      display: flex; flex-direction: column; gap: 0.9rem;
+      margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 8px;
+    }
+    .toc-group{ border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); padding-left: 0.75rem; }
+    .toc-group h4{
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); margin: 0 0 0.4rem;
+    }
+    .toc-group .count{ font-weight: 400; opacity: 0.7; }
+    .toc-group ul{ list-style: none; margin: 0; padding: 0; }
+    .toc-group li{ display: flex; align-items: baseline; gap: 0.4rem; font-size: 0.88rem; margin: 0 0 0.25rem; }
+    .toc-group .dot{ width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none; background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); }
+    .toc-group a{ color: var(--ink); text-decoration: none; }
+    .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
+    .issue-items{ list-style: none; padding: 0; margin: 0; }
+    .issue-item{
+      padding: 1.1rem 0 1.1rem 0.9rem; border-top: 1px solid var(--line);
+      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+    }
+    .issue-item:first-child{ border-top: none; padding-top: 0; }
+    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.08rem; font-weight: 700; margin: 0 0 0.3rem; }
+    .issue-item h4 a{ color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); text-decoration: none; }
+    .issue-item h4 a:hover{ text-decoration: underline; }
+    .item-source-title{ font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 0.7rem; font-style: italic; }
+    .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
+    .franchise-tag, .category-badge, .read-time{
+      display: inline-flex; align-items: center; gap: 0.32rem;
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em;
+      border-radius: 3px; padding: 0.14rem 0.45rem;
+    }
+    .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }
+    .category-badge{ font-weight: 700; color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l) / 15%); }
+    .category-icon{ width: 0.7rem; height: 0.7rem; flex: none; color: currentColor; }
+    .read-time{ color: var(--ink-soft); background: var(--surface-soft); font-weight: 600; }
+    .issue-item details{ margin: 0 0 0.6rem; }
+    .issue-item summary{ cursor: pointer; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 0.8rem; color: var(--ink-soft); }
+    .issue-item summary:hover{ color: var(--ink); }
+    .issue-item details[open] summary{ margin-bottom: 0.4rem; }
+    .issue-item blockquote{ margin: 0; padding-left: 0.75rem; border-left: 2px solid var(--line); color: var(--ink-soft); font-style: italic; font-size: 0.92rem; }
+    .issue-item p{ margin: 0 0 0.5rem; }
+    .issue-item p:last-child{ margin-bottom: 0; }
+    .primary-source{ font-size: 0.85rem; color: var(--ink-soft); }
+    .primary-source a{ color: inherit; }
+    footer{ margin-top: 3rem; font-size: 0.85rem; color: var(--ink-soft); }
+    footer a{ color: inherit; }
+"""
+
+# The approved brand mark (radar sweep held inside monitoring brackets — see
+# the project's design exploration), reused verbatim on every standalone
+# issue page. Matches the copy hand-authored in site/index.html's masthead.
+BRAND_MARK_SVG = """<svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-hidden="true">
+        <g stroke="var(--ink-soft)" stroke-width="3.6" stroke-linecap="round" fill="none">
+          <path d="M17 30V19a2 2 0 0 1 2-2h11"/>
+          <path d="M83 30V19a2 2 0 0 1-2-2H70"/>
+          <path d="M17 70v11a2 2 0 0 0 2 2h11"/>
+          <path d="M83 70v11a2 2 0 0 1-2 2H70"/>
+        </g>
+        <circle cx="50" cy="50" r="24" fill="none" stroke="var(--ink-soft)" stroke-opacity="0.4" stroke-width="1.8"/>
+        <circle cx="50" cy="50" r="15.5" fill="none" stroke="var(--ink-soft)" stroke-opacity="0.4" stroke-width="1.4"/>
+        <line x1="26" y1="50" x2="74" y2="50" stroke="var(--ink-soft)" stroke-opacity="0.35" stroke-width="1"/>
+        <line x1="50" y1="26" x2="50" y2="74" stroke="var(--ink-soft)" stroke-opacity="0.35" stroke-width="1"/>
+        <path d="M50 50 L66.97 33.03 L70.24 37.10 Z" fill="hsl(5 62% var(--hot-l))" opacity="0.85"/>
+        <path d="M50 50 L70.24 37.10 L72.55 41.79 Z" fill="hsl(20 62% var(--hot-l))" opacity="0.72"/>
+        <path d="M50 50 L72.55 41.79 L73.79 46.87 Z" fill="hsl(35 62% var(--hot-l))" opacity="0.60"/>
+        <path d="M50 50 L73.79 46.87 L73.91 52.09 Z" fill="hsl(50 60% var(--hot-l))" opacity="0.48"/>
+        <path d="M50 50 L73.91 52.09 L72.89 57.22 Z" fill="hsl(65 55% var(--hot-l))" opacity="0.36"/>
+        <path d="M50 50 L72.89 57.22 L70.78 62.00 Z" fill="hsl(80 50% var(--hot-l))" opacity="0.25"/>
+        <path d="M50 50 L70.78 62.00 L67.70 66.21 Z" fill="hsl(95 48% var(--hot-l))" opacity="0.15"/>
+        <path d="M50 50 L67.70 66.21 L63.77 69.66 Z" fill="hsl(110 45% var(--hot-l))" opacity="0.07"/>
+        <line x1="50" y1="50" x2="66.97" y2="33.03" stroke="hsl(5 70% var(--hot-l))" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="66.97" cy="33.03" r="3.4" fill="var(--amber)"/>
+        <circle cx="50" cy="50" r="2.4" fill="var(--ink)"/>
+      </svg>"""
 
 
 def _item_anchor(cluster_id: str) -> str:
@@ -228,6 +356,164 @@ def _load_draft(draft_path: str) -> tuple[str, str, list[dict]]:
     return data.get("subject", ""), data.get("intro", ""), data.get("items", [])
 
 
+# (singular, plural) phrasing per category for _teaser_summary_line below.
+_CATEGORY_STAT_WORDS = {
+    "breaking": ("breaking", "breaking"),
+    "new_product": ("new product", "new products"),
+    "notable": ("notable", "notable"),
+    "field_notes": ("field note", "field notes"),
+}
+
+
+def _teaser_summary_line(draft: list[dict], ranked_by_cluster: dict) -> str:
+    """"N items across N sources — N breaking, N new products, ..." — the
+    at-a-glance summary shown on the homepage's teaser card for this issue,
+    and again at the top of the issue's own standalone page.
+
+    This is the old per-issue "In this issue" stats line, cut earlier in
+    the design-critique pass because it duplicated the table of contents
+    one scroll below it on the same page. It's back here in a genuinely
+    different role: a homepage teaser has no TOC to duplicate — this line
+    *is* the at-a-glance summary a reader scanning the archive needs before
+    clicking through, so it earns its place again in this new spot.
+    """
+    if not draft:
+        return ""
+
+    sources: set[str] = set()
+    category_counts: dict[str, int] = {}
+    for entry in draft:
+        cluster = ranked_by_cluster.get(entry["cluster_id"], {})
+        item_sources = cluster.get("cluster_sources") or ([cluster["source"]] if cluster.get("source") else [])
+        sources.update(item_sources)
+        category = entry.get("category", "new_product")
+        category_counts[category] = category_counts.get(category, 0) + 1
+
+    parts = []
+    for category in CATEGORY_ORDER:
+        count = category_counts.get(category, 0)
+        if not count:
+            continue
+        singular, plural = _CATEGORY_STAT_WORDS[category]
+        parts.append(f"{count} {singular if count == 1 else plural}")
+
+    item_word = "item" if len(draft) == 1 else "items"
+    source_word = "source" if len(sources) == 1 else "sources"
+    summary = f"{len(draft)} {item_word} across {len(sources)} {source_word}"
+    if parts:
+        summary += " — " + ", ".join(parts)
+    return summary + "."
+
+
+def _meta_description(subject: str, intro: str, iso_week: str) -> str:
+    """Best available one-line description for an issue's <meta
+    description>/og:description/twitter:description — subject first (it's
+    already written to be a single punchy sentence), falling back to a
+    truncated intro, falling back to a generic line so a description is
+    never empty (an empty og:description makes for a broken-looking social
+    preview card).
+    """
+    text = subject or intro
+    if not text:
+        return f"Guardrail Radar — the {iso_week} issue."
+    return text if len(text) <= 200 else text[:197].rstrip() + "…"
+
+
+def _render_issue_page_html(
+    iso_week: str,
+    subject: str,
+    intro: str,
+    intro_html: str,
+    toc_html: str,
+    items_html: str,
+) -> str:
+    """A standalone, fully self-contained page for one issue — added after
+    a direct user request for issues linkable on social media. Before this,
+    the only way to reference a past issue was the homepage itself, which
+    has no per-issue title/description, so a shared link always produced
+    the same generic homepage preview card regardless of which issue was
+    meant. Each page gets its own <title>, canonical url, and Open
+    Graph/Twitter Card tags — subject (already written as one punchy,
+    specific sentence for the Beehiiv send) doubles as the social
+    description via _meta_description, falling back to the plain-text
+    `intro` (not `intro_html`, which is already wrapped/escaped for body
+    rendering and not reusable as attribute content).
+
+    No "In this issue: N items..." summary line here, unlike the homepage
+    teaser (_render_homepage_teaser_html) — the table of contents right
+    below already conveys that, with links; repeating it here would be
+    exactly the same redundancy the design-critique pass cut in the first
+    place, just relocated rather than actually fixed.
+    """
+    page_title = f"Guardrail Radar — {iso_week}"
+    description = html.escape(_meta_description(subject, intro, iso_week), quote=True)
+    page_url = f"{SITE_BASE_URL}/issues/{iso_week}.html"
+    og_image = f"{SITE_BASE_URL}/og-image.png"
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{html.escape(page_title)}</title>
+  <meta name="description" content="{description}">
+  <link rel="canonical" href="{html.escape(page_url, quote=True)}">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{html.escape(page_title, quote=True)}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:url" content="{html.escape(page_url, quote=True)}">
+  <meta property="og:image" content="{html.escape(og_image, quote=True)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(page_title, quote=True)}">
+  <meta name="twitter:description" content="{description}">
+  <meta name="twitter:image" content="{html.escape(og_image, quote=True)}">
+  <style>{ISSUE_PAGE_CSS}</style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      {BRAND_MARK_SVG}
+      <a href="../index.html">Guardrail Radar</a>
+    </div>
+    <p class="back-link"><a href="../index.html">← All issues</a></p>
+    <h1 class="issue-heading">{html.escape(iso_week)}</h1>
+    {intro_html}
+    {toc_html}
+    <ul class="issue-items">{items_html}</ul>
+    <!-- Subscribe CTA — styled and ready, left commented out rather than
+         pointing at a guessed or fabricated URL: no Beehiiv publication
+         exists yet (see docs/project-plan.md §11). Uncomment and set the
+         real href once the account is live.
+    <p class="subscribe-cta"><a class="subscribe-btn" href="https://REPLACE-WITH-REAL-BEEHIIV-URL">Subscribe for the weekly issue →</a></p>
+    -->
+    <footer>
+      <p><a href="../index.html">← Back to all issues</a></p>
+    </footer>
+  </main>
+</body>
+</html>
+"""
+
+
+def _render_homepage_teaser_html(iso_week: str, subject: str, intro: str, summary_line: str) -> str:
+    """The homepage archive's per-issue entry — a short teaser linking to
+    that issue's own standalone page, added alongside it. Previously this
+    was the issue's *entire* content, inline; kept short here so the
+    homepage stays scannable as issues accumulate, and because the full
+    content now has a better home (see _render_issue_page_html) that's
+    actually linkable on its own.
+    """
+    description = html.escape(_meta_description(subject, intro, iso_week))
+    issue_href = f"issues/{iso_week}.html"
+    return (
+        f'<h3 class="week-heading"><a href="{issue_href}">{html.escape(iso_week)}</a></h3>'
+        f'<p class="teaser-desc">{description}</p>'
+        f'<p class="teaser-stats">{html.escape(summary_line)}</p>'
+        f'<a class="teaser-link" href="{issue_href}">Read the full issue →</a>'
+    )
+
+
 def render_review_packet(iso_week: str) -> str:
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
     clusters = read_json(ranked_path)
@@ -264,7 +550,7 @@ def render_review_packet(iso_week: str) -> str:
     return "\n".join(lines)
 
 
-def render_final_digest(iso_week: str) -> tuple[str, str]:
+def render_final_digest(iso_week: str) -> tuple[str, str, str]:
     draft_path = os.path.join("digest", "draft", f"{iso_week}.json")
     ranked_path = os.path.join("data", "ranked", f"{iso_week}.json")
     verification_path = os.path.join("digest", "verification", f"{iso_week}.json")
@@ -280,6 +566,7 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     hotness = _hotness_order(draft, ranked_by_cluster)
     draft = [entry for entry, _hue in hotness]
     hue_by_cluster_id = {entry["cluster_id"]: hue for entry, hue in hotness}
+    summary_line = _teaser_summary_line(draft, ranked_by_cluster)
 
     verification_by_cluster = {}
     if os.path.exists(verification_path):
@@ -438,8 +725,21 @@ def render_final_digest(iso_week: str) -> tuple[str, str]:
     with open(digest_path, "w", encoding="utf-8") as f:
         f.write(digest_md)
 
-    site_path = _update_site_archive(iso_week, archive_items_html, intro_html, toc_html)
-    return digest_path, site_path
+    # Standalone, linkable page for this one issue — added after a direct
+    # user request for past issues that can be shared on social media with
+    # their own title/description, not just the homepage's generic preview.
+    issue_page_path = os.path.join("site", "issues", f"{iso_week}.html")
+    os.makedirs(os.path.dirname(issue_page_path), exist_ok=True)
+    with open(issue_page_path, "w", encoding="utf-8") as f:
+        f.write(
+            _render_issue_page_html(
+                iso_week, subject, intro, intro_html, toc_html, "".join(archive_items_html)
+            )
+        )
+
+    teaser_html = _render_homepage_teaser_html(iso_week, subject, intro, summary_line)
+    site_path = _update_site_archive(iso_week, teaser_html)
+    return digest_path, site_path, issue_page_path
 
 
 def _render_archive_item_html(
@@ -538,12 +838,7 @@ def _render_archive_item_html(
     return f'<li class="issue-item" id="{anchor}" style="--hot-hue:{hue}">{"".join(parts)}</li>'
 
 
-def _update_site_archive(
-    iso_week: str,
-    item_html_list: list[str],
-    intro_html: str = "",
-    toc_html: str = "",
-) -> str:
+def _update_site_archive(iso_week: str, teaser_html: str) -> str:
     """Insert/replace this week's archive entry — idempotent on re-run.
 
     Re-running weekly-verify-and-publish for a week that already has an
@@ -560,6 +855,11 @@ def _update_site_archive(
     can't tell apart from the block's real end). Comment markers can't be
     confused with structural HTML at any nesting depth, so this stays
     correct regardless of how much richer an item's content gets.
+
+    `teaser_html` (from `_render_homepage_teaser_html`) is a short summary
+    linking to that issue's own standalone page — see
+    `_render_issue_page_html` — which now carries the full content this
+    function used to embed directly.
     """
     site_path = os.path.join("site", "index.html")
     with open(site_path, encoding="utf-8") as f:
@@ -568,12 +868,7 @@ def _update_site_archive(
     week_attr = html.escape(iso_week, quote=True)
     start_marker = f"<!-- week:{week_attr} -->"
     end_marker = f"<!-- /week:{week_attr} -->"
-    week_block = (
-        f'{start_marker}<li data-week="{week_attr}"><h3 class="week-heading">{html.escape(iso_week)}</h3>'
-        + intro_html
-        + toc_html
-        + '<ul class="issue-items">' + "".join(item_html_list) + f"</ul></li>{end_marker}"
-    )
+    week_block = f'{start_marker}<li data-week="{week_attr}">{teaser_html}</li>{end_marker}'
 
     existing_pattern = re.compile(re.escape(start_marker) + r".*?" + re.escape(end_marker), re.DOTALL)
     if existing_pattern.search(html_text):
@@ -606,8 +901,8 @@ def main() -> None:
             f.write(content)
         print(f"[render] wrote {out_path}")
     else:
-        digest_path, site_path = render_final_digest(iso_week)
-        print(f"[render] wrote {digest_path} and updated {site_path}")
+        digest_path, site_path, issue_page_path = render_final_digest(iso_week)
+        print(f"[render] wrote {digest_path}, {issue_page_path}, and updated {site_path}")
 
 
 if __name__ == "__main__":

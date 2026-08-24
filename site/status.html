@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardrail Radar — Pipeline Status</title>
+  <meta name="description" content="Read-only operational status for the Guardrail Radar research pipeline — recent workflow runs, connector health, and the latest issue's verification summary.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root{
+      color-scheme: light dark;
+      --bg: #f3f4ee; --ink: #1b241e; --ink-soft: #4b564d; --line: #d8dacd;
+      --amber: #b8791e; --amber-ink: #1a1408;
+      --ok: #2f7a3d; --fail: #b3402f; --pending: #b8791e; --unknown: #8a9488;
+      --surface-soft: #e9ebe2;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
+        --amber:#e3a94b;
+        --ok: #6cbf7a; --fail: #e2685a; --pending: #e3a94b; --unknown: #6b766c;
+        --surface-soft: rgba(174,184,172,0.10);
+      }
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; line-height: 1.55;
+    }
+    main{ max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+    .brand{ display: flex; align-items: center; gap: 0.6rem; margin: 0 0 1.5rem; }
+    .brand-mark{ width: 28px; height: 28px; flex: none; }
+    .brand a{ font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+    .brand a:hover{ color: var(--amber); }
+    h1{ font-size: 1.6rem; margin: 0 0 0.4rem; }
+    p.lede{ color: var(--ink-soft); margin: 0 0 2rem; font-size: 0.92rem; }
+    p.lede code{ font-family: ui-monospace, "SFMono-Regular", monospace; font-size: 0.85em; }
+    section{ margin-bottom: 2.5rem; }
+    h2{
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--ink-soft); margin: 0 0 0.9rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line);
+    }
+    .runs{ list-style: none; margin: 0; padding: 0; }
+    .run{
+      display: grid; grid-template-columns: 0.9rem 1fr auto auto; align-items: center; gap: 0.75rem;
+      padding: 0.55rem 0; border-bottom: 1px solid var(--line); font-size: 0.9rem;
+    }
+    .runs li:last-child .run{ border-bottom: none; }
+    .dot{ width: 0.65rem; height: 0.65rem; border-radius: 50%; flex: none; }
+    .dot.ok{ background: var(--ok); }
+    .dot.fail{ background: var(--fail); }
+    .dot.pending{ background: var(--pending); }
+    .dot.unknown{ background: var(--unknown); }
+    .run .label{ color: var(--ink); }
+    .run .trigger{
+      font-family: ui-monospace, "SFMono-Regular", monospace; font-size: 0.72rem; color: var(--ink-soft);
+      background: var(--surface-soft); padding: 0.1rem 0.4rem; border-radius: 3px;
+    }
+    .run .when{ color: var(--ink-soft); font-size: 0.82rem; white-space: nowrap; }
+    .run a{ color: inherit; text-decoration: none; }
+    .run a:hover{ text-decoration: underline; }
+    .connectors{ display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .connector-chip{
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      border: 1px solid var(--line); border-radius: 4px; padding: 0.35rem 0.7rem; font-size: 0.85rem;
+    }
+    .verify-summary{ display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .verify-stat{ text-align: left; }
+    .verify-stat .n{ font-size: 1.6rem; font-weight: 700; line-height: 1.1; }
+    .verify-stat .l{ font-size: 0.75rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+    .verify-stat.ok .n{ color: var(--ok); }
+    .verify-stat.pending .n{ color: var(--pending); }
+    .verify-stat.fail .n{ color: var(--fail); }
+    .muted{ color: var(--ink-soft); font-size: 0.88rem; }
+    .error{ color: var(--fail); font-size: 0.88rem; }
+    .refresh-btn{
+      font-family: inherit; font-size: 0.82rem; color: var(--ink-soft); background: none;
+      border: 1px solid var(--line); border-radius: 4px; padding: 0.3rem 0.7rem; cursor: pointer;
+    }
+    .refresh-btn:hover{ color: var(--ink); border-color: var(--ink-soft); }
+    footer{ margin-top: 2rem; font-size: 0.82rem; color: var(--ink-soft); display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; }
+    footer a{ color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.6">
+          <path d="M17 30V19a2 2 0 0 1 2-2h11"/><path d="M83 30V19a2 2 0 0 1-2-2H70"/>
+          <path d="M17 70v11a2 2 0 0 0 2 2h11"/><path d="M83 70v11a2 2 0 0 1-2 2H70"/>
+        </g>
+        <circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="2.4"/>
+        <path d="M50 50 L66.97 33.03 L73.91 52.09 Z" fill="currentColor" opacity="0.35"/>
+        <circle cx="66.97" cy="33.03" r="4" fill="var(--amber)"/>
+      </svg>
+      <a href="index.html">Guardrail Radar</a>
+    </div>
+    <h1>Pipeline Status</h1>
+    <p class="lede">Read-only, no login — pulled live from the public GitHub API
+      (<code>github.com/roberjo/guardrail-radar</code>) each time this page loads.
+      Nothing here is sensitive; it's the same information anyone could see on the
+      repo's own Actions tab, laid out for a faster glance.</p>
+
+    <section id="workflows-section">
+      <h2>Recent workflow runs</h2>
+      <div id="workflows"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section id="connectors-section">
+      <h2>Latest daily-ingest connector health</h2>
+      <div id="connectors"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section id="verify-section">
+      <h2>Latest issue verification</h2>
+      <div id="verify"><p class="muted">Loading…</p></div>
+    </section>
+
+    <footer>
+      <span id="checked-at" class="muted"></span>
+      <button class="refresh-btn" id="refresh-btn" type="button">Refresh</button>
+    </footer>
+  </main>
+
+  <script>
+    const OWNER = "roberjo";
+    const REPO = "guardrail-radar";
+    const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+    const WORKFLOWS = [
+      { file: "daily-ingest.yml", label: "daily-ingest" },
+      { file: "weekly-review-packet.yml", label: "weekly-review-packet" },
+      { file: "weekly-verify-and-publish.yml", label: "weekly-verify-and-publish" },
+    ];
+
+    function statusClass(run) {
+      if (run.status !== "completed") return "pending";
+      if (run.conclusion === "success") return "ok";
+      if (run.conclusion === "failure" || run.conclusion === "timed_out") return "fail";
+      return "unknown";
+    }
+
+    function relativeTime(iso) {
+      const diffMs = Date.now() - new Date(iso).getTime();
+      const mins = Math.round(diffMs / 60000);
+      if (mins < 60) return `${mins}m ago`;
+      const hours = Math.round(mins / 60);
+      if (hours < 48) return `${hours}h ago`;
+      return `${Math.round(hours / 24)}d ago`;
+    }
+
+    async function fetchJSON(url) {
+      const res = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+      if (!res.ok) {
+        throw new Error(`${res.status} ${res.statusText}`);
+      }
+      return res.json();
+    }
+
+    async function loadWorkflows() {
+      const el = document.getElementById("workflows");
+      try {
+        const results = await Promise.all(
+          WORKFLOWS.map((w) =>
+            fetchJSON(`${API}/actions/workflows/${w.file}/runs?per_page=4`).then((data) => ({
+              ...w,
+              runs: data.workflow_runs || [],
+            }))
+          )
+        );
+        el.innerHTML = results
+          .map((w) => {
+            if (!w.runs.length) {
+              return `<h3 style="font-size:0.85rem;margin:0.8rem 0 0.3rem;">${w.label}</h3><p class="muted">No runs yet.</p>`;
+            }
+            const rows = w.runs
+              .map(
+                (run) => `
+              <li><div class="run">
+                <span class="dot ${statusClass(run)}"></span>
+                <span class="label">${run.display_title ? escapeHtml(run.display_title) : w.label}</span>
+                <span class="trigger">${escapeHtml(run.event)}</span>
+                <span class="when"><a href="${run.html_url}" target="_blank" rel="noopener">${relativeTime(run.created_at)}</a></span>
+              </div></li>`
+              )
+              .join("");
+            return `<h3 style="font-size:0.85rem;margin:0.8rem 0 0.3rem;color:var(--ink-soft);">${w.label}</h3><ul class="runs">${rows}</ul>`;
+          })
+          .join("");
+        return results;
+      } catch (err) {
+        el.innerHTML = `<p class="error">Couldn't reach the GitHub API (${escapeHtml(err.message)}) — it may be rate-limited (60 requests/hour, unauthenticated) or you're offline. Try again shortly.</p>`;
+        return null;
+      }
+    }
+
+    async function loadConnectorHealth(workflowResults) {
+      const el = document.getElementById("connectors");
+      const ingest = workflowResults && workflowResults.find((w) => w.file === "daily-ingest.yml");
+      const lastCompleted = ingest && ingest.runs.find((r) => r.status === "completed");
+      if (!lastCompleted) {
+        el.innerHTML = `<p class="muted">No completed daily-ingest run to inspect yet.</p>`;
+        return;
+      }
+      try {
+        const jobs = await fetchJSON(`${API}/actions/runs/${lastCompleted.id}/jobs`);
+        const matrixJobs = (jobs.jobs || []).filter((j) => j.name !== "commit" && j.name.length > 0);
+        if (!matrixJobs.length) {
+          el.innerHTML = `<p class="muted">No per-connector jobs found on the latest run.</p>`;
+          return;
+        }
+        el.innerHTML = `<div class="connectors">${matrixJobs
+          .map(
+            (j) => `<span class="connector-chip"><span class="dot ${statusClass({ status: j.status, conclusion: j.conclusion })}"></span>${escapeHtml(j.name)}</span>`
+          )
+          .join("")}</div><p class="muted" style="margin-top:0.6rem;">From the run ${relativeTime(lastCompleted.created_at)}.</p>`;
+      } catch (err) {
+        el.innerHTML = `<p class="error">Couldn't load job details (${escapeHtml(err.message)}).</p>`;
+      }
+    }
+
+    async function loadLatestVerification() {
+      const el = document.getElementById("verify");
+      try {
+        const listing = await fetchJSON(`${API}/contents/digest/verification`);
+        const files = (listing || [])
+          .filter((f) => f.name.endsWith(".json"))
+          .sort((a, b) => (a.name < b.name ? 1 : -1));
+        if (!files.length) {
+          el.innerHTML = `<p class="muted">No verification results published yet.</p>`;
+          return;
+        }
+        const latest = files[0];
+        const isoWeek = latest.name.replace(/\.json$/, "");
+        const records = await fetchJSON(latest.download_url ? latest.download_url : latest.url);
+        const list = Array.isArray(records) ? records : [];
+        const counts = { clear: 0, flagged: 0, blocked: 0 };
+        list.forEach((r) => {
+          if (counts[r.status] !== undefined) counts[r.status] += 1;
+        });
+        el.innerHTML = `
+          <p class="muted" style="margin-bottom:0.7rem;">Issue <strong>${escapeHtml(isoWeek)}</strong> — ${list.length} entr${list.length === 1 ? "y" : "ies"}.</p>
+          <div class="verify-summary">
+            <div class="verify-stat ok"><div class="n">${counts.clear}</div><div class="l">Clear</div></div>
+            <div class="verify-stat pending"><div class="n">${counts.flagged}</div><div class="l">Flagged</div></div>
+            <div class="verify-stat fail"><div class="n">${counts.blocked}</div><div class="l">Blocked</div></div>
+          </div>`;
+      } catch (err) {
+        el.innerHTML = `<p class="error">Couldn't load the latest verification file (${escapeHtml(err.message)}).</p>`;
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    async function loadAll() {
+      document.getElementById("checked-at").textContent = "Checking…";
+      const workflowResults = await loadWorkflows();
+      await Promise.all([loadConnectorHealth(workflowResults), loadLatestVerification()]);
+      document.getElementById("checked-at").textContent = `Last checked ${new Date().toLocaleTimeString()}`;
+    }
+
+    document.getElementById("refresh-btn").addEventListener("click", loadAll);
+    loadAll();
+  </script>
+</body>
+</html>

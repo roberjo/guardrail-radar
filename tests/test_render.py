@@ -86,6 +86,11 @@ def _draft_entry(cluster_id="c1", franchise="weekly", **overrides):
     return entry
 
 
+def _read(path: str) -> str:
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
 # ---------- review packet ----------
 
 
@@ -121,19 +126,28 @@ def test_review_packet_escapes_unbalanced_paren_in_url(project):
 
 
 # ---------- final digest: content ----------
+#
+# render_final_digest returns (digest_path, site_path, issue_page_path).
+# site_path (site/index.html) now carries only a short teaser per issue —
+# the full content (TOC, items, excerpt/note) moved to its own standalone
+# page at issue_page_path (site/issues/<iso-week>.html), added after a
+# direct user request for past issues linkable on social media with their
+# own title/description, not just the homepage's generic preview.
 
 
 def test_final_digest_renders_note_and_excerpt(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
-    digest_path, _site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        content = f.read()
-    assert "Why this matters to a compliance-constrained engineer." in content
-    assert "a real excerpt" in content
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
+    assert "Why this matters to a compliance-constrained engineer." in digest_content
+    assert "a real excerpt" in digest_content
+    assert "Why this matters to a compliance-constrained engineer." in issue_content
+    assert "a real excerpt" in issue_content
 
 
-def test_final_digest_renders_intro_in_digest_and_site(project):
+def test_final_digest_renders_intro_in_digest_and_issue_page(project):
     # Added after real user feedback: three isolated per-item summaries
     # with no frame or synthesis read as a bare link list, not a
     # newsletter. intro is optional connective narrative for the whole
@@ -144,23 +158,19 @@ def test_final_digest_renders_intro_in_digest_and_site(project):
         [_draft_entry()],
         intro="A dry, professional aside that ties the week together.",
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "A dry, professional aside that ties the week together." in digest_content
-    assert "A dry, professional aside that ties the week together." in site_content
-    assert 'class="issue-intro"' in site_content
+    assert "A dry, professional aside that ties the week together." in issue_content
+    assert 'class="issue-intro"' in issue_content
 
 
 def test_final_digest_omits_intro_block_when_not_provided(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])  # no intro
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
-    assert "issue-intro" not in site_content
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    assert '<p class="issue-intro"' not in _read(issue_page_path)
 
 
 def test_final_digest_escapes_intro_html(project):
@@ -168,10 +178,8 @@ def test_final_digest_escapes_intro_html(project):
     _write_draft(
         "digest/draft/2026-W01.json", [_draft_entry()], intro='<script>alert(3)</script>'
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
-    assert "<script>alert(3)</script>" not in site_content
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    assert "<script>alert(3)</script>" not in _read(issue_page_path)
 
 
 def test_final_digest_renders_hook_as_headline_title_as_caption(project):
@@ -185,11 +193,9 @@ def test_final_digest_renders_hook_as_headline_title_as_caption(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(title="A real story", hook="Proves the agent fix actually held, not just that it passed CI.")],
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
 
     hook_text = "Proves the agent fix actually held, not just that it passed CI."
     # digest markdown: the H3 heading is the hook, not the title; the title
@@ -197,25 +203,23 @@ def test_final_digest_renders_hook_as_headline_title_as_caption(project):
     assert f"### [{hook_text}]" in digest_content
     assert digest_content.index(hook_text) < digest_content.index("A real story")
     assert digest_content.index(hook_text) < digest_content.index("a real excerpt")
-    # site: the <h4> headline is the hook; the title is a secondary caption.
-    assert f"<h4><a href=\"https://example.com/story\">{hook_text}</a></h4>" in site_content
-    assert 'class="item-source-title">A real story</p>' in site_content
-    assert site_content.index(hook_text) < site_content.index("a real excerpt")
+    # issue page: the <h4> headline is the hook; the title is a secondary caption.
+    assert f"<h4><a href=\"https://example.com/story\">{hook_text}</a></h4>" in issue_content
+    assert 'class="item-source-title">A real story</p>' in issue_content
+    assert issue_content.index(hook_text) < issue_content.index("a real excerpt")
 
 
 def test_final_digest_falls_back_to_title_as_headline_when_no_hook(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(title="A real story")])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(title="A real story", hook="")])
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "### [A real story]" in digest_content
-    assert "<h4><a href=\"https://example.com/story\">A real story</a></h4>" in site_content
+    assert "<h4><a href=\"https://example.com/story\">A real story</a></h4>" in issue_content
     # No hook means no secondary caption either — the title is already the
     # headline, so repeating it as a caption underneath would be redundant.
-    assert "item-source-title" not in site_content
+    assert '<p class="item-source-title"' not in issue_content
 
 
 def test_final_digest_strips_show_hn_prefix_for_display(project):
@@ -225,15 +229,13 @@ def test_final_digest_strips_show_hn_prefix_for_display(project):
     raw_title = "Show HN: Proliferate - open source coding agent IDE"
     _write("data/ranked/2026-W01.json", [_ranked_cluster(title=raw_title)])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(title=raw_title, hook="Run every agent from one IDE.")])
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "Show HN:" not in digest_content
-    assert "Show HN:" not in site_content
+    assert "Show HN:" not in issue_content
     assert "Proliferate - open source coding agent IDE" in digest_content
-    assert "Proliferate - open source coding agent IDE" in site_content
+    assert "Proliferate - open source coding agent IDE" in issue_content
 
 
 def test_clean_display_title_strips_hn_prefixes():
@@ -249,11 +251,10 @@ def test_final_digest_escapes_hook_html(project):
     _write_draft(
         "digest/draft/2026-W01.json", [_draft_entry(hook='<script>alert(4)</script>')]
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
-    assert "<script>alert(4)</script>" not in site_content
-    assert "&lt;script&gt;" in site_content
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_content = _read(issue_page_path)
+    assert "<script>alert(4)</script>" not in issue_content
+    assert "&lt;script&gt;" in issue_content
 
 
 def test_final_digest_toc_groups_by_category_in_fixed_order(project):
@@ -281,25 +282,23 @@ def test_final_digest_toc_groups_by_category_in_fixed_order(project):
             _draft_entry(cluster_id="c3", title="A new product one", category="new_product", hook=""),
         ],
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
 
     # Fixed order: Notable / Wow, then Breaking News, then New Products & Tools.
-    # site_content has "&" html-escaped to "&amp;" in the category label.
+    # issue_content has "&" html-escaped to "&amp;" in the category label.
     assert digest_content.index("Notable / Wow") < digest_content.index("Breaking News")
     assert digest_content.index("Breaking News") < digest_content.index("New Products & Tools")
-    assert site_content.index("Notable / Wow") < site_content.index("Breaking News")
-    assert site_content.index("Breaking News") < site_content.index("New Products &amp; Tools")
+    assert issue_content.index("Notable / Wow") < issue_content.index("Breaking News")
+    assert issue_content.index("Breaking News") < issue_content.index("New Products &amp; Tools")
 
     # A category with no items (field_notes here) isn't shown at all.
     assert "Field Notes" not in digest_content
-    assert "Field Notes" not in site_content
+    assert "Field Notes" not in issue_content
 
-    assert 'class="toc"' in site_content
-    assert '<a href="#item-c2">A breaking one</a>' in site_content
+    assert 'class="toc"' in issue_content
+    assert '<a href="#item-c2">A breaking one</a>' in issue_content
 
 
 def test_final_digest_item_body_order_matches_toc_order_not_draft_order(project):
@@ -328,13 +327,11 @@ def test_final_digest_item_body_order_matches_toc_order_not_draft_order(project)
             _draft_entry(cluster_id="c4", title="Wow factor", category="notable"),
         ],
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
 
-    for content in (digest_content, site_content):
+    for content in (digest_content, issue_content):
         assert (
             content.index("Wow factor")
             < content.index("Urgent incident")
@@ -346,11 +343,10 @@ def test_final_digest_item_body_order_matches_toc_order_not_draft_order(project)
 def test_final_digest_toc_anchor_matches_item_id(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1", title="A real story")])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1")])
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
-    assert 'href="#item-c1"' in site_content
-    assert 'id="item-c1"' in site_content
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_content = _read(issue_page_path)
+    assert 'href="#item-c1"' in issue_content
+    assert 'id="item-c1"' in issue_content
 
 
 def test_read_time_minutes_rounds_and_has_a_floor():
@@ -366,18 +362,16 @@ def test_read_time_minutes_rounds_and_has_a_floor():
 def test_final_digest_shows_category_badge_and_read_time(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="notable")])
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
 
     assert "`Notable` ·" in digest_content
     assert "min read" in digest_content
-    assert 'class="category-badge">' in site_content
-    assert 'category-icon' in site_content
-    assert "Notable</span>" in site_content
-    assert 'class="read-time">' in site_content and "min read" in site_content
+    assert 'class="category-badge">' in issue_content
+    assert 'category-icon' in issue_content
+    assert "Notable</span>" in issue_content
+    assert 'class="read-time">' in issue_content and "min read" in issue_content
 
 
 def test_hotness_order_bands_by_category_and_ranks_by_score_within_it(project):
@@ -400,16 +394,15 @@ def test_hotness_order_bands_by_category_and_ranks_by_score_within_it(project):
             _draft_entry(cluster_id="c3", title="A new product", category="new_product"),
         ],
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_content = _read(issue_page_path)
 
     # Item order: higher-scoring notable item first, then the lower-scoring
     # one, then new_product last.
     assert (
-        site_content.index("Notable, high score")
-        < site_content.index("Notable, low score")
-        < site_content.index("A new product")
+        issue_content.index("Notable, high score")
+        < issue_content.index("Notable, low score")
+        < issue_content.index("A new product")
     )
     # Hue: each item's own <li> carries a --hot-hue that strictly increases
     # (cools) from the hottest notable item through to new_product. Scoped
@@ -417,7 +410,7 @@ def test_hotness_order_bands_by_category_and_ranks_by_score_within_it(project):
     # renders its own, separate copy of these same hue values earlier in
     # the page, so a page-wide scan isn't a single monotonic sequence.
     def item_hue(cid: str) -> int:
-        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', site_content)
+        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', issue_content)
         assert match, f"no --hot-hue found on item {cid!r}"
         return int(match.group(1))
 
@@ -433,12 +426,11 @@ def test_final_digest_each_category_renders_a_hot_hue_style(project):
         cid = f"c{i}"
         _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id=cid)])
         _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id=cid, category=category)])
-        _, site_path = render_final_digest("2026-W01")
-        with open(site_path, encoding="utf-8") as f:
-            site_content = f.read()
-        assert 'class="category-badge">' in site_content
-        assert '<h4><a href=' in site_content  # hook renders as the headline
-        match = re.search(r'--hot-hue:(\d+)', site_content)
+        _, _site_path, issue_page_path = render_final_digest("2026-W01")
+        issue_content = _read(issue_page_path)
+        assert 'class="category-badge">' in issue_content
+        assert '<h4><a href=' in issue_content  # hook renders as the headline
+        match = re.search(r'--hot-hue:(\d+)', issue_content)
         assert match, f"no --hot-hue found for category {category!r}"
         seen_hues.add(int(match.group(1)))
     assert len(seen_hues) == 4  # each category lands in a distinct hue band
@@ -463,17 +455,16 @@ def test_hue_band_order_gives_breaking_the_hottest_hue_despite_reading_order(pro
             _draft_entry(cluster_id="c2", title="A breaking one", category="breaking", hook=""),
         ],
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_content = _read(issue_page_path)
 
     def item_hue(cid: str) -> int:
-        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', site_content)
+        match = re.search(rf'id="item-{cid}" style="--hot-hue:(\d+)"', issue_content)
         assert match, f"no --hot-hue found on item {cid!r}"
         return int(match.group(1))
 
     # notable reads first (per CATEGORY_ORDER) but breaking must render hotter.
-    assert site_content.index("A notable one") < site_content.index("A breaking one")
+    assert issue_content.index("A notable one") < issue_content.index("A breaking one")
     assert item_hue("c2") < item_hue("c1")
 
 
@@ -486,14 +477,12 @@ def test_final_digest_toc_group_shows_item_count(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(cluster_id="c1", category="breaking"), _draft_entry(cluster_id="c2", category="breaking")],
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "Breaking News (2)" in digest_content
-    assert 'class="toc-group"' in site_content
-    assert '<span class="count">(2)</span>' in site_content
+    assert 'class="toc-group"' in issue_content
+    assert '<span class="count">(2)</span>' in issue_content
 
 
 def test_final_digest_markdown_bolds_breaking_but_not_other_categories(project):
@@ -502,25 +491,25 @@ def test_final_digest_markdown_bolds_breaking_but_not_other_categories(project):
     # coding follows, translated to what markdown can actually do.
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="breaking")])
-    digest_path, _ = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        breaking_content = f.read()
+    digest_path, _, _ = render_final_digest("2026-W01")
+    breaking_content = _read(digest_path)
     assert "**BREAKING** ·" in breaking_content
     assert "`Breaking`" not in breaking_content
 
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(category="notable")])
-    digest_path, _ = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        notable_content = f.read()
+    digest_path, _, _ = render_final_digest("2026-W01")
+    notable_content = _read(digest_path)
     assert "`Notable` ·" in notable_content
     assert "**NOTABLE**" not in notable_content
 
 
-def test_final_digest_omits_redundant_stats_line(project):
+def test_final_digest_omits_redundant_stats_line_from_issue_page(project):
     # The "In this issue: N items across N sources — ..." line was cut
-    # after a design-critique pass found it repeated, almost verbatim,
-    # what the table of contents already conveys better, one scroll below
-    # it. Regression guard against reintroducing it.
+    # from the per-issue view after a design-critique pass found it
+    # repeated, almost verbatim, what the table of contents already
+    # conveys better, one scroll below it. It's back only as a homepage
+    # teaser summary (see test_homepage_teaser_shows_summary_and_link
+    # below) — a genuinely different role, not a regression.
     _write(
         "data/ranked/2026-W01.json",
         [_ranked_cluster(cluster_id="c1"), _ranked_cluster(cluster_id="c2", title="Second story")],
@@ -529,59 +518,53 @@ def test_final_digest_omits_redundant_stats_line(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(cluster_id="c1", category="breaking"), _draft_entry(cluster_id="c2", category="notable")],
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "In this issue:" not in digest_content
-    assert "issue-stats" not in site_content
-    assert "In this issue:" not in site_content
+    assert 'class="issue-summary"' not in issue_content
 
 
 def test_final_digest_renders_subject_line_in_markdown_only(project):
     # subject is the Beehiiv subject-field text — required practice, not
     # part of the issue body. Surfaced as a clearly-labeled line at the top
-    # of digest/<iso-week>.md for the manual paste-and-send step; never
-    # rendered on site/index.html (email-only concept).
+    # of digest/<iso-week>.md for the manual paste-and-send step. It also
+    # doubles as the issue page's meta/og/twitter description (a real,
+    # deliberate reuse — see _meta_description) but must never appear as
+    # visible reader-facing *body* copy on that page, only in <head>.
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft(
         "digest/draft/2026-W01.json", [_draft_entry()], subject="A real, specific subject line"
     )
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "A real, specific subject line" in digest_content
     assert digest_content.index("A real, specific subject line") < digest_content.index("# Guardrail Radar")
-    assert "A real, specific subject line" not in site_content
+    issue_body = issue_content.split("<body>", 1)[1]
+    assert "A real, specific subject line" not in issue_body
 
 
 def test_final_digest_omits_subject_line_when_not_provided(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()], subject="")
-    digest_path, _ = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    assert "Subject line" not in digest_content
+    digest_path, _, _ = render_final_digest("2026-W01")
+    assert "Subject line" not in _read(digest_path)
 
 
-def test_final_digest_excerpt_collapsed_on_site_not_in_markdown(project):
+def test_final_digest_excerpt_collapsed_on_issue_page_not_in_markdown(project):
     # Site-only: <details> can't be relied on to survive a paste into
-    # Substack/Beehiiv, so the emailed digest keeps the excerpt always
-    # visible as a plain blockquote.
+    # Beehiiv, so the emailed digest keeps the excerpt always visible as a
+    # plain blockquote.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "<details>" not in digest_content
     assert "> a real excerpt" in digest_content
-    assert "<details><summary>Read the source excerpt</summary>" in site_content
-    assert "a real excerpt" in site_content
+    assert "<details><summary>Read the source excerpt</summary>" in issue_content
+    assert "a real excerpt" in issue_content
 
 
 def test_final_digest_shows_non_weekly_franchise_label(project):
@@ -590,9 +573,8 @@ def test_final_digest_shows_non_weekly_franchise_label(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
     )
-    digest_path, _ = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        content = f.read()
+    digest_path, _, _ = render_final_digest("2026-W01")
+    content = _read(digest_path)
     assert "Vendor Watch" in content
     assert "Primary source: https://vendor.example.com/changelog" in content
 
@@ -603,9 +585,8 @@ def test_final_digest_escapes_primary_source_url(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(primary_source_url="https://vendor.example.com/*not*markdown*")],
     )
-    digest_path, _ = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        content = f.read()
+    digest_path, _, _ = render_final_digest("2026-W01")
+    content = _read(digest_path)
     assert r"https://vendor.example.com/\*not\*markdown\*" in content
 
 
@@ -614,19 +595,17 @@ def test_final_digest_omits_link_when_no_http_url_available(project, capsys):
     cluster["url"] = "javascript:alert(1)"
     _write("data/ranked/2026-W01.json", [cluster])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(url="javascript:alert(1)")])
-    digest_path, site_path = render_final_digest("2026-W01")
-    with open(digest_path, encoding="utf-8") as f:
-        digest_content = f.read()
-    with open(site_path, encoding="utf-8") as f:
-        site_content = f.read()
+    digest_path, _site_path, issue_page_path = render_final_digest("2026-W01")
+    digest_content = _read(digest_path)
+    issue_content = _read(issue_page_path)
     assert "javascript:" not in digest_content
-    assert "javascript:" not in site_content
+    assert "javascript:" not in issue_content
     assert "A real story" in digest_content
     # Scope to the actual issue-item, not the TOC above it — the TOC
     # legitimately contains its own <a href="#item-..."> anchor link to
     # this same item, which isn't the unsafe url this test is guarding
     # against.
-    item_html = site_content.split('class="issue-items"')[1].split("</li>")[0]
+    item_html = issue_content.split('class="issue-items"')[1].split("</li>")[0]
     assert "<a href" not in item_html
 
 
@@ -649,7 +628,7 @@ def test_final_digest_proceeds_when_blocked_entry_is_approved(project):
         "digest/verification/2026-W01.json",
         [{"cluster_id": "c1", "title": "A real story", "status": "blocked", "reasons": ["url failed"]}],
     )
-    digest_path, _ = render_final_digest("2026-W01")
+    digest_path, _, _ = render_final_digest("2026-W01")
     assert os.path.exists(digest_path)
 
 
@@ -660,75 +639,66 @@ def test_final_digest_html_escapes_untrusted_title_and_url(project):
         "digest/draft/2026-W01.json",
         [_draft_entry(title=malicious_title, url='https://example.com/"><script>x</script>')],
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_html = f.read()
-    assert "<script>alert(1)</script>" not in site_html
-    assert "&lt;script&gt;" in site_html
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_html = _read(issue_page_path)
+    assert "<script>alert(1)</script>" not in issue_html
+    assert "&lt;script&gt;" in issue_html
 
 
-# ---------- site archive: full content (not just a bare title link) ----------
+# ---------- issue page: full content (not just a bare title link) ----------
 
 
-def test_site_archive_includes_excerpt_and_note_not_just_title(project):
+def test_issue_page_includes_excerpt_and_note_not_just_title(project):
     # Regression test: the site previously rendered only a bare
     # <li><a>title</a></li> per item — the actual commentary (note) and
-    # excerpt went into digest/<week>.md but never reached site/index.html,
-    # despite docs/technical-spec.md §14 saying the site gets "the same
-    # content." Found by the user looking at the real deployed site, not
-    # by a test — there wasn't one that checked this.
+    # excerpt went into digest/<week>.md but never reached the public page.
+    # Found by the user looking at the real deployed site, not by a test —
+    # there wasn't one that checked this.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
     _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(note="Why this matters to a compliance-constrained engineer.")],
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_html = f.read()
-    assert "a real excerpt" in site_html
-    assert "Why this matters to a compliance-constrained engineer." in site_html
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_html = _read(issue_page_path)
+    assert "a real excerpt" in issue_html
+    assert "Why this matters to a compliance-constrained engineer." in issue_html
 
 
-def test_site_archive_shows_franchise_tag_and_primary_source(project):
+def test_issue_page_shows_franchise_tag_and_primary_source(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft(
         "digest/draft/2026-W01.json",
         [_draft_entry(franchise="vendor_watch", primary_source_url="https://vendor.example.com/changelog")],
     )
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_html = f.read()
-    assert "Vendor Watch" in site_html
-    assert 'href="https://vendor.example.com/changelog"' in site_html
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_html = _read(issue_page_path)
+    assert "Vendor Watch" in issue_html
+    assert 'href="https://vendor.example.com/changelog"' in issue_html
 
 
-def test_site_archive_omits_franchise_tag_for_plain_weekly_items(project):
+def test_issue_page_omits_franchise_tag_for_plain_weekly_items(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(franchise="weekly")])
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_html = f.read()
-    assert "franchise-tag" not in site_html
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    assert '<span class="franchise-tag"' not in _read(issue_page_path)
 
 
-def test_site_archive_escapes_note_and_excerpt_html(project):
+def test_issue_page_escapes_note_and_excerpt_html(project):
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt='<img src=x onerror="alert(1)">')])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(note='<script>alert(2)</script>')])
-    _, site_path = render_final_digest("2026-W01")
-    with open(site_path, encoding="utf-8") as f:
-        site_html = f.read()
-    assert "<script>alert(2)</script>" not in site_html
-    assert "<img src=x" not in site_html
-    assert "&lt;script&gt;" in site_html
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_html = _read(issue_page_path)
+    assert "<script>alert(2)</script>" not in issue_html
+    assert "<img src=x" not in issue_html
+    assert "&lt;script&gt;" in issue_html
 
 
-def test_site_archive_survives_rerender_with_rich_nested_content(project):
-    # Regression test for the boundary-detection fix: the old idempotent
-    # replace matched on a bare `</ul></li>` terminator, which worked only
-    # because a bare-title item had no internal tags of its own. Once items
-    # carry their own <blockquote>/<p> markup (this fix), that terminator
-    # could match an inner tag sequence instead of the real block end.
-    # Comment markers replace it specifically to stay correct here.
+def test_issue_page_rerender_overwrites_not_duplicates(project):
+    # The issue page is a dedicated file per iso-week (not an insert into a
+    # shared document), so a re-render is a plain overwrite — no marker
+    # machinery needed there, unlike the homepage archive below. Still
+    # worth a regression check that content doesn't somehow accumulate.
     _write("data/ranked/2026-W01.json", [_ranked_cluster(excerpt="a real excerpt")])
     _write_draft(
         "digest/draft/2026-W01.json",
@@ -737,24 +707,87 @@ def test_site_archive_survives_rerender_with_rich_nested_content(project):
 
     render_final_digest("2026-W01")
     render_final_digest("2026-W01")
-    render_final_digest("2026-W01")
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
 
-    with open("site/index.html", encoding="utf-8") as f:
-        site_html = f.read()
-    assert site_html.count('data-week="2026-W01"') == 1
-    assert site_html.count("<li data-week=") == 1
-    assert site_html.count("a real excerpt") == 1
-    assert site_html.count("Vendor Watch") == 1
+    issue_html = _read(issue_page_path)
+    assert issue_html.count("a real excerpt") == 1
+    assert issue_html.count("Vendor Watch") == 1
 
 
-# ---------- site archive: idempotency regression ----------
+def test_issue_page_has_og_and_twitter_meta_using_subject(project):
+    # Added after a direct user request for issues linkable on social
+    # media — a shared link needs its own title/description to produce a
+    # correct preview card, not the homepage's generic one. subject
+    # (already written as one punchy sentence for the Beehiiv send)
+    # doubles as the social description.
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry()], subject="A real, specific subject line"
+    )
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    issue_html = _read(issue_page_path)
+    assert "<title>Guardrail Radar — 2026-W01</title>" in issue_html
+    assert 'property="og:title" content="Guardrail Radar — 2026-W01"' in issue_html
+    assert 'property="og:description" content="A real, specific subject line"' in issue_html
+    assert 'property="og:url" content="https://roberjo.github.io/guardrail-radar/issues/2026-W01.html"' in issue_html
+    assert 'name="twitter:card" content="summary_large_image"' in issue_html
+    assert 'property="og:image" content="https://roberjo.github.io/guardrail-radar/og-image.png"' in issue_html
+
+
+def test_issue_page_meta_description_falls_back_to_intro_then_generic(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry()], subject="", intro="A connective narrative for the week."
+    )
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    assert 'og:description" content="A connective narrative for the week."' in _read(issue_page_path)
+
+    _write_draft("digest/draft/2026-W01.json", [_draft_entry()], subject="", intro="")
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
+    assert 'og:description" content="Guardrail Radar — the 2026-W01 issue."' in _read(issue_page_path)
+
+
+# ---------- homepage: teaser cards, linking to the issue page ----------
+
+
+def test_homepage_teaser_shows_summary_and_link(project):
+    _write(
+        "data/ranked/2026-W01.json",
+        [_ranked_cluster(cluster_id="c1"), _ranked_cluster(cluster_id="c2", title="Second story")],
+    )
+    _write_draft(
+        "digest/draft/2026-W01.json",
+        [_draft_entry(cluster_id="c1", category="breaking"), _draft_entry(cluster_id="c2", category="notable")],
+        subject="This week has a real subject line",
+    )
+    _, site_path, _issue_page_path = render_final_digest("2026-W01")
+    site_content = _read(site_path)
+
+    assert '<a href="issues/2026-W01.html">2026-W01</a>' in site_content
+    assert "This week has a real subject line" in site_content
+    assert "2 items across 1 source — 1 notable, 1 breaking." in site_content
+    assert '<a class="teaser-link" href="issues/2026-W01.html">Read the full issue →</a>' in site_content
+    # The homepage no longer carries the full item content itself.
+    assert "issue-items" not in site_content
+    assert 'class="toc"' not in site_content
+
+
+def test_homepage_teaser_description_falls_back_to_intro_when_no_subject(project):
+    _write("data/ranked/2026-W01.json", [_ranked_cluster()])
+    _write_draft(
+        "digest/draft/2026-W01.json", [_draft_entry()], subject="", intro="A short connective aside for the week."
+    )
+    _, site_path, _ = render_final_digest("2026-W01")
+    assert "A short connective aside for the week." in _read(site_path)
 
 
 def test_site_archive_replaces_not_duplicates_on_rerender(project):
     """Regression test for the bug the reviewer agent found and reproduced:
     re-rendering the same week used to append a second <li> instead of
     replacing the first, and the initial fix attempt still corrupted the
-    HTML (stray trailing </ul></li>) on a second run."""
+    HTML (stray trailing </ul></li>) on a second run. Still relevant with
+    the teaser-card content: the idempotent marker mechanism is unchanged,
+    only the content it wraps got smaller."""
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
 
@@ -762,14 +795,9 @@ def test_site_archive_replaces_not_duplicates_on_rerender(project):
     render_final_digest("2026-W01")
     render_final_digest("2026-W01")
 
-    with open("site/index.html", encoding="utf-8") as f:
-
-        site_html = f.read()
+    site_html = _read("site/index.html")
     assert site_html.count('data-week="2026-W01"') == 1
-    # Exactly one well-formed block: <li data-week=...><strong>...</strong>
-    # <ul>...story items...</ul></li> — no stray closing tags left behind.
     assert site_html.count("<li data-week=") == 1
-    assert site_html.count("</ul></li>") == 1
 
 
 def test_site_archive_keeps_distinct_weeks_separate(project):
@@ -781,12 +809,12 @@ def test_site_archive_keeps_distinct_weeks_separate(project):
     render_final_digest("2026-W01")
     render_final_digest("2026-W02")
 
-    with open("site/index.html", encoding="utf-8") as f:
-
-        site_html = f.read()
+    site_html = _read("site/index.html")
     assert 'data-week="2026-W01"' in site_html
     assert 'data-week="2026-W02"' in site_html
     assert site_html.count("<li data-week=") == 2
+    assert os.path.exists("site/issues/2026-W01.html")
+    assert os.path.exists("site/issues/2026-W02.html")
 
 
 def test_site_archive_updated_entry_reflects_new_items(project):
@@ -796,21 +824,18 @@ def test_site_archive_updated_entry_reflects_new_items(project):
 
     _write("data/ranked/2026-W01.json", [_ranked_cluster(cluster_id="c1", title="Corrected title")])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry(cluster_id="c1", title="Corrected title")])
-    render_final_digest("2026-W01")
+    _, _site_path, issue_page_path = render_final_digest("2026-W01")
 
-    with open("site/index.html", encoding="utf-8") as f:
-
-        site_html = f.read()
-    assert "Corrected title" in site_html
-    assert "Original title" not in site_html
+    issue_html = _read(issue_page_path)
+    assert "Corrected title" in issue_html
+    assert "Original title" not in issue_html
+    site_html = _read("site/index.html")
     assert site_html.count("<li data-week=") == 1
 
 
 def test_first_issue_placeholder_removed_after_first_render(project):
-    with open("site/index.html", encoding="utf-8") as f:
-        assert "First issue coming soon" in f.read()
+    assert "First issue coming soon" in _read("site/index.html")
     _write("data/ranked/2026-W01.json", [_ranked_cluster()])
     _write_draft("digest/draft/2026-W01.json", [_draft_entry()])
     render_final_digest("2026-W01")
-    with open("site/index.html", encoding="utf-8") as f:
-        assert "First issue coming soon" not in f.read()
+    assert "First issue coming soon" not in _read("site/index.html")

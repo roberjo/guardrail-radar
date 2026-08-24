@@ -64,98 +64,29 @@
     .archive > ul{ list-style: none; padding: 0; margin: 0; }
     .archive > ul > li{ padding: 1.75rem 0; border-bottom: 1px solid var(--line); }
     .archive > ul > li:last-child{ border-bottom: none; }
+    /* Each archive entry is now a teaser card linking to that issue's own
+       standalone page (site/issues/<iso-week>.html), not the full content
+       inline — added so each issue has its own shareable URL with its own
+       title/description for social previews, and so the homepage doesn't
+       grow without bound as issues accumulate. See pipeline/render.py's
+       ISSUE_PAGE_CSS for the full-content styling (TOC, items, badges),
+       which now lives only on the standalone issue pages. */
     .week-heading{
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.95rem; font-weight: 600; letter-spacing: 0.03em;
-      color: var(--ink-soft); margin: 0 0 1rem;
+      font-size: 1.1rem; font-weight: 700; margin: 0 0 0.5rem;
     }
-    .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
-    /* Table of contents — each group's left-border/heading color is its
-       hottest item's hue; each link gets a dot in its own item's hue, so
-       the gradient visibly continues both between and within groups. */
-    .toc{
-      display: flex; flex-direction: column; gap: 0.9rem;
-      margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 8px;
-    }
-    .toc-group{
-      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
-      padding-left: 0.75rem;
-    }
-    .toc-group h4{
+    .week-heading a{ color: var(--ink); text-decoration: none; }
+    .week-heading a:hover{ color: var(--amber); text-decoration: underline; }
+    .teaser-desc{ margin: 0 0 0.6rem; color: var(--ink); }
+    .teaser-stats{
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
-      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); margin: 0 0 0.4rem;
+      font-size: 0.8rem; color: var(--ink-soft); margin: 0 0 0.8rem;
     }
-    .toc-group .count{ font-weight: 400; opacity: 0.7; }
-    .toc-group ul{ list-style: none; margin: 0; padding: 0; }
-    .toc-group li{
-      display: flex; align-items: baseline; gap: 0.4rem;
-      font-size: 0.88rem; margin: 0 0 0.25rem;
-    }
-    .toc-group .dot{
-      width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none;
-      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
-    }
-    .toc-group a{ color: var(--ink); text-decoration: none; }
-    .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
-    .issue-items{ list-style: none; padding: 0; margin: 0; }
-    /* Each item carries a left-border stripe in its own hue — a reader
-       scanning down the page sees the gradient cool off before reading
-       anything, the same signal the TOC and badge already give. */
-    .issue-item{
-      padding: 1.1rem 0 1.1rem 0.9rem; border-top: 1px solid var(--line);
-      border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
-    }
-    .issue-item:first-child{ border-top: none; padding-top: 0; }
-    /* The headline is now the hand-written hook, not the raw scraped
-       source title — a design-critique pass found every item leading with
-       jargon-dense source titles while the actual reason to care rendered
-       as a subordinate line underneath. Headline color reads from the
-       item's own hue, like every other colored element, instead of a flat
-       amber shared by every item regardless of category. */
-    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.08rem; font-weight: 700; margin: 0 0 0.3rem; }
-    .issue-item h4 a{ color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); text-decoration: none; }
-    .issue-item h4 a:hover{ text-decoration: underline; }
-    /* The cleaned (platform-prefix-stripped) source title, demoted to a
-       small caption under the headline — present only on items that have
-       a hook to be secondary to. */
-    .item-source-title{
-      font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 0.7rem; font-style: italic;
-    }
-    .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
-    .franchise-tag, .category-badge, .read-time{
-      display: inline-flex; align-items: center; gap: 0.32rem;
+    .teaser-link{
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em;
-      border-radius: 3px; padding: 0.14rem 0.45rem;
+      font-size: 0.9rem; font-weight: 600; color: var(--amber); text-decoration: none;
     }
-    .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }
-    .category-badge{
-      font-weight: 700;
-      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
-      background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l) / 15%);
-    }
-    /* Small inline glyph per category (CATEGORY_ICON_SVG in
-       pipeline/render.py) — added after a design-critique pass found the
-       page was pure text with no visual texture anywhere. currentColor
-       inherits the badge's own hue-driven color, no separate wiring. */
-    .category-icon{ width: 0.7rem; height: 0.7rem; flex: none; color: currentColor; }
-    .read-time{ color: var(--ink-soft); background: var(--surface-soft); font-weight: 600; }
-    .issue-item details{ margin: 0 0 0.6rem; }
-    .issue-item summary{
-      cursor: pointer; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.8rem; color: var(--ink-soft);
-    }
-    .issue-item summary:hover{ color: var(--ink); }
-    .issue-item details[open] summary{ margin-bottom: 0.4rem; }
-    .issue-item blockquote{
-      margin: 0; padding-left: 0.75rem; border-left: 2px solid var(--line);
-      color: var(--ink-soft); font-style: italic; font-size: 0.92rem;
-    }
-    .issue-item p{ margin: 0 0 0.5rem; }
-    .issue-item p:last-child{ margin-bottom: 0; }
-    .primary-source{ font-size: 0.85rem; color: var(--ink-soft); }
-    .primary-source a{ color: inherit; }
+    .teaser-link:hover{ text-decoration: underline; }
     .empty{ color: var(--ink-soft); font-style: italic; }
     footer{ margin-top: 3rem; font-size: 0.85rem; color: var(--ink-soft); }
     footer a{ color: inherit; }
@@ -202,18 +133,12 @@
       <h2>Archive</h2>
       <ul>
         <!-- pipeline/render.py appends one <li> per published week here, per docs/technical-spec.md §14 -->
-        <!-- week:2026-W34 --><li data-week="2026-W34"><h3 class="week-heading">2026-W34</h3><p class="issue-intro">A Copilot-assisted PR became the entry point for a real compromise at Snowflake, and Claude Code quietly got throttled server-side with no client update — neither is a variable you control. The rest of the week splits between tools that add a human review gate before an agent ships and tools that quietly hand it more of the keyboard — read the fine print either way.</p><nav class="toc"><div class="toc-group" style="--hot-hue:35"><h4>Notable / Wow <span class="count">(1)</span></h4><ul><li style="--hot-hue:35"><span class="dot"></span><a href="#item-6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27">Lets an agent click and type on a real desktop convincingly enough to dodge most automation detection.</a></li></ul></div><div class="toc-group" style="--hot-hue:5"><h4>Breaking News <span class="count">(2)</span></h4><ul><li style="--hot-hue:5"><span class="dot"></span><a href="#item-33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d">Claude Code may quietly be running on a lower effort setting for you right now, with no client update or announcement.</a></li><li style="--hot-hue:20"><span class="dot"></span><a href="#item-76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4">A real security compromise that started with an AI-assisted pull request, not a hypothetical one.</a></li></ul></div><div class="toc-group" style="--hot-hue:65"><h4>Field Notes <span class="count">(1)</span></h4><ul><li style="--hot-hue:65"><span class="dot"></span><a href="#item-1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc">One senior engineer&#x27;s unfiltered account of what full agent delegation actually feels like.</a></li></ul></div><div class="toc-group" style="--hot-hue:95"><h4>New Products &amp; Tools <span class="count">(4)</span></h4><ul><li style="--hot-hue:95"><span class="dot"></span><a href="#item-57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459">Proves an AI agent&#x27;s fix actually held, not just that it passed CI.</a></li><li style="--hot-hue:102"><span class="dot"></span><a href="#item-9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160">A free, fully on-device Mac gesture-control tool that can also hand off computer-use tasks to Codex or Claude Code.</a></li><li style="--hot-hue:110"><span class="dot"></span><a href="#item-11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e">Run every major coding agent from one open-source IDE you can self-host.</a></li><li style="--hot-hue:118"><span class="dot"></span><a href="#item-2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6">Turns a solo, unreviewed agent session into a team-visible review-and-approve workflow, right in Slack.</a></li></ul></div></nav><ul class="issue-items"><li class="issue-item" id="item-6909b73dc515d86bda43b7ec01258c7b41d53f55c67fb3726cbe06d3cb815d27" style="--hot-hue:35"><h4><a href="https://news.ycombinator.com/item?id=49405405">Lets an agent click and type on a real desktop convincingly enough to dodge most automation detection.</a></h4><p class="item-source-title">Hands-Rust MCP/CLI that sees the Windows desktop and clicks real Chrome</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0l1.6 5.4L15 7l-5.4 1.6L8 14l-1.6-5.4L1 7l5.4-1.6L8 0Z"/></svg>Notable</span><span class="read-time">1 min read</span></div><p>Hands is a Rust MCP/CLI that lets a coding-agent harness (Grok, Codex, Claude Code, OpenCode, etc.) drive a real Chrome profile via actual OS-level input — not Playwright, Puppeteer, or a remote debugging port — specifically so sites that key off CDP/automation flags mostly don&#x27;t detect it as automated. Genuinely useful for legitimate testing, and also a direct description of how to make agent-driven browser activity indistinguishable from a human&#x27;s to any system trying to tell the difference. Worth knowing this class of tool exists before assuming your bot-detection or session-monitoring controls would catch an unsanctioned agent using one.</p><details><summary>Read the source excerpt</summary><blockquote>I built Hands because I wanted a coding agent to use this Windows PC and a real Chrome profile the way I do: look at the screen, move the real mouse, type, click , without turning Chrome into an automation browser. It is a Rust MCP/CLI. A harness (Grok, Codex, Claude Code, OpenCode, etc.) calls tools like observe, click, type, scroll. Observe is a screenshot path plus a small element list (UIA + optional Chrome DOM ids). Click is OS SendInput on a Bézier path, not a Chrome DevTools click. There is no Playwright, no Puppeteer, no remote debugging port. Daily Chrome is launched with no extra flags, or attached if it’s already open. Sites that key on CDP/automation flags mostly don’t see that. They can still see injected input (LLMHF_INJECTED). A tiny unpacked Chrome extension can fuse page structure (chr: ids, listing cards) so the model isn’t guessing from pixels. Sideload is manual. Fusion dies if the service worker goes inactive; reload the card. What it is good for:</blockquote></details></li><li class="issue-item" id="item-33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d" style="--hot-hue:5"><h4><a href="https://twitter.com/argofowl/status/2091150597374537729">Claude Code may quietly be running on a lower effort setting for you right now, with no client update or announcement.</a></h4><p class="item-source-title">Anthropic appears to be A/B testing reduced effort levels in Claude Code</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p>An HN commenter reports Anthropic silently enrolling some Claude Code sessions (Fable 5, version 2.1.236+) into a server-side experiment that shrinks the effort scale — no client update required to trigger it, with older versions and Opus 5 sessions left alone. The report itself frames this as probably an A/B test, not a confirmed universal rollout, and there&#x27;s no official Anthropic statement cited here. Still worth flagging: a coding agent&#x27;s reasoning behavior changing server-side and invisibly, mid-deployment, is exactly the kind of vendor-controlled variable that&#x27;s hard to account for in a change-managed environment.</p><details><summary>Read the source excerpt</summary><blockquote>update: it&#x27;s server-side, not the app
-
-anthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone
-
-probably an a/b test, so not everyone will see it
-
-if &quot;high&quot; feels like &quot;low&quot; for you,</blockquote></details></li><li class="issue-item" id="item-76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4" style="--hot-hue:20"><h4><a href="https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug">A real security compromise that started with an AI-assisted pull request, not a hypothetical one.</a></h4><p class="item-source-title">AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p>Security researchers at Wiz report their Red Agent found its way into Snowflake&#x27;s internal Jira through a flaw introduced via a GitHub Copilot-assisted pull request — a concrete example of an AI-assisted code change becoming the entry point for a real compromise chain, not a hypothetical one. The excerpt here is a one-line summary, not the full writeup, so it&#x27;s worth reading the source directly before drawing conclusions about what specifically went wrong in review.</p><details><summary>Read the source excerpt</summary><blockquote>Wiz Red Agent finds its way into Snowflake&#x27;s internal Jira through a flaw in a GitHub Copilot–Assisted PR.</blockquote></details></li><li class="issue-item" id="item-1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc" style="--hot-hue:65"><h4><a href="https://news.ycombinator.com/item?id=49389408">One senior engineer&#x27;s unfiltered account of what full agent delegation actually feels like.</a></h4><p class="item-source-title">Coding Agents killed my identity. How do you feel?</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3 3h3.2c0 3-1 4.6-2.6 5.2L3 6.7V3Zm6.8 0H13c0 3-1 4.6-2.6 5.2L9.8 6.7V3Z"/></svg>Field Notes</span><span class="read-time">1 min read</span></div><p>A full-time software engineer writes on HN that they realized they hadn&#x27;t personally written code in over a month — not from moving into management, but because agents had gradually taken over first the boilerplate, then the planning and architecture, leaving them mostly supplying context and infrastructure details. Framed as &quot;winning with a chess engine&quot;: still shipping, but with the part of the job they valued removed. Worth surfacing for any engineering lead rolling out agent adoption — retention and job-satisfaction risk is a real cost that a pure productivity metric won&#x27;t show.</p><details><summary>Read the source excerpt</summary><blockquote>Programming is like a game of chess for me: winning (i.e. delivering a product) is important, but only if I played this game myself. I don&#x27;t enjoy winning if my opponent disconnected. I don&#x27;t enjoy beating people who don&#x27;t know how to move pieces. I don&#x27;t enjoy winning with an engine, and coding agents are basically &quot;winning with a chess engine&quot;. I started to use AI for coding a long time ago, when copilot was first introduced. At first, I was happy: &quot;wow, this can write boring boilerplate and unit tests&quot;. Time went by, agents got better, time spent writing code myself went down. Half a year ago I suddenly realized I hadn&#x27;t written any code for over a month, and I am a full-time software dev without any managing work. Not only did I stop writing code, but agents also became pretty good at proposing plans and architectures, and I was mostly providing missing context and technical details of our infrastructure. One day the realization hit hard. Coding agents removed everything I loved, a</blockquote></details></li><li class="issue-item" id="item-57c4c55c955ac1b616a9e26c244df40e16793f7147162f65edf4a91ca5d76459" style="--hot-hue:95"><h4><a href="https://www.producthunt.com/products/fetchsandbox">Proves an AI agent&#x27;s fix actually held, not just that it passed CI.</a></h4><p class="item-source-title">FetchSandbox MCP</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p>FetchSandbox MCP targets a specific failure mode this audience will recognize: an agent&#x27;s fix passes CI while the underlying data or integration behavior is still wrong. It reproduces the real failure against one of 70+ API sandboxes and re-verifies the fix actually held, rather than trusting a green test run — positioned explicitly as &quot;a receipt, not a vibe.&quot; For a team that has to show its work on why an AI-assisted change was safe to ship, that&#x27;s the right instinct, though the excerpt doesn&#x27;t say what the receipt actually contains or where it&#x27;s stored for later audit.</p><details><summary>Read the source excerpt</summary><blockquote>The MCP that proves your AI&#x27;s integration fixes work — Your agent&#x27;s integration fix passes CI. The data is still wrong. FetchSandbox MCP reproduces the real failure on your code, fixes it, and proves the fix held. A receipt, not a vibe. 70+ API sandboxes. One config block in Cursor or Claude Code.</blockquote></details></li><li class="issue-item" id="item-9d4009a9b24b021bf96e0f1798c1353abaf593454398dfb139b669ec43729160" style="--hot-hue:102"><h4><a href="https://www.producthunt.com/products/pawvis">A free, fully on-device Mac gesture-control tool that can also hand off computer-use tasks to Codex or Claude Code.</a></h4><p class="item-source-title">Pawvis</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p>PawVis turns a Mac&#x27;s webcam into a hand-tracked mouse and gesture controller, running entirely on-device and shipping free and open source — the same &quot;nothing leaves the machine&quot; architecture this list keeps flagging as the practical answer to data-governance objections about AI tooling. It&#x27;s mostly a hands-free input/accessibility tool, but one of its listed use cases is handing computer-use tasks directly to Codex or Claude Code, which adds another local automation surface worth knowing about alongside this week&#x27;s browser-driving Hands entry for anyone auditing what can now operate a workstation without a human directly at the keyboard.</p><details><summary>Read the source excerpt</summary><blockquote>Control your Mac via camera &amp; train gestures, local &amp; FOSS — PawVis turns your Mac’s webcam into a hand-tracked mouse, no extra hardware required. Raise your hand and the cursor follows, dip a finger to click, and fold two fingers to scroll. Map gestures to custom actions like window management or any app/command from a series of common gestures or train your own. Everything runs 100% on-device, and PawVis is free and open source. Enable optional voice control for hands-free commands, or pass computer-use tasks to Codex or Claude Code.</blockquote></details></li><li class="issue-item" id="item-11ac83b5c037f7be157242b013c075df8a28e4f88d788e7acd9edb6485b2321e" style="--hot-hue:110"><h4><a href="https://github.com/proliferate-ai/proliferate">Run every major coding agent from one open-source IDE you can self-host.</a></h4><p class="item-source-title">Proliferate — open-source, self-hostable Codex for any coding agent</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p>Proliferate is an open-source IDE layer for running Claude Code, Codex, OpenCode, and other coding agents in parallel, locally or in the cloud, with reusable workflows. Running it locally is the operative option for this audience: keeping the orchestration layer on infrastructure you control, rather than a vendor&#x27;s, is the same architectural answer this list keeps seeing to the &quot;can we actually adopt this&quot; question — not a compliance feature bolted on, but a deployment model that avoids the question in the first place.</p><details><summary>Read the source excerpt</summary><blockquote>The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows. - proliferate-ai/proliferate</blockquote></details></li><li class="issue-item" id="item-2590c891b32a0285396b46bd454449c32969b13b24600d58358d302235f9f3d6" style="--hot-hue:118"><h4><a href="https://www.producthunt.com/products/slack">Turns a solo, unreviewed agent session into a team-visible review-and-approve workflow, right in Slack.</a></h4><p class="item-source-title">Slack Code</p><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p>Slack Code puts an agent&#x27;s work inside a dedicated, shared Slack channel where the team watches it work, reviews diffs, and explicitly approves what ships — turning what&#x27;s usually a solo, unreviewed agent session into something with a visible team approval step. For a regulated team, &quot;who approved this AI-generated change and where&#x27;s the record&quot; is exactly the kind of question this starts to answer, though the excerpt doesn&#x27;t say whether that approval trail is retained anywhere durable, or just lives in Slack&#x27;s normal message history.</p><details><summary>Read the source excerpt</summary><blockquote>Turn coding with AI into a team sport — Slack Code turns coding with AI from a solo session into a team sport. Mention a coding agent and Slack creates a dedicated code channel where teammates can plan together, watch the agent work, review code diffs, test live previews, give feedback, and approve what ships. Bring Claude, Devin, GitHub Copilot, ChatGPT, Vercel agents, and your team into the same place—with all the context already in Slack.</blockquote></details></li></ul></li><!-- /week:2026-W34 -->
+        <!-- week:2026-W34 --><li data-week="2026-W34"><h3 class="week-heading"><a href="issues/2026-W34.html">2026-W34</a></h3><p class="teaser-desc">A Copilot PR became a real breach. Claude Code might be throttled too.</p><p class="teaser-stats">8 items across 2 sources — 1 notable, 2 breaking, 1 field note, 4 new products.</p><a class="teaser-link" href="issues/2026-W34.html">Read the full issue →</a></li><!-- /week:2026-W34 -->
       </ul>
     </div>
 
     <footer>
-      <p>Built in the open — source, connectors, and verification pipeline live in this project's public repository.</p>
+      <p>Built in the open — source, connectors, and verification pipeline live in this project's public repository. See the live <a href="status.html">pipeline status</a>.</p>
     </footer>
   </main>
 </body>
