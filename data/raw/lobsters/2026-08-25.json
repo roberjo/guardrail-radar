@@ -1,0 +1,21 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Everything I own, owned",
+    "url": "https://schlarp.com/posts/everything-i-own-owned",
+    "raw_score": 60,
+    "comment_count": 21,
+    "posted_at": "2026-08-23T22:22:13.331-05:00",
+    "fetched_at": "2026-08-25T12:21:22.896995+00:00",
+    "excerpt": "Turning Claude loose on the firmware of five USB and WiFi peripherals, and finding a command shell in a microphone, a defeatable webcam activity LED, and unauthenticated memory writes over the network.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vcdk2q",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "1e2ae53b3e47028b4e91d13e26e85e07fba4fec858128964d1a0f74921a47903"
+  }
+]

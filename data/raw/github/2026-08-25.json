@@ -1,0 +1,818 @@
+[
+  {
+    "source": "github",
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "raw_score": 1021,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:20:05Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1188,
+      "total_stars": 27353,
+      "topic": "ai-coding"
+    },
+    "id": "1922d9d520f9ceba156c8955a8a60040d5e2afc0876ccc29f015a1849842ed78"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 304,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:19:47Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 20,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "SynthicsoftLabs/Nessy",
+    "url": "https://github.com/SynthicsoftLabs/Nessy",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:19:27Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Autonomous AGI Intelligence Fabric. Contribute to SynthicsoftLabs/Nessy development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "fecc122a47fed33150469153687e31569bc16a89501697963ef955be805e950c"
+  },
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:53Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "Glubiz/zirv-dynamic-cli",
+    "url": "https://github.com/Glubiz/zirv-dynamic-cli",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:43Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Automation tool for terminals. Contribute to Glubiz/zirv-dynamic-cli development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "59e9febcb7b39abd4d52fc2543fc3d8e0055df4ca41730b693e32840ad8d8f89"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 352,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:20Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 33,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "MaXiMo000/LabLedger",
+    "url": "https://github.com/MaXiMo000/LabLedger",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:09Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Upload a lab PDF from any laboratory. LabLedger reads the rows, resolves each test to a LOINC code, converts the units, resolves the reference interval, and charts the trend. Anything it is not cer...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "6baedb24b6269d5f4d86bb3ce4fe242c4f74375756959c619bf4543668a18bcf"
+  },
+  {
+    "source": "github",
+    "title": "martinfrancois/java-streams-skill",
+    "url": "https://github.com/martinfrancois/java-streams-skill",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:47Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Help AI coding agents use Java Streams and Collectors well in new code, review, and cleanup without replacing one antipattern with another. - martinfrancois/java-streams-skill",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 27,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "6440f0f58eb3c1920a02830b4a15a84f48f019ea51afc060f843ee6e2e1d13d8"
+  },
+  {
+    "source": "github",
+    "title": "loongsuite/dsh-plugin",
+    "url": "https://github.com/loongsuite/dsh-plugin",
+    "raw_score": 289,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:40Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "OpenTelemetry tracing for DeepSeek Harness (dsh): turns each agent turn into a GenAI span tree — steps, LLM calls with TTFT, tool executions, token usage — exported over standard OTLP to Jaeger, Gr...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 17,
+      "topic": "ai-coding"
+    },
+    "id": "37f8b35191ae70540254fb5d04773b50f608992768872c4cf5f416a400521a24"
+  },
+  {
+    "source": "github",
+    "title": "pingxia710/laixin-pipeline",
+    "url": "https://github.com/pingxia710/laixin-pipeline",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:33Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Multi-agent dev pipeline in production: orchestrate Codex/Claude Code/Kimi as parallel tmux workers — dispatch, independent acceptance, watchdog recovery, plus the failure log that shaped every rul...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "8173d2a0e687702f8e35207790d3da6ca5e75fc3d2a5d9cfe0c3fda73a9f589c"
+  },
+  {
+    "source": "github",
+    "title": "LeadMagic/leadmagic-cursor-plugin",
+    "url": "https://github.com/LeadMagic/leadmagic-cursor-plugin",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:19:48Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Official LeadMagic Cursor plugin for hosted MCP-powered B2B enrichment and GTM research. - LeadMagic/leadmagic-cursor-plugin",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "671f753febf6594966de4fdf0b5f67ca7aced4d5db2d217d8dd215f37d04eeb3"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:42Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:37Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 9,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 329,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:34Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 26,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:24Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:23Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:17Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc"
+  },
+  {
+    "source": "github",
+    "title": "ChanMeng666/archlang",
+    "url": "https://github.com/ChanMeng666/archlang",
+    "raw_score": 207,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:05Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "A declarative language that compiles to professional SVG floor plans — like Typst/LaTeX, but for architecture. Built for AI agents: deterministic output, JSON diagnostics that carry their own fix, ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 10,
+      "total_stars": 7,
+      "topic": "llm-tools"
+    },
+    "id": "9495acff6c0461109b4e3fdcf79c86f79980f480ed0237c52e6c17981f592194"
+  },
+  {
+    "source": "github",
+    "title": "CloudNationHQ/terraform-azure-law",
+    "url": "https://github.com/CloudNationHQ/terraform-azure-law",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:21:11Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Terraform module which creates log analytic resources used by workloads and accelerators. - CloudNationHQ/terraform-azure-law",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "373d6dcdf86c0b150f9ee712973335f39cadd3e205ab50e46937b26f845de364"
+  },
+  {
+    "source": "github",
+    "title": "speedy76tv/cx-blueprints",
+    "url": "https://github.com/speedy76tv/cx-blueprints",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:49Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "🔍 Learn blueprints to unlock crafting recipes and enhance gameplay with customizable items and metadata tracking in your server. - speedy76tv/cx-blueprints",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "7deab254b30fea2159a1c482e30d16c9af10d02b0c882cf7fef6cf0425a8f6c1"
+  },
+  {
+    "source": "github",
+    "title": "terraform-ibm-modules/terraform-ibm-observability-da",
+    "url": "https://github.com/terraform-ibm-modules/terraform-ibm-observability-da",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:47Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "A deployable architecture solution to deploy Observability instances and agents. - terraform-ibm-modules/terraform-ibm-observability-da",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "1f83d7099950efa94f7535913ef340b8d53b8b7e13d8754fb5bb40555c31108a"
+  },
+  {
+    "source": "github",
+    "title": "odwrotkonrad/cross-repo-infra-ci-cluster",
+    "url": "https://github.com/odwrotkonrad/cross-repo-infra-ci-cluster",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:38Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "The GKE cluster every pipeline runs on: node pools, network, runners and the identities they hold, as Terraform. - odwrotkonrad/cross-repo-infra-ci-cluster",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "6f7919b0aa038408d1d8be68fc56abaaf104fe0af5e4812248e805e8846c64af"
+  },
+  {
+    "source": "github",
+    "title": "semaphoreui/semaphore",
+    "url": "https://github.com/semaphoreui/semaphore",
+    "raw_score": 955,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:12Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Modern UI and powerful API for Ansible, Terraform/OpenTofu/Terragrunt, PowerShell and other DevOps tools. - semaphoreui/semaphore",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1073,
+      "total_stars": 14051,
+      "topic": "terraform"
+    },
+    "id": "c99b13c4f119357ffbc770183ae946249d7c976e4a7b9106403c5968c0608205"
+  },
+  {
+    "source": "github",
+    "title": "vegasjj/cloud-resume-challenge",
+    "url": "https://github.com/vegasjj/cloud-resume-challenge",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:57Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Cloud Resume Challenge Bootcamp from ExamPro. Contribute to vegasjj/cloud-resume-challenge development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "b8b8f2ca5701514c2514b466cc82d65ee5b965b16a8293697ffaef92d06206fa"
+  },
+  {
+    "source": "github",
+    "title": "chaziyu/firewall-migration-tool",
+    "url": "https://github.com/chaziyu/firewall-migration-tool",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:47Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "A production-grade platform for migrating enterprise firewall configurations across any-to-any multi-vendor environments (FortiGate, PAN-OS, Cisco, Check Point, Juniper) using a Vendor-Neutral Inte...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "f2856a19e0e6f357bf6ab18223c07dc7618c2c7af10e9eabe60189823388bb1d"
+  },
+  {
+    "source": "github",
+    "title": "Tata600/mermaid_diagram",
+    "url": "https://github.com/Tata600/mermaid_diagram",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:32Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "📝 Create stunning, interactive diagrams in Odoo using Mermaid.js to enhance your Knowledge articles and improve information flow. - Tata600/mermaid_diagram",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "232f4b1fcf08e50822826ef991e233e09ccec454bc3c41ffd40ee9da8ca20221"
+  },
+  {
+    "source": "github",
+    "title": "rezaasptrr/acads-Terraform_Survivor-ELEC3",
+    "url": "https://github.com/rezaasptrr/acads-Terraform_Survivor-ELEC3",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:18Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "🏔️ Control your survival game experience with Terraform, managing difficulty and resources seamlessly through Infrastructure as Code principles. - rezaasptrr/acads-Terraform_Survivor-ELEC3",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "c396027a594e58c1dbe11c4332b55fe01b4ef6cd328ff9c3ecfca8644db22c81"
+  },
+  {
+    "source": "github",
+    "title": "Skelly7614/Cloud-Security-Architecture-AWS",
+    "url": "https://github.com/Skelly7614/Cloud-Security-Architecture-AWS",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:15Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "🔒 Build a secure cloud architecture for financial services on AWS, ensuring compliance and protecting data throughout its lifecycle. - Skelly7614/Cloud-Security-Architecture-AWS",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "fc874e99f0f608f12adaa9a0247704cfd35b4c81684adc64cb9ca246c32a7758"
+  },
+  {
+    "source": "github",
+    "title": "Sam-Aitech/Checkbyai.net",
+    "url": "https://github.com/Sam-Aitech/Checkbyai.net",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:21:36Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "AI-powered UK visa fraud protection platform. Instantly verify Certificate of Sponsorship (CoS) documents, monitor employer sponsor licence status, and receive real-time alerts via email, WhatsApp,...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "cdb87946e2c7c1c82edc712a3756b4602db4f30e564821701f2aff41bd023e8b"
+  },
+  {
+    "source": "github",
+    "title": "rossaalex5-rgb/zemala-core",
+    "url": "https://github.com/rossaalex5-rgb/zemala-core",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:27Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Contribute to rossaalex5-rgb/zemala-core development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "1c73755abaff852272713502c4ba7fb8f1d03b2d53520eefb990ed1d0a6328a3"
+  },
+  {
+    "source": "github",
+    "title": "leonkoellerwirth-arch/agentic-ai-governance-toolkit",
+    "url": "https://github.com/leonkoellerwirth-arch/agentic-ai-governance-toolkit",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:15:18Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Practical governance artifacts for AI agents in regulated organizations — lifecycle models, risk scoring, EU AI Act &amp; DORA checklists, and a working evaluator. - leonkoellerwirth-arch/agentic-a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "7d54e1c03b25e75f7c34130f6340ba64c628e42964a192c63a0cc86f8c945916"
+  },
+  {
+    "source": "github",
+    "title": "oss-review-toolkit/ort",
+    "url": "https://github.com/oss-review-toolkit/ort",
+    "raw_score": 763,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:13:00Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "A suite of tools to automate software compliance checks. - oss-review-toolkit/ort",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 326,
+      "total_stars": 2074,
+      "topic": "compliance"
+    },
+    "id": "fd51b49279a7f4bc0671d7e1f0ab73deaaaa020ba38a084db80eb04d2f4fe5bb"
+  },
+  {
+    "source": "github",
+    "title": "Poeth01/SecureAI-PolicyGuard",
+    "url": "https://github.com/Poeth01/SecureAI-PolicyGuard",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:12:14Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "🛡️ Protect enterprise data with SecureAI PolicyGuard, an AI-driven platform for automated classification and compliance management. - Poeth01/SecureAI-PolicyGuard",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "efabbf088a128b899df411de0a5d6b8a327b32cec5cb3f79bb8b4994fc587146"
+  },
+  {
+    "source": "github",
+    "title": "FRASCOH/monitor-acn-nis2",
+    "url": "https://github.com/FRASCOH/monitor-acn-nis2",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:04:02Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "🛡️ Monitor automatizzato ACN NIS2. Regulatory Intelligence in tempo reale per la cybersicurezza italiana. - FRASCOH/monitor-acn-nis2",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 5,
+      "topic": "compliance"
+    },
+    "id": "8b3cec73fa8ab51af090fce87efd2bf6f57fc7663d26a861842da3423e2f99d0"
+  },
+  {
+    "source": "github",
+    "title": "seetrex-hq/trust-monitor",
+    "url": "https://github.com/seetrex-hq/trust-monitor",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:21:02Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Independent external monitoring of the Seetrex Compliance Trust Center - seetrex-hq/trust-monitor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dcfbf118b195e82d3fac9a3564ba0dec3a6ea7c5220ed37066896e3b7cab5e84"
+  },
+  {
+    "source": "github",
+    "title": "sufield/stave",
+    "url": "https://github.com/sufield/stave",
+    "raw_score": 346,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:03:19Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Stave finds compound attack paths that single-resource scanners miss. AWS security findings from configuration snapshots — no credentials required.  - sufield/stave",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 31,
+      "topic": "compliance"
+    },
+    "id": "d66d4b857ad12c674ed64b51fe098337b750f4357062bd5778b345bfc23cbb89"
+  },
+  {
+    "source": "github",
+    "title": "bladeacer/adacovex",
+    "url": "https://github.com/bladeacer/adacovex",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:02:00Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Ada/SPARK formal verification and compliance toolchain. - bladeacer/adacovex",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 8,
+      "topic": "compliance"
+    },
+    "id": "c90f09e1e8d43b2941a22ad512f582d392665382ec4a40b347fb2f73b5f19cbb"
+  },
+  {
+    "source": "github",
+    "title": "rulebeat/rulebeat",
+    "url": "https://github.com/rulebeat/rulebeat",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:18:07Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Scheduled Azure governance checks with history, dashboards, and alerts. Read-only, self-hosted, Apache-2.0. - rulebeat/rulebeat",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "1474ccda8d387382dfdf5a4499998d1e4e972d9ef926c157da701d400a886da1"
+  },
+  {
+    "source": "github",
+    "title": "mrcanlaco/Dao-Vang-Peak-Pulse",
+    "url": "https://github.com/mrcanlaco/Dao-Vang-Peak-Pulse",
+    "raw_score": 451,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:20:04Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "PeakPulse AI — Machine Learning Crypto Distribution & Top Formation Radar for Binance Futures - mrcanlaco/Dao-Vang-Peak-Pulse",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 90,
+      "topic": "fintech"
+    },
+    "id": "ca7c547926bce1b09b6f7169552ec9cca370962222ac33fe4ecdd0d500f0b592"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:21:23Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "ZORO-69-max/MyXpenseAPP",
+    "url": "https://github.com/ZORO-69-max/MyXpenseAPP",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:17:23Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "💰 Track your expenses effortlessly with MyXpense, the offline-first PWA that offers smart insights and secure cloud sync for better financial management. - ZORO-69-max/MyXpenseAPP",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d2c123144ab3046546db52d019275babb43f94f6c7508c07a85f1019749b5bd2"
+  },
+  {
+    "source": "github",
+    "title": "juspay/hyperswitch",
+    "url": "https://github.com/juspay/hyperswitch",
+    "raw_score": 1068,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:16:38Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables connectivity to multiple payment, payout, fraud, vault and tokenization providers | Uplifts authoriz...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2107,
+      "total_stars": 43529,
+      "topic": "fintech"
+    },
+    "id": "67171ff2b2c225f023c842db36365f04726886645f2d7094e642868d3213fd48"
+  },
+  {
+    "source": "github",
+    "title": "Ange4918/datasetiq-sheets-addon",
+    "url": "https://github.com/Ange4918/datasetiq-sheets-addon",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:58Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "📊 Access economic and financial data from 15+ global sources with the DataSetIQ Google Sheets add-on for powerful insights and analysis. - Ange4918/datasetiq-sheets-addon",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d59cb88aca0134eef511fc38c5ffe1cbd91d6125e2c2dabaeacfe63d570ed7f4"
+  },
+  {
+    "source": "github",
+    "title": "intrinio/intrinio-realtime-csharp-sdk",
+    "url": "https://github.com/intrinio/intrinio-realtime-csharp-sdk",
+    "raw_score": 313,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:19:19Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Intrinio C# SDK for Real-Time Stock Prices. Contribute to intrinio/intrinio-realtime-csharp-sdk development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 22,
+      "topic": "fintech"
+    },
+    "id": "ad70a29982b05311e549e4a0a064b69689b15cd11fb404f04d98b853c2670d77"
+  },
+  {
+    "source": "github",
+    "title": "kumarabhinav15/PublicDotCom-API-Dashboard",
+    "url": "https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:34Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "📊 Track your brokerage account activities seamlessly with the Public.com Dashboard, offering clear insights into trades, dividends, and more. - kumarabhinav15/PublicDotCom-API-Dashboard",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "ae8c10888eafbaac611ccb48dccee73d2fef9da54e60b899dfd9c1c3d165c805"
+  },
+  {
+    "source": "github",
+    "title": "ZaykorDev/AsesorAIrrechisimo",
+    "url": "https://github.com/ZaykorDev/AsesorAIrrechisimo",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:26Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "💼 Manage your investments with AsesorAIrrechisimo, an AI-driven portfolio manager featuring a witty Venezuelan financial advisor for engaging analysis. - ZaykorDev/AsesorAIrrechisimo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6639c41e44cd13937b1bbd16a7aad215897c31e1832f50afb6486527ae6e7444"
+  },
+  {
+    "source": "github",
+    "title": "nandan-s-r/punar-safe-recovery",
+    "url": "https://github.com/nandan-s-r/punar-safe-recovery",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:14:08Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "Safety-first Razorpay Test Mode payment recovery control plane with deterministic approval, audit trails, Shadow Mode, and Policy Replay. - nandan-s-r/punar-safe-recovery",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "82b3b06fa97d9a3ed492676e7c9ff880e1f3ecdad8d5611aaf994596d3932bd2"
+  },
+  {
+    "source": "github",
+    "title": "salar13684-lgtm/fintech-customer-transaction-intelligence",
+    "url": "https://github.com/salar13684-lgtm/fintech-customer-transaction-intelligence",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:21:07Z",
+    "fetched_at": "2026-08-25T12:21:19.510550+00:00",
+    "excerpt": "FinTech analytics project using PostgreSQL to analyze customer behavior, transaction performance, revenue, regional trends, customer segmentation, retention risk, and operational metrics through ad...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "01ce02d5824beaaa1c2f28c58ef58998f793d26e67ac7ba88f499b8404233131"
+  }
+]
