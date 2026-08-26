@@ -1,0 +1,117 @@
+[
+  {
+    "source": "lobsters",
+    "title": "What's in a tag name? JavaScript, apparently",
+    "url": "https://portswigger.net/research/whats-in-a-tag-name-javascript-apparently",
+    "raw_score": 9,
+    "comment_count": 8,
+    "posted_at": "2026-08-26T01:36:10.634-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "I was on my laptop, as I often am when there's rubbish on telly, and found myself wondering what characters are allowed in a tag. I knew they had to begin with \"a-zA-Z\", but what about after that? I t",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "lbsvk7",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "7ddf432c65afa391b61a189ab9200c52ccf93e4e52a190584b945b3fd7bc7fa5"
+  },
+  {
+    "source": "lobsters",
+    "title": "maiao: Gerrit-style stacked diffs for GitHub, Cursor Origin, GitLab, Codeberg and more",
+    "url": "https://github.com/runetes/maiao",
+    "raw_score": 2,
+    "comment_count": 2,
+    "posted_at": "2026-08-25T16:03:05.612-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "Seamless GitHub PR management from the command-line - runetes/maiao",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "2hsncr",
+      "tags": [
+        "show",
+        "vcs"
+      ]
+    },
+    "id": "627f5c4c4f2430f60dfd3019ed33384217b305198d51e34c391e1db93d7cef90"
+  },
+  {
+    "source": "lobsters",
+    "title": "AI At Home Part 2: Multi GPU Drifting",
+    "url": "https://jdagostino.github.io/ai-pt2-multi-gpu-drifting/index.html",
+    "raw_score": 10,
+    "comment_count": 1,
+    "posted_at": "2026-08-25T13:20:38.747-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "getting AI models to run fast on a box of e-waste GPUs",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qc6pjd",
+      "tags": [
+        "ai",
+        "linux"
+      ]
+    },
+    "id": "f2c41c03f24945a5516d28b47a3245e9d958fc45e15bf05489d8b5e635bef631"
+  },
+  {
+    "source": "lobsters",
+    "title": "A Manifesto for Responsible Agentic Coding",
+    "url": "https://www.techwerkers.nl/en/posts/manifesto-responsible-agentic-coding",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T12:17:14.054-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "Should you boycott generative AI? But what if your hyped-up boss starts pressuring you? Worry not, there’s a middle ground. A tech worker shares their manifesto for responsible agentic AI coding.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "voyeoa",
+      "tags": [
+        "ai",
+        "practices",
+        "vibecoding"
+      ]
+    },
+    "id": "ed52f81de70c4b47ae6be96a2e054e9b366be3e899ba9f0a6da4b72620de5d34"
+  },
+  {
+    "source": "lobsters",
+    "title": "A Tale of Two SOCs: Insights From Two Red Team Assessments",
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-237a",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-08-25T11:31:26.206-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "Same tactics, very different results. This advisory compares defensive outcomes from two red team assessments. Learn what drove detection and implement key actions to protect your organization from cyber threats.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "hloege",
+      "tags": [
+        "practices",
+        "security"
+      ]
+    },
+    "id": "f728a38d182fe15167021ade5e1152dc0dcbb2ca84bd38824313bc2d67becfc6"
+  },
+  {
+    "source": "lobsters",
+    "title": "C2PA Cameras Do Not Survive Contact With Reality",
+    "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+    "raw_score": 51,
+    "comment_count": 7,
+    "posted_at": "2026-08-25T10:51:24.594-05:00",
+    "fetched_at": "2026-08-26T12:23:02.620229+00:00",
+    "excerpt": "By David Buchanan (aka retr0id), 25 th August 2026",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "4netv1",
+      "tags": [
+        "android",
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "b9863581f526cba41a95674151bd7a7f273f18fdc58e894a30a723edd6ddee1e"
+  }
+]

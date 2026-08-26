@@ -1,0 +1,835 @@
+[
+  {
+    "source": "github",
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "raw_score": 1021,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:43Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1237,
+      "total_stars": 27395,
+      "topic": "ai-coding"
+    },
+    "id": "1922d9d520f9ceba156c8955a8a60040d5e2afc0876ccc29f015a1849842ed78"
+  },
+  {
+    "source": "github",
+    "title": "Anbeeld/PUI",
+    "url": "https://github.com/Anbeeld/PUI",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:10Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Pi harness as a modern app, with UI, web search, subagents, /goal, and more, all installed in one command - Anbeeld/PUI",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "15311c65ba3a2244fe96620038240d7f4028bf7df04269f469049f973b570b73"
+  },
+  {
+    "source": "github",
+    "title": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "raw_score": 1020,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:41Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent. - Kilo-Org/kilocode",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 592,
+      "total_stars": 27026,
+      "topic": "ai-coding"
+    },
+    "id": "12d6cf689ec8de35682f658eb57f7f6f75337608daf3959293072b2aa24fc0c6"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 304,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:21Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 20,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "lgn146/pi-less-yolo-coder",
+    "url": "https://github.com/lgn146/pi-less-yolo-coder",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:11Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "⚡ Pi-Less YOLOv9 Agent 2026 – Docker Sandbox Automation Toolkit - lgn146/pi-less-yolo-coder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "d1d226e39ed899260c3a876fe404fb281403914b6c89bc1c2527c1b304e61a35"
+  },
+  {
+    "source": "github",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:22Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee"
+  },
+  {
+    "source": "github",
+    "title": "VoltAgent/saas-landing-page",
+    "url": "https://github.com/VoltAgent/saas-landing-page",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:18Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "SaaS landing page guide covering structure, copy, pricing, proof, SEO, and what happens after sign-up. - VoltAgent/saas-landing-page",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "7b2330116dc4d0d4b24855b160a8bd6ab8bdf9c3edc527b89b056e7eb9345744"
+  },
+  {
+    "source": "github",
+    "title": "zohaamalik/ocds-procura-semantic-nexus",
+    "url": "https://github.com/zohaamalik/ocds-procura-semantic-nexus",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:12Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "AI-Powered German Procurement Search Engine 2026 - OCDS Tender Matching & Company Profiles - zohaamalik/ocds-procura-semantic-nexus",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "9edf904fae7d822bfabd1ec6b99cd567fc3f4599d7fbfa3fe885a705b54f3387"
+  },
+  {
+    "source": "github",
+    "title": "dimitardamjan7-a11y/spec-flow-framework",
+    "url": "https://github.com/dimitardamjan7-a11y/spec-flow-framework",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:19:37Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Nam-Cheol/namba-ai → AI Work Manager: Turn Vague Ideas into PR-Ready Specs & Evidence 2026 - dimitardamjan7-a11y/spec-flow-framework",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "18e1362f12b3db29b29dba2859068454cab3f6ce7fe95d73efc0e4f66f8c0a87"
+  },
+  {
+    "source": "github",
+    "title": "BirhanuTa/minimax-plugin-cursor-bridge",
+    "url": "https://github.com/BirhanuTa/minimax-plugin-cursor-bridge",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:19:13Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Supercharge Claude Code with MiniMax AI Agents for Smarter Code Reviews in 2026 - BirhanuTa/minimax-plugin-cursor-bridge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "73b71f169ece4a27df773a1075e693967b7ceffd968f947280b8ea747f40bb1d"
+  },
+  {
+    "source": "github",
+    "title": "CavinHuang/lume",
+    "url": "https://github.com/CavinHuang/lume",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:34Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Local-first AI workspace with persistent memory, real tools (files · shell · LSP · MCP · Office), and an opinionated agent team. Your data, your machine. - CavinHuang/lume",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 79,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "b57da7511753365208f085bb159cea72e50eeb79717a08ef0074da3f3d1fd323"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:53Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 9,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "CAOShurong/contextcost",
+    "url": "https://github.com/CAOShurong/contextcost",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:18Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "How many tokens does an AI agent pay to read your repo? Measure it, find the waste (lockfiles, bundles, generated files), and prove the saving by measuring again. `uvx contextcost .` - CAOShurong/c...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "2d770c263500b5266fa7016d674103fcfddabffc769dce630646750cda23c2e2"
+  },
+  {
+    "source": "github",
+    "title": "akinwumifakokunde-source/underwriteos",
+    "url": "https://github.com/akinwumifakokunde-source/underwriteos",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:17:02Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "UnderwriteOS is an API for lenders and fintechs to turn borrower data into explainable underwriting decisions. - akinwumifakokunde-source/underwriteos",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "453cc17297e644cf09fa576141fe06eea6786e8d79c6df9049e5771f2f0e1949"
+  },
+  {
+    "source": "github",
+    "title": "Yoodaddy0311/artibot",
+    "url": "https://github.com/Yoodaddy0311/artibot",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:16:55Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Autonomous Agent OS for Claude Code — 28 agents, 114 skills, 72 commands. Dual-process cognition, lifelong learning, parallel agent teams, planning→PRD/ADR/TODO workflow, cross-platform install. - ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "058b3557de8bf9c78bdca9927d4938fabf675b300313f50b2ee04fc454a78883"
+  },
+  {
+    "source": "github",
+    "title": "capad-xyz/searchts",
+    "url": "https://github.com/capad-xyz/searchts",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:16:02Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "The missing layer between AI and the web. Open-source escalating web unlocker + read/search/transcribe/grab across web, GitHub, YouTube, Reddit, Twitter, LinkedIn, and RSS for AI agents. - capad-xy...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "d194e16843f703ded09c9a87e770583585ada641c6c9f311617d5e615281c622"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:15:48Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:15:47Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 333,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:15:34Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 27,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "hoismail/journal-starter",
+    "url": "https://github.com/hoismail/journal-starter",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:18Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "End-to-end DevOps engineering project that demonstrates the deployment, automation, operation, and observability of a containerized FastAPI application on AWS - hoismail/journal-starter",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "dcb63a4394d068257900f89b817970a15c46d5c1bbad2d34bee9498b9472fd00"
+  },
+  {
+    "source": "github",
+    "title": "CiscoDevNet/terraform-provider-ise",
+    "url": "https://github.com/CiscoDevNet/terraform-provider-ise",
+    "raw_score": 239,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:55Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Terraform Cisco ISE Provider. Contribute to CiscoDevNet/terraform-provider-ise development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 10,
+      "topic": "terraform"
+    },
+    "id": "d1a6ae39ba422758f9cd2a1edf4449eaf024bc4799f3065459da7149a6e22aab"
+  },
+  {
+    "source": "github",
+    "title": "dark-vex/infra-cd",
+    "url": "https://github.com/dark-vex/infra-cd",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:18:49Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Homelab Infrastructure as Code (IaC) and GitOps practices - dark-vex/infra-cd",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 8,
+      "topic": "terraform"
+    },
+    "id": "46b2c01be599cc435cc38432ade8b66de28ff336ca82f3f814dffe0b115b2f13"
+  },
+  {
+    "source": "github",
+    "title": "schubergphilis-ep/terraform-azure-mcaf-diskencryptionset",
+    "url": "https://github.com/schubergphilis-ep/terraform-azure-mcaf-diskencryptionset",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:18:13Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Terraform module for a disk encryption set. Contribute to schubergphilis-ep/terraform-azure-mcaf-diskencryptionset development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "9c156aa888b44896505fc78b7ba7c703ab2c7536e66e8ca7187bd503d01c7928"
+  },
+  {
+    "source": "github",
+    "title": "stategraph/stategraph",
+    "url": "https://github.com/stategraph/stategraph",
+    "raw_score": 714,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:19:35Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Terraform without the state file bottleneck. Contribute to stategraph/stategraph development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 105,
+      "total_stars": 1268,
+      "topic": "terraform"
+    },
+    "id": "d9c729596318cc97933852ff7c96c4fb8211cb875ea0483cf9d52bce08f70030"
+  },
+  {
+    "source": "github",
+    "title": "CloudNationHQ/terraform-azure-vm",
+    "url": "https://github.com/CloudNationHQ/terraform-azure-vm",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:17:20Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Terraform module which creates virtual machine resources used by workloads and accelerators. - CloudNationHQ/terraform-azure-vm",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "terraform"
+    },
+    "id": "eccbecdb312f7266598ded00041b00371d885573299e1d8666f88a47a5703c64"
+  },
+  {
+    "source": "github",
+    "title": "hashicorp/terraform-provider-aws",
+    "url": "https://github.com/hashicorp/terraform-provider-aws",
+    "raw_score": 931,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:37Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "The AWS Provider enables Terraform to manage AWS resources. - hashicorp/terraform-provider-aws",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3578,
+      "total_stars": 11047,
+      "topic": "terraform"
+    },
+    "id": "e4976266a9ab49b6c1d6dc9e61c2765230c0228df6a7bc7ab183704f70d8e17d"
+  },
+  {
+    "source": "github",
+    "title": "chaziyu/firewall-migration-tool",
+    "url": "https://github.com/chaziyu/firewall-migration-tool",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:16:09Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "A Python-based multi-vendor firewall extraction, inventory, migration, and target-generation platform.  The project uses a vendor-neutral Intermediate Representation (IR) to separate source parsing...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "f2856a19e0e6f357bf6ab18223c07dc7618c2c7af10e9eabe60189823388bb1d"
+  },
+  {
+    "source": "github",
+    "title": "damgahq/damga",
+    "url": "https://github.com/damgahq/damga",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:15:16Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "A Kubernetes application platform built so every deploy can be proved: a Workload CRD that renders hardened deployments, admission policies with tests that prove they reject, keyless-signed images ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "8c4fe617985a7f769ea135e5453ca29fa6e76d8a1154dc37fc1935bf17d365e4"
+  },
+  {
+    "source": "github",
+    "title": "lov3g00d/sanctum",
+    "url": "https://github.com/lov3g00d/sanctum",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:15:03Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "A home for self-contained infrastructure labs (chambers) you stand up, test, and tear down. First chamber: a full AWS EKS platform. - lov3g00d/sanctum",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "fe92656334f612bc3daf9695d93fcbaf5e44a1c4fd7b27e0c5484db05782f83f"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bigid",
+    "url": "https://github.com/api-evangelist/bigid",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:31Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "BigID is a New York City-headquartered data security platform that combines Data Security Posture Management (DSPM), Data Loss Prevention (DLP), access governance, AI security &amp; governance (AIS...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "462174052305d910cb4b9881cd4a8f76ecbf191687e4a9f2d398d607fecac2be"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bettercloud",
+    "url": "https://github.com/api-evangelist/bettercloud",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:11Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "BetterCloud is the end-to-end SaaS management platform that enables IT teams to discover, manage, and secure the growing SaaS environment. The platform provides automated workflows, security polici...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "6ad2b3c6a56c35f57e0296a4a6e2c609b7d7811486d17d114dbb47d6bb40d467"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bayshore",
+    "url": "https://github.com/api-evangelist/bayshore",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:25Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Bayshore (bayshore AI GmbH) is a Munich-based legal and compliance technology company building an agentic AI platform that turns any ruleset — from sector regulations to internal corporate policies...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "af650322b5538caff49d39a58704779f886e3f569bee40bf4ac5f2403fd9d9d6"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/balto",
+    "url": "https://github.com/api-evangelist/balto",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:51Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Balto is a contact center AI platform that pairs live human agents with real-time AI to improve conversation quality, compliance, efficiency, and revenue. Its unified system delivers real-time agen...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dbe13332c8a73750c020e98852fc12763029a2ec02acbf8b88253b528e14eb69"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/backstartup",
+    "url": "https://github.com/api-evangelist/backstartup",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:41Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Backstartup is a Colombian tech-enabled accounting and legal services firm for startups and small businesses (notably SAS entities). It automated company formation, bookkeeping, tax filing, payroll...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "663ea3f0bb2199deb4146d8ff539f6e15107da93e5e8223a3e30002d8eb70edd"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/axis-2",
+    "url": "https://github.com/api-evangelist/axis-2",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:15Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Axis (axis.xyz) is a Y Combinator-backed (W2022) knowledge base platform for corporate affairs, government relations, and compliance teams that helps large companies understand their markets and re...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "7338992c40726fb3ce2d8a13e18f113f56c4cdcf7e1dfc85170c33b43079acd9"
+  },
+  {
+    "source": "github",
+    "title": "FRASCOH/monitor-acn-nis2",
+    "url": "https://github.com/FRASCOH/monitor-acn-nis2",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:07Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "🛡️ Monitor automatizzato ACN NIS2. Regulatory Intelligence in tempo reale per la cybersicurezza italiana. - FRASCOH/monitor-acn-nis2",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 5,
+      "topic": "compliance"
+    },
+    "id": "8b3cec73fa8ab51af090fce87efd2bf6f57fc7663d26a861842da3423e2f99d0"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/aws-security-hub",
+    "url": "https://github.com/api-evangelist/aws-security-hub",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:07Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "AWS Security Hub is a cloud security posture management (CSPM) service that aggregates, organizes, and prioritizes security findings from AWS services like Amazon GuardDuty, Inspector, and Macie, a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "8f20e0e35f7b46e4e8a382a9f8bf5adc105eca4df22385a6773b861a21323195"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/aws-backup",
+    "url": "https://github.com/api-evangelist/aws-backup",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:20:04Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "AWS Backup is a fully managed, policy-based data protection service that centralizes and automates backup of data across AWS services including EBS volumes, EC2 instances, RDS databases, DynamoDB t...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "2aceb63fdf9fde6cb0d251a948475846af90cfcb8b62b1a089f37c75700278d8"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/autositu",
+    "url": "https://github.com/api-evangelist/autositu",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:19:36Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Autositu (AutoSitu) is a Y Combinator (Winter 2026) PropTech startup building an AI-native intelligence layer for real estate development plan review. Its multi-agent platform automatically analyze...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "60b1bc042c87184e61077d130a19e198461ef561f77a7ef359777b9461efd7b0"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bitoasis",
+    "url": "https://github.com/api-evangelist/bitoasis",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:23:06Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "BitOasis is a Middle East and North Africa (MENA) cryptocurrency exchange, licensed as a Virtual Asset Service Provider by Dubai&#39;s Virtual Assets Regulatory Authority (VARA). It lets customers ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6a4f4f230b10f91a58587c7a5608f148efa7ce915a4b7fdac53fdba9ebb78cbb"
+  },
+  {
+    "source": "github",
+    "title": "milepost-labs/milepost",
+    "url": "https://github.com/milepost-labs/milepost",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:23:03Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Conditional disbursement infrastructure on Stellar. Funds release at each milepost, verified by attestation. - milepost-labs/milepost",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 48,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "65c47434fab644839ef84d1c0b735036401d6305e907a090add3e75dcd855b36"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/billtrust",
+    "url": "https://github.com/api-evangelist/billtrust",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:37Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Billtrust is an AI-powered accounts receivable and B2B payments technology company that helps businesses accelerate cash flow by automating the order-to-cash cycle. Its platform spans automated inv...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "55f90ef22e21a3ac16db62c36c6d1f4e61a85ac0a2f822a9d35516dacea3beae"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/billtrim",
+    "url": "https://github.com/api-evangelist/billtrim",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:37Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "BillTrim is a consumer bill-management and negotiation service that helps households lower, monitor, and pay their recurring bills. Its team negotiates with providers on the customer&#39;s behalf (...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "239b249e350ee8c73992b578e1d215ee01db2dc15b34ca9017d2243da27eac2d"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/billogram",
+    "url": "https://github.com/api-evangelist/billogram",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:36Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Billogram is a Swedish (Billogram AB) Invoice-to-Cash orchestration platform that automates the full invoicing and payment lifecycle for businesses with recurring revenue - invoice creation and dis...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e59aa7f17389699ab4973e13374d3d5433ff820ead2d55133dc07f3351834ec5"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/billie",
+    "url": "https://github.com/api-evangelist/billie",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:36Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Billie is a Berlin-based B2B &quot;buy now, pay later&quot; (BNPL) payment provider that lets merchants offer business buyers invoice purchase, pay-after-delivery, and installment terms at checkout...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "085458284de6c1e30a6f1a4f805b01a651b041c773a1106cf23e802ecc57521f"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bill",
+    "url": "https://github.com/api-evangelist/bill",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:22:34Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "BILL (formerly Bill.com) is a cloud-based financial operations platform for small and midsize businesses that automates accounts payable, accounts receivable, and spend &amp; expense management. - ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "5915af8472006c2e4859f215d8b99d6499e9cf66a2653fb46922bf062b7698b8"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:23:34Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "EshanMaurya1203/verifi-app",
+    "url": "https://github.com/EshanMaurya1203/verifi-app",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:58Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Payment-backed startup revenue verification platform for verifying MRR and ARR using Stripe and Razorpay. - EshanMaurya1203/verifi-app",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "cea8d64726e6c7c52d9d8ebe94e07f252aeb26bbc9f27a7e4908db0de0a755b9"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/bento",
+    "url": "https://github.com/api-evangelist/bento",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:21:58Z",
+    "fetched_at": "2026-08-26T12:23:01.647922+00:00",
+    "excerpt": "Bento (Bento Technologies, Inc., dba Bento for Business) was a Chicago- and San Francisco-based small-business fintech that provided card-based payment and expense management for small and mid-size...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d515da2b9d6e99257dc715ac8d60f3069e491d607ae8c9ef71a9670f06af06e4"
+  }
+]
