@@ -1,0 +1,801 @@
+[
+  {
+    "source": "github",
+    "title": "dfrostar/neuralmind",
+    "url": "https://github.com/dfrostar/neuralmind",
+    "raw_score": 325,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:10Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Persistent memory for AI coding agents. Your agent learns your codebase the way a senior engineer would — what files go together, what you usually edit next. Works with Claude Code, Cursor, Cline, ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 25,
+      "topic": "ai-coding"
+    },
+    "id": "e88ca767f991017e4e1097ae49f8afab8d32b72bd3420dc5a0ae61ce21edf257"
+  },
+  {
+    "source": "github",
+    "title": "deepsteve/deepsteve",
+    "url": "https://github.com/deepsteve/deepsteve",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:18:56Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "A hackable web UI for your Claude Code and Codex agents. It runs on your machine, and your agents can build your dev tools right into it. - deepsteve/deepsteve",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 9,
+      "topic": "ai-coding"
+    },
+    "id": "be8e9d1a5861b10ff35783880dbd7f200537df36b74c448e037b237ce385533f"
+  },
+  {
+    "source": "github",
+    "title": "davesheffer/hunch",
+    "url": "https://github.com/davesheffer/hunch",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:17:39Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Local-first engineering memory for AI coding: a git-native graph of decisions, bugs, and invariants, exposed to Claude Code via MCP. - davesheffer/hunch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 5,
+      "topic": "ai-coding"
+    },
+    "id": "8fc14d1457c025ed35c74c683baab6a08b1261d475b50a77f2484b1efc0da8ba"
+  },
+  {
+    "source": "github",
+    "title": "samartomar/ai-harness",
+    "url": "https://github.com/samartomar/ai-harness",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:05Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Enterprise AI Bootstrapping Harness. Contribute to samartomar/ai-harness development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 11,
+      "total_stars": 6,
+      "topic": "ai-coding"
+    },
+    "id": "5c845017c99ef15a51926a3329e7e1cf60629e1c485b428395c6bfa5ba711dbc"
+  },
+  {
+    "source": "github",
+    "title": "sesori-ai/sesori_apps_monorepo",
+    "url": "https://github.com/sesori-ai/sesori_apps_monorepo",
+    "raw_score": 469,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:17:18Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Sesori iOS/Android app and the Sesori Bridge CLI — drive Claude, Codex, OpenCode, Cursor, Pi, OMP, Hermes coding sessions from your phone - sesori-ai/sesori_apps_monorepo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 27,
+      "total_stars": 108,
+      "topic": "ai-coding"
+    },
+    "id": "64dd2b8c4e31900d537220d2d1af4f751c9a9bfc52dab7a67fb6cba39cd27811"
+  },
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:46Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 304,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:34Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 20,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 355,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:14Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 34,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "n24q02m/better-telegram-mcp",
+    "url": "https://github.com/n24q02m/better-telegram-mcp",
+    "raw_score": 248,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:13:09Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Telegram for AI agents -- messages, chats, media, and contacts across both bot and full user-account modes. - n24q02m/better-telegram-mcp",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 11,
+      "topic": "ai-coding"
+    },
+    "id": "16c5f11e4d543bb282b037e88d01128169e3a2a6930f080b67884de90152be87"
+  },
+  {
+    "source": "github",
+    "title": "sandbaseai/cli",
+    "url": "https://github.com/sandbaseai/cli",
+    "raw_score": 412,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:11:59Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Open-source AI CLI and local MCP server connecting 25 clients—Claude Code, Cursor, Codex, ChatGPT, Hermes, and OpenClaw—to 2,000+ models/APIs, with OAuth and rollback. - sandbaseai/cli",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 61,
+      "topic": "ai-coding"
+    },
+    "id": "c4e113dbb76b9775278a9bf203d8af5e3e80b3dd7b12ab1b7bee5d0628077f74"
+  },
+  {
+    "source": "github",
+    "title": "diazoxide/charter",
+    "url": "https://github.com/diazoxide/charter",
+    "raw_score": 270,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:18:48Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Control plane for your harness across many repos — durable personas, per-task workspaces, and a credential vault the model never reads from - diazoxide/charter",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 31,
+      "total_stars": 14,
+      "topic": "llm-tools"
+    },
+    "id": "9d3c275514a02a53792638e52cf2987bebba07bfdabf48b902ce05f3e6b663c6"
+  },
+  {
+    "source": "github",
+    "title": "zenineasa/Konjugate",
+    "url": "https://github.com/zenineasa/Konjugate",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:17:58Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "A graph-native simulation engine for building composable engineering simulations and digital twins. - zenineasa/Konjugate",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "165cd9e1761eb1955547173d50fa59cd049f15161992126e029f27a42a03248e"
+  },
+  {
+    "source": "github",
+    "title": "justinstimatze/lexicon",
+    "url": "https://github.com/justinstimatze/lexicon",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:43Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Typed catalog of cognitive primitives, cross-referenced and lineage-grounded, with a surfacing function on top. - justinstimatze/lexicon",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "dba8d3e5333c411afc4913f7f1f1e3974ba1049d1effe833b2be3969581b3b2f"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:45Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 333,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:36Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 27,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:30Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:30Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 9,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:22Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:21Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc"
+  },
+  {
+    "source": "github",
+    "title": "GoddeyUwamari/devcontrol",
+    "url": "https://github.com/GoddeyUwamari/devcontrol",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:15Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "AI-powered AWS cost optimization, security posture, and infrastructure intelligence. Cuts cloud waste 20–40%, detects risks before incidents, and replaces AWS Cost Explorer + Security Hub in one pl...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "de6deba9c7d0609726e1c7a87d22f440fa47c20b31449d93be1e20c8ea973804"
+  },
+  {
+    "source": "github",
+    "title": "suzuki-shunsuke/tfaction",
+    "url": "https://github.com/suzuki-shunsuke/tfaction",
+    "raw_score": 598,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:57Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Framework for Monorepo to build high level Terraform Workflows by GitHub Actions - suzuki-shunsuke/tfaction",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 59,
+      "total_stars": 398,
+      "topic": "terraform"
+    },
+    "id": "034fe8b18e4ce38d5531b07c7a76db45733e230b107f8e66d6ec30e73bb98eb4"
+  },
+  {
+    "source": "github",
+    "title": "hckhanh/pulumi-any-terraform",
+    "url": "https://github.com/hckhanh/pulumi-any-terraform",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:39Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Porting of some Terraform providers to Pulumi. Contribute to hckhanh/pulumi-any-terraform development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "fd84752cdc37e2de7d46b66245e1241e772c02b082edcf65fc33cd86d3598e0e"
+  },
+  {
+    "source": "github",
+    "title": "sethbacon/terraform-state-manager-backend",
+    "url": "https://github.com/sethbacon/terraform-state-manager-backend",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:19:02Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Terraform State Manager backend — state analysis, state manipulation, drift detection at scale, and Version Lab across local and HCP Terraform backends - sethbacon/terraform-state-manager-backend",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b752ad20f0fe3ce9397ee6bd373c1596af3be5c3f5f2441f1c5588752964bc21"
+  },
+  {
+    "source": "github",
+    "title": "canonical/charmed-hpc-terraform",
+    "url": "https://github.com/canonical/charmed-hpc-terraform",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:18:29Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Terraform plans for deploying Charmed HPC on your favorite clouds 🗺️🌋☁️ - canonical/charmed-hpc-terraform",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "38ae3084957cfcea75a3643e600d927f9d787e2e595ddfe93999b4f856dcf6ae"
+  },
+  {
+    "source": "github",
+    "title": "itsharryshelton/CloudflareLandingZone",
+    "url": "https://github.com/itsharryshelton/CloudflareLandingZone",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:18:26Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Terraform Landing Zone for managing Cloudflare at enterprise scale: many accounts, many zones, one set of reviewed modules. - itsharryshelton/CloudflareLandingZone",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "2457023364d6cf082caa333a7881d52723f8fc80daaf669f43f37139f53a0695"
+  },
+  {
+    "source": "github",
+    "title": "p0-security/terraform-provider-p0",
+    "url": "https://github.com/p0-security/terraform-provider-p0",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:17:56Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Terraform provider for P0 app configuration. Contribute to p0-security/terraform-provider-p0 development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "3eb65a56526a35fb6d47621688e87d061c6f755081cebe9550f429ac3098d1e8"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/sym",
+    "url": "https://github.com/api-evangelist/sym",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:16:57Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Sym was a developer-first authorization and access-management platform for platform, security, and infrastructure engineering teams. Rather than a REST API, Sym exposes its control plane as infrast...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "8b9f08a3f8337016dd97cf7fd7de70fb631f4b9a2ad9409dcaaebfaa4200b4bb"
+  },
+  {
+    "source": "github",
+    "title": "OpenRouterTeam/terraform-provider-openrouter",
+    "url": "https://github.com/OpenRouterTeam/terraform-provider-openrouter",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:19:19Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Official Terraform provider for OpenRouter — manage API keys, guardrails, workspaces, BYOK credentials, and observability destinations as infrastructure-as-code - OpenRouterTeam/terraform-provider-...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "8b62c3f8d317d54a5b8bba4a37383ec596231923ea161942050ba11bd2e294cb"
+  },
+  {
+    "source": "github",
+    "title": "JanitaM/infra-modules",
+    "url": "https://github.com/JanitaM/infra-modules",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:15:22Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Reusable Terraform modules for AWS with a policy-as-code gate: Conftest/OPA rules run against terraform plan in CI and block apply on violations. Security baselines written once, tested with allow/...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "7dd922ae85e75cc77398ebb16ca21842f39ae14da02886a137dec58a1839239e"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/unit21",
+    "url": "https://github.com/api-evangelist/unit21",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:41Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Unit21 is an agentic AI platform for fraud and AML (Anti-Money Laundering) detection and compliance operations. It provides a REST API for ingesting transaction data, managing detection rules, revi...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "956b30cfac7f799953aca7c751210796e9eaba8e48cbc6e33221c35ace21e6e1"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/torii",
+    "url": "https://github.com/api-evangelist/torii",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:31Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Torii is the market leading SaaS Management Platform built to bring all your software into one place. Discover shadow IT, enforce governance, cut costs, and operationalize every app. - api-evangeli...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "7cce7f0a6ec4ab4fe755354366284bb7b0b6784fa5cc158623a6a0d5e15079c7"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/topograph",
+    "url": "https://github.com/api-evangelist/topograph",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:28Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Topograph is a KYB (Know Your Business) data platform that connects directly to official European and international business registers (35+ countries) for real-time company verification. - api-evan...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "c83fd1af4e778cb1deded382595deebedcda01c8e373ddd4f620a351ff22ea7e"
+  },
+  {
+    "source": "github",
+    "title": "seetrex-hq/trust-monitor",
+    "url": "https://github.com/seetrex-hq/trust-monitor",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:02Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Independent external monitoring of the Seetrex Compliance Trust Center - seetrex-hq/trust-monitor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dcfbf118b195e82d3fac9a3564ba0dec3a6ea7c5220ed37066896e3b7cab5e84"
+  },
+  {
+    "source": "github",
+    "title": "aurelian-risk/aurelian-tessera",
+    "url": "https://github.com/aurelian-risk/aurelian-tessera",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:20Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "BSI Grundschutz implemented — an ISMS tool for the Grundschutz++ method, offline in a single HTML file - aurelian-risk/aurelian-tessera",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "95e13e59eb0dacd0f0dd81bd30dc5ca936620c5371a0595f9e1f7f04e8d0ac03"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/threatlocker",
+    "url": "https://github.com/api-evangelist/threatlocker",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:18Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "ThreatLocker is a Zero Trust endpoint and cloud security platform used by enterprises and managed service providers to enforce least privilege across endpoints, networks, and cloud workloads. - api...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "371cfbf75203aa7e5ac2dc08cd03bcb0405d951a7767772129644d0ef4904b20"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/threat-stack",
+    "url": "https://github.com/api-evangelist/threat-stack",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:18Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Threat Stack was a Boston-based cloud security company providing full-stack cloud security observability, intrusion detection, and compliance monitoring for infrastructure and applications across c...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "5d6e9b7761f8ee0233fef8d2e0ae12adc647aa030fac04c2550ebdaa8d182858"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/thingsthinking",
+    "url": "https://github.com/api-evangelist/thingsthinking",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:06Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Thingsthinking GmbH is a Karlsruhe, Germany-based semantic AI company and the maker of semantha, an adaptive AI platform for text-driven business processes. semantha applies semantic natural-langua...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "6a74ae5571c5247594225d3ffd190433dc6b681ebcdbfeb60278fe846d72eec2"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/theta-lake",
+    "url": "https://github.com/api-evangelist/theta-lake",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:03Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Theta Lake is a cloud- and AI-native Digital Communications Governance and Archiving (DCGA) platform for compliance and security across unified communications. It captures, archives, supervises, an...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "15d8d26104ac2c39352ebd5b315cfba123c211449d5bb97770facbae0d776c12"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/themis",
+    "url": "https://github.com/api-evangelist/themis",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:19:55Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Themis (askthemis.com) is a governance, risk, and compliance (GRC) SaaS platform positioned as a &quot;compliance collaboration&quot; tool that streamlines partnerships between companies and their ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "32d27dae3434e80d16067bd81fac1263bebf2752e13bb996e289200d2391fffd"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/total-system-services",
+    "url": "https://github.com/api-evangelist/total-system-services",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:34Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Total System Services (TSYS) was a leading global payment solutions provider offering payment processing services to financial and nonfinancial institutions before merging with Global Payments in 2...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d001cc9d19f2ae04ef2604c5213bf1d1b027a305b19411ba231b4004154262a7"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/toss",
+    "url": "https://github.com/api-evangelist/toss",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:33Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Toss is a Korean financial super-app operated by Viva Republica that provides REST APIs for payments, banking, credit scoring, identity verification, and financial services across the Toss ecosyste...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "746cdb6724173830fcd6d5a83153ea97ef359a379703ab4f65733d0fca7e14b0"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/toshl",
+    "url": "https://github.com/api-evangelist/toshl",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:32Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Toshl Finance is a personal finance and budgeting platform (a 500 Global portfolio company, founded in Slovenia) that helps people track expenses, organize bills, and budget across mobile and web a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e4233d469a9222e2da54fd8197b3cdc0b659c24f84806ec82ffe4caff148d9a4"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/tonik",
+    "url": "https://github.com/api-evangelist/tonik",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:21Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Tonik is the first digital-only neobank in the Philippines, operated by Tonik Digital Bank, Inc. under a digital banking license from the Bangko Sentral ng Pilipinas (BSP). Delivered entirely throu...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "46aabee1d4274fed77f2c4cb34d530fb7d604dfbca3413ef955ad09b3b6843bb"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/tone",
+    "url": "https://github.com/api-evangelist/tone",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:19Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Tone is a full-stack royalty management platform for music rights owners — independent labels, distributors, and royalty teams. It centralizes royalty accounting, income tracking, and contract mana...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "b8209ee7a9d7035831d08337b738fa0fbc3c29b938ec8e322dc9bef98790e1c8"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/tomo-guides",
+    "url": "https://github.com/api-evangelist/tomo-guides",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:18Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Tomo Guides is the home-buying guide and educational content produced by Tomo Mortgage (tomo.com), a consumer digital mortgage lender backed by a16z. Tomo offers home purchase mortgages and refinan...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "54ab62f7b27d90ea911f028e8b5996115a5859b405a915fab80c7563a07e585a"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/togai",
+    "url": "https://github.com/api-evangelist/togai",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:21:10Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Togai is a metering and billing platform for software and SaaS products, purpose-built for consumption-based and usage-based pricing models. The Togai API provides programmatic access to customers,...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "4af9fe6555353eb4549535ea296abafde44e3e7cd27a84d2238b26ced084d6c2"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/tiptop",
+    "url": "https://github.com/api-evangelist/tiptop",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-27T21:20:59Z",
+    "fetched_at": "2026-08-27T21:21:26.071913+00:00",
+    "excerpt": "Tiptop (Tiptop Labs) is the payments company founded by Postmates co-founder Bastian Lehmann that lets shoppers trade in items they already own for instant credit at checkout, alongside pay-over-ti...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "1c301ecc1faa8fb8e96004fac92e6abb672e3d275342d757a408f34f391a7a3d"
+  }
+]

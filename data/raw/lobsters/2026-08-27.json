@@ -1,0 +1,95 @@
+[
+  {
+    "source": "lobsters",
+    "title": "A Million Kakapos",
+    "url": "https://blog.mempko.com/a-million-kakapos",
+    "raw_score": 7,
+    "comment_count": 5,
+    "posted_at": "2026-08-27T10:41:58.393-05:00",
+    "fetched_at": "2026-08-27T21:21:23.420402+00:00",
+    "excerpt": "Agentic coding is the hot new thing. I've been doing it since the GPT3 days back in 2021. Everyone doing it has decided that coding is now 'basically free'. Prior to this you needed great programmers to make great software. Becoming a programmer with good skill takes a lot",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ir1jkh",
+      "tags": [
+        "culture",
+        "finance",
+        "vibecoding"
+      ]
+    },
+    "id": "5cc5ae51e0a16211214eeb4bfe4eed57e313f557668f25e6fe3df11f69b22371"
+  },
+  {
+    "source": "lobsters",
+    "title": "The turbulent AI era is here",
+    "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make?WT.mc_id=20260826_ai-overture-2026-med-med",
+    "raw_score": 10,
+    "comment_count": 19,
+    "posted_at": "2026-08-27T00:32:18.671-05:00",
+    "fetched_at": "2026-08-27T21:21:23.420402+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "aixljs",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "8e94f98b07fe49fdffc02ecd94b8337879aeab83f4c8122d9e51a905c60ff2ae"
+  },
+  {
+    "source": "lobsters",
+    "title": "Merchants of Insecurity",
+    "url": "https://blog.happyfellow.dev/merchants-of-insecurity",
+    "raw_score": 96,
+    "comment_count": 6,
+    "posted_at": "2026-08-26T09:30:41.443-05:00",
+    "fetched_at": "2026-08-27T21:21:23.420402+00:00",
+    "excerpt": "First, a PSA: Do NOT use Omarchy if you care about security of your machine even a little bit. \r\nYou can't polish a turd\r\n\r\nOmarchy 4.0 shipped with a collec...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "eove8s",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "445fc1f5940c8e835bfae9226c23a15a5528aa3358f566c7125a9ab09b5adbc6"
+  },
+  {
+    "source": "lobsters",
+    "title": "VMs won't contain cyber-capable agents",
+    "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents",
+    "raw_score": 32,
+    "comment_count": 12,
+    "posted_at": "2026-08-26T12:05:04.798-05:00",
+    "fetched_at": "2026-08-27T21:21:23.420402+00:00",
+    "excerpt": "You can no longer assume a mere VM will contain a sufficiently advanced AI agent.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "q6qjjr",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "9bc4fb43dadb96af58b1069321f2368cb6ce81cb80b2e4b664d66ae2c141e605"
+  },
+  {
+    "source": "lobsters",
+    "title": "Getting a Cease and Desist from Waffle House (2025)",
+    "url": "https://www.jack.bio/blog/wafflehouse",
+    "raw_score": 25,
+    "comment_count": 1,
+    "posted_at": "2026-08-26T15:29:10.373-05:00",
+    "fetched_at": "2026-08-27T21:21:23.420402+00:00",
+    "excerpt": "I reverse-engineered Waffle House's website to build a live version of the (unofficial) Waffle House Index, and got a cease and desist for it.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "erm1zp",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "0d3b6eb7a2deed62d61b91bb9f751364680ab0db2d806b77646a204d71aed953"
+  }
+]
