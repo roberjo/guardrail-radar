@@ -1,0 +1,818 @@
+[
+  {
+    "source": "github",
+    "title": "Alessandro-Pang/harnessmith",
+    "url": "https://github.com/Alessandro-Pang/harnessmith",
+    "raw_score": 270,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:34Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Distribute and safely manage a cross-host personal harness and durable work state. - Alessandro-Pang/harnessmith",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 14,
+      "total_stars": 14,
+      "topic": "ai-coding"
+    },
+    "id": "5b5eddf5c9eff04e1aa634fcbd76626b3e6e23bdf5febbd9738310b030b618c2"
+  },
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:44Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 304,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:34Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 20,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "dimitardamjan7-a11y/spec-flow-framework",
+    "url": "https://github.com/dimitardamjan7-a11y/spec-flow-framework",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:33Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Nam-Cheol/namba-ai → AI Work Manager: Turn Vague Ideas into PR-Ready Specs & Evidence 2026 - dimitardamjan7-a11y/spec-flow-framework",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "18e1362f12b3db29b29dba2859068454cab3f6ce7fe95d73efc0e4f66f8c0a87"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 355,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:16Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 34,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "CodeAlive-AI/ai-driven-development",
+    "url": "https://github.com/CodeAlive-AI/ai-driven-development",
+    "raw_score": 487,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:16Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Practices, protocols, and skills for AI-driven software development. Skills and safety hooks for Claude Code, Codex, OpenCode, Cursor, Antigravity, and any agent supporting the Agent Skills standar...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 130,
+      "topic": "ai-coding"
+    },
+    "id": "982030a696cfa48ad61adf6113b8aabcb8bf738dbc808bfd82a372cda6b6061b"
+  },
+  {
+    "source": "github",
+    "title": "dancingteeth/agent-looper",
+    "url": "https://github.com/dancingteeth/agent-looper",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:05Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Fix-until-green agent loop with shell-verify-as-truth, pluggable multi-runtime workers (Cursor/Cline/OpenCode/Codex/DSH/Pi), and fresh context per iteration. - dancingteeth/agent-looper",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "00d1fb93cb26f39b4851e08066421c6d62b5543baa58fee88325bdc838fff4b1"
+  },
+  {
+    "source": "github",
+    "title": "Fie345/orbital-usage-gauges",
+    "url": "https://github.com/Fie345/orbital-usage-gauges",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:28:13Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "macOS AI Coding Usage Meter 2026: Track Claude, Codex & Antigravity with Live Liquid Gauges - Fie345/orbital-usage-gauges",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "a81e870c8592e49342f3ea4da726aa3077bc30bb62cb253b98aedbe124c5b5e5"
+  },
+  {
+    "source": "github",
+    "title": "pingxia710/laixin-pipeline",
+    "url": "https://github.com/pingxia710/laixin-pipeline",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:27:08Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Multi-agent dev pipeline in production: orchestrate Codex/Claude Code/Kimi as parallel tmux workers — dispatch, independent acceptance, watchdog recovery, plus the failure log that shaped every rul...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "8173d2a0e687702f8e35207790d3da6ca5e75fc3d2a5d9cfe0c3fda73a9f589c"
+  },
+  {
+    "source": "github",
+    "title": "rambaarde/create-ai-memory",
+    "url": "https://github.com/rambaarde/create-ai-memory",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:26:56Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Persistent, agent-agnostic session memory for AI coding CLIs (Claude Code, Codex, Gemini, Cursor, opencode). One Markdown vault, any agent. - rambaarde/create-ai-memory",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "31866d4bba5b1a5d6f5532f7068f5a32333edd4e5504cac6a47eacd58dd4f484"
+  },
+  {
+    "source": "github",
+    "title": "AIimagined/Godmode",
+    "url": "https://github.com/AIimagined/Godmode",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:30Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "A local, tamper-evident record of what a coding agent did, what it claimed, and what was verified. - AIimagined/Godmode",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "dfc352818256d25e932679c3eaf7b36d51cf02559a861347674cae1b9c547a2d"
+  },
+  {
+    "source": "github",
+    "title": "betyourluck/Lorekeel",
+    "url": "https://github.com/betyourluck/Lorekeel",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:19Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "A TRPG Game Master that never forgets or contradicts. Outcasts Lorekeel uses a cloud LLM for rich storytelling, backed by a deterministic Rust engine as the source of truth for all game states. By ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "346a883476b04fdb81b0ed6c30e325c71f6211e8db2cfc63102a82e64ae7f938"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:57Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 4,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 333,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:46Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 27,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:29Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 9,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:27Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:25Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:20Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc"
+  },
+  {
+    "source": "github",
+    "title": "jianyuan/terraform-provider-anthropic",
+    "url": "https://github.com/jianyuan/terraform-provider-anthropic",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:46Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Terraform provider for Anthropic. Contribute to jianyuan/terraform-provider-anthropic development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "terraform"
+    },
+    "id": "22872592bc1673fee93b949028dcf864e96e54424b13d25d3a0d6ca8c6c9ac0c"
+  },
+  {
+    "source": "github",
+    "title": "jasonpanosso/selfhosted",
+    "url": "https://github.com/jasonpanosso/selfhosted",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:46Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "suffering as a service. Contribute to jasonpanosso/selfhosted development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 14,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "1f37d1529232b85229ed4e5e49343281abb6b089a48bacbb30e1177198e53638"
+  },
+  {
+    "source": "github",
+    "title": "stephrobert/feint",
+    "url": "https://github.com/stephrobert/feint",
+    "raw_score": 489,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:26Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Run Terraform, OpenTofu and the official Scaleway, Outscale and Exoscale CLIs locally — no cloud account, no credentials, nothing billed. - stephrobert/feint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 56,
+      "total_stars": 133,
+      "topic": "terraform"
+    },
+    "id": "410f8c33b94bd090d5a02bc02752686910920879e9718bc734d1632d939ce8da"
+  },
+  {
+    "source": "github",
+    "title": "j0nathan-ll0yd/mantle-OfflineMediaDownloader",
+    "url": "https://github.com/j0nathan-ll0yd/mantle-OfflineMediaDownloader",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:42Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "A Terraform project for downloading media (e.g. YouTube videos) via Feedly - j0nathan-ll0yd/mantle-OfflineMediaDownloader",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "09be49e868ed9899c89ac4d20fa8fdfd4666ec3e0e850338f1d0ff669aaddc22"
+  },
+  {
+    "source": "github",
+    "title": "patrickbeane/tfstride",
+    "url": "https://github.com/patrickbeane/tfstride",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:54Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Deterministic cloud threat modeling for Terraform plans. Multi-cloud engine that identifies trust boundaries, maps findings to STRIDE, and generates clean markdown reports.  - patrickbeane/tfstride",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "d849fa9f536e71123b5f7c0fd59aa65534651a01843ba44febc5f21c03b0552a"
+  },
+  {
+    "source": "github",
+    "title": "PNX89/QUILTZ",
+    "url": "https://github.com/PNX89/QUILTZ",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:26:26Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Terraform and OpenTofu run against an emulator, IAM policies linted offline, and what the emulator does not reproduce named before anything else - PNX89/QUILTZ",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "9475afefe238ae33a0fe859ced0300778a879bd9ba560c681f179454f27c8870"
+  },
+  {
+    "source": "github",
+    "title": "terraform-ibm-modules/terraform-ibm-landing-zone-code-engine",
+    "url": "https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone-code-engine",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:26:22Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "A deployment architecture that provisions an IBM Cloud Code Engine environment designed for scalable, serverless compute workloads. - terraform-ibm-modules/terraform-ibm-landing-zone-code-engine",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "2ccef7c1b25ff1052056afad2d1f5f6529c109fd0b312e3e0f43c4242aceda29"
+  },
+  {
+    "source": "github",
+    "title": "joryirving/home-ops",
+    "url": "https://github.com/joryirving/home-ops",
+    "raw_score": 541,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:26:03Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Wife tolerated HomeOps driven by Kubernetes, and Gitops via Flux. - joryirving/home-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 223,
+      "topic": "terraform"
+    },
+    "id": "40f9d4a9a94d1f7566e79022f6cae35754f0b99944529e46519f9fb90991421b"
+  },
+  {
+    "source": "github",
+    "title": "nreymundo/home-lab-iac",
+    "url": "https://github.com/nreymundo/home-lab-iac",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:25:56Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Home lab infrastructure automated from VM provisioning to app deployment using Packer, Terraform, Ansible, and Kubernetes. - nreymundo/home-lab-iac",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "c7edc1a42824a930272b9115a39d030f41ce3aec1de0c924e5cd077fda5b71fc"
+  },
+  {
+    "source": "github",
+    "title": "terraform-ibm-modules/terraform-ibm-landing-zone",
+    "url": "https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone",
+    "raw_score": 239,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:23:34Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Creates a fully customizable VPC environment and compute resources (VSI, Red Hat OpenShift) with presets designed to meet strict compliance needs. - terraform-ibm-modules/terraform-ibm-landing-zone",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 13,
+      "total_stars": 10,
+      "topic": "terraform"
+    },
+    "id": "939b8a9e30ab3e55239bab5ef7e9511259e7fae2f147b17b4f24e8c3eb0ea587"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-macie",
+    "url": "https://github.com/api-evangelist/amazon-macie",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:35Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon Macie — independent third-party profile of a public API surface, by API Evangelist. Amazon Macie is a data security service that discovers sensitive data by using machine learning and patter...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "64d8c8d36bd71c8bcc6a39a54a6e5a7bd39663f12b0a5ae8a5ca7d5b087ab085"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-license-manager",
+    "url": "https://github.com/api-evangelist/amazon-license-manager",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:27Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon License Manager — independent third-party profile of a public API surface, by API Evangelist. AWS License Manager makes it easier to manage licenses in AWS and on-premises servers from softw...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "5fb84a9626f532c61a92d4e8c437ff77d061328091b93ed378e048ca48ed7573"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-iot-device-defender",
+    "url": "https://github.com/api-evangelist/amazon-iot-device-defender",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:01Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon IoT Device Defender — independent third-party profile of a public API surface, by API Evangelist. AWS IoT Device Defender is a security service that lets you continuously audit your IoT conf...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "6ae5eaeebb943869a861718103c5d7ba3dddcf49a5a51a5450f2cd44618e1b80"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-inspector",
+    "url": "https://github.com/api-evangelist/amazon-inspector",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:57Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon Inspector — independent third-party profile of a public API surface, by API Evangelist. Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "f2c97567d115576fea61b2257b21883d6b3f1dea408abe37a6530dd4322bf698"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-iam-access-analyzer",
+    "url": "https://github.com/api-evangelist/amazon-iam-access-analyzer",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:51Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon IAM Access Analyzer — independent third-party profile of a public API surface, by API Evangelist. AWS IAM Access Analyzer helps you set, verify, and refine your IAM policies by providing a s...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "ecf8eb0c06b124f293633a7e6afbc233f5713e63a011dca8d9b1674a6424632e"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-guardduty",
+    "url": "https://github.com/api-evangelist/amazon-guardduty",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:42Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon GuardDuty — independent third-party profile of a public API surface, by API Evangelist. Amazon GuardDuty is an intelligent threat detection service that continuously monitors your AWS accoun...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "9cb7c5a58398ca6d8e9baa5463aec97504b5a204a935fe8b54b80c68da8b47cc"
+  },
+  {
+    "source": "github",
+    "title": "seetrex-hq/trust-monitor",
+    "url": "https://github.com/seetrex-hq/trust-monitor",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:39Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Independent external monitoring of the Seetrex Compliance Trust Center - seetrex-hq/trust-monitor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dcfbf118b195e82d3fac9a3564ba0dec3a6ea7c5220ed37066896e3b7cab5e84"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-firewall-manager",
+    "url": "https://github.com/api-evangelist/amazon-firewall-manager",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:26Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon Firewall Manager — independent third-party profile of a public API surface, by API Evangelist. AWS Firewall Manager is a security management service that allows you to centrally configure an...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "365ead2a20030971c6156a1388d97ba00508f01306d5030b999dea71a8cfd15e"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-data-lifecycle-manager",
+    "url": "https://github.com/api-evangelist/amazon-data-lifecycle-manager",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:32Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon Data Lifecycle Manager — independent third-party profile of a public API surface, by API Evangelist. Amazon Data Lifecycle Manager provides an automated way to manage the lifecycle of your A...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "9e900021d478a7c4c49ff540e127511bc5e6f8f2f4aec5cc5ab45f8521a80dcd"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amazon-config",
+    "url": "https://github.com/api-evangelist/amazon-config",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:26Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amazon Config — independent third-party profile of a public API surface, by API Evangelist. AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This inclu...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "40524ffea4f21c83c4267218602817f7cca6fb59c54355ee9152500f5508b0e3"
+  },
+  {
+    "source": "github",
+    "title": "Das-rebel/ChuckleNet",
+    "url": "https://github.com/Das-rebel/ChuckleNet",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:39Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "🎭 BERT fine-tuned on 120K+ samples for audience intelligence. 98.78% Val F1, cross-cultural nuance detection (75.9% vs 61-67% baselines). 8-agent validation pipeline. ACL/EMNLP 2026. Python, PyTorc...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "425dfac62529e9e36baba27648ac3e25f8b8796635f5fab35a38a38a20609400"
+  },
+  {
+    "source": "github",
+    "title": "tfthushaar/razorpay_buildathon",
+    "url": "https://github.com/tfthushaar/razorpay_buildathon",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:32:12Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "AI settlement reconciliation with calibrated autonomy; causal-chain matching, fee-leak audit, and ERP posting. Razorpay AI Buildathon 2026, Track 04. - tfthushaar/razorpay_buildathon",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "07e0a7eb69221f6942641337cadc1a41501af91d4414ddfcc85c4eab043ff8d5"
+  },
+  {
+    "source": "github",
+    "title": "drew-keever/advisorfinder-mcp",
+    "url": "https://github.com/drew-keever/advisorfinder-mcp",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:31:11Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "MCP server for vetting SEC-registered financial advisors: search 213k+ advisors, disclosure status, firm fees, credentials. By AdvisorFinder. - drew-keever/advisorfinder-mcp",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "34b6925d9a747256f045b35870480d4a0b56c6caa5347df129191b4d30e58b21"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:33:54Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "beepboop2025/seiche",
+    "url": "https://github.com/beepboop2025/seiche",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:30:06Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Open-source money-market and capital-transmission terminal for US dollar funding stress, with public world-market and China macro context, API and MCP. - beepboop2025/seiche",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "f83d7e543c7ae0fde3f689c8a58199cd2222f87ca0fa3ae0fab10672d36e6eb3"
+  },
+  {
+    "source": "github",
+    "title": "kuma2018shing/trust-spread",
+    "url": "https://github.com/kuma2018shing/trust-spread",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:53Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "What P2P crypto rates actually cost. The best-advertised rate is often posted by a merchant who has never completed a trade — this measures the gap. - kuma2018shing/trust-spread",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "04145c8d650f1d1fd44a68c0471395f82b064f8e99538e1d2174f200768c6116"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/amalan",
+    "url": "https://github.com/api-evangelist/amalan",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:19Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Amalan — independent third-party profile of a public API surface, by API Evangelist. Amalan (amalan International) is an Indonesian financial-services technology company headquartered in Jakarta an...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "b7e7322b311816292cf82b23aa8274be86be5c8223698acfeea6bb07fa8e612f"
+  },
+  {
+    "source": "github",
+    "title": "Baber002/mortgage-pricing-plugin-blueprint",
+    "url": "https://github.com/Baber002/mortgage-pricing-plugin-blueprint",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:17Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Claude Code Mortgage Plugin 2026 - AI-Powered Refinancing Pricing Tool - Baber002/mortgage-pricing-plugin-blueprint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6bbc820bf8b409e4fac56622278fa9812d8c5317ee7cbfee4a050ed33a0c2bae"
+  },
+  {
+    "source": "github",
+    "title": "Grulmex/UFund-Me-Qbot",
+    "url": "https://github.com/Grulmex/UFund-Me-Qbot",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:29:13Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "AI-powered Quantitative Investment Research Platform. - Grulmex/UFund-Me-Qbot",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 6,
+      "topic": "fintech"
+    },
+    "id": "f422f605385fdd06d7c36c0a8923f79222ba047145048ec30b12631b24d1454b"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/alude",
+    "url": "https://github.com/api-evangelist/alude",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T21:28:54Z",
+    "fetched_at": "2026-08-28T21:33:18.472807+00:00",
+    "excerpt": "Alude — independent third-party profile of a public API surface, by API Evangelist. Alude is a Brazilian proptech (real estate technology) SaaS platform that digitizes the day-to-day operations of ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e44256cb341e91ea67ff03bed670e3de296d75adc6e16fc96d19e1ff8e8e5d41"
+  }
+]
