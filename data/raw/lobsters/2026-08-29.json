@@ -1,0 +1,99 @@
+[
+  {
+    "source": "lobsters",
+    "title": "I accidentally turned LLM memory into program analysis",
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T22:16:45.846-05:00",
+    "fetched_at": "2026-08-29T15:49:08.935441+00:00",
+    "excerpt": "Why I stopped trying to give LLM agents a better memory and instead built Lemmalog, a Datalog engine that maintains an agent's knowledge as analysis state, with provenance, retractions and incremental evaluation, plus what happened when I benchmarked it on LongMemEval and LoCoMo.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gvotke",
+      "tags": [
+        "logiclangs",
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "78c9161f7394a8c6252029e8aa510ac224487ab95f5bdaa1fa2917ec031cc071"
+  },
+  {
+    "source": "lobsters",
+    "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
+    "url": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-08-28T17:20:08.189-05:00",
+    "fetched_at": "2026-08-29T15:49:08.935441+00:00",
+    "excerpt": "Authorities in Australia have arrested two men believed to be members of TeamPCP , a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "1vymfa",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "9e6ea14f195369ccd1ebd13b71ebba62925a6cd2a94657513607d1e07913a972"
+  },
+  {
+    "source": "lobsters",
+    "title": "TCRF taken offline by DDoS attack after Claude user ban",
+    "url": "https://kotaku.com/ddos-attack-breaks-beloved-video-game-wiki-after-ai-bro-was-banned-2000729335",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-08-28T16:26:45.087-05:00",
+    "fetched_at": "2026-08-29T15:49:08.935441+00:00",
+    "excerpt": "The person accused subsequently served with an image of a butthole drawn in MS Paint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "birquu",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "4a356fb51bb7387c275fc54c1310328f1267e6ba1594bf12829b75cebfffc337"
+  },
+  {
+    "source": "lobsters",
+    "title": "Just a rumour of a bug is enough to find a security exploit these days",
+    "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+    "raw_score": 26,
+    "comment_count": 9,
+    "posted_at": "2026-08-28T15:23:15.671-05:00",
+    "fetched_at": "2026-08-29T15:49:08.935441+00:00",
+    "excerpt": "Thinking through how the conventional OSS security embargoes no longer buy us time, and what open source maintainers might do instead to respond",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "t73wqi",
+      "tags": [
+        "ml",
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "a3d40848cd03fefda089033aa207044f75d9fa2864a4137adc51584fdeb139ab"
+  },
+  {
+    "source": "lobsters",
+    "title": "Stopping the smart TV from being used against you",
+    "url": "https://www.s-config.com/stopping-a-smart-tv-from-being-used-against-you",
+    "raw_score": 10,
+    "comment_count": 7,
+    "posted_at": "2026-08-28T14:32:48.660-05:00",
+    "fetched_at": "2026-08-29T15:49:08.935441+00:00",
+    "excerpt": "Smart TVs are everywhere! But who is the master?\r\nAmid the overall electronics boom thanks to A.I., one piece of electronics is almost unchanged financially. That is the digital display or flat-panel monitor. With good reason! The entire entertainment and streaming industry wants one of these device",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "nfvukc",
+      "tags": [
+        "hardware",
+        "networking",
+        "security"
+      ]
+    },
+    "id": "c7bbf8834c9fb826c3d7f2d9d82f2f8dc03f804cf2c330d4344abff96169c2c4"
+  }
+]
