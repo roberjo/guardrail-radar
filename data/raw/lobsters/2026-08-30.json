@@ -1,0 +1,38 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Prompt Injection in Claude Code Opus 5 Auto Mode",
+    "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode",
+    "raw_score": 9,
+    "comment_count": 3,
+    "posted_at": "2026-08-30T00:36:51.165-05:00",
+    "fetched_at": "2026-08-30T15:34:00.692731+00:00",
+    "excerpt": "In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ktbweg",
+      "tags": [
+        "vibecoding"
+      ]
+    },
+    "id": "f223712b1bad58a230e6fc646df75ff48e786411a71b5ee5f0f86d2651d2c475"
+  },
+  {
+    "source": "lobsters",
+    "title": "Canonical-basis realignment for Transformer LLMs: every hidden axis becomes independently measurable and controllable",
+    "url": "https://github.com/todotge/canonical-basis",
+    "raw_score": -2,
+    "comment_count": 2,
+    "posted_at": "2026-08-29T15:16:54.104-05:00",
+    "fetched_at": "2026-08-30T15:34:00.692731+00:00",
+    "excerpt": "Canonical-basis realignment for Transformer LLMs: every hidden axis becomes independently measurable and controllable. - todotge/canonical-basis",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wg65qn",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "7f8917b151bd934534911b204033b632b2a09c59b9e325aaba1984b41b67680a"
+  }
+]
