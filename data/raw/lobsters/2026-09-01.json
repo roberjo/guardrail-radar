@@ -1,0 +1,57 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Data Became Code: We Ran Code Inside Fortune 500s Using Files They Published for AI Agents",
+    "url": "https://medium.com/@alonhertz1/data-became-code-we-ran-code-inside-fortune-500s-using-files-they-published-for-ai-agents-0cd67ffbbffc",
+    "raw_score": -1,
+    "comment_count": 1,
+    "posted_at": "2026-08-31T11:39:11.268-05:00",
+    "fetched_at": "2026-09-01T15:38:08.204756+00:00",
+    "excerpt": "It Was That Easy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "77kss6",
+      "tags": [
+        "ai",
+        "security"
+      ]
+    },
+    "id": "9c96b682f3ce954c1a5737ddaa9dd0bac183f3435d508d948615dceda0ee2887"
+  },
+  {
+    "source": "lobsters",
+    "title": "curl: a CVE dispute",
+    "url": "https://daniel.haxx.se/blog/2026/06/24/a-cve-dispute",
+    "raw_score": 85,
+    "comment_count": 27,
+    "posted_at": "2026-08-31T05:38:12.836-05:00",
+    "fetched_at": "2026-09-01T15:38:08.204756+00:00",
+    "excerpt": "A few years years ago the curl project signed up and became a CNA. This means that we are masters of and can allocate our own CVE identifiers. For any security problems within our territory, it is we who decides if the issue should get a CVE or not. No more bogus CVEs. 57 CVEs … Continue reading a CVE dispute →",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "1pdfex",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "ac223e32379e82d5213c787dc0fde3a08b027a72f01eaf9e4e883ecc5a8d84cc"
+  },
+  {
+    "source": "lobsters",
+    "title": "Omarchy: Any User Process Can Escalate to Root",
+    "url": "https://0xcc.io/posts/omarchy-root-creds",
+    "raw_score": 116,
+    "comment_count": 60,
+    "posted_at": "2026-08-30T13:11:09.248-05:00",
+    "fetched_at": "2026-09-01T15:38:08.204756+00:00",
+    "excerpt": "A security issue in Omarchy’s default Docker configuration meant that\nessentially every program running in the user’s desktop session could escalate\nto root without a password, sudo, or a privilege prompt.\nIf you use Omarchy, the most important takeaway is\nsimple: update to 4.0.1.\n\nI reported this issue privately through the project’s responsible-disclosure\nprocess. The underlying configuration has since been patched, so I’m publishing\nthe details now to explain what the issue is and let users know to update their\nsystems.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "bxihn3",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "3963eb8821dbb2c3d787d862dafd4040a2debfef5c0fc69649f5e86b4e67b32a"
+  }
+]
