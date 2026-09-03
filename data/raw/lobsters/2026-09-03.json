@@ -1,0 +1,95 @@
+[
+  {
+    "source": "lobsters",
+    "title": "LLMs and self-referentiality",
+    "url": "https://scottaaronson.blog/?p=10046",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-03T08:39:13.344-05:00",
+    "fetched_at": "2026-09-03T15:19:44.049068+00:00",
+    "excerpt": "I woke up yesterday with the following thoughts, which are probably either obvious or dumb. A central thesis that many readers, including me, took from Douglas Hofstadter’s Gödel Escher Bach when y…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "jato3y",
+      "tags": [
+        "ai",
+        "philosophy"
+      ]
+    },
+    "id": "b68a33da688467bc76191096a3f2fa1510938eea31f66d109a3058c747678317"
+  },
+  {
+    "source": "lobsters",
+    "title": "I Think the Military Commissary Freezers Were Hacked",
+    "url": "https://signalandsilence.substack.com/p/i-think-someone-hacked-the-commissary",
+    "raw_score": 29,
+    "comment_count": 11,
+    "posted_at": "2026-09-02T22:20:07.952-05:00",
+    "fetched_at": "2026-09-03T15:19:44.049068+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "ygjo0g",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "c1b0b4a70d7f1b0a00121311e2c877b677d459cc179bbba39255144afafba7f3"
+  },
+  {
+    "source": "lobsters",
+    "title": "Claude Code Stores OAuth Tokens in Plaintext",
+    "url": "https://secretspec.dev/blog/claude-code-stores-oauth-tokens-in-plaintext",
+    "raw_score": -1,
+    "comment_count": 1,
+    "posted_at": "2026-09-02T21:14:50.958-05:00",
+    "fetched_at": "2026-09-03T15:19:44.049068+00:00",
+    "excerpt": "On Linux, Claude Code protects MCP OAuth credentials with file permissionsânot encryption. It should let users choose a real secret store.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "uxp2y2",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "32871c727002ddd79e599c4d626791851c6e6ced502191669815740625a88661"
+  },
+  {
+    "source": "lobsters",
+    "title": "Security Incident – BGP Hijacking",
+    "url": "https://www.virtualizor.com/blog/security-incident-bgp-hijacking",
+    "raw_score": 14,
+    "comment_count": 1,
+    "posted_at": "2026-09-02T21:07:30.786-05:00",
+    "fetched_at": "2026-09-03T15:19:44.049068+00:00",
+    "excerpt": "Between 28 August 2026 at approximately 20:57 UTC and 30 August 2026 at approximately 06:10 UTC , a block of IP addresses used by Softaculous services ( 162.55.80.0/24 , part of our infrastructure at Hetzner) was affected by a BGP hijack : an unauthorized announcement of that address space by an unrelated network, which diverted internet traffic destined for those addresses to a server operated by an attacker. The attacker obtained a technically valid TLS certificate for our domains, so connections affected by the hijack showed no certificate warning.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "6e1y6s",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "ad7590eb54084682ded747276999f8e4c55662597947e14f983711702abf52a2"
+  },
+  {
+    "source": "lobsters",
+    "title": "US government backs OpenAI in New York Times copyright case",
+    "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-09-02T20:13:14.049-05:00",
+    "fetched_at": "2026-09-03T15:19:44.049068+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "xoklqk",
+      "tags": [
+        "ai",
+        "law"
+      ]
+    },
+    "id": "d4974db97ec962ef5d74155b526721032d7225c4cccbabf0564c5ce1e6d28103"
+  }
+]
