@@ -1,0 +1,835 @@
+[
+  {
+    "source": "github",
+    "title": "chily-john/TrailStep",
+    "url": "https://github.com/chily-john/TrailStep",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:37Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Coding agent workflow orchestrator. Contribute to chily-john/TrailStep development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "7271256a6e879d2a89e705187172c79b0891aaf2f73a7c3d317adc7b36c8b2f9"
+  },
+  {
+    "source": "github",
+    "title": "NodeNestor/claude-rolling-context",
+    "url": "https://github.com/NodeNestor/claude-rolling-context",
+    "raw_score": 346,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:37Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Rolling context compression for Claude Code — never hit the context wall. Auto-compresses old messages while keeping recent context verbatim. Zero config, zero latency. Works as a Claude Code plugi...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 31,
+      "topic": "ai-coding"
+    },
+    "id": "b2765c8ea17fa46098d051c44a79e62c41b20762a5b3118262b52818f7cee9f6"
+  },
+  {
+    "source": "github",
+    "title": "lgn146/pi-less-yolo-coder",
+    "url": "https://github.com/lgn146/pi-less-yolo-coder",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:21Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "⚡ Pi-Less YOLOv9 Agent 2026 – Docker Sandbox Automation Toolkit - lgn146/pi-less-yolo-coder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "d1d226e39ed899260c3a876fe404fb281403914b6c89bc1c2527c1b304e61a35"
+  },
+  {
+    "source": "github",
+    "title": "Dr4gon42/ralph",
+    "url": "https://github.com/Dr4gon42/ralph",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:07Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🤖 Streamline your workflow with Ralph, an autonomous agent that simplifies task management by breaking down user stories and executing them efficiently. - Dr4gon42/ralph",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "9f146d98051d1fc4da7dad573b35621894da98b4ce314d65ce1075401f2ce59b"
+  },
+  {
+    "source": "github",
+    "title": "dancingteeth/agent-looper",
+    "url": "https://github.com/dancingteeth/agent-looper",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:59Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Fix-until-green agent loop with shell-verify-as-truth, pluggable multi-runtime workers (Cursor/Cline/OpenCode/Codex/DSH/Pi), and fresh context per iteration. - dancingteeth/agent-looper",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "00d1fb93cb26f39b4851e08066421c6d62b5543baa58fee88325bdc838fff4b1"
+  },
+  {
+    "source": "github",
+    "title": "makoy-daniot2001/agent-session-mirror",
+    "url": "https://github.com/makoy-daniot2001/agent-session-mirror",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:12Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Best AI Coding Agent Observability Tool 2026 - Self-Bench & Semantic Search - makoy-daniot2001/agent-session-mirror",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "3f313f16ba58775d7f3277282004f9a267314c18e536395c87bf639e0adde89c"
+  },
+  {
+    "source": "github",
+    "title": "masini1491/ai-development-playbook",
+    "url": "https://github.com/masini1491/ai-development-playbook",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:11Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "AI development playbook for ChatGPT, Codex &amp; GitHub — context engineering, agent governance, task routing, validation, repository memory and cost-aware workflows. - masini1491/ai-development-pl...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "24854798768528253119b0e8f7d09174ba212c9a9dc91695c2ffc6bdb3c7c209"
+  },
+  {
+    "source": "github",
+    "title": "patrickreed22/vibe-kanban",
+    "url": "https://github.com/patrickreed22/vibe-kanban",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:11Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🛠️ Boost your workflow with Vibe Kanban, the tool that enhances productivity by optimizing interaction with coding agents like Claude Code and Codex. - patrickreed22/vibe-kanban",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "7e42b125c0b635b6b69a25702eaddc868f5e6127d9b2e8a83b3fd6103bdf8da5"
+  },
+  {
+    "source": "github",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:05Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee"
+  },
+  {
+    "source": "github",
+    "title": "viibhutisharma30/jetpack-compose-remediation-kit",
+    "url": "https://github.com/viibhutisharma30/jetpack-compose-remediation-kit",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:55Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Modern Jetpack Compose Fixer 2026 – Debug Errors & Boost Android UI Performance - viibhutisharma30/jetpack-compose-remediation-kit",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "c98c3317da7b29e9b669d2ae8866e8af888f7cd15a5ba1a1f65427bfa66423e4"
+  },
+  {
+    "source": "github",
+    "title": "kpavlov/tachyon",
+    "url": "https://github.com/kpavlov/tachyon",
+    "raw_score": 343,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:52Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "💫 Tachyon MCP Runtime for Java and Kotlin - Model Context Protocol (MCP) server with Streamable HTTP, native Netty transports, tools, tasks, resources, prompts, completions, resumable sessions, and...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 16,
+      "total_stars": 30,
+      "topic": "llm-tools"
+    },
+    "id": "30f95971aa94d13d13e99f659b57d3e42dc19c0d0d8e8760c1438003a5375c70"
+  },
+  {
+    "source": "github",
+    "title": "Doomboy59/ai-tool-adapter",
+    "url": "https://github.com/Doomboy59/ai-tool-adapter",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:41Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🛠️ Adapt AI tool schemas seamlessly for multiple LLM providers, eliminating redundancy and ensuring type safety across your applications. - Doomboy59/ai-tool-adapter",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "ff8436755a385277918b24765776df4a1e3461adbf8a0e88610c0ece27b23e47"
+  },
+  {
+    "source": "github",
+    "title": "Vladimir-Human/humanizer-ru",
+    "url": "https://github.com/Vladimir-Human/humanizer-ru",
+    "raw_score": 482,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:16Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Нормализация и диагностика русского текста: артефакты копипасты, типографика без правки смысла, детектор связок со статусом домена. Числа — в реестре фактов с эрратой. Не для английского, кода, юрд...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 123,
+      "topic": "llm-tools"
+    },
+    "id": "240211384b0cd6607192b69e76a0e0662552cd0eb00316f46d397f5159412436"
+  },
+  {
+    "source": "github",
+    "title": "Kcao3034/markdown-editor-mcp-server",
+    "url": "https://github.com/Kcao3034/markdown-editor-mcp-server",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:00Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "📝 Enhance your Markdown workflow with this MCP server, designed for structured editing and full compliance with MCP 2025 standards. - Kcao3034/markdown-editor-mcp-server",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "f8d09dfc83fc31aefa1f835364775e7e4cf7f5bd75f67530f4587828df7ad1ae"
+  },
+  {
+    "source": "github",
+    "title": "terravic/pdf-extract-confidence-skill",
+    "url": "https://github.com/terravic/pdf-extract-confidence-skill",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:08:58Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "PDF word-level confidence extraction skill with OCR modality detection, bounding box mapping, Gemini 3.7 Flash context-aware auto-correction, and interactive review dashboard. - terravic/pdf-extrac...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "4377aab85e04713c6debe40d7ecca456c0276a0f618a8e75459412fbf4a5efbe"
+  },
+  {
+    "source": "github",
+    "title": "sg2technologies/safeprompt_agent",
+    "url": "https://github.com/sg2technologies/safeprompt_agent",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:06:07Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "On-device DLP security for AI prompts and file uploads. Scan, mask, warn, or block sensitive data before it reaches AI tools. - sg2technologies/safeprompt_agent",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "145709dd917a281db8e4825a2b4eab53e09ddfd6807e500b120c955582a5194f"
+  },
+  {
+    "source": "github",
+    "title": "Kasun2006/blueprint-mcp",
+    "url": "https://github.com/Kasun2006/blueprint-mcp",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:04:08Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "📊 Generate diagrams for codebases and system architecture with Blueprint MCP, integrating easily with Arcade tools like HubSpot and Google Drive. - Kasun2006/blueprint-mcp",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "03cf5a978fac6b9f6e88d318b66caee27018cac4837d439c1ab9d52ec5d557fe"
+  },
+  {
+    "source": "github",
+    "title": "Adeniyikayodee/gagelink",
+    "url": "https://github.com/Adeniyikayodee/gagelink",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:08:48Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "MCP server giving AI agents hydrology data from USGS, NOAA, France&#39;s Hub&#39;Eau, the UK Environment Agency and SWOT: river level, streamflow, flood forecasts, basins. Values carry their unit, ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "17bdb0a2b7ff672a0928baedc591f449cc657f67b28771b2da58de4aea531035"
+  },
+  {
+    "source": "github",
+    "title": "biggy44/mcp-server",
+    "url": "https://github.com/biggy44/mcp-server",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:02:58Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🚀 Compress and decompress JSON with the ASON MCP server, maximizing efficiency through optimized token reduction for seamless data handling. - biggy44/mcp-server",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "b0b2a07f3e96c51fd884ca27903a8893d6eaf417137051bafc182badf36ae07d"
+  },
+  {
+    "source": "github",
+    "title": "seunghyukchoe/copper-mcp",
+    "url": "https://github.com/seunghyukchoe/copper-mcp",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:01:55Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Local-first PCB automation for KiCad with safe MCP tools and deterministic autorouting research. - seunghyukchoe/copper-mcp",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 13,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "8ff8b85e4657102c95c7ac9e08e413392a438c3cf50d6382b6963fe292a5c20a"
+  },
+  {
+    "source": "github",
+    "title": "ForzBeta/localelens-demo-nextjs",
+    "url": "https://github.com/ForzBeta/localelens-demo-nextjs",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:52Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🌍 Fetch translations effortlessly with LocaleLens in your Next.js app, simplifying i18n without frameworks or complex setups. - ForzBeta/localelens-demo-nextjs",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "75edd6c60e9d9627fa313d02e6e42041dd582864811c742f5cb4ccfb64a51d5f"
+  },
+  {
+    "source": "github",
+    "title": "avisi-cloud/terraform-acloud-cluster",
+    "url": "https://github.com/avisi-cloud/terraform-acloud-cluster",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:56Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Terraform Module for Provisioning an Avisi Cloud Kubernetes Cluster - avisi-cloud/terraform-acloud-cluster",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "terraform"
+    },
+    "id": "d32fb9eb86b43542c4aa993b7f3e0203f6181d84f01c03614251fde7698494e4"
+  },
+  {
+    "source": "github",
+    "title": "Outis09/climate-data-pipeline",
+    "url": "https://github.com/Outis09/climate-data-pipeline",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:46Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Production-style climate data pipeline built with Airflow 3, featuring dynamic backfills, API quota handling, data quality validation, observability, CI/CD, and local or GCP deployment. - Outis09/c...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "9c3dbd39dd8711264d098125071e6f13f8c6bef0d85f805464118e48d02c7798"
+  },
+  {
+    "source": "github",
+    "title": "Yurnero555/Signal-Dash",
+    "url": "https://github.com/Yurnero555/Signal-Dash",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:03Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "📊 Streamline your experiment workflow with Signal Dash: manage, track, and analyze experiments from start to finish with ease and clarity. - Yurnero555/Signal-Dash",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "6c13fff160ec37bca34ea4829fe7caa0739c913682a1fb7824e9639dd10d3169"
+  },
+  {
+    "source": "github",
+    "title": "rvben/upd",
+    "url": "https://github.com/rvben/upd",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:57Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Local-first dependency updates for polyglot repositories—Python, Node.js, Rust, Go, Ruby, .NET, Terraform, GitHub Actions, pre-commit, and Mise. - rvben/upd",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 11,
+      "total_stars": 6,
+      "topic": "terraform"
+    },
+    "id": "00d8467a8149f28b25e4895d4db35f47bda6b2556f213dc5815607f58b7b5dde"
+  },
+  {
+    "source": "github",
+    "title": "ChelseaKR/family-greenhouse",
+    "url": "https://github.com/ChelseaKR/family-greenhouse",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:34Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Shared plant care for a household, not a single owner: member roles, claimable tasks, vacation cover, and time-boxed sitter links that need no account. Pet-safety answers come only from a hand-cura...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 18,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "91666b2d839532ceaf5e3525164ee8aa34f45299b326f9b503808bf98cbeff9e"
+  },
+  {
+    "source": "github",
+    "title": "josuedallagnese/terraform-oke",
+    "url": "https://github.com/josuedallagnese/terraform-oke",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:10Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Terraform OKE Infrastructure. Contribute to josuedallagnese/terraform-oke development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "6d3b42ecc7835b95ee04488f9409607c7f0c75c0cb47dff4c078c7ca3c6375f5"
+  },
+  {
+    "source": "github",
+    "title": "Devolutions/terraform-provider-dvls",
+    "url": "https://github.com/Devolutions/terraform-provider-dvls",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:01Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Devolutions Server Terraform Provider. Contribute to Devolutions/terraform-provider-dvls development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "ec3464e43356cdf59b217e74c8ffcefe540d42403ea76178e6f66d8d983db2db"
+  },
+  {
+    "source": "github",
+    "title": "giselleevita/secure-docs-aws",
+    "url": "https://github.com/giselleevita/secure-docs-aws",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:35Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Threat-model-driven serverless doc store on AWS: Cognito JWT auth, per-user S3 access via presigned URLs, Terraform - giselleevita/secure-docs-aws",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "1c94fdc916a25b9f00a572184b022e831073d4c5c3fcb91b04401bf649f6f1b9"
+  },
+  {
+    "source": "github",
+    "title": "mattrobinsonsre/terrapod",
+    "url": "https://github.com/mattrobinsonsre/terrapod",
+    "raw_score": 554,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:30Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Open-source Terraform Enterprise replacement. Contribute to mattrobinsonsre/terrapod development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 256,
+      "topic": "terraform"
+    },
+    "id": "46889bdd1fb39a14b0b7a177f18f8963420e084d7a99ec16ae5bf7d0afae8345"
+  },
+  {
+    "source": "github",
+    "title": "magertron/orchestrator",
+    "url": "https://github.com/magertron/orchestrator",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:45Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Enterprise MCP Server Management. Contribute to magertron/orchestrator development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "619704032c2d13bfe2dee7faa35802e992ebf4ad32e24eee058cf11946b8f1de"
+  },
+  {
+    "source": "github",
+    "title": "KrakenNet/nautilus",
+    "url": "https://github.com/KrakenNet/nautilus",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:55Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Policy-first data broker for AI agents — one call plans, routes, enforces, attests, and audits every data access. Built on Fathom. - KrakenNet/nautilus",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 66,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "61293485df66b303d2dfb87cd4744d47d33aad612a316984deafbfa40566f499"
+  },
+  {
+    "source": "github",
+    "title": "tdries/devpost-hackathon-agentic-cinema",
+    "url": "https://github.com/tdries/devpost-hackathon-agentic-cinema",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:12:30Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "An AI crew watches your commercial once, judges it against 98 jurisdictions in parallel, builds its own Grafana instrument panel, and re-renders the shots that fail. - tdries/devpost-hackathon-agen...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "23d90e466fe2404d238f803801de2cbc5def080366311320240512491f4751d1"
+  },
+  {
+    "source": "github",
+    "title": "Elmahrosa/teos-forge",
+    "url": "https://github.com/Elmahrosa/teos-forge",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:40Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "GitHub-native governance automation — policy-as-code, rule enforcement, and compliance gatekeeping. - Elmahrosa/teos-forge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "64a72348d8fd3bb4b20a8921b888d712471d7f620d81593204326a0fc15a50d1"
+  },
+  {
+    "source": "github",
+    "title": "thinhdzkobaohsai/vcp-fix-rta-reference",
+    "url": "https://github.com/thinhdzkobaohsai/vcp-fix-rta-reference",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:11Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🔍 Verify VCP v1.1 compliance with cryptographically secure audit trails for FIX Protocol 4.4 trading workflows using this demo evidence pack. - thinhdzkobaohsai/vcp-fix-rta-reference",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "fd655ea5ecedf355366d50809a7c5a853f0869b1f590ad1b6f56c0aa40098c2f"
+  },
+  {
+    "source": "github",
+    "title": "abhi-dev99/munim-ai",
+    "url": "https://github.com/abhi-dev99/munim-ai",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:10:45Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "AI-Powered GST Compliance & Intelligence Layer for Indian MSMEs - abhi-dev99/munim-ai",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "compliance"
+    },
+    "id": "9b3743a3a8a7ebae71e24412e6b4025589081eb02315c8d9333c54008566f202"
+  },
+  {
+    "source": "github",
+    "title": "fabriziosalmi/nis2-model",
+    "url": "https://github.com/fabriziosalmi/nis2-model",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:50Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "NIS2 Compliance Assistant. Contribute to fabriziosalmi/nis2-model development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "76d9be8b16e9e4ba799fb4cbe507814369341f20e7902abbece86271d3644ae4"
+  },
+  {
+    "source": "github",
+    "title": "KrakenNet/fathom",
+    "url": "https://github.com/KrakenNet/fathom",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:26Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Deterministic reasoning runtime for AI agents. YAML rules, microsecond evaluation, zero hallucinations. Built on CLIPS. - KrakenNet/fathom",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 52,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "446cdcc9b3e24159cbf92ac8c8a565ba72b432f2f7c83c8be905b0d2a4c64532"
+  },
+  {
+    "source": "github",
+    "title": "giselleevita/sai-platform",
+    "url": "https://github.com/giselleevita/sai-platform",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:14Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Self-hosted AI governance platform — AI inventory, risk scoring, evidence and audit trails for EU AI Act readiness - giselleevita/sai-platform",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "28cd63ca6f8fcac0944471b5a0eadc21850db09e4a1807c7c4587de8cf40edc1"
+  },
+  {
+    "source": "github",
+    "title": "luckmanqasim/planlint",
+    "url": "https://github.com/luckmanqasim/planlint",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:07:25Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "AEC compliance linter for floor plans — no LLM decides compliance; every verdict is deterministic, grounded, and auditable.. - luckmanqasim/planlint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "fe6e5812306a70f16f4a10bab2b3685739cf7f70d4bd95b9a21e010734ca95a6"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:14:39Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "skylerblue333/skycoin4444",
+    "url": "https://github.com/skylerblue333/skycoin4444",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:15:07Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "software I've been working on #SkyCoin4444 #AI #Blockchain #DevOps #Innovation - skylerblue333/skycoin4444",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "effc778ee24e7563678de7e3fc2129e3eca259e8ec933d5e69eb57935fc5b534"
+  },
+  {
+    "source": "github",
+    "title": "Orange-The-World/orangerails",
+    "url": "https://github.com/Orange-The-World/orangerails",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:13Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Open-source, zero-knowledge way to share Bitcoin + bank data with your bookkeeper. Apache 2.0 + AGPL-3.0 (stealth-sync crate). - Orange-The-World/orangerails",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 396,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "802e3652608518b7405fcf775d7d0028d5b3774c928a572c8edec1cfc1f2597e"
+  },
+  {
+    "source": "github",
+    "title": "teamtinvio/jaz-ai",
+    "url": "https://github.com/teamtinvio/jaz-ai",
+    "raw_score": 207,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:13:00Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Complete agent stack for Jaz. Plugins, Skills, MCP tools, and CLI for Claude Code, Cowork, Codex, Copilot, Cursor, and more. - teamtinvio/jaz-ai",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 7,
+      "topic": "fintech"
+    },
+    "id": "043bcaf954bdda9c1b6f9744ffd770e1b9de77ceb7a2a07a6e54a2070980d2ad"
+  },
+  {
+    "source": "github",
+    "title": "irfankhanowaisi/awesome-greek-tech-jobs",
+    "url": "https://github.com/irfankhanowaisi/awesome-greek-tech-jobs",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:11:47Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🌐 Discover tech job opportunities in Greece with detailed listings of companies, work policies, and direct links to their career pages. - irfankhanowaisi/awesome-greek-tech-jobs",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "4adf0737aad91c32682d31214b83ab9dd19f4efb86c6c100dc5a150a78c8ee38"
+  },
+  {
+    "source": "github",
+    "title": "Para99999/payment-fraud-detector",
+    "url": "https://github.com/Para99999/payment-fraud-detector",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:38Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "💳 Detect fraudulent payment transactions with this transformer-based system, leveraging LoRA for efficient fine-tuning and providing real-time predictions. - Para99999/payment-fraud-detector",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "339d5c853a7ed58299b58347566ea3fe2f13495364f65e57868fba6572314b05"
+  },
+  {
+    "source": "github",
+    "title": "Heliotrope-dev/finance-agent",
+    "url": "https://github.com/Heliotrope-dev/finance-agent",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:37Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "行情+财务+新闻交叉验证的科学理财Agent，不做黑箱荐股. Contribute to Heliotrope-dev/finance-agent development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "da7b3460948846ef75736b2ae8ce8fd596d857045569e838a1073c11ed2199ae"
+  },
+  {
+    "source": "github",
+    "title": "riyad242514/flash-scalper",
+    "url": "https://github.com/riyad242514/flash-scalper",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:24Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "🚀 Optimize your crypto trading with FlashScalper, a tool for multi-indicator analysis, risk management, and adaptive strategies. - riyad242514/flash-scalper",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "3e85ef8b49d2bbb9e30c36cb40459c38331b71aa50cedb2a46494b39bedb8ee6"
+  },
+  {
+    "source": "github",
+    "title": "kaoeviola/crypto-automation",
+    "url": "https://github.com/kaoeviola/crypto-automation",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T15:09:10Z",
+    "fetched_at": "2026-09-04T15:14:29.386101+00:00",
+    "excerpt": "Automacao de trading P2P multi-exchange (Binance, Bybit) com monitoramento PIX via Mercado Pago - kaoeviola/crypto-automation",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "a65c1cb3580fb15930e180c009588fd5f50c8a5bcc9755bfe23f9854fb9ebd3c"
+  }
+]

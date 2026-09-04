@@ -1,0 +1,41 @@
+[
+  {
+    "source": "lobsters",
+    "title": "The Hugging Face incident and the road ahead",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-09-04T06:06:19.133-05:00",
+    "fetched_at": "2026-09-04T15:14:29.582747+00:00",
+    "excerpt": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "r8a3w9",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "34e62ff4c7cf4defda5bd7747a692840f7012595a2eb1a543614fdc32b51c94b"
+  },
+  {
+    "source": "lobsters",
+    "title": "Hillingar - MirageOS Unikernels on NixOS",
+    "url": "https://ryan.freumh.org/hillingar.html",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T04:17:21.691-05:00",
+    "fetched_at": "2026-09-04T15:14:29.582747+00:00",
+    "excerpt": "The Domain Name System (DNS) is a critical\ncomponent of the modern Internet, allowing domain names to be mapped to\nIP addresses, mailservers, and more 1 . This allows users to\naccess services independent of their location in the Internet using\nhuman-readable names. We can host a DNS server ourselves to have\nauthoritative control over our domain, protect the privacy of those\nusing our server, increase reliability by not relying on a third party\nDNS provider, and allow greater customization of the records served (or\nthe behaviour of the server itself). However, it can be quite\nchallenging to deploy oneâs own server reliably and reproducibly, as I\ndiscovered during my masterâs thesis [2] . The Nix deployment system aims to\naddress this. With a NixOS machine, deploying a DNS server is as simple\nas:",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ifyeuo",
+      "tags": [
+        "ml",
+        "nix",
+        "osdev",
+        "security"
+      ]
+    },
+    "id": "5e557d41c94e9b1314bb55eabcf943f12dc2bd5b294909c3bed2b8be07891f45"
+  }
+]
