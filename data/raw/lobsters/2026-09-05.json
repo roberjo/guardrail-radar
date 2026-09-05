@@ -1,0 +1,59 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Trusting-Trust Attack against an Entire Linux Distribution (via the strip utility)",
+    "url": "https://arxiv.org/abs/2607.24888",
+    "raw_score": 9,
+    "comment_count": 0,
+    "posted_at": "2026-09-05T05:58:49.333-05:00",
+    "fetched_at": "2026-09-05T14:04:24.759690+00:00",
+    "excerpt": "Ken Thompson's trusting-trust attack, in which a compromised compiler backdoors the programs it builds and reproduces the backdoor in subsequent rebuilds of itself, is widely regarded as a threat specific to compilers. We show that it is not. We construct a complete trusting-trust attack around GNU strip, an ordinary build utility that neither inspects nor generates source code, using only manipulations of finished ELF files. In the bootstrap of the NixOS Linux distribution, a single tampered strip in the binary seed implants a payload that propagates from one generation of strip to the next and survives into the final standard environment after the seed leaves the dependency closure. On a real nixpkgs revision, the attack builds a complete graphical installer without failures and backdoors almost every one of its binaries, enabling arbitrary malicious behavior of the subverted packages.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "p5w5j6",
+      "tags": [
+        "linux",
+        "nix",
+        "security"
+      ]
+    },
+    "id": "7e5a5ad1465c866c1d57287e6874279ac15b62039407fbdf4e887e745dcd74e0"
+  },
+  {
+    "source": "lobsters",
+    "title": "AI it's not bad but it's a tool",
+    "url": "https://lobste.rs/s/2eai0v/ai_it_s_not_bad_it_s_tool",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-04T15:47:42.822-05:00",
+    "fetched_at": "2026-09-05T14:04:24.759690+00:00",
+    "excerpt": "1 comment",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "2eai0v",
+      "tags": [
+        "vibecoding"
+      ]
+    },
+    "id": "e217ed09de799d4d187a1873929755c6d9bd6c444c8d0ddd807bbc2053aa48f5"
+  },
+  {
+    "source": "lobsters",
+    "title": "Using machine learning on my Guitar Hero Controller",
+    "url": "https://p0ly.com/ml_strummer.html",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T10:23:26.707-05:00",
+    "fetched_at": "2026-09-05T14:04:24.759690+00:00",
+    "excerpt": "The rise of Guitar Hero custom charts led to competitive players discovering new methods to hit challenging sections. One of the biggest breakthroughs, however, is the technique called \"rakestrumming\". I believe the term was named after players realized that you can send many more strum inputs than you normally would, by spreading out your fingers in the shape of a rake, and then completing the strum motion several times with each finger. If I were to spread out my middle finger, index finger, and thumb and flick my strummer in one clean motion with all those fingers, I can register three inputs in one motion. However, those with Les Paul controllers discovered that you don't even need to use multiple fingers to send additional inputs. Simply flicking the strummer with enough speed with one finger would cause the strummer to start oscillating between the up and down strum switches. With this mechanical ringing of the strummer, some players have been able to make 2/2, 3/3, and sometimes",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "hhogjo",
+      "tags": [
+        "ai",
+        "hardware"
+      ]
+    },
+    "id": "b44f069d39d1aff62906cdd73039d9267039f7c507635a800df490b35c05cfa4"
+  }
+]
