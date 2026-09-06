@@ -1,0 +1,59 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Building a Brainfuck DSL in Forth using code generation",
+    "url": "https://venko.blog/articles/forth-brainfuck",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T06:39:20.520-05:00",
+    "fetched_at": "2026-09-06T14:28:53.450215+00:00",
+    "excerpt": "This article describes supporting Brainfuck as an embedded language within Forth using meta-programming. I had a lot of fun figuring this out. Like most Forth code, the resulting program is quite compact. My explanation of it is not.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fgxkle",
+      "tags": [
+        "concatenative"
+      ]
+    },
+    "id": "3e4c68fb0c5db8508a0618d42eec398164df99453543c4d48505edc5aceb312f"
+  },
+  {
+    "source": "lobsters",
+    "title": "Terence Tao on “prematurely solving [a maths] problem by purely AI-powered methods”",
+    "url": "https://mathstodon.xyz/@tao/117207856734787448",
+    "raw_score": 20,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T02:45:24.038-05:00",
+    "fetched_at": "2026-09-06T14:28:53.450215+00:00",
+    "excerpt": "Fundamentally, problems in pure mathematics, such as the global regularity problem, serve a different purpose than immediately practical problems, such as that of finding a cure to a specific disease, or increasing the energy efficiency of some engine.  In most cases in pure mathematics, the problems are posed not because we desperately want the solution to these problems in and of themselves, but because we have seen from past experience that human-directed efforts to solve these problems tend to spur further development of the field through the efforts to solve such problems, and then to digest any partial or complete solutions that emerge for further insights.  Prematurely solving the problem by purely AI-powered methods - particularly without full transparency into the solution process - can contaminate this process to the point where it actually becomes a net negative for the progress of mathematics as a whole.  (6/6)",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "nohdoj",
+      "tags": [
+        "ai",
+        "math"
+      ]
+    },
+    "id": "8301c16ab44853024173ce1cfa26d7626e1e0b5d0c101c80529abdc67ac22e3f"
+  },
+  {
+    "source": "lobsters",
+    "title": "Trusting-Trust Attack against an Entire Linux Distribution (via the strip utility)",
+    "url": "https://arxiv.org/abs/2607.24888",
+    "raw_score": 62,
+    "comment_count": 12,
+    "posted_at": "2026-09-05T05:58:49.333-05:00",
+    "fetched_at": "2026-09-06T14:28:53.450215+00:00",
+    "excerpt": "Ken Thompson's trusting-trust attack, in which a compromised compiler backdoors the programs it builds and reproduces the backdoor in subsequent rebuilds of itself, is widely regarded as a threat specific to compilers. We show that it is not. We construct a complete trusting-trust attack around GNU strip, an ordinary build utility that neither inspects nor generates source code, using only manipulations of finished ELF files. In the bootstrap of the NixOS Linux distribution, a single tampered strip in the binary seed implants a payload that propagates from one generation of strip to the next and survives into the final standard environment after the seed leaves the dependency closure. On a real nixpkgs revision, the attack builds a complete graphical installer without failures and backdoors almost every one of its binaries, enabling arbitrary malicious behavior of the subverted packages.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "p5w5j6",
+      "tags": [
+        "linux",
+        "nix",
+        "security"
+      ]
+    },
+    "id": "7e5a5ad1465c866c1d57287e6874279ac15b62039407fbdf4e887e745dcd74e0"
+  }
+]
