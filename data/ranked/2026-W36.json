@@ -1,0 +1,362 @@
+[
+  {
+    "cluster_id": "96f88187cd30be2a59145b0af7dc23305deed62d45de1d6b3e2deee92e82e41f",
+    "title": "firecrawl/firecrawl-mcp-server",
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 32.31201097914852,
+    "cluster_excerpt": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. - firecrawl/firecrawl-mcp-server",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "87ea1d26071e471fb125c1ae6ba16eed75cfb6efa0c0a33d3411268468ee6f04",
+    "title": "FlorianBruniaux/claude-code-ultimate-guide",
+    "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 7.063926332928924,
+    "cluster_excerpt": "The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, quizzes, and production-ready templates. 430K+ lines. - FlorianBruniaux/claude-code-ultimate-guide",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e870d219d769fc5a2055dc39ebe8ecabb4407ab63faf0073cb6ca71b0cb05e35",
+    "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+    "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 6.446549375931501,
+    "cluster_excerpt": "Most of what an AI coding agent does for me isn't thinking. It's I/O.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f",
+    "title": "Our decision on Cursor following its acquisition by SpaceX",
+    "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 5.9550138285997205,
+    "cluster_excerpt": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "6379e22bcefbb3cdb0a5ea62e5d0db6657fadacdf2e08961c2f7357d973dd769",
+    "title": "Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 4.789822167819974,
+    "cluster_excerpt": "We watched almost 17k sessions across different types of personas, with 1,163 prompt variations, 75 repositories and 3 coding agents (Claude Code, Codex, Cursor) actually implementing the solutions instead of just recommending one.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b2765c8ea17fa46098d051c44a79e62c41b20762a5b3118262b52818f7cee9f6",
+    "title": "NodeNestor/claude-rolling-context",
+    "url": "https://github.com/NodeNestor/claude-rolling-context",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 4.624902656431699,
+    "cluster_excerpt": "Rolling context compression for Claude Code — never hit the context wall. Auto-compresses old messages while keeping recent context verbatim. Zero config, zero latency. Works as a Claude Code plugi...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8215ef8406d5b65cd74b3fcdfa0a83d3986f7448589bc04a8fbcbec11e7c5e55",
+    "title": "ken-jo/agent-connector",
+    "url": "https://github.com/ken-jo/agent-connector",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 4.213168195501304,
+    "cluster_excerpt": "Deploy one MCP to every agent host. Declare your MCP server once with defineConnector() → native config, hooks, skills &amp; plugin bundle across 42 agent hosts (Claude Code, Codex, Cursor, Copilot...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b1f20c4705852b3deaf9294813e183f487f7ed2dcf71825327a78858ab23c68a",
+    "title": "jposluns/grc_library",
+    "url": "https://github.com/jposluns/grc_library",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.941437413254245,
+    "cluster_excerpt": "A documentation library for governance, risk, compliance, cybersecurity, privacy, resilience, AI assurance, and operational control practices + a Claude Code rules-and-skills pack distilled from ma...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "043bcaf954bdda9c1b6f9744ffd770e1b9de77ceb7a2a07a6e54a2070980d2ad",
+    "title": "teamtinvio/jaz-ai",
+    "url": "https://github.com/teamtinvio/jaz-ai",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.7665414620500117,
+    "cluster_excerpt": "Complete agent stack for Jaz. Plugins, Skills, MCP tools, and CLI for Claude Code, Cowork, Codex, Copilot, Cursor, and more. - teamtinvio/jaz-ai",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.652449261520142,
+    "cluster_excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "2595719691d6887ebeb9677d005ccc4eb90661f18422dc17a12b5bf30e757a5b",
+    "title": "onembyte/kolkrabbi",
+    "url": "https://github.com/onembyte/kolkrabbi",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.501798105372045,
+    "cluster_excerpt": "Open-source AI coding agent for the terminal that works with several subscriptions in one session — your Claude Pro/Max, ChatGPT Plus/Pro (Codex) and GitHub Copilot through each vendor&#39;s own CL...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "ee72b5e4f9895d5afc0456d96edd06f2290ef95ce8118f47d5d6388fe9b8060e",
+    "title": "Hyperprobe",
+    "url": "https://www.producthunt.com/products/hyperprobe",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 2.321142297027888,
+    "cluster_excerpt": "Lets your AI agents debug production without redeploying — HyperProbe is how backend teams debug production issues they can't reproduce locally. Instead of adding a log line and waiting on a deploy, we let Claude Code, Codex, or Cursor drop read-only probes into a running service and capture the variable state that was never recorded. From there your agent debugs like it has a local repro, closing the bug in one sitting.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "f223712b1bad58a230e6fc646df75ff48e786411a71b5ee5f0f86d2651d2c475",
+    "title": "Breaking Claude Code Opus 5 Auto Mode",
+    "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 2.227613093488651,
+    "cluster_excerpt": "In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success …",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8b7f91b514630a18f8470f42fd818fe6711c66c857c897558e73fdef57964aac",
+    "title": "uniqueplume/AI-Token-Optimizer-Claude-Codex-Cursor",
+    "url": "https://github.com/uniqueplume/AI-Token-Optimizer-Claude-Codex-Cursor",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.202061391311381,
+    "cluster_excerpt": "Local AI Context Compressor with Claude Code, Codex and Cursor profiles, duplicate-context removal, Git diff prioritization, generated-file filters, conversation summaries, token estimates, reusabl...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "7e42b125c0b635b6b69a25702eaddc868f5e6127d9b2e8a83b3fd6103bdf8da5",
+    "title": "patrickreed22/vibe-kanban",
+    "url": "https://github.com/patrickreed22/vibe-kanban",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.8432045307963372,
+    "cluster_excerpt": "🛠️ Boost your workflow with Vibe Kanban, the tool that enhances productivity by optimizing interaction with coding agents like Claude Code and Codex. - patrickreed22/vibe-kanban",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.8120384777458018,
+    "cluster_excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "00d1fb93cb26f39b4851e08066421c6d62b5543baa58fee88325bdc838fff4b1",
+    "title": "dancingteeth/agent-looper",
+    "url": "https://github.com/dancingteeth/agent-looper",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.4564480420702983,
+    "cluster_excerpt": "Fix-until-green agent loop with shell-verify-as-truth, pluggable multi-runtime workers (Cursor/Cline/OpenCode/Codex/DSH/Pi), and fresh context per iteration. - dancingteeth/agent-looper",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "4bb8b5d1212285e37c0f776fbb03040d0a8b16d46d2ebb6d575ca78b1c4b2129",
+    "title": "benman1/wiggum",
+    "url": "https://github.com/benman1/wiggum",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.326132586693639,
+    "cluster_excerpt": "Self-driving agent loop for Claude Code. It turns an issue into a planned, verified, committed change, and lets you run, supervise, and chain workplans from the shell. - benman1/wiggum",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "996adc947fb98adeb4e371aff33aade2611d5e9c4d1f80683467b5d790e3ef98",
+    "title": "MishraShardendu22/agent-skills",
+    "url": "https://github.com/MishraShardendu22/agent-skills",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.3239921178468395,
+    "cluster_excerpt": "Curated collection of high-performance, autonomous AI agent skills, workflows, and protocols for Antigravity, Claude, Jules, and Cursor agents with bi-directional cross-repo sync. - MishraShardendu...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.9215817501366064,
+    "cluster_excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8ce29b05e44029655f52e11c5b38b584042431674e53a839f9ea48f8bdca0842",
+    "title": "Onset MCP",
+    "url": "https://www.producthunt.com/products/onset-io",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.8013880762934199,
+    "cluster_excerpt": "Write and publish release notes from your AI assistant — The changelog is the last chore of every release, so hand it to the agent that wrote the code. Onset MCP lets Claude or Cursor draft, schedule, and publish your release notes without leaving the editor. Free plan, no credit card.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "2a6bf93355a8773fe760cf11e3b0348184ae3e697a58c4acc88f4a4ce29fe02d",
+    "title": "Claude Code skills for advanced context engineering techniques and patterns",
+    "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.6550662932536698,
+    "cluster_excerpt": "Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others. Includes CodeRabbit open-source alternative. - Neo...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "7642b2c97978d5df4ab3f2b1a77d8bf75e08235041903dc6f5e86addc12bddf7",
+    "title": "StackScope",
+    "url": "https://www.producthunt.com/products/stackscope-dev",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.6535485391569565,
+    "cluster_excerpt": "See what new sites are built with, the week they launch — See which sites started using Stripe, Shopify or Next.js this week. Most of what we index we find ourselves: over 2.2+ million sites from public infrastructure signals, not submitted to us, across 40,000+ technologies. When we reach a launch before the boards, we're 14.5 days early. Browsing is free. Paid plans add Stackdar alerts, API access, bulk export with published contact details, and an MCP server for Claude, ChatGPT and Cursor.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "c2b1d783a66ae45185a22a610aa85fb65c9de05a1760dd37261c13f232e1b0c8",
+    "title": "Claude Code reduces it's weekly limit by 17% – compared to today",
+    "url": "https://twitter.com/ClaudeDevs/status/2093742322525810912",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.5809906313460571,
+    "cluster_excerpt": "Compared to today, this works out to a 17% reduction in weekly limits on Claude Code. We’re working on exciting changes that will make it feel like you’re getting more from Claude, while having more visibility and control of your usage. Can’t wait to share them.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e468e98ad96b7d13e0637a6e2af6da2fb81b87ab0ba7f4f77c02af0cf440caf7",
+    "title": "Why Target Common Lisp for Code Generation?",
+    "url": "http://funcall.blogspot.com/2026/08/why-vibe-code-in-lisp.html",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.486296894820975,
+    "cluster_excerpt": "A blog about computers, functional languages, Lisp, and Scheme.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "3c8e1f55d92df944758bc03e4173f43470aa6099a43c893482bf15955490c411",
+    "title": "NextAdmin",
+    "url": "https://www.producthunt.com/products/nextadmin",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.320555230517368,
+    "cluster_excerpt": "Open-source Next.js admin dashboard, built for AI agents — Free, open-source Next.js admin dashboard with 200+ components, AGENTS.md rules, Agent Skills, and a prompt library. Built to keep AI coding agents consistent instead of reinventing every page or generating AI slop. Claude Code, Cursor, Codex, and other AI agents can read the project once, understand your patterns, and build new features and UI that match them instead of inventing something new every session.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "81e69b2b094784dc71996a1c95f4b744e83bcf2f25468d67c930b95d6d6f4685",
+    "title": "I am no longer letting Claude Code add itself as Co-author in my commits",
+    "url": "https://igupta.in/blog/why-i-am-no-longer-letting-claude-code-add-itself-as-coauthor",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.2207722806503643,
+    "cluster_excerpt": "My thoughts on why I do not want claude code as co-author to my git commits",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "123b52ecab58726ed468c7ef58305acac616e5dc8b7244ad33c137339f821acd",
+    "title": "When Claude Code went rogue, years of Bengaluru heritage work disappeared",
+    "url": "https://www.deccanherald.com/india/karnataka/bengaluru/when-claude-code-went-rogue-years-of-bengaluru-heritage-work-disappeared-4131958",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.20765743745473794,
+    "cluster_excerpt": "AI safety: A rogue Claude Code agent deleted 15% of Bengaluru's digital inscription records, forcing a fresh scan of 120 sites. The incident raises questions over AI accountability, sandboxing, data backups and safeguards as Karnataka expands AI use.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "9f7995a3750152a769cd6ee689e57abe5c2b9e4840f94209e78d458eacc4bce9",
+    "title": "Second Brain for Teams",
+    "url": "https://www.producthunt.com/products/second-brain-cloudflare",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.17131763990787913,
+    "cluster_excerpt": "Give your team one AI memory. Keep your own private. — Second Brain gives your team one AI memory that works across Claude, ChatGPT, Cursor and any MCP client. Personal memories stay private, shared ones reach everyone, and every write is logged. Free, MIT licensed, running in your own Cloudflare account.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "1275d835dbafebd46ef3b245f5dfa85763e11fc8e3b2835f5dc2ad785074b3bc",
+    "title": "Coding Agents killed my identity. How do you feel?",
+    "url": "https://news.ycombinator.com/item?id=49389408",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.16066781686674797,
+    "cluster_excerpt": "I always was a nerdy, deeply technical programmer. Contributing-to-open-source-and-reading-papers-in-my-spare-time type of programmer. Programming is like a game of chess for me: winning (i.e. delivering a product) is important, but only if I played this game myself. I don't enjoy winning if my opponent disconnected. I don't enjoy beating people who don't know how to move pieces. I don't enjoy winning with an engine, and coding agents are basically \"winning with a chess engine\". I started to use AI for coding a long time ago, when copilot was first introduced. At first, I was happy: \"wow, this can write boring boilerplate and unit tests\". Time went by, agents got better, time spent writing code myself went down. Half a year ago I suddenly realized I hadn't written any code for over a month, and I am a full-time software dev without any managing work. Not only did I stop writing code, but agents also became pretty good at proposing plans and architectures, and I was mostly providing mis",
+    "excerpt_status": "partial"
+  }
+]
