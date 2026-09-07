@@ -1,0 +1,40 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Signing TLS handshakes inside a TPM",
+    "url": "https://bschaatsbergen.com/posts/go-tpm-tls",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-07T09:54:37.393-05:00",
+    "fetched_at": "2026-09-07T16:43:27.365570+00:00",
+    "excerpt": "A client certificate whose private key stays in the TPM: what crypto/tls asks of a key, the Go for both ends, and what it costs per handshake.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vospwq",
+      "tags": [
+        "go",
+        "security"
+      ]
+    },
+    "id": "8595d475ef80dec4917e758f9a6e7efe3fa512e34dd24a1a9a564332578e5936"
+  },
+  {
+    "source": "lobsters",
+    "title": "Have the frontier labs mixed up AI safety and security?",
+    "url": "https://martinalderson.com/posts/ai-safety-vs-security",
+    "raw_score": 10,
+    "comment_count": 3,
+    "posted_at": "2026-09-06T15:47:52.849-05:00",
+    "fetched_at": "2026-09-07T16:43:27.365570+00:00",
+    "excerpt": "The recent agent sandbox escapes at OpenAI and Anthropic look less like a technical failure and more like a philosophical one - treating security controls as though they only need to work most of the time.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "uu3hhz",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "bb551292de576610c9eb81e3b1824d29a25a14d91ea0f325a22bb0ffe0795dff"
+  }
+]
