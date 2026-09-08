@@ -1,0 +1,39 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Switching Password Managers in 2026",
+    "url": "https://rmondello.com/2026/09/07/switching-password-managers-2026",
+    "raw_score": 14,
+    "comment_count": 0,
+    "posted_at": "2026-09-08T08:55:09.220-05:00",
+    "fetched_at": "2026-09-08T15:27:53.518071+00:00",
+    "excerpt": "Important Note: Although I work at Apple in the password management and app/website authentication spaces, in this post I am speaking only for myself, personally. There is no “news” in this post or any kind of “inside scoop”. Please do share this post, but if I see “Apple’s Ricky Mondello” anywhere, I’ll be sad. My [...]",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ikzvtv",
+      "tags": [
+        "practices",
+        "security"
+      ]
+    },
+    "id": "d12a384382411aff275cfe54d8b839f9f191ef830bed5226591f89b27cd839b2"
+  },
+  {
+    "source": "lobsters",
+    "title": "I’ve factored the RSA keys of a Certificate Authority…from the 90s",
+    "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+    "raw_score": 24,
+    "comment_count": 0,
+    "posted_at": "2026-09-07T23:05:34.645-05:00",
+    "fetched_at": "2026-09-08T15:27:53.518071+00:00",
+    "excerpt": "… from the 90s.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wl0mln",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "fac5a01055fd130425aa64526bf2d6cd0a0c754d23b2b8e64644650202a89fed"
+  }
+]
