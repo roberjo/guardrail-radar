@@ -1,0 +1,784 @@
+[
+  {
+    "source": "github",
+    "title": "intellibitz/gha",
+    "url": "https://github.com/intellibitz/gha",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:23:24Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "GHA (Exponential Intelligence for Any AI Substrate) empowers any world user to master any mission through a native Rust intelligence reflex engine. It runs 100% offline, operates with microsecond r...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "108afa6d3bfaf74fa0a3b73f376ca7b921d5a2283d9af99fc03a15e817f0a431"
+  },
+  {
+    "source": "github",
+    "title": "timzaak/web-dev-skills",
+    "url": "https://github.com/timzaak/web-dev-skills",
+    "raw_score": 431,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:21:18Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "A Claude Code plugin for Rust + React projects. It turns PRD -> Design -> Task -> Development -> Acceptance -> Demo into a reusable workflow - timzaak/web-dev-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 74,
+      "topic": "ai-coding"
+    },
+    "id": "e89066dfb18c5096e38bee89f03f205be1af9231f6382f11e327ca330da8ac18"
+  },
+  {
+    "source": "github",
+    "title": "HaiYangBG1/BuildBeat",
+    "url": "https://github.com/HaiYangBG1/BuildBeat",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:23:57Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Switch sessions. Keep building. Git-based AI delivery workflow for humans and AI sessions: context in project files, handoffs across models, tools, sessions and people, and a build-verify-review-fi...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 8,
+      "topic": "ai-coding"
+    },
+    "id": "cbb6a300497ed693e4b2cfcd78b44021e177812e95ceb63f2c7e310fd644df90"
+  },
+  {
+    "source": "github",
+    "title": "tubasa821004-hash/social-manipulation-radar",
+    "url": "https://github.com/tubasa821004-hash/social-manipulation-radar",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:18:43Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "AI Social Defense Toolkit 2026: Detect Manipulation & Counter Pickup Artist Tactics - tubasa821004-hash/social-manipulation-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "30b7d886dd3256060cd21d92d41d9cefcc2bb6b67ae8d82b78eddff9f49ff988"
+  },
+  {
+    "source": "github",
+    "title": "fysoul17/devlyn-cli",
+    "url": "https://github.com/fysoul17/devlyn-cli",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:17:46Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "AI development toolkit for Claude Code — ideate, auto-resolve, and ship with context engineering and agent orchestration - fysoul17/devlyn-cli",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "eaf5693fd290cfefc9cfc82abe34ef905381937f4ced4a9cb407385fc5234c13"
+  },
+  {
+    "source": "github",
+    "title": "brutal-45/Nexus-Terminal",
+    "url": "https://github.com/brutal-45/Nexus-Terminal",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:22:37Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Version Of Nexus-LLM. Contribute to brutal-45/Nexus-Terminal development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "7c83eb4b7949dbed211e52ab9450100b007712a5f1cca73a533f4aec4da6f93e"
+  },
+  {
+    "source": "github",
+    "title": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "raw_score": 789,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:17:34Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor &amp; any MCP client. 313B+ t...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 2676,
+      "topic": "ai-coding"
+    },
+    "id": "e6d346c55c2d75d354c826e5dec794cb10eca37aac5fe4bd6eed5d9077574353"
+  },
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:54Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 309,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:39Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 21,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 361,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:16Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 36,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "autokeren/ghostfox",
+    "url": "https://github.com/autokeren/ghostfox",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:22:22Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "The agent-native stealth browser you can own — fingerprint-coherent Firefox engine + Rust MCP runtime. Self-hosted, open source, engine-level anti-detect. - autokeren/ghostfox",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "746bdbe11e83f7449723c9ae5e48f29602b46696f975231667a2d78b046f3660"
+  },
+  {
+    "source": "github",
+    "title": "felladrin/gguf-trainer",
+    "url": "https://github.com/felladrin/gguf-trainer",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:48Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Train (from scratch) tiny GGUF language models on WebGPU - felladrin/gguf-trainer",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "86231d25ce1701e15d6650f2ec4c3eba1bcb36fb0d3f69b710f73d324ab12015"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:45Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 6,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 349,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:36Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 32,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 239,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:34Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 10,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:28Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:24Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "ekseh93/mimamori-ops",
+    "url": "https://github.com/ekseh93/mimamori-ops",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:24:06Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "AI-assisted AWS operations learning project: HTTPS monitoring, Japanese reports, Terraform and CI/CD. - ekseh93/mimamori-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "8687dafcf93f5d429195ab537e03f4ca53387c26cf356d957aaebc9cbc836348"
+  },
+  {
+    "source": "github",
+    "title": "536tech/datatf",
+    "url": "https://github.com/536tech/datatf",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:24:41Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Export existing Databricks platform and Unity Catalog configuration to Terraform variables and import blocks. Read-only Go CLI. - 536tech/datatf",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "6fc5d4232422daa099f0ab3a7b21933b470d0d234613c0d57b8f4ff273a34e64"
+  },
+  {
+    "source": "github",
+    "title": "coder/coder",
+    "url": "https://github.com/coder/coder",
+    "raw_score": 957,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:19:41Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Secure environments for developers and their agents - coder/coder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 992,
+      "total_stars": 14412,
+      "topic": "terraform"
+    },
+    "id": "73b7e92d1b039b14a0bcece0a1329de85e1c746a1d9d3978e45e7ce35c135574"
+  },
+  {
+    "source": "github",
+    "title": "netascode/terraform-intersight-nac-compute",
+    "url": "https://github.com/netascode/terraform-intersight-nac-compute",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:16:56Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Terraform Cisco Compute Network-as-Code Module. Contribute to netascode/terraform-intersight-nac-compute development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "cb99eb8081eaa4899c12bd74d2b3ae9cc853e8e01a903231b528a72ae79e643e"
+  },
+  {
+    "source": "github",
+    "title": "Saatvik3006/devopshub",
+    "url": "https://github.com/Saatvik3006/devopshub",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:42Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "DevOpsHub — Cloud-Native Deployment & Monitoring Platform (Spring Boot 3, React 18, Kubernetes, Helm, Terraform, Prometheus) - Saatvik3006/devopshub",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b815e02e01f0618b959962732eea93dafb7589c13a19d1717d36e45691a6fc97"
+  },
+  {
+    "source": "github",
+    "title": "simon-vedder/azure-vm-credential-rotation",
+    "url": "https://github.com/simon-vedder/azure-vm-credential-rotation",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:14Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Credential lifecycle for Azure VMs that cannot use Windows LAPS or Entra login - simon-vedder/azure-vm-credential-rotation",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "f70ae0eadb8655368aa64ef25871ec7d1a14f81b274146855d710bd07d5fa785"
+  },
+  {
+    "source": "github",
+    "title": "Alexsaphir/Talos-Flux",
+    "url": "https://github.com/Alexsaphir/Talos-Flux",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:14:19Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "K3s cluster driven by Talos. Contribute to Alexsaphir/Talos-Flux development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 6,
+      "topic": "terraform"
+    },
+    "id": "fbbfa84c00b1b9649ede946b5d5e324c93aac59f808f7bcec6782fb1e2bb6826"
+  },
+  {
+    "source": "github",
+    "title": "mrAndreyIsachenko/hexroute",
+    "url": "https://github.com/mrAndreyIsachenko/hexroute",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:14:17Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Reliability control plane for scoped VPN, proxy and access-continuity paths — crash-consistent policy generations, privilege-separated stores, replay-proof action leases. - mrAndreyIsachenko/hexroute",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "ebc264d5a3de2f6b91302af482be193dc8139ab45364c686470ace5dc929921e"
+  },
+  {
+    "source": "github",
+    "title": "terraform-lxd/terraform-provider-lxd",
+    "url": "https://github.com/terraform-lxd/terraform-provider-lxd",
+    "raw_score": 561,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:13:37Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "LXD Resource provider for Terraform. Contribute to terraform-lxd/terraform-provider-lxd development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 273,
+      "topic": "terraform"
+    },
+    "id": "3439f047d775f205d572b988f3f51dc0da15ddbc741b50106866607649f68bef"
+  },
+  {
+    "source": "github",
+    "title": "DataDog/terraform-provider-datadog",
+    "url": "https://github.com/DataDog/terraform-provider-datadog",
+    "raw_score": 614,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:13:02Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Terraform Datadog provider. Contribute to DataDog/terraform-provider-datadog development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 409,
+      "total_stars": 467,
+      "topic": "terraform"
+    },
+    "id": "ffeb362459f6d43cab561c0db3a6b01cd1576ba5b478d55b25134a423b043e30"
+  },
+  {
+    "source": "github",
+    "title": "getprobo/probo",
+    "url": "https://github.com/getprobo/probo",
+    "raw_score": 720,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:21:27Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Open source solutions for SOC2, GDPR, and ISO27001 - getprobo/probo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 89,
+      "total_stars": 1350,
+      "topic": "compliance"
+    },
+    "id": "2f8fa4f759abcfdbc0d046bbc91a3adcdaaa40ca3d70b63f98c35d5444854b87"
+  },
+  {
+    "source": "github",
+    "title": "esportellini/compliance-copilot",
+    "url": "https://github.com/esportellini/compliance-copilot",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:20:53Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Auditable compliance decision support with deterministic rules, documentary evidence and human approval workflows. - esportellini/compliance-copilot",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "6b8317d16a4782f2e8742f5d0939e2e79e939e38485608bd9270318621ce97ae"
+  },
+  {
+    "source": "github",
+    "title": "KongFangXun/sofagent",
+    "url": "https://github.com/KongFangXun/sofagent",
+    "raw_score": 378,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:15:59Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Audit-first governance layer for AI coding agents — 24 git-diff rules, HMAC tamper-evident chain, snapshot rollback (84 tools, 13 plugins) - KongFangXun/sofagent",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 43,
+      "topic": "compliance"
+    },
+    "id": "4741ff40a90d0dbda85d3c6fdb5f717e1332aed20a7d32838b13631f455fb18b"
+  },
+  {
+    "source": "github",
+    "title": "prowler-cloud/prowler",
+    "url": "https://github.com/prowler-cloud/prowler",
+    "raw_score": 960,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:24:46Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Prowler is the world’s most widely used open-source cloud security platform that automates security and compliance across any cloud environment. - prowler-cloud/prowler",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 372,
+      "total_stars": 14776,
+      "topic": "compliance"
+    },
+    "id": "86618e00c3bfaf2b09a787839005e58a88247df7adf88885426ff23186953e64"
+  },
+  {
+    "source": "github",
+    "title": "RAMBULLS/control-atlas",
+    "url": "https://github.com/RAMBULLS/control-atlas",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:12:37Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "The public map for federal cyber compliance. Contribute to RAMBULLS/control-atlas development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dd132d10b82aeef4fbd2ec5891d6c3329bd0215010e4bd4e4b18b3b88d6823dc"
+  },
+  {
+    "source": "github",
+    "title": "chainloop-dev/chainloop",
+    "url": "https://github.com/chainloop-dev/chainloop",
+    "raw_score": 636,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:11:36Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "SDLC evidence store and policy engine for your Software Supply Chain attestations, SBOMs, VEX, SARIF, QA reports, and more - chainloop-dev/chainloop",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 18,
+      "total_stars": 583,
+      "topic": "compliance"
+    },
+    "id": "6e04dd3ba7add21d2d4a9dfaaf908307f80cc6d41c8df57955b4fbaa342760bd"
+  },
+  {
+    "source": "github",
+    "title": "troybrandonc-bit/Omem",
+    "url": "https://github.com/troybrandonc-bit/Omem",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:10:44Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "The system of record for what an AI agent believed and did. Append-only beliefs with evidence, contradictions kept, risky actions gated behind a named human. MIT, self-hosted. - troybrandonc-bit/Omem",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "87609bf73bf3b9eec79f1a0198e8443a6cd807f92701926b596a222c20f7ae42"
+  },
+  {
+    "source": "github",
+    "title": "ariada-org/ariada",
+    "url": "https://github.com/ariada-org/ariada",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:09:02Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "EAA-2025-ready accessibility compliance platform — 21 npm packages: 31-rule WCAG 2.2 AA scanner pack, TypeScript scanner runtime (engine + browser + Playwright), reusable GitHub Actions workflow, E...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 121,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "10b45ea2f91e1291bf4784d0b6f2270d6dc0dc6eaab5709dffea6b1e697f06b5"
+  },
+  {
+    "source": "github",
+    "title": "rossaalex5-rgb/zemala-core",
+    "url": "https://github.com/rossaalex5-rgb/zemala-core",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:08:30Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Contribute to rossaalex5-rgb/zemala-core development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "1c73755abaff852272713502c4ba7fb8f1d03b2d53520eefb990ed1d0a6328a3"
+  },
+  {
+    "source": "github",
+    "title": "sipyourdrink-ltd/bernstein",
+    "url": "https://github.com/sipyourdrink-ltd/bernstein",
+    "raw_score": 704,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:07:06Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "The open‑source AI Agents Governance &amp; Orchestration framework: write the rules declaratively, Bernstein enforces them and produces the verifiable, replayable record. Free, Apache-2.0. https://...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 330,
+      "total_stars": 1141,
+      "topic": "compliance"
+    },
+    "id": "82d9a3e2f37b37d7f349031f8cf0397c1f4ac4ba0d990dd7797ce0e62b61d946"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:24:46Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "shoanwagh-26/Nivara",
+    "url": "https://github.com/shoanwagh-26/Nivara",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:18:52Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Nivara is my full-stack implementation of a broker-style trading platform—split into a public React application and an authenticated trading dashboard, with Node.js/Express APIs connecting the inte...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "f5f79c7c329da4d180350c663a6d64adf5f28e8f4dca27769406107c57ae4bad"
+  },
+  {
+    "source": "github",
+    "title": "moov-io/awesome-fintech",
+    "url": "https://github.com/moov-io/awesome-fintech",
+    "raw_score": 591,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:13:12Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "A curated collection of open source fintech libraries for payments, banking, and financial infrastructure. Not for trading or market analysis. - moov-io/awesome-fintech",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 370,
+      "topic": "fintech"
+    },
+    "id": "07142cda01957b66a86e3bf89c3299a30d8e72c145863b1689e4ebed11d8d4f1"
+  },
+  {
+    "source": "github",
+    "title": "HaoweiChan/kuroshio",
+    "url": "https://github.com/HaoweiChan/kuroshio",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:21:40Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Open-source quantamental portfolio engine: multi-factor screening, LLM agent research, and IPS-driven rebalancing proposals. It ranks, argues, and proposes — it never places an order. - HaoweiChan/...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "9864634cd6baaebf3903e748644bc24e57fd6ac7164513bde00a5ef192861c55"
+  },
+  {
+    "source": "github",
+    "title": "teamtinvio/jaz-ai",
+    "url": "https://github.com/teamtinvio/jaz-ai",
+    "raw_score": 207,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:11:11Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Complete agent stack for Jaz. Plugins, Skills, MCP tools, and CLI for Claude Code, Cowork, Codex, Copilot, Cursor, and more. - teamtinvio/jaz-ai",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 7,
+      "topic": "fintech"
+    },
+    "id": "043bcaf954bdda9c1b6f9744ffd770e1b9de77ceb7a2a07a6e54a2070980d2ad"
+  },
+  {
+    "source": "github",
+    "title": "moov-io/terms-dictionary",
+    "url": "https://github.com/moov-io/terms-dictionary",
+    "raw_score": 431,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:10:34Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Simple definitions of terms, acronyms, abbreviations, companies, and projects related to financial services and Moov. - moov-io/terms-dictionary",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 74,
+      "topic": "fintech"
+    },
+    "id": "846ffbbc36ddbe7f0e1f0ea45b87c763cbb094a2848a23dcf039ae8a14ff4858"
+  },
+  {
+    "source": "github",
+    "title": "Ebazhanov/riverty-risk-workflow-tests",
+    "url": "https://github.com/Ebazhanov/riverty-risk-workflow-tests",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:09:49Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "C# .NET 8 integration test suite for Riverty Risk Decision Workflows using NUnit, WebApplicationFactory, WireMock.Net, and Testcontainers - Ebazhanov/riverty-risk-workflow-tests",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "cec3c9274bcc9943c5b93544cf1ed51b76c780a88a5829225ae7f5551b0a7fff"
+  },
+  {
+    "source": "github",
+    "title": "nanoizax/push-provisioning-demo",
+    "url": "https://github.com/nanoizax/push-provisioning-demo",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:08:59Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Push provisioning reference: add cards to Apple Wallet and Google Pay from the issuer app (iOS PassKit, Android TapAndPay, issuer/TSP crypto with ECC_V2 and OPC) - nanoizax/push-provisioning-demo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "371e7477d481f3d56b98d1dbc42c8a23b10af3c915993a131634ecd461505246"
+  },
+  {
+    "source": "github",
+    "title": "RonildoBraga/ledova",
+    "url": "https://github.com/RonildoBraga/ledova",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:22:36Z",
+    "fetched_at": "2026-09-09T15:24:21.104655+00:00",
+    "excerpt": "Experimental open-source infrastructure for issuing and transferring tokenized private-company shares on public chains — allowlist-gated smart contracts, a Django API, and web/mobile clients. Testn...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 11,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "c9f2de0709d3671c49ea8defc927b1afe1281edf7b952d25b8767d37b2b4c4e7"
+  }
+]

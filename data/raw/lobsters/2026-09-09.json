@@ -1,0 +1,59 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin",
+    "url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T03:18:10.613-05:00",
+    "fetched_at": "2026-09-09T15:24:20.394087+00:00",
+    "excerpt": "Tenstorrent accelerators join vLLM as an out-of-tree platform plugin, driven by mesh-architecture choices: phase-based scheduling, single-process data paralleli",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "twvlv6",
+      "tags": [
+        "ai",
+        "hardware"
+      ]
+    },
+    "id": "d30ab09b3c36279442e9325d75c07fb2c39686381422c546aaf673bfa17f4110"
+  },
+  {
+    "source": "lobsters",
+    "title": "Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0 (1999)",
+    "url": "https://www.usenix.org/legacy/events/sec99/full_papers/whitten/whitten_html/index.html",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T01:47:58.129-05:00",
+    "fetched_at": "2026-09-09T15:24:20.394087+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "ojyeqg",
+      "tags": [
+        "design",
+        "security"
+      ]
+    },
+    "id": "e2350b0e5a63b7a5441936e28b74893c4111ace596e2704f22e8165486f691b9"
+  },
+  {
+    "source": "lobsters",
+    "title": "Switching Password Managers in 2026",
+    "url": "https://rmondello.com/2026/09/07/switching-password-managers-2026",
+    "raw_score": 85,
+    "comment_count": 40,
+    "posted_at": "2026-09-08T08:55:09.220-05:00",
+    "fetched_at": "2026-09-09T15:24:20.394087+00:00",
+    "excerpt": "Important Note: Although I work at Apple in the password management and app/website authentication spaces, in this post I am speaking only for myself, personally. There is no “news” in this post or any kind of “inside scoop”. Please do share this post, but if I see “Apple’s Ricky Mondello” anywhere, I’ll be sad. My [...]",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ikzvtv",
+      "tags": [
+        "practices",
+        "security"
+      ]
+    },
+    "id": "d12a384382411aff275cfe54d8b839f9f191ef830bed5226591f89b27cd839b2"
+  }
+]
