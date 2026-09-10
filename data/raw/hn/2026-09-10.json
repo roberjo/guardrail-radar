@@ -1,0 +1,1762 @@
+[
+  {
+    "source": "hn",
+    "title": "Amazon pilots ad services in ChatGPT",
+    "url": "https://www.marketingdive.com/news/amazon-pilots-ad-services-in-chatgpt-what-marketers-need-to-know/829945",
+    "raw_score": 53,
+    "comment_count": 32,
+    "posted_at": "2026-09-10T14:13:09Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "The managed service offering, which is in a U.S. pilot and available via Amazon DSP, comes as ChatGPT Ads recently hit a revenue milestone.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49644047",
+      "author": "thm"
+    },
+    "id": "17653015d0062a8da674c9703d1e29089ff229454f80e878e35bcef1c92e7331"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Nightshift – Rust CLI to Orchestrate GitHub Issue Resolution with Dags",
+    "url": "https://github.com/Shaurya-Sethi/nightshift",
+    "raw_score": 2,
+    "comment_count": 2,
+    "posted_at": "2026-09-10T13:01:58Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Let your favorite AI coding agents work the night shift. A CLI utility to autonomously resolve your open GitHub issues while you sleep. - Shaurya-Sethi/nightshift",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49643048",
+      "author": "shaurya-sethi"
+    },
+    "id": "1b48dd8b52724498f8219716ac5353065e04db6d717faf040e3f09a56b4b90ec"
+  },
+  {
+    "source": "hn",
+    "title": "AI Made Lots Hideous Code but Found Major Bottlenecks for Fast Linux Compilation",
+    "url": "https://www.phoronix.com/news/AI-To-Faster-Linux-Kernel-Comp",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T13:59:23Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Michael Larabel is the principal author of Phoronix.com and founded the site in 2004 with a focus on enriching the Linux hardware experience. Michael has written more than 20,000 articles covering the state of Linux hardware support, Linux performance, graphics drivers, and other topics. Michael is also the lead developer of the Phoronix Test Suite, Phoromatic, and OpenBenchmarking.org automated benchmarking software. He can be followed via Twitter , LinkedIn , or contacted via MichaelLarabel.com .",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49626708",
+      "author": "mdp2021"
+    },
+    "id": "585b46edcd136a335c40657a020c86c77e0c3449923fde2f8be855fea008b1c6"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Remoot, run Cursor Agent and Copilot CLI from your phone",
+    "url": "https://www.remoot.dev/",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T11:02:50Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Remote VS Code and Cursor control from your phone. Install the Remoot extension, pair with QR, and run Copilot CLI or Cursor Agent on the go.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49624468",
+      "author": "furkanalniak"
+    },
+    "id": "bc8850ef70d1dc236d434cb5f82e9527f872a13bc64248a4594842b6c7d1eb3d"
+  },
+  {
+    "source": "hn",
+    "title": "AI: Lot of \"Hideous\" Code but Found Bottlenecks for Faster Linux Compilation",
+    "url": "https://www.phoronix.com/news/AI-To-Faster-Linux-Kernel-Comp",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T01:15:26Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Michael Larabel is the principal author of Phoronix.com and founded the site in 2004 with a focus on enriching the Linux hardware experience. Michael has written more than 20,000 articles covering the state of Linux hardware support, Linux performance, graphics drivers, and other topics. Michael is also the lead developer of the Phoronix Test Suite, Phoromatic, and OpenBenchmarking.org automated benchmarking software. He can be followed via Twitter , LinkedIn , or contacted via MichaelLarabel.com .",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49619470",
+      "author": "doener"
+    },
+    "id": "585b46edcd136a335c40657a020c86c77e0c3449923fde2f8be855fea008b1c6"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Anyone using dictation with coding agents?",
+    "url": "https://news.ycombinator.com/item?id=49610888",
+    "raw_score": 4,
+    "comment_count": 8,
+    "posted_at": "2026-09-08T14:32:58Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Looks like Claude Code CLI and Aider support voice dictation, Codex had it but dropped it, other CLIs like open code, copilot CLI all don't have it.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49610888",
+      "author": "TomEleff"
+    },
+    "id": "101180d48a342e72bfa54a58fad5225fd832dfefaa419a92dee3620a47ef94f1"
+  },
+  {
+    "source": "hn",
+    "title": "Geneseed – compile one rulebook into hooks for ClaudeCode,OpenCode,Copilot",
+    "url": "https://github.com/Arylmera/Geneseed",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-08T07:27:10Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "A portable, theme-able harness you implant into any repository to grow a disciplined AI agent. - Arylmera/Geneseed",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49606742",
+      "author": "Arylmera"
+    },
+    "id": "11e95833d9d141cc7d02e096338585a3d266af778fe0c046c5ac15c30ac09c43"
+  },
+  {
+    "source": "hn",
+    "title": "Selected GitHub Copilot models deprecated",
+    "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-07T19:07:37Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "As of today, September 1, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49601831",
+      "author": "mooreds"
+    },
+    "id": "a90d945af0e55a2585ba0a36ab8b65482a574d20b09e2bde9717dae0d023a61f"
+  },
+  {
+    "source": "hn",
+    "title": "Easy Local Copilot with VS Code and Lemonade",
+    "url": "https://admcpr.com/easy-local-copilot-with-vs-code-and-lemonade",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-09-07T15:04:25Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Not so long ago I wrote a guide on how to get GitHub Copilot running with a local model in Visual Studio Code. Since then Copilot subscriptions have got much more expensive, local models have got much more powerful and getting local Copilot up and running has got much easier.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49599225",
+      "author": "sequence7"
+    },
+    "id": "7ffb335ac75d1cfa43b7291f64c9b0e5bba6be8c976bf95a81cbf08ff6d682bb"
+  },
+  {
+    "source": "hn",
+    "title": "Switzerland's Federal Government Is Replacing Microsoft on 3k Computers",
+    "url": "https://itsfoss.com/news/switzerland-replace-microssoft-pilot",
+    "raw_score": 368,
+    "comment_count": 288,
+    "posted_at": "2026-09-07T05:33:25Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "This is the pilot phase, with 3,000 workstations moving away from Microsoft 365. The federal administration has over 54,000 computers.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49594251",
+      "author": "ivell"
+    },
+    "id": "8b6b9c48e59108669e6dd8de21b1b76552bf6e5cb0c1c08d5b1ac40a1c80057e"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: MaskShift – a maximalist coding agent with zero NPM dependencies",
+    "url": "https://github.com/nafeeur/MaskShift",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T21:39:11Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Maximalist coding harness . Contribute to nafeeur/MaskShift development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49591238",
+      "author": "Nafeeur"
+    },
+    "id": "06f65647f7dfe0ac3ca2da614e2777e63f132f0faffd0c1fbe4f13297ad2d110"
+  },
+  {
+    "source": "hn",
+    "title": "GitHub Status – Disruption with Copilot Code Review",
+    "url": "https://www.githubstatus.com/incidents/zw1hbx2yyhvr",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T16:59:07Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "GitHub's Status Page - Disruption with Copilot Code Review.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49588439",
+      "author": "kyisaiah47"
+    },
+    "id": "d0bfc8946f8b933ec46f3d80cf85c4fff765ef2228998d1fd2d0991f7f573b6d"
+  },
+  {
+    "source": "hn",
+    "title": "Stemma – one source of truth for Claude.md, AGENTS.md and Copilot",
+    "url": "https://github.com/alexvinola/stemma-cli",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T09:57:02Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Deterministic compiler for coding-agent config. Contribute to alexvinola/stemma-cli development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49584898",
+      "author": "vrilex"
+    },
+    "id": "9d79c57eb1699b13989ab20be730e10c55e6a29ff2db7aca79fd9ac473b77c65"
+  },
+  {
+    "source": "hn",
+    "title": "GitHub Status – Disruption with Copilot Code Review",
+    "url": "https://www.githubstatus.com/incidents/zw1hbx2yyhvr",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T00:16:46Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "GitHub's Status Page - Disruption with Copilot Code Review.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49582076",
+      "author": "kyisaiah47"
+    },
+    "id": "d0bfc8946f8b933ec46f3d80cf85c4fff765ef2228998d1fd2d0991f7f573b6d"
+  },
+  {
+    "source": "hn",
+    "title": "GPT-6 Astra is generally available in GitHub Copilot",
+    "url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-04T21:30:34Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "GPT-6 Astra from OpenAI is now available in GitHub Copilot. OpenAI’s latest general-purpose model, GPT-6 Astra, is designed for long-horizon, autonomous coding and agentic tasks. In our internal testing, GPT-6…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49570460",
+      "author": "doomroot13"
+    },
+    "id": "cf45e2be25e062a0c29973464b3e79a9e95beff1a97f66dc8a5461f9df12b55c"
+  },
+  {
+    "source": "hn",
+    "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+    "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+    "raw_score": 79,
+    "comment_count": 35,
+    "posted_at": "2026-09-04T16:24:50Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated cost.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49566788",
+      "author": "qainsights"
+    },
+    "id": "2ff277e441a4b0dab8ec201e1929a29ce4861d79fb1666b6c6ef5ad394fbb2c2"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "url": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
+    "raw_score": 225,
+    "comment_count": 45,
+    "posted_at": "2026-09-04T09:03:00Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "NPC-Forge is a framework for building conversational agents that run on the CPU without relying on machine learning or LLMs. - gioblu/NPC-Forge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49562219",
+      "author": "gioscarab"
+    },
+    "id": "8291b0f04f57a695a1d65732ff72f394d0a80c732685ce2376b4a347701e3f64"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Can we classify AI as: subhuman, quasihuman, human, superhumam?",
+    "url": "https://news.ycombinator.com/item?id=49552230",
+    "raw_score": 5,
+    "comment_count": 6,
+    "posted_at": "2026-09-03T16:01:53Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Gen 1: subhuman, eq: machine translation, game AI/chess, timeline prediction/protein folding...(1980 - 2020 era). Gen 2: quasihuman: human assistant that requires human-in-the-loop: human evaluates, gives directions, asks, tries, implements. \"you're here\": LLMs/chatbots (2020s). Gen 3: human worker substitute. While not strictly 'human' per se, without will and emotions it can be considered \"human job replacement\" as it eliminates the need for human-in-the-loop as it verifies successful compilation, rates visual result (videogames it produces/videos/images), validates fiction it writes, marketing strategies/trading strategies and learns from mistakes and improves after many attempts until it finishes task with acceptable result. Gen 4: Superhuman: like gen 4 but + having full recursive self-improvement (it updates/rewrites its own code and recopmiles while performing a task - full awareness)? Theoretically gen 4 can be ASI if the seed is \"make better AI which makes better AI and so on ",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49552230",
+      "author": "aunekiaru"
+    },
+    "id": "177cd989fce98ccdbeb53b1152f55387e16bab1f707218d9406f9f7ee22f7a73"
+  },
+  {
+    "source": "hn",
+    "title": "GitHub: Shorter tool outputs can make coding agents more expensive",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-03T02:12:23Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49545164",
+      "author": "lbw1215"
+    },
+    "id": "fbfd060b861c994281af0eba5bc9e52ea37bdc3627cbdda346c6be2b71bb929f"
+  },
+  {
+    "source": "hn",
+    "title": "Copilot code review can now approve pull requests",
+    "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-01T22:48:12Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Copilot now tells you when a pull request is ready to approve, and admins can authorize it to sign off on approval. The ability for Copilot to approve is off…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49529323",
+      "author": "fourfire"
+    },
+    "id": "a5af7099832f3f1fdece0513d7a55e602c9d84bdcf01c85db9006e99cfd4e94b"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: MaruCheck – Independent QA for AI-generated code",
+    "url": "https://github.com/Kidus-M/MaruCheck",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T14:24:38Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Independent QA and verification for AI-generated software. MaruCheck turns product intent into Quality Contracts, analyzes code changes, remembers regressions, and tests what your coding agent miss...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49644238",
+      "author": "KidusMT"
+    },
+    "id": "5a5189d15ba17a7f92d13768714bbd83d7bf651ba6c7d33d721d737c95b3013b"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Orchestrator, spawn and manage Claude Code instances remotely",
+    "url": "https://github.com/markusbug/Orchestrator",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T13:46:03Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Run Claude Code sessions on your own machine, drive them from your phone - markusbug/Orchestrator",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49643645",
+      "author": "mhaaseth"
+    },
+    "id": "fea7615dec8d84da723daadbd7798a12a91947a0a789e5d811a06d535007d30f"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Security Cards – Reducing insecure AI-generated code by 72%",
+    "url": "https://www.rewarelabs.com/blog/introducing-security-cards",
+    "raw_score": 4,
+    "comment_count": 2,
+    "posted_at": "2026-09-10T12:03:03Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Secure AI- and human-generated code before it ships. Reware guides AI coding agents toward safer code, uncovers complex vulnerabilities, and delivers verified fixes.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49642340",
+      "author": "hajipour"
+    },
+    "id": "fcefd2174bd256e00440926a93de4dbc3db3dcc71b40e1bc29d6349f59b72c20"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: What is the proper way of preventing AI labs to use your private data",
+    "url": "https://news.ycombinator.com/item?id=49641616",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T11:00:16Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "People talk about the \"opt-out\" button in the settings and assume this will be enough. But even the text on the toggle implies this is not the full story. ChatGPT: \"Improve the model for everyone\" (But are they free to use my data internally, i.e. \"not for everyone\") Claude: \"Help improve our AI models\" (When you click Learn More [0], they admit they may use them to train internal security models etc. if their security classifiers they run on every conversation flag us [with what criteria]) On top of that Codex and Claude Code have different security options and basically they can gain access to everything we have. What is an easy way to do a proper setup for consumer subscriptions. [0] https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49641616",
+      "author": "ozgung"
+    },
+    "id": "e590e5a0d18299f9b4195048acb164fe7ddcc990e0a6783653dc9252a2404262"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Community curated list of 310 AI providers offering $4.3k free credits",
+    "url": "https://www.uprouter.online/",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T10:00:54Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Find a free AI API key for any major model. 310 AI API routers & 490 models compared on free credits, rate limits & live status — 215 free tiers worth $4.3k. No pay-to-rank; route it all through one OpenAI- and Claude-compatible gateway.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49641128",
+      "author": "opensrcme"
+    },
+    "id": "a1bbd055c4e2f9f54f80b0997239dea008e121089ac041baf832704c4e7c74a0"
+  },
+  {
+    "source": "hn",
+    "title": "Benchmarking Claude Code, Codex and Pi on SWE-Bench Pro: Same Accuracy, 2x Cost",
+    "url": "https://aistack.imec-int.com/blog/harness-cost",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T06:50:48Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "aistack is an open benchmarking initiative by imec, generating solid datapoints where real AI workloads meet real systems and silicon.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49639415",
+      "author": "mindwraps"
+    },
+    "id": "b5c2502d7d593c644b8d1ab5831468547e7465a186b693747cc2869796b4d3ce"
+  },
+  {
+    "source": "hn",
+    "title": "Average Opus 5 Response",
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1w3rxkj/average_opus_5_response",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T06:36:08Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "object_id": "49639294",
+      "author": "Townley"
+    },
+    "id": "dfd2afb0b914ea25c44368bb6fd2c69b8939782a4b6f75e21cc4bf9be4e5bcfc"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Codex conversations failing to converge across devices?",
+    "url": "https://news.ycombinator.com/item?id=49632749",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-09-09T19:28:43Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Is anybody else seeing extremely annoying bug in last week or two where codex/chatgpt conversations fail to sync properly across devices?  In my case ios and macos.  Opening the same thread-id on different devices presents completely different subsets of conversation history.  Often I'll see that one app at some point stopped rendering the user comments but does keep rendering a potentially partial subset of the agent responses - or vice versa, it will show agent responses but not the user message submissions ... This has produced a lot of confusion for me and severely impacted my capacity to monitor progress on multiple work streams from multiple devices ...  I've submitted support requests to openai that supposedly have been 'elevated to a human' but no idea yet if there's any progress ... This kind of bug basically totally breaks all confidence in the codex app for me ...  The experience previously felt pretty solid and predictable to me -- markedly better than the bugginess I exper",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49632749",
+      "author": "breatheoften"
+    },
+    "id": "cb7bb4e8cf9f553289fa57d0983db3fc47dd95a224a8b0bd63e0b0904d34cc4d"
+  },
+  {
+    "source": "hn",
+    "title": "LittleSwitch, my personnal router for Claude/Codex (Desktop/CLI/Cowork) on macOS",
+    "url": "https://little-switch.alfredlabs.io/",
+    "raw_score": 2,
+    "comment_count": 3,
+    "posted_at": "2026-09-09T19:04:21Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Native macOS integration for Claude Desktop, Claude Code, Codex and OpenCode. Use multiple providers, live model mappings, integrated web search and private telemetry.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49632286",
+      "author": "Manuf"
+    },
+    "id": "90fa676fd57841d50d03ca8dcae433f4c3f0b5642fa8bbc41793e31d5ccff8d6"
+  },
+  {
+    "source": "hn",
+    "title": "Contextify for Windows – Live Index of Your Claude Code/Codex History",
+    "url": "https://contextify.sh/windows",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-09T18:51:29Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Contextify for Windows 11 runs on x64 and ARM64 for background indexing, command-line access, and optional Cloud sync.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49631979",
+      "author": "bredren"
+    },
+    "id": "516df65f9cc52f9d227a5896493b3f41a314d7c4d68d6094d1fb00620d5ffac1"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Self-hosted company OS, Claude Code and Codex agents in departments",
+    "url": "https://github.com/OtoDock/oto-dock",
+    "raw_score": 46,
+    "comment_count": 12,
+    "posted_at": "2026-09-09T17:57:55Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Your personal AI agent platform — self-hosted, BYO Claude/Codex subscription - OtoDock/oto-dock",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49630606",
+      "author": "dimitrismrtzs"
+    },
+    "id": "5821ed47a8049e2f8a32932697f05c722ec56955a0084489ec6eed3fcc925ea1"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Hordev – Claude Code skills that build instead of asking questions",
+    "url": "https://github.com/heffrey/hordev",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T17:45:35Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Contribute to heffrey/hordev development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49630355",
+      "author": "heffrey"
+    },
+    "id": "11f966c2046e78f88ec7c66bc3697f0516a0b009488177c5ab8eb59cc275f53e"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Rdltr – Inbox zero for your reading list",
+    "url": "https://rdltr.app/",
+    "raw_score": 23,
+    "comment_count": 17,
+    "posted_at": "2026-09-09T17:06:21Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Your reading backlog. A spin on Safari Reading List. Works everywhere. Favicons. Vim bindings. Passkeys.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49629747",
+      "author": "eduardosasso"
+    },
+    "id": "163b4a06b7bca99114236b9284a6c0470c2cd6c4d53c6ddfce0ba140837c5f49"
+  },
+  {
+    "source": "hn",
+    "title": "Dive into FrontierHarness Eval: Claude Code cost 5.6× for the same pass rate",
+    "url": "https://runta.com/blog/introducing-frontierharness-eval",
+    "raw_score": 6,
+    "comment_count": 3,
+    "posted_at": "2026-09-09T15:59:47Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "FrontierHarness compares 9 production coding harnesses across 12 configurations on 30 agentic tasks, holding the model, tasks, and runtime constant. Pass rates cluster in a 17-point band. What separates the harnesses is how many tokens and steps they spend to get there: 17x from cheapest to most expensive per completed task.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49628679",
+      "author": "ADD-SP"
+    },
+    "id": "076a305f06a52e3ebc2a9ed43d8edfa32c460fb2a00ba77c37e05f0b869775ea"
+  },
+  {
+    "source": "hn",
+    "title": "I Am an Anthropic Guy. GPT-6 Astra Made Me Resubscribe to Codex",
+    "url": "https://thoughts.jock.pl/p/gpt-6-astra-vs-claude-fable-5-1-agent-notes-2026",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:56:55Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Fable 5.1 got better and hungrier. Astra is a generation ahead at using my computer. Both facts changed how I work.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49628634",
+      "author": "joozio"
+    },
+    "id": "d27221e77b388e37462533825948ae0b394a1744054652f17c01fb4b37ba9c68"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: How to know when Claude has changed model itself during processing?",
+    "url": "https://news.ycombinator.com/item?id=49628008",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-09-09T15:18:36Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "so does it mean that Claude has changed the model itself when it shows complete processing messages?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49628008",
+      "author": "mfaisalghufran"
+    },
+    "id": "4826c065dc11e9475d6ac391458f6d6038778bddbf211591f98c0e22019f0473"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Castforge – run Claude Code, Codex and Gemini as one dev team",
+    "url": "https://castforge.ai/",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T13:47:56Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Castforge runs Claude Code, Codex, Gemini and GitHub Copilot as one reviewed AI dev team on a live board you steer. Free during early access. Windows.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49626524",
+      "author": "jabenhaim"
+    },
+    "id": "6f44e2c566ab87dd04dd87e889bacecf6718d7e6eab3067347d677624cf76b87"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Type.com: Multiplayer Codex/Claude in the cloud for non-tech use cases",
+    "url": "https://news.ycombinator.com/item?id=49626148",
+    "raw_score": 14,
+    "comment_count": 10,
+    "posted_at": "2026-09-09T13:24:02Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Everything is cloud first by default. No fumbling with handoff flows or anything weird like that. Every thread is backed by a persistent sandbox VM so you don't even have to worry about git worktrees if you're doing something git backed. You can start work from claude, codex, slack, or email and then push it into a shared session in Type where your whole team can co-prompt. Since our \"meta-harness\" is a wrapper of codex-cli and claude code, you can connect your existing subscriptions.  Because we're a multiplayer product we had to make sure that we only bill the subscription for messages authored by that user. If Alice has a subscription and she starts a thread with an agent, she will have her subscription used. If Bob comes in and add their own prompt but Bob does not have a subscription, they will be billed against their type usage. We don't charge any margin on tokens. Even with how early the product is, our customers love us and prefer us to using claude code. If I had to say our a",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49626148",
+      "author": "krashidov"
+    },
+    "id": "8159192ae4222e15723d445359dd7df7518fb916beb6f1fe4a85e911f2e6bb80"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Maxxwell – The IDE for Optimal Tokenmaxxing",
+    "url": "https://maxxwell.dev/",
+    "raw_score": 10,
+    "comment_count": 8,
+    "posted_at": "2026-09-09T13:10:30Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Run your coding agents in one workspace. Maxxwell helps you follow their progress, coordinate their work, and focus on what needs your attention.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49625975",
+      "author": "mys1"
+    },
+    "id": "9f9266720412aa540de369190d70dee42b5f51cfa139a33917870e2cc3974e9a"
+  },
+  {
+    "source": "hn",
+    "title": "I stopped reading Cursor's diffs, so I built a gate that refuses them",
+    "url": "https://github.com/polymerix-labs/dont-break",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T15:12:54Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "The trust layer for AI coding agents - say what must never break, prove it holds, enforce it on every agent edit - polymerix-labs/dont-break",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49645157",
+      "author": "darylprodev"
+    },
+    "id": "5770dbb97d6e241670284ba265e9d1340df45242557925bc24d939dca3916e93"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Why does Google allow extensions using ExtPay and similar",
+    "url": "https://news.ycombinator.com/item?id=49642198",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T11:51:58Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "This looks very shady to me so I wonder: Why would Google allow such scripts in the first place?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49642198",
+      "author": "VorticonCmdr"
+    },
+    "id": "fdcff304eae6f1fc0ec82241b5dcb7d0f4c4b1b25b9e356d6744668543b88cc6"
+  },
+  {
+    "source": "hn",
+    "title": "Towards Self-Driving Codebases",
+    "url": "https://cursor.com/blog/self-driving-codebases",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T10:33:17Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "We're making a part of our multi-agent research harness available to try today in preview.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49641373",
+      "author": "tosh"
+    },
+    "id": "3fd7b9ca87dd01986a1cc0a36fb7bc6dee6639f396d3349e5a186a7ddae32648"
+  },
+  {
+    "source": "hn",
+    "title": "Crazy Cursor – Magical Particle Mouse Effects for Chrome",
+    "url": "https://chromewebstore.google.com/detail/crazy-cursor-magical-part/eejfljdgkaanachdckmpmfgjhncihfmd",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T09:01:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Beautiful particle mouse effects plugin with stunning presets for dazzling cursor visuals.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49640615",
+      "author": "lucakk"
+    },
+    "id": "db1fd7175c0147c2ab7df9a63fa8a1ff5dd27a42e9a096defe507cb56803b0a7"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Copperhead – Cursor for circuit boards",
+    "url": "https://copperhead.sh/",
+    "raw_score": 243,
+    "comment_count": 114,
+    "posted_at": "2026-09-08T13:26:45Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "An open-source AI agent that designs, documents and validates real PCBs from a prompt.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49610059",
+      "author": "animeshchouhan"
+    },
+    "id": "677366c88d97c06aa421755dfd84da92f403a67b76cb1e918dd3c24788e2a647"
+  },
+  {
+    "source": "hn",
+    "title": "Why human syntax breaks LLMs (and how to fix agentic coding)",
+    "url": "https://news.ycombinator.com/item?id=49609821",
+    "raw_score": 5,
+    "comment_count": 3,
+    "posted_at": "2026-09-08T13:04:18Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Over the past two years, watching coding agents generate code, we kept noticing an identical failure pattern: models spend 32% to 41% of their inference compute trapped in syntax repair loops. When we investigated the information theory behind this, we realized the problem is not model scale—it is the computational geometry of transformer attention heads when confronted with human-centric grammars:\n1. Python's off-side rule: Lexing requires an internal LIFO indentation stack. Closing 3 blocks emits 0 characters. A single whitespace token split silently re-parents AST subtrees.\n2. Rust's borrow checker: Validity depends on non-local constraint solving across lifetimes and CFGs. Autoregressive generation is strictly forward causal (O(1) feedforward); it cannot backpropagate lifetime conflicts backward during generation. We built AgentScript (ASL): an open-source, statically typed language using single-pass S-expressions that compiles directly to native Rust, Go, TypeScript, and WebAssemb",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49609821",
+      "author": "aslang"
+    },
+    "id": "13d55ca00bfe06b3a5fea4cc408b7702217131d3db16c10602cd599a21d9937e"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Pomeroy v1, give any AI assistant secure access to native macOS apps",
+    "url": "https://pomeroy.app/connect",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-08T08:58:26Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Connect Pomeroy to the AI assistant you already use: 14 in one click, and 10 more by pasting a configuration it writes for you. Not claude.ai or ChatGPT.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49607578",
+      "author": "joesaunderson"
+    },
+    "id": "4519098b1ebb45753265d2a3f2786425f6a5a4b63c8458e46889477d7badcc26"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: How do you keep AI coding agents in sync with a changing Figma file?",
+    "url": "https://news.ycombinator.com/item?id=49595961",
+    "raw_score": 2,
+    "comment_count": 2,
+    "posted_at": "2026-09-07T09:17:00Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I keep running into this: hand a Figma file to Claude Code/Cursor, get a good first implementation, then the design changes and the agent has no memory of what changed or why. Curious if others have hit this and what you're doing about it, if anything.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49595961",
+      "author": "rjvidentia"
+    },
+    "id": "f58790853977dbf88b8fd92d5de671ccc8bed746c648cce95bdc415caa77c580"
+  },
+  {
+    "source": "hn",
+    "title": "Desktop AI for ops is still subsidized",
+    "url": "https://news.ycombinator.com/item?id=49574780",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-05T09:23:39Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Right now the market has a pretty clear pattern. Big labs like OpenAI, Anthropic and xAI are building their own desktop AI and computer-use apps. The trick is they still treat this segment as Growth. Maturity is far away. So the biggest players burn money acquiring customers and giving them huge subsidies on tokens vs real cost. Today the world is getting a huge AI bill, mostly paid by investors. We're running on debt. If there is no real breakthrough, math doesn't lie, there will have to be a cost-effective compromise. Using heavy models for coding is justified. Using them for the simplest things in operations is not, economically. Tests: open source models like GLM or Kimi, hosted by big US inference providers, do fine on day-to-day work and are sometimes 5x-7x cheaper (depends on config and model). My bet is simple. The AI bill will move from investors to users (mostly B2B). Companies will need an app like GPT Desktop, Claude Desktop, Grok Bot, with enterprise-grade integrations, bu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49574780",
+      "author": "xAdamx"
+    },
+    "id": "31a0d7e8fe1c7e789c1bea91e75ced3298bffb39caf22ddd7fd8dc3d6159bced"
+  },
+  {
+    "source": "hn",
+    "title": "Once again, overcompliance affects Venezuelan users, this time Cursor",
+    "url": "https://twitter.com/LuisAlejandro/status/2096022819024904513",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-05T04:57:25Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Did you know that @cursor_ai cancelled all Venezuelan accounts today?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49573194",
+      "author": "firekvz"
+    },
+    "id": "c8d884205df74b83c9466a143c3fe5f8057cf8a82a68dd7d5dc54f4c142648cd"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Rubato – Retro-Mac desk device mirrors AI coding state-ESP8266",
+    "url": "https://github.com/lovaxi/Rubato_Device",
+    "raw_score": 7,
+    "comment_count": 2,
+    "posted_at": "2026-09-05T03:16:57Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Rubato - a palm-sized retro-Macintosh AI desk companion that turns AI wait time into gentle health breaks. Firmware, tools and docs. - lovaxi/Rubato_Device",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49572780",
+      "author": "Beartificial"
+    },
+    "id": "d0cb37af1b5eb01ed4e129e88b208c2e7da4160441c4e4f13acbab10220571d6"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Why isn't there a cursor for video games development",
+    "url": "https://news.ycombinator.com/item?id=49571091",
+    "raw_score": 2,
+    "comment_count": 6,
+    "posted_at": "2026-09-04T22:45:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "If I had to guess there's a couple reasons: 1)Quality-making a good game requires extreme attention to detail all of which is non coding related. The animations on idle characters, how the background characters look, the sound design and clever story. 90% of gaming is art 2) backlash from players. I think this is an important factor but not the dominant factor. For reasons like games like Slotbound have had amazing positive responses despite being ai generated as long as they are high quality. On the flip side reputation does matter for major studios so adoption can be slow. 3)No money in the industry. Most game studios aren't raining in money, therefore making video games would be an expensive and time consuming hobby that got slightly easier, but is still difficult. A normal prosumer simply doesn't have the time nor dedication to make an project that is going to take months of their time These are my guesses, but I would love to hear responses from people in the industry or people wh",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49571091",
+      "author": "JimsonYang"
+    },
+    "id": "ecdd74c79dddde67d6baa0a7816d46fe6590c57d2c54c88e458430789982f48c"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: SiteTweak – a browser extension to modify any website",
+    "url": "https://chromewebstore.google.com/detail/sitetweak-edit-any-site-w/jnhmhgddbeljneddgcpglgchbdheakbk",
+    "raw_score": 6,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T13:32:39Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Modify any website with AI. Block ads, restyle pages, and add custom features by simply describing what you want.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49564393",
+      "author": "tikhpavel"
+    },
+    "id": "451e64cd8d65924c110fa0703c1e1988f5a18eca8f09c205934bdd8bae5bb674"
+  },
+  {
+    "source": "hn",
+    "title": "I built a tool that turns any topic into a structured YouTube course (using AI)",
+    "url": "https://cursosenvideo.online/",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T12:56:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Convierte cualquier tema en una ruta de aprendizaje estructurada a partir de vídeos de YouTube, curada por IA: sin contenido repetido, ordenada por prerrequisitos, con tiempo estimado.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49563947",
+      "author": "lanba"
+    },
+    "id": "2807b52095c0d57bdf4304e79b6ff9c148c94a43213d9fe964a9af2541062f1e"
+  },
+  {
+    "source": "hn",
+    "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
+    "url": "https://www.wired.com/story/openai-elon-musk-cursor-billion-revenue",
+    "raw_score": 7,
+    "comment_count": 1,
+    "posted_at": "2026-09-04T05:56:03Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "OpenAI recently estimated its Cursor partnership would make more than $1 billion in revenue a year, WIRED has learned. It still walked away after Elon Musk’s SpaceX acquired the AI coding startup.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49561018",
+      "author": "doener"
+    },
+    "id": "2fa113fc74c46c816c6fe5d7f3364628c685699bcdad65ab7d3a0ee9f34434d8"
+  },
+  {
+    "source": "hn",
+    "title": "Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "raw_score": 300,
+    "comment_count": 152,
+    "posted_at": "2026-09-03T21:20:34Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "We watched almost 17k sessions across different types of personas, with 1,163 prompt variations, 75 repositories and 3 coding agents (Claude Code, Codex, Cursor) actually implementing the solutions instead of just recommending one.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49557206",
+      "author": "screm"
+    },
+    "id": "6379e22bcefbb3cdb0a5ea62e5d0db6657fadacdf2e08961c2f7357d973dd769"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: JavaScript grid and pivot library built for coding agents",
+    "url": "https://news.ycombinator.com/item?id=49643496",
+    "raw_score": 6,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T13:35:40Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I started working on this problem because data displays like grids / pivot tables are tricky to get right as more and more features pile up (features like: pagination of data, virtualization, pivots, grouped views, custom renderers, filters, sort, etc) Pre llm and coding agents, I built https://github.com/chartshq/muze (that later got acquired by mode analytics) with grammar of graphics for developers. But I have always felt a library built for agents would have a fundamentally different philosophy than the one built for devs. What does an agent first js grid library mean? The library comes up with few primitives and mental models that agents can use reliably ( https://www.superplot.dev/grid/our-approach/#principles/tabl... ) alongside the design and architecture of the grid (open closed system + data flow + relinquishing right control to agents). Thus enforcing enough abstraction for agents that produce fewer bugs in a single shot ( https://www.superplot.dev/grid/our-approach/#princip",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49643496",
+      "author": "yonl"
+    },
+    "id": "81ef837ee9281bd687f305688df695b7b93341b625247cbd0787124ea88cb1c5"
+  },
+  {
+    "source": "hn",
+    "title": "I'm not learning coding from LLMs, but product design",
+    "url": "https://www.counting-stuff.com/im-not-learning-coding-from-llms-but-product-design",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T16:44:07Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "It's a completely different skill set, but surprisingly fascinating.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49629389",
+      "author": "speckx"
+    },
+    "id": "eb2dfd6c37df22c122669ccf3608a77993c7f5599729367a525741526d6ce1b3"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Anyone still coding like 2021? Where do you work?",
+    "url": "https://news.ycombinator.com/item?id=49626431",
+    "raw_score": 64,
+    "comment_count": 91,
+    "posted_at": "2026-09-09T13:41:55Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "These days I feel I am the only one that hasn’t changed their way of writing software at all. I’d honestly switch careers rather than manage agents. But I’m currently out of work (contract ended) and wondering if there is still a sane place to work, or is it truly time to pivot to another career.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49626431",
+      "author": "sph"
+    },
+    "id": "77be340c9159c7300e20c5863764db94d435a91786bb3af5148f48a266c999fb"
+  },
+  {
+    "source": "hn",
+    "title": "I'm going back to coding by hand",
+    "url": "https://news.ycombinator.com/item?id=49622554",
+    "raw_score": 61,
+    "comment_count": 51,
+    "posted_at": "2026-09-09T07:22:28Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "In work we use LLMs exclusively. Nobody writes code anymore. It's all hands off and we have a high level understanding of how things work but no more than that. When it comes to my side project, I was adding features at breakneck speed with Claude but I realized I have no clue how the new code works or what it changes or breaks. I spent many years of my life working on this project and I don't want to turn it into another vibe coded black box, especially without an org of other engineers to help. So last night, I abandoned my Claude branch with all the fancy new things and started hand coding again. It was very very satisfying. Sure, there was monotony. I changed some variable names and I had to chase down all the places they were referenced, comment out tons of stuff to get things working and then slowly bring it back in, but it felt like coming home to an untidy house after living in hotels for half a year, and starting to clean up. Yeah there's work to do, but this place is mine. My",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49622554",
+      "author": "trencedamp"
+    },
+    "id": "54fb2abae82b73e350c01f0d5451d01f774e1ca5c004adec69e58f4bbf312868"
+  },
+  {
+    "source": "hn",
+    "title": "What LLM coding agents have taken from me",
+    "url": "https://www.awanderingmind.blog/posts/2026-08-08-what-llm-coding-agents-have-taken-from-me.html",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T06:43:32Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "object_id": "49622154",
+      "author": "awanderingmind"
+    },
+    "id": "48e5c01be0ef9fa775d0b6a5429962a92d90adb9088164238076a7f12e89e67b"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Are you leveraging Spec-Driven / Spec-Anchored development?",
+    "url": "https://news.ycombinator.com/item?id=49618556",
+    "raw_score": 6,
+    "comment_count": 3,
+    "posted_at": "2026-09-08T23:22:15Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I have done quite a bit of LLM-assisted coding but starting to work towards (and educate others in my org) about more structured approaches to this, to be able to deliver more complicated features with stronger guardrails than prompt-based coding. Spec-Driven/Anchored development is an emerging practice but I'm not clear on how battle-tested it is. What is your experience with it?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49618556",
+      "author": "locusofself"
+    },
+    "id": "8d1de67e3bd8124f37494c634349dc850022e6739f4377e1d73ee9e7c3ddd371"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Bestie, a coding agent that respects you",
+    "url": "https://github.com/jolexxa/bestie",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-08T15:52:13Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "a coding agent that respects you 🥺. Contribute to jolexxa/bestie development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49612123",
+      "author": "jolexxa"
+    },
+    "id": "982583c0a35edc01a49c1bdbc3cc67607aac73532d535885a03832ceb20d91d5"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: How Pagecord Uses AI",
+    "url": "https://news.ycombinator.com/item?id=49597339",
+    "raw_score": 3,
+    "comment_count": 2,
+    "posted_at": "2026-09-07T12:04:39Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I published a /ai page ( https://pagecord.com/ai ) to be fully open about what I use AI for wrt the business. Waste of time, or is this something more companies should be disclosing? Curious to know what people think.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49597339",
+      "author": "lylo"
+    },
+    "id": "631e3090a985966166c733a0a140fad67c742da1a2fa7dde3b020c0414908ee8"
+  },
+  {
+    "source": "hn",
+    "title": "I just don't care about your skill files",
+    "url": "https://news.ycombinator.com/item?id=49593930",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-09-07T04:33:26Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I’m seeing quite decent data analysis work done by otherwise busy people that they’d never otherwise have the time to do, supported by readable python code showing how the stats were generated, and allowing us to run actual experiments and rerun the stats to see if the analysis and suggested actions has a meaningful impact. I don’t know about whether the trillions and trillions of dollar people are barking up the wrong tree, but this stuff I’m talking about is cheap and easy and we see the results.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49593930",
+      "author": "drunkpotato"
+    },
+    "id": "97cd0edf078a1c2779e7c9740601747d7457c99a1f6d26a8ca8b8c11c70a6747"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Those still optimistic about a career in software – why?",
+    "url": "https://news.ycombinator.com/item?id=49593185",
+    "raw_score": 4,
+    "comment_count": 10,
+    "posted_at": "2026-09-07T02:31:45Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "So what happens to people who spent decades in school and on the job, who are passionate about coding and get their energy from writing code? I don't believe in universal basic (or high) income, because that's not how the world has worked so far. I've never seen a world where all humans have equal capabilities or resources — physical strength, financial strength, anything. If everyone gets paid the same, I don't see where the motivation to work comes from. And without work, I think people's cognitive skills will decline and we'll end up completely dependent on the machines slaves to the tech. Thinking about all this has left me feeling pretty low. For those of you in tech who still feel positive about waking up every day: what keeps you motivated?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49593185",
+      "author": "cipherdc"
+    },
+    "id": "81bc9120da8c4a9f3bd4b46a5b74ca5463a16681cbc554b5607ab64976584d64"
+  },
+  {
+    "source": "hn",
+    "title": "I track LLM API prices daily, found a 33x cost gap in the same model",
+    "url": "https://news.ycombinator.com/item?id=49586810",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T14:23:53Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "One thing that fell out of the data surprised me: on the exact same model, a coding-agent-shaped call (large context in, code out) costs roughly 33x more per call than a bulk-classification-shaped call. I checked this on GPT-5.6, Claude Sonnet 5, and Gemini 3.7 Flash and got 33.6x, 33.3x, and 33.3x respectively -- almost identical despite three unrelated pricing tables. Seems to be a property of the call shape, not the vendor. Writeup here: https://costpertoken.dev/guides/why-agent-calls-cost-more-than-chat-calls/ The site is a static Cloudflare Worker. Data collection runs via a local launchd job independent of any AI model or API, specifically so it can't silently stop working. Feedback and pricing corrections welcome -- it's day 8, so there are rough edges.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49586810",
+      "author": "costpertoken"
+    },
+    "id": "1b6d274e0eaed9b9a067ba23db6d47eaaaabfc1a54f9de5ce155c54f9091b65b"
+  },
+  {
+    "source": "hn",
+    "title": "Using Blender with coding agents on macOS",
+    "url": "https://til.simonwillison.net/llms/blender-coding-agents-macos",
+    "raw_score": 8,
+    "comment_count": 0,
+    "posted_at": "2026-09-06T04:56:40Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Modern frontier models have got really good at using Blender. I've been having a lot of fun trying this out recently - models can produce .blend files you can edit in Blender itself, and can also render images and even movies (by rendering a sequence of images and combining them with ffmpeg ).",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49583457",
+      "author": "theanonymousone"
+    },
+    "id": "42c629c7908d5900416cb9240c00683c9f5cd9c72e911363900efb225850790c"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Are Devtools Dead?",
+    "url": "https://news.ycombinator.com/item?id=49578837",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-09-05T17:43:09Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Are devtools dead, or is it specifically human-workflow devtools that are dead while agent-infrastructure becomes a big category? Will this last or will LLMs getting better eradicate the whole field as demand gets lower and lower? I want to know what have you stopped paying for since adopting agents, and what have you started paying for?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49578837",
+      "author": "enismustafaj"
+    },
+    "id": "f7ed6176fb3a8e0909cac7d5eb322046c74b7d36f7e72090ddee6f05d39751ca"
+  },
+  {
+    "source": "hn",
+    "title": "Bash Is the Glue: Why Your Terminal Is the Real Superpower Behind Coding LLMs",
+    "url": "https://www.innerkore.com/blog/bash-glue-terminal-real-superpower-behind-coding-llms",
+    "raw_score": 4,
+    "comment_count": 2,
+    "posted_at": "2026-09-02T17:33:12Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Innerkore Technologies Private Limited builds modern web applications, AI-enabled products, and digital platforms.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49539592",
+      "author": "gagan2020"
+    },
+    "id": "06d58e8a89428acc03993f983756024487cfbf50ba750f12532df66fc51bccf9"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Aura – a Rust agent that investigates and fixes production incidents",
+    "url": "https://github.com/mezmo/aura",
+    "raw_score": 28,
+    "comment_count": 6,
+    "posted_at": "2026-09-02T15:55:14Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "AURA is a production-tested SRE agent platform you can deploy in minutes.  AURA handles the guardrails, APIs, state management, streaming, and failure handling required to put AI to work safely on ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49538195",
+      "author": "jvogt"
+    },
+    "id": "f8dafd6fe0860d7f0227ddc807905b72caf1692fe3a944091afaebc055b966fc"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: An Autonomous Agent for Slay the Spire",
+    "url": "https://github.com/AttemorySystem/spire-agent",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-02T07:15:15Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "An Autonomous Agent for Slay the Spire. Achieved multiple A20H wins with both Ironclad and Defect. - AttemorySystem/spire-agent",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49532826",
+      "author": "langs"
+    },
+    "id": "b4c8366ecdb125d116e3f9c2e6545efca10f32a73d975bd2bd4e312395bb904d"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Wife: AI that lets you pick the best Card for each Purchase",
+    "url": "https://www.getwife.co/",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-01T18:17:38Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Same tap. Better card. Wife routes every purchase to the card that earns you the most, and tells you why.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49525763",
+      "author": "white_tiger"
+    },
+    "id": "a76f0dde282fd7dee198ad1cf3164ff912804fc9eb03bd7017fe95ae67b06b66"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Which model is best for pair-programming?",
+    "url": "https://news.ycombinator.com/item?id=49192610",
+    "raw_score": 1,
+    "comment_count": 3,
+    "posted_at": "2026-08-06T04:55:33Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I draw a huge amount of joy by working WITH my AI agents as opposed to them doing everything autonomously. However all the SOTA models seem to be actively doing the opposite: hide what they are busy with and take everything to completion with as litle interaction with a human as possible. Which models do you guys think are the best for pair-programming? And is there a way to change this behavior of the SOTA models, or are they just fundamentally designed to be like that?",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49192610",
+      "author": "bridgettegraham"
+    },
+    "id": "20e2efac71687404b57017cfc015f7e3a9da26f1186cfe61bf5be4e36667946f"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Ray-color, color palettes sampled off a raytraced tennis ball",
+    "url": "https://meodai.github.io/ray-color",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-07-27T15:31:53Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Generative color palettes from a raytraced scene — edit the conditions, not the colors.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49071076",
+      "author": "meodai"
+    },
+    "id": "7d7e9c4bc0664e95d584d35a3684b8c591adef33ea7e89840abd06480a6d63c1"
+  },
+  {
+    "source": "hn",
+    "title": "Tell HN: We need an accounting system for cognitive debt",
+    "url": "https://news.ycombinator.com/item?id=48760460",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-07-02T12:30:56Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Programming is about building knowledge. That used to be simpler. Until recently, the code itself was proof of understanding. That era is over.\nNow understanding has to be traced to something far more elusive: human mental models. Those are harder to track.\nI have previously described a kind of “mind palace”: an abstract model of a system where I can wander around, open and close doors, knock down a wall, add a new wing, and feel what connects to what.\nThat mental model is what lets me change code with confidence. It is what lets me smell that something is wrong before I have proved it.\nWhen that model is missing, things grind to a halt. Trust disappears. Changes become painful. Fear of touching anything grows. You become a tourist in your own codebase. How much of your codebase is backed by human mental models? The burden of proof is on you, you trigger-happy, agent-pilled developer.\nI think we need an “accounting system” for cognitive debt.\nA system that can answer simple but uncomfo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "48760460",
+      "author": "mikaelaast"
+    },
+    "id": "9e4494e2b3bc8de39ac34fd59e66b76e74f0d71111b5558778d95be5b449c5ef"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Open-Source Interview Platform",
+    "url": "https://github.com/CoderScreen/coderscreen",
+    "raw_score": 6,
+    "comment_count": 0,
+    "posted_at": "2026-07-01T17:31:28Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Modern, open-source technical hiring platform. Contribute to CoderScreen/coderscreen development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "48750413",
+      "author": "rogutkuba"
+    },
+    "id": "a83a5b22e7a1023b25e0b778c893a43dbe162e85c8b6e23ddde80297725c4035"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Unofficial cross-platform Shure MV client",
+    "url": "https://github.com/Humblemonk/shurectl",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-06-26T09:58:12Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "A terminal UI configurator for Shure audio interfaces and mics. Replaces the Windows/Mac-only ShurePlus MOTIV Desktop app - Humblemonk/shurectl",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "48684618",
+      "author": "PennRobotics"
+    },
+    "id": "9578aadecd95e8eb07dae1a24cc08c13b49780ef1f81049c40ffb5027dc60b9c"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: AI pair programmer for Emacs",
+    "url": "https://github.com/jaketothepast/codetutor",
+    "raw_score": 70,
+    "comment_count": 2,
+    "posted_at": "2026-06-08T18:34:21Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "An AI Pair Programmer, that teaches you to code as you write, for Emacs - jaketothepast/codetutor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "48449430",
+      "author": "jakewindle47"
+    },
+    "id": "a3ef778b2e14d62c9f3fc4c0d50ae6c8ee6297e16c744be8ab2f8e32e70603a6"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Anyone else went through the AI-editor carousel back to the terminal?",
+    "url": "https://news.ycombinator.com/item?id=47709343",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-04-09T20:23:06Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Cursor → Windsurf → VSCode + Claude → Warp → cmux → nvim + Claude Code Short version of what didn't stick: - Cursor: felt like a worse VSCode with AI bolted on - Windsurf: laggy enough to break flow - VSCode + Claude extension: actually the best of the bunch for\n  a while, but started feeling like overkill once I realized\n  90% of what I used was the editor + chat sidebar - Warp: opinionated block UI and telemetry never sat right - cmux: lags unbearably, and I ended up babysitting parallel\n  agents more than coding Dropped all the way down to nvim with Claude Code as a sidebar and that's been the stickiest by a wide margin. Feels closer to pair programming than to orchestration or autocomplete. Current stack: - Ghostty (native splits, no multiplexer) + moonfly theme - zsh + Starship, zoxide/eza/bat/fd/rg, fzf history - Neovim on kickstart.nvim with lualine, neo-tree, telescope - Claude Code as an nvim sidebar, via subscription (not API) Dotfiles: https://github.com/Doldrums/dotfiles Qu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47709343",
+      "author": "amoriodi"
+    },
+    "id": "15339af0c1ebd533fef53a34dad2a2ab0cfa01841adf2c8103dd8857aa6b44eb"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Marimo pair – Reactive Python notebooks as environments for agents",
+    "url": "https://github.com/marimo-team/marimo-pair",
+    "raw_score": 140,
+    "comment_count": 35,
+    "posted_at": "2026-04-07T17:47:46Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Drop agents inside running marimo notebook sessions - marimo-team/marimo-pair",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47678844",
+      "author": "manzt"
+    },
+    "id": "904533af629f3aa53b9f095e39364ada131f188008be35c354c3b51735e9851b"
+  },
+  {
+    "source": "hn",
+    "title": "Rethinking Pair Programming in the Age of AI",
+    "url": "https://learnings.aleixmorgadas.dev/p/rethinking-pair-programming-in-the",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-04-06T10:47:36Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Why \"pairing with AI\" is harmful to your team and what to do instead",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47659212",
+      "author": "PretzelFisch"
+    },
+    "id": "8ca761b22ccff09a5ccd940307104f01f9409a0cec8b016d56736b35300771fd"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Vim Navigator – MCP server that lets AI agents drive your Neovim",
+    "url": "https://github.com/kcaldas/vim-navigator",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-04-05T23:41:42Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "MCP server that lets AI agents drive a Neovim instance for visual code walkthroughs - kcaldas/vim-navigator",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47655128",
+      "author": "kcaldas"
+    },
+    "id": "5794b5c0a1b9df9d8af119d1d81f8011da0edb34730e6daf6629563238403555"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Best stack for building a tiny game with an 11-year-old?",
+    "url": "https://news.ycombinator.com/item?id=47563423",
+    "raw_score": 18,
+    "comment_count": 28,
+    "posted_at": "2026-03-29T14:24:59Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I have a Mac and Claude Code Max and Codex, so I am equipped to create AI-slop. I’m happy to do some setup and pre-wiring. Mainly I want her to understand some basics and feel the joy of building something visual in a few hours. Based on historical experience it will have to be something with pink unicorns. I tried Godot, but it felt like too much complexity for this use case. If we do a bit of pair programming then using Godot would take too long to iterate or explain concepts. I looked at https://github.com/Jibby-Games/Flappy-Race for instance but do not think I could make that work with her in an afternoon or two. I was also unsure how to get or manage game assets. Would you recommend Godot, Scratch, PICO-8, JS in the browser (p5.js), or something else? Especially interested in replies from people who’ve actually made games with kids around this age.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47563423",
+      "author": "richardstahl"
+    },
+    "id": "5252fb40deb8db9da004b50e33a57a1f7f455d1457ae9689b6064f36788e9eea"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: What if your synthesizer was powered by APL (or a dumb K clone)?",
+    "url": "https://octetta.github.io/k-synth",
+    "raw_score": 92,
+    "comment_count": 33,
+    "posted_at": "2026-03-15T12:58:13Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I built k-synth as an experiment to see if a minimalist, K-inspired array language could make sketching waveforms faster and more intuitive than traditional code. I’ve put together a web-based toolkit so you can try the syntax directly in the browser without having to touch a compiler: Live Toolkit: https://octetta.github.io/k-synth/ If you visit the page, here is a quick path to an audio payoff: - Click \"patches\" and choose dm-bell.ks. - Click \"run\"—the notebook area will update. Click the waveform to hear the result. - Click the \"->0\" button below the waveform to copy it into slot 0 at the top (slots are also clickable). - Click \"pads\" in the entry area to show a performance grid. - Click \"melodic\" to play slot 0's sample at different intervals across the grid. The 'Weird' Stack: - The Language: A simplified, right-associative array language (e.g., s for sine, p for pi). - The Web Toolkit: Built using WASM and Web Audio for live-coding samples. - AI Pair-Programming: I used AI agents",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "47386983",
+      "author": "octetta"
+    },
+    "id": "a9005be7b4f6c2ff12173754ce36bd74da6471bc2cfcd003fa090b25b997f677"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: K-synth – A web-based array language playground for synth design",
+    "url": "https://octetta.github.io/k-synth",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-03-13T12:45:33Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I built k-synth as an experiment to see if a minimalist, K-inspired array language could make sketching waveforms faster and more intuitive than traditional code. I’ve put together a web-based toolkit so you can try the syntax directly in the browser without having to touch a compiler: Live Toolkit: https://octetta.github.io/k-synth/ If you visit the page, here is a quick path to an audio payoff: - Click \"patches\" and choose dm-bell.ks. - Click \"run\"—the notebook area will update. Click the waveform to hear the result. - Click the \"->0\" button below the waveform to copy it into slot 0 at the top (slots are also clickable). - Click \"pads\" in the entry area to show a performance grid. - Click \"melodic\" to play slot 0's sample at different intervals across the grid. The 'Weird' Stack: - The Language: A simplified, right-associative array language (e.g., s for sine, p for pi). - The Web Toolkit: Built using WASM and Web Audio for live-coding samples. - AI Pair-Programming: I used AI agents",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "47363748",
+      "author": "octetta"
+    },
+    "id": "a9005be7b4f6c2ff12173754ce36bd74da6471bc2cfcd003fa090b25b997f677"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Cyqle – Multiplayer cloud desktops with AI agent sandboxing",
+    "url": "https://cyqle.in/",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-03-09T22:05:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "A persistent P2P cloud desktop for instant team collaboration. Build, test, and automate together with AI-powered workflows. Start free today.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47316272",
+      "author": "webpolis"
+    },
+    "id": "e1443d1e668bd350dc770cc208728d34bdce7f4d79f01a9215c67605af8ba362"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Epupp – Live, REPL-driven, browser tampering",
+    "url": "https://github.com/PEZ/epupp",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-03-04T16:35:26Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "A web browser extension that lets you tamper with web pages, live and/or with userscripts. - PEZ/epupp",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "47249998",
+      "author": "cospaia"
+    },
+    "id": "e26a8d34e5986a40b13e51bff6a1c165aaa77543074cddb8367390c6ea4eb112"
+  },
+  {
+    "source": "hn",
+    "title": "How similar AI assisted coding is compared to declarative coding",
+    "url": "https://news.ycombinator.com/item?id=46837052",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-01-31T14:37:01Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "At first, it feels like autocomplete on steroids. Then it starts to feel like pair programming. Eventually, something clicks: the way you think about writing code changes. You stop obsessing over the exact control flow and start spending more time on: * clearly describing the problem\n* identifying edge cases upfront\n* defining what \"correct\" actually means That shift mirrors something we’ve already seen before in programming history. --- ## A Familiar Parallel There’s a useful mental model for understanding AI coding tools: > *AI‑assisted coding : human coding :: declarative programming : imperative programming* This analogy isn’t perfect—but it’s surprisingly powerful. Imperative programming is about *procedures*.\nDeclarative programming is about *intent*. AI‑assisted coding pushes software development in the same direction declarative paradigms did: away from micromanaging execution, toward expressing goals and constraints. --- ## Imperative Coding: Telling the Computer How Imperativ",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "46837052",
+      "author": "lonelyjohner"
+    },
+    "id": "9ed483999244de81a19f55de68c4dca965513e34cc554d65e2b47c246e658382"
+  },
+  {
+    "source": "hn",
+    "title": "A developer teamed up with Claude to create Elo programming language",
+    "url": "https://www.theregister.com/2026/01/24/human_ai_pair_programming_elo",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-01-26T00:45:21Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "feature: Bernard Lambeau, the human half of a pair programming team, explains how he's using AI",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "46760366",
+      "author": "indigodaddy"
+    },
+    "id": "2b33d4b58af1d8a3e77284ed48ecfc26957e96be03da363ceacd6e593a083360"
+  },
+  {
+    "source": "hn",
+    "title": "We Stopped CI, Abandoned Code Review, and Embraced AI Pair Programming",
+    "url": "https://www.arcblock.io/blog/en/first-principles-of-ai-native-engineering",
+    "raw_score": 1,
+    "comment_count": 2,
+    "posted_at": "2026-01-19T08:29:44Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Over the past few months, I led a team through intensive iterations on an AI development tool. We hit many walls and validated some counterintuitive f",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "46676325",
+      "author": "robmao"
+    },
+    "id": "1d05f4698e7146cef7e474c3135b6fb409951d7fb1121142ac1cb7267db69e27"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Teamlibra/ry: a Zig framework for Cursor that makes prompting better",
+    "url": "https://codeberg.org/teamlibra/ry",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-01-18T10:17:46Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "⚠️ WORK IN PROGRESS - NOT A FUNCTIONING ALPHA ⚠️ a framework for Cursor Ultra Auto Mode agentic development with a bounded toroidal systems language Rye and a garden-allocated kernel Basin that automatically makes all your prompting better ©kae3g Keaton Livermore twitter/x://@kae3g_",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "46666522",
+      "author": "keatonlivermore"
+    },
+    "id": "e56dc1c1db584e1c08a4cb98fa0b764bf8963d1fb7f7df65df98487334798d4a"
+  },
+  {
+    "source": "hn",
+    "title": "Helping promote the Lax programming language",
+    "url": "https://news.ycombinator.com/item?id=46600699",
+    "raw_score": 2,
+    "comment_count": 6,
+    "posted_at": "2026-01-13T13:29:22Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Official website: https://lax-lang.space Please create your own project forks or empty repositories with .lx files of my Lax programming language so that GitHub can see the interest of users of the Lax project and the popularity of the language. Lax has S-syntax and Lisp-like code. It can help you learn programming and write programs on Linux, even a simple calculator or shell, and much more. Lax also has over 145 commands that you can use to do anything.\nHere's an example of Hello World: [start [image \"Hello World!\"] [nl] ] start - Creates a command chain image - Prints text nl - Creates a line break You can also use just an image using \\n: [image \"Hello World!\\n\"] Here's how to work with input: [start [spot name [input \"Enter your name: \"]] [image \"Hello, \"] [image name] [image \"!\"] [nl]] spot - Creates a variable input - The simple input command will print Lax> and wait for the user to enter input. If it's quoted like \"image,\" it will be the text inside the quotes. Here we go. We cr",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "46600699",
+      "author": "Mavox-ID"
+    },
+    "id": "5785fa9341efc92e02e82aada1260a122137c6896e1e4fbfb63b2e92dd13a2ac"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Swiftcruit – AI assisted technical assessment platform",
+    "url": "https://www.swiftcruit.ai/tools/assessment-question-generator",
+    "raw_score": 4,
+    "comment_count": 1,
+    "posted_at": "2026-09-10T12:49:36Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Paste a job description and get role-specific interview questions in minutes - multiple-choice, descriptive with a rubric, and a coding question validated against real test cases. No account needed.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49642903",
+      "author": "abhishxk1"
+    },
+    "id": "09636d926cc767ccd143c529413b80a403416531a4ff3895a83af8b9380ae9c5"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: I'm not a PostgREST fan this is why I'm building an alternative",
+    "url": "https://github.com/rustrum/xepak",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T17:47:41Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "DSL based REST service for your Sqlite database (and not only) with LUA support, consider it as an alternative to PostgREST - rustrum/xepak",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49630394",
+      "author": "rumatoest"
+    },
+    "id": "3e5b8547fe4d53797bac0e71d2dece5317db01cb6f12b6ad488f51fb5ddca514"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Built myself a super YouTube post-prod studio",
+    "url": "https://twitter.com/xucian_/status/2096626717531992342",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-08T15:44:13Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "just built myself a super youtube post-prod studio\ni just want to film myself rambling\nand all the cutting, grading, uploading, thumbs, short generation is done for me. 31k lines of code for now. when you're too poor to afford an editor, you pay for claude code max to build one",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49611999",
+      "author": "xucian"
+    },
+    "id": "5cc62d6f2aefbfb2dcad042e9033a66a9b40732085f891a005598d02ec251a05"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Anyone using AI agents with SCPI equipment?",
+    "url": "https://news.ycombinator.com/item?id=49568529",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-04T18:45:41Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "I upgraded my home hobby electronics bench with equipment using SCPI (Standard Commands for Programmable Instruments). Looking for others' experiences and suggestions. So far I was able to: -  produce a desktop graph of multimeter V DC readings (a kind of slow oscilloscope) using a LABLOOT LB1041 DMM - set a scope up to decode UART, using a SIGLENT SDS814X - set output voltage on a bench power supply, using an OWON SPS6051 - load arbitrary waveforms into a signal generator using a OWON DGE2045. What are others using SCPI for and are you allowing coding agents to write code to do useful things? What other SCPI equipment would you suggest for a modest home electronics bench? I also use AI agents to evaluate USB-connected devices like UARTs and MCUs (in conjunction with signal generation and scope/meter readings)",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49568529",
+      "author": "softwarewright"
+    },
+    "id": "7a1e3305eac2cad00878e3de838428d21965dfbcb9d0d3a03fe974bbbce3029f"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Open-source, Git-inspired versioning for hardware design – Cascadia PLM",
+    "url": "https://github.com/Cascadia-PLM/Cascadia-App",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-03T16:25:55Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Cascadia is a modern Digital Thread application designed to replace traditional low-code PLM platforms. - Cascadia-PLM/Cascadia-App",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49552651",
+      "author": "kai_cascadiaplm"
+    },
+    "id": "d439fc3635cfd7d0ccf78a4f1185ff241f69da7833a1c4fda790ce0bba9222b0"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: ToolJet – Claude Code and Codex build internal tools, no codegen",
+    "url": "https://github.com/ToolJet/ToolJet",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-09-02T12:01:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49535001",
+      "author": "oss-dev"
+    },
+    "id": "067f046a6a82cf3a007f2390827bcbc8e56ff44ae79c2c8ec639a43649e701f0"
+  },
+  {
+    "source": "hn",
+    "title": "Change MIR to use block arguments instead of phis – LLVM Code Generation RFC",
+    "url": "https://discourse.llvm.org/t/rfc-change-mir-to-use-block-arguments-instead-of-phis/91657",
+    "raw_score": 20,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T19:24:58Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Today’s MIR/gMIR represent SSA dataflow the same way as the IR, with  PHI instructions. This RFC proposes to change MIR away from PHIs, and  towards block arguments, as MLIR uses. This will help make a few  register allocation infrastructure problems easier for AMDGPU. With  block arguments, no explicit instruction exists in successor blocks,  but predecessors need to explicitly represent what it is passing to a  specific successor for a value.  An example:    define i32 @test(i1 %c, i1 %d, i1 %...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49454460",
+      "author": "matt_d"
+    },
+    "id": "83fc769ac958d117f15129d420619f5a27d27df6c6c8bcc8ddad6d99ab1281fe"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: fake-bpy-module – Blender/UPBGE Python autocompletion for external IDEs",
+    "url": "https://github.com/nutti/fake-bpy-module",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-08-26T12:57:49Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Fake Blender Python API module collection for the code completion. - nutti/fake-bpy-module",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49448299",
+      "author": "nutti"
+    },
+    "id": "94e91961aa377474c3080339068303c1fb81cb461926436a9fe64591421cd604"
+  },
+  {
+    "source": "hn",
+    "title": "Ask HN: Is \"3D as software\" about to undergo a Cambrian Explosion?",
+    "url": "https://news.ycombinator.com/item?id=49440962",
+    "raw_score": 3,
+    "comment_count": 2,
+    "posted_at": "2026-08-25T21:33:01Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Is code-native 3D about to undergo a Cambrian explosion? And if that happens, what emergent use cases will we witness? E.g. on-demand 3D, or smart 3D objects that automatically optimize for target environments, etc? A couple of years ago, I got deeply interested in 3D represented as software, instead of static meshes. More recently, I also built a code-native 3D generation project to explore this line of thinking. Building it made me realize: (i) LLMs are increasingly becoming better spatial coders. They're naturally synthesizing sophisticated 3D via code, rather than attempting to output raw vertex data. (ii) There is an emerging niche of users leveraging Three.js, Python, or C# specifically for dynamic, AI-driven generation at runtime. So it seems to me we're moving away from pipelines where code just loads a file, toward runtime compilation where code is the file. If LLMs take the reins of programmable 3D, what happens to the traditional graphics stack?",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "object_id": "49440962",
+      "author": "baigy"
+    },
+    "id": "0a53f929c6b43643705a1f89eefa4027995a91c580a6ddddb8792910e6a807e9"
+  },
+  {
+    "source": "hn",
+    "title": "I've tested some local LLMs on prosumer hardware, here are some findings",
+    "url": "https://news.ycombinator.com/item?id=49410310",
+    "raw_score": 7,
+    "comment_count": 0,
+    "posted_at": "2026-08-23T16:49:11Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Results briefly: - fast small model -> extraction/classification - Gemma -> summarization - gpt-oss -> transcript consultation - large Qwen -> difficult reasoning/code interpretation There wasn't a single best LLM for all tasks. Best summarizer:  \nI took a transcript and asked an LLM to summarize, then graded the summarization. \nGemma 4 e4b was the best and took only 30s. qwen3.6-35b-a3b-ud q2_K_XL took around 2 minutes and incurred in a few omissions. Best \"answerer from files\" (RAG):  \nI added some transcript files and asked questions about facts that should be grounded on the files. \ngpt-oss-20b answered questions perfectly in about 4s. BTL 4 Compact and Gemma 4 e4b did too but took around a minute. Best PII identifier:  \nI asked to identify names of people and organizations plus PII (emails, phones, etc) in a text file. \nQwen 3 4B MLX (not a thinking model) took less than 3s. Others were good too:  BTL 4 Compact, Gemma 4 e4b, Qwen 3.5 9b 4-bit - but they took between 11s and 30s. B",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49410310",
+      "author": "felineflock"
+    },
+    "id": "bfa0c5dff229326fbe3ebb8ca22b53a82d7ba9660f112499748adafa6b3472ca"
+  },
+  {
+    "source": "hn",
+    "title": "Why can AI generate Super Mario but not a wedge ramp for my robot vacuum?",
+    "url": "https://news.ycombinator.com/item?id=49405520",
+    "raw_score": 11,
+    "comment_count": 6,
+    "posted_at": "2026-08-23T01:45:17Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "For context: I bought a Bambu P2S but can't model. I tried the \"describe\n  it and get a model\" AIs — the output is unusable, you can't adjust it,\n  it's never quite what I meant. I tried having an agent write Python to\n  build geometry directly — it tops out at simple primitives.\n \n  What finally worked: geometric decomposition. I break a complex part into\n  ordered, grouped steps, describe each as a small spec, and let an agent\n  execute them in Blender (via blender-mcp). That process turned out to\n  abstract into a small engine — the key insight being it converts the 3D\n  spatial reasoning LLMs are bad at, into the structured code they're good\n  at. I wrote it up here: https://github.com/zhuchaokn/spec-3d-model\n \n  My questions:\n  - Why is \"functional part\" generation so much weaker than\n  \"figurine/aesthetic\" generation? Is it data (no parametrized-CAD training\n  sets), representation (mesh vs B-rep), or evaluation (nobody benchmarks\n  \"does it print / is it watertight\")?\n  - Is \"tu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49405520",
+      "author": "zhuchaokn"
+    },
+    "id": "d82b7b553d762f51d97e7dc4580c469d8f106717653a0292de8dad7123895b83"
+  },
+  {
+    "source": "hn",
+    "title": "Launch HN: Vendo (YC S26) – Let users build features on top of your product",
+    "url": "https://github.com/runvendo/vendo",
+    "raw_score": 61,
+    "comment_count": 22,
+    "posted_at": "2026-08-20T15:29:52Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Embedded agents your customers use to automate work, build views, and connect their tools. - runvendo/vendo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49376038",
+      "author": "yousefh409"
+    },
+    "id": "cd5d17946e93023b166d8718e968ff2f5b0c67574132a375145fcfd5e9990923"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Bisecto – A minimalist game about cutting shapes into 50/50 halves",
+    "url": "https://bisecto.com/",
+    "raw_score": 7,
+    "comment_count": 4,
+    "posted_at": "2026-08-20T14:15:29Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Bisect geometric shapes into exact 50/50 halves. Can you hit 100% precision? Play today's daily challenge or challenge your friends.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49374879",
+      "author": "bpx51"
+    },
+    "id": "aba7c18584305d0395cb705748bd4360cece392c24d7ac798966d174ba160e8c"
+  },
+  {
+    "source": "hn",
+    "title": "Code-native generation of highly programmable 3D assets (2026)",
+    "url": "https://arxiv.org/abs/2607.22738",
+    "raw_score": 55,
+    "comment_count": 40,
+    "posted_at": "2026-08-18T14:54:44Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Current 3D generative models mostly produce a final surface: a visually strong but largely opaque mesh. Interactive 3D worlds need more than a surface. They need named parts, an assembly hierarchy, measurable constraints, local edit handles, and joints for articulation. We present Nova3D, a system that generates 3D assets as executable Blender source code; the compiled mesh, a binary glTF (GLB), is treated as the artifact, not the asset. Because the output is a program, semantic handles exist at generation time rather than being recovered afterward by segmentation or rigging. We evaluate on Nova3D-Bench, a frozen, spec-grounded benchmark of 54 items across six domains and three difficulty levels with text and image inputs, against eleven baselines in four families (mesh-native, part-structured, code-native, and CAD) plus a same-LLM ablation. Nova3D produces an executable program and a valid artifact for 54/54 items. Every asset exposes named parts organized in a parent-child assembly t",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49346538",
+      "author": "baigy"
+    },
+    "id": "c2d688c9feeaef69141107f95a924b0141b482b784efeb5cebc2ab944098acc8"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Build beautiful web apps faster with UiSvelte",
+    "url": "https://github.com/sappsdev/ui-svelte",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-08-18T02:48:22Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Ui Svelte Library. Contribute to sappsdev/ui-svelte development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49340621",
+      "author": "victorriba"
+    },
+    "id": "c6dc85d293d0b2d9dc756483862e5d9e91583f8cd526031e44dfd6fdf4c0fa8f"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: HarnessRouter: Unified interface for agent harnesses",
+    "url": "https://github.com/harnessrouter/harnessrouter",
+    "raw_score": 10,
+    "comment_count": 14,
+    "posted_at": "2026-08-17T18:33:38Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49335595",
+      "author": "songrenchu"
+    },
+    "id": "78c7021cdcc8a2215cd31cebd18aeeec6b88ff213cc2a042793415c77840de36"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Continuum – Financial simulations for DIY multimillionaires",
+    "url": "https://continuum-app.xyz/",
+    "raw_score": 7,
+    "comment_count": 12,
+    "posted_at": "2026-08-17T00:58:35Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "Model your equity, taxes, and long-run net worth. Free take-home pay and state-relocation tax calculators; Pro adds saved scenarios and deep equity modeling.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49325445",
+      "author": "charleswcho"
+    },
+    "id": "372b8d6bc52cc5110693cbfa95c24dd53c4b1111b5b99d9d8962d1dcc922b931"
+  },
+  {
+    "source": "hn",
+    "title": "Show HN: Velorn – an open-source desktop video editor with MCP agent control",
+    "url": "https://github.com/VelornLabs/velorn",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-08-15T16:15:52Z",
+    "fetched_at": "2026-09-10T15:18:37.541814+00:00",
+    "excerpt": "AI-native video editing built around real creative timelines, generative workflows, and local agent control. - VelornLabs/velorn",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "object_id": "49311785",
+      "author": "j_aime"
+    },
+    "id": "8b250b9aff65439b141c8921e2eabb5bda228d99f586df66b3bbeb5d2ae21e50"
+  }
+]

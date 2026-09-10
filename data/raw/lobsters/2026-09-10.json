@@ -1,0 +1,156 @@
+[
+  {
+    "source": "lobsters",
+    "title": "A rant about phishing: It's not the user's fault (and not DNS either)",
+    "url": "https://maurycyz.com/misc/domains",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T10:14:48.267-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "\"For safety, don't click suspicious links\"",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "9szn91",
+      "tags": [
+        "security",
+        "web"
+      ]
+    },
+    "id": "d39b5e367f9de632a60721b479391b354cbe8a5c260bd6e8760036162bb648be"
+  },
+  {
+    "source": "lobsters",
+    "title": "How CHERIoT Provides Strong and Usable Isolation Without an MMU",
+    "url": "https://queue.acm.org/doi/10.1145/3831361",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T09:59:03.130-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "gtvx0w",
+      "tags": [
+        "hardware",
+        "osdev",
+        "security"
+      ]
+    },
+    "id": "af5b453bfdf77b596c2f9f772fcd6e6feb66ef0b12c11ed211e9dafd5b966128"
+  },
+  {
+    "source": "lobsters",
+    "title": "Package Manager Trends",
+    "url": "https://nesbitt.io/2026/09/10/package-manager-trends.html",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T07:30:44.019-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "min-release-age, minimum-release-age, -Zmin-publish-age, cooldown.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qwbyxh",
+      "tags": [
+        "programming",
+        "security"
+      ]
+    },
+    "id": "bff4375ee60418946197d05bf377904a52c264c5a1c396f181c31723dd481e3e"
+  },
+  {
+    "source": "lobsters",
+    "title": "Knowledge Retention & Sharing in DF/IR",
+    "url": "http://windowsir.blogspot.com/2026/09/knowledge-retention-sharing-in-dfir.html",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-10T04:06:21.753-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "I had an opportunity a bit ago to engage with three other folks within the industry, all at the same time, and all of us from varied backgro...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "hdgysn",
+      "tags": [
+        "practices",
+        "security"
+      ]
+    },
+    "id": "4d6cb3836b4d8a37b4551dbbda2711f45806092a2b0014d3c2536174ab1c15a1"
+  },
+  {
+    "source": "lobsters",
+    "title": "An alignment assessment of recent cybersecurity incidents",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:54:41.446-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "xokuhi",
+      "tags": [
+        "ai",
+        "security"
+      ]
+    },
+    "id": "415f8f1af13b2f4b565974b07a6ffcd81e3fe8a437abd0b3d5ba5a692190b386"
+  },
+  {
+    "source": "lobsters",
+    "title": "Efficient and accurate systems for querying unstructured data",
+    "url": "https://stacks.stanford.edu/file/fk030tb6783/thesis-augmented.pdf",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-09T15:38:35.316-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "Abstract: (shortened) In recent years, automatic analysis over this unstructured data has become possible via machine learning (ML). Analysts can use ML to extract structured information from these unstructured sources, such as object types and location from a video. The structured information can subsequently be used in downstream analysis, e.g., the urban planner can count the number of cars that passed by an intersection. Unfortunately, using ML for these analyses is challenging. Deploying ML is prohibitively expensive for many organizations: naively analyzing a year of video from a small town can cost millions in cloud compute credits. ML methods are also unreliable, returning incorrect results, which can lead to downstream errors. Finally, deploying ML for analytics requires knowledge of deep learning, data systems, programming, and other technical skills. In light of these challenges, we make two observations: many applications can tolerate approximations, if there are guarantees",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "short_id": "v8atna",
+      "tags": [
+        "ai",
+        "databases",
+        "pdf"
+      ]
+    },
+    "id": "db8b741b4fc5a11f1d3fa85ec5ca382e6327f8afed7640a74868b8ed99228b53"
+  },
+  {
+    "source": "lobsters",
+    "title": "Bulk AbuseIPDB reporting using command-line tools",
+    "url": "https://blog.mbirth.uk/2026/08/30/bulk-abuseipdb-reporting-using-command-line-tools.html",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-09-09T15:26:56.196-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "Some botnet is scraping my local Gitea instance by requesting every single URL possible. Even the same table is queried in every variation possible: sorted ascending, sorted descending, sorted by second column ascending, sorted by second column descending, and so on. This creates unnecessary load on the server and traffic on the line.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vjds7h",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "e6090dc41eda0db0ee775737510d7d70c486c47b4ea8eb39cb2699b944d2d045"
+  },
+  {
+    "source": "lobsters",
+    "title": "Better AI code comment detector",
+    "url": "https://entropicthoughts.com/better-ai-comment-classifier",
+    "raw_score": 9,
+    "comment_count": 2,
+    "posted_at": "2026-09-09T13:27:24.767-05:00",
+    "fetched_at": "2026-09-10T15:18:39.641042+00:00",
+    "excerpt": "When I trained the previous ai comment classifier , I used partially personal\nprivate data to do it, and built it on a somewhat shaky foundation, so I\ncouldn’t share the code or data. I rebuilt it on public data and a better\nfoundation!",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "o9cyiv",
+      "tags": [
+        "ai",
+        "math",
+        "vibecoding"
+      ]
+    },
+    "id": "5a2b2b0a84018ddb8eb61cccc254985c1a9aa2a5c601dda1c50423a4d1d9cb00"
+  }
+]
