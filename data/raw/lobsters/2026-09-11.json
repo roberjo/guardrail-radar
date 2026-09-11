@@ -1,0 +1,116 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Countering misuse of AI: September 2026 / Anthropic",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-11T04:46:41.315-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "Case studies from threat actors disrupted between December 2025 and August 2026 across seven areas of harm, from cyber operations to biological misuse.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gmewyf",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "d957d6c999575906f6dc4142f8a1e2fd96217aa937e7b8492944b6fd86966d3a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Models Don't Go Rogue",
+    "url": "https://mail.cyberneticforests.com/models-dont-go-rogue",
+    "raw_score": 28,
+    "comment_count": 8,
+    "posted_at": "2026-09-10T22:37:10.275-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "Stochastic Flocks & Cybersecurity 'Pandemonium'\n\n💡This essay was drafted from my appearance on Mél Hogan's podcast, The Data Fix, discussing the OpenAI / Hugging Face hack. Embedded below or find it on your podcast services here.\n\n\n\n\n\nOpenAI put out its full technical report on the Hugging Face hack this week, alongside",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0i492m",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "25de5fd2032e850702ba4d1bbafc4aa462e24496756f06773294b4545ca150a6"
+  },
+  {
+    "source": "lobsters",
+    "title": "An untrusted site can freeze a Mac using WebGPU",
+    "url": "https://auberon.xyz/blog/posts/deathray",
+    "raw_score": 20,
+    "comment_count": 4,
+    "posted_at": "2026-09-10T19:04:53.963-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "A simple way for an untrusted site to freeze a Mac",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "l0sqnt",
+      "tags": [
+        "browsers",
+        "security"
+      ]
+    },
+    "id": "bf1e8fbb25062370da277f04f8ea809b14611307700c8d72c45bca3b8388510b"
+  },
+  {
+    "source": "lobsters",
+    "title": "Forgejo 16.0.4 has a critical security bug fix (RCE - Remote Code Execution)",
+    "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
+    "raw_score": 39,
+    "comment_count": 26,
+    "posted_at": "2026-09-10T12:40:19.396-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "This is an automated check to get rid of most bots. If you have JavaScript enabled, it should redirect to the real page soon. If you don't, it still should redirect soon, but you can click here if you're fast.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "b3cqyr",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "fa7bd8e6fd84b6ff63920ab5d6288ef77c190374aa77b5ebd5799ec79f6e8ba6"
+  },
+  {
+    "source": "lobsters",
+    "title": "A rant about phishing: It's not the user's fault (and not DNS either)",
+    "url": "https://maurycyz.com/misc/domains",
+    "raw_score": 81,
+    "comment_count": 23,
+    "posted_at": "2026-09-10T10:14:48.267-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "\"For safety, don't click suspicious links\"",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "9szn91",
+      "tags": [
+        "security",
+        "web"
+      ]
+    },
+    "id": "d39b5e367f9de632a60721b479391b354cbe8a5c260bd6e8760036162bb648be"
+  },
+  {
+    "source": "lobsters",
+    "title": "How CHERIoT Provides Strong and Usable Isolation Without an MMU",
+    "url": "https://queue.acm.org/doi/10.1145/3831361",
+    "raw_score": 31,
+    "comment_count": 12,
+    "posted_at": "2026-09-10T09:59:03.130-05:00",
+    "fetched_at": "2026-09-11T15:20:47.149219+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "gtvx0w",
+      "tags": [
+        "hardware",
+        "osdev",
+        "security"
+      ]
+    },
+    "id": "af5b453bfdf77b596c2f9f772fcd6e6feb66ef0b12c11ed211e9dafd5b966128"
+  }
+]
