@@ -1,0 +1,175 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Linux Zoom Client Proactively Reads X11 Clipboard",
+    "url": "https://hachyderm.io/@simontatham/117201594980991062",
+    "raw_score": 7,
+    "comment_count": 2,
+    "posted_at": "2026-09-12T07:38:53.353-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "I noticed today that an update to the #Linux #Zoom client has made it start proactively reading _everything_ written to the X11 clipboard.\n\nIf you keep interesting secrets in your clipboard – particularly, if a password manager uses it as a means of getting the password to where it needs to be – this might be a thing you need to know about!",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "8t1ddm",
+      "tags": [
+        "linux",
+        "security"
+      ]
+    },
+    "id": "f1cae18e741b77c4e7a1d519ef7be2975691fc977c0718a94198763134084324"
+  },
+  {
+    "source": "lobsters",
+    "title": "Rare Not Random Using Token Efficiency for Secrets Scanning",
+    "url": "https://lookingatcomputer.substack.com/p/rare-not-random",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-12T01:42:56.073-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "dkd8ph",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "6a8c36af22b575d3b5ae51472db8bf55fef6eaebb9f6e50a86285dd0d3eadbee"
+  },
+  {
+    "source": "lobsters",
+    "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+    "url": "https://www.rubyhack.ai/",
+    "raw_score": 86,
+    "comment_count": 23,
+    "posted_at": "2026-09-11T18:41:50.259-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "On May 11th, 2026, hundreds of malicious packages were uploaded to RubyGems by AI agents performing web-lookup tasks with significant overlap with the German Wiki Incident.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wajtsa",
+      "tags": [
+        "ruby",
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "b0c48a4bc7fbd4346420a92ab566cdb046dba4968c0a8462b92b9352fe9b6bd4"
+  },
+  {
+    "source": "lobsters",
+    "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+    "url": "https://eiln.github.io/posts/ane.html",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-09-11T12:23:45.395-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "I stopped working on the reverse-engineered Apple Neural Engine (ANE) driver three years ago, upon a sad mini realization that the ANE block is just not that useful, and I could be doing more useful things, and moved onto upstreaming other, more useful, blocks. The ANE's architecture was too opinionated to build a general-purpose accelerator platform around it, and a linux driver effectively opening ANE hardware API access could not broaden the class of workloads it could do. Even macOS only regularly uses their own ANE to generate upsampled preview images in Finder.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "mzgtjg",
+      "tags": [
+        "ai",
+        "hardware",
+        "reversing"
+      ]
+    },
+    "id": "cd4275fac97b5fd9e5cb562f21c00ca696185a4c7cd07df3da981a99b1385f56"
+  },
+  {
+    "source": "lobsters",
+    "title": "ChiPass Release 2026.09.0",
+    "url": "https://codeberg.org/ChiPass/ChiPass/releases/tag/v2026.09.0",
+    "raw_score": 46,
+    "comment_count": 4,
+    "posted_at": "2026-09-11T11:35:40.299-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "This is an automated check to get rid of most bots. If you have JavaScript enabled, it should redirect to the real page soon. If you don't, it still should redirect soon, but you can click here if you're fast.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "mcioou",
+      "tags": [
+        "release",
+        "security"
+      ]
+    },
+    "id": "5f876cd90e08c9ea39d7457828dfc668ee530e8945d3c3291234e9be6d310387"
+  },
+  {
+    "source": "lobsters",
+    "title": "Countering misuse of AI: September 2026 / Anthropic",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "raw_score": 0,
+    "comment_count": 1,
+    "posted_at": "2026-09-11T04:46:41.315-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "Case studies from threat actors disrupted between December 2025 and August 2026 across seven areas of harm, from cyber operations to biological misuse.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gmewyf",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "d957d6c999575906f6dc4142f8a1e2fd96217aa937e7b8492944b6fd86966d3a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Models Don't Go Rogue",
+    "url": "https://mail.cyberneticforests.com/models-dont-go-rogue",
+    "raw_score": 55,
+    "comment_count": 53,
+    "posted_at": "2026-09-10T22:37:10.275-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "Stochastic Flocks & Cybersecurity 'Pandemonium'\n\n💡This essay was drafted from my appearance on Mél Hogan's podcast, The Data Fix, discussing the OpenAI / Hugging Face hack. Embedded below or find it on your podcast services here.\n\n\n\n\n\nOpenAI put out its full technical report on the Hugging Face hack this week, alongside",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0i492m",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "25de5fd2032e850702ba4d1bbafc4aa462e24496756f06773294b4545ca150a6"
+  },
+  {
+    "source": "lobsters",
+    "title": "A rant about phishing: It's not the user's fault (and not DNS either)",
+    "url": "https://maurycyz.com/misc/domains",
+    "raw_score": 90,
+    "comment_count": 26,
+    "posted_at": "2026-09-10T10:14:48.267-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "\"For safety, don't click suspicious links\"",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "9szn91",
+      "tags": [
+        "rant",
+        "security",
+        "web"
+      ]
+    },
+    "id": "d39b5e367f9de632a60721b479391b354cbe8a5c260bd6e8760036162bb648be"
+  },
+  {
+    "source": "lobsters",
+    "title": "An untrusted site can freeze a Mac using WebGPU",
+    "url": "https://auberon.xyz/blog/posts/deathray",
+    "raw_score": 40,
+    "comment_count": 5,
+    "posted_at": "2026-09-10T19:04:53.963-05:00",
+    "fetched_at": "2026-09-12T14:28:41.384335+00:00",
+    "excerpt": "A simple way for an untrusted site to freeze a Mac",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "l0sqnt",
+      "tags": [
+        "browsers",
+        "security"
+      ]
+    },
+    "id": "bf1e8fbb25062370da277f04f8ea809b14611307700c8d72c45bca3b8388510b"
+  }
+]
