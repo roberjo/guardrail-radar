@@ -1,0 +1,818 @@
+[
+  {
+    "source": "github",
+    "title": "Jammanb0/doltap",
+    "url": "https://github.com/Jammanb0/doltap",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:26Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "One rule source for Codex and Claude Code, plus workstream docs that carry context across sessions. Markdown only, no runtime. - Jammanb0/doltap",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "cab8c4d17a78cbbddcdde2d577dce5d28d1209aa647b338a1d2cf2789419d6b7"
+  },
+  {
+    "source": "github",
+    "title": "xichan96/dinotty",
+    "url": "https://github.com/xichan96/dinotty",
+    "raw_score": 654,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:57Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted. - xichan96/dinotty",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 21,
+      "total_stars": 696,
+      "topic": "ai-coding"
+    },
+    "id": "546690fa35308a46a55814503a6a54235fbf8f5d3edac6ad8a390c2e278bb688"
+  },
+  {
+    "source": "github",
+    "title": "davesheffer/hunch",
+    "url": "https://github.com/davesheffer/hunch",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:49Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Local-first engineering memory for AI coding: a git-native graph of decisions, bugs, and invariants, exposed to Claude Code via MCP. - davesheffer/hunch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 9,
+      "topic": "ai-coding"
+    },
+    "id": "8fc14d1457c025ed35c74c683baab6a08b1261d475b50a77f2484b1efc0da8ba"
+  },
+  {
+    "source": "github",
+    "title": "inkatze/planwright",
+    "url": "https://github.com/inkatze/planwright",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:07:53Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Autopilot for spec-driven development on Claude Code: sign off a spec and a guardrailed agent fleet builds, reviews, and delivers draft PRs. Scales from one feature to an agentic software factory. ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 17,
+      "total_stars": 4,
+      "topic": "ai-coding"
+    },
+    "id": "f3750c2b2266b3c8e87341479d52b00578877ea18f4353f75ff029c231b7d862"
+  },
+  {
+    "source": "github",
+    "title": "Rsonlyone/claude-max-bridge",
+    "url": "https://github.com/Rsonlyone/claude-max-bridge",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:01Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "OpenCode AI Proxy Clone 2026 – Free GitHub API Tool for Claude Max Access - Rsonlyone/claude-max-bridge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "5692bf7f292affadcbd2c5a358404b8a3ea5fcff9e7e155a873dd840219d59dc"
+  },
+  {
+    "source": "github",
+    "title": "lichengwu/aibox",
+    "url": "https://github.com/lichengwu/aibox",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:35Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "AI coding 工具集 — 轻量 bash 模块管理器 + 独立工具，curl|bash 一行安装，按需安装/更新/卸载各模块。 - lichengwu/aibox",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "61711bdce7767375f28f07e0c2e570a8d509809960c175879d6b4206bc52427a"
+  },
+  {
+    "source": "github",
+    "title": "hiroyuki-miyauchi/axiarch",
+    "url": "https://github.com/hiroyuki-miyauchi/axiarch",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:06:07Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Constitution-driven governance framework for AI agents.  2,500+ universal standards, self-evolving knowledge base,  and AI behavior protocols. Validated on Google Antigravity. - hiroyuki-miyauchi/a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "6ad000a12624bdadcbad09e58695f53b1a71a7f86ca8fe7bfa6d445e518572ff"
+  },
+  {
+    "source": "github",
+    "title": "xujiujiu0628/embedded-toolkit",
+    "url": "https://github.com/xujiujiu0628/embedded-toolkit",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:41Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "AI 写嵌入式固件的闭环验证工作台：代码可以由 AI 生成，但\"算不算对\"由真机说了算。STM32F103 / GCC / OpenOCD / RTT - xujiujiu0628/embedded-toolkit",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "90d90e3a0f8a5c98c58b5a2aaf8fdacc9b2e6140148c2b2fdcb9f7a534199207"
+  },
+  {
+    "source": "github",
+    "title": "phuati/claude-skills-arsenal",
+    "url": "https://github.com/phuati/claude-skills-arsenal",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:03Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Your Ultimate Claude Skills Library & Hub 2026 – Integrate & Organize AI Workflows - phuati/claude-skills-arsenal",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "7b30692f6650ebe66fe3b1f34c00518eae49d3e74f0ff34bc6a92bcb24342d8d"
+  },
+  {
+    "source": "github",
+    "title": "henrykbrzoska/bebok",
+    "url": "https://github.com/henrykbrzoska/bebok",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:03:45Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Desktop GUI Headless Local-first AI coding agent in Rust (axum, tokio, rmcp, portable-pty) behind HTTP + SSE, with an Angular 20 zoneless client, Tauri 2 desktop shell(and mobile in near future). O...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 4,
+      "topic": "ai-coding"
+    },
+    "id": "91d71facc54f8f965f07abaac0c77317f995c412e304f93a0f12e94436028608"
+  },
+  {
+    "source": "github",
+    "title": "bilalmughal1/convolvger",
+    "url": "https://github.com/bilalmughal1/convolvger",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:55Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Local-first, provider-independent archival of public AI conversations. Export shared chats from multiple AI providers into portable, verifiable formats. - bilalmughal1/convolvger",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "7a14be345416e9783c9a1eb61ebbfc05a75fee45639ee0acf9e8bbb096a1fe6d"
+  },
+  {
+    "source": "github",
+    "title": "bilol-makhmudov/skipper",
+    "url": "https://github.com/bilol-makhmudov/skipper",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:46Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Mission control for Claude Code: see and steer every session, subagent, /loop and todo list from one local dashboard. Zero dependencies. - bilol-makhmudov/skipper",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "d5f017a3a3aa9b49dae77ad64971b2a8f2ef4908bee21ae7dce1b2c17500685a"
+  },
+  {
+    "source": "github",
+    "title": "Dicklesworthstone/dwarf_fortress_mcp",
+    "url": "https://github.com/Dicklesworthstone/dwarf_fortress_mcp",
+    "raw_score": 313,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:41Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "A semantic, transactional, replayable MCP control plane that lets autonomous AI agents operate Dwarf Fortress as a long-lived civilization. Safe-Rust phase-0B scaffold: MVCC world state, witnessed ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 22,
+      "topic": "llm-tools"
+    },
+    "id": "433f8b260526a6f54298e55d3f62efad1ae9f40d323e6bd7b5ac4355e153b53b"
+  },
+  {
+    "source": "github",
+    "title": "rootkiller6788/dsh-flow",
+    "url": "https://github.com/rootkiller6788/dsh-flow",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:35Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Contribute to rootkiller6788/dsh-flow development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "ff9a1de34dad0f3bd91db5fc264a9df6a9858700946d0cfdb2152b5a5ae65767"
+  },
+  {
+    "source": "github",
+    "title": "diazoxide/charter",
+    "url": "https://github.com/diazoxide/charter",
+    "raw_score": 289,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:07:44Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Control plane for your harness across many repos — durable personas, per-task workspaces, and a credential vault the model never reads from - diazoxide/charter",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 26,
+      "total_stars": 17,
+      "topic": "llm-tools"
+    },
+    "id": "9d3c275514a02a53792638e52cf2987bebba07bfdabf48b902ce05f3e6b663c6"
+  },
+  {
+    "source": "github",
+    "title": "fellow99/llm-router",
+    "url": "https://github.com/fellow99/llm-router",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:06:37Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "大模型聚合路由服务程序。南向聚合连接多个大模型服务，北向提供统一的服务接口（兼容OpenAI服务接口）。 - fellow99/llm-router",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "40369239b2b9975824f43945b03a62e6a48012833fbac4bd614c16fca7eb5448"
+  },
+  {
+    "source": "github",
+    "title": "Agenxy/dibs",
+    "url": "https://github.com/Agenxy/dibs",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:06:02Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Keeps your agents in the loop about each other. See what the fleet is doing, then message, sync and send files between agents. Dibs reports; it never acts. - Agenxy/dibs",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "82b0e9c36f28329cedc06a5572fc8c3ad30aacce5b45b431aa9f891012b3a2fd"
+  },
+  {
+    "source": "github",
+    "title": "ArhaanDev24/Synartesis",
+    "url": "https://github.com/ArhaanDev24/Synartesis",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:19Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "An undo layer for AI agents. Records what an agent changed through MCP, puts it back, and refuses to let it do the unforgivable unasked. - ArhaanDev24/Synartesis",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "015db7d4c1c4bf2b5dd7045e61c13aad27878d513c3618038a165f5a9ab5ab44"
+  },
+  {
+    "source": "github",
+    "title": "shortcuts/radin",
+    "url": "https://github.com/shortcuts/radin",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:02Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "🐀 the agentic stack for those who have to save tokens - shortcuts/radin",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "9851515fa6b164b0509d4f2aa660d0bf044b039e666a5bf0d6e66fb9ac5b6220"
+  },
+  {
+    "source": "github",
+    "title": "packiot/packiot-stack-alpha",
+    "url": "https://github.com/packiot/packiot-stack-alpha",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:37Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Packiot platform monorepo — Docker Compose stack, Terraform infra, Go services (mirror-worker, oeecloud-worker, edge-transformer), Node-RED + edge-api submodules. See the wiki for architecture + AD...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b433cdf0e705b0c52f25b649874641d1ec13dae07f0c52fa1b5dd2ee0b8ea651"
+  },
+  {
+    "source": "github",
+    "title": "Nabil-Sehli/bikeshare-data-platform",
+    "url": "https://github.com/Nabil-Sehli/bikeshare-data-platform",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:22Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "End-to-end data engineering platform on Citi Bike data: batch (Spark), streaming (Kafka), ingestion (dlt), orchestration (Kestra), dbt, Bruin, Terraform - fully local on Docker. - Nabil-Sehli/bikes...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "9d63f417d929fc52a0254021bad0591c3c77639d2b8fcb8801421904cfbbf6e9"
+  },
+  {
+    "source": "github",
+    "title": "aarab-ayoub/Nexus-2.0",
+    "url": "https://github.com/aarab-ayoub/Nexus-2.0",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:27Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Production-grade lakehouse data platform for e-commerce data real-time CDC ingestion, Spark + dbt processing, Iceberg lakehouse, Airflow orchestration, Terraform-provisioned infra, and full observa...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "42058a43a6d904e1e63cd2895a7ea5a769d8093c8a4de5f1cd8aa49e672ec0e2"
+  },
+  {
+    "source": "github",
+    "title": "dredarsenic/aws-cloud-security-posture-remediation",
+    "url": "https://github.com/dredarsenic/aws-cloud-security-posture-remediation",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:09Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Threat-informed AWS security assessment and remediation using Terraform, ScoutSuite, Prowler, and AWS-native security services. - dredarsenic/aws-cloud-security-posture-remediation",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b31c2eb6dae3583116c3c41086c56decadef163660348af5d1a088158b04e0f2"
+  },
+  {
+    "source": "github",
+    "title": "daviguides/the-saurus",
+    "url": "https://github.com/daviguides/the-saurus",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:00Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Multi-agent literature review pipeline — upload scientific PDFs, extract themes and claims, generate citation-backed reviews. Built with React 19, FastAPI, Agno, Restate, Gemini 2.5 Flash, Qdrant, ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b3d082d2e6f968bea93643ef87480c9adb07ecc9012c506dfacb5f373984cc38"
+  },
+  {
+    "source": "github",
+    "title": "georgeTaylor3/automated-purple-team-lab",
+    "url": "https://github.com/georgeTaylor3/automated-purple-team-lab",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:29Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Cloud-hosted purple team lab for adversary emulation, Elastic detection engineering, and automated security deployment and validation. - georgeTaylor3/automated-purple-team-lab",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "7fa388cce0513e113d9dda27171e962bac438692e030790deac956467a498b39"
+  },
+  {
+    "source": "github",
+    "title": "tiagomiele/fiap-tech-challenge-fase3-oficina-kubernetes-infra",
+    "url": "https://github.com/tiagomiele/fiap-tech-challenge-fase3-oficina-kubernetes-infra",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:15Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Tech Challenge Pós Tech FIAP-SOAT - fase 3. Kubernetes Infra, infraestrutura Terraform do Amazon EKS, rede AWS, escalabilidade Kubernetes e observabilidade New Relic para homologação e produção. - ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "400bfc82df5a9b8465ef87fe96f2eb979753a8423bf2cbb6cee4a98573b52f59"
+  },
+  {
+    "source": "github",
+    "title": "mondoohq/installer",
+    "url": "https://github.com/mondoohq/installer",
+    "raw_score": 444,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:05:20Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Linux, macOS and Windows Install scripts for cnquery & cnspec - mondoohq/installer",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 38,
+      "total_stars": 84,
+      "topic": "terraform"
+    },
+    "id": "a6e64c650fef9cffd970486e9e5a3e43e221055910aacb2ae15ac4c0a439ce91"
+  },
+  {
+    "source": "github",
+    "title": "mrAndreyIsachenko/hexroute",
+    "url": "https://github.com/mrAndreyIsachenko/hexroute",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:03:20Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Reliability control plane for scoped VPN, proxy and access-continuity paths — crash-consistent policy generations, privilege-separated stores, replay-proof action leases. - mrAndreyIsachenko/hexroute",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "ebc264d5a3de2f6b91302af482be193dc8139ab45364c686470ace5dc929921e"
+  },
+  {
+    "source": "github",
+    "title": "altissimo-hq/terraform-google-cloudbuildv2-connection",
+    "url": "https://github.com/altissimo-hq/terraform-google-cloudbuildv2-connection",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T14:58:19Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Creates a Google Cloud Build v2 GitHub Connection and Repositories - altissimo-hq/terraform-google-cloudbuildv2-connection",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "23fe806476d6252eda5377245b26dc0c63b31592a048c265cb7e5dad93e934ae"
+  },
+  {
+    "source": "github",
+    "title": "himanshusaxenagithub/stig-ai-pipeline",
+    "url": "https://github.com/himanshusaxenagithub/stig-ai-pipeline",
+    "raw_score": 263,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:41Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Turn any DISA STIG into a plain-English, risk-ranked hardening plan — and check a machine against it under a human approval gate. Free, MIT, no API key. - himanshusaxenagithub/stig-ai-pipeline",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 13,
+      "topic": "compliance"
+    },
+    "id": "25664e2cad71ba123d8fb113d0e12aa25edf787d6db9614832e9dd1afff8821a"
+  },
+  {
+    "source": "github",
+    "title": "magertron/orchestrator",
+    "url": "https://github.com/magertron/orchestrator",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:07:30Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Enterprise MCP Server Management. Contribute to magertron/orchestrator development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "619704032c2d13bfe2dee7faa35802e992ebf4ad32e24eee058cf11946b8f1de"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/a11oy",
+    "url": "https://github.com/szl-holdings/a11oy",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:06:05Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "a11oy — governed-AI Command Center. Deny by default. Signed receipts. Trust ceiling 0.97. Λ = Conjecture 1. - szl-holdings/a11oy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 21,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "413f56f31618e17f6356c644098e0e1b43d6551172e706d24fb9031830a384ed"
+  },
+  {
+    "source": "github",
+    "title": "mondoohq/cnspec",
+    "url": "https://github.com/mondoohq/cnspec",
+    "raw_score": 609,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:58Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "An open source, cloud-native security to protect everything from build to runtime - mondoohq/cnspec",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 310,
+      "total_stars": 441,
+      "topic": "compliance"
+    },
+    "id": "62950e73f425f6cd3678f0a9ea0b7293a136fba36d92d30dc49fc6d5e798272f"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/killinchu",
+    "url": "https://github.com/szl-holdings/killinchu",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:11Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Counter-UAS reference at /elite. Tracks, fusion, ROE, BFT, DSSE per interdiction. Public synthetic — no public effector. Λ = Conjecture 1. - szl-holdings/killinchu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "2da5e8d72789fcf0228e4bebabdbf3da3ef872d4e85e10286bec15a1e499eb2e"
+  },
+  {
+    "source": "github",
+    "title": "PostOakLabs/ainumbers",
+    "url": "https://github.com/PostOakLabs/ainumbers",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:08Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Deterministic fintech compliance tools + the OpenChainGraph verifiable-artifact standard - PostOakLabs/ainumbers",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 34,
+      "total_stars": 5,
+      "topic": "compliance"
+    },
+    "id": "68d6b7f6a1df214e7f4ba98f0090d3c63a78518c44adb3cde629a4fcc3a4db62"
+  },
+  {
+    "source": "github",
+    "title": "Qazza1/onchaindiligence",
+    "url": "https://github.com/Qazza1/onchaindiligence",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:01:48Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Verifiable evidence infrastructure for autonomous agents. - Qazza1/onchaindiligence",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "a7f4fb9fc7d9caad31d906f47c51c95ebcd83fa96ee50ce1988da713b633de3c"
+  },
+  {
+    "source": "github",
+    "title": "DataBoar/data-boar",
+    "url": "https://github.com/DataBoar/data-boar",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:01:29Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Forensic-grade, open-source PII &amp; sensitive-data discovery — LGPD/GDPR/CCPA-aware. Scans databases, filesystems, APIs &amp; shares; deterministic detection (regex + ML), evidence-ready Excel/he...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 250,
+      "total_stars": 5,
+      "topic": "compliance"
+    },
+    "id": "d6eea5b207604b1851be0801885d31bc4c831eca0120f6fe711e829ed5b40a8a"
+  },
+  {
+    "source": "github",
+    "title": "zeweihan/aiworkdeck",
+    "url": "https://github.com/zeweihan/aiworkdeck",
+    "raw_score": 499,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:04:43Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "AI-native IDE workspace for legal and document-heavy workflows: files, agents, plugins, built-in document editing with tracked changes, OCR, evidence chains. VS Code for lawyers. - zeweihan/aiworkdeck",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 16,
+      "total_stars": 146,
+      "topic": "compliance"
+    },
+    "id": "90a4790fd67560aaf52afac741025aab8de67cb7333f536fd348b201bec9eef0"
+  },
+  {
+    "source": "github",
+    "title": "mwashburn160/pipeline-builder",
+    "url": "https://github.com/mwashburn160/pipeline-builder",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:00:05Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "A self-service AWS platform that lets developers create compliant CI/CD pipelines in minutes while platform teams enforce security, governance, and organizational standards. - mwashburn160/pipeline...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "c20de9423d6025f17687b56fd0759de5e77329a26bc043b1b1eb0e308af356b9"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:50Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "minhtt159/bank0",
+    "url": "https://github.com/minhtt159/bank0",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:09:34Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Core-banking backend: a double-entry ledger where correctness is a property of the database (PostgreSQL 18 + PL/pgSQL), fronted by a thin Go API, an HTMX operator console, and a Preact PWA. Not a r...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 14,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "7a9d1de95ac2bd6279a37b2f3cdee242a5353d92ab89478a8873c83ef653a588"
+  },
+  {
+    "source": "github",
+    "title": "nilosants-byte/muvify",
+    "url": "https://github.com/nilosants-byte/muvify",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:28Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Two-sided marketplace connecting personal trainers to clients — in-person sessions &amp; online coaching, real Mercado Pago marketplace split payments, recurring billing, and a full React Native mo...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "1e65caa77f50f46fb3b683655e110bcfc30f3cc5f9c82651e27309b13016193e"
+  },
+  {
+    "source": "github",
+    "title": "RobynAwesome/lefa-ai",
+    "url": "https://github.com/RobynAwesome/lefa-ai",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:06:24Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Your companion for governed financial intelligence. FI through AI, powered by SI.Most finance products introduce themselves with charts, balances and buttons.  LEFA starts with a companion. - Robyn...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "fb2b1daaf68258918378b955a118d1b0b1640e35bf77eca2e9a9cf4d1f23fc37"
+  },
+  {
+    "source": "github",
+    "title": "MautikPatel/FraudShield-AI",
+    "url": "https://github.com/MautikPatel/FraudShield-AI",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:02:22Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "AI-powered real-time payment fraud detection platform with rule-based detection, machine learning, risk scoring, explainable AI, and live fraud analytics. - MautikPatel/FraudShield-AI",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e3eab4d8ff95b06088ca7089bd33ae3679af02ef411aa88836832d4a1f6235ad"
+  },
+  {
+    "source": "github",
+    "title": "Baber002/mortgage-pricing-plugin-blueprint",
+    "url": "https://github.com/Baber002/mortgage-pricing-plugin-blueprint",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:01:39Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "Claude Code Mortgage Plugin 2026 - AI-Powered Refinancing Pricing Tool - Baber002/mortgage-pricing-plugin-blueprint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6bbc820bf8b409e4fac56622278fa9812d8c5317ee7cbfee4a050ed33a0c2bae"
+  },
+  {
+    "source": "github",
+    "title": "Deed3Labs/clearpath-website",
+    "url": "https://github.com/Deed3Labs/clearpath-website",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:08:16Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "ClearPath housing cooperative — marketing site (ClearPath + Clear Capital) - Deed3Labs/clearpath-website",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e78ed1d26383cfc856be412ec36c71f0e459481418d54049bde90f476b83418c"
+  },
+  {
+    "source": "github",
+    "title": "rootSunc/CNEquity",
+    "url": "https://github.com/rootSunc/CNEquity",
+    "raw_score": 525,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:01:31Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "中国股票数据基础设施，覆盖行情、研报、资金面、筹码、公告、龙虎榜、ETF/期权、舆情互动、基本面、行业板块、宏观与风险事件等核心数据。42+A股数据集，日更、自托管、MCP 原生，零注册、零 API Token - rootSunc/CNEquity",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 191,
+      "topic": "fintech"
+    },
+    "id": "7d8117ab24f91812d6812574a44ee7133428b51d333bf64c041c1d74f4c43fbe"
+  },
+  {
+    "source": "github",
+    "title": "Ninian-Lemain/deterministic-exchange-rs",
+    "url": "https://github.com/Ninian-Lemain/deterministic-exchange-rs",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T15:00:57Z",
+    "fetched_at": "2026-09-13T15:09:51.664088+00:00",
+    "excerpt": "A deterministic, allocation-free Rust matching engine and execution gateway: the high-speed backend server core of an electronic financial exchange. Built for learning and experimentation. - Ninian...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "642808277e41a1a7fe55ee1c7b4e2819b805e6932a58abde76b2332e9c88b7aa"
+  }
+]

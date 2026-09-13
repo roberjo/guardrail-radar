@@ -1,0 +1,100 @@
+[
+  {
+    "source": "lobsters",
+    "title": "After Math",
+    "url": "https://terrytao.wordpress.com/2026/09/12/after-math",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-13T07:59:09.092-05:00",
+    "fetched_at": "2026-09-13T15:09:17.646855+00:00",
+    "excerpt": "[This is a guest post by Silvia De Toffoli and Eamon Duede. This blog post was initially written in a different file format and converted using AI. — T.] Silvia De Toffoli (University School …",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ojls0p",
+      "tags": [
+        "ai",
+        "math",
+        "philosophy"
+      ]
+    },
+    "id": "9e3ed73c619cad9545054ce447a5b60db12069e47e710af02bbbc6a08eeb7ce0"
+  },
+  {
+    "source": "lobsters",
+    "title": "Everyone should slow down AI development except for me",
+    "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me",
+    "raw_score": 48,
+    "comment_count": 6,
+    "posted_at": "2026-09-12T19:53:30.568-05:00",
+    "fetched_at": "2026-09-13T15:09:17.646855+00:00",
+    "excerpt": "Xe Iaso's personal website.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fmkm3v",
+      "tags": [
+        "ai",
+        "satire"
+      ]
+    },
+    "id": "90d04263fd8f7f54046faf46e3a2b871912f26fd6e198fde1acac50029743464"
+  },
+  {
+    "source": "lobsters",
+    "title": "Linux Zoom Client Proactively Reads X11 Clipboard",
+    "url": "https://hachyderm.io/@simontatham/117201594980991062",
+    "raw_score": 58,
+    "comment_count": 36,
+    "posted_at": "2026-09-12T07:38:53.353-05:00",
+    "fetched_at": "2026-09-13T15:09:17.646855+00:00",
+    "excerpt": "I noticed today that an update to the #Linux #Zoom client has made it start proactively reading _everything_ written to the X11 clipboard.\n\nIf you keep interesting secrets in your clipboard – particularly, if a password manager uses it as a means of getting the password to where it needs to be – this might be a thing you need to know about!",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "8t1ddm",
+      "tags": [
+        "linux",
+        "security"
+      ]
+    },
+    "id": "f1cae18e741b77c4e7a1d519ef7be2975691fc977c0718a94198763134084324"
+  },
+  {
+    "source": "lobsters",
+    "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+    "url": "https://www.rubyhack.ai/",
+    "raw_score": 117,
+    "comment_count": 47,
+    "posted_at": "2026-09-11T18:41:50.259-05:00",
+    "fetched_at": "2026-09-13T15:09:17.646855+00:00",
+    "excerpt": "On May 11th, 2026, hundreds of malicious packages were uploaded to RubyGems by AI agents performing web-lookup tasks with significant overlap with the German Wiki Incident.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wajtsa",
+      "tags": [
+        "ruby",
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "b0c48a4bc7fbd4346420a92ab566cdb046dba4968c0a8462b92b9352fe9b6bd4"
+  },
+  {
+    "source": "lobsters",
+    "title": "The gpg.fail aftermath: On responsible disclosure, GPG, and the state of security in 2026 [32:37]",
+    "url": "https://media.ccc.de/v/2026-728-the-gpg-fail-aftermath-on-responsible-disclosure-gpg-and-the-state-of-security-in-2026",
+    "raw_score": 23,
+    "comment_count": 6,
+    "posted_at": "2026-09-12T12:24:59.836-05:00",
+    "fetched_at": "2026-09-13T15:09:17.646855+00:00",
+    "excerpt": "In 2025, I found and disclosed a bunch of vulnerabilities in GPG, the most used PGP implementation, and held a talk at 39c3 about it. **S...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fcttpk",
+      "tags": [
+        "cryptography",
+        "security",
+        "video"
+      ]
+    },
+    "id": "4d0d9340449db07e04bd9e1396d9db9e7e6eb0c3a75c1ffdd882336b3922bd26"
+  }
+]
