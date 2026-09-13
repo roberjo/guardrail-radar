@@ -1,0 +1,58 @@
+[
+  {
+    "cluster_id": "b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f",
+    "title": "Our decision on Cursor following its acquisition by SpaceX",
+    "status": "flagged",
+    "reasons": [
+      "url unverifiable: HTTP 403 (bot-protection challenge, not confirmed dead) — confirm by hand"
+    ]
+  },
+  {
+    "cluster_id": "76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4",
+    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d",
+    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "2d37359263b703a2ab1fbe1c8172ace0319751d417182fb411d5694b30e2e6c6",
+    "title": "Claude Code permanently raising weekly limits by 25% from September 14",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "b1f20c4705852b3deaf9294813e183f487f7ed2dcf71825327a78858ab23c68a",
+    "title": "jposluns/grc_library",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "4fde41f07a3a7fa0a503c432a24af94bb1f6e05a5677f2b26f55643da342eca7",
+    "title": "oMLX",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "0c94d00cdf48466691ab1a7fdf2424f48625cf4e5e72f4e8287ae6468714bb1f",
+    "title": "Decawork",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "982030a696cfa48ad61adf6113b8aabcb8bf738dbc808bfd82a372cda6b6061b",
+    "title": "CodeAlive-AI/ai-driven-development",
+    "status": "clear",
+    "reasons": []
+  },
+  {
+    "cluster_id": "712e0655bc8f7477a56bae94ce484c9f6bf199d4192ecbc9ef7ea33aa6f289b5",
+    "title": "Tell HN: Man, AI is killing my brain",
+    "status": "clear",
+    "reasons": []
+  }
+]

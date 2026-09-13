@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardrail Radar — 2026-W35</title>
+  <meta name="description" content="OpenAI is pulling its models out of Cursor over the SpaceX deal">
+  <link rel="canonical" href="https://roberjo.github.io/guardrail-radar/issues/2026-W35.html">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Guardrail Radar — 2026-W35">
+  <meta property="og:description" content="OpenAI is pulling its models out of Cursor over the SpaceX deal">
+  <meta property="og:url" content="https://roberjo.github.io/guardrail-radar/issues/2026-W35.html">
+  <meta property="og:image" content="https://roberjo.github.io/guardrail-radar/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guardrail Radar — 2026-W35">
+  <meta name="twitter:description" content="OpenAI is pulling its models out of Cursor over the SpaceX deal">
+  <meta name="twitter:image" content="https://roberjo.github.io/guardrail-radar/og-image.png">
+  <style>
+    :root{
+      color-scheme: light dark;
+      --bg: #f3f4ee; --ink: #1b241e; --ink-soft: #4b564d; --line: #d8dacd;
+      --amber: #b8791e; --amber-ink: #1a1408;
+      --hot-s: 62%; --hot-l: 38%; --surface-soft: #e9ebe2;
+      --card-bg: #fffffe; --card-shadow: 0 1px 3px rgba(27,36,30,0.08);
+      /* Matches site/index.html's --font-mono — same rationale: the radar/
+         guardrail metaphor gets a small "instrument readout" typographic
+         layer (badges, TOC labels, read-time) without touching the serif
+         reading font. Zero external requests, same as the rest of the site. */
+      --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0e1410; --ink:#e9ede6; --ink-soft:#aeb8ac; --line:#2b342c;
+        --amber:#e3a94b; --hot-l: 68%; --surface-soft: rgba(174,184,172,0.10);
+        /* Was too close to --bg to read as a lifted surface — bumped to
+           match site/index.html's fix for the same issue. */
+        --card-bg: #16201a; --card-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+    }
+    *{ box-sizing: border-box; }
+    body{ margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
+    main{ max-width: 640px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+    .brand{ display: flex; align-items: center; gap: 0.6rem; margin: 0 0 1.5rem; }
+    .brand-mark{ width: 30px; height: 30px; flex: none; }
+    .brand a{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+    .brand a:hover{ color: var(--amber); }
+    .back-link{ margin: 0 0 1.5rem; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 0.85rem; }
+    .back-link a{ color: var(--ink-soft); text-decoration: none; }
+    .back-link a:hover{ color: var(--amber); text-decoration: underline; }
+    h1.issue-heading{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.7rem; margin: 0 0 1rem; }
+    .subscribe-cta{ margin: 2.5rem 0; }
+    .subscribe-btn{
+      display: inline-block; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600; font-size: 0.9rem; color: var(--amber-ink);
+      background: var(--amber); padding: 0.6rem 1.2rem; border-radius: 4px;
+      text-decoration: none; letter-spacing: 0.01em;
+    }
+    .subscribe-btn:hover{ filter: brightness(1.08); }
+    .issue-intro{ margin: 0 0 1.25rem; color: var(--ink); }
+    .toc{
+      display: flex; flex-direction: column; gap: 0.9rem;
+      margin: 0 0 1.5rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 8px;
+    }
+    .toc-group{ border-left: 3px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); padding-left: 0.75rem; }
+    .toc-group h4{
+      font-family: var(--font-mono);
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+      color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); margin: 0 0 0.4rem;
+    }
+    .toc-group .count{ font-weight: 400; opacity: 0.7; }
+    .toc-group ul{ list-style: none; margin: 0; padding: 0; }
+    .toc-group li{ display: flex; align-items: baseline; gap: 0.4rem; font-size: 0.88rem; margin: 0 0 0.25rem; }
+    .toc-group .dot{ width: 0.4rem; height: 0.4rem; border-radius: 50%; flex: none; background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); }
+    .toc-group a{ color: var(--ink); text-decoration: none; }
+    .toc-group a:hover{ color: var(--amber); text-decoration: underline; }
+    .issue-items{ list-style: none; padding: 0; margin: 0; }
+    .issue-item{
+      padding: 1.15rem 1.25rem 1.15rem 1.4rem; margin: 0 0 1rem;
+      background: var(--card-bg); border: 1px solid var(--line);
+      border-left: 4px solid hsl(var(--hot-hue) var(--hot-s) var(--hot-l));
+      border-radius: 10px; box-shadow: var(--card-shadow);
+    }
+    .issue-item:last-child{ margin-bottom: 0; }
+    .issue-item h4{ font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 1.08rem; font-weight: 700; margin: 0 0 0.5rem; }
+    .issue-item h4 a{ color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); text-decoration: none; }
+    .issue-item h4 a:hover{ text-decoration: underline; }
+    .item-dek{ font-size: 0.92rem; color: var(--ink-soft); font-weight: 600; margin: 0 0 0.7rem; }
+    .badge-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 0.6rem; }
+    .franchise-tag, .category-badge, .read-time{
+      display: inline-flex; align-items: center; gap: 0.32rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em;
+      border-radius: 3px; padding: 0.14rem 0.45rem;
+    }
+    .franchise-tag{ color: var(--amber); border: 1px solid var(--amber); }
+    .category-badge{ font-weight: 700; color: hsl(var(--hot-hue) var(--hot-s) var(--hot-l)); background: hsl(var(--hot-hue) var(--hot-s) var(--hot-l) / 15%); }
+    .category-icon{ width: 0.7rem; height: 0.7rem; flex: none; color: currentColor; }
+    .read-time{ color: var(--ink-soft); background: var(--surface-soft); font-weight: 600; }
+    .issue-item details{ margin: 0 0 0.6rem; }
+    .issue-item summary{ cursor: pointer; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 0.8rem; color: var(--ink-soft); }
+    .issue-item summary:hover{ color: var(--ink); }
+    .issue-item details[open] summary{ margin-bottom: 0.4rem; }
+    .issue-item blockquote{ margin: 0; padding-left: 0.75rem; border-left: 2px solid var(--line); color: var(--ink-soft); font-style: italic; font-size: 0.92rem; }
+    .issue-item p{ margin: 0 0 0.5rem; }
+    .issue-item p:last-child{ margin-bottom: 0; }
+    .primary-source{ font-size: 0.85rem; color: var(--ink-soft); }
+    .primary-source a{ color: inherit; }
+    footer{ margin-top: 3rem; font-size: 0.85rem; color: var(--ink-soft); }
+    footer a{ color: inherit; }
+</style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" role="img" aria-hidden="true">
+        <g stroke="var(--ink-soft)" stroke-width="3.6" stroke-linecap="round" fill="none">
+          <path d="M17 30V19a2 2 0 0 1 2-2h11"/>
+          <path d="M83 30V19a2 2 0 0 1-2-2H70"/>
+          <path d="M17 70v11a2 2 0 0 0 2 2h11"/>
+          <path d="M83 70v11a2 2 0 0 1-2 2H70"/>
+        </g>
+        <circle cx="50" cy="50" r="24" fill="none" stroke="var(--ink-soft)" stroke-opacity="0.4" stroke-width="1.8"/>
+        <circle cx="50" cy="50" r="15.5" fill="none" stroke="var(--ink-soft)" stroke-opacity="0.4" stroke-width="1.4"/>
+        <line x1="26" y1="50" x2="74" y2="50" stroke="var(--ink-soft)" stroke-opacity="0.35" stroke-width="1"/>
+        <line x1="50" y1="26" x2="50" y2="74" stroke="var(--ink-soft)" stroke-opacity="0.35" stroke-width="1"/>
+        <path d="M50 50 L66.97 33.03 L70.24 37.10 Z" fill="hsl(5 62% var(--hot-l))" opacity="0.85"/>
+        <path d="M50 50 L70.24 37.10 L72.55 41.79 Z" fill="hsl(20 62% var(--hot-l))" opacity="0.72"/>
+        <path d="M50 50 L72.55 41.79 L73.79 46.87 Z" fill="hsl(35 62% var(--hot-l))" opacity="0.60"/>
+        <path d="M50 50 L73.79 46.87 L73.91 52.09 Z" fill="hsl(50 60% var(--hot-l))" opacity="0.48"/>
+        <path d="M50 50 L73.91 52.09 L72.89 57.22 Z" fill="hsl(65 55% var(--hot-l))" opacity="0.36"/>
+        <path d="M50 50 L72.89 57.22 L70.78 62.00 Z" fill="hsl(80 50% var(--hot-l))" opacity="0.25"/>
+        <path d="M50 50 L70.78 62.00 L67.70 66.21 Z" fill="hsl(95 48% var(--hot-l))" opacity="0.15"/>
+        <path d="M50 50 L67.70 66.21 L63.77 69.66 Z" fill="hsl(110 45% var(--hot-l))" opacity="0.07"/>
+        <line x1="50" y1="50" x2="66.97" y2="33.03" stroke="hsl(5 70% var(--hot-l))" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="66.97" cy="33.03" r="3.4" fill="var(--amber)"/>
+        <circle cx="50" cy="50" r="2.4" fill="var(--ink)"/>
+      </svg>
+      <a href="../index.html">Guardrail Radar</a>
+    </div>
+    <p class="back-link"><a href="../index.html">← All issues</a></p>
+    <h1 class="issue-heading">2026-W35</h1>
+    <p class="issue-intro">Four vendor moves this week arrived with no real warning: OpenAI is winding down Cursor&#x27;s access to its models over the SpaceX acquisition, Anthropic appears to be quietly throttling effort levels for some Claude Code sessions server-side, Claude Code&#x27;s own weekly limits are shifting again, and a GitHub Copilot-assisted PR turned out to be Wiz&#x27;s way into Snowflake&#x27;s internal Jira. The builder-side response tracks the same worry from the other direction — a GRC skills pack, a local-only Mac inference server, and a tool for IT to reclaim employee-built agents all put something you control between the agent and the parts of your stack you can&#x27;t afford to lose visibility into.</p>
+    <nav class="toc"><div class="toc-group" style="--hot-hue:5"><h4>Breaking News <span class="count">(4)</span></h4><ul><li style="--hot-hue:5"><span class="dot"></span><a href="#item-b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f">Our decision on Cursor following its acquisition by SpaceX</a></li><li style="--hot-hue:12"><span class="dot"></span><a href="#item-76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4">AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira</a></li><li style="--hot-hue:20"><span class="dot"></span><a href="#item-33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d">Anthropic appears to be A/B testing reduced effort levels in Claude Code</a></li><li style="--hot-hue:28"><span class="dot"></span><a href="#item-2d37359263b703a2ab1fbe1c8172ace0319751d417182fb411d5694b30e2e6c6">Claude Code permanently raising weekly limits by 25% from September 14</a></li></ul></div><div class="toc-group" style="--hot-hue:65"><h4>Field Notes <span class="count">(1)</span></h4><ul><li style="--hot-hue:65"><span class="dot"></span><a href="#item-712e0655bc8f7477a56bae94ce484c9f6bf199d4192ecbc9ef7ea33aa6f289b5">Man, AI is killing my brain</a></li></ul></div><div class="toc-group" style="--hot-hue:95"><h4>New Products &amp; Tools <span class="count">(4)</span></h4><ul><li style="--hot-hue:95"><span class="dot"></span><a href="#item-982030a696cfa48ad61adf6113b8aabcb8bf738dbc808bfd82a372cda6b6061b">CodeAlive-AI/ai-driven-development</a></li><li style="--hot-hue:102"><span class="dot"></span><a href="#item-b1f20c4705852b3deaf9294813e183f487f7ed2dcf71825327a78858ab23c68a">jposluns/grc_library</a></li><li style="--hot-hue:110"><span class="dot"></span><a href="#item-4fde41f07a3a7fa0a503c432a24af94bb1f6e05a5677f2b26f55643da342eca7">oMLX</a></li><li style="--hot-hue:118"><span class="dot"></span><a href="#item-0c94d00cdf48466691ab1a7fdf2424f48625cf4e5e72f4e8287ae6468714bb1f">Decawork</a></li></ul></div></nav>
+    <ul class="issue-items"><li class="issue-item" id="item-b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f" style="--hot-hue:5"><h4><a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex">Our decision on Cursor following its acquisition by SpaceX</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p class="item-dek">OpenAI is pulling its models out of Cursor now that Cursor has been acquired by SpaceX.</p><p>OpenAI confirmed it&#x27;s winding down the contract that supplies models to Cursor, triggered directly by Cursor&#x27;s acquisition by SpaceX. If your team standardized on Cursor assuming continuous access to OpenAI&#x27;s models, that assumption just broke — a coding tool&#x27;s model backend is its own vendor-risk surface, not a fixed detail of the product you procured.</p><details><summary>Read the source excerpt</summary><blockquote>Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.</blockquote></details></li><li class="issue-item" id="item-76963b852e28c23f9b1be3422b8479721b08b01ceba4d5d7b05c2ce8fe7e09c4" style="--hot-hue:12"><h4><a href="https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug">AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p class="item-dek">A red-team exercise found that an AI-generated GitHub Copilot &#x27;Autofix&#x27; PR was the actual entry point into Snowflake&#x27;s internal Jira.</p><p>Wiz&#x27;s Red Agent got into Snowflake&#x27;s internal Jira through a flaw introduced by a GitHub Copilot-assisted pull request — not a novel exploit technique, just an AI-authored fix that shipped without the scrutiny a human-only PR might have gotten. For teams treating autofix suggestions as low-risk because they&#x27;re &#x27;just a PR like any other,&#x27; this is the concrete case for holding that PR to the same review bar as anything hand-written.</p><details><summary>Read the source excerpt</summary><blockquote>Wiz Red Agent finds its way into Snowflake&#x27;s internal Jira through a flaw in a GitHub Copilot–Assisted PR.</blockquote></details></li><li class="issue-item" id="item-33e354a2033bc20bc8f5451efbca42b8d364b08b079a645f30329b93df8e976d" style="--hot-hue:20"><h4><a href="https://twitter.com/argofowl/status/2091150597374537729">Anthropic appears to be A/B testing reduced effort levels in Claude Code</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p class="item-dek">Anthropic is quietly A/B testing lower effort levels for some Claude Code sessions, server-side, with no client update to explain it.</p><p>A Claude Code user&#x27;s own investigation found Anthropic enrolling Fable 5 sessions on Claude Code 2.1.236+ into a server-side experiment that shrinks the effort scale, while older client versions and Opus 5 are left untouched. It&#x27;s probably an A/B test, so not every session sees it — but because the mechanism is server-side, nothing in your local install or changelog will tell you if &#x27;high&#x27; effort quietly started behaving like &#x27;low&#x27; for your account.</p><details><summary>Read the source excerpt</summary><blockquote>update: it&#x27;s server-side, not the app
+
+anthropic enrols fable 5 sessions on claude code 2.1.236+ into an experiment that shrinks the effort scale, older versions and opus 5 are left alone
+
+probably an a/b test, so not everyone will see it
+
+if &quot;high&quot; feels like &quot;low&quot; for you,</blockquote></details></li><li class="issue-item" id="item-2d37359263b703a2ab1fbe1c8172ace0319751d417182fb411d5694b30e2e6c6" style="--hot-hue:28"><h4><a href="https://twitter.com/ClaudeDevs/status/2093742321473065266">Claude Code permanently raising weekly limits by 25% from September 14</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.3 15 14H1L8 1.3Zm0 4.2-.7 5h1.4l-.7-5ZM8 11.2a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8Z"/></svg>Breaking</span><span class="read-time">1 min read</span></div><p class="item-dek">Claude Code&#x27;s standard weekly usage limits are going up 25% for good, starting September 14.</p><p>Anthropic says it&#x27;s permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans starting September 14, with the current temporary 50% increase holding until then. If your team has been planning capacity against weekly caps, both numbers matter: the temporary bump ends, but the new permanent baseline lands higher than where you started.</p><details><summary>Read the source excerpt</summary><blockquote>Starting September 14, we&#x27;re permanently raising standard weekly limits in Claude Code by 25% for Pro, Max, Team, and seat-based Enterprise plans. Until then, the current 50% increase will be in place.</blockquote></details></li><li class="issue-item" id="item-712e0655bc8f7477a56bae94ce484c9f6bf199d4192ecbc9ef7ea33aa6f289b5" style="--hot-hue:65"><h4><a href="https://news.ycombinator.com/item?id=49468252">Man, AI is killing my brain</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3 3h3.2c0 3-1 4.6-2.6 5.2L3 6.7V3Zm6.8 0H13c0 3-1 4.6-2.6 5.2L9.8 6.7V3Z"/></svg>Field Notes</span><span class="read-time">1 min read</span></div><p class="item-dek">One engineer&#x27;s own account of sliding from reviewing every AI suggestion to running 4-5 agents at once and just picking whatever Claude recommends.</p><p>The author describes easing off code review to keep pace with colleagues shipping faster with AI, then escalating from pushing small features straight to main, to running 4-5 agents in parallel across worktrees, to no longer understanding the code well enough to fix a bug without pasting the complaint back into Claude. It&#x27;s a first-person account of exactly the review-erosion scenario compliance-minded teams cite as the reason for keeping a human gate on agent output, regardless of how well the agent&#x27;s suggestions test out.</p><details><summary>Read the source excerpt</summary><blockquote>But I saw that my colleagues were shipping more, and so I started to ease on my reviews. At first, I would push small features straight to main. But my colleagues were shipping 10x more than me, and I need my job, so I started to push more and rely more on AI. As the agent was doing its work, sometimes 20-30 minutes, I would mindlessly scroll social media, something I tried to avoid for a very long time. But then I saw that my peers are using work trees, running multiple agents. So I started to do the same. Now, instead of mindlessly scrolling, I was launching 4-5 agents, juggling between their output. At some point, I was no longer having mental capacity to understand so much context, so I just started to chose the &quot;Recommended&quot; suggestion by Claude. I no longer know the code, or how things work. If there is a bug, I just copy the user complaint / bug description into Claude and let it figure it out. The good/bad part is that it seems to work. And I&#x27;m afraid what&#x27;s next. Almost one ye</blockquote></details></li><li class="issue-item" id="item-982030a696cfa48ad61adf6113b8aabcb8bf738dbc808bfd82a372cda6b6061b" style="--hot-hue:95"><h4><a href="https://github.com/CodeAlive-AI/ai-driven-development">CodeAlive-AI/ai-driven-development</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p class="item-dek">A set of practices, protocols, and safety hooks for AI-driven development, built to work across Claude Code, Codex, OpenCode, Cursor, Antigravity, and any agent that speaks the Agent Skills standard.</p><p>This is a collection of skills and safety hooks for AI-driven development rather than a single point tool — aimed at Claude Code, Codex, OpenCode, Cursor, Antigravity, and any agent implementing the Agent Skills standard. Cross-agent safety hooks are worth watching as a category: a rule you write once that keeps constraining behavior regardless of which vendor&#x27;s agent your team standardizes on next.</p><details><summary>Read the source excerpt</summary><blockquote>Practices, protocols, and skills for AI-driven software development. Skills and safety hooks for Claude Code, Codex, OpenCode, Cursor, Antigravity, and any agent supporting the Agent Skills standar...</blockquote></details></li><li class="issue-item" id="item-b1f20c4705852b3deaf9294813e183f487f7ed2dcf71825327a78858ab23c68a" style="--hot-hue:102"><h4><a href="https://github.com/jposluns/grc_library">jposluns/grc_library</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p class="item-dek">A documentation library covering governance, risk, compliance, and AI assurance, packaged with an installable Claude Code rules-and-skills pack.</p><p>This is a documentation library spanning governance, risk, compliance, cybersecurity, privacy, resilience, AI assurance, and operational control practices, paired with a Claude Code rules-and-skills pack. For teams whose compliance function still lives in policy PDFs, having that material available as skills inside the coding agent itself is a more direct integration than most tools on this list attempt.</p><details><summary>Read the source excerpt</summary><blockquote>A documentation library for governance, risk, compliance, cybersecurity, privacy, resilience, AI assurance, and operational control practices + a Claude Code rules-and-skills pack distilled from ma...</blockquote></details></li><li class="issue-item" id="item-4fde41f07a3a7fa0a503c432a24af94bb1f6e05a5677f2b26f55643da342eca7" style="--hot-hue:110"><h4><a href="https://www.producthunt.com/products/omlx">oMLX</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p class="item-dek">A Mac LLM inference server that claims to cut Claude Code and Cursor&#x27;s agent wait times from 90 seconds down to about 5.</p><p>oMLX turns a Mac into a full local LLM inference server — serving text, vision, OCR, embedding, and reranker models with continuous batching and a RAM+SSD tiered KV cache — with OpenAI- and Anthropic-compatible APIs that drop into Claude Code and Cursor directly. For shops where sending code context to a third-party API is the actual blocker, running inference entirely on developer hardware changes the compliance conversation more than a faster response time does.</p><details><summary>Read the source excerpt</summary><blockquote>Mac LLM server that cuts agent wait times from 90s to 5s — oMLX turns your Mac into a full LLM inference server, run from the menu bar. It serves text, vision, OCR, embedding and reranker models with continuous batching, plus a RAM+SSD tiered KV cache that survives restarts, so Claude Code and Cursor respond in about 5s instead of 90s. OpenAI and Anthropic compatible APIs drop straight in. Native Swift, not Electron. Apache 2.0, open source.</blockquote></details></li><li class="issue-item" id="item-0c94d00cdf48466691ab1a7fdf2424f48625cf4e5e72f4e8287ae6468714bb1f" style="--hot-hue:118"><h4><a href="https://www.producthunt.com/products/decawork">Decawork</a></h4><div class="badge-row"><span class="category-badge"><svg class="category-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1 14.5 4.5V11.5L8 15 1.5 11.5V4.5L8 1Zm0 2.3L3.6 5.6 8 8l4.4-2.4L8 3.3ZM3 6.8v4l4.3 2.3v-4L3 6.8Zm10 0-4.3 2.3v4L13 10.8v-4Z"/></svg>New Product</span><span class="read-time">1 min read</span></div><p class="item-dek">A way for IT to take an employee&#x27;s home-grown Claude Code or Codex agent, put it on company accounts, and manage it like an employee — access, oversight, retirement included.</p><p>Decawork&#x27;s pitch is squarely shadow-AI governance: an employee builds an agent on Claude Code, Codex, or any vibecoding tool, and Decawork brings it onto company accounts where IT can manage its access, oversight, and eventual retirement centrally. That&#x27;s a direct answer to the failure mode compliance teams actually worry about with agent tooling — not the model&#x27;s behavior, but an unmanaged agent running under someone&#x27;s personal account with unknown access.</p><details><summary>Read the source excerpt</summary><blockquote>Control your company&#x27;s internal AI agents and tools — Decawork is how IT teams take employee-built AI agents live and control every one of them from one place. An employee builds an agent on Claude Code, Codex, or any vibecoding tool; we take it in, put it on company accounts, and run it as a company asset. From there, IT team manages the agent like an employee: access, oversight, retirement.</blockquote></details></li></ul>
+    <p class="subscribe-cta"><a class="subscribe-btn" href="https://guardrail-radar.beehiiv.com/">Subscribe for the weekly issue →</a></p>
+    <footer>
+      <p><a href="../index.html">← Back to all issues</a></p>
+    </footer>
+  </main>
+</body>
+</html>
