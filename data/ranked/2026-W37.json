@@ -1,0 +1,362 @@
+[
+  {
+    "cluster_id": "8fc14d1457c025ed35c74c683baab6a08b1261d475b50a77f2484b1efc0da8ba",
+    "title": "davesheffer/hunch",
+    "url": "https://github.com/davesheffer/hunch",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 8.467596792737302,
+    "cluster_excerpt": "Local-first engineering memory for AI coding: a git-native graph of decisions, bugs, and invariants, exposed to Claude Code via MCP. - davesheffer/hunch",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e6d346c55c2d75d354c826e5dec794cb10eca37aac5fe4bd6eed5d9077574353",
+    "title": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 7.967494211617525,
+    "cluster_excerpt": "Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor &amp; any MCP client. 313B+ t...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "f3750c2b2266b3c8e87341479d52b00578877ea18f4353f75ff029c231b7d862",
+    "title": "inkatze/planwright",
+    "url": "https://github.com/inkatze/planwright",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 5.887130629353014,
+    "cluster_excerpt": "Autopilot for spec-driven development on Claude Code: sign off a spec and a guardrailed agent fleet builds, reviews, and delivers draft PRs. Scales from one feature to an agentic software factory. ...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "9d836dc9e6cf6d80afc7b7c95de60ec81bb1742994090e6c5c4bc3c08dbaf1f6",
+    "title": "Anysite.io",
+    "url": "https://www.producthunt.com/products/anysite",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 4.958420812853224,
+    "cluster_excerpt": "Build and enrich B2B lists by chatting to your agent — Anysite.io is a B2B data layer living in your favorite AI agent. Ask your agent for the list you need — companies by geo, industry, and size; the people inside them; their current job titles and emails — and Anysite.io returns it. No queries to write, no scrapers to maintain. Works over MCP or REST API inside Claude, Codex, Cursor, OpenCode, and other agents. Plug in and launch your outbound data collection the same day.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "580076a2339369b6b8830758750534b0fb5fd9b7dea9046374dc60ab106cff9a",
+    "title": "AVIDS2/memorix",
+    "url": "https://github.com/AVIDS2/memorix",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 4.490656939592565,
+    "cluster_excerpt": "Open-source cross-agent memory layer for coding agents via MCP. Compatible with Claude Code, Codex, Cursor, Windsurf, Gemini CLI, Antigravity, OpenClaw, Hermes Agent, Oh-my-Pi, Pi, Copilot, Kiro, O...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "0ddef28ec51ce522228be9f4ba0aa67fc292fdbf6747929c0e9e7113dd3d260f",
+    "title": "DevinoSolutions/anotifier-for-claude-codex-cursor",
+    "url": "https://github.com/DevinoSolutions/anotifier-for-claude-codex-cursor",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 4.333645785422586,
+    "cluster_excerpt": "Desktop &amp; phone notifications for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor). Native VS Code support. Toast + ntfy push. Zero dependencies. - DevinoSolutions/anotifier-for-claude...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "79c6196fb25fedaed8c2eb2938fe2bb6061ffa0f7e3404e9a0822442b5bbdc6d",
+    "title": "sfrangulov/claude-code-handbook-ru",
+    "url": "https://github.com/sfrangulov/claude-code-handbook-ru",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.6972338849228326,
+    "cluster_excerpt": "Курируемый handbook по Claude Code на русском: hooks, skills, CLAUDE.md шаблоны, MCP-серверы, кейсы. - sfrangulov/claude-code-handbook-ru",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "1de9d2b7f0cac8df079e24e3bca5691d1854eb534c1737f86fe1f27d2c1f56ad",
+    "title": "ZaxbyHub/opencode-swarm",
+    "url": "https://github.com/ZaxbyHub/opencode-swarm",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.6193017643974352,
+    "cluster_excerpt": "Architect-centric agentic swarm plugin for OpenCode. Hub-and-spoke orchestration with SME consultation, code generation, and QA review. - ZaxbyHub/opencode-swarm",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e89066dfb18c5096e38bee89f03f205be1af9231f6382f11e327ca330da8ac18",
+    "title": "timzaak/web-dev-skills",
+    "url": "https://github.com/timzaak/web-dev-skills",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.505367019814559,
+    "cluster_excerpt": "A Claude Code plugin for Rust + React projects. It turns PRD -> Design -> Task -> Development -> Acceptance -> Demo into a reusable workflow - timzaak/web-dev-skills",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "36eda1636563aa597c85b5458660501f88bb7e875fc9eb8940e47413f50f06f3",
+    "title": "QApilot MCP for Android",
+    "url": "https://www.producthunt.com/products/qapilot",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 2.8671345501984424,
+    "cluster_excerpt": "Android app testing inside your coding agent — QApilot MCP automates tests on real Android devices and emulators by talking to Claude, Cursor or Codex. Describe a test flow in plain English, no Appium code required. Your agent lays out the steps. QApilot runs the steps. It finds the elements, waits for the screen to settle, retries when something moves, and caches what it learns so repeat runs are faster. Every pass saves a Gherkin feature file and becomes a replayable test case. Needs Node, Java and the Android SDK.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "67df7dc05c155b947d7654ed4bdbf773cccb58b3c108d2d6438d30875f02c808",
+    "title": "codeclawd/fable-mode",
+    "url": "https://github.com/codeclawd/fable-mode",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.8582527708080265,
+    "cluster_excerpt": "Run Claude Fable 5 on Opus 4.8 in Claude Code. The Mythos-class model pulled by export controls — brought back as a native agentic distillation (FABLE_CODE.md), measured playbook, verification hook...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "498725bc30305e1661f3ebd2ad9a0e13c2f564b065c53766d08200903f37d5c0",
+    "title": "Switch",
+    "url": "https://www.producthunt.com/products/switch-11",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 2.4534323073912914,
+    "cluster_excerpt": "Bring any AI agent into Slack, Teams & Discord — Switch brings AI agents into the collaboration tools your team already uses. Agents join as named participants in your Slack, Teams, Discord, or Telegram channels, sharing the same context and history as your team. Connect an agent once and use it across projects. Each room carries its own context, participants, and rules. Works with Claude Code, OpenAI, Google ADK, LangChain, and more. Open source, self-hostable, running in minutes.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "677366c88d97c06aa421755dfd84da92f403a67b76cb1e918dd3c24788e2a647",
+    "title": "Show HN: Copperhead – Cursor for circuit boards",
+    "url": "https://copperhead.sh/",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 2.4519109484375403,
+    "cluster_excerpt": "An open-source AI agent that designs, documents and validates real PCBs from a prompt.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8c540b1a78b01c45369e44ef8a835fcdf51d40bcc8e771b130d95b0e3adca42e",
+    "title": "alexei-led/cc-thingz",
+    "url": "https://github.com/alexei-led/cc-thingz",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.4376241466008617,
+    "cluster_excerpt": "Portable skills, agents, hooks, and Pi extensions for Claude Code, Codex CLI, Copilot, Cursor, Grok, and Pi. - alexei-led/cc-thingz",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "bc3e3a4ced376c491101dfaac5402bd5110f92bf5d5f0ea103857ed1047198dd",
+    "title": "Ask HN: What default model do you use and why?",
+    "url": "https://news.ycombinator.com/item?id=49672966",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 2.259868254924,
+    "cluster_excerpt": "I also don't want to use the Claude Code and Codex agent harnesses. The good thing with Codex subscription is that it can be used in other harnesses, unlike Claude. As far as I know, only Anthropic has this restriction.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b5aa7ad0a40fdfe84bd5b49b66efc74ede5456df8d4d18feff7abb0f278609a0",
+    "title": "Cline Desktop App",
+    "url": "https://www.producthunt.com/products/cline-4",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 2.149049214287475,
+    "cluster_excerpt": "An open-source app for open-weight models — Cline Desktop gives you an open-source workspace to put your favourite model to work - run multiple agent sessions, automate recurring tasks, extend their capabilities through Cline’s Marketplace, and continue work from agents like Claude Code and Codex. Choose the models and providers that work best for you, while Cline’s agent harness, optimized for open-weight models, powers the work behind them. All without being tied to a closed ecosystem.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.8388998391116569,
+    "cluster_excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.8070944446457142,
+    "cluster_excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "753e26bf21fcd3deeb94c92738ade74c27a63c207ebc7a57071fb3bd150de82f",
+    "title": "poma-ai/megavibe",
+    "url": "https://github.com/poma-ai/megavibe",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.7899966640976157,
+    "cluster_excerpt": "Give Claude Code a memory that never dies. Persistent context, automatic recovery, remote access. - poma-ai/megavibe",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "6379e22bcefbb3cdb0a5ea62e5d0db6657fadacdf2e08961c2f7357d973dd769",
+    "title": "Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 1.7320228301269174,
+    "cluster_excerpt": "We watched almost 17k sessions across different types of personas, with 1,163 prompt variations, 75 repositories and 3 coding agents (Claude Code, Codex, Cursor) actually implementing the solutions instead of just recommending one.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "043bcaf954bdda9c1b6f9744ffd770e1b9de77ceb7a2a07a6e54a2070980d2ad",
+    "title": "teamtinvio/jaz-ai",
+    "url": "https://github.com/teamtinvio/jaz-ai",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.6812465955402955,
+    "cluster_excerpt": "Complete agent stack for Jaz. Plugins, Skills, MCP tools, and CLI for Claude Code, Cowork, Codex, Copilot, Cursor, and more. - teamtinvio/jaz-ai",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "2ef5a7b3564bfbacac43052753e74a12799401fa3362e1fe438460d4fa0d66ed",
+    "title": "gremlord/gremlord",
+    "url": "https://github.com/gremlord/gremlord",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.550792551116798,
+    "cluster_excerpt": "Run Claude Code on any model, with a budget — multi-provider router, LLM-triaged tier routing, spend tracking - gremlord/gremlord",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "5ce5dfd8334023f20471162f5e6b0b6d629cbf7f620f6f63655b4dff60d20490",
+    "title": "timwukp/agent-skills-best-practice",
+    "url": "https://github.com/timwukp/agent-skills-best-practice",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.4082996273753592,
+    "cluster_excerpt": "35 portable agent skills (Agent Skills spec) for Kiro &amp; Claude Code: Scrum DevSecOps roles, PCI-DSS/MAS TRM compliance, AWS Well-Architected reviews — each with evals and a 4-layer tested metho...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "edfe97059e80198be79f11c0397156938708723aceedcfab116f18f5e8cf02ee",
+    "title": "opokumarvin/cli-agent-architects-notebook",
+    "url": "https://github.com/opokumarvin/cli-agent-architects-notebook",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 1.3295969501205434,
+    "cluster_excerpt": "Master Agent CLI Patterns 2026 - Ultimate Guide to Claude Code & Coding Agents - opokumarvin/cli-agent-architects-notebook",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "3c5b571704a0a371f46e218594f20c47800bc119133adecb8e08851904d2459a",
+    "title": "chat-recall",
+    "url": "https://www.producthunt.com/products/chat-recall",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 1.1405568455715651,
+    "cluster_excerpt": "Ctrl+F for every conversation you've had with an AI — Your team has done months of work with AI assistants. Claude Code, Codex, Cursor and OpenCode each keep a full record of it, in its own format, and none can read the others. One command reads what they wrote and turns it into one searchable history. Passwords come out before anything leaves your computer. Your assistant searches it itself, so it stops asking what you decided last month. It also finds keys that leaked into old chats, and checks which still work.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "233d2e10f40847d07ae7372b57bfed1dee6b1a353e6ab32f587761b3c0b4c9f5",
+    "title": "Accordio",
+    "url": "https://www.producthunt.com/products/accordio",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.9604689225865809,
+    "cluster_excerpt": "Give Claude your hours, invoices and contracts — The tools Claude is missing: track time, sign contracts, send invoices, get paid. Free MCP connector for Claude, Claude Code, and any agent.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "0713fda523df3ecc0a0a249e8b5de567455c68cda920be7620e0a60b1d2c0d76",
+    "title": "m-esm/smart-subagents",
+    "url": "https://github.com/m-esm/smart-subagents",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.9201072325854169,
+    "cluster_excerpt": "Quota-aware subagent routing for Claude Code. Reads live rate limits across codex/grok/kimi, dispatches to the CLI with headroom, isolates in a git worktree, and verifies the diff before reporting....",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e43a5afa99a5375af757fe0defcffd856825c8bfd2c3efc51cb099a501aacc97",
+    "title": "Jackalope",
+    "url": "https://www.producthunt.com/products/jackalope",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.8644220303279229,
+    "cluster_excerpt": "Codex, Claude Code, Grok, + OpenCode in one shared workspace — Jackalope brings Codex, Claude Code, Grok, and OpenCode into one shared workspace. Run tasks in parallel Git worktrees, keep project context together, and review changes before applying them. Jackalope handles finding the best model, providing MCP tooling / shared context, tracking usage & quotas, managing any agent and multiple accounts (work / personal), recurring tasks, codebase visualization, computer use, browser use, and more. Cross-platform, open-source. Join the early-access list now,",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "f9e056a8fec09cb1a14e096df54db3b655e01b6e7ef788a2f864b3cb4cae718a",
+    "title": "Houthis Used Claude Code to Develop Missile Guidance Software: Anthropic",
+    "url": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.641752327802457,
+    "cluster_excerpt": "Anthropic says operators in northern Yemen ran parallel Claude Code instances to design guidance software, simulate trajectories, and analyze a failed rocket t…",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "eaf5693fd290cfefc9cfc82abe34ef905381937f4ced4a9cb407385fc5234c13",
+    "title": "fysoul17/devlyn-cli",
+    "url": "https://github.com/fysoul17/devlyn-cli",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.5609153971919832,
+    "cluster_excerpt": "AI development toolkit for Claude Code — ideate, auto-resolve, and ship with context engineering and agent orchestration - fysoul17/devlyn-cli",
+    "excerpt_status": "ok"
+  }
+]
