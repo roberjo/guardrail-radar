@@ -1,0 +1,112 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Easy way to stop dangerous AI",
+    "url": "https://youtu.be/9tr7Mby62bo",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-15T09:20:29.567-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "p3k41l",
+      "tags": [
+        "ai",
+        "video"
+      ]
+    },
+    "id": "1ec64b6251037e5dac741eb481007f000b103f00856f2198725567a66db18070"
+  },
+  {
+    "source": "lobsters",
+    "title": "Interpreting Pangram",
+    "url": "https://lucumr.pocoo.org/2026/9/14/interpreting-pangram",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-15T09:14:59.161-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "What is AI generated text anyways?",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "xy84in",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "8e44957209feef8dd719303dc489b63b34adedcfb86d9de6ca85a5bcd44f2af2"
+  },
+  {
+    "source": "lobsters",
+    "title": "Model Training Incidents are Negligence",
+    "url": "https://taggart-tech.com/lying",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-15T08:55:32.736-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "The recent cyber incidents required a pivot from the frontier AI labs. The pivot? Lie and distract.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ujnlm5",
+      "tags": [
+        "ai",
+        "rant"
+      ]
+    },
+    "id": "a2e5ed30f828effea95844c5d52a9145218db3bf858c0e72f4574ed109e08967"
+  },
+  {
+    "source": "lobsters",
+    "title": "openarm: A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments",
+    "url": "https://github.com/enactic/OpenArm",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-15T07:52:26.056-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments. - enactic/openarm",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "lizqwo",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "6d03ca72033aebf2930b33f212dbc29baf3b6e2ee69e3ae36e0a4748aab458ae"
+  },
+  {
+    "source": "lobsters",
+    "title": "Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces",
+    "url": "https://maggieappleton.com/planning-agents",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-15T01:17:27.132-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "Why we need richer, thicker interfaces and better boundary objects for collaborative planning with agents",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "klbjuj",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "40579207c6f62d366bdc56a143b0a7ecba7941490c306eab957689404c2d9c3b"
+  },
+  {
+    "source": "lobsters",
+    "title": "A Letter from a Machine Learning Engineer",
+    "url": "https://nemin.hu/llm-letter/index.html",
+    "raw_score": 20,
+    "comment_count": 5,
+    "posted_at": "2026-09-14T12:58:22.527-05:00",
+    "fetched_at": "2026-09-15T15:46:17.921673+00:00",
+    "excerpt": "My thoughts about an AI-related letter I received recently",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ta2ojd",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "097a8ee15aed47ba111eb6cc5263e425e55f46c9544408e6005a0a217d46ef99"
+  }
+]
