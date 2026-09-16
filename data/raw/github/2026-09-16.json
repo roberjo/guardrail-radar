@@ -1,0 +1,852 @@
+[
+  {
+    "source": "github",
+    "title": "wxyhgk/roost",
+    "url": "https://github.com/wxyhgk/roost",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:37:08Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "在浏览器里管理 shell 会话的本机工作台。会话由独立守护进程持有，关标签页、重启后端、断线都不打断。AI 能力来自终端里跑的 CLI。 - wxyhgk/roost",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "fe2dafc40c69f15c26fdbc5177ba39feb749b5ddf582abe5319ae7a6817a843b"
+  },
+  {
+    "source": "github",
+    "title": "dyoshikawa/rulesync",
+    "url": "https://github.com/dyoshikawa/rulesync",
+    "raw_score": 726,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:36:07Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "A Utility CLI for AI Coding Agents. Contribute to dyoshikawa/rulesync development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 56,
+      "total_stars": 1427,
+      "topic": "ai-coding"
+    },
+    "id": "2b363aed4b61b6e312f90048f6e670608e5d14bce7ec5b4c1461298283fe8df9"
+  },
+  {
+    "source": "github",
+    "title": "herminio234/claw-track",
+    "url": "https://github.com/herminio234/claw-track",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:35:15Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "MeowOps AI Analytics Dashboard 2026 - Self-Hosted Gamified Cody Colony & Pomodoro Timing - herminio234/claw-track",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "1e840aabe9c09ac3e9991b71870bcec3d7e3a401165c7eed662769beb82023b6"
+  },
+  {
+    "source": "github",
+    "title": "mykhailoklimnyk/PanTry",
+    "url": "https://github.com/mykhailoklimnyk/PanTry",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:35:11Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "ПанTry продукт на основі АІ агента для хакатону «Сільпо» AI Factory. - mykhailoklimnyk/PanTry",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 99,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "5342ed23260e19c42c59d094a2e3cf2a0a9ccf7b3f3ebe7e7acd4232c5e05e1b"
+  },
+  {
+    "source": "github",
+    "title": "eugenelim/agent-ready-repo",
+    "url": "https://github.com/eugenelim/agent-ready-repo",
+    "raw_score": 313,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:33:54Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "The complete AI operating model for software teams — from first idea to production. Three peer-supervised loops (discovery → build → release) over a catalogue of curated packs: skills, subagents, a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 22,
+      "topic": "ai-coding"
+    },
+    "id": "aa440349fc956093540867385edc1225501963d9174d35aead166023ca59659f"
+  },
+  {
+    "source": "github",
+    "title": "efanzaluc-prog/monkeycode-sandbox",
+    "url": "https://github.com/efanzaluc-prog/monkeycode-sandbox",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:33:05Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "MonkeyCode 2026: AI Dev Platform with Cloud IDE & Top LLMs - Open Source - efanzaluc-prog/monkeycode-sandbox",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "baea3063954961a1173d0ca5961e4e578502fe8634beafb193987cb29a2f09e6"
+  },
+  {
+    "source": "github",
+    "title": "Xu123-Bob/Baize",
+    "url": "https://github.com/Xu123-Bob/Baize",
+    "raw_score": 427,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:33:00Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "白泽 —— 中国古代神话中通晓万物的瑞兽，如今化身为 Vibe Coding 助手。  一个开源的 AI Coding Agent CLI，支持多后端（DeepSeek / OpenAI 兼容 / Ollama 本地），具备工具调用、技能加载、子代理委派、上下文压缩、安全沙箱等完整能力。在终端即可与 AI 结对编程。 - Xu123-Bob/Baize",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 71,
+      "topic": "ai-coding"
+    },
+    "id": "8cec8a406862b963a235f79ca83884246772a38a490ef74263a1995886110202"
+  },
+  {
+    "source": "github",
+    "title": "BrokkAi/mjolnir",
+    "url": "https://github.com/BrokkAi/mjolnir",
+    "raw_score": 409,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:32:10Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control. A Rust terminal and web control plane for...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 43,
+      "total_stars": 59,
+      "topic": "ai-coding"
+    },
+    "id": "3d7e21ab57a18249741c39a832ea8ffdcbd10904f9497814312791da6e86b8cf"
+  },
+  {
+    "source": "github",
+    "title": "ZaxbyHub/opencode-swarm",
+    "url": "https://github.com/ZaxbyHub/opencode-swarm",
+    "raw_score": 616,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:32:17Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Architect-centric agentic swarm plugin for OpenCode. Hub-and-spoke orchestration with SME consultation, code generation, and QA review. - ZaxbyHub/opencode-swarm",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 53,
+      "total_stars": 473,
+      "topic": "ai-coding"
+    },
+    "id": "1de9d2b7f0cac8df079e24e3bca5691d1854eb534c1737f86fe1f27d2c1f56ad"
+  },
+  {
+    "source": "github",
+    "title": "yannn14/opencode-claude-cortex-sync",
+    "url": "https://github.com/yannn14/opencode-claude-cortex-sync",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:31:47Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Claude Pro Bridge for OpenCode 2026 - Zero Setup AI Sync - yannn14/opencode-claude-cortex-sync",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "68bda65b348cd40bf7d6120c58f993986ee2672bd118b26f698627e6aabefd33"
+  },
+  {
+    "source": "github",
+    "title": "ChronoAIProject/Ornn",
+    "url": "https://github.com/ChronoAIProject/Ornn",
+    "raw_score": 304,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:32Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Your all-in-one skills-as-a-service platform to manage your skills, auto-generate skills and use agent skills as simple as calling an API. - ChronoAIProject/Ornn",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 129,
+      "total_stars": 20,
+      "topic": "llm-tools"
+    },
+    "id": "023a2dbaf5271905c49f016a556f27cb7dc32269c63c2e762906c7fa564f00e4"
+  },
+  {
+    "source": "github",
+    "title": "Shalimov04/mcp-airlock",
+    "url": "https://github.com/Shalimov04/mcp-airlock",
+    "raw_score": 321,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:14Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Stateless governance proxy for MCP (2026-07-28): policy, dry-run, human confirmation, audit, tracing - Shalimov04/mcp-airlock",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 24,
+      "topic": "llm-tools"
+    },
+    "id": "09de0c7867e0ef755abae500f52265701976baa19212a51acbbbf0bb7da5f6ba"
+  },
+  {
+    "source": "github",
+    "title": "pooriayousefi/mcp.clj",
+    "url": "https://github.com/pooriayousefi/mcp.clj",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:37:13Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "A pure, lightweight Clojure SDK for the Model Context Protocol (MCP). Build and consume LLM tools with zero Java bloat, supporting stdio and the newest StreamableHTTP transports. - pooriayousefi/mc...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "llm-tools"
+    },
+    "id": "19b18301f7311a2782fa58fac0a86608832fad4340d0ea5498980f42c622b334"
+  },
+  {
+    "source": "github",
+    "title": "Xeakaes/computer-use-for-all-agents",
+    "url": "https://github.com/Xeakaes/computer-use-for-all-agents",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:34:38Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Give any AI agent general-purpose computer use: live screen perception (OCR, vision frames, MJPEG stream) plus safety-gated mouse, keyboard, window, virtual-desktop and game-mode control over a loc...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "e16870460f6dd0c472229bcd8b9b53f24af122668ab53a01db9c07dd7607330f"
+  },
+  {
+    "source": "github",
+    "title": "juliopolycarpo/mangostudio",
+    "url": "https://github.com/juliopolycarpo/mangostudio",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:32:19Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "AI-powered image generation and chat studio. Contribute to juliopolycarpo/mangostudio development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 111,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "d30dc2c06a6d237f20ba6698279eeffaa74df83477557492b0e7ec068f831c58"
+  },
+  {
+    "source": "github",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:31:29Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc"
+  },
+  {
+    "source": "github",
+    "title": "HONYUZHE/dsh-screen-reader",
+    "url": "https://github.com/HONYUZHE/dsh-screen-reader",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:31:25Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "让大模型实时看见 Android 屏幕的 DSH 插件：读一屏 10ms 级，增量输出约 30 token - HONYUZHE/dsh-screen-reader",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "1cab5c7c3423011c427bc9a535d533a8ad7e6aaa290804e22a57efc4cfc1dd5c"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:30:39Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 6,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 355,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:30:37Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 34,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 313,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:30:35Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 22,
+      "topic": "llm-tools"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "hckhanh/pulumi-any-terraform",
+    "url": "https://github.com/hckhanh/pulumi-any-terraform",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:21Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Porting of some Terraform providers to Pulumi. Contribute to hckhanh/pulumi-any-terraform development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "fd84752cdc37e2de7d46b66245e1241e772c02b082edcf65fc33cd86d3598e0e"
+  },
+  {
+    "source": "github",
+    "title": "joryirving/home-ops",
+    "url": "https://github.com/joryirving/home-ops",
+    "raw_score": 541,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:37:41Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Wife tolerated HomeOps driven by Kubernetes, and Gitops via Flux. - joryirving/home-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 224,
+      "topic": "terraform"
+    },
+    "id": "40f9d4a9a94d1f7566e79022f6cae35754f0b99944529e46519f9fb90991421b"
+  },
+  {
+    "source": "github",
+    "title": "mortennordbye/homelab",
+    "url": "https://github.com/mortennordbye/homelab",
+    "raw_score": 576,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:37:16Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "GitOps-managed homelab using Kubernetes (Talos), ArgoCD, and Terraform for infrastructure as code. - mortennordbye/homelab",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 319,
+      "topic": "terraform"
+    },
+    "id": "3391a19e5894a009d0641407e3dd29133d236a349c1f729bc56be4cf2f4bc6e9"
+  },
+  {
+    "source": "github",
+    "title": "vyas-n/homelab",
+    "url": "https://github.com/vyas-n/homelab",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:36:57Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "My Homelab! Contribute to vyas-n/homelab development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "16498444ae82ce65679104ff467bc5f6d6bde7e59e7002ee677a20dae9bda3c2"
+  },
+  {
+    "source": "github",
+    "title": "Kalab21/banking-platform",
+    "url": "https://github.com/Kalab21/banking-platform",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:36:11Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Full-stack, event-driven retail banking platform with Java 17, Spring Boot microservices, Kafka, PostgreSQL, Redis, Next.js, TypeScript, Docker and AWS Terraform. Portfolio project. - Kalab21/banki...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "487c8af9ba4a0dedbf101086dc12e47a41e4e581ef866bfcd76b32b800e57cbf"
+  },
+  {
+    "source": "github",
+    "title": "kwoods42/azure-cloud-lab",
+    "url": "https://github.com/kwoods42/azure-cloud-lab",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:35:19Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Hands-on Azure infrastructure lab - AD, IIS, security hardening, and backup /DR documented in Terraform - kwoods42/azure-cloud-lab",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "2d293adfb693f64c9f913d4c5db960d34fd75fbd5f1d5e9cb50d00d961f5ba57"
+  },
+  {
+    "source": "github",
+    "title": "kingletas/terraform-aws-modules",
+    "url": "https://github.com/kingletas/terraform-aws-modules",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:35:08Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Terraform modules for AWS, with worked examples planned against mock providers. - kingletas/terraform-aws-modules",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "569c6789c7335a253d579af30efba6c8f66441bb91be2ff72248718802fcb2cd"
+  },
+  {
+    "source": "github",
+    "title": "gjed/terraform-github-config-as-yaml",
+    "url": "https://github.com/gjed/terraform-github-config-as-yaml",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:35:12Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Github repository configurations managed via YAML. Contribute to gjed/terraform-github-config-as-yaml development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 12,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "b886eec27594d43f6772fd74595bdec9df2163f906b425547123627e2839d6e5"
+  },
+  {
+    "source": "github",
+    "title": "ministryofjustice/modernisation-platform-terraform-module-template",
+    "url": "https://github.com/ministryofjustice/modernisation-platform-terraform-module-template",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:33:54Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Template repository for creating Terraform modules for use with the Modernisation Platform • This repository is defined and managed in Terraform - ministryofjustice/modernisation-platform-terraform...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "terraform"
+    },
+    "id": "aa28656324806e3053ab3a190ce1c281f5d9cc43ba580e50cb7e7c6d6b23bd28"
+  },
+  {
+    "source": "github",
+    "title": "coder/coder",
+    "url": "https://github.com/coder/coder",
+    "raw_score": 958,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:31Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Secure environments for developers and their agents - coder/coder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1016,
+      "total_stars": 14553,
+      "topic": "terraform"
+    },
+    "id": "73b7e92d1b039b14a0bcece0a1329de85e1c746a1d9d3978e45e7ce35c135574"
+  },
+  {
+    "source": "github",
+    "title": "sipyourdrink-ltd/bernstein",
+    "url": "https://github.com/sipyourdrink-ltd/bernstein",
+    "raw_score": 707,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:55Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "The open‑source AI Agents Governance &amp; Orchestration framework: write the rules declaratively, Bernstein enforces them and produces the verifiable, replayable record. Free, Apache-2.0. https://...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 330,
+      "total_stars": 1184,
+      "topic": "compliance"
+    },
+    "id": "82d9a3e2f37b37d7f349031f8cf0397c1f4ac4ba0d990dd7797ce0e62b61d946"
+  },
+  {
+    "source": "github",
+    "title": "snapotter-hq/SnapOtter",
+    "url": "https://github.com/snapotter-hq/SnapOtter",
+    "raw_score": 789,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:54Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Open-source, self-hosted file-processing tool. Convert, compress, OCR, transcribe &amp; run local AI across image, video, audio, PDF &amp; documents, via UI, REST API &amp; pipelines. Your files ne...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 221,
+      "total_stars": 2677,
+      "topic": "compliance"
+    },
+    "id": "18db88bba45fb85ec5e17279d430de5671ec39617cc67dc6d027540b1df01c97"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/helloverify",
+    "url": "https://github.com/api-evangelist/helloverify",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:32Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "HelloVerify — independent third-party profile of a public API surface, by API Evangelist. HelloVerify is India&#39;s leading background verification (BGV) and employee screening company, delivering...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "84f7e3e945ea88e733b5477af08b72cb4469b87791cd520656274a68829db9f2"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hellosign",
+    "url": "https://github.com/api-evangelist/hellosign",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:31Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Dropbox Sign (HelloSign) — independent third-party profile of a public API surface, by API Evangelist. Dropbox Sign (formerly HelloSign) is an eSignature platform whose v3 REST API lets developers ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "5448c73e6adf1282380944d8010b0f778f3a1316b01c4696d94b2239e2e6f159"
+  },
+  {
+    "source": "github",
+    "title": "pryv/compliance-matrix",
+    "url": "https://github.com/pryv/compliance-matrix",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:29Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Pryv Compliance & Regulation Matrix. Contribute to pryv/compliance-matrix development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "aef47a420b929d1c42840e0bd26c0ac9f7dc26ca733eb9565b8d148ec5e1253a"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/heavyconnect",
+    "url": "https://github.com/api-evangelist/heavyconnect",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:18Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "HeavyConnect — independent third-party profile of a public API surface, by API Evangelist. HeavyConnect is a digital documentation and compliance platform purpose-built for agricultural operations,...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "c2389861d07f16713ad036d287e4191132cc2cb244971e107913af9dbbbd123c"
+  },
+  {
+    "source": "github",
+    "title": "probavi/probavi",
+    "url": "https://github.com/probavi/probavi",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:15Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Continuous restore verification for databases — proves your backups are restorable, with signed evidence. - probavi/probavi",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "85e2c953aab91ecb1dab39bcd3556860b72f1631ae85e0f8edf97a398b9f9251"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/headnote",
+    "url": "https://github.com/api-evangelist/headnote",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:02Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Headnote — independent third-party profile of a public API surface, by API Evangelist. Headnote is a legal payments and accounts-receivable platform built specifically for law firms. Founded in 201...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "c4084d4e98d4e5c541e5d1d194ce4c848546564f3250473c361ec2da4aa677be"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hdata",
+    "url": "https://github.com/api-evangelist/hdata",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:01Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "HData — independent third-party profile of a public API surface, by API Evangelist. HData is the AI-native operating system for energy regulation. Founded in 2018 by Hudson Hollister, the platform ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "9203db1e19b28d8cde7ed186e78e2d4fc04691c443b69de62bca5c5ac2861b5a"
+  },
+  {
+    "source": "github",
+    "title": "magertron/orchestrator",
+    "url": "https://github.com/magertron/orchestrator",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:37:50Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Enterprise MCP Server Management. Contribute to magertron/orchestrator development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "619704032c2d13bfe2dee7faa35802e992ebf4ad32e24eee058cf11946b8f1de"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hihealth",
+    "url": "https://github.com/api-evangelist/hihealth",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:39:04Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "hi.health — independent third-party profile of a public API surface, by API Evangelist. hi.health is a cashless, real-time claims and payments platform for the insurance industry, now operated as &...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6155de46a0782a0e0b8a8890189ce3ac82ea0e4b1dc4b4f67885cbccec3f903c"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/higlobe",
+    "url": "https://github.com/api-evangelist/higlobe",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:39:04Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Higlobe — independent third-party profile of a public API surface, by API Evangelist. Higlobe is a regulated cross-border money transfer service that lets freelancers, independent contractors, and ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "290c314332a331706cf6d731049629a9e6944114f05aa9883e3aab45b7b6458a"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/highradius",
+    "url": "https://github.com/api-evangelist/highradius",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:39:02Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "HighRadius — independent third-party profile of a public API surface, by API Evangelist. HighRadius is an AI-powered autonomous finance platform for the Office of the CFO, automating the Order-to-C...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "7dd4f1d2987a9b0bad8680a940079e24c83b49c4211c062e3d1294317bbdba14"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/highnote",
+    "url": "https://github.com/api-evangelist/highnote",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:39:01Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Highnote — independent third-party profile of a public API surface, by API Evangelist. Highnote is a modern, unified embedded-finance and banking-as-a-service platform for card issuing, card acquir...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "1c0f8477ad941869f45ba194ecfe191bece82bb3d6c91889569e7504dc9aaad9"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/highbeam",
+    "url": "https://github.com/api-evangelist/highbeam",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:59Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Highbeam — independent third-party profile of a public API surface, by API Evangelist. Highbeam is a business banking and finance platform built for modern consumer brands (direct-to-consumer and e...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d8b2b318b5d8a1e842f2796c304802f55d104f869ec63b19c6834f820dad6841"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hifi",
+    "url": "https://github.com/api-evangelist/hifi",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:57Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Hifi — independent third-party profile of a public API surface, by API Evangelist. Hifi is a stablecoin and money-movement infrastructure company that provides composable financial APIs for moving,...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "defa9d5338a0b685110ec5c1f0b41fb3dfdaca905fdef7b1b05d9dd8dfbdcf01"
+  },
+  {
+    "source": "github",
+    "title": "Princ3k/quantimental",
+    "url": "https://github.com/Princ3k/quantimental",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:56Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "What's Up. And What's Down. Contribute to Princ3k/quantimental development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "4fa36d69c1344afdf2983ba08bc2d2cbd10de12b9b63c1ea4718f942776159dc"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:54Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hevn-inc",
+    "url": "https://github.com/api-evangelist/hevn-inc",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:46Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Hevn Inc — independent third-party profile of a public API surface, by API Evangelist. HEVN Inc (Y Combinator S26) is a fintech platform that lets non-US companies operate in USD without a US entit...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "05da2ba52a9ab002ac4c3e6572ea768607d363b263d882f5b2d426d2d6b6c070"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/hesi",
+    "url": "https://github.com/api-evangelist/hesi",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T15:38:44Z",
+    "fetched_at": "2026-09-16T15:38:28.951105+00:00",
+    "excerpt": "Hesi — independent third-party profile of a public API surface, by API Evangelist. Hesi (合思, operated by Beijing Hosi Information Technology Co., Ltd.) is an AI-driven spend and expense management ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "4673482efba5df4075c53fce4dc222f04a813db4499f41c75ec4df2d1470023a"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Why i'm still bearish on LLMs after Navier-Stokes",
+    "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+    "raw_score": 1,
+    "comment_count": 2,
+    "posted_at": "2026-09-16T10:04:45.848-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "[ thank you to claude fable 5.1, holden saberhagen, gabriel kammer, andres erbsen, alice mckean, and tristan wylde-larue for comments on this post ]",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "cianny",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "4c1f63c8573386ac917b092807f853131daf55e54463f5665f9dc20684bc122e"
+  },
+  {
+    "source": "lobsters",
+    "title": "Forgery of C2PA on a Pixel 10",
+    "url": "https://www.hackerfactor.com/blog/index.php?%2Farchives%2F1102-C2PA-and-Pixel-Glitter-Milk.html=",
+    "raw_score": 8,
+    "comment_count": 2,
+    "posted_at": "2026-09-16T08:24:31.337-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "tgrvxh",
+      "tags": [
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "3de672a7c0c3eed7f53308ff494f165ba8e827eee681021a7b0861d22704d4d6"
+  },
+  {
+    "source": "lobsters",
+    "title": "From Report to Patch, the OpenBSD Errata Process",
+    "url": "https://exquisite.tube/w/sDafcZjdEQpR83aogPSx9j",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-16T06:20:06.617-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "Embargoes create myth about security fixing. In OpenBSD we have an errata process to provide source and binary patches for stable releases. This requires a mixture of secrecy and fast acting. What ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wskpxf",
+      "tags": [
+        "openbsd",
+        "security",
+        "video"
+      ]
+    },
+    "id": "41403a02307613bbc041f7a8a5b6c96f221dcb31dbe37e21faa46ad65fd6f89f"
+  },
+  {
+    "source": "lobsters",
+    "title": "A/I Shuts Down",
+    "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+    "raw_score": 81,
+    "comment_count": 48,
+    "posted_at": "2026-09-16T01:05:38.170-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "We are not terrorists. Autistici.org is an infrastructure of dissent",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wxnibb",
+      "tags": [
+        "finance",
+        "privacy"
+      ]
+    },
+    "id": "55ccd427fe2d4a6039d6c3581f03e099eeb688e59a009726da398f587cb7058c"
+  },
+  {
+    "source": "lobsters",
+    "title": "Apple Reference Image: A New Approach for Verified Photography",
+    "url": "https://security.apple.com/blog/apple-reference-image",
+    "raw_score": 12,
+    "comment_count": 8,
+    "posted_at": "2026-09-15T23:19:42.787-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "Introducing Apple Reference Image, a new solution for verifiable photography on iPhone. This new, opt-in camera mode lets a photographer create a securely timestamped reference image that accurately depicts what was captured by the iPhone's camera sensor. Apple Reference Image offers a trustworthy, scalable guarantee that a reference image is what it claims to be: a real photograph, captured by a real sensor in an iPhone camera, at a specific period in time.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "mmrtig",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "72ab5f82866a45f96acc2399178f23c5835f19c168b33bcc08d605dba57be204"
+  },
+  {
+    "source": "lobsters",
+    "title": "1Password's AI patching benchmark is misleading",
+    "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading",
+    "raw_score": 13,
+    "comment_count": 2,
+    "posted_at": "2026-09-15T15:03:12.094-05:00",
+    "fetched_at": "2026-09-16T15:38:26.721758+00:00",
+    "excerpt": "1Password’s benchmark misrepresents AI patching. We share real-world data on human and agent patch quality from our consulting work and Patch the Planet and release two agent skills for testing and reviewing security fixes.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qx8dxe",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "57a8cf53413a25f51d56a09ea134730d4d9d3c75da07927ae21028498f361ce8"
+  }
+]
