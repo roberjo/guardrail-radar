@@ -1,0 +1,96 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Everybody's Lost Their Minds",
+    "url": "https://www.netmeister.org/blog/everybodys-lost-their-minds.html",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-17T10:06:08.154-05:00",
+    "fetched_at": "2026-09-17T15:44:23.706127+00:00",
+    "excerpt": "The AI brain worms have been spreading and I don't have a solution, I just want to get off this ride.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "rok1za",
+      "tags": [
+        "ai",
+        "culture"
+      ]
+    },
+    "id": "81e905f846fba4db73bf8136fe4ddecdd2f9889692f52c501360ba9a5118771a"
+  },
+  {
+    "source": "lobsters",
+    "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
+    "url": "https://harnesstax.github.io/",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-17T09:45:33.518-05:00",
+    "fetched_at": "2026-09-17T15:44:23.706127+00:00",
+    "excerpt": "What does a coding-agent harness actually add, and at what cost? It turns out your Claude models may not need Claude Code… We evaluate 21 model–harness pairs spanning seven models and three harnesses—Claude Code, Codex CLI, and Pi—on SWE-bench Lite and Terminal-Bench 2.0.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "iq4dwz",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "7e847601e9cddf513dd4f345c7643a69f373335d564b0ae7c5547f1ea3134e4e"
+  },
+  {
+    "source": "lobsters",
+    "title": "The skb that wasn't freed - the Fragnesia primitive via Open vSwitch",
+    "url": "https://blog.doyensec.com/2026/09/17/ovs.html",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-17T03:39:34.425-05:00",
+    "fetched_at": "2026-09-17T15:44:23.706127+00:00",
+    "excerpt": "The skb that wasn't freed - the Fragnesia primitive via Open vSwitch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "q6f60y",
+      "tags": [
+        "linux",
+        "security"
+      ]
+    },
+    "id": "c90d001fadf4a00df1a0efa243d4e9aeb964aa8c8d7926d5b5907a0e862cf9e1"
+  },
+  {
+    "source": "lobsters",
+    "title": "A/I Shuts Down",
+    "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+    "raw_score": 155,
+    "comment_count": 102,
+    "posted_at": "2026-09-16T01:05:38.170-05:00",
+    "fetched_at": "2026-09-17T15:44:23.706127+00:00",
+    "excerpt": "We are not terrorists. Autistici.org is an infrastructure of dissent",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "wxnibb",
+      "tags": [
+        "finance",
+        "privacy"
+      ]
+    },
+    "id": "55ccd427fe2d4a6039d6c3581f03e099eeb688e59a009726da398f587cb7058c"
+  },
+  {
+    "source": "lobsters",
+    "title": "Forgery of C2PA on a Pixel 10",
+    "url": "https://www.hackerfactor.com/blog/index.php?%2Farchives%2F1102-C2PA-and-Pixel-Glitter-Milk.html=",
+    "raw_score": 52,
+    "comment_count": 18,
+    "posted_at": "2026-09-16T08:24:31.337-05:00",
+    "fetched_at": "2026-09-17T15:44:23.706127+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "tgrvxh",
+      "tags": [
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "3de672a7c0c3eed7f53308ff494f165ba8e827eee681021a7b0861d22704d4d6"
+  }
+]
