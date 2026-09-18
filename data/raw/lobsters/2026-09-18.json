@@ -1,0 +1,114 @@
+[
+  {
+    "source": "lobsters",
+    "title": "I don't like passkeys",
+    "url": "https://hawksley.dev/blog/i-dont-like-passkeys",
+    "raw_score": 12,
+    "comment_count": 0,
+    "posted_at": "2026-09-18T07:52:18.949-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "Why passkeys are a step back for personal security: examining account lockout risks, platform lock-in, hardware key limits, and fragile recovery flows.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "4a7qly",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "39a062b8344e53cfca4d0ac128c6a75e3284ebc71a09ab6dd0078d07ff56e1b2"
+  },
+  {
+    "source": "lobsters",
+    "title": "Hacking OpenAI",
+    "url": "https://www.hacktron.ai/blog/hacking-openai",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-18T05:26:42.381-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repositories",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "htziuj",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "b3615add02cfa21d129feb2c27b526ccf0cfc3c2a48d488fded6d60a5470698a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Not In My Git Yard: Catching Backdoors at Commit and Release Time",
+    "url": "https://arxiv.org/abs/2607.26719",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-18T03:14:44.937-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "Code-level backdoors-stealthy code changes that grant hidden privileges via secret triggers-pose a persistent threat to opensource software. Known attempts to inject such backdoors into widely used projects through malicious commits, tampered release packages, or compromised third-party dependencies, were stopped only by luck and manual review. Existing Continuous Integration (CI) pipelines cannot detect these attacks, and downstream binary analysis tools require substantial manual effort. In this work, we present Lily, an automated approach that strengthens open-source development and release processes against backdoor injection. Lily integrates a backdoor detection mechanism into (1) CI pipelines to block malicious commits, and (2) release vetting workflows to prevent tampered releases or compromised dependencies from entering large ecosystems, such as Linux distributions. Lily offers two key contributions. First, it enhances CI-compatible fuzzing with the capability to detect trigge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "tvrnbv",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "b18bfac4ecea0fc321fa49433419338b889f864f2d51ad68cb2833850659e2d8"
+  },
+  {
+    "source": "lobsters",
+    "title": "A quartet of Linux local root vulns: DirtyAH6, PPPoEject, TUNderflow, and DiagSpill",
+    "url": "https://seclists.org/oss-sec/2026/q3/822",
+    "raw_score": 4,
+    "comment_count": 2,
+    "posted_at": "2026-09-18T02:57:04.274-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "7d3zs8",
+      "tags": [
+        "linux",
+        "security"
+      ]
+    },
+    "id": "7a1f5bd08b4b5c0c75d576ef937664b44998a23fdd8b275bdfc088b4d6988eea"
+  },
+  {
+    "source": "lobsters",
+    "title": "Flock cameras are riddled with security vulnerabilities and hard-coded credentials",
+    "url": "https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials",
+    "raw_score": 79,
+    "comment_count": 4,
+    "posted_at": "2026-09-17T16:21:18.024-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "This morning, DDoSecrets published an exciting new dataset: Filesystem images of the partitions from an in-use Flock ALPR camera. 404 Media and Wired published a joint investigation into it. I downloaded the dataset and am now thoroughly nerd-sniped.\n\nHackers from a collective called stegan0gram collected the data. “Why",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "eyg3oe",
+      "tags": [
+        "reversing",
+        "security"
+      ]
+    },
+    "id": "e395ef5e9209e3f3cf66e9a107d644d82effc2e4c7bb72bce3bd9cb15dca4c85"
+  },
+  {
+    "source": "lobsters",
+    "title": "Be alert: targeted attacks on prominent Rustaceans",
+    "url": "https://blog.rust-lang.org/2026/09/17/targeted-attacks",
+    "raw_score": 75,
+    "comment_count": 15,
+    "posted_at": "2026-09-17T13:10:52.241-05:00",
+    "fetched_at": "2026-09-18T15:17:27.119904+00:00",
+    "excerpt": "Empowering everyone to build reliable and efficient software.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "uz30ed",
+      "tags": [
+        "rust",
+        "security"
+      ]
+    },
+    "id": "1d110d81f214423d2d9f481f6841f256183615dede2ee89a33503d02738f2552"
+  }
+]
