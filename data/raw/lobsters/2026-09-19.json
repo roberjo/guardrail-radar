@@ -1,0 +1,172 @@
+[
+  {
+    "source": "lobsters",
+    "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\"",
+    "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-19T08:41:57.630-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "From our March 2025 arXiv paper on RL conversion trajectories to building a sub-40ms...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "kaqsr5",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "477308257951754b3096e7e8cac8e7722f0b87ee17d9b7dc080079b4b6736190"
+  },
+  {
+    "source": "lobsters",
+    "title": "kicking the tires on jev (TypeSafe's System One model) with 2048",
+    "url": "https://gist.github.com/cablehead/bdf9ad946ceb26d9008976e49c9bfbbb",
+    "raw_score": 5,
+    "comment_count": 1,
+    "posted_at": "2026-09-19T07:38:11.952-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "kicking the tires on jev with 2048. GitHub Gist: instantly share code, notes, and snippets.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "hmkk2c",
+      "tags": [
+        "ai",
+        "games"
+      ]
+    },
+    "id": "41c070cae9d0b3e574017789b8ae5036cd213fe6292fbcf66e38bfc853934f57"
+  },
+  {
+    "source": "lobsters",
+    "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+    "url": "https://spectrum.ieee.org/llms-for-chip-design",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-19T04:52:30.528-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "AI drastically shortened its design time; it will only get faster",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "7knhjd",
+      "tags": [
+        "ai",
+        "vibecoding"
+      ]
+    },
+    "id": "3e1dd1f8d6770e09e44a6f4f6f307206d0cbed0989c87a966d406b35916be517"
+  },
+  {
+    "source": "lobsters",
+    "title": "The Implications of Linguistic Illegibility for LLM Security",
+    "url": "https://arxiv.org/abs/2609.02852",
+    "raw_score": 3,
+    "comment_count": 2,
+    "posted_at": "2026-09-19T00:34:15.085-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "LLMs are trained to generate natural language. However, various strands of evidence indicate that an LLM's externalized linguistic outputs and mechanistically-extracted linguistic features can be an unreliable lens for understanding internal model computation. We introduce the term ``linguistic illegibility'' to broadly refer to scenarios in which an LLM's externalized or mechanistically-probed language artifacts fail to represent how the model actually thinks. We argue that the specter of linguistic illegibility is unavoidable for LLMs whose internal computations are not directly expressed via language, but rather math over activation spaces (with lossy translations between activation spaces and natural language happening at the bookends). If linguistic illegibility is always possible, then security mechanisms that rely on a model's linguistic self-reporting (e.g., chain-of-thought monitoring, constitutional self-critique, activation probing for linguistically-defined feature vectors)",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "bkjmjg",
+      "tags": [
+        "pdf",
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "d35c7bfffe978d42aca6a196fcb78f0fbdde4d6e6054c3b5c52ad30381c9184c"
+  },
+  {
+    "source": "lobsters",
+    "title": "The Age of Wonders and Terrors",
+    "url": "https://scottaaronson.blog/?p=10062",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-18T16:12:17.001-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "Twenty years ago, when the idea of AI taking over the world in our lifetimes still struck most of us as the unconstrained fantasy of those who knew too much science fiction and too little science, …",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "mbl9yx",
+      "tags": [
+        "ai",
+        "math"
+      ]
+    },
+    "id": "2581be1fe72f349edbea3cf1ef8c2d273272ef1cc13aef7267b158f874847ab0"
+  },
+  {
+    "source": "lobsters",
+    "title": "sudo and OpenDoas timestamp files (2020)",
+    "url": "https://π.duncano.de/sudo-doas-timestamp-files",
+    "raw_score": 8,
+    "comment_count": 4,
+    "posted_at": "2026-09-18T14:36:19.605-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "The persist feature in OpenBSDs doas(1) uses a new tty(4) ioctl(2) which allows to create ( TIOCSETVERAUTH ), clear ( TIOCCLRVERAUTH ) and check\n( IOCCHKVERAUTH ) authentications to the specific TTY with a timeout.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "9njxl2",
+      "tags": [
+        "security",
+        "unix"
+      ]
+    },
+    "id": "d137dc8661f70cc3560bb0fbb30ef5aac1140fd7336ee67e628f4624a9b08c25"
+  },
+  {
+    "source": "lobsters",
+    "title": "I don't like passkeys",
+    "url": "https://hawksley.dev/blog/i-dont-like-passkeys",
+    "raw_score": 63,
+    "comment_count": 42,
+    "posted_at": "2026-09-18T07:52:18.949-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "Why passkeys are a step back for personal security: examining account lockout risks, platform lock-in, hardware key limits, and fragile recovery flows.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "4a7qly",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "39a062b8344e53cfca4d0ac128c6a75e3284ebc71a09ab6dd0078d07ff56e1b2"
+  },
+  {
+    "source": "lobsters",
+    "title": "Flock cameras are riddled with security vulnerabilities and hard-coded credentials",
+    "url": "https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials",
+    "raw_score": 108,
+    "comment_count": 9,
+    "posted_at": "2026-09-17T16:21:18.024-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "This morning, DDoSecrets published an exciting new dataset: Filesystem images of the partitions from an in-use Flock ALPR camera. 404 Media and Wired published a joint investigation into it. I downloaded the dataset and am now thoroughly nerd-sniped.\n\nHackers from a collective called stegan0gram collected the data. “Why",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "eyg3oe",
+      "tags": [
+        "reversing",
+        "security"
+      ]
+    },
+    "id": "e395ef5e9209e3f3cf66e9a107d644d82effc2e4c7bb72bce3bd9cb15dca4c85"
+  },
+  {
+    "source": "lobsters",
+    "title": "Be alert: targeted attacks on prominent Rustaceans",
+    "url": "https://blog.rust-lang.org/2026/09/17/targeted-attacks",
+    "raw_score": 97,
+    "comment_count": 32,
+    "posted_at": "2026-09-17T13:10:52.241-05:00",
+    "fetched_at": "2026-09-19T14:54:51.111968+00:00",
+    "excerpt": "Empowering everyone to build reliable and efficient software.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "uz30ed",
+      "tags": [
+        "rust",
+        "security"
+      ]
+    },
+    "id": "1d110d81f214423d2d9f481f6841f256183615dede2ee89a33503d02738f2552"
+  }
+]
