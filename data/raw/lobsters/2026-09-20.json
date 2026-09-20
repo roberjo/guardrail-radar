@@ -1,0 +1,118 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Software sandboxing: The basics (2025)",
+    "url": "https://blog.emilua.org/2025/01/12/software-sandboxing-basics",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-20T09:13:11.598-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "Diving into the territory of software sandboxing is diving into mostly uncharted\r\nterritory. The necessary pieces to implement good sandboxing in your software\r\nare scattered all-around and the pioneers haven’t yet gathered enough knowledge\r\ninto an unified mappa mundi that can guide new sailors through some well\r\nunderstood safe routes. In this blog post I’ll offer my own share of experiences\r\nthat I have acquired while working on sandboxing support for Emilua. Writing\r\nstyle will suffer a little because I’ll err on the side of repeating myself too\r\nmuch to avoid any misunderstandings.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "brptxb",
+      "tags": [
+        "programming",
+        "security",
+        "unix"
+      ]
+    },
+    "id": "ef720ccfe3fc6da9f988fd00a26fc7094798bd4e5c9af4f294c45ab2a849931a"
+  },
+  {
+    "source": "lobsters",
+    "title": "HEIF Heist",
+    "url": "https://heif-heist.com/",
+    "raw_score": 4,
+    "comment_count": 3,
+    "posted_at": "2026-09-20T00:56:25.944-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "One image parser to pwn them all. Hacktron research into remote exploitation through production HEIF, HEIC, and AVIF image pipelines.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qpbblx",
+      "tags": [
+        "graphics",
+        "security"
+      ]
+    },
+    "id": "4b83cbb2332bd3bff975893480f6f201f76fb488472dead66e38870ffc3c38b3"
+  },
+  {
+    "source": "lobsters",
+    "title": "ZK-JPEG: Zero-knowledge Image Editing and Compression",
+    "url": "https://eprint.iacr.org/2026/2039",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-19T18:38:01.956-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "Tools for generating deep fake photographs are proliferating with greater ease of use and prominence in pop culture. Image authentication tools can defeat these deceitful developments by verifying that a digital image was actually produced by a physical camera. The challenge is that these tools must be robust to desirable image transformations.\r\n\r\nCamera attestation uses digital signatures to prove an image's provenance from a camera. Lossy compression makes minute changes in order to reduce an image's size, and blurring or redacting regions of an image can protect its subjects. These changes invalidate an image's signature. Prior works use zero-knowledge (ZK) to prove a published image's edit history, but they do not survive lossy encoding such as the JPEG format.\r\n\r\nWe present \\zkjpeg, a cryptographic tool for JPEG compression that proves an image was correctly compressed from a secret, committed input. In addition, our tool can verify a large family of image transformations by integ",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "cvqxkk",
+      "tags": [
+        "compsci",
+        "security"
+      ]
+    },
+    "id": "404c66e061e2b12dfb9d16edd7cd868350e10ee748b16b641afda2777423117a"
+  },
+  {
+    "source": "lobsters",
+    "title": "we have a year to fix security everywhere",
+    "url": "https://jyn.dev/a-year-to-fix-security",
+    "raw_score": 42,
+    "comment_count": 36,
+    "posted_at": "2026-09-19T14:27:46.429-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "consumer-grade hardware can run an LLM that hacks the planet. we can stop it, but we don't have much time.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "re9wk8",
+      "tags": [
+        "security",
+        "vibecoding"
+      ]
+    },
+    "id": "df3c8bf07c185dab6ec4593cc44a691a183f6d23e94531b0f67a560794df9aa2"
+  },
+  {
+    "source": "lobsters",
+    "title": "Secure VMs for Kubernetes: Hardening Kata containers",
+    "url": "https://srcreigh.ca/posts/auditable-kata",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-19T12:11:45.363-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "Yesterday I used Astra to delete ~60% of Kata Containers code while maintaining\nfull support for using it to run x86_64 Kubernetes workloads in the Firecracker\nVM. My goal was to reduce the attack surface as much as possible in\nagent-runtime Kata code, and make such code more easily auditable.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "yfz406",
+      "tags": [
+        "devops",
+        "security",
+        "vibecoding",
+        "virtualization"
+      ]
+    },
+    "id": "1a39ace00a3f384fa0e7bf4ec598926f7e65576f910d51530972199360c558be"
+  },
+  {
+    "source": "lobsters",
+    "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\"",
+    "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+    "raw_score": 55,
+    "comment_count": 6,
+    "posted_at": "2026-09-19T08:41:57.630-05:00",
+    "fetched_at": "2026-09-20T14:58:21.289693+00:00",
+    "excerpt": "From our March 2025 arXiv paper on RL conversion trajectories to building a sub-40ms...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "kaqsr5",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "477308257951754b3096e7e8cac8e7722f0b87ee17d9b7dc080079b4b6736190"
+  }
+]
