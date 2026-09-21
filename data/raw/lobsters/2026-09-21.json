@@ -1,0 +1,41 @@
+[
+  {
+    "source": "lobsters",
+    "title": "ChatGPT now knows what you do on other websites via ad collector",
+    "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector",
+    "raw_score": 56,
+    "comment_count": 5,
+    "posted_at": "2026-09-20T12:43:10.204-05:00",
+    "fetched_at": "2026-09-21T17:15:39.826532+00:00",
+    "excerpt": "OpenAI's ad collector at bzr.openai.com sets a cookie called __obi, scoped to .openai.com. The value is while you are on ChatGPT and tied to your ChatGPT account. __obi is then sent to OpenAI from ordinary websites you visit.\n\nAny company that buys ads on ChatGPT installs",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "jbnmj9",
+      "tags": [
+        "ai",
+        "privacy"
+      ]
+    },
+    "id": "8100bdd4d0e18a71029e149a29c79376c5bcae593bfbc7a9818c90cc17a2bdb3"
+  },
+  {
+    "source": "lobsters",
+    "title": "Software sandboxing: The basics (2025)",
+    "url": "https://blog.emilua.org/2025/01/12/software-sandboxing-basics",
+    "raw_score": 47,
+    "comment_count": 25,
+    "posted_at": "2026-09-20T09:13:11.598-05:00",
+    "fetched_at": "2026-09-21T17:15:39.826532+00:00",
+    "excerpt": "Diving into the territory of software sandboxing is diving into mostly uncharted\r\nterritory. The necessary pieces to implement good sandboxing in your software\r\nare scattered all-around and the pioneers haven’t yet gathered enough knowledge\r\ninto an unified mappa mundi that can guide new sailors through some well\r\nunderstood safe routes. In this blog post I’ll offer my own share of experiences\r\nthat I have acquired while working on sandboxing support for Emilua. Writing\r\nstyle will suffer a little because I’ll err on the side of repeating myself too\r\nmuch to avoid any misunderstandings.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "brptxb",
+      "tags": [
+        "programming",
+        "security",
+        "unix"
+      ]
+    },
+    "id": "ef720ccfe3fc6da9f988fd00a26fc7094798bd4e5c9af4f294c45ab2a849931a"
+  }
+]
