@@ -1,0 +1,76 @@
+[
+  {
+    "source": "lobsters",
+    "title": "EvilVM: Forth shellcode",
+    "url": "https://web.archive.org/web/20250418124519/http://evilvm.ninja",
+    "raw_score": 4,
+    "comment_count": 1,
+    "posted_at": "2026-09-22T09:10:07.498-05:00",
+    "fetched_at": "2026-09-22T15:49:04.619645+00:00",
+    "excerpt": "I presented EvilVM’s Alpha release at NolaCon , 2019.  You can see Irongeek ’s video recording on YouTube, for a good intro to the project and some demos:",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vhbyvk",
+      "tags": [
+        "concatenative",
+        "security"
+      ]
+    },
+    "id": "665ca8de2164dc7834814e88a8df33c1e66c6d77cbd30a82de317880d20fd327"
+  },
+  {
+    "source": "lobsters",
+    "title": "Reviving TEMPEST Attacks With An Injected Signal",
+    "url": "https://hackaday.com/2026/09/20/reviving-tempest-attacks-with-an-injected-signal",
+    "raw_score": 5,
+    "comment_count": 1,
+    "posted_at": "2026-09-22T07:25:27.489-05:00",
+    "fetched_at": "2026-09-22T15:49:04.619645+00:00",
+    "excerpt": "TEMPEST attacks are often the most effective way to break air-gapped security: rather than directly accessing a computer, the attacker records the system’s unintended radio emissions and uses them …",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ub3vw7",
+      "tags": [
+        "hardware",
+        "security"
+      ]
+    },
+    "id": "bfa58105e1544706efd19f06efbee1ab6b899d89ede978806441c352f4f67b43"
+  },
+  {
+    "source": "lobsters",
+    "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+    "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-22T05:36:43.059-05:00",
+    "fetched_at": "2026-09-22T15:49:04.619645+00:00",
+    "excerpt": "A rewrite this size wasn't affordable before agents. Here's what porting the Copilot agent runtime to 800,000 lines of production Rust actually took.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "2f2rrp",
+      "tags": [
+        "vibecoding"
+      ]
+    },
+    "id": "71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20"
+  },
+  {
+    "source": "lobsters",
+    "title": "stack unwinding can lead to leakless code execution",
+    "url": "https://pepsipu.com/blog/2026-09-dwarf",
+    "raw_score": 6,
+    "comment_count": 1,
+    "posted_at": "2026-09-21T18:01:34.329-05:00",
+    "fetched_at": "2026-09-22T15:49:04.619645+00:00",
+    "excerpt": "A few years ago, I wrote boogie-woogie for DiceCTF 2024. The premise was to convert relative byte swaps in the .data section to code execution.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0d6gcs",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "cc442d4ef4b9aa3694fcc58c78c56894dd1bd1b50f7140d47e01e5d4dac38334"
+  }
+]
