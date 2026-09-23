@@ -1,0 +1,134 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Radicle: Disclosure of Vulnerability in the Network Protocol",
+    "url": "https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol.html",
+    "raw_score": 7,
+    "comment_count": 0,
+    "posted_at": "2026-09-23T09:34:37.015-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "Sovereign code infrastructure.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ad5vwg",
+      "tags": [
+        "distributed",
+        "security",
+        "vcs"
+      ]
+    },
+    "id": "7174cc89ef5e353bab27c35e145336dac84af5747896e29d820f7c709e38a021"
+  },
+  {
+    "source": "lobsters",
+    "title": "Latest BGP hijack targets hosting software vendor",
+    "url": "https://blog.apnic.net/2026/09/22/latest-bgp-hijack-targets-hosting-software-vendor",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-09-23T06:55:38.027-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "Guest Post: An analysis of the BGP hijack against Softaculous that enabled an attacker to obtain a fraudulent TLS certificate and distribute a malicious Virtualizor update.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "eqme8i",
+      "tags": [
+        "networking",
+        "security"
+      ]
+    },
+    "id": "228f1e675376fbd9949e3fd3bf102876ae8d8ae9787fed07dd84632e0dd5225b"
+  },
+  {
+    "source": "lobsters",
+    "title": "SAML: A fractal of bad design",
+    "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design",
+    "raw_score": 9,
+    "comment_count": 0,
+    "posted_at": "2026-09-23T05:58:54.731-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "SAML, the XML-based authentication protocol that birthed the SSO industry, is fundamentally flawed due to XML complexity, canonicalization issues, enveloped signatures, and design ossification, making it vulnerable to signature wrapping attacks and parser differentials that persist despite decades of awareness. Organizations should migrate to OpenID Connect (OIDC), which avoids these pitfalls through simpler JSON-based design, detached signatures, and agile evolution.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "4uqtta",
+      "tags": [
+        "rant",
+        "security"
+      ]
+    },
+    "id": "f9b9fdd45222f00a1fb72575daa9593f771f71b5cbd1fb3b81d717a6554dada6"
+  },
+  {
+    "source": "lobsters",
+    "title": "Sandboxing with minimal effort",
+    "url": "https://yorickpeterse.com/articles/sandboxing-with-minimal-effort",
+    "raw_score": 7,
+    "comment_count": 1,
+    "posted_at": "2026-09-23T00:08:03.825-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "The other\nday I merged a new feature for Inko that I think is quite\ninteresting: the ability to sandbox an application with minimal effort.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "zji8bf",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "baf350aa08b1785e55428a83edb9231f4e9b0f3748d45d578f096145c63730bf"
+  },
+  {
+    "source": "lobsters",
+    "title": "DeepSeek Elastic Compute (DSec): Sandbox Infrastructure for Effective Agentic Training at Scale",
+    "url": "https://arxiv.org/abs/2609.22978",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-22T19:51:04.767-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "Large-scale agentic training and evaluation with large language models (LLMs) rely on isolated, stateful execution environments in which models inspect repositories, invoke tools, execute commands, and interact with task-specific services. These workloads create sandboxes in large bursts, span heterogeneous functionality and isolation requirements, retain state across long interactions, and draw from large image corpora with limited reuse. Supporting them therefore requires an elastic execution platform rather than a single sandbox runtime.\n  This report presents DeepSeek Elastic Compute (DSec), a production sandbox platform that exposes FnCall, container, microVM, and full-VM sandbox backends through a unified SDK. DSec coordinates placement and lifecycle management across the cluster, composes environments from independently versioned layers, combines memory sharing, reclamation, and CPU scheduling for high-density execution, and loads image data on demand from Fire-Flyer File System",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "3hbty3",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "e21b1a157dc5cfe4be4b69dbe6fc36a6cf7ee60eb2c7cedee60ad89298721719"
+  },
+  {
+    "source": "lobsters",
+    "title": "GitHub Actions leaking secrets when Miri output is cached",
+    "url": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached",
+    "raw_score": 9,
+    "comment_count": 11,
+    "posted_at": "2026-09-22T16:38:02.383-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "Empowering everyone to build reliable and efficient software.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "acz9kk",
+      "tags": [
+        "rust",
+        "security"
+      ]
+    },
+    "id": "43edfe03ca06d8cc2c788e1ff91a96627d6c7afcb7403ad048ecdf8ca898fff5"
+  },
+  {
+    "source": "lobsters",
+    "title": "Fifty Years of Open Source Software Supply Chain Security (2025)",
+    "url": "https://queue.acm.org/doi/10.1145/3722542",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-22T16:08:55.168-05:00",
+    "fetched_at": "2026-09-23T15:38:41.903085+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "9jjplv",
+      "tags": [
+        "compsci",
+        "security"
+      ]
+    },
+    "id": "714cfc0f82b9ed6068bf9b632db9b4689eb19f029d3e00565e265087e379531d"
+  }
+]
