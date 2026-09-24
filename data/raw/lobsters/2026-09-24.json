@@ -1,0 +1,119 @@
+[
+  {
+    "source": "lobsters",
+    "title": "There’s a new way to break RSA that’s faster than anything we’ve seen before",
+    "url": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-24T10:20:45.042-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "Until now, cryptographers thought factoring was the only way to break RSA. Not anymore.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ykceln",
+      "tags": [
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "9be68271b4f4619d14a0433a23244bf8df7db100b3fc83d6f7674147f2d493f7"
+  },
+  {
+    "source": "lobsters",
+    "title": "Forging 1024-bit RSA signatures in nearly SNFS time",
+    "url": "https://eprint.iacr.org/2026/2131.pdf",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-24T10:13:35.572-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "Alternate title: Nearly SNFS-Speed Signature Forgery Sans Factoring N (NSNFSSSFSFN) Abstract. The security of RSA is generally understood to be based on\nthe complexity of factoring, and key size parameters are extrapolated\nfrom the general number field sieve (GNFS). However, this may not\naccurately represent RSA security in practical scenarios. An under-appreciated 2007 algorithm of Joux, Naccache, and Thomé\nallows an attacker to forge RSA signatures after temporary access to a\nraw RSA signing/decryption oracle in time close to the special number\nfield sieve (SNFS) without factoring the key. We implement and run this\nalgorithm for 1024-bit RSA. In total, the attack took 1380 CPU core-years over five calendar months, and made 232 oracle queries. Most of\nthis time is precomputation; after the precomputation the attacker can\nforge any signature of choice, offline, in 180 core-years. We carried out our attack using a hardware security module (HSM) as\nthe signing oracle, thus demonstrating ",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "short_id": "ah5jnf",
+      "tags": [
+        "cryptography",
+        "pdf",
+        "security"
+      ]
+    },
+    "id": "78891cca59565b2592a214514afae02a4f2778459d0c1463c5791b40121c167a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Combining Machine Learning and Homomorphic Encryption in the Apple Ecosystem",
+    "url": "https://machinelearning.apple.com/research/homomorphic-encryption",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-24T08:27:42.590-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "At Apple, we believe privacy is a fundamental human right. Our work to protect user privacy is informed by a set of privacy principles, andâ¦",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "7ekwll",
+      "tags": [
+        "ai",
+        "cryptography"
+      ]
+    },
+    "id": "66fab4504ac61b0c69efca48f1078c88b002d01ffb3a4d9a3ad0eb895c857fa4"
+  },
+  {
+    "source": "lobsters",
+    "title": "Alibaba Cloud joins as a Founding Corporate Patron with $3 million",
+    "url": "https://omarchy.org/news/2026/09/alibaba-cloud-joins-as-founding-corporate-patron",
+    "raw_score": -5,
+    "comment_count": 0,
+    "posted_at": "2026-09-24T03:55:45.282-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "Alibaba Cloud is joining the Omacom Foundation as a Founding Corporate Patron, contributing $1 million a year for three years! Thatâs a $3 million commitment, matching DigitalOceanâs backing, to the development,â¦",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gpvq9j",
+      "tags": [
+        "finance",
+        "linux"
+      ]
+    },
+    "id": "7fbda83350ba736df32468bc7c49590c4b82ade6dd13bab55ea9aec081951107"
+  },
+  {
+    "source": "lobsters",
+    "title": "Beware overreliance on metaphor",
+    "url": "https://evnm.substack.com/p/beware-overreliance-on-metaphor",
+    "raw_score": 13,
+    "comment_count": 1,
+    "posted_at": "2026-09-23T18:39:21.504-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "vmd3gy",
+      "tags": [
+        "ai",
+        "historical",
+        "philosophy"
+      ]
+    },
+    "id": "98a27eccf2c51e256bcf4817ee34fb166c59c1bcfcec7b1a80427aa5b0de9db6"
+  },
+  {
+    "source": "lobsters",
+    "title": "Radicle: Disclosure of Vulnerability in the Network Protocol",
+    "url": "https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol.html",
+    "raw_score": 130,
+    "comment_count": 50,
+    "posted_at": "2026-09-23T09:34:37.015-05:00",
+    "fetched_at": "2026-09-24T15:59:11.629798+00:00",
+    "excerpt": "Sovereign code infrastructure.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ad5vwg",
+      "tags": [
+        "distributed",
+        "security",
+        "vcs"
+      ]
+    },
+    "id": "7174cc89ef5e353bab27c35e145336dac84af5747896e29d820f7c709e38a021"
+  }
+]
