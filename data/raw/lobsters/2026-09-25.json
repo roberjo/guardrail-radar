@@ -1,0 +1,133 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Rethinking how technology uses our personal data",
+    "url": "https://thecloudfall.com/",
+    "raw_score": 4,
+    "comment_count": 2,
+    "posted_at": "2019-06-16T10:57:16.000-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "This essay explores visually how keeping data and AI on‑device could empower not only users, but also companies.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "huyopq",
+      "tags": [
+        "privacy",
+        "security"
+      ]
+    },
+    "id": "15ff0380e4a5df54ca13567115ad284af79cec7ebb23ec204863906c395f0f29"
+  },
+  {
+    "source": "lobsters",
+    "title": "Debug UEFI code by single-stepping your Coffee Lake-S hardware CPU",
+    "url": "https://casualhacking.io/blog/2019/6/2/debug-uefi-code-by-single-stepping-your-coffee-lake-s-hardware-cpu",
+    "raw_score": 9,
+    "comment_count": 1,
+    "posted_at": "2019-06-15T17:13:53.000-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "In the post I will cover: Configuring an ASRock H370M-ITX/ac to allow DCI DbC debugging Using Intel System Studio and System Debugger to single-step a Coffee Lake-S i7-8700 CPU Debugging an example exploitable UEFI application on hardware",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "pw3lga",
+      "tags": [
+        "hardware",
+        "security"
+      ]
+    },
+    "id": "4d31e27546e1b86e4848f41c404a162f59ac4339de39172a3f8316c7126c8935"
+  },
+  {
+    "source": "lobsters",
+    "title": "Goodbye Google",
+    "url": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
+    "raw_score": 43,
+    "comment_count": 7,
+    "posted_at": "2026-09-25T00:51:12.558-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "Robert O'Callahan. Christian. Kiwi. Software guy. All content human-generated unless otherwise noted. robert@ocallahan.org ...\n     Follow on X ,\n     Follow on Bluesky",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "sxlf4a",
+      "tags": [
+        "ai",
+        "person"
+      ]
+    },
+    "id": "aefc181709ea32c59fc7b04f603b3f9c19fa7f7bdc6e301357cae7f2c91d95e8"
+  },
+  {
+    "source": "lobsters",
+    "title": "SourceHut account takeover via build logs (XSS in ansi2html.py)",
+    "url": "https://blog.arusekk.pl/posts/srht-account-takeover",
+    "raw_score": 85,
+    "comment_count": 5,
+    "posted_at": "2026-09-24T15:38:32.218-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "A wormable vulnerability allowed anyone able to inject text in a build log on builds.sr.ht (or other instances) to take over accounts who viewed them",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ky1cr0",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "567613279ca1efe417104c418cc2d485a6f760c9559948b3c6741cbe720b982e"
+  },
+  {
+    "source": "lobsters",
+    "title": "File Notification Attacks: Side-Channel Leakage from the File-Notification System on Linux, Android, Windows, and macOS",
+    "url": "https://inoti.fyi/",
+    "raw_score": 18,
+    "comment_count": 3,
+    "posted_at": "2026-09-24T21:50:41.729-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "Side-Channel Leakage from the File-Notification System on Linux, Android, Windows, and macOS. Accepted at The ACM Conference on Computer and Communications Security (CCS), November 15-19, 2026 — The Hague, Netherlands File-notification systems tell applications when files change, e.g., opened, closed, written, deleted. With only read permission on a file or directory, an attacker can watch these notifications and reconstruct user behavior. We find generic issues similar on each of Linux, Android, Windows, and macOS.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "x6yjrc",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "a6bfb968afd5e347551b2dd6e9d0e03a8c33fc2726bfe11b17f86bd84b7dabd4"
+  },
+  {
+    "source": "lobsters",
+    "title": "Understanding NvPCRs in systemd v262",
+    "url": "https://katexochen.aro.bz/posts/systemd-v262-nvpcrs",
+    "raw_score": 8,
+    "comment_count": 0,
+    "posted_at": "2026-09-25T03:26:44.155-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "systemd answers TPM PCR scarcity with additional PCR-like registers allocated in the TPM’s NV memory, with an anchoring design that was reworked in v262. In this hands-on deep dive, we rebuild a systemd NvPCR from scratch against a software TPM, picking up the required TPM concepts along the way, and analyze why the design is secure.\nWhy can’t systemd get enough of those PCRs? Many of systemd’s security features rely on TPM PCR measurements: Passwordless full disk encryption can unlock disks automatically if the PCR measurements are as expected, preventing credential theft while still allowing unattended reboots of remote machines with encrypted root disk. Service credentials can be encrypted against the expected PCR state. Boot-phase bound credentials are also supported, allowing secrets that can only ever be decrypted in the initrd. And with remote attestation, a machine can prove to another party what it booted and what happened since, by having the TPM sign its current PCR state (a",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ya3cl7",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "d4bd5317af6267483262c85a84bf5c6f0a6fbded99e5d89bf7ec4777ab15045d"
+  },
+  {
+    "source": "lobsters",
+    "title": "Apple's Two-Tier Encryption in the UK",
+    "url": "https://macanorak.com/two-tier-encryption-in-the-uk",
+    "raw_score": 20,
+    "comment_count": 4,
+    "posted_at": "2026-09-24T13:05:22.799-05:00",
+    "fetched_at": "2026-09-25T16:00:24.667897+00:00",
+    "excerpt": "Alice and Bill have identical Apple devices. Only one gets Apple’s strongest iCloud protection.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "n5l90o",
+      "tags": [
+        "ios",
+        "privacy",
+        "security"
+      ]
+    },
+    "id": "4d2ff9efcd68a32e5b07c1d70ce50db5f6a6afc10d9326acaf59fa9f20d98d74"
+  }
+]
