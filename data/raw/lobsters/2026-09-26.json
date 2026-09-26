@@ -1,0 +1,114 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Big Mess o' Wires » Web Site Hacked",
+    "url": "http://www.bigmessowires.com/2015/07/13/web-site-hacked",
+    "raw_score": 4,
+    "comment_count": 8,
+    "posted_at": "2015-07-13T15:59:11.000-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "Web Site Hacked Web Hack Analysis Part 2 Web Hack Analysis Part 3",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "e0dnzs",
+      "tags": [
+        "security",
+        "web"
+      ]
+    },
+    "id": "b344e945b535eb6e8be5519ee3fe0f713b8e0c2b579493160a8d47d572de910a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Use of Encrypt[ion] is an \"Ancient Liberty\" Protected by the [US] Constitution (1997)",
+    "url": "http://www.vjolt.net/vol2/issue/vol2_art2.html",
+    "raw_score": 12,
+    "comment_count": 9,
+    "posted_at": "2015-07-13T14:44:46.000-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "Untrimmed title: The Use of Encrypted, Coded and Secret Communications is an \"Ancient Liberty\" Protected by the United States Constitution",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "short_id": "u5frq0",
+      "tags": [
+        "law",
+        "security"
+      ]
+    },
+    "id": "a4b10b519d0e734e5eef9f12303f67480a26a567ac2219d970909c9256bd8cd6"
+  },
+  {
+    "source": "lobsters",
+    "title": "Stealing Keys from PCs using a Radio: Cheap Electromagnetic Attacks on Windowed Exponentiation",
+    "url": "http://www.tau.ac.il/~tromer/radioexp",
+    "raw_score": 7,
+    "comment_count": 1,
+    "posted_at": "2015-07-13T10:51:42.000-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "tunzhe",
+      "tags": [
+        "privacy",
+        "security"
+      ]
+    },
+    "id": "fd8f97783b041737b6ffeca10a7cdde8523501c37ff6b2d8de718ea8e3f382ad"
+  },
+  {
+    "source": "lobsters",
+    "title": "Goodbye Google",
+    "url": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
+    "raw_score": 94,
+    "comment_count": 20,
+    "posted_at": "2026-09-25T00:51:12.558-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "Robert O'Callahan. Christian. Kiwi. Software guy. All content human-generated unless otherwise noted. robert@ocallahan.org ...\n     Follow on X ,\n     Follow on Bluesky",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "sxlf4a",
+      "tags": [
+        "ai",
+        "person"
+      ]
+    },
+    "id": "aefc181709ea32c59fc7b04f603b3f9c19fa7f7bdc6e301357cae7f2c91d95e8"
+  },
+  {
+    "source": "lobsters",
+    "title": "SourceHut account takeover via build logs (XSS in ansi2html.py)",
+    "url": "https://blog.arusekk.pl/posts/srht-account-takeover",
+    "raw_score": 95,
+    "comment_count": 18,
+    "posted_at": "2026-09-24T15:38:32.218-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "A wormable vulnerability allowed anyone able to inject text in a build log on builds.sr.ht (or other instances) to take over accounts who viewed them",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ky1cr0",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "567613279ca1efe417104c418cc2d485a6f760c9559948b3c6741cbe720b982e"
+  },
+  {
+    "source": "lobsters",
+    "title": "File Notification Attacks: Side-Channel Leakage from the File-Notification System on Linux, Android, Windows, and macOS",
+    "url": "https://inoti.fyi/",
+    "raw_score": 33,
+    "comment_count": 6,
+    "posted_at": "2026-09-24T21:50:41.729-05:00",
+    "fetched_at": "2026-09-26T15:11:54.848188+00:00",
+    "excerpt": "Side-Channel Leakage from the File-Notification System on Linux, Android, Windows, and macOS. Accepted at The ACM Conference on Computer and Communications Security (CCS), November 15-19, 2026 — The Hague, Netherlands File-notification systems tell applications when files change, e.g., opened, closed, written, deleted. With only read permission on a file or directory, an attacker can watch these notifications and reconstruct user behavior. We find generic issues similar on each of Linux, Android, Windows, and macOS.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "x6yjrc",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "a6bfb968afd5e347551b2dd6e9d0e03a8c33fc2726bfe11b17f86bd84b7dabd4"
+  }
+]

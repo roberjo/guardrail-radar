@@ -1,0 +1,835 @@
+[
+  {
+    "source": "github",
+    "title": "mattbutlerengineering/mattbutlerengineering",
+    "url": "https://github.com/mattbutlerengineering/mattbutlerengineering",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:11:36Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Monorepo for mattbutlerengineering.com — design system, React apps, Fastify services, Pulumi IaC. Built largely by AI agents (Claude Code). - mattbutlerengineering/mattbutlerengineering",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 21,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "a7487527db469a5c390e53ed4f5a5d07a1da68e6cf9a9ad60d62aea04b4c5b7d"
+  },
+  {
+    "source": "github",
+    "title": "carlosboeing/quotacap",
+    "url": "https://github.com/carlosboeing/quotacap",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:10:50Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Track AI coding allowances and reset times locally, then estimate which plan to use next. - carlosboeing/quotacap",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "c4c91cbb3f6c7542640f0786f137def704a6588e41d1bcf50dbd54e445fd091d"
+  },
+  {
+    "source": "github",
+    "title": "larasaints/larasaints.github.io",
+    "url": "https://github.com/larasaints/larasaints.github.io",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:10:42Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "My Personal Portfolio. Contribute to larasaints/larasaints.github.io development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "95764d79a7abb32ea20a31ad3a1b781452bc8954a11eaf738cba03c3b7a12420"
+  },
+  {
+    "source": "github",
+    "title": "techysy/CreditDaddy",
+    "url": "https://github.com/techysy/CreditDaddy",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:10:28Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "AI 编程工具多账号本地管理 + 每日积分自动签到：Qoder / WorkBuddy(CodeBuddy) / ZCode，接入 10Router 看额度、同步用量。Windows 托盘桌面版 + 飞牛 fnOS fpk，数据只留本机，零依赖。 - techysy/CreditDaddy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "7bb1746a309967fdb61b3e40df0bbb0e3bd2ac0af0d77a857cf320139e756c78"
+  },
+  {
+    "source": "github",
+    "title": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "raw_score": 790,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:09:44Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor &amp; any MCP client. 313B+ t...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 2715,
+      "topic": "ai-coding"
+    },
+    "id": "e6d346c55c2d75d354c826e5dec794cb10eca37aac5fe4bd6eed5d9077574353"
+  },
+  {
+    "source": "github",
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "raw_score": 1024,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:09:18Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "An open-source AI coding agent that lives in your terminal. - QwenLM/qwen-code",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1493,
+      "total_stars": 28139,
+      "topic": "ai-coding"
+    },
+    "id": "1922d9d520f9ceba156c8955a8a60040d5e2afc0876ccc29f015a1849842ed78"
+  },
+  {
+    "source": "github",
+    "title": "davesheffer/hunch",
+    "url": "https://github.com/davesheffer/hunch",
+    "raw_score": 239,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:11:07Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "A shared record for AI agents: decisions, completed work, and commitments, with sources. Git-native engineering memory and a self-hosted state server. - davesheffer/hunch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 10,
+      "topic": "ai-coding"
+    },
+    "id": "8fc14d1457c025ed35c74c683baab6a08b1261d475b50a77f2484b1efc0da8ba"
+  },
+  {
+    "source": "github",
+    "title": "game4837/island-terminal-console",
+    "url": "https://github.com/game4837/island-terminal-console",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:08:19Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Best Free Multi-Agent macOS Console for AI Coding Agents 2026 - Enhanced Chinese Docs - game4837/island-terminal-console",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "9aa8a13acaa8722b104781cec9209f933e8d41bed510d2bc8cad800d1083cae0"
+  },
+  {
+    "source": "github",
+    "title": "qadeer-ux/oh-my-codex-remix",
+    "url": "https://github.com/qadeer-ux/oh-my-codex-remix",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:08:12Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "🧠 Ultimate AI Coding Agent 2026: Supercharge Your Dev Workflow for Faster, Cleaner Code - qadeer-ux/oh-my-codex-remix",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "1918ebb6804cb2759f46a94e1224e991887b83993a0f3079a4c864c4490fead4"
+  },
+  {
+    "source": "github",
+    "title": "M0WA/SE",
+    "url": "https://github.com/M0WA/SE",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:11:05Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "ai chatbot with web-indexer based on ionos-cloud setup - M0WA/SE",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "b9f6bb70210f59edfd7ae9dfedc1721857beb994f1d5498161f9051cd5e28d0d"
+  },
+  {
+    "source": "github",
+    "title": "ellmos-ai/skills",
+    "url": "https://github.com/ellmos-ai/skills",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:11:23Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Portable SKILL.md library for Claude Code, Codex-compatible agents, BACH, and local-first LLM workflows - ellmos-ai/skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 6,
+      "topic": "llm-tools"
+    },
+    "id": "3bb9db83d2aca00ed5281a29096a85e3d1eeaa884ac8720015b09514d702484f"
+  },
+  {
+    "source": "github",
+    "title": "yea-protocol/yea",
+    "url": "https://github.com/yea-protocol/yea",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:09:03Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "HTTP was built for browsers. Parley is built for agents. An open protocol for AI agents acting on behalf of people: intents, proposals, signed policy, human consent, undo, token budgets. Works with...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "9cc18a12b9c8d57b13662f3e43bc078868b6cdbb1471be7560734a1797fc4256"
+  },
+  {
+    "source": "github",
+    "title": "ChanMeng666/archlang",
+    "url": "https://github.com/ChanMeng666/archlang",
+    "raw_score": 256,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:08:50Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "【Star us! ⭐】 A declarative language that compiles to professional SVG floor plans — like Typst/LaTeX, but for architecture. Built for AI agents: deterministic output, JSON diagnostics that carry th...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 12,
+      "topic": "llm-tools"
+    },
+    "id": "9495acff6c0461109b4e3fdcf79c86f79980f480ed0237c52e6c17981f592194"
+  },
+  {
+    "source": "github",
+    "title": "diazoxide/charter-plane",
+    "url": "https://github.com/diazoxide/charter-plane",
+    "raw_score": 299,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:08:10Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "The charter project's own plane: personas, workspaces, memory. The app is diazoxide/charter. - diazoxide/charter-plane",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 19,
+      "topic": "llm-tools"
+    },
+    "id": "d9174974f222d35c8654163598f5e0729f501c5649454571554d233099b50d6b"
+  },
+  {
+    "source": "github",
+    "title": "thyron922/OmniTag-Forge",
+    "url": "https://github.com/thyron922/OmniTag-Forge",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:06:59Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "SmartLabelBench 2026: LLM-Powered Auto Annotation and Dataset Builder for Everything - thyron922/OmniTag-Forge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "e8000cea3ec936628181631786b35e4614f99e2d18f81058153e6c866d6f0632"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 248,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:06:18Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 11,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:03:20Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 230,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:00:46Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 9,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 313,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:00:31Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 22,
+      "topic": "llm-tools"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 363,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:00:30Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 37,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "heyvaldemar/heyvaldemar",
+    "url": "https://github.com/heyvaldemar/heyvaldemar",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:11:26Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Docker Captain · IBM Champion · CNCF Ambassador · AWS Community Builder. 10 vendor-recognized titles. 8+ articles on Docker&#39;s official blog. Technical Editor of Docker &amp; Kubernetes Security...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "bf845d7647a8aa553c2b484ecc4321a4dd885c1304e0edd8e767532c44105cba"
+  },
+  {
+    "source": "github",
+    "title": "femiwiki/infra",
+    "url": "https://github.com/femiwiki/infra",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:10:23Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": ":evergreen_tree: Terraforming Femiwiki Infrastructure - femiwiki/infra",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 30,
+      "total_stars": 5,
+      "topic": "terraform"
+    },
+    "id": "48e0a44076d5fde1d8438ca6217a7c3135d04c859df674306961a910b8ef11b4"
+  },
+  {
+    "source": "github",
+    "title": "dominiksmolinski3/KanbanProject",
+    "url": "https://github.com/dominiksmolinski3/KanbanProject",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:55Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Kanban board (Spring Boot 3 + React 19) I run on Azure: Terraform IaC, Docker image published to GHCR, GitHub Actions CI/CD. Two-person project - I own the cloud infrastructure, containerization an...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "d630380fb5ed05d0a9ca3b8699ae39a5ba6815acdbe0777a0e1dd86cf5cd1172"
+  },
+  {
+    "source": "github",
+    "title": "oscaromeu/home-ops",
+    "url": "https://github.com/oscaromeu/home-ops",
+    "raw_score": 355,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:36Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "A mono repository for my homelab infrastructure and Kubernetes cluster which adheres to Infrastructure as Code (IaC) and GitOps practices where possible - oscaromeu/home-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 12,
+      "total_stars": 34,
+      "topic": "terraform"
+    },
+    "id": "13157b52f091ce3eedcbb0ef216d93c1560671c22a9ed41194522605a12060da"
+  },
+  {
+    "source": "github",
+    "title": "Arturo-Quiroga-MSFT/azure-architecture-diagram-builder",
+    "url": "https://github.com/Arturo-Quiroga-MSFT/azure-architecture-diagram-builder",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:04:43Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "AI-powered Azure Architecture Diagram Builder with interactive workflow explanations, ARM template import, and export capabilities - Arturo-Quiroga-MSFT/azure-architecture-diagram-builder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 4,
+      "topic": "terraform"
+    },
+    "id": "a9c52c0c9d70a101e2c1006f2b46de5b4c48b8146b84485d6f308f320de5c0b4"
+  },
+  {
+    "source": "github",
+    "title": "suzuki-shunsuke/tfaction-example",
+    "url": "https://github.com/suzuki-shunsuke/tfaction-example",
+    "raw_score": 325,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:04:57Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Example usage of tfaction. Contribute to suzuki-shunsuke/tfaction-example development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 25,
+      "topic": "terraform"
+    },
+    "id": "18c748220d69f569f41962400fe68a6c5cf8278cabded52b12a6dce43329c720"
+  },
+  {
+    "source": "github",
+    "title": "mazino2d/everything-as-code",
+    "url": "https://github.com/mazino2d/everything-as-code",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:04:22Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Infrastructure, platform, and tooling managed as code - mazino2d/everything-as-code",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "90bc566af7df0473080f76701dd45724a5caed62608c07e6a64784527d262ca7"
+  },
+  {
+    "source": "github",
+    "title": "mostafaahmed-eng/ecommerce-deploy",
+    "url": "https://github.com/mostafaahmed-eng/ecommerce-deploy",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:04:10Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Automated e-commerce deployment platform using Docker, CI/CD pipelines, cloud infrastructure, and modern DevOps practices. - mostafaahmed-eng/ecommerce-deploy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 12,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "cf2140e74ab8c0a41ec43f3d1f7d6ab0e23d00647a5eec2639f9014a3e85b7c6"
+  },
+  {
+    "source": "github",
+    "title": "scttfrdmn/substrate",
+    "url": "https://github.com/scttfrdmn/substrate",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:02:40Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Event-sourced AWS emulator for deterministic testing of AI-generated infrastructure code - scttfrdmn/substrate",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 110,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "affef8c705994583721e2a61557e85d2d5137fc79f82ddd6e8060911ac2b2fe8"
+  },
+  {
+    "source": "github",
+    "title": "nreymundo/home-lab-iac",
+    "url": "https://github.com/nreymundo/home-lab-iac",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:02:02Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Home lab infrastructure automated from VM provisioning to app deployment using Packer, Terraform, Ansible, and Kubernetes. - nreymundo/home-lab-iac",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "c7edc1a42824a930272b9115a39d030f41ce3aec1de0c924e5cd077fda5b71fc"
+  },
+  {
+    "source": "github",
+    "title": "aliefe04/kanit",
+    "url": "https://github.com/aliefe04/kanit",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:09:09Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Continuous compliance for high-growth startups and security teams. One command, actionable findings, CI-ready evidence. - aliefe04/kanit",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "0ea57d0925fdface1f0f753d5fa7d490f4617dbc0fbfdf3d17657086c348a809"
+  },
+  {
+    "source": "github",
+    "title": "DevSecNinja/grip-visualizer",
+    "url": "https://github.com/DevSecNinja/grip-visualizer",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:10:37Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Interactive website that maps the Flemish GRIP growth path (Groeipad informatieveiligheid en privacy voor het Vlaamse onderwijs) to the Microsoft A3/A5 stack. - DevSecNinja/grip-visualizer",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 19,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "29ae31e48305eeda007ef2e2e174add7e747d862bc067bcbc9f53e9ccf657a7f"
+  },
+  {
+    "source": "github",
+    "title": "cammac-creator/ibanforge",
+    "url": "https://github.com/cammac-creator/ibanforge",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:35Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "IBAN validation API: bank code checked against national registers (DE, AT, BE, CZ, SK, BG, CH, LI), national check digits (FR, BE, IT, ES, UK), BIC resolved with its source, SEPA Instant and VoP re...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 20,
+      "total_stars": 3,
+      "topic": "compliance"
+    },
+    "id": "dd4cbe2ae1d68c7e9316674618a38c5e1772a36efc7457516c8e162e17185734"
+  },
+  {
+    "source": "github",
+    "title": "zhaoxinghua09-cell/assayance",
+    "url": "https://github.com/zhaoxinghua09-cell/assayance",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:00Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Assayance — the instrument is what gets assayed. Five criteria (T0-T5) for deciding whether a check is a check. - zhaoxinghua09-cell/assayance",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "2d56c48e871b723aa53b4d4185e290d45b492345a5fe6e466353ac75c53d7de6"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/killinchu",
+    "url": "https://github.com/szl-holdings/killinchu",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:06:15Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Counter-UAS reference at /elite. Tracks, fusion, ROE, BFT, DSSE per interdiction. Public synthetic — no public effector. Λ = Conjecture 1. - szl-holdings/killinchu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "2da5e8d72789fcf0228e4bebabdbf3da3ef872d4e85e10286bec15a1e499eb2e"
+  },
+  {
+    "source": "github",
+    "title": "TusharTechs/amend",
+    "url": "https://github.com/TusharTechs/amend",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:05:41Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Regulatory redlines in. Verified pull requests out. Amend turns a regulation change (FTC Safeguards Rule, 16 CFR 314) into a tested pull request with an evidence pack, built with IBM Bob 2.0. - Tus...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "f6397015fb69c28a1ae4d82205c98d4afbec58cacaf0667ab9000dbcad90da5a"
+  },
+  {
+    "source": "github",
+    "title": "sipyourdrink-ltd/bernstein",
+    "url": "https://github.com/sipyourdrink-ltd/bernstein",
+    "raw_score": 716,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:05:37Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "The open‑source AI Agents Governance &amp; Orchestration framework: write the rules declaratively, Bernstein enforces them and produces the verifiable, replayable record. Free, Apache-2.0. https://...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 354,
+      "total_stars": 1286,
+      "topic": "compliance"
+    },
+    "id": "82d9a3e2f37b37d7f349031f8cf0397c1f4ac4ba0d990dd7797ce0e62b61d946"
+  },
+  {
+    "source": "github",
+    "title": "casoon/auditmysite",
+    "url": "https://github.com/casoon/auditmysite",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:04:04Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "AuditMySite CLI - Lightning-fast WCAG accessibility auditing written in Rust. Real browser testing with Chrome DevTools Protocol, automated compliance checking, and detailed reports. - casoon/audit...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "c98a09c26f7767d6967c1057091934faf2aecb2d7e22bbb87c33b94dfd066575"
+  },
+  {
+    "source": "github",
+    "title": "james-sheen/presence-audit",
+    "url": "https://github.com/james-sheen/presence-audit",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:02:53Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Given a declaration and a capture, say which declared points are reading, present but not reading, or absent. Domain-free: the vocabulary comes from a vertical you register, and it ships none. - ja...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "8a698f6532af78b1ba77a0a058c014f5c540afe80e5b2c3f0884219a9ae95c35"
+  },
+  {
+    "source": "github",
+    "title": "probavi/probavi",
+    "url": "https://github.com/probavi/probavi",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:05:36Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Continuous restore verification for databases — proves your backups are restorable, with signed evidence. - probavi/probavi",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "85e2c953aab91ecb1dab39bcd3556860b72f1631ae85e0f8edf97a398b9f9251"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:12:16Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "ExcelDsigN-tech/dukapay",
+    "url": "https://github.com/ExcelDsigN-tech/dukapay",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:09:59Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "DukaPay is the open, auditable agent-banking layer for Stellar — it turns local shops into stablecoin cash-in/cash-out points, with solvency enforced on-chain. - ExcelDsigN-tech/dukapay",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 17,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "c9ca374ad339ea03186053b097978f8e2895e667e7493193cd2503b39052a0e4"
+  },
+  {
+    "source": "github",
+    "title": "arhancanli/canlicapital",
+    "url": "https://github.com/arhancanli/canlicapital",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:52Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Open-source research and evidence site for Canli Capital and ALPHAC: methodology, paper record, kill log, retractions, and reproducible artifacts. - arhancanli/canlicapital",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "f36d9dff33261174d75b7e882a990b47eae7e52fb7cd1a7088c1624ca5c0afd5"
+  },
+  {
+    "source": "github",
+    "title": "Arashka-DS/hybrid-demand-forecasting-engine",
+    "url": "https://github.com/Arashka-DS/hybrid-demand-forecasting-engine",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:52Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "An enterprise time-series forecasting engine combining Prophet&#39;s structural seasonality with LightGBM&#39;s non-linear residual learning. Features multi-domain execution pipelines for FinTech l...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "15850f1fc258c8ec817bb9b308d65973252cd4cf7f26f4cd28a92ea7aece3398"
+  },
+  {
+    "source": "github",
+    "title": "JackSmiley1/market-brief-agent",
+    "url": "https://github.com/JackSmiley1/market-brief-agent",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:12Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Autonomous nightly market research pipeline: Claude-driven analysis, evidence-based simulated position sizing (n≥20 statistical gate before any rule changes), self-grading against reality, and a Re...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "12ca69ff53c10d28848f0f8d01f00fe45e9d453b44a1f1ab0a77dcb122a34359"
+  },
+  {
+    "source": "github",
+    "title": "Grulmex/UFund-Me-Qbot",
+    "url": "https://github.com/Grulmex/UFund-Me-Qbot",
+    "raw_score": 207,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:11Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "AI-powered Quantitative Investment Research Platform. - Grulmex/UFund-Me-Qbot",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 7,
+      "topic": "fintech"
+    },
+    "id": "f422f605385fdd06d7c36c0a8923f79222ba047145048ec30b12631b24d1454b"
+  },
+  {
+    "source": "github",
+    "title": "Baber002/mortgage-pricing-plugin-blueprint",
+    "url": "https://github.com/Baber002/mortgage-pricing-plugin-blueprint",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:07:02Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Claude Code Mortgage Plugin 2026 - AI-Powered Refinancing Pricing Tool - Baber002/mortgage-pricing-plugin-blueprint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "6bbc820bf8b409e4fac56622278fa9812d8c5317ee7cbfee4a050ed33a0c2bae"
+  },
+  {
+    "source": "github",
+    "title": "duongnq2798/vestiarion",
+    "url": "https://github.com/duongnq2798/vestiarion",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:05:55Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "An autonomous treasury agent for a small business, settled in USDC on Arc. Screens counterparties, pays invoices under explicit guardrails, releases contractor milestones, and sweeps idle cash to y...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "af07199854dcb8e3145b7b0ce881c9007099e86b742670415b003a63c69c6568"
+  },
+  {
+    "source": "github",
+    "title": "LedgerInnovation/euvena",
+    "url": "https://github.com/LedgerInnovation/euvena",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-09-26T15:05:38Z",
+    "fetched_at": "2026-09-26T15:11:58.891113+00:00",
+    "excerpt": "Euvena: open building blocks for European instant payments - LedgerInnovation/euvena",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 16,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "c5d88b4ff16031c9bab881ac0d7c789219f1cdcc0a8128b0b61444bb31c99831"
+  }
+]
