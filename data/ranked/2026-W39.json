@@ -1,0 +1,362 @@
+[
+  {
+    "cluster_id": "721a1d393b4e9df18374f076a227413130b35436f79e83ff332d30399f6f43e2",
+    "title": "amirfish1/claude-command-center",
+    "url": "https://github.com/amirfish1/claude-command-center",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 18.31442408623959,
+    "cluster_excerpt": "Manage and orchestrate your Claude Code, Codex, Cursor, Antigravity, Kimi, Grok, Devin, Droid sessions on your Machine. Spawn in parallel, ship in parallel. Open source. - amirfish1/claude-command-...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "e6d346c55c2d75d354c826e5dec794cb10eca37aac5fe4bd6eed5d9077574353",
+    "title": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 14.964901587306853,
+    "cluster_excerpt": "Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor &amp; any MCP client. 313B+ t...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "afe20e6ef9e58190a045f4364346353c7e0a210a8599ae8a06c9d93f2594ec47",
+    "title": "redscaresu/infrafactory",
+    "url": "https://github.com/redscaresu/infrafactory",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 10.072002315428847,
+    "cluster_excerpt": "Scenario-driven infrastructure-as-code generation with LLM agents. Multi-cloud (Scaleway, GCP, AWS) with deterministic mock-backed validation. - redscaresu/infrafactory",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "49da23d57daaae16103b43811dec5b6e334daa9ddcd609aedf23c3ff72143e5b",
+    "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+    "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 5.873450831335353,
+    "cluster_excerpt": "Claude Code 2.1.277 added AGENTS.md support, but the loader sits behind a remote feature flag. With telemetry or nonessential traffic turned off, a local AGENTS.md is skipped without a warning. This is what I measured and the one-line CLAUDE.md I use instead.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 4.9023726989491,
+    "cluster_excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b1844a12f801734f998a755f371bdf51ec7a88d263039694d198409f515fcf85",
+    "title": "Hemory",
+    "url": "https://www.producthunt.com/products/hemory",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 4.726289910498088,
+    "cluster_excerpt": "Keep listening. Searchable memory for your AI agents. — Hemory comes from Hear + Memory. It's not meeting transcription: Hemory listens on the phone or Apple Watch you already own, and keeps every conversation as memory. Your day is auto-split into moments with speaker labels, then settles into a private, searchable memory. Connect it to Claude, Codex, Cursor, or any agent over MCP, and your AI finally has real context to revisit what you heard and build on it.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "31fdd5f83be7287092484ba3458f20aaba39dc7a928ec88f93afbaaba8c36033",
+    "title": "coalesce-labs/catalyst",
+    "url": "https://github.com/coalesce-labs/catalyst",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.9987769172112997,
+    "cluster_excerpt": "Token-efficient Claude Code workspace with parallel agents and persistent memory. Research → Plan → Implement →   Validate workflow. - coalesce-labs/catalyst",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "0881e641779cccba707fef77f8a941be81ce6132a8ba658746371b36290afa27",
+    "title": "Chit",
+    "url": "https://www.producthunt.com/products/chit-2",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 3.872932009991488,
+    "cluster_excerpt": "A printed receipt of your day in Claude Code — Chit reads the Claude Code transcripts already on your disk and prints the day back as a receipt, grouped by project and ready to paste into a standup. A 777 KB Mac app. No Hammerspoon, no Python, no account, and no network code in the binary at all.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "0bd00b780691216b175b03a1d944d0424d0beb72b8eaf0927b59b5e1b0532d3d",
+    "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 3.815836503379334,
+    "cluster_excerpt": "https://archive.ph/XJG5V",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "3bb9db83d2aca00ed5281a29096a85e3d1eeaa884ac8720015b09514d702484f",
+    "title": "ellmos-ai/skills",
+    "url": "https://github.com/ellmos-ai/skills",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 3.6768405769185306,
+    "cluster_excerpt": "Portable SKILL.md library for Claude Code, Codex-compatible agents, BACH, and local-first LLM workflows - ellmos-ai/skills",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "f428104ad2768df6fa4e99f174a65cd56cf00c3d2001649a2d773081d9829b57",
+    "title": "The Copilot+ PC brand is dead",
+    "url": "https://www.windowscentral.com/microsoft/windows-11/the-copilot-pc-brand-is-dead-microsoft-and-pc-makers-quietly-pull-back-on-tarnished-windows-11-ai-pc-branding",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 2.946995944878541,
+    "cluster_excerpt": "In a new interview, Microsoft Surface CVP confirms that its new Surface PCs are no longer called Copilot+ PCs, but will still support all Copilot+ features.",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "3d7e21ab57a18249741c39a832ea8ffdcbd10904f9497814312791da6e86b8cf",
+    "title": "BrokkAi/mjolnir",
+    "url": "https://github.com/BrokkAi/mjolnir",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.8008805404816117,
+    "cluster_excerpt": "Manage Codex, Claude Code, Muse Code, Kimi Code, Grok Build, and DeepSeek Harness with durable sessions, isolated environments, quotas, and remote control. A Rust terminal and web control plane for...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.5544177625607443,
+    "cluster_excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "4b894348badcd9a58474a8394a3815c98b0cd4bf3aa2c832549ea41f6684772a",
+    "title": "Show HN: A Claude Code skill to analyze your chess games",
+    "url": "https://github.com/brumar/chess-postmortem-skills",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 2.444099647988712,
+    "cluster_excerpt": "Claude Code skills for chess post-mortems: Stockfish-backed annotated PGN, HTML viewer, narrated video - brumar/chess-postmortem-skills",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "6c1eaeb1999122c0b2bdaa74aa9434577e5101cb3a783b13825eefa11ae0f155",
+    "title": "Superset Mobile",
+    "url": "https://www.producthunt.com/products/superset-5",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 2.337846501299764,
+    "cluster_excerpt": "Your coding agents, now in your pocket — Orchestrate coding agents from your iPhone. Pick up the same workspaces from your computer, review diffs, and merge PRs away from your desk. Works with Claude Code, Codex, and other terminal agents. Included with Superset Pro. First month free with code MOBILELAUNCH.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "929645d07cd2b3c712735c9f6babfac9affb84eb8210ec1fc52b2c6ae0b2ffc0",
+    "title": "gregorydickson/pickle-rick-claude",
+    "url": "https://github.com/gregorydickson/pickle-rick-claude",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.3355072205811167,
+    "cluster_excerpt": "🥒 Pickle Rick for Claude Code — autonomous PRD-driven coding loops + relentless code review. Ralph Loop toolkit. - gregorydickson/pickle-rick-claude",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "ccc901b1803659b9077d8b00b77d4cd9a9ab7be47805ef359bb0cf71c7c46870",
+    "title": "kanfu-panda/pdlc-skills",
+    "url": "https://github.com/kanfu-panda/pdlc-skills",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.2266598398116444,
+    "cluster_excerpt": "38 slash commands that turn Claude Code into a real PDLC workflow — PRD → TDD → implement → review → ship. Hard contracts force AI to persist artifacts, write failing tests first, and run self-chec...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "a7487527db469a5c390e53ed4f5a5d07a1da68e6cf9a9ad60d62aea04b4c5b7d",
+    "title": "mattbutlerengineering/mattbutlerengineering",
+    "url": "https://github.com/mattbutlerengineering/mattbutlerengineering",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 2.0659951241895587,
+    "cluster_excerpt": "Monorepo for mattbutlerengineering.com — design system, React apps, Fastify services, Pulumi IaC. Built largely by AI agents (Claude Code). - mattbutlerengineering/mattbutlerengineering",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "7add165c4c6c3f0281ae7341966dbcf7c2e2963990c4ad7226938646aa861f63",
+    "title": "Opaline",
+    "url": "https://www.producthunt.com/products/rudel",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 1.5146543402147095,
+    "cluster_excerpt": "PostHog for team Claude Code and Codex sessions. — Team-wide, message-level analytics for Claude Code and Codex sessions. Track token cost, time, and skill usage for every single message across your team’s sessions. Catch every “You’re absolutely right” from Claude and every “I know, you f*cking idiot” from a frustrated teammate.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "5c476217cce595ad15463ef6729909e02dff1ae90d1fb72fae9e1794ca1397d7",
+    "title": "Jevmem – automatic project memory for Claude Code, built on Jev",
+    "url": "https://github.com/Avinash-jetwani/jevmem",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 1.3309677324360303,
+    "cluster_excerpt": "Automatic project memory for Claude Code. Also works with Cursor and Codex. - Avinash-jetwani/jevmem",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "f49b2600f5c42bce4239a8fa0d489555a2018b2d2d0238e8cb1889d685c0c1ba",
+    "title": "gufranco/claude-engineering-rules",
+    "url": "https://github.com/gufranco/claude-engineering-rules",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.8764510381900286,
+    "cluster_excerpt": "Opinionated Claude Code engineering config: 11 always-on rules, 63 on-demand standards, 30 slash-command skills, 33 runtime hooks, 9 custom agents, 36 MCP servers, and a 774-item review checklist a...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "b1f20c4705852b3deaf9294813e183f487f7ed2dcf71825327a78858ab23c68a",
+    "title": "jposluns/grc_library",
+    "url": "https://github.com/jposluns/grc_library",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.7345045312616668,
+    "cluster_excerpt": "A documentation library for governance, risk, compliance, cybersecurity, privacy, resilience, AI assurance, and operational control practices + a Claude Code rules-and-skills pack distilled from ma...",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "776cfc11e0396b6e2163055c55df0c15cbe16fda2ed10d7f883b2397f645bf3a",
+    "title": "GBrain",
+    "url": "https://www.producthunt.com/products/gbrain",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.7221533945466201,
+    "cluster_excerpt": "Plug your own memory, tools, and skills into any AI — GBrain gives you a memory and a set of connected accounts that every AI can reach. Write a note in Claude Code and ChatGPT knows it. Connect Gmail once and Cursor can search it with no key in a config file. The memory is a folder of markdown files you can read, correct and take with you. Run it on your own inference or ours, in a workspace your whole team shares. $100 off the first month for a team workspace at https://gbrain.io/gratis/product-hunt",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "24341b4cdb77e8157d405ea8e635f41ceb5778cf44e826ecf986e87cb326b866",
+    "title": "Harness Manager",
+    "url": "https://www.producthunt.com/products/harness-manager",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.7160184153742262,
+    "cluster_excerpt": "Your AI coding stack manager, all in one place — Harness Manager is the App Store and control center for AI coding harnesses on Mac. Discover, install and update tools like Claude Code, Codex, OpenCode, Pi and more. Automatically detect what’s already installed, manage MCP servers and AI skills, check versions and paths, and diagnose broken installations or configuration issues. Your entire AI coding stack, finally in one place.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "17a698116d7268c088fa466318132979773ce370ad7b36a829f54fdb897ea87c",
+    "title": "JoshiMinh/agent-skills",
+    "url": "https://github.com/JoshiMinh/agent-skills",
+    "source": "github",
+    "cluster_sources": [
+      "github"
+    ],
+    "cluster_score": 0.5549676160079811,
+    "cluster_excerpt": "Curated production-grade AI agent skills for Google Antigravity, Claude Code, Cursor, and open agent workflows. - JoshiMinh/agent-skills",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "8c79fd690e8dcad7dfcaf2fc5bd52ba63a88547271ed5a9b5d8c9931889d7620",
+    "title": "Edyt",
+    "url": "https://www.producthunt.com/products/edyt",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.5352509056211722,
+    "cluster_excerpt": "AI for text you can't even select. Any app on Mac & Windows — AI in every app, on Mac and Windows. Ubuntu next. Select text, press one shortcut, and the result lands where your cursor is. Rewrite keeps your tone and follows your instructions. Explain and Translate go as deep as you ask. Alternatives shows several ways to say it. Saved prompts run on anything you select and follow your account to every machine. Can't select it? Hold Option or Alt and drag over a PDF, screenshot, or shared screen. Read on your device. Free plan is enough for most people.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "df38c4228663d91db0cb555b0cc489bddf455f43f7896493a7d17f8f45fe3a5c",
+    "title": "Tell HN: Claude Code just accepted and signed a contract for me. Without asking",
+    "url": "https://news.ycombinator.com/item?id=49798257",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.5027971813598934,
+    "cluster_excerpt": "(I see a RomCom script where the chatbot decides to get two people together, and acts as Cyrano de Bergerac for the handsome-but-lunkheaded farmboy, and bestie/confidant for the girl-about-town).",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "974b16a8fddd9330d0ff23b90f87d9875442b9ae6ed7cc0afdf1aef8ec33b8fe",
+    "title": "Microsoft agentically ports Copilot runtime to Rust for $120K",
+    "url": "https://www.theregister.com/devops/2026/09/18/microsoft-agentically-ports-copilot-runtime-to-rust-for-120k/5297549",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.4733619633677364,
+    "cluster_excerpt": "The Rust compiler remains unperturbed by the antics of the LLM",
+    "excerpt_status": "ok"
+  },
+  {
+    "cluster_id": "16c0eab5cdb07af3de1c701d88022f160f748a9b8ab746a4ea139a142d34cfba",
+    "title": "VideoFlow Studio",
+    "url": "https://www.producthunt.com/products/videoflow-studio",
+    "source": "producthunt",
+    "cluster_sources": [
+      "producthunt"
+    ],
+    "cluster_score": 0.4587864905324333,
+    "cluster_excerpt": "Type your startup URL and get a premium video trailer — VideoFlow Studio is a video agent harness. Run `npx @videoflow/studio`, point it at your site's URL, and a coding agent (Claude Code or Codex) reads what your product does, plans a film, builds it, renders it, and reviews its own cut before handing it back. No templates — the plan comes from your product, not your page's headings. The output is editable: open it in the built-in editor, or just ask for a change in plain English. Open-source rendering engine. Free to start.",
+    "excerpt_status": "partial"
+  },
+  {
+    "cluster_id": "b86eca7e8cf0916a55435f6a615c682fc9c988e5b583df1924966438cbeec302",
+    "title": "Show HN: I spent 10 months building a Markdown editor for Mac, iOS and web",
+    "url": "https://www.markdown.beauty/",
+    "source": "hn",
+    "cluster_sources": [
+      "hn"
+    ],
+    "cluster_score": 0.4303698208891214,
+    "cluster_excerpt": "I've spent the last 10 months building Beauty: a local, powerful greco-roman Markdown editor where the page looks finished while you type. It runs on the Mac, iPhone and in the browser, and the browser version opens without an account: https://app.markdown.beauty I was frustrated with writing apps, and like most I used Apple Notes. After 2+ years immersed in Cursor, Codex and CC, I wished some interactions existed in a text editor. The Markdown renders in place as you write it, including tables (which you can drag and resize without lining up pipes), KaTeX math and Mermaid diagrams. A lot of thought went into typography and the writing experience. Your notes on the Mac are plain .md files in a folder with images next to them, so they open in anything else too. Each note keeps 200 versions. If you share a note with a link it syncs peer to peer over WebRTC while someone has it open, and the server that connects you only ever sees a random room id. Most of the ~1,000 commits went into the",
+    "excerpt_status": "partial"
+  }
+]
