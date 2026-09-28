@@ -1,0 +1,78 @@
+[
+  {
+    "source": "lobsters",
+    "title": "HardenedBSD August / September 2026 Status Report",
+    "url": "https://hardenedbsd.org/article/shawn-webb/2026-09-27/hardenedbsd-august-september-2026-status-report",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2026-09-28T11:14:23.422-05:00",
+    "fetched_at": "2026-09-28T18:49:29.622638+00:00",
+    "excerpt": "Submitted by Shawn Webb on Sun, 09/27/2026 - 17:09",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "roo5hm",
+      "tags": [
+        "freebsd",
+        "security"
+      ]
+    },
+    "id": "256bc6d9a2e4edaa1b08026951edd23a495f565d8d1abb4634d6d315bcd154d1"
+  },
+  {
+    "source": "lobsters",
+    "title": "It’s Time to Investigate the AI Labs",
+    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs",
+    "raw_score": 9,
+    "comment_count": 0,
+    "posted_at": "2026-09-28T08:56:41.713-05:00",
+    "fetched_at": "2026-09-28T18:49:29.622638+00:00",
+    "excerpt": "Over the last several months, the two leading frontier AI labs have shown some brazen behavior. It started with a series of​ carefully planned announcements​ ... Read more",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ir1emf",
+      "tags": [
+        "ai",
+        "culture"
+      ]
+    },
+    "id": "6fc9692e4557b48b627a07ed547d99cb8d5ecfa58d89fe6b58c3b4f2583ef4fb"
+  },
+  {
+    "source": "lobsters",
+    "title": "GPU Glossary",
+    "url": "https://modal.com/gpu-glossary",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-09-28T06:43:38.827-05:00",
+    "fetched_at": "2026-09-28T18:49:29.622638+00:00",
+    "excerpt": "A glossary of terms related to GPUs.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "8aztzt",
+      "tags": [
+        "ai",
+        "hardware"
+      ]
+    },
+    "id": "976b38dbaa651b5f5acac1329d56c4589dba0bfc6ae729e0f2713b2bc8d90b41"
+  },
+  {
+    "source": "lobsters",
+    "title": "Containers Are No Longer a Security Boundary",
+    "url": "https://depthfirst.com/research/containers-are-no-longer-safe",
+    "raw_score": -5,
+    "comment_count": 9,
+    "posted_at": "2026-09-28T03:21:12.860-05:00",
+    "fetched_at": "2026-09-28T18:49:29.622638+00:00",
+    "excerpt": "As AI accelerates kernel vulnerability discovery and exploitation, the barrier to escaping containers by attacking kernel has fallen so significantly that we must assume attackers can do so at will.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qtg9wo",
+      "tags": [
+        "linux",
+        "security"
+      ]
+    },
+    "id": "7fa8c9a29f513fb60ea1795057984705720ffee4ad35772bec33eae3ea1a96b9"
+  }
+]
