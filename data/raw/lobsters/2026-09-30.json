@@ -1,0 +1,60 @@
+[
+  {
+    "source": "lobsters",
+    "title": "attezt: device attestation, PKCS11 and ACME",
+    "url": "https://media.ccc.de/v/all-systems-go-2026-414-attezt-device-attestation-pkcs11-and-acme",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-09-30T07:23:08.846-05:00",
+    "fetched_at": "2026-09-30T17:04:30.043977+00:00",
+    "excerpt": "IETF is standardizing a new ACME challenge, `device-attest-01`, which allows organizations to provision device bound certificates to mach...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "obix99",
+      "tags": [
+        "security",
+        "video"
+      ]
+    },
+    "id": "7ec9ace9a4e46cf5a61ba13c1b5c367305a32af46df0f4fb3d83ab3d07da414e"
+  },
+  {
+    "source": "lobsters",
+    "title": "The Cuckoo's Egg",
+    "url": "https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)",
+    "raw_score": 27,
+    "comment_count": 17,
+    "posted_at": "2026-09-30T03:48:43.805-05:00",
+    "fetched_at": "2026-09-30T17:04:30.043977+00:00",
+    "excerpt": "The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage is a 1989 book written by Clifford Stoll . It is his first-person account of the hunt for Markus Hess , a computer hacker who broke into a computer at Lawrence Berkeley National Laboratory (LBNL).",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "nicozi",
+      "tags": [
+        "book",
+        "security"
+      ]
+    },
+    "id": "56f339a2ab0eb9ee1cde24cb3787a2e038238b3c0fea8610b7fd072102fb4b75"
+  },
+  {
+    "source": "lobsters",
+    "title": "Fake Express Packages on npm Spread a Linux Worm",
+    "url": "https://safedep.io/dirtyblanket-express-impersonation-npm",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-09-29T23:05:15.115-05:00",
+    "fetched_at": "2026-09-30T17:04:30.043977+00:00",
+    "excerpt": "Nine fake Express and React packages on npm run a Linux worm at install time. It installs a Tor backdoor and spreads through SSH, AUR packages, and npm tokens.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "e2gxro",
+      "tags": [
+        "linux",
+        "nodejs",
+        "security"
+      ]
+    },
+    "id": "34a268598de18dfa0a8d0dbd275f48ca455b86b026ec32068b653383d4332006"
+  }
+]
