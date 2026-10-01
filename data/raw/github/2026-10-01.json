@@ -1,0 +1,818 @@
+[
+  {
+    "source": "github",
+    "title": "macanderson/stella",
+    "url": "https://github.com/macanderson/stella",
+    "raw_score": 283,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:49Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "A coding agent that builds it's own tools and mines it's own skills and always ships with receipts. - macanderson/stella",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 436,
+      "total_stars": 16,
+      "topic": "ai-coding"
+    },
+    "id": "304e59e6ecdcb31d2ac4a51cd117f12f1f840f52adf547f2c3fc0a08888411f6"
+  },
+  {
+    "source": "github",
+    "title": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "raw_score": 791,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:35Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor &amp; any MCP client. 313B+ t...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2725,
+      "topic": "ai-coding"
+    },
+    "id": "e6d346c55c2d75d354c826e5dec794cb10eca37aac5fe4bd6eed5d9077574353"
+  },
+  {
+    "source": "github",
+    "title": "dliedke/ClaudeCodeExtension",
+    "url": "https://github.com/dliedke/ClaudeCodeExtension",
+    "raw_score": 431,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:30Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Visual Studio .NET extension that provides a better interface for Claude Code, Codex, Cursor Agent, Open Code, Devin, PI, Antigravity and Reasonix. Image/file paste, diff viewer, actions when AI en...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 74,
+      "topic": "ai-coding"
+    },
+    "id": "7bd77566fcec5a419b838b998221d586cea072a19df432d302b78fe8f43c5254"
+  },
+  {
+    "source": "github",
+    "title": "Abhijat05/FeCode",
+    "url": "https://github.com/Abhijat05/FeCode",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:20Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "coding agent specialized for frontend developers. Contribute to Abhijat05/FeCode development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "37ae157475faaead1e02ac6ef6dce26e53890d2a55fb235e7f321d997262646d"
+  },
+  {
+    "source": "github",
+    "title": "NodeSpaceAI/nodespace-core",
+    "url": "https://github.com/NodeSpaceAI/nodespace-core",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:02Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Local-first knowledge base with semantic search for AI coding assistants. Fewer tokens, faster context. - NodeSpaceAI/nodespace-core",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 53,
+      "total_stars": 8,
+      "topic": "ai-coding"
+    },
+    "id": "bf456ebd8ae78141a030d54152d600a4b129de3242ba7b266d76d52eeb28c338"
+  },
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:44Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 317,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:34Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 23,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 393,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:18Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 50,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "gregorydickson/pickle-rick-claude",
+    "url": "https://github.com/gregorydickson/pickle-rick-claude",
+    "raw_score": 346,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:29:55Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "🥒 Pickle Rick for Claude Code — autonomous PRD-driven coding loops + relentless code review. Ralph Loop toolkit. - gregorydickson/pickle-rick-claude",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 31,
+      "topic": "ai-coding"
+    },
+    "id": "929645d07cd2b3c712735c9f6babfac9affb84eb8210ec1fc52b2c6ae0b2ffc0"
+  },
+  {
+    "source": "github",
+    "title": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "raw_score": 1022,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:29:55Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent. - Kilo-Org/kilocode",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 603,
+      "total_stars": 27465,
+      "topic": "ai-coding"
+    },
+    "id": "12d6cf689ec8de35682f658eb57f7f6f75337608daf3959293072b2aa24fc0c6"
+  },
+  {
+    "source": "github",
+    "title": "luizssantiago92/retornatus",
+    "url": "https://github.com/luizssantiago92/retornatus",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:47Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Repo-native governance for AI coding agents (Cursor, Claude Code, Codex). Agree on the finish line in writing, execute under that contract, and close only when evidence proves the goal. Intent, pro...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "048492da80fba705d8c8f5a2f370784f65a871bf99dfd65b380847bcae0dcff0"
+  },
+  {
+    "source": "github",
+    "title": "diazoxide/charter-plane",
+    "url": "https://github.com/diazoxide/charter-plane",
+    "raw_score": 299,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:40Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "The charter project's own plane: personas, workspaces, memory. The app is diazoxide/charter. - diazoxide/charter-plane",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 19,
+      "topic": "llm-tools"
+    },
+    "id": "d9174974f222d35c8654163598f5e0729f501c5649454571554d233099b50d6b"
+  },
+  {
+    "source": "github",
+    "title": "ftaricano/mcp-onedrive-sharepoint",
+    "url": "https://github.com/ftaricano/mcp-onedrive-sharepoint",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:02Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "MCP server and CLI for OneDrive and SharePoint document libraries via Microsoft Graph, with app-only auth and a small default tool set - ftaricano/mcp-onedrive-sharepoint",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 8,
+      "topic": "llm-tools"
+    },
+    "id": "2a1ab1e5539ddb764fdc831e7c8ac0bd474e86f32722596be31535e40213006a"
+  },
+  {
+    "source": "github",
+    "title": "weellio/waivepulse",
+    "url": "https://github.com/weellio/waivepulse",
+    "raw_score": 317,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:56Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Local offline AI music generation and some editing - lyrics + genre tags → MP3 with vocals - weellio/waivepulse",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 23,
+      "topic": "llm-tools"
+    },
+    "id": "b773721c29ffd2fadd9cf721038c9fd757ec8a95e64e0da2d791f02bfca7a021"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 248,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:56Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 8,
+      "total_stars": 11,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "TASA-Ed/aoh2de-llm-playing",
+    "url": "https://github.com/TASA-Ed/aoh2de-llm-playing",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:48Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Let LLM Play Age of History 2: Definitive Edition. (Server-side) - TASA-Ed/aoh2de-llm-playing",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "8b04e8ce47f19e752dc490948b387bbedc89228898d2a0674656bd6b7c315420"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 368,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:37Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 39,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "mavrovde/viafrei-bridge",
+    "url": "https://github.com/mavrovde/viafrei-bridge",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:31:24Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Live German traffic, rail, parking, EV charging, fuel, address and weather data in any AI assistant or agent — 18 MCP tools, no API key, no sign-up. Streamable HTTP: https://mcp.viafrei.de/mcp — le...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "5cf714e343dc9b1903f78e7471ac621ca0b42b1193ab8e2706852c699279ef13"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 248,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:30Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 11,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "joryirving/home-ops",
+    "url": "https://github.com/joryirving/home-ops",
+    "raw_score": 542,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:59Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Wife tolerated HomeOps driven by Kubernetes, and Gitops via Flux. - joryirving/home-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 227,
+      "topic": "terraform"
+    },
+    "id": "40f9d4a9a94d1f7566e79022f6cae35754f0b99944529e46519f9fb90991421b"
+  },
+  {
+    "source": "github",
+    "title": "fujitamasayoshi0402/quiz-app",
+    "url": "https://github.com/fujitamasayoshi0402/quiz-app",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:58Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "技術知識を題材としたクイズアプリ / Kotlin + Spring Boot + Next.js + AWS (Terraform) - fujitamasayoshi0402/quiz-app",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "94674f88474bde177a7049d846a9fb99c4411cb1adc22173b90cbac858ad7179"
+  },
+  {
+    "source": "github",
+    "title": "rvben/upd",
+    "url": "https://github.com/rvben/upd",
+    "raw_score": 219,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:41Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Local-first dependency updates for polyglot repositories—Python, Node.js, Rust, Go, Ruby, .NET, Terraform, GitHub Actions, pre-commit, and Mise. - rvben/upd",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 8,
+      "topic": "terraform"
+    },
+    "id": "00d8467a8149f28b25e4895d4db35f47bda6b2556f213dc5815607f58b7b5dde"
+  },
+  {
+    "source": "github",
+    "title": "lAnubisl/AzureWebAppToCosmosDBNetwork",
+    "url": "https://github.com/lAnubisl/AzureWebAppToCosmosDBNetwork",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:42Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Template of Architecture for web application running docker application on Azure and connected to CosmosDB through private networking - lAnubisl/AzureWebAppToCosmosDBNetwork",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "8ef0774458a3b8a2dd0fb0286a62dc896ef0b8e5dff56c57f470f46024cb3c38"
+  },
+  {
+    "source": "github",
+    "title": "orchestrator-iac/orchestrator-iac-ui",
+    "url": "https://github.com/orchestrator-iac/orchestrator-iac-ui",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:35:15Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Application for managing cloud infrastructure with an integrated notes system for documentation and collaboration. - orchestrator-iac/orchestrator-iac-ui",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 2,
+      "topic": "terraform"
+    },
+    "id": "f362ac41084e61ba8063bed64c265a7a061ea2548979fdc1d24f3d2cec063c34"
+  },
+  {
+    "source": "github",
+    "title": "ministackorg/ministack",
+    "url": "https://github.com/ministackorg/ministack",
+    "raw_score": 846,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:32:40Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Ministack: Free, open-source local AWS emulator - 60+ services, Terraform compatible, real databases. Free forever. MIT   licensed. - ministackorg/ministack",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 39,
+      "total_stars": 4762,
+      "topic": "terraform"
+    },
+    "id": "65e67f1192147e3a101b0d4a53d22530838fa75005f87596e35eedbf45c6dad7"
+  },
+  {
+    "source": "github",
+    "title": "azizu06/rehearse",
+    "url": "https://github.com/azizu06/rehearse",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:32:28Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Automated application recovery drills: restore real backups, boot isolated workloads, verify behavior, and report evidence. - azizu06/rehearse",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 25,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "bff4ae34fe5fdf73a023cfeb729d0e8b60f67338ab364619bba15f85bcc21c42"
+  },
+  {
+    "source": "github",
+    "title": "officel/zenn",
+    "url": "https://github.com/officel/zenn",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:32:08Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "zenn.dev repo. Contribute to officel/zenn development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 2,
+      "topic": "terraform"
+    },
+    "id": "a65fc93b2e154b8746f29e5c75d99983f7985d4ddd7fe9ff541ca8f2d061d0ce"
+  },
+  {
+    "source": "github",
+    "title": "coder/coder",
+    "url": "https://github.com/coder/coder",
+    "raw_score": 972,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:31:04Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Secure environments for developers and their agents - coder/coder",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1182,
+      "total_stars": 16798,
+      "topic": "terraform"
+    },
+    "id": "73b7e92d1b039b14a0bcece0a1329de85e1c746a1d9d3978e45e7ce35c135574"
+  },
+  {
+    "source": "github",
+    "title": "packiot/packiot-stack-alpha",
+    "url": "https://github.com/packiot/packiot-stack-alpha",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:41Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Packiot platform monorepo — Docker Compose stack, Terraform infra, Go services (mirror-worker, oeecloud-worker, edge-transformer), Node-RED + edge-api submodules. See the wiki for architecture + AD...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "b433cdf0e705b0c52f25b649874641d1ec13dae07f0c52fa1b5dd2ee0b8ea651"
+  },
+  {
+    "source": "github",
+    "title": "PostOakLabs/ainumbers",
+    "url": "https://github.com/PostOakLabs/ainumbers",
+    "raw_score": 239,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:41Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Deterministic fintech compliance tools + the OpenChainGraph verifiable-artifact standard - PostOakLabs/ainumbers",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 17,
+      "total_stars": 10,
+      "topic": "compliance"
+    },
+    "id": "68d6b7f6a1df214e7f4ba98f0090d3c63a78518c44adb3cde629a4fcc3a4db62"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/a11oy",
+    "url": "https://github.com/szl-holdings/a11oy",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:32:56Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "a11oy — governed-AI Command Center. Deny by default. Signed receipts. Trust ceiling 0.97. Λ = Conjecture 1. - szl-holdings/a11oy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 26,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "413f56f31618e17f6356c644098e0e1b43d6551172e706d24fb9031830a384ed"
+  },
+  {
+    "source": "github",
+    "title": "NISD2/open-isms",
+    "url": "https://github.com/NISD2/open-isms",
+    "raw_score": 283,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:35:22Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Free, self-hostable ISMS for the EU NIS 2 Directive. Open-source alternative to compliance SaaS. GDPR, EU AI Act and CRA included. AGPL-3.0. - NISD2/open-isms",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 16,
+      "topic": "compliance"
+    },
+    "id": "870b48c4d822ab826fc7a77c91706dabd04368698e17c2426ad73a9d0ef15f6e"
+  },
+  {
+    "source": "github",
+    "title": "JettyRepo/LLLL",
+    "url": "https://github.com/JettyRepo/LLLL",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:32Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "LLLL — Embedded Compliance Layer for AI-Built Software - JettyRepo/LLLL",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "f27d8150db0aa1dc62c0cd7620b208cdaf1050476c1be82c86bd783710654994"
+  },
+  {
+    "source": "github",
+    "title": "snapotter-hq/SnapOtter",
+    "url": "https://github.com/snapotter-hq/SnapOtter",
+    "raw_score": 792,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:26:13Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Open-source, self-hosted file-processing tool. Convert, compress, OCR, transcribe &amp; run local AI across image, video, audio, PDF &amp; documents, via UI, REST API &amp; pipelines. Your files ne...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 375,
+      "total_stars": 2769,
+      "topic": "compliance"
+    },
+    "id": "18db88bba45fb85ec5e17279d430de5671ec39617cc67dc6d027540b1df01c97"
+  },
+  {
+    "source": "github",
+    "title": "mishrasanjeev/grantex",
+    "url": "https://github.com/mishrasanjeev/grantex",
+    "raw_score": 355,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:26:13Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "grantex is the identity, authorization, and audit infrastructure for AI agents — the &quot;OAuth moment&quot; for the agentic internet. We provide a universal SDK and cloud service that lets any AI...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 34,
+      "topic": "compliance"
+    },
+    "id": "495ab31fbdaf4089a4d420d2e4c356ad4c0254817e90ff9fd263296b782a2fc9"
+  },
+  {
+    "source": "github",
+    "title": "ankhorage/doctor",
+    "url": "https://github.com/ankhorage/doctor",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:26:47Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Executable doctor provider and standalone CLI for lightweight Ankhorage repo and package compliance diagnostics. - ankhorage/doctor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "fdefc24cba52bc5905eb67e50c1d7d1c9bf79534968ae47022418e60d26625c2"
+  },
+  {
+    "source": "github",
+    "title": "AlJasser-AlGhamdi/scan-to-controls",
+    "url": "https://github.com/AlJasser-AlGhamdi/scan-to-controls",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:21:41Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Code and data behind the paper: An automated tiered-evidence toolkit for cybersecurity compliance assessment in Saudi SMEs - AlJasser-AlGhamdi/scan-to-controls",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "c650ccb0a9e3e6110f58e6d752249304e47000766e40aeaa0d5b8a99441d69ee"
+  },
+  {
+    "source": "github",
+    "title": "seetrex-hq/trust-monitor",
+    "url": "https://github.com/seetrex-hq/trust-monitor",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:21:32Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Independent external monitoring of the Seetrex Compliance Trust Center - seetrex-hq/trust-monitor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "dcfbf118b195e82d3fac9a3564ba0dec3a6ea7c5220ed37066896e3b7cab5e84"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/.github",
+    "url": "https://github.com/szl-holdings/.github",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:18:11Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "SZL Holdings org profile. Product a-11-oy.com · Proof a11oy.net. Doctrine, reusable workflows, community health. - szl-holdings/.github",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 22,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "c648f7aff41ff73048ca6613ad04fa4a031bb2ed46e64299a71aac73e55df92f"
+  },
+  {
+    "source": "github",
+    "title": "KCNyu/clawock",
+    "url": "https://github.com/KCNyu/clawock",
+    "raw_score": 283,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:35:12Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "AI argues. Code settles. The losses stay on the page. A real HK + US brokerage account run by agents that must debate every call, settled by code the model never touches. Install the same decision ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 27,
+      "total_stars": 16,
+      "topic": "fintech"
+    },
+    "id": "ab729f2b594b61a9b25fbd46d9b9a52b79ede1eb3ddb3e9cb05774004bf0730e"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:56Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "AKSHAYKUMARDHAR/UPI-Triage-Agent",
+    "url": "https://github.com/AKSHAYKUMARDHAR/UPI-Triage-Agent",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:34:23Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "AI agent that categorizes Indian UPI bank transactions: rules + SBERT baseline, an LLM agent (Claude or free-tier Gemini) calling MCP tools, RAG merchant lookup on pgvector, a human review queue, a...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e5bf6b8a5ad9f1ccbe11bc02d4f91b1abc3d18b456538556d9ffbe0cbf9ef0bf"
+  },
+  {
+    "source": "github",
+    "title": "KoshiirRa/midgley",
+    "url": "https://github.com/KoshiirRa/midgley",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:58Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "LLM Multi-Agent Framework forecasting wholesale (RBOB) and retail unleaded gasoline prices using Gemini 2.5, NOAA weather models, executive social media gap analysis, and global energy market feeds...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 63,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "b3d11ba1216975bad2ffc120dfa84d39d1de4310982d062120dbafc41e76c036"
+  },
+  {
+    "source": "github",
+    "title": "duongnq2798/vestiarion",
+    "url": "https://github.com/duongnq2798/vestiarion",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:40Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "An autonomous treasury agent for a small business, settled in USDC on Arc. Screens counterparties, pays invoices under explicit guardrails, releases contractor milestones, and sweeps idle cash to y...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "af07199854dcb8e3145b7b0ce881c9007099e86b742670415b003a63c69c6568"
+  },
+  {
+    "source": "github",
+    "title": "cx-ssg/invest-concierge",
+    "url": "https://github.com/cx-ssg/invest-concierge",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:35:39Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "投资私人管家 · A股基金 AI 私人顾问（Invest Concierge — A-share & fund AI personal investment assistant） - cx-ssg/invest-concierge",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "d384969825a18369c011a922717dbe1569353df3f383c3b9f75947771cbb24f3"
+  },
+  {
+    "source": "github",
+    "title": "Sreenivas-Sadhu-Prabhakara/paluwagan",
+    "url": "https://github.com/Sreenivas-Sadhu-Prabhakara/paluwagan",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:33:25Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "An offline, no-login trust ledger for rotating savings groups (paluwagan / ROSCA / chit fund / tanda / susu). Your data never leaves your device. - Sreenivas-Sadhu-Prabhakara/paluwagan",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "40a34ca4c1a2ac62daff0ad446afb34fab5fc6974b897ca650cb752cf9d09752"
+  },
+  {
+    "source": "github",
+    "title": "y0ngha/siglens",
+    "url": "https://github.com/y0ngha/siglens",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:30:58Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "AI-powered market research for stocks and crypto. Charts, options, news, fundamentals, and macro, ... analysis in Siglens - y0ngha/siglens",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 13,
+      "total_stars": 6,
+      "topic": "fintech"
+    },
+    "id": "edb9ad1f0429538ae5ec5e432e0e1a7adec00a188bf367206dfb95ee538c85fb"
+  },
+  {
+    "source": "github",
+    "title": "jinhoo-choi/kis-community-bot",
+    "url": "https://github.com/jinhoo-choi/kis-community-bot",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T17:29:33Z",
+    "fetched_at": "2026-10-01T17:34:51.439861+00:00",
+    "excerpt": "AI 게시글 생성/배포 파이프라인 - 증권 커뮤니티 시딩 (AI 작성 뱃지 부착 전제). Contribute to jinhoo-choi/kis-community-bot development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "18afd7c703dcb615b3d8fdba95b9e1c92a91176529b4418f57cff60057cd08a7"
+  }
+]

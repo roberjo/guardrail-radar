@@ -1,0 +1,154 @@
+[
+  {
+    "source": "lobsters",
+    "title": "AI: LLMs, Agents, Work, and Us - Engineers. Personal Thoughts",
+    "url": "https://setevoy.substack.com/p/ai-llms-agents-work-and-us-engineers",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T08:43:06.242-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "Author shares his thoughts on vibecoding, the use of AI agents and neural networks in the work of a DevOps engineer, and how this affects the individual as an engineer from a specialist's perspective.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "short_id": "ymulrg",
+      "tags": [
+        "ai",
+        "vibecoding"
+      ]
+    },
+    "id": "79aa3fc242d9315e09037e2fd28bd0e7a72be61f1e807ec9c7bd4e3de15666dc"
+  },
+  {
+    "source": "lobsters",
+    "title": "CVE-2026-86950: The Great Glyph Grift - An in-the-wild iOS bug with a possible WhatsApp zero-click path",
+    "url": "https://calif.io/research/the-great-glyph-grift",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-01T08:41:13.378-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "An in-the-wild iOS bug with a possible WhatsApp zero-click path.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "yfttkn",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "d43d075f5e37d6b7dbed38557c62757617025adbcb46695dda3866826c72b58b"
+  },
+  {
+    "source": "lobsters",
+    "title": "django-modern-rest@0.16.0 release",
+    "url": "https://lobste.rs/s/fujfew/django_modern_rest_0_16_0_release",
+    "raw_score": 3,
+    "comment_count": 2,
+    "posted_at": "2026-10-01T07:20:39.925-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "2 comments",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fujfew",
+      "tags": [
+        "python",
+        "release",
+        "web"
+      ]
+    },
+    "id": "c9ca833393a0bab8aaae41f7185a3b32df9a59efbf5014e4bdf35ec4c781f830"
+  },
+  {
+    "source": "lobsters",
+    "title": "Is sandboxing sufficient to contain rogue agents?",
+    "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents",
+    "raw_score": 11,
+    "comment_count": 5,
+    "posted_at": "2026-10-01T07:16:51.385-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "Quick caveats: this is a post on AI safety, written by a cryptography professor. If that troubles you, you should read something else. I try hard not to work on AI (except when the topic occasional…",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "zcr7in",
+      "tags": [
+        "ai",
+        "security"
+      ]
+    },
+    "id": "2c185d617251f33cf02a85b6894f07214d6f7a7c9c6a0f5444842c700e6cd442"
+  },
+  {
+    "source": "lobsters",
+    "title": "ESXi Exploitation in the Wild",
+    "url": "https://www.huntress.com/blog/esxi-vm-escape-exploit",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2026-09-30T21:30:14.805-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "Huntress outlines a complex, multi-step attack designed to break out of guest VMs and target the ESXi hypervisor, using potential zero-day vulnerabilities and sneaky VSOCK communication.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "f6dogm",
+      "tags": [
+        "reversing",
+        "security"
+      ]
+    },
+    "id": "11416cc01708001eaa8bc1e3c78c58bceb8163b7fd3cce5b209f6ff85f7ad02f"
+  },
+  {
+    "source": "lobsters",
+    "title": "A brief history of the Bloomberg Terminal",
+    "url": "https://spectrum.ieee.org/bloomberg-terminal",
+    "raw_score": 12,
+    "comment_count": 0,
+    "posted_at": "2026-09-30T21:14:34.589-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "It gave Wall Street traders and analysts an unprecedented window on global markets",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "yknfii",
+      "tags": [
+        "finance",
+        "hardware",
+        "historical"
+      ]
+    },
+    "id": "757dc7ec93bdca9a55c265265e55c2e232ed60c8a604b4b2c21faef7407b79c8"
+  },
+  {
+    "source": "lobsters",
+    "title": "Major rsync upgrade in Debian because of 33 CVEs",
+    "url": "https://lobste.rs/s/sqyhgt/major_rsync_upgrade_debian_because_33",
+    "raw_score": 21,
+    "comment_count": 4,
+    "posted_at": "2026-09-30T19:02:09.641-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "4 comments",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "sqyhgt",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "160da3a18b2d114b67b74cbde1ca6abca9cd68815f99f9af06685cf9193121ec"
+  },
+  {
+    "source": "lobsters",
+    "title": "The Cuckoo's Egg",
+    "url": "https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)",
+    "raw_score": 56,
+    "comment_count": 25,
+    "posted_at": "2026-09-30T03:48:43.805-05:00",
+    "fetched_at": "2026-10-01T17:34:49.685744+00:00",
+    "excerpt": "The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage is a 1989 book written by Clifford Stoll . It is his first-person account of the hunt for Markus Hess , a computer hacker who broke into a computer at Lawrence Berkeley National Laboratory (LBNL).",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "nicozi",
+      "tags": [
+        "book",
+        "security"
+      ]
+    },
+    "id": "56f339a2ab0eb9ee1cde24cb3787a2e038238b3c0fea8610b7fd072102fb4b75"
+  }
+]
