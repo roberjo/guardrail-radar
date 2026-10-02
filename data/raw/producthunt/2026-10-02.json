@@ -1,0 +1,3582 @@
+[
+  {
+    "source": "producthunt",
+    "title": "StudyHelpAI",
+    "url": "https://www.producthunt.com/products/studyhelpai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Homework help that lets you check what the AI read first — StudyHelpAI gives step-by-step homework help from typed questions, photos and short PDFs. For difficult visual problems, its Sol workflow shows the numbers, units, labels and measurements it read from the worksheet before solving, so you can catch a misread first. Luna offers lower-cost direct AI help for clearer inputs, while separate calculators, unit conversion, grade planning and worksheet tools are free.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266217",
+      "topics": [
+        "artificial-intelligence",
+        "education",
+        "productivity"
+      ]
+    },
+    "id": "69e9c6270b84770dfdfa48ab5c2efedebed1933098b72a72a17565f1d08d75bb"
+  },
+  {
+    "source": "producthunt",
+    "title": "DealWise AI",
+    "url": "https://www.producthunt.com/products/dealwise-ai-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI underwriting for commercial real estate deals — DealWise reads the offering memorandum and the leases, builds the rent roll and underwrites the deal: NOI derived lease by lease, every month of the hold, levered returns, and an Excel cash flow model to download. What's different: it checks the seller's stated cap rate against what the rent roll actually supports, and tells you how far apart they are in basis points. Built for buyers, listing brokers and sponsors. Your first deal is free, no credit card.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266738",
+      "topics": [
+        "artificial-intelligence",
+        "fintech",
+        "saas"
+      ]
+    },
+    "id": "09a8b9a7ea63cf5c630322affd33e799091cb9860afff1ff6b31ebae26769e09"
+  },
+  {
+    "source": "producthunt",
+    "title": "Opus 5.5 Video Generator",
+    "url": "https://www.producthunt.com/products/opus-5-5-video-generator",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn a prompt into a motion graphics video, edit by chat — Describe a video in plain English and Claude Opus 5.5 writes every frame as code: kinetic type, charts, logo reveals, product promos. Because the video is code, you change it by chatting (\"make the title bigger\", \"slow down the intro\") instead of re-rolling a new clip. Text stays sharp and spelled right. Export MP4 for free, and browse 470+ example videos with the exact prompts behind them.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267301",
+      "topics": [
+        "artificial-intelligence",
+        "design-tools",
+        "video"
+      ]
+    },
+    "id": "5e344a91df9d841d7577f410a9773bbcc6d733ce0a4a8017a9ae9e47b583e2f7"
+  },
+  {
+    "source": "producthunt",
+    "title": "Versivo AI",
+    "url": "https://www.producthunt.com/products/versivo-ai",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn GitHub commits into customer-ready release notes — Versivo AI connects to GitHub and turns commits into editable, customer-ready release notes, technical changelogs, and client delivery reports. It uses read-only access, never touches your source code, and keeps you in control: AI drafts, you review and publish. Built for product and engineering teams that want consistent release communication without hours of manual writing.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266992",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "429d525732ddda2e3bd90af33593cd0bb2c83f5e15ba9a6a075dfc6610a388aa"
+  },
+  {
+    "source": "producthunt",
+    "title": "Quay, the app where agents land",
+    "url": "https://www.producthunt.com/products/quay-the-app-where-agents-land",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Quay is the inbox for your agents — I built Quay because I needed it. I was juggling all kinds of agents and chats, but none of them lived in one place. Quay fixes that by becoming the inbox for everything your agents create. You teach your agent the Quay instruction once. After that, whenever you say “Send to Quay,” it knows to send its output to your phone in the right format. Quay can already turn agent output into: - Places on a map - Calendar schedules - Todos - Notes - Articles - Quizzes - Memory games - Recipes More coming.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267341",
+      "topics": [
+        "artificial-intelligence",
+        "ios",
+        "productivity"
+      ]
+    },
+    "id": "49d4ba2f3f55c3b5e110212e3b7b69a48550b0ba8f8420152247505dfe1ca5a8"
+  },
+  {
+    "source": "producthunt",
+    "title": "Blake SEO Tools",
+    "url": "https://www.producthunt.com/products/blake-seo-tools",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free Developer SEO Suite: Schemas, SERP & AI Bots — Blake SEO Tools is a fast, 100% free technical SEO suite built for developers, founders, and creators. Generate valid JSON-LD schemas (FAQ, WebApp, Article, LocalBusiness), simulate real-time Google SERP snippets for mobile & desktop, and control AI search bots (GPTBot, ClaudeBot, Perplexity) with custom robots.txt directives. Zero cookies, no sign-up required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267068",
+      "topics": [
+        "artificial-intelligence",
+        "github",
+        "seo",
+        "web-app"
+      ]
+    },
+    "id": "01f2d97bc0f0545825bc7b7f6c2469e2378f71eb3504bd3c2e838910518de270"
+  },
+  {
+    "source": "producthunt",
+    "title": "Bylvi",
+    "url": "https://www.producthunt.com/products/bylvi",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "After-hours AI that books by phone and on your website — Bylvi answers when your business can’t — evenings, weekends, and busy hours. Callers get a natural voice agent on the phone; website visitors get a chatbot for FAQ, customer support, and bookings. Both capture the lead so you don’t lose the job to voicemail or a closed tab. Built for service SMBs that live on the phone and the site (trades, clinics, salons, local shops). Try the live demos, then plug Bylvi into your number and website. Voice demo: https://bookly-ai-sigma.vercel.app/voice-demo",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265590",
+      "topics": [
+        "artificial-intelligence",
+        "customer-communication",
+        "productivity"
+      ]
+    },
+    "id": "07227c51a5f8db2a7c079adbb95555a85e5c2f2f731b01562260927fcb5d5f8b"
+  },
+  {
+    "source": "producthunt",
+    "title": "OneSecure Shadow AI Guardian",
+    "url": "https://www.producthunt.com/products/onesecure-shadow-ai-guardian",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Find the Shadow AI on any Windows PC, free — Your team uses AI tools IT never approved: ChatGPT, Copilot, Cursor, local models in Ollama or LM Studio, AI extensions and MCP servers. Shadow AI Guardian scans a Windows PC in a minute, lists every AI tool it finds, scores the risk and maps each one to the EU AI Act. The scan runs on the PC and the findings never leave it. No account needed. Free; paid plans add reports, alerts and a company-wide dashboard. Made in Denmark.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267327",
+      "topics": [
+        "artificial-intelligence",
+        "security",
+        "windows"
+      ]
+    },
+    "id": "6272d93524bed0030eb52c6e94a7888d754fee1a30d346ca535fbb646c00f4e4"
+  },
+  {
+    "source": "producthunt",
+    "title": "Fantasy Football AI Weekly Recaps",
+    "url": "https://www.producthunt.com/products/fantasy-football-ai-weekly-recaps",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI-written trash-talk recaps, texted to your league — Fantasy Sports Reports turns your league’s real weekly matchups into a hilarious, trash-talking recap written by AI and texted straight to your commissioner every week. Connect your ESPN or Sleeper league in seconds, and every Tuesday your commish gets a ready-to-paste recap that keeps the group chat roasting all season. No spreadsheets, no writing, just vibes. And it’s completely free.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266794",
+      "topics": [
+        "artificial-intelligence",
+        "comedy",
+        "sports"
+      ]
+    },
+    "id": "c698a268fb8259ea259b9bb12895ef398070621a5f939ead34c0bbf19218833a"
+  },
+  {
+    "source": "producthunt",
+    "title": "Aivio – EU AI Labels Shopify ",
+    "url": "https://www.producthunt.com/products/aivio-eu-ai-labels-shopify",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Label AI images for the EU AI Act – accessible, no code — Aivio overlays product images with a visible, accessible AI badge via a theme app embed – no theme code, original files untouched. Label images one by one or in bulk; set style, position and colours for desktop and mobile in the theme editor, with a live contrast check. The optional Provenance module signs originals with IPTC/XMP and C2PA, backs them up in the EU for 90 days, and publishes a public record page and JSON per image. CSV export gives you the audit trail. 6 languages, EU hosting.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267083",
+      "topics": [
+        "artificial-intelligence",
+        "e-commerce",
+        "shopping"
+      ]
+    },
+    "id": "b5989e7e2b36e0b2a1ca6a4b4dcfa9d7c17a2be31d751af06cca7e49fe923c00"
+  },
+  {
+    "source": "producthunt",
+    "title": "VideoWeb AI",
+    "url": "https://www.producthunt.com/products/ai-video-online-ai-video-all-in-one",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Create AI videos, images, and music in one web platform — VideoWeb AI is a web-based creative platform for generating videos, images, and music in one workspace. It gives creators a single place to explore different media formats, move from an idea to an initial draft, and compare creative directions without switching between separate tools. The launch introduces a browser-based workflow for experimenting with AI media.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1252021",
+      "topics": [
+        "android",
+        "artificial-intelligence",
+        "music",
+        "video"
+      ]
+    },
+    "id": "532d3cb0923006645ae876b168bd840cbaa62d011d37e23725fd754ac36d4dd1"
+  },
+  {
+    "source": "producthunt",
+    "title": "PravahAI",
+    "url": "https://www.producthunt.com/products/pravahai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn trade show visitors to booked meetings — Pravah turns booth traffic into booked meetings. At the booth, it flags the right buyers, gives your rep conversation starters (their priorities, any past relationship with you, customised conversation tracks based on the relationship), captures what they asked and what you promised, books the next meeting, and logs it live to your CRM. After the show, it keeps working to book more meetings. Booth visitors → booked meetings → pipeline. Assured 3x pipeline on booth spend.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266248",
+      "topics": [
+        "artificial-intelligence",
+        "events",
+        "sales"
+      ]
+    },
+    "id": "e75909a3030a481dee330186deab691dfe1a01b73c19015b6aa48f9a2d88b924"
+  },
+  {
+    "source": "producthunt",
+    "title": "Legato Hearing",
+    "url": "https://www.producthunt.com/products/legato-hearing",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Smart Eyewear for Hearing — Smart eyewear with a purpose. No cameras, no privacy invasion. Prescription-grade hearing assistance in glasses that look and feel like normal glasses Legato’s patented SpeechSense AI™ and open-ear audio architecture blends powerful hearing assistance technology into beautifully crafted eyeglass frames so conversations stay clear.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266718",
+      "topics": [
+        "artificial-intelligence",
+        "hardware",
+        "tech"
+      ]
+    },
+    "id": "11cd408f0275ac220424b61c96acc282ae4966d20feb9baa4cc1deeab635348b"
+  },
+  {
+    "source": "producthunt",
+    "title": "ERA RENEW",
+    "url": "https://www.producthunt.com/products/era-renew",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Restore old photos privately with local AI — Restore old, faded and damaged photos directly on your Windows PC with local AI. ERA RENEW enhances faces, recovers detail, upscales images and offers manual adjustments. Photos stay on your device and are not uploaded for restoration, advertising, profiling or AI training.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267241",
+      "topics": [
+        "artificial-intelligence",
+        "photo-editing",
+        "windows"
+      ]
+    },
+    "id": "ce445e0119f2263efa944f6d5ff4c056b82214d5bdb33590e3e0cfb7ab64dc4e"
+  },
+  {
+    "source": "producthunt",
+    "title": "GermanTutor.ai -  free AI German tutor",
+    "url": "https://www.producthunt.com/products/germantutor-ai-free-ai-german-tutor",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Perfect for AI German speaking practice, language learning — GermanTutor AI listens, analyzes, and coaches your pronunciation, fluency, and confidence in real time. Practice interviews, presentations, travel, work, and everyday German with real conversations, not scripts. Get instant feedback on your speaking and earn AI-generated, QR-verifiable language level certificates. Perfect for AI German speaking practice, language learning, and German fluency. Prepare for Goethe exams from A1–C2. Start free today!",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265541",
+      "topics": [
+        "artificial-intelligence",
+        "education",
+        "languages"
+      ]
+    },
+    "id": "eb7d677944d54ffa32e0b63d63bf8ee2e838e297e451006e506c1945b99b8046"
+  },
+  {
+    "source": "producthunt",
+    "title": "Agent Commerce Gateway",
+    "url": "https://www.producthunt.com/products/agent-commerce-gateway",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn your API into a sales channel for AI agents — Turn your existing API into paid tools for AI agents: MCP tools, x402 pay-per-call settlement in USDC, A2A, ACP and AP2. Self-hosted, non-custodial, open source.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266743",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "web3"
+      ]
+    },
+    "id": "9cd1da84e8962c198c78c99057bc4ae8677245c50fa16960a7f83a55945f70aa"
+  },
+  {
+    "source": "producthunt",
+    "title": "RÉVE",
+    "url": "https://www.producthunt.com/products/reve-3",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free event pages you can host right inside ChatGPT — RÉVE turns any idea into a live event page in minutes — RSVPs, guest lists, tickets and direct payouts. Free for hosts, no app for guests, 0% platform fee (hosts keep 100% of every ticket). And now you can discover and host events without leaving ChatGPT.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1244705",
+      "topics": [
+        "artificial-intelligence",
+        "events",
+        "saas"
+      ]
+    },
+    "id": "88d857f897d5579f74f81eff2117a42a5dbf1ae2aeaa35921a661dfc595a3326"
+  },
+  {
+    "source": "producthunt",
+    "title": "VerQen",
+    "url": "https://www.producthunt.com/products/verqen",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "State in, decision out — open foundation decision models — VerQen is a foundation decision model from ZorQelis AI: state in, decision out. Give it a policy, a case and options; it returns a decision with confidence and an escalation flag. Not a prompted LLM - trained from scratch as a decision model. Open weights (Apache 2.0) AND open training data, so the release is checkable. Measured 8.4 ms per decision on an RTX 5060 Ti; $1.81 per million. Quickstart reproduces its worked example (deny_refund, P_correct 0.6656).",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266986",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "open-source"
+      ]
+    },
+    "id": "5dc4b67b97f68b63560a6fe8340dc7aa874bb93fa28213664efc529773ac83ba"
+  },
+  {
+    "source": "producthunt",
+    "title": "Niblore",
+    "url": "https://www.producthunt.com/products/niblore",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your own serialized novel, one chapter a day — Pick your characters and an era, add a one-line hint (or skip it), and Niblore writes the next chapter of your own story. Polish the tone with one tap, or write the next part yourself. Add a scene illustration: set a character's look once and later illustrations keep the same face. Then share any chapter with a single link that opens on the web. Free to start on iPhone, in English, Korean and Japanese. Illustrations are AI-generated.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266799",
+      "topics": [
+        "artificial-intelligence",
+        "ios",
+        "writing"
+      ]
+    },
+    "id": "bfd9b1c24ff188770b170a3f64d7d348fc0f6b1d09625e581077252703a0f604"
+  },
+  {
+    "source": "producthunt",
+    "title": "T3rnel Browser",
+    "url": "https://www.producthunt.com/products/t3rnel-browser",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI browser automation in the browser you're signed into — New in 1.3: your AI drives the browser you're signed into over MCP with zero install (npx bridge, auto-pairing), 97 tools; WhatsApp Web chats captured as one full-page conversation with the name on top; Pro turns itself on the moment payment clears, even after a closed browser — PayPal, card, EcoCash/OneMoney. Still: CSS copy as Tailwind/SCSS/JSX, colour picker, full-page screenshots, Playwright/Puppeteer/Cypress/Selenium export, React inspector, audits, visual diffs.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266883",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "bfd07959163efc70a7fe9faa7589408ec5bda58bacf5d508dd4b87561817c0e7"
+  },
+  {
+    "source": "producthunt",
+    "title": "Agent One by Hussh",
+    "url": "https://www.producthunt.com/products/agent-one-by-hussh",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Personal supercomputing, owned by you — Agent One is your private AI assistant for everyday life. Mail finds receipts and helps with replies. Calendar spots conflicts. Finance offers market and portfolio insights. Wallet encrypts cards on your device. Location lets you share for a set time. Advisor gives registered advisors client-approved access. Memory and Consent, in design, add editable personal context and sharing controls. You choose what to connect and approve email replies and calendar changes. Your information, your control.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267191",
+      "topics": [
+        "artificial-intelligence",
+        "privacy",
+        "productivity"
+      ]
+    },
+    "id": "2ea86fc344fe4ce260492fe44cd8c6f15cadc187f1579bbf91f73d1eb2b1a7a0"
+  },
+  {
+    "source": "producthunt",
+    "title": "ProbeLab",
+    "url": "https://www.producthunt.com/products/probelab",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Red-team your AI agent before the FTC does. — ProbeLab is an interactive red-team lab for AI agents. Fire 12 prompt-injection techniques — direct overrides, indirect injection via tool output, multi-turn jailbreaks, encoded payloads, output exfiltration — at a vulnerable agent, and watch BREACH vs BLOCKED as you toggle 7 defenses on and off. The $39 one-time kit ships the 12-technique attack catalog, the 7-defense checklist, a drop-in FastAPI guardrail middleware, and a scoring rubric. Educational payloads only — harden your own agents.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266836",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "security"
+      ]
+    },
+    "id": "3020160253df33e282664de190d9adb0815731e383ec130e5987228e5d9f9119"
+  },
+  {
+    "source": "producthunt",
+    "title": "Cassiel",
+    "url": "https://www.producthunt.com/products/cassiel",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Stop wasting your days thinking. Start acting on your goals. — Cassiel is a daily system for ambitious people stuck in thinking instead of acting. You have a decision, a problem, an idea, open Cassiel, type it out, get exact next steps in minutes. Real productivity and clarity are built on the basics: sleep, movement, diet and more. Cassiel tracks them daily so you always know what's dragging you down before it kills your output. Made for people who are done overthinking and ready to act. 7-day free trial, no card required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1243438",
+      "topics": [
+        "artificial-intelligence",
+        "health-fitness",
+        "productivity"
+      ]
+    },
+    "id": "ce8cdcd4539ebb61c0536fe39e3bfebf6a63888fc12879e6e5de2e70e246863f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Rubbletag",
+    "url": "https://www.producthunt.com/products/rubbletag",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your 7-LLM Conference — Ask one question and compare independent responses from seven leading language models in a single structured conference. Work with documents and images, use Full or Grid View, keep notes and summaries, and preserve every conference locally.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267071",
+      "topics": [
+        "artificial-intelligence",
+        "bots",
+        "productivity",
+        "youtube"
+      ]
+    },
+    "id": "85c4f9141d299acaa6dfd9bcface1d1051f1fc4e01cb4a333ef323e211551f3e"
+  },
+  {
+    "source": "producthunt",
+    "title": "Benzi",
+    "url": "https://www.producthunt.com/products/benzi",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "A compiler-backed AI coding agent — Current AI agents/harnesses dump code snippets into model's context window and hope for the best. Enter Benzi; it uses a compiler to map out every single class/struct/variable/function in your project first. It creates a precise query map, allowing it to answer complex questions about where bugs come from or how data flows through your codebase in a single, instant step. It works across ten different programming languages, auto reverts broken edits, features a runtime tracer, and much more.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267148",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "tech"
+      ]
+    },
+    "id": "b1189deb0c7cda72decfd665cc560ebb747c8a50ed4999e81b3500e7c56b1bc3"
+  },
+  {
+    "source": "producthunt",
+    "title": "Opservo",
+    "url": "https://www.producthunt.com/products/opservo",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Know what is running. Know what is broken. Know what to fix. — Install one command and get plain-English answers about every Linux server — what is running, what is broken, and how to fix it, with one-click fixes. Opservo watches 40+ servers across our own portfolio (Laravel, Node, Docker, nginx, MySQL) and turns raw metrics into causal explanations: why a server is slow, what changed before an incident, and the exact fix — not another graph to stare at.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266642",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "02cff9c4a31c1865c9e21deaf725ead5a72924f32dd4572d6fb0ea3c2aacd09a"
+  },
+  {
+    "source": "producthunt",
+    "title": "Viralard - Live Feed Hijack",
+    "url": "https://www.producthunt.com/products/viralard-live-feed-hijack",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Test your video hooks inside a simulated scrolling feed — Escape 200-view jail. Viralard is the first script simulator that lets you preview how your video hook behaves inside a live, competitive mobile feed before you film. Paste your first 3 seconds to get a rigid algorithmic score based on speed, readability, and curiosity. Instantly generate 3 psychology-backed rewrites (Pattern Interrupt, Negative Frame, Curiosity Loop) and use the visual overlay to ensure native app buttons never block your text.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266935",
+      "topics": [
+        "artificial-intelligence",
+        "marketing",
+        "social-media"
+      ]
+    },
+    "id": "bb18085cb0fe1a93fe1be7b5ee18c0f379c4b1ea75a7b390d9550641c45c94b4"
+  },
+  {
+    "source": "producthunt",
+    "title": "Redline",
+    "url": "https://www.producthunt.com/products/redline-6",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Tailor your resume to any job post with AI — Most resumes get rejected because the bullets describe duties instead of results. Redline compares your resume against the job post, shows a match score, and flags lines with no numbers. It then suggests one stronger line at a time, and you approve each change. Resumes tailored with Redline pass ATS screening 89.4 percent of the time, compared with 28.3 percent for untailored resumes. It also sorts your Gmail application updates for you. Your first resume is free. No card required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267213",
+      "topics": [
+        "artificial-intelligence",
+        "career",
+        "productivity"
+      ]
+    },
+    "id": "e1a2544ea27f951dbe4978d1f7438fe0480918e2ce8152b427069b56658dfd59"
+  },
+  {
+    "source": "producthunt",
+    "title": "Cloud Acropolis Kubernetes",
+    "url": "https://www.producthunt.com/products/cloud-acropolis-kubernetes",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Kubernetes pools with dedicated vCPU, NVMe and shared GPU — Cloud Acropolis Kubernetes pools from €29/month. Every package includes dedicated vCPU, Ceph-backed NVMe storage, a dedicated public IPv4, S3-compatible object storage, nested Kubernetes clusters (KubeVirt) and unlimited 1 Gbit/s bandwidth. Optional shared NVIDIA V100 GPU slices (8, 16 or 32 GB VRAM) for containers. Run containers and Linux or Windows VMs from the web UI, API or kubectl. Term discounts up to 40%. 24/7 email and ticket support, 4-hour MTTR..",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266465",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "platformers"
+      ]
+    },
+    "id": "d06dd0c6d40ec6f1bbd6e78a16a19b9493e6e552344e929250e856bea89ad5f4"
+  },
+  {
+    "source": "producthunt",
+    "title": "PodSnip Pro",
+    "url": "https://www.producthunt.com/products/podsnip-pro",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI podcast transcripts, chapters & show notes in seconds — PodSnip Pro is a fast AI engine for podcasters and audio creators who need accurate transcripts without expensive subscriptions or complex editors. Key Features: • Instant Transcripts: Fast, speaker-attributed text. • Auto Chapters: Timestamps for YouTube & Spotify. • Show Notes Generator: Clean summaries & takeaways. • Zero Bloat: Clean, focused productivity workspace. Built to save hours on post-production. We’d love your feedback!",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267130",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "web-app"
+      ]
+    },
+    "id": "f185823c8f54e5fbf44c1644c1751743d385b0959ef64847d2fd61f7a12cef7c"
+  },
+  {
+    "source": "producthunt",
+    "title": "Automatic Email Manager V10",
+    "url": "https://www.producthunt.com/products/automatic-email-manager",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Local software to run actions on new emails, like printing.. — Automatic Email Manager is the automation tool for incoming emails, it lets you auto print, save, convert in pdf your emails and attachments without a click. It works 100% locally on the Window PC or server it is installed. This new version add optional AI actions (which sends data to third party service) better scenario workflow and improved printing, saving email to more formats.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1263610",
+      "topics": [
+        "artificial-intelligence",
+        "email",
+        "printing"
+      ]
+    },
+    "id": "392c4b8e0dc0f9d3c3cf4acecc2eb92427dd97b5124be73cc6d2c2e631f90963"
+  },
+  {
+    "source": "producthunt",
+    "title": "AdScanVideo",
+    "url": "https://www.producthunt.com/products/adscanvideo",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn video uploads into shot-by-shot analysis reports — AdScanVideo analyzes uploaded videos up to 10 minutes and turns selected frames and available audio into a structured report. Choose shot breakdown, ad intelligence, podcast notes, tutorial steps, summary, or marketing copy. Review timestamps, visual details, and dialogue, then export to Word or PDF. One analysis per day is free with no signup; extra analyses cost $3.99 per video. Uploading a file is the most reliable option because some platforms block link downloads.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266977",
+      "topics": [
+        "artificial-intelligence",
+        "video"
+      ]
+    },
+    "id": "1be3ab521b7916dc28b23ed6b175d528815fe521ee95ed49cae110e7ce211993"
+  },
+  {
+    "source": "producthunt",
+    "title": "Profile Upgrade",
+    "url": "https://www.producthunt.com/products/profile-upgrade",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Get past the screening bots and onto the shortlist — You were qualified, you applied, but heard nothing. Before a recruiter sees your LinkedIn profile or CV, screening software often decides whether you get cut or make the shortlist. It seeks evidence: numbers, scale, results. Paste your profile and get your free score out of 100: the app identifies the lines that undersell you and rewrites three of them. Want the profile re-done? US$34.95 rewrites your headline, About section, and latest roles. Score up 15 points or to 90, or your money back.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266275",
+      "topics": [
+        "artificial-intelligence",
+        "career",
+        "hiring"
+      ]
+    },
+    "id": "2fdb92e7bb8aade01be431bd68634544985f7e71dd99b0795c9fd41bdcf91da4"
+  },
+  {
+    "source": "producthunt",
+    "title": "twirl",
+    "url": "https://www.producthunt.com/products/twirl-2",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "High quality PBR materials — twirl is an AI PBR material generator for high quality tileable maps: albedo, normal, roughness, metallic, and height. Unlimited free material downloads, no sign up. Generate your own when you need something specific. Free plan includes 5 generations a day. Standard is $16/mo. Pro is $25/mo.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266846",
+      "topics": [
+        "3d-modeling",
+        "artificial-intelligence",
+        "design-tools"
+      ]
+    },
+    "id": "d568ea1897c7d7db9e5c277b48dce1e5d09eebe7463dcdb096100fdb5ed350e3"
+  },
+  {
+    "source": "producthunt",
+    "title": "Athnova Care",
+    "url": "https://www.producthunt.com/products/athnova-care",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Daily check-ins for parents far away, on WhatsApp or a call — Athnova Care checks on your parents every day, in their own language: one WhatsApp message with buttons, or a simple phone call for parents without a smartphone. If they go quiet, we remind them, call them, then alert you, your siblings and a neighbour you chose. Parents can send SOS any time. Reports and readings are read and trended, refills planned with their own chemist (India). 10 Indian languages + English. $12/month per family, 14 days free, no card.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266823",
+      "topics": [
+        "artificial-intelligence",
+        "health-fitness",
+        "messaging"
+      ]
+    },
+    "id": "4afffff18b3c5fbd48696ecc5b5f1b7d24586031a96f983dedd02f5898ab0e6e"
+  },
+  {
+    "source": "producthunt",
+    "title": "MultiDI",
+    "url": "https://www.producthunt.com/products/multidi",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "One AI agrees with you. Five argue it out. — MultiDI runs your decision through 5 independent AI experts (Strategist, Financial Analyst, Risk Analyst, Customer Analyst, Devil's Advocate) using multiple frontier models, not one model playing five roles. They work blind, then debate: real challenges, conceded points, positions that change for a stated reason. A judge reviews it all and writes the verdict. One AI agrees with you by default. MultiDI forces the disagreement a single AI session never surfaces on its own.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266607",
+      "topics": [
+        "artificial-intelligence",
+        "business-intelligence",
+        "tech"
+      ]
+    },
+    "id": "661f4e7a2290e85b3e4083e1a5b47e584dfe062e1562f75b69cf0c9d98754f6b"
+  },
+  {
+    "source": "producthunt",
+    "title": "registrodemarcas.mx",
+    "url": "https://www.producthunt.com/products/registrodemarcas-mx",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Revisa si tu marca se puede registrar en México ante el IMPI — registrodemarcas.mx te dice si tu marca se puede registrar en México antes de invertir en diseño o en el trámite. Describe tu negocio y tus nombres candidatos: identifica la clase de Niza, busca anterioridades ante el IMPI y calcula la probabilidad de registro por nombre y clase, con los hallazgos de cada revisión. También revisa dominios, con proveedor y precio, y nombres de usuario en Instagram, LinkedIn y X. Un reporte comparativo, listo para presentar.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265899",
+      "topics": [
+        "artificial-intelligence",
+        "branding",
+        "legal"
+      ]
+    },
+    "id": "a287efc2ae5dc10f115f2e8ed8c4396254f8e5c2598918cf61384b98bdc2c6b4"
+  },
+  {
+    "source": "producthunt",
+    "title": "PageGrok",
+    "url": "https://www.producthunt.com/products/pagegrok",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Summarize any webpage in a Chrome side panel — PageGrok opens a side panel next to the page you are reading. Summarize the whole page or clip one section, then keep asking questions. Built-in AI works right after install with no account and no API key. It reads what is already rendered in your tab, including signed-in and dynamically loaded pages.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266832",
+      "topics": [
+        "artificial-intelligence",
+        "chrome-extensions",
+        "productivity"
+      ]
+    },
+    "id": "fd246632af6f5f148d7f59d2610bc04e1c31e1222c5a966166568f188326de4b"
+  },
+  {
+    "source": "producthunt",
+    "title": "Notaty",
+    "url": "https://www.producthunt.com/products/notaty",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn any voice into notes, flashcards and a quiz — Notaty records your lecture and turns it into a timestamped transcript, a summary, flashcards and a quiz. Works in English and Arabic, with a Live Activity on the Lock Screen and Apple Watch recording. Free tier included.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266377",
+      "topics": [
+        "artificial-intelligence",
+        "education",
+        "productivity"
+      ]
+    },
+    "id": "7749638fc4e81468a8ce1cff41c56c7016ad7f8d38a1389fecc023f0bc912f0d"
+  },
+  {
+    "source": "producthunt",
+    "title": "Muklawa App",
+    "url": "https://www.producthunt.com/products/muklawa-app",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Human Matchmaking, Powered by AI — Muklawa is an AI-assisted matrimonial platform connecting marriage-seeking individuals, families and professional matchmakers. Discover compatible profiles, work with trusted consultants, chat securely, compare matches and manage proposals, all in one private matchmaking ecosystem.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1261430",
+      "topics": [
+        "artificial-intelligence",
+        "crm",
+        "dating"
+      ]
+    },
+    "id": "c16fb7cc417fd723faa50279ac8e5011ce06689f5073adcbe77155d78b6f0683"
+  },
+  {
+    "source": "producthunt",
+    "title": "doesitrun",
+    "url": "https://www.producthunt.com/products/doesitrun",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Which of your Steam games can your PC actually run? — Paste your public Steam library and get an estimated FPS for every game, from real benchmark data instead of a pass/fail against min specs. Covers your wishlist, friends' libraries, the cheapest upgrade to hit a target, a PC builder, and the Steam Deck. Free, runs in the browser.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266923",
+      "topics": [
+        "artificial-intelligence",
+        "games",
+        "hardware"
+      ]
+    },
+    "id": "44564694a4f1593f4277dba977649f3ad54565d310ac67ab14c6191af4ca49b8"
+  },
+  {
+    "source": "producthunt",
+    "title": "VoiceGenPro",
+    "url": "https://www.producthunt.com/products/voicegenpro",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI voice cloning and text-to-speech for creators — VoiceGenPro helps creators turn text into natural-sounding speech, clone voices they own or are authorized to use, and generate long-form voiceovers from one workspace. Choose from ready-to-use voices or create a custom voice for YouTube videos, podcasts, ads, training content, and more. Start free and upgrade when you need more generation capacity.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1263029",
+      "topics": [
+        "artificial-intelligence",
+        "audio"
+      ]
+    },
+    "id": "9e412badef6159966fffc9ad865df9c27e6cac06f28cfa37da92c2d3b92db1d8"
+  },
+  {
+    "source": "producthunt",
+    "title": "OriginPage",
+    "url": "https://www.producthunt.com/products/originpage",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Private document AI with sources you can check — OriginPage is a Windows 11 app for searching PDFs, Word files, and notes and asking questions across them. Document processing and AI run on your PC. Choose which files an answer can use, then open the exact passage behind each cited claim.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1261130",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "search"
+      ]
+    },
+    "id": "2211981ce8820ca06e65a3c233fa02c26dad3b2e7b14283e630022a39b31726e"
+  },
+  {
+    "source": "producthunt",
+    "title": "Parallel Agents",
+    "url": "https://www.producthunt.com/products/parallel-agents",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your coding agents, together in one workspace — Parallel Agents brings Claude Code, Codex, GitHub Copilot, and Gemini CLI into one desktop workspace. Organize projects and terminal sessions, browse files, and review Git changes without juggling windows. Free and open source for Windows. Install and authenticate the agent CLIs you want to use separately; their service fees may apply.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266408",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "open-source"
+      ]
+    },
+    "id": "ddaf9ceb2bb3b86b1b88896652d463219ba4734ce0a6569ccdf1a06f7ab8696d"
+  },
+  {
+    "source": "producthunt",
+    "title": "AlfaFinances",
+    "url": "https://www.producthunt.com/products/alfafinances",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your portfolio, research and market news in one place — AlfaFinances puts your morning investing routine in one place. Track your portfolio and watchlist live, find SEC Form 4 insider trades, get research scores and a daily market brief, and ask Alfa, an AI assistant that knows your holdings. Price alerts arrive by email or Telegram, and a $10,000 virtual demo portfolio lets you practise before using real money. Free plan, no card needed.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266707",
+      "topics": [
+        "artificial-intelligence",
+        "fintech",
+        "investing"
+      ]
+    },
+    "id": "66956f6a4066e50864ad35019d3ff1e449b354e08198d0c1fee4b4d32fd88e5f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Kilory",
+    "url": "https://www.producthunt.com/products/kilory",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Food, fitness, habits and community in one app — Kilory brings meal logging, calories and macros, water, fasting, steps, workouts, sleep, reports and community into one place. Log a meal from a photo, build daily routines, see progress and connect through posts, groups, challenges and chat. Premium adds AI Dietitian, AI Chef, meal planning, shopping, exercise programs and advanced reports. Available on iOS and Android in 20 languages.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266495",
+      "topics": [
+        "android",
+        "artificial-intelligence",
+        "health-fitness",
+        "social-networking"
+      ]
+    },
+    "id": "21c8dd38b56ba2861bc51df3a91b0d563b077d7067b3f662c6c618bf9e42de23"
+  },
+  {
+    "source": "producthunt",
+    "title": "FluentAI: Language Learning Assistant",
+    "url": "https://www.producthunt.com/products/fluentai-language-learning-assistant",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Practice, translate and learn any language in your browser — I've been thinking about why some AI learning tools become daily habits while others get tried once and forgotten. My current hypothesis: Instant start. No setup wall, so you can try it in seconds. Gentle feedback. Corrections that explain, not judge. Context over content. Explanations shaped to the learner's level and question. Something to keep. Notes, lists or exports so progress doesn't vanish. For those who use AI to learn (languages, coding, anything), what made you keep using a tool?",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1264770",
+      "topics": [
+        "artificial-intelligence",
+        "education",
+        "productivity"
+      ]
+    },
+    "id": "072f954f7bdbc757e7f4aef0faa3aac40c968f361dd0ad1d92d71cac0d412dd2"
+  },
+  {
+    "source": "producthunt",
+    "title": "TokenTrack",
+    "url": "https://www.producthunt.com/products/tokentrack",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Menu-bar tracker for your Claude Code & API token spend — A menu-bar / system-tray app for macOS, Windows & Linux that shows the API-equivalent cost of your Claude Code usage, refreshed every 60 seconds. I'm on the $100 Max plan — TokenTrack says I burn ~$1,700/mo in API-equivalent spend (~17x the subscription). A ccusage alternative that's always on: monthly budget with 70/90/100% alerts, per-project & per-model breakdowns. 100% local — reads logs on your machine, no signup, nothing leaves your device. Free for one platform; Pro $9/mo.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267107",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "b3dc5df3a01efc992f305e1106c40d9b2094fb2b81c180fcff479aca829618a4"
+  },
+  {
+    "source": "producthunt",
+    "title": "zRev AEO Lens",
+    "url": "https://www.producthunt.com/products/zrev-aeo-lens",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "See how ChatGPT and Claude read any website, in one click — A free Chrome extension that shows how AI assistants read the site you are on: an AEO readiness score, llms.txt grade, structured data, AI crawler access, and a cold read of what an AI thinks the company does. Fixes included. No account.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266841",
+      "topics": [
+        "artificial-intelligence",
+        "chrome-extensions",
+        "seo"
+      ]
+    },
+    "id": "dc5f34398a4fc899aa7a5bfc2e29c004cbc6ca1eb04460797a7df718f0279615"
+  },
+  {
+    "source": "producthunt",
+    "title": "MomoAPI",
+    "url": "https://www.producthunt.com/products/momoapi",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "One API for 300+ AI models. Pay-as-you-go from $1. — MomoAPI (TryAllAPI) is a one-stop AI API aggregation platform connecting 300+ leading AI models — OpenAI, Claude, Gemini, DeepSeek, Grok, Midjourney and more — through a single OpenAI-compatible API. Pay-as-you-go pricing from $1 with no monthly fees, 12ms average latency and 99.99% uptime. Trusted by 100,000+ developers.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266630",
+      "topics": [
+        "api-1",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "eebd944a3c47569093a3c6f2c123d0ed3bd7c65e85114b4dcffabb20411ff437"
+  },
+  {
+    "source": "producthunt",
+    "title": "AgentDay",
+    "url": "https://www.producthunt.com/products/agentday",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn your AI workday into a shareable receipt — AgentDay turns Claude Code, Codex, Gemini CLI, OpenCode, and Git activity into editable daily receipts on Windows, macOS, and Linux. Today is free, including PNG export. Unlock past days, a calendar, and themes for $7 once. No account needed.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1264108",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "bd576f4cd9a270361c81c0a7d9847b24a27c61d8101d1bb1ae929b5cfa4a6c1a"
+  },
+  {
+    "source": "producthunt",
+    "title": "Agent Hangar",
+    "url": "https://www.producthunt.com/products/agent-hangar",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "One home for every AI agent, usable from any platform — Agent Hangar is an open-source, self-hosted hub for your company's AI agents. Build agents from Claude, ChatGPT, Cursor, VS Code or Codex via MCP: each one lands in a shared catalog, runs in its own container and is usable from any platform (OpenAI-compatible, MCP, A2A, ACP). Combine agents into multi-agent teams, test in stage before production, and track cost, memory and access with SSO. Runs on Docker or Kubernetes (GKE, AKS, EKS).",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267069",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "42711bcd821ef8a56ccac0a61b9efc3eec051d42561432a8083e0ade9888e2ba"
+  },
+  {
+    "source": "producthunt",
+    "title": "Radiant - Companion AI",
+    "url": "https://www.producthunt.com/products/radiant-companion-ai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your intelligent AI companion & virtual friend — Radiant AI adapts to your unique personality and communication style. 🤖 THE ULTIMATE AI COMPANION Experience deep, contextual, and flowing conversations that feel remarkably human. 📞 LIVE AI VOICE CALLS Take your connection to the next level with real-time, interactive voice calls! 💬 CHAT OR SPEAK ANYTIME, ANYWHERE Your AI friend is available 24/7. 💡 EMPOWER YOUR CREATIVITY & GROWTH Unlock your potential with an assistant and companion all in one.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266880",
+      "topics": [
+        "android",
+        "artificial-intelligence",
+        "productivity"
+      ]
+    },
+    "id": "db04bdb4235949cbd22cc80530f3e0db47c5a94ce3e646f8ca9e44efbe82e37b"
+  },
+  {
+    "source": "producthunt",
+    "title": "OpenDecider",
+    "url": "https://www.producthunt.com/products/opendecider",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open decision models that route AI agents without LLM calls — Agent workflows often call an LLM just to decide where a request goes next. OpenDecider answers in one forward pass with a calibrated confidence, sending unsure cases to a fallback. Works with LangGraph, CrewAI, Agno, LlamaIndex, ADK and MCP. Apache-2.0.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266831",
+      "topics": [
+        "artificial-intelligence",
+        "github",
+        "open-source",
+        "productivity"
+      ]
+    },
+    "id": "5d32c17c0520a7a73eff5a4d8b0a2edf918502bc70c205744cf025368709fdcc"
+  },
+  {
+    "source": "producthunt",
+    "title": "DubFlow",
+    "url": "https://www.producthunt.com/products/dubflow",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Real-time AI dubbing for YouTube, in 9 languages — DubFlow dubs any YouTube video into your language while it plays, inside the player itself. It reads the video's captions, translates them, and speaks them with a natural AI voice timed to the picture. The original audio drops to about five percent underneath, so music and room tone stay. Nine languages, female and male preset voices, no voice cloning, optional floating translated subtitles. Free plan: three videos a day, up to three hours each, no card needed.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265252",
+      "topics": [
+        "artificial-intelligence",
+        "chrome-extensions",
+        "video"
+      ]
+    },
+    "id": "159aaf95ecd839ff155e3c9ebba25222395147f9f29888b8955af94593939499"
+  },
+  {
+    "source": "producthunt",
+    "title": "Adviserry",
+    "url": "https://www.producthunt.com/products/adviserry",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Start USING the content you consume — You watch Hormozi for his pricing playbooks. Lenny for retention frameworks. Patrick Campbell for SaaS metrics. Almost none of it changes what you actually do. The problem isn't access. The problem is that consumption isn't action. Adviserry fixes that. We connect to your inbox and YouTube subscriptions, ingest every newsletter and video as it publishes, sync against what you're working on, and bring you the specific actions worth taking on your projects this week. Stop consuming, start doing.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1255287",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "startup-lessons"
+      ]
+    },
+    "id": "3e4a424082fa6eba7b37464075eac43def8d48dfd36cc9d3b59169640ffbfa0f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Categent AI",
+    "url": "https://www.producthunt.com/products/categent-ai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI agents that talk, support, sell, and take action — Categent helps businesses deploy AI agents across WhatsApp, Instagram, Messenger, Telegram, and website chat. These agents can answer customer questions, capture leads, qualify prospects, book appointments, support shoppers, and automate conversations 24/7. Build once, connect your channels, and let Categent handle customer interactions at scale.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265830",
+      "topics": [
+        "artificial-intelligence",
+        "customer-communication",
+        "messaging"
+      ]
+    },
+    "id": "b24a320c4f4f4cf50cd2677e04f7da13ac3e65e6000c608d5e7b2ecbb34ddd91"
+  },
+  {
+    "source": "producthunt",
+    "title": "Diliforce - AI powered Governance",
+    "url": "https://www.producthunt.com/products/contractzen",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI legal tech for governance, contracts and data rooms — We launched on Product Hunt years ago as ContractZen. The product has since evolved so much, that we renamed the company and now operate as Diliforce. What was a contract tool is now an AI-powered legal tech platform for governance: board portal, contracts, legal entities, data rooms, SmartIndex for due diligence, e-signatures and an AI Assistant that lets users chat with their documents. From $9.50/user/month. We'd love to relaunch so the community sees what Diliforce is today.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266629",
+      "topics": [
+        "artificial-intelligence",
+        "legal",
+        "saas"
+      ]
+    },
+    "id": "b950009407d7787e2bfc2424aa96505e6b050cfdcf0ba8a63bc3b62e9212255d"
+  },
+  {
+    "source": "producthunt",
+    "title": "Daski",
+    "url": "https://www.producthunt.com/products/daski",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI agents can now buy real services. — Daski is a curated marketplace where AI agents buy and manage real services, starting with domains, hosted mailboxes, and company formation. Connect through MCP to discover services, pay in USDC, supply required information, track fulfillment, and request support. People set the authority and spending limits; agents carry out the work.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266902",
+      "topics": [
+        "api-1",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "dc08fe0e837a5f4b54eee5553608e562565fb0275c83902d5fa8f354258c6f93"
+  },
+  {
+    "source": "producthunt",
+    "title": "The AI Operator's Prompt Vault",
+    "url": "https://www.producthunt.com/products/the-ai-operator-s-prompt-vault-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your best AI prompts, saved once and found in seconds — Your best AI prompts are scattered across chat histories and notes apps you'll never find again. Prompt Vault is a private prompt library in a single file: save prompts with a title, category, and tags, find them in seconds with full-text search, launch with one click. Preloaded with 15 field-tested prompts. 100% offline — no account, no subscription, no install. Star daily prompts, back up as JSON with one click. $19 one-time, yours forever. 30-day money-back guarantee.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266906",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "task-management"
+      ]
+    },
+    "id": "0b199d22c6f54d1f9aa53d7d0ae7c95a1caebe30c4e8997c91bbd641bdbaf8fb"
+  },
+  {
+    "source": "producthunt",
+    "title": "CurriculAI",
+    "url": "https://www.producthunt.com/products/curriculai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Tailor your CV to Italian job ads, without invented skills — CurriculAI reads an Italian job ad and your CV, shows what is missing and where, then rewrites the CV for that ad. It never adds skills you can't prove: where a number is missing, it asks you instead of making one up. In Italian, GDPR-ready.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266637",
+      "topics": [
+        "artificial-intelligence",
+        "hiring",
+        "productivity"
+      ]
+    },
+    "id": "5652d74c821f95114fd0a7e944e2d8c341eb45b13d305125e1b3e5054a5d2a7c"
+  },
+  {
+    "source": "producthunt",
+    "title": "BotEffex Monitor",
+    "url": "https://www.producthunt.com/products/boteffex-monitor",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Daily checks for your chatbot's important answers — Check up to 10 important chatbot answers daily, keep a history, and get failure/recovery emails. Assisted 14-day trial, no card required. For public HTTPS JSON endpoints. Rule-based checks, not a universal truth evaluator. Optional EUR 19/month continuation.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266638",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "fa83a15420049e33b59bf2f233c133fbe27565280dfeab36da7632930d1201f3"
+  },
+  {
+    "source": "producthunt",
+    "title": "Kesto AI",
+    "url": "https://www.producthunt.com/products/kesto-ai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your AI social coach for real-life conversations — Kesto AI is an AI social coach that helps people confidently handle real-life conversations and provides context-aware conversation strategies for any situation.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266704",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "social-networking"
+      ]
+    },
+    "id": "a816124cfef66b22dff37fe9931a5f8e49d0c9a1214770dc30196967057287e2"
+  },
+  {
+    "source": "producthunt",
+    "title": "Matiyas Solutions",
+    "url": "https://www.producthunt.com/products/best-manufacturing-erp-solutions",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "ERP Solutions Texas for Growing Businesses — As businesses expand, disconnected systems can become difficult to manage. ERP Solutions Texas can centralize business data and help teams make faster, better-informed decisions.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1240675",
+      "topics": [
+        "analytics",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "7bf9b50ac035d94ddb2cfa6ec577a099621792cfc83194eca5ec3ac85742cf24"
+  },
+  {
+    "source": "producthunt",
+    "title": "SayCut",
+    "url": "https://www.producthunt.com/products/saycut",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Edit your reels by chatting — review and undo every change — SayCut turns talking videos you filmed yourself into a first edit with AI captions and cuts. Then you finish it by asking in chat: \"Make the captions bigger\", \"Shorten the long pauses\", \"Keep this scene as it is\". Every change shows up as a before → after card you can undo on its own, so the AI does the busywork and you make the call. Filler words removed, music ducked under your voice. Export for Reels, Shorts and TikTok. Works in English, Korean and Japanese.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267235",
+      "topics": [
+        "artificial-intelligence",
+        "social-media",
+        "video"
+      ]
+    },
+    "id": "3fa23f4adc1fe2259e1e6d8c64c98dcdd3512319f310f7d88cca425b969b2ac7"
+  },
+  {
+    "source": "producthunt",
+    "title": "Manolit∞ Aire",
+    "url": "https://www.producthunt.com/products/manolit-aire",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open-source 3D solar radiation and shadow mapping tool — Manolito Aire is a 100% open-source alternative to Shadowmap. It allows you to simulate and visualize 3D solar radiation, sun paths, and real-time shadow positioning over geographical maps. Perfect fo1 urban planners, environmental researchers, or anyone tracking sun exposure. It is fully transparent, free to use, and community-driven. Explore accurate solar data and shadow behavior across different times and locations with ease.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266929",
+      "topics": [
+        "artificial-intelligence",
+        "climate-tech",
+        "github",
+        "maps"
+      ]
+    },
+    "id": "3a1f4c46dc608a5cb2ca3d493c101efc77cb92a5aa57b8c8539f88347da864b0"
+  },
+  {
+    "source": "producthunt",
+    "title": "ApexVeo",
+    "url": "https://www.producthunt.com/products/apexveo",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn real data into camera-ready video plans with ARIA — ApexVeo helps creators stop guessing what to make. Tell ARIA your goal and she researches YouTube, identifies evidence gaps, develops and scores the idea, writes the script, checks the facts, builds a Visual Bible and storyboard, then prepares thumbnails, publishing assets and a Higgsfield-ready production prompt. Everything stays connected to one project—from rough idea to camera-ready plan—before you spend time filming or rendering.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1225300",
+      "topics": [
+        "artificial-intelligence",
+        "marketing",
+        "productivity"
+      ]
+    },
+    "id": "322ede6836d96d60fcebccfa4044451c232fd587d35b434dd13c24eb21d7d194"
+  },
+  {
+    "source": "producthunt",
+    "title": "Genova",
+    "url": "https://www.producthunt.com/products/genova",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Train smarter. See your progress. Know when to push. — Genova is a training app built around one idea: your progress shouldn’t live in disconnected workouts and metrics. Track your sessions, understand how your performance evolves, and see the bigger picture over time. From everyday tracking to deeper insights and smart guidance, Genova brings your training into one place and is designed to grow with the way you train, across different workouts, goals, and activities.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266993",
+      "topics": [
+        "artificial-intelligence",
+        "health-fitness",
+        "ios"
+      ]
+    },
+    "id": "45e6001a57cced587f30426875babe88c67da893aa846d4ce44c3fd7b6af8721"
+  },
+  {
+    "source": "producthunt",
+    "title": "Bear Bite",
+    "url": "https://www.producthunt.com/products/bear-bite",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "A tamagotchi bear that keeps an eye on what you eat — Bear Bite is a calorie tracker with a tamagotchi-style bear living inside. Snap a photo of your meal and get calories, protein, carbs and fat in seconds, or search 3M+ foods. Your bear reacts to every meal, and its forest grows with each day you log: earn berries, build a bear house, plant bushes. Keep streaks (with freezes for bad days), visit friends' maps, climb leaderboards, and ask Berry, the AI coach, for recipes and weekly reviews.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267078",
+      "topics": [
+        "artificial-intelligence",
+        "health-fitness",
+        "nutrition"
+      ]
+    },
+    "id": "05f04297c08e40f570cab9b1e9ef91f14175d8071948b1326631f29a54f7c5d3"
+  },
+  {
+    "source": "producthunt",
+    "title": "My Mynah",
+    "url": "https://www.producthunt.com/products/my-mynah",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI speech coach for people who freeze under pressure — My Mynah is an iOS AI speech coach for fluent English speakers who still freeze in interviews, pitches, and presentations. Take a speaking assessment, get a personal fluency roadmap, then practice in Arena, Say It Shorter, and Speed Read. Get AI feedback on fillers, pace, clarity, and tone — plus Then vs Now progress. Free to start; Pro unlocks full AI coaching.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267074",
+      "topics": [
+        "artificial-intelligence",
+        "ios",
+        "productivity"
+      ]
+    },
+    "id": "07bf4630f1da5b5907dd41000dc88888c276baa1f1faa39918a04a870c590d14"
+  },
+  {
+    "source": "producthunt",
+    "title": "Space Bunny",
+    "url": "https://www.producthunt.com/products/space-bunny",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Big context. Curious mind. — Space Bunny is a long-context multimodal AI playground and developer API for reasoning across text, images, video, code, and large documents. It offers a one-million-token context window, OpenAI-compatible access, tool calling, JSON output, and adjustable reasoning effort.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267027",
+      "topics": [
+        "artificial-intelligence"
+      ]
+    },
+    "id": "3cd39ebc5f8797ae07dd67e15d43e800d5bf18f251d6b07f6a536451cba07abc"
+  },
+  {
+    "source": "producthunt",
+    "title": "Purifi",
+    "url": "https://www.producthunt.com/products/purifi",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "One global team. One shared canvas. — A finance-first environment where people and Agentic AI work on the same financial analysis, on one shared canvas, in real time.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267151",
+      "topics": [
+        "artificial-intelligence",
+        "fintech",
+        "productivity"
+      ]
+    },
+    "id": "d19cf962fc318d3dcd50a4d9e09e2b54f54ffb27ca6cf6718fbecb717e70cbff"
+  },
+  {
+    "source": "producthunt",
+    "title": "AI Job Risk Check by brigenai",
+    "url": "https://www.producthunt.com/products/ai-job-risk-check-by-brigenai",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "See how exposed your job is to AI, and where to go next — Most career tests give you a personality type and a vague job list. brigenai starts with the question people actually ask: will AI replace my job? Upload your resume to get an AI risk score for your current role. Then explore 170+ careers rated by AI impact to find ones that fit you. Every match shows the real entry path: retraining time, apprenticeships, paid training, and jobs hiring now. Need more than a tool? Talk to real career counselors. Free to start.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266349",
+      "topics": [
+        "artificial-intelligence",
+        "career",
+        "education"
+      ]
+    },
+    "id": "d87bdc888aad2a5d2f0e283a9a7c983fa259712126732f9d83274e38138d5b47"
+  },
+  {
+    "source": "producthunt",
+    "title": "billllama",
+    "url": "https://www.producthunt.com/products/billllama",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Invoices from your inbox, auto-sorted for your accountant — Bill Llama is an AI invoice automation platform that connects to your email inbox, extracts invoices and receipts automatically, organizes them, and syncs them to your accountant - no manual data entry.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267076",
+      "topics": [
+        "accounting",
+        "artificial-intelligence",
+        "fintech"
+      ]
+    },
+    "id": "865903a1e00c7877ac7daf0d0aa5c58ceb15df943fec35c04a4dbe0728f9f032"
+  },
+  {
+    "source": "producthunt",
+    "title": "InsightBolt",
+    "url": "https://www.producthunt.com/products/insightbolt",
+    "raw_score": 2,
+    "comment_count": 2,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn one post into content for 6 platforms instantly — InsightBolt turns one piece of content into platform-ready posts for Twitter, LinkedIn, Instagram, WhatsApp, Facebook & newsletters. 16 AI tools in one place: repurposing, hooks, content calendars, growth advice, analytics, thread building & more. Free plan. Pro is $9/month. Built by a solo founder in Nigeria. Honest feedback welcome!",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265357",
+      "topics": [
+        "artificial-intelligence",
+        "marketing",
+        "social-media"
+      ]
+    },
+    "id": "02c9c6d2695d4865e682ae0b3a374a2a69c122d41e764c49fa8f3f1d99493871"
+  },
+  {
+    "source": "producthunt",
+    "title": "Security Report AI",
+    "url": "https://www.producthunt.com/products/security-report-ai",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI-powered security reporting for hotels — Security Report AI helps hotel security teams turn incidents into structured, professional reports in seconds. It also provides daily security logs and a centralized workspace for organizing and reviewing hotel security information. Built specifically for hospitality security teams.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1263853",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "saas"
+      ]
+    },
+    "id": "7ecc373ac262c5f58f178d23dbb97cbaf7658badc2ffe188808187df22acefa8"
+  },
+  {
+    "source": "producthunt",
+    "title": "Leaves",
+    "url": "https://www.producthunt.com/products/leaves",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Simple leave & PTO management inside Slack — Leaves helps teams manage leave and PTO directly inside Slack. Employees can check their leave balance, request time off, and receive notifications without switching between multiple tools. Admins can manage leave types, policies, holidays, balances, approvals, and team absences from a simple web dashboard. I’m launching Leaves to make leave management easier for small and growing teams that already use Slack every day.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1264401",
+      "topics": [
+        "artificial-intelligence",
+        "human-resources",
+        "productivity"
+      ]
+    },
+    "id": "bc0eb5d5e319ffc51a04aab05600d1d63c67987178e0bde3256da007ca2a541a"
+  },
+  {
+    "source": "producthunt",
+    "title": "Beacon",
+    "url": "https://www.producthunt.com/products/beacon-25",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "See your AI agents execute in real time. — Beacon focuses on visualizing agent execution as it happens. Instead of digging through logs and traces, you get a live DAG that shows the agent’s execution path as it runs, including tool calls and individual steps. Once a run is complete, you can replay the execution and see how it unfolded. Beacon is open source and built on OpenTelemetry, making it easy to connect agents that already emit OTEL traces.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265491",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "c55560d8a2b10eae64f9a231c9f2b6cbcbee2498bfa87e10bca5f37d9415de74"
+  },
+  {
+    "source": "producthunt",
+    "title": "SellRight",
+    "url": "https://www.producthunt.com/products/sellright",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Sell your items with AI — We built SellRight to help good things find their next home, without the blank listing page getting in the way. Take photos on your iPhone for editable titles, descriptions and suggested asking prices. Review, then post to Facebook Marketplace, Depop or eBay where available. For wardrobe clear-outs, spare-room projects and regular resellers. Your first 3 listings are free; subscribe to keep creating.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267127",
+      "topics": [
+        "artificial-intelligence",
+        "ios",
+        "productivity"
+      ]
+    },
+    "id": "797716c6242e0ae4c90164a7356496f3263aa073880885fee123820cf9e094d0"
+  },
+  {
+    "source": "producthunt",
+    "title": "Commenti",
+    "url": "https://www.producthunt.com/products/commenti-2",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Stay visible on LinkedIn while you build — Commenti is a LinkedIn comment automation tool that drafts thoughtful comments in your voice on posts from the creators and topics you choose, within a daily cap you control. Approve each one, or let it post on its own.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265342",
+      "topics": [
+        "artificial-intelligence",
+        "chrome-extensions",
+        "linkedin",
+        "social-media"
+      ]
+    },
+    "id": "0158f4ac27d13d1d9872d1ed4d3534f550cf7e1fb3b451a30c367a4ad9747fe3"
+  },
+  {
+    "source": "producthunt",
+    "title": "ChronoRoam",
+    "url": "https://www.producthunt.com/products/chronoroam",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Day-by-day trip planner with packlists, to-dos, weather & AI — Most trip apps make you pick: a rigid itinerary or a blank notes page. ChronoRoam is built around each day, so you can plan to the minute or keep it loose. Every day shows the weather for wherever you'll be, worked out from your flights and hotels. Packlists go bag by bag, down to whose suitcase and which pouch. Forward a booking email and AI fills it in. Share a trip and changes show up live, while each person can keep their own packlist. Free to use, no subscription.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267081",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "travel"
+      ]
+    },
+    "id": "ba38a6b64b7f1eb49e766cec24ca4c088423b2132216afa172853d628df96841"
+  },
+  {
+    "source": "producthunt",
+    "title": "FalcoScan",
+    "url": "https://www.producthunt.com/products/falcoscan",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "See which AI markets still have room to build — FalcoScan tracks 7,000+ AI products across 29 markets and shows which markets are crowded, which still have room to build, and which products shut down or were acquired. Investors screen companies, founders size up a market before they build, and AI agents plug in through our API and MCP server. New: the AI Graveyard, 138 dead and acquired AI products, each with a source. Market pages are free; the Market Terminal has a 7-day free trial.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266945",
+      "topics": [
+        "artificial-intelligence",
+        "data-analytics",
+        "investing"
+      ]
+    },
+    "id": "516ba91069b62beb88219906385cdd2860711d424d6bd05f19b20cfef91c8c0c"
+  },
+  {
+    "source": "producthunt",
+    "title": "TradeRing",
+    "url": "https://www.producthunt.com/products/tradering",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI receptionist built for UK trades & contractors — TradeRing is an AI receptionist for UK trades—builders, plumbers, roofers, and electricians. When you’re on a job or driving, TradeRing answers within 2 rings, qualifies leads, and books appointments 24/7 straight into your schedule.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1253426",
+      "topics": [
+        "artificial-intelligence",
+        "audio",
+        "construction"
+      ]
+    },
+    "id": "b75fe78965fbf4ddcc5dccfed659d071692a08dff0e17b5e734fcf9ea84029a0"
+  },
+  {
+    "source": "producthunt",
+    "title": "stckfndr",
+    "url": "https://www.producthunt.com/products/stckfndr",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Find AI tools that are actually legal in Europe — Most AI directories just list tools. We rate them for European privacy compliance. Every tool on stckfndr gets a privacy score out of 5, based on data storage location, whether it trains on your data, GDPR agreements, and EU AI Act readiness. Finding this yourself means reading through endless privacy policies. We did that so you don't have to. 200+ tools rated. Free to use.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266500",
+      "topics": [
+        "artificial-intelligence",
+        "privacy",
+        "productivity"
+      ]
+    },
+    "id": "b670cab2736a2d15ba635accb15f6c8064a18d8df48ae1b7038dee3e1c962057"
+  },
+  {
+    "source": "producthunt",
+    "title": "CramClip",
+    "url": "https://www.producthunt.com/products/cramclip",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn exam PDFs into audio courses, quizzes & daily plans — Turn your PDFs, notes and web articles into a private audio course taught by two AI hosts. CramClip builds a sequence of lessons, adds a quiz after each one, turns missed concepts into spaced review cards, and plans your study around exam day. Listen in the background or offline, follow transcripts, and ask AI about your material. Built for NCLEX, PMP, CAPM, AWS and general study. Available on iOS. Your first lesson is free; further generation requires Pro and credits.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266391",
+      "topics": [
+        "artificial-intelligence",
+        "audio",
+        "education"
+      ]
+    },
+    "id": "12fc98fe5e22085b167544703cd17a5d82687c0a98f0a8350ee7a55685354c29"
+  },
+  {
+    "source": "producthunt",
+    "title": "Human vs. Jev",
+    "url": "https://www.producthunt.com/products/human-vs-jev",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Are you better than Jev? — Five decisions. Thirty seconds each. Challenge your judgment in Human vs. Jev.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267283",
+      "topics": [
+        "artificial-intelligence",
+        "funny-games",
+        "tech"
+      ]
+    },
+    "id": "7c1ab0f183112eba18f7e1fb1815f77881d3cd6afa0a975666f20c4cabf222d4"
+  },
+  {
+    "source": "producthunt",
+    "title": "DocChief AI",
+    "url": "https://www.producthunt.com/products/docchief-ai",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your AI assistant for every stage of your startup — DocChief turns a startup's documents into a live, investor-ready picture of the company. Founders upload their data room once and get a fundraising readiness check that flags cap table and governance gaps before investors find them, plus investor updates built from what is actually in the record. Investors get faster diligence: who owns what, what was issued and when, and what is missing, with every answer linked to the source document. Shared in one link.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267067",
+      "topics": [
+        "artificial-intelligence",
+        "fundraising",
+        "venture-capital"
+      ]
+    },
+    "id": "d057fc259b7b45e8678897108f64950a22f01ffe2f1402a804fdded06086343f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Twirldress — AI Dress Try-On",
+    "url": "https://www.producthunt.com/products/twirl-ai-dress-try-on",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI virtual dress try-on — see any dress on you — Twirldress is an AI virtual dress try-on tool for girls, brides and photo studios. Upload a photo, then slip into any dress — game-made dresses, bridal gowns, or your own design — and see realistic results in seconds. The first try-on is free and no sign-up is required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266845",
+      "topics": [
+        "artificial-intelligence",
+        "fashion"
+      ]
+    },
+    "id": "3e291ad870886afd9d2162bb26295c976f49faddc84a3751b8c5427a6cb97fda"
+  },
+  {
+    "source": "producthunt",
+    "title": "API Playground",
+    "url": "https://www.producthunt.com/products/api-playground",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Test APIs Faster with AI-Powered Debugging — Free online API & webhook testing playground. Send GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS requests, inspect JSON responses, and fire webhooks in seconds. No install, no account.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267237",
+      "topics": [
+        "api-1",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "1d94ef5dfafcc5af85d6e6adcf3d28bede7f6807d3379154bccb30b9e0979e61"
+  },
+  {
+    "source": "producthunt",
+    "title": "Brian Ladin Examining Innovation Across ",
+    "url": "https://www.producthunt.com/products/brian-ladin-examining-innovation-across",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Sustainable Shipping Brian Ladin — Hurricane risk management is an important part of operating a shipping business in areas vulnerable to tropical storms.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266451",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "tech"
+      ]
+    },
+    "id": "369e38cf1c026b7964ba3098ce847ffbd8536645cc4def4302833cb409aae1fd"
+  },
+  {
+    "source": "producthunt",
+    "title": "PlanHome",
+    "url": "https://www.producthunt.com/products/planhome",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Founder @ PlanHome · Almaty home prices — Реальные цены на квартиры в Алматы по зарегистрированным договорам купли-продажи: обзор ЖК, оценка квартиры, история по РКА, подбор ипотеки. Купить или продать без лишних звонков.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266679",
+      "topics": [
+        "artificial-intelligence",
+        "data-analytics",
+        "fintech"
+      ]
+    },
+    "id": "b8bb8cb2b29f93f471c8c1d8cc2510b83e35917e3ef90bfc2c2e1c464df4e0db"
+  },
+  {
+    "source": "producthunt",
+    "title": "Bisa",
+    "url": "https://www.producthunt.com/products/bisa",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "A Decentralized Agentic IDE — One desktop app for the coding agents you already use — Claude Code, Codex CLI, GitHub Copilot CLI, OpenCode and more: a Project IDE where they work beside you, agents and teams to staff the work, workflows you read before they run, and goals you come back to. No server and no account: your workspace lives on your machine, your identity is a Nostr key, and the people you invite meet you over relays that carry only ciphertext.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266974",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "b9a194c2f0eedaa3cc9ace4e4b270ab805e9f40b4e54470bf1e9aebae606396c"
+  },
+  {
+    "source": "producthunt",
+    "title": "ScholarSail",
+    "url": "https://www.producthunt.com/products/scholarsail",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "All in one study collaborative and AI assisted workspace — ScholarSail turns study materials from almost any format into almost any other: a mind map into a text document, flashcards into a quiz, notes dropped in from different file types into a presentation. Mind maps, documents and more can be edited together in real time. Generated quizzes adjust to the difficulty you choose. Flashcards placed in a 3D memory palace draw on spatial memory, and quick notes and todos keep you on task.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266848",
+      "topics": [
+        "artificial-intelligence",
+        "education",
+        "online-learning"
+      ]
+    },
+    "id": "ce09f985e4d6bb3dc674ca73d22444057909b872eb01e5ff8abe8ba0991b06af"
+  },
+  {
+    "source": "producthunt",
+    "title": "AI-Powered Incident Response Platform",
+    "url": "https://www.producthunt.com/products/ai-powered-incident-response-platform",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI-Powered Incident Response Platform — Sign3 is real-time AI powered customer intelligence platform. Using our customisable rule engine, digital footprint, device intelligence and AI insights solve fraud, credit underwriting growth and much more.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1264909",
+      "topics": [
+        "artificial-intelligence"
+      ]
+    },
+    "id": "640a3d36bfecd35587685027e668a35dbb8b19e0a6fe342aad6c8b8f9595f295"
+  },
+  {
+    "source": "producthunt",
+    "title": "AI Outfit Changer",
+    "url": "https://www.producthunt.com/products/ai-outfit-changer-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Try new outfits on your own photo before you buy. — AI Outfit Changer lets you preview a new outfit using two images: a clear person photo and a garment reference. It supports flat-lay, product, mannequin, and on-model clothing images while keeping the person and scene as the starting point. Start with free watermarked previews, then use daily credits for higher-quality try-ons and styling notes.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266881",
+      "topics": [
+        "artificial-intelligence"
+      ]
+    },
+    "id": "2029ac2b27726923a76fe08252c520a053d37084c371a9cea665594afa5addff"
+  },
+  {
+    "source": "producthunt",
+    "title": "Moondoog Technologies",
+    "url": "https://www.producthunt.com/products/moondoog-technologies",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Software & cloud technology company based in Ghana. — Moondoog Technologies is a Ghana-based software and cloud company helping businesses automate operations, improve efficiency, and scale through smart, future-ready technology. From SaaS and AI integration to custom business systems, we partner with startups and SMEs to turn ideas into impactful digital solutions that drive measurable results.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267064",
+      "topics": [
+        "artificial-intelligence",
+        "productivity",
+        "tech"
+      ]
+    },
+    "id": "c662a61371bbfeb51c1dfc31377cd70b5ee26bded57d990a57eeb8c6b9522025"
+  },
+  {
+    "source": "producthunt",
+    "title": "SiteMetra",
+    "url": "https://www.producthunt.com/products/sitemetra",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "SEO audits and website monitoring made simple — SiteMetra analyse, surveille et vous aide à comprendre la santé de votre site. Audit SEO, monitoring et alertes dans une interface simple concus pour les débutants nous possédons un plan gratuit",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267088",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "user-experience"
+      ]
+    },
+    "id": "6713247ce6f783699bc9c8c3b08faaa4665d0be8043e96ba024151e219c15ccc"
+  },
+  {
+    "source": "producthunt",
+    "title": "Jobsman",
+    "url": "https://www.producthunt.com/products/jobsman",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI powered job search for India — Upload your resume once. We match jobs to what you've actually done, show the pay up front, and let you apply without starting over.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266671",
+      "topics": [
+        "artificial-intelligence",
+        "career",
+        "hiring"
+      ]
+    },
+    "id": "4f6508a6aa7b42fbe5c8c37fc14ebbf87cbd71013543d81aabe5e85f78325c14"
+  },
+  {
+    "source": "producthunt",
+    "title": "SpireTrack",
+    "url": "https://www.producthunt.com/products/spiretrack",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI-powered team check-ins and insights for modern teams — SpireTrack turns weekly team check-ins into structured insights for managers and teams. Collect updates, surface blockers, track accountability, and use AI to turn team responses into clear reports—without adding another complicated workflow to your team's week.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266896",
+      "topics": [
+        "artificial-intelligence",
+        "meetings",
+        "productivity"
+      ]
+    },
+    "id": "73b0a2821595faef349ccd8279800e9cf09ae4b7d63ad118f5059d7cf2f40ddd"
+  },
+  {
+    "source": "producthunt",
+    "title": "playablerun.app",
+    "url": "https://www.producthunt.com/products/playablerun-app",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn app links and prompts into playable ads with AI — An AI studio for mobile app and game teams. Turn a store link or prompt into an HTML5 playable ad, add your own assets, refine it in chat, preview the experience, and export for supported ad networks. Build Google Ads policy-compliant HTML5 ZIP creatives for App and Display campaigns — 51 languages, ExitApi, clickTag, and instant ZIP export.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267144",
+      "topics": [
+        "artificial-intelligence",
+        "marketing",
+        "no-code"
+      ]
+    },
+    "id": "e06ff2d0e6a88114a70173cdbf31a5cc87cf6da63dc32e65eb496bf45878dc61"
+  },
+  {
+    "source": "producthunt",
+    "title": "Recon Pro",
+    "url": "https://www.producthunt.com/products/recon-pro",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Advanced Reconnaissance for Offensive Security — Recon Pro is a advanced reconciliation tool for professionals. It is a reconnaissance engine for offensive security professionals that consolidates subdomain enumeration, port scanning, TLS certificate analysis, and DNS lookups into one unified CLI. It's built with zero external dependencies, enforces TLS by default, and exports straight to SARIF, JSON, CSV, or HTML so results drop right into your existing pipeline.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265883",
+      "topics": [
+        "developer-tools",
+        "saas",
+        "security"
+      ]
+    },
+    "id": "06efd8ecec30ad199f76a9ad583cf821686ae3380d6c22878c4a782b48c9d10e"
+  },
+  {
+    "source": "producthunt",
+    "title": "SVGMotion",
+    "url": "https://www.producthunt.com/products/svgmotion",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Interactive Vector Animation for Web,Powered by AI & Physics — Free SVG animation editor — no sign-up, no ads, no watermarks. Prompt AI to build animated vector scenes, bake physics, export cleansvg files. Local-first.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267224",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "41e03a33809843ff031521eeb2cf934147fdb9669c3aa641bb8783ffad2f4061"
+  },
+  {
+    "source": "producthunt",
+    "title": "StreamZ",
+    "url": "https://www.producthunt.com/products/streamz",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Rental virtual numbers for SMS verification. — StreamZ is a virtual phone number service for SMS verification. Buy long-term rental numbers for Facebook, WhatsApp, Google and 1300+ services across 8 countries including the USA, UK and Canada. Every rental lasts up to 30 days with automatic OTP display — no refresh needed.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267221",
+      "topics": [
+        "developer-tools",
+        "privacy",
+        "saas"
+      ]
+    },
+    "id": "9548bf59e285d55d5531b9117c53866c637795133f19a33a846edabfef43b343"
+  },
+  {
+    "source": "producthunt",
+    "title": "10 Free AI Agents You Can Try in 2027",
+    "url": "https://www.producthunt.com/products/10-free-ai-agents-you-can-try-in-2027",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "10 Free AI Agents You Can Try in 2027 — You don't always need an expensive subscription to experiment with AI agents. Here are 10 useful options that let you explore automation, productivity, research, and other AI-powered workflows. https://freegiftcard-q3gl.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267302",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "tech"
+      ]
+    },
+    "id": "c4f7619feb2962f5b38636a3add893127072b9b51ceac54a03da42851537bca6"
+  },
+  {
+    "source": "producthunt",
+    "title": "Centucode AI All-Rounder Trading EA",
+    "url": "https://www.producthunt.com/products/centucode-ai-all-rounder-trading-ea",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Intelligent Multi-Market Trading, Risk Management and Signal — CAR EA is a comprehensive MetaTrader 5 trading solution for traders who want structured market analysis, automated or controlled execution, disciplined risk management, profit protection and flexible access to trading signals. For trading of Major Forex, Minor Forex, Exotic forex, Precious metal, Energy, Indices, Crypto, Commodities, Stocks, Bonds, etc from one software. Including Signal Copiers for copy-trading. With features: Break-even protection, Profit-lock trigger, Minimum profit to lock.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266758",
+      "topics": [
+        "developer-tools",
+        "fintech",
+        "web3"
+      ]
+    },
+    "id": "a6f71569a0a68f25a0907ed7e0361a336c80bc9e16e6ffde10dfd5e87775f700"
+  },
+  {
+    "source": "producthunt",
+    "title": "Epure",
+    "url": "https://www.producthunt.com/products/epure-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open source error tracker that runs on your VPS. — Exception-only error tracking you run yourself. Keep official Sentry SDKs; point the DSN at your box. One Rust binary plus PostgreSQL 16. Two containers, no Redis, no Kafka. Grouped issues, breadcrumbs, releases, alerts, webhooks. Keyboard triage (j/k, e resolve, i ignore). Spike valve under loops: the counter still increments, duplicate bodies drop. No APM, replay, profiling, or log ingest. JS/TS sourcemaps. Other languages group on SDK frames. Apache 2.0. docker compose up.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1260407",
+      "topics": [
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "59cf1872f21328b3fabdf45026374dae9a7b39f5aa26f872770ae9793b72b7b6"
+  },
+  {
+    "source": "producthunt",
+    "title": "Jinn Panel",
+    "url": "https://www.producthunt.com/products/jinn-panel",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Modern WHM/cPanel alternative built with FrankenPHP & Rust — Web Hosting Manager with hosting control panel on a modern from-scratch stack — FrankenPHP, MariaDB, Stalwart Mail, SFTPGo, Knot DNS. Plain PHP + Tailwind, one-command installer for AlmaLinux, multi-PHP-version support, AutoSSL, reseller accounts. MIT licensed - th3n00bc0d3r/Jinn-Panel",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267190",
+      "topics": [
+        "developer-tools",
+        "github",
+        "web-app",
+        "website-builder"
+      ]
+    },
+    "id": "720e74e2ce7ba01e12f778823a75898b2fa37cdf6154a98a2c8593006c8cb407"
+  },
+  {
+    "source": "producthunt",
+    "title": "Shotlingo",
+    "url": "https://www.producthunt.com/products/shotlingo",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Design once, ship to 40 App Store & Play Store languages — Localize App Store screenshots to 40+ languages in minutes — without hiring a designer or rebuilding each screenshot per language. Design one canvas → auto-translate captions → layout re-flows for German/Finnish overflow, mirrors for Arabic/Hebrew, wraps for Japanese. Export every device size for App Store Connect and Google Play, with locale-code mismatches (zh-CN vs zh-Hans) mapped for you. Free forever tier: no watermark, no signup required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1243804",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "ed6a523a4045d1ae78f8fcbff9cc25496014bcf706cc919b1a65bc36451cf76f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Grab your 100 Gift Card right now.",
+    "url": "https://www.producthunt.com/products/grab-your-100-gift-card-right-now-2",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Grab your 100 Gift Card right now. — 🎉 Exclusive USA Deal! Grab your 100 Gift Card right now. Hurry: https://freegiftcard-53s6.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267320",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "marketing"
+      ]
+    },
+    "id": "c2ac0700c166a61c97d66fface578dcf5619f66b70ce4fc02187b43239ac8bc6"
+  },
+  {
+    "source": "producthunt",
+    "title": "Wendung",
+    "url": "https://www.producthunt.com/products/wendung",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Web and product analytics without the bloat. — Wendung is an easy-to-use analytics platform for your product. It gives you web and product analytics without requiring you to learn a new query language. See where your users drop off, how long they take to complete each step, where they come from and where they get stuck. All this on a dashboard with customizations and shareability. We also provide an MCP connection, in case you don't feel like using the dashboard at all. No paying per seat, no overcharging your card. Free plan available.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1259560",
+      "topics": [
+        "analytics",
+        "developer-tools",
+        "saas"
+      ]
+    },
+    "id": "9617eca551cd279039e4f99c473a60e6bf1a04e3e1367e6383908f1c0cfb3185"
+  },
+  {
+    "source": "producthunt",
+    "title": "SQL Business Analysis Lab",
+    "url": "https://www.producthunt.com/products/sql-business-analysis-lab",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "24 SQL missions from query to business analysis report — Go beyond isolated SQL exercises with 24 business-analysis missions using fictional data. Practise joins, metrics, cohorts and reconciliation in read-only SQLite, with hints and result checks across three datasets. Finish by exporting an HTML report with your query, results and written findings. Runs locally with Python 3.11+ and a desktop browser. Includes solutions, an English guide and progress backup. USD 7 once; no accounts, API keys or subscriptions.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266261",
+      "topics": [
+        "developer-tools",
+        "education"
+      ]
+    },
+    "id": "f43692b7fcc922e6cf042ef0902b4cee31431557c07fadf0c236772a0bfedfb5"
+  },
+  {
+    "source": "producthunt",
+    "title": "Big Reward! Receive your 100 US",
+    "url": "https://www.producthunt.com/products/big-reward-receive-your-100-us",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Big Reward! Receive your 100 US — 💥 Big Reward! Receive your 100 US Gift Card today. Limited spots: https://freegiftcard-9w08.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267298",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "marketing"
+      ]
+    },
+    "id": "33df273f271024137665a3c0ad802ab828806f7fc1e239099047c513a1d35132"
+  },
+  {
+    "source": "producthunt",
+    "title": "Gloss",
+    "url": "https://www.producthunt.com/products/gloss-4",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Beautiful device mockups from your screenshots & videos — Drop a screenshot or screen recording into 43 device frames, then style, annotate and animate it. Export a polished PNG or MP4 right in your browser: nothing uploaded, no sign-up. Free to use; Pro is a one-time $29.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267336",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "8198bebae952fc4ab0fc6ff13e15c42e93538a8b5352104ad649434d9e6fa08f"
+  },
+  {
+    "source": "producthunt",
+    "title": "LMIM Linux \"Genesys\" 4.1 \"Atlas\" ",
+    "url": "https://www.producthunt.com/products/lmim-linux-genesys-4-1-atlas",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "First Linux stable Launch -Atlas-  Knowledge Mapper — LMIM Linux Genesys 4.1 'Atlas', the first stable release of an AI-native operating system. Atlas thoughts, a living graph of your mind, voice, memory, encrypted chat, a build crew and a scheduler that executes. Local, no cloud, no subscription.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267112",
+      "topics": [
+        "developer-tools",
+        "github",
+        "privacy",
+        "tech"
+      ]
+    },
+    "id": "a76fbef289785811fca0048ab10f24cf2c6077bf12da4b3f4876c0598a144ca2"
+  },
+  {
+    "source": "producthunt",
+    "title": "Win a 100 Gift Card! No hidden rules",
+    "url": "https://www.producthunt.com/products/win-a-100-gift-card-no-hidden-rules",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Win a 100 Gift Card! No hidden rules — 🎯 Win a 100 Gift Card! No hidden rules, just act now. USA only: https://freegiftcard-l6pn.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267315",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "marketing"
+      ]
+    },
+    "id": "7ce4d20d214d4df83e5b9b8e9ca1809d3f8f477ec4148535c4056dff5133211f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Get a 100 Gift Card instantly",
+    "url": "https://www.producthunt.com/products/get-a-100-gift-card-instantly-2",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Get a 100 Gift Card instantly — 🎁 Get a 100 Gift Card instantly! Only for USA users. Claim now: https://freegiftcard-r817.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267294",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "tech"
+      ]
+    },
+    "id": "9b13d00aaa7ac95537d71ef6b8fa21a059deedbe50daea9cdf9c839c56693d49"
+  },
+  {
+    "source": "producthunt",
+    "title": "10 AI Agents Every Freelancer Should",
+    "url": "https://www.producthunt.com/products/10-ai-agents-every-freelancer-should",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "10 AI Agents Every Freelancer Should Know — Freelancers often manage everything themselves. These AI agents can assist with research, writing, organization, client workflows, and other tasks that can make independent work more efficient. https://freegiftcard-vjy0.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267316",
+      "topics": [
+        "developer-tools",
+        "freelance",
+        "writing"
+      ]
+    },
+    "id": "dd4de23701d3fd7b8d186407ef72869b8c03df89a85f26e582a5871366f90b43"
+  },
+  {
+    "source": "producthunt",
+    "title": "7 AI Agents for Small Business Owners",
+    "url": "https://www.producthunt.com/products/7-ai-agents-for-small-business-owners",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "7 AI Agents for Small Business Owners — Running a small business means wearing many hats. Explore AI agents that can assist with customer communication, research, marketing, administration, and routine business processes. https://freegiftcard-1b2b.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267318",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "wearables"
+      ]
+    },
+    "id": "697e894ef6d8597543bed8ba06f34ff2205ab6fc7bd84e7706cd4a54cfa8ad9e"
+  },
+  {
+    "source": "producthunt",
+    "title": "7 AI Agents That Work Like a Personal",
+    "url": "https://www.producthunt.com/products/7-ai-agents-that-work-like-a-personal",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "7 AI Agents That Work Like a Personal Assistant — Imagine having an assistant available whenever you need one. These AI agents can help organize tasks, find information, manage workflows, and simplify everyday responsibilities. https://freegiftcard-jh71.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267295",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "task-management"
+      ]
+    },
+    "id": "4f723ef57f4311243a58ef6818c7adc47a29bb8923d11bb2279dcaf9daa9f2c7"
+  },
+  {
+    "source": "producthunt",
+    "title": "AI Agents That Can Save You Hours Every",
+    "url": "https://www.producthunt.com/products/ai-agents-that-can-save-you-hours-every",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI Agents That Can Save You Hours Every Week — Some tasks quietly consume hours of your week. These AI agents are designed to handle repetitive processes so you can redirect your time toward higher-value activities. https://freegiftcard-ltkb.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267311",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "df61410a58e1f32ed00adde6cf0dbbe8a26f2fd7f5ffb715dd5a5c756110c97e"
+  },
+  {
+    "source": "producthunt",
+    "title": "AI Suits",
+    "url": "https://www.producthunt.com/products/ai-suits",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Discover useful AI tools built for real-world tasks — AI Suits is a growing collection of practical AI-powered tools and apps designed to help you work faster, create more, automate repetitive tasks and solve everyday problems. Instead of searching through hundreds of random AI tools, explore useful products in one place and find the right AI solution for what you actually want to accomplish.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265243",
+      "topics": [
+        "developer-tools",
+        "growth-hacks",
+        "maker-tools"
+      ]
+    },
+    "id": "ba3578de5b30120db9d17d0e85bc7227ae8ca2fe9e277db8547866d249e75cdd"
+  },
+  {
+    "source": "producthunt",
+    "title": "Fast Claim Alert: 100 Gift Card",
+    "url": "https://www.producthunt.com/products/fast-claim-alert-100-gift-card",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Fast Claim Alert: 100 Gift Card — 🚀 Fast Claim Alert: 100 Gift Card is ready to use. Get yours: https://freegiftcard-ucnr.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267304",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "marketing"
+      ]
+    },
+    "id": "b5718e63caa5ef5be6770ce3311eb45cdc77fa72d43ea133d5bf89a93a1a2de4"
+  },
+  {
+    "source": "producthunt",
+    "title": "GCal Cleaner",
+    "url": "https://www.producthunt.com/products/gcal-cleaner",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Bulk delete Google Calendar events by time slot — GCal Cleaner helps you bulk-delete Google Calendar events for one day and timeslot. Preview the list, uncheck what to keep, choose how recurring meetings should go, then clear the rest in one pass - without emailing guests. Runs in your browser with Google sign-in. Free to use today.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266681",
+      "topics": [
+        "calendar",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "33e117318d80ba7ee7f2f65c989bbca4d048ae33f0070c2aa1abf9920d8e3d62"
+  },
+  {
+    "source": "producthunt",
+    "title": "Receipt Fast",
+    "url": "https://www.producthunt.com/products/receipt-fast",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "free online receipt generator — free online receipt generator",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266577",
+      "topics": [
+        "design-tools",
+        "developer-tools"
+      ]
+    },
+    "id": "4fb099f371fbaeacb9db476ff31eea343e59d14253894bc339fc8714bc267941"
+  },
+  {
+    "source": "producthunt",
+    "title": "Big Reward! Receive your 100 US ",
+    "url": "https://www.producthunt.com/products/big-reward-receive-your-100-us-2",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Big Reward! Receive your 100 US  — 💥 Big Reward! Receive your 100 US Gift Card today. Limited spots: https://freegiftcard-etmq.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267335",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "marketing"
+      ]
+    },
+    "id": "b96210e73b82534ade5b3e65eb36157ad5470c883162e25d6ac2cc71bc49e1cd"
+  },
+  {
+    "source": "producthunt",
+    "title": "TailTrace",
+    "url": "https://www.producthunt.com/products/tailtrace",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Aircraft intelligence by N-number from FAA and NTSB data — TailTrace is an aircraft intelligence API that resolves U.S. aircraft identity before connecting historical, maintenance, accident, service difficulty, and regulatory records. It combines authoritative FAA and NTSB sources while preserving provenance, serial-number context, and uncertainty. Built for aviation software, fleet tools, due diligence, research, and AI workflows.s",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266300",
+      "topics": [
+        "api-1",
+        "data",
+        "developer-tools"
+      ]
+    },
+    "id": "37f8496abc9dc53061814f2967c8e72cf15ba03492cf214fcc720110de2c9961"
+  },
+  {
+    "source": "producthunt",
+    "title": "CrowLLM — One key, every model.",
+    "url": "https://www.producthunt.com/products/crowllm-one-key-every-model",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Pay per token. Auto-fallback. No second-class users — Your API keys called. They're fired. CrowLLM is one OpenAI-compatible endpoint for many AI models, so you stop juggling accounts and keys. Pay per token, no subscription, no credit card to start. If a provider goes down, requests reroute automatically with no code changes. Chat, images, speech and video through the same endpoint. Free and paid users get the same treatment, and we log usage for billing only, never your prompts. Join the community: discord.gg/crow",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267029",
+      "topics": [
+        "api-1",
+        "developer-tools"
+      ]
+    },
+    "id": "5bc989e8a6066a85c0695eef18c69435fec61832762bf43b7e6d9b70ead0c602"
+  },
+  {
+    "source": "producthunt",
+    "title": "PartyCade",
+    "url": "https://www.producthunt.com/products/partycade",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "The instant browser party game hub for friends! — PartyCade is an instant web-based party game platform built for hassle-free game nights. • Zero Friction: No downloads or signups-play instantly across phones, tablets, or PC. • Fast & Fun: Quick, engaging minigames built for banter and lively competition. • 16+ Friendly: Perfect for get-togethers and casual hangouts. Jump in and play!",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267049",
+      "topics": [
+        "developer-tools",
+        "games"
+      ]
+    },
+    "id": "63af7d7782695c40fd42cdd4c3c69815edd614036ea3de9f4bc4f1b8badaa310"
+  },
+  {
+    "source": "producthunt",
+    "title": "Runic",
+    "url": "https://www.producthunt.com/products/runic",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI usage, costs and quota resets in your Mac menu bar — Runic is an open-source macOS menu bar app for seeing AI usage across the providers you enable. Check quota and reset windows, cost estimates, local token history, model breakdowns, and provider status in one place. It can read provider APIs, local coding-tool logs and telemetry where available, with CSV/JSON exports and a CLI. Runic labels estimates and missing data rather than faking precision. Usage stays on your Mac by default. See the GitHub README for install steps and detailed docs.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267021",
+      "topics": [
+        "developer-tools",
+        "menu-bar-apps",
+        "open-source"
+      ]
+    },
+    "id": "aa8a2de03d569f724cf78a83a7f374d4e003463d898b1915b0fbbe59d89f128e"
+  },
+  {
+    "source": "producthunt",
+    "title": "portex",
+    "url": "https://www.producthunt.com/products/portex",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "A public HTTPS link for localhost, with the name you choose — portex gives the server on your laptop a public HTTPS address. Install, sign in with GitHub or Telegram, run portex http 3000. Add -s myapp to pick the name. It lasts while your tunnel is open — made for demos and webhooks, not hosting.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266891",
+      "topics": [
+        "developer-tools"
+      ]
+    },
+    "id": "3aa726c1cb4535ca05357d87ad0106c0ce883d351ca1c52a2ce28a0e9ca22a3f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Website Sucker",
+    "url": "https://www.producthunt.com/products/website-sucker",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Download any website as a ZIP you can open offline — Website Sucker is a free online tool to back up, archive, and transfer any website. Paste a URL and download an offline copy — HTML, CSS, JS, images, and fonts — in minutes. No install. First scrape free; $1.99 downloads sites up to 250 MB (about 600 pages).",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266761",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "2e7240a187cae05123d735f52a30e294a272f812f95608ede2b88a043ebfdbb0"
+  },
+  {
+    "source": "producthunt",
+    "title": "SyncHub for Agents",
+    "url": "https://www.producthunt.com/products/synchub-for-agents",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Different computer. Same agent context. — SyncHub for Agents keeps AI agent sessions, settings, instructions, and skills synchronized across computers through a private Git repository you control. Choose what to sync, review conflicts, and pick up your workflow on another machine. Free and open source for Windows.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266417",
+      "topics": [
+        "developer-tools",
+        "open-source",
+        "productivity"
+      ]
+    },
+    "id": "57fec265488caccaf1315d00f27439c74add6b097c59d360b53a8cdc28440fc5"
+  },
+  {
+    "source": "producthunt",
+    "title": "Craftora",
+    "url": "https://www.producthunt.com/products/craftora",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free online tools like PDF, image, email, & developer tools — Craftora is a free collection of over 50 online tools for everyday tasks. Merge, split, compress, and convert PDFs, resize and convert images, verify and extract emails, validate cards and look up BINs, plus developer utilities like JSON formatting, hashing, and QR codes. Most tools run entirely in your browser, so your files are never uploaded. No signup needed for browser tools.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267152",
+      "topics": [
+        "developer-tools",
+        "email",
+        "seo"
+      ]
+    },
+    "id": "8f698113aee2a0d91272476b24895794281ce672fd0547d18fcc7b5847ef62f7"
+  },
+  {
+    "source": "producthunt",
+    "title": "Sether",
+    "url": "https://www.producthunt.com/products/sether-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open-source redaction before your AI requests leave your app — Sether replaces detected sensitive values with stable tokens before text reaches an LLM, then restores recognized tokens using your application’s private mapping. The MIT-licensed library supports streaming redaction, configurable detectors and integrations for AI applications. Start with fictional data and evaluate detection coverage and response quality on your own workflow. This launch is the open-source library; the hosted gateway is not yet available.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267306",
+      "topics": [
+        "developer-tools",
+        "github",
+        "open-source",
+        "privacy"
+      ]
+    },
+    "id": "cf0939a7d17be4492685ff78e1ac5592607d3636e6a41a6e377f6e86308b73ea"
+  },
+  {
+    "source": "producthunt",
+    "title": "GitHubRepo.cloud",
+    "url": "https://www.producthunt.com/products/githubrepo-cloud",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Discover great open-source projects before everyone else — GitHubRepo helps developers discover trending and fast-growing open-source projects. Explore repository rankings, star growth, momentum, trending history, categories and technical insights, continuously refreshed from GitHub data.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265249",
+      "topics": [
+        "developer-tools",
+        "development-language",
+        "github"
+      ]
+    },
+    "id": "f54d907206c74ee0379c7da00594711a1b6eabd843dc497fb54f6c8c4c65b13c"
+  },
+  {
+    "source": "producthunt",
+    "title": "Resurface",
+    "url": "https://www.producthunt.com/products/resurface-2",
+    "raw_score": 5,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Score any resume against any job, with quoted evidence — An API for recruiting tools. Send a job description and a resume (PDF, DOCX, HTML or TXT); get a 0–100 score, a verdict for each screening question and the exact resume line behind it. An LLM writes the questions once; a classification model (TypeSafe Jev) answers them for every resume, 8× faster and 31× cheaper than an LLM. 50 free scores, then $0.10. Open-source demo on GitHub.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266588",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "human-resources"
+      ]
+    },
+    "id": "ed3c99c008e840ab96041943e73cb3e53c3c84c2606d1bfe3988cc9bb2a07275"
+  },
+  {
+    "source": "producthunt",
+    "title": "Reaal Online Ruler",
+    "url": "https://www.producthunt.com/products/reaal-online-ruler",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Accurate 1:1 actual-size screen ruler in inches & cm — A lightweight, browser-based digital ruler that calibrates to your screen's exact pixel density. Unlike camera-based measurement apps that suffer from optical lens distortion, Reaal Online Ruler uses standard credit card geometry to produce exact 1:1 physical measurements in inches (1/16\"), centimeters, and millimeters. 100% free with no app download required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266446",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "a89975b3c74e226719799be2d8c83290e02faea6b7625cb7b69c4c2ae32548e1"
+  },
+  {
+    "source": "producthunt",
+    "title": "Midscene",
+    "url": "https://www.producthunt.com/products/midscene",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Test apps like with human's hands and eyes — No more struggling with UI element detection. AI-powered, vision-driven UI automation for every platform, apps too. Test apps like with human's hands and eyes. 1. Test and automate with natural language across web, mobile, and desktop 2. One unified API and test suite — the same way on every platform 3. Reaches what selectors cannot — unlabeled elements, canvas, native apps, and cross-origin frames",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266382",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "user-experience"
+      ]
+    },
+    "id": "69fb8815c5c05bf0610415bac871b22de2bfd548a14eef68332672c880950025"
+  },
+  {
+    "source": "producthunt",
+    "title": "MeritFlow",
+    "url": "https://www.producthunt.com/products/meritflow",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "See the story behind the engineering work — Tickets, pull requests, commits, and reviews only show pieces of what happened. MeritFlow helps tie these signals to give an insight into delivery, collaboration and development without making engineers into metrics.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266753",
+      "topics": [
+        "developer-tools",
+        "saas",
+        "software-engineering"
+      ]
+    },
+    "id": "fa4b54fc08eb77b2fa0c57572d15d3783cfc5a4801643cc9308558f8404d7894"
+  },
+  {
+    "source": "producthunt",
+    "title": "Hikaru SDK",
+    "url": "https://www.producthunt.com/products/hikaru-sdk",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your S3 bill has a diet problem. — Users upload 15MB photos straight from their phone. Your server pays for every byte of that — storage, bandwidth, processing time. Hikaru shrinks it on their device before it ever reaches you. 2 lines of code. No backend changes. Your bill just goes down.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265487",
+      "topics": [
+        "developer-tools",
+        "saas",
+        "sdk"
+      ]
+    },
+    "id": "9a6df30de772b1b1873cb63356407bc5e10bc5f8f483c3c422573fc1973fd2aa"
+  },
+  {
+    "source": "producthunt",
+    "title": "STOP! A Gift Card Giveaway is happening",
+    "url": "https://www.producthunt.com/products/stop-a-gift-card-giveaway-is-happening-3",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "STOP! A Gift Card Giveaway is happening — 🎁 STOP! A Gift Card Giveaway is happening! 👀 Check the details 👉 https://freegiftcard-87jt.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265489",
+      "topics": [
+        "card-games",
+        "developer-tools",
+        "marketing"
+      ]
+    },
+    "id": "38a88072e5d2bec9050c4063bd56aafe1bea53ff4a9c15f6e23d840fb0d4e75f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Axeazy",
+    "url": "https://www.producthunt.com/products/axeazy",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Fix WCAG violations with real code, not an overlay script. — Axeazy scans websites for WCAG 2.2 AA violations and fixes them with real code changes via GitHub pull requests, not a JavaScript overlay, plus a timestamped compliance record.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265495",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "saas"
+      ]
+    },
+    "id": "dab8579a9650cdca039efcb35c9cea09cfe30b6109d917061bd4006a597a13d4"
+  },
+  {
+    "source": "producthunt",
+    "title": "DotSpend",
+    "url": "https://www.producthunt.com/products/dotspend",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Guardrails for always-on agents: 402 cutoffs + kill switch — OpenAI's Dots are always-on agents with their own cloud computer + browser — and no answer for what an unattended task costs. DotSpend is the guardrail kit: per-agent spend caps, hard HTTP 402 cutoffs, an account-level kill switch, a sourced pricing table (GPT-6 Astra + GPT-6.1 Sol), and the unattended-cost runbook. Project the bill before the task runs; cut it automatically when a cap breaks.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265937",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "tech"
+      ]
+    },
+    "id": "67d7d5d324705a42ddc10e7d365b7567301baeb09dbd72af06123dc1079adde2"
+  },
+  {
+    "source": "producthunt",
+    "title": "Peek",
+    "url": "https://www.producthunt.com/products/peek-24",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "What matters, always in view. — Peek was made to make your day lighter. Fewer tabs, fewer windows, less wear: everything that matters sits on the edge of your screen, one click away.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266147",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "productivity"
+      ]
+    },
+    "id": "0d5526c8d202f422b1a50cf496b23679f59d1b3eb5219367506723e42a680603"
+  },
+  {
+    "source": "producthunt",
+    "title": "CodeGuard AI",
+    "url": "https://www.producthunt.com/products/codeguard-ai",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Self-hosted AI code review for GitHub PRs — CodeGuard AI is a self-hosted AI code reviewer for GitHub Pull Requests, built with Java 17 and Spring Boot. Connect GitHub, choose OpenAI, Gemini, or Ollama, and analyze PRs for bugs, security issues, performance problems, and best-practice violations. Review results can be posted back to GitHub, while review history and trends help track results over time. The complete source code can be customized and self-hosted.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266339",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github"
+      ]
+    },
+    "id": "b47ec62c35bd1a828a998b82d7a3d6e76ea2057377573b4bce584e9815490892"
+  },
+  {
+    "source": "producthunt",
+    "title": "Toolcube",
+    "url": "https://www.producthunt.com/products/toolcube",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "270+ AI tools, organised, in one click — Toolcube is a free directory of AI tools across chat, research, image, video, audio, code, writing, business and more. Every tool has a short, plain description so you can quickly find the right one and jump straight to its official site. No sign-up needed to browse.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266519",
+      "topics": [
+        "android",
+        "design-tools",
+        "developer-tools"
+      ]
+    },
+    "id": "71ba57e85eb5dc31b0e2f45f5200b429560ec26175e6eb219bc296dc10467785"
+  },
+  {
+    "source": "producthunt",
+    "title": "Datoka Agent",
+    "url": "https://www.producthunt.com/products/datoka-agent",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Signed receipts for AI-agent workflow declarations — Keep a portable signed record of a declared agent step, linked to locally computed input and output hashes. HTTP, MCP and A2A access. Free preparation and verification; issuance costs 0.002 USDC on Base via x402. Raw documents stay local. Receipts record declarations; they do not independently prove execution or factual correctness.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267015",
+      "topics": [
+        "developer-tools"
+      ]
+    },
+    "id": "0120d0404fbc3ee0ce3268d9ac723f9379ba4e932f8ca73c20469e0c5c79637d"
+  },
+  {
+    "source": "producthunt",
+    "title": "100 US Gift Card is ready for you",
+    "url": "https://www.producthunt.com/products/100-us-gift-card-is-ready-for-you",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "100 US Gift Card is ready for you — ⚡ Quick Reward: 100 US Gift Card is ready for you. Claim fast: https://freegiftcard-qgsr.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267145",
+      "topics": [
+        "developer-tools",
+        "e-commerce",
+        "web3"
+      ]
+    },
+    "id": "6f5c27f4a2f2ee65d6dca3742eeac00c0d6857e460ab4cd4af8eb7420d3f3580"
+  },
+  {
+    "source": "producthunt",
+    "title": "Tabbied 2.0",
+    "url": "https://www.producthunt.com/products/tabbied",
+    "raw_score": 4,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free patterns and website templates, yours to shape. — Tabbied helps you bring personality to your next project with 338 customizable patterns and 277 website templates. Mix colors, swap patterns, and export artwork or website code. Start with five free templates, or add patterns directly to your project with our React component.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267187",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "user-experience"
+      ]
+    },
+    "id": "1014f4860b6c4070901512da1991b36b9253974b1242d62fe4d7ec9bb9b6d794"
+  },
+  {
+    "source": "producthunt",
+    "title": "BugHarbor",
+    "url": "https://www.producthunt.com/products/bugharbor",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn user feedback into pull requests you can review — BugHarbor brings user feedback and JavaScript errors into one inbox. New in this launch: BugHarbor Agent investigates reported issues in your repository and opens pull requests for you to review. You can also send issues to Cursor, Codex, or Claude Code to continue in your preferred coding workflow. From user report to proposed fix—you decide what gets merged.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267185",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "saas"
+      ]
+    },
+    "id": "3202accc5b5e0956f78399ec7dd7c6483b39d978fe1ec15aec6c9fbdd2a4b34f"
+  },
+  {
+    "source": "producthunt",
+    "title": "Restillia ",
+    "url": "https://www.producthunt.com/products/restillia",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Bring your own API keys to run any model. — Run AI on your own budget. Bring your own API keys to run any model with zero vendor markup. Extend your workspace with custom code, secure your data, and control your cloud spend on your own terms.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266621",
+      "topics": [
+        "api-1",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "88ba6ca3de3379d671f3fcaff1f91acb218b48b873e1386058f300b4869bbb28"
+  },
+  {
+    "source": "producthunt",
+    "title": "Stanislas  ",
+    "url": "https://www.producthunt.com/products/stanislas",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "What if AI had been imagined back in 1984? — STANISLAS — The M.A.I.CINTOSH — reimagines AI through the simplicity of the original Macintosh: one function, one icon, one click. LOCAL. PRIVATE. NO ACCOUNT. ALL SIMPLE. Completely free. No complex interface. No unnecessary setup. Just simple AI tools designed to make AI easier to use.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266721",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "563f1eeebd303787e707cb5007248c01a824dc84fa11a5ea07e5dbea371adfec"
+  },
+  {
+    "source": "producthunt",
+    "title": "FixMyWebsite",
+    "url": "https://www.producthunt.com/products/fixmywebsite",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Find website issues before your visitors do — FixMyWebsite scans your website for common SEO, accessibility, performance, security, and frontend issues. Get a clear, easy-to-understand report with practical fixes and starting prices for each issue.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266828",
+      "topics": [
+        "developer-tools",
+        "seo",
+        "web-design"
+      ]
+    },
+    "id": "3304b9c0f07bb44d737364dcb3f9f75b1193924134073293b0e19249a0aa2a15"
+  },
+  {
+    "source": "producthunt",
+    "title": "Photo MetaClean",
+    "url": "https://www.producthunt.com/products/photo-metaclean",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Strip hidden EXIF & GPS, no re-encoding — Photo MetaClean strips hidden EXIF, GPS and PNG text metadata from images with byte-level removal. No re-encoding, so zero quality loss. Works on JPEG and PNG. Single Windows executable with self-check.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266985",
+      "topics": [
+        "developer-tools",
+        "github",
+        "productivity"
+      ]
+    },
+    "id": "92fca7b1740962132d32014c0ed57a3bb90acd369b431ccedbe0585260a9b508"
+  },
+  {
+    "source": "producthunt",
+    "title": "Gallery Slider Suite",
+    "url": "https://www.producthunt.com/products/gallery-slider-suite",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Turn Any Gallery Into a Slider — Turn any WordPress gallery into a responsive slider with a lightbox, right from the Block Editor and the Classic Editor.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266802",
+      "topics": [
+        "developer-tools",
+        "tech"
+      ]
+    },
+    "id": "1467584d57b9ede479700943414f8f4d4649920ef892d4edd75f8f8db139ca51"
+  },
+  {
+    "source": "producthunt",
+    "title": "Salt Code",
+    "url": "https://www.producthunt.com/products/salt-code",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free security expertise for your coding agent. Every prompt. — Coding agents are great at functionality — security is a different discipline. Salt Code is a free MCP server that gives your coding agent security expertise across APIs, MCP tools, LLM systems, and OpenAPI specs. Works with Cursor, Copilot, Cline, Claude Code, VS Code, Windsurf, and more. No workflow changes. 60-second install. Free.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266982",
+      "topics": [
+        "api-1",
+        "artificial-intelligence",
+        "developer-tools"
+      ]
+    },
+    "id": "6bb0d8f1b6b3e493d8a939bf9588fa02d508b6a62fb381b87172fcf2a919a25a"
+  },
+  {
+    "source": "producthunt",
+    "title": "StackLens AI",
+    "url": "https://www.producthunt.com/products/stacklens-ai",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "AI that audits your JS deps and opens upgrade PRs for you — Analyze your package.json for outdated packages, compatibility risks, and get AI-powered upgrade guidance. The smartest way to manage npm dependencies.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266402",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github"
+      ]
+    },
+    "id": "8aaf5ba3890f137dd6fb60e053edb910b940e5e34c9a8f339330e610bd65a686"
+  },
+  {
+    "source": "producthunt",
+    "title": "WebToolkit",
+    "url": "https://www.producthunt.com/products/webtoolkit",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Free web tools that never leave your browser. — WebToolkit is a collection of fast, free, and secure browser utilities. Unlike other tool sites that force you to create an account and upload your personal files to their servers, everything here runs 100% client-side. Your files and data never leave your browser. Whether you need to compress images, extract text from PDFs, format JSON, or generate QR codes, WebToolkit provides instant, private results with no sign-ups required.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266979",
+      "topics": [
+        "developer-tools",
+        "productivity",
+        "web-app"
+      ]
+    },
+    "id": "398b586076753f6bf424a45a5c17a208f90222b3b9f3fafb93206b184b421882"
+  },
+  {
+    "source": "producthunt",
+    "title": "Flow Mapper",
+    "url": "https://www.producthunt.com/products/flow-mapper",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Learn to code by visualizing the code. — Pymotion is an interactive visualizer that maps Python programs into clear, structured control-flow diagrams and contextual explanations.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266976",
+      "topics": [
+        "developer-tools"
+      ]
+    },
+    "id": "901d95bbd021667cb9c7f6a67e3c0872fcf9643d4d640d9cde678d86dfed1fb8"
+  },
+  {
+    "source": "producthunt",
+    "title": "Aequivia",
+    "url": "https://www.producthunt.com/products/aequivia",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "ADA & WCAG Compliance That Fixes the Source — Aequivia is ADA and WCAG compliance software that fixes accessibility barriers in your source code, not a runtime overlay. Detect on real journeys, fix via pull requests, block regressions in CI, validate with disabled users, and prove it in an evidence ledger.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1265950",
+      "topics": [
+        "developer-tools",
+        "saas",
+        "software-engineering"
+      ]
+    },
+    "id": "bd077b8d83f6cf46de3e881805eedf49e8e3e400b3cc6b8d3fad435bc9688959"
+  },
+  {
+    "source": "producthunt",
+    "title": "FraudShield",
+    "url": "https://www.producthunt.com/products/fraudshield",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Evidence-driven fraud investigation API — Investigate websites, domains and digital identities using multiple technical and public signals. FraudShield correlates evidence instead of simply labeling something as a scam",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266253",
+      "topics": [
+        "api-1",
+        "developer-tools"
+      ]
+    },
+    "id": "e6ec80edb0fcd6f498a5ecf3d2c0e976f974d7753c7df2cfbdad47ba6acdc4b7"
+  },
+  {
+    "source": "producthunt",
+    "title": "Hoverfly",
+    "url": "https://www.producthunt.com/products/hoverfly-2",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Tiny on-device AI models for Kotlin Multiplatform apps — Hoverfly is 8 tiny AI models you add to a Kotlin Multiplatform app: emoji suggestions, smart replies, language detection (Hinglish too), punctuation, toxicity detection, personal-info hiding (phone, UPI, Aadhaar), emotion detection and doodle recognition. They run fully on the device (Android, iOS, desktop, web) in milliseconds, 2–9 MB each. No server, no API key, nothing leaves the phone. Pure Kotlin, on Maven Central, free up to 10,000 monthly active devices.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266418",
+      "topics": [
+        "android",
+        "artificial-intelligence",
+        "developer-tools",
+        "github"
+      ]
+    },
+    "id": "f16e1357d3c6fbd4b27399ac002e93d3bfa90d318fe056f49908d1ca4d945817"
+  },
+  {
+    "source": "producthunt",
+    "title": "Releasy Suite",
+    "url": "https://www.producthunt.com/products/releasy-suite",
+    "raw_score": 4,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Every signal from your product, in one place. — Hookfire, Upvoted and Indie Polls in one place. Alerts from your stack, feature voting from your users, and embeddable polls. One login, one bill, $69/mo.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266824",
+      "topics": [
+        "analytics",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "4cbc70ab9ce5a0ba7b7f4c288b0c5dc45903f00b8bb0ebb7937aec698a3c7678"
+  },
+  {
+    "source": "producthunt",
+    "title": "Moxie",
+    "url": "https://www.producthunt.com/products/moxie-2",
+    "raw_score": 75,
+    "comment_count": 3,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Use any AI with Claude Code, switch accounts mid-task — Moxie is a Mac menu bar app for Claude Code. Use your ChatGPT plan, Gemini, DeepSeek, OpenRouter or local models in Ollama, all from the Claude Code you already use. Hit a usage limit? Pick another account in one click and keep the same session going. Every account's 5-hour and weekly limits sit in the menu bar.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266319",
+      "topics": [
+        "developer-tools",
+        "menu-bar-apps",
+        "productivity"
+      ]
+    },
+    "id": "b443199b5957d8fbbf00d8763f4ab7bd89232bde3981eb8bb09b3d8146f0fcbc"
+  },
+  {
+    "source": "producthunt",
+    "title": "CodeAF",
+    "url": "https://www.producthunt.com/products/codeaf",
+    "raw_score": 76,
+    "comment_count": 9,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open Source Software Factory — CodeAF is a coding harness built for open models, to get the most out of every dollar. Frontier-grade coding on open models, at a fraction of the cost.I t is also a different way to work once more than one thing is going on: instead of three terminals of agents with you in the middle, one window where you hand work off, see what is moving across every project, and step in only where your judgment is needed.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266853",
+      "topics": [
+        "developer-tools",
+        "github",
+        "open-source",
+        "software-engineering"
+      ]
+    },
+    "id": "5db35831651a3f9412f562d588e372602840644d30a14e0381a3b19182e4ae28"
+  },
+  {
+    "source": "producthunt",
+    "title": "Pastily",
+    "url": "https://www.producthunt.com/products/pastily",
+    "raw_score": 75,
+    "comment_count": 5,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Your clipboard but better — Fast, private clipboard manager for macOS, Windows and Linux. Searchable copy history, paste queue, images and snippets. 100% offline, pay once.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266528",
+      "topics": [
+        "developer-tools",
+        "menu-bar-apps",
+        "productivity"
+      ]
+    },
+    "id": "1ab262daeec5747ab594154890bbfcb884e0dfb77ee7d46a4b7df101d20211ac"
+  },
+  {
+    "source": "producthunt",
+    "title": "Globestudio",
+    "url": "https://www.producthunt.com/products/globestudio",
+    "raw_score": 74,
+    "comment_count": 2,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Open-source dotted maps and 3D globes for designers — A free, open-source studio for dotted maps and 3D globes. Pick the world or any country, choose one of 21 shader looks, tweak the dots, gradients and density, then export a PNG, SVG, WebM, MP4 or GIF, or embed it live. It's MIT licensed, with no account.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1264308",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "4712a12633fcb5d1b47446369197995e68ab15d9cdd5b2d611b2cce9317e1e39"
+  },
+  {
+    "source": "producthunt",
+    "title": "SurfiTools",
+    "url": "https://www.producthunt.com/products/surfitools",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "SurfiTools — Free & Paid Software Downloads — SurfiTools is the official download store for Surfi software: crypto mining tools, the Surfi Browser, the Surfio media player, a VPN and everyday utilities. Download free tools straight away, or buy once with Bitcoin, Ethereum, TRON or USDT — no subscriptions.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266916",
+      "topics": [
+        "design-tools",
+        "developer-tools",
+        "software-engineering"
+      ]
+    },
+    "id": "b11d384a9a9c4db34b2d73a68c114d04cb1acc8d839493199014b29dc73deef1"
+  },
+  {
+    "source": "producthunt",
+    "title": "JevLaya GameTest",
+    "url": "https://www.producthunt.com/products/jevlaya-gametest",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Game testing with Jev, Laya & OmniJev decision support — An open-source Skill for agent-driven game testing with Jev, Laya and OmniJev decision support. Run bounded gameplay tests, verify outcomes independently, and preserve failures and evidence. Experimental Unity uGUI and local-browser adapters. MIT.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267323",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "2ad30f6dbff0117d76f48d4bcd60452f7b9efccea7f24da78c4276a2d3b20ded"
+  },
+  {
+    "source": "producthunt",
+    "title": "Kubepier",
+    "url": "https://www.producthunt.com/products/kubepier",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "kubernetes, k8s, kubernetes-dashboard, kubectl, devops — Kubepier shows the health of your Kubernetes (K8s) clusters from anywhere: in any browser, on your phone, or in a desktop app for Linux and Windows. Failing pods (CrashLoopBackOff, OOMKilled, ImagePullBackOff, Pending) and warning events rise to the top. Each CronJob shows its last run, each Job shows whether it completed or failed, and CPU and memory usage is shown per cluster, node and namespace. The web version also shows the RabbitMQ and Azure Service Bus queues a pod uses and MongoDB health",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266878",
+      "topics": [
+        "developer-tools",
+        "github",
+        "software-engineering"
+      ]
+    },
+    "id": "29777b6c67d60b3f42b288dd463a55ba6620e1f8012f75aef22133777f47eed9"
+  },
+  {
+    "source": "producthunt",
+    "title": "Kerry Studio v1",
+    "url": "https://www.producthunt.com/products/kerry-studio-v1",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Rethinking SQL Database Management — Kerry Studio is a desktop SQL database manager for PostgreSQL, MySQL, Oracle and SQLite. Each tab keeps its own connection and environment, so Postgres and Oracle can sit side by side. With SQL Alias, one query can JOIN tables from other saved connections, even on another engine, without a DB Link or extra server privileges. Variables in SQL, fake data, snippets and an undoable change history are built in. A local MCP server connects your desktop AI assistant, read-only by default.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267169",
+      "topics": [
+        "database",
+        "developer-tools",
+        "productivity"
+      ]
+    },
+    "id": "aef3e49e00903abe9ca33102b6d3295232fd93d1b06ba8b1d0e43022af2774ab"
+  },
+  {
+    "source": "producthunt",
+    "title": "feedback-memory",
+    "url": "https://www.producthunt.com/products/feedback-memory",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Make Claude Code remember why you rejected its drafts — An open-source MCP server and Claude Code plugin that gives your agent a memory for your corrections. Approve, edit or reject a draft and it saves your one-line reason in a local Postgres + pgvector (PGlite). Before the next draft it recalls your rules and the closest past corrections, and the plugin's hooks add them to your prompts on their own, so the agent can't forget to check. Works in Cursor and Claude Desktop too. MIT, nothing to host, plus a browser demo.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266394",
+      "topics": [
+        "artificial-intelligence",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "b7722792ae15d04046797e296b839c2cec64aa6f90497036ef7071c7e139e309"
+  },
+  {
+    "source": "producthunt",
+    "title": "10 AI Agents That Can Automate Your",
+    "url": "https://www.producthunt.com/products/10-ai-agents-that-can-automate-your",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "10 AI Agents That Can Automate Your Daily Work — Discover AI agents that can take repetitive tasks off your plate, from organizing information to completing routine workflows. Explore practical tools that can help you spend more time on meaningful work. https://giftcard-sged.surge.sh",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267139",
+      "topics": [
+        "developer-tools",
+        "education",
+        "task-management"
+      ]
+    },
+    "id": "af55e7b97eb2662fc5c92084ec7056303d466d8dae781895d25d14a3991e56e5"
+  },
+  {
+    "source": "producthunt",
+    "title": "Konsole",
+    "url": "https://www.producthunt.com/products/konsole",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Work on a copy of your website. Publish when it's ready. — Konsole runs your WordPress or PHP site on your own Mac. Bring it home from your server, change anything without risk, then send back only what changed, over FTP, SFTP or SSH. No Docker or command line needed. Free for 3 sites.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266532",
+      "topics": [
+        "developer-tools",
+        "mac",
+        "wordpress"
+      ]
+    },
+    "id": "c05d170c5e0a1f25dddedc208a40d469b2fbe073b58225835fe79fc4355cc89e"
+  },
+  {
+    "source": "producthunt",
+    "title": "Open Inspector",
+    "url": "https://www.producthunt.com/products/open-inspector",
+    "raw_score": 105,
+    "comment_count": 4,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Hover any website, get its design system. Open-source. Free. — A free, open-source browser extension for inspecting layout, styles, colour, type and assets on any page, and exporting its design tokens. Unlike the popular alternatives, it requests no site access and makes zero network requests. MIT, no account.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266705",
+      "topics": [
+        "chrome-extensions",
+        "developer-tools",
+        "github",
+        "open-source"
+      ]
+    },
+    "id": "aa7e1d7a8dcbea4853490ec780f34d979bd84ba06076d93dc66b724e43e2bd67"
+  },
+  {
+    "source": "producthunt",
+    "title": "Kridha Type",
+    "url": "https://www.producthunt.com/products/kridha-type",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Test, practice and improve your typing speed for free — Free online typing test and practice platform with real-time WPM tracking, accuracy analysis, 100+ lessons, and code typing practice. Kridha Type is a free typing platform to test, practice, learn and have fun. Take English, Hindi, SSC, CGL and coding typing tests with customizable backgrounds and themes. Play multiplayer typing games, including car racing and fighting, create private rooms and challenge your friends. You can also learn typing and improve your speed and accuracy.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266308",
+      "topics": [
+        "developer-tools",
+        "education",
+        "user-experience"
+      ]
+    },
+    "id": "f0607b4993f8b8a85a3195942982106fa35048ed0aa407e34371a448d655e6f2"
+  },
+  {
+    "source": "producthunt",
+    "title": "Wu",
+    "url": "https://www.producthunt.com/products/wu",
+    "raw_score": 91,
+    "comment_count": 5,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "Fast, native code editor in Rust that feels like VS Code — Wu is a code editor for people who want the speed of a native app and the familiarity of VS Code.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266654",
+      "topics": [
+        "developer-tools",
+        "github",
+        "open-source",
+        "productivity"
+      ]
+    },
+    "id": "a9e5eb40b02dd637ada77901dc9887dbb173aee493e87be2e5280ee02fff7f22"
+  },
+  {
+    "source": "producthunt",
+    "title": "The 6-Day YouTube Accelerator",
+    "url": "https://www.producthunt.com/products/the-6-day-youtube-accelerator",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "YouTube Accelerator — This done-for-you email course gives your customers a proven, easy-to-follow system for launching and growing successful YouTube ad campaigns. It teaches them how to build strong ad strategies, create videos that get attention, target the right audience, and turn viewers into loyal customers. As they learn, it also helps you upsell your services and position yourself as an expert.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1266789",
+      "topics": [
+        "developer-tools",
+        "marketing",
+        "user-experience"
+      ]
+    },
+    "id": "9e7f362e53e4ae5b4e7480f0fcb73bf8df0b566510148c5a49cd330983ef5f79"
+  },
+  {
+    "source": "producthunt",
+    "title": "Uzo Labs",
+    "url": "https://www.producthunt.com/products/uzo-labs",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-02T07:01:00Z",
+    "fetched_at": "2026-10-02T16:53:59.764076+00:00",
+    "excerpt": "The Infrastructure Layer for BOT Chain — SDKs, templates and infrastructure that take developers from zero to shipped on BOT Chain. Built in Lagos.",
+    "excerpt_status": "partial",
+    "source_meta": {
+      "ph_id": "1267020",
+      "topics": [
+        "developer-tools",
+        "open-source",
+        "web3"
+      ]
+    },
+    "id": "cb9fad0b10fc4070f3b40ead2334419205e35e31704e15bc707964765d914aff"
+  }
+]
