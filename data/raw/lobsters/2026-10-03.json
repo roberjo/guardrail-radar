@@ -1,0 +1,79 @@
+[
+  {
+    "source": "lobsters",
+    "title": "I got targeted: Trying to get your credentials via a git post-checkout hook",
+    "url": "https://frankwiles.com/posts/i-got-targeted",
+    "raw_score": 78,
+    "comment_count": 25,
+    "posted_at": "2026-10-02T17:19:02.622-05:00",
+    "fetched_at": "2026-10-03T15:17:41.206976+00:00",
+    "excerpt": "Someone targeted me in an attempt to gain access or credentials because of my Open Source and/or consulting roles",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "cd5gdk",
+      "tags": [
+        "security",
+        "vcs"
+      ]
+    },
+    "id": "32a8ab1daa44c0a09425a5ba175c305ba9ec82fa7029043c2410f18554d2721e"
+  },
+  {
+    "source": "lobsters",
+    "title": "How to Hack Time, With C2PA",
+    "url": "https://www.da.vidbuchanan.co.uk/blog/hacking-time.html",
+    "raw_score": 6,
+    "comment_count": 0,
+    "posted_at": "2026-10-03T06:58:14.604-05:00",
+    "fetched_at": "2026-10-03T15:17:41.206976+00:00",
+    "excerpt": "By David Buchanan (aka retr0id), 2 nd October 2026",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "u8uvlr",
+      "tags": [
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "9baa27e59b041ecae4274e79983eb97a18e41a441cb57132943a4db9f18659ba"
+  },
+  {
+    "source": "lobsters",
+    "title": "Updates to Full Disk Access in macOS",
+    "url": "https://developer.apple.com/news?id=p6zjojqw",
+    "raw_score": 19,
+    "comment_count": 28,
+    "posted_at": "2026-10-02T15:10:26.574-05:00",
+    "fetched_at": "2026-10-03T15:17:41.206976+00:00",
+    "excerpt": "We give developers powerful APIs to build incredible capabilities into their apps for Apple products, backed by a set of controls designed to protect users’ private data. Full Disk Access largely sidesteps these controls in order to allow backup apps to function properly on the Mac. Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their systems—including files, mail, messages, and even browsing history—without users’ full knowledge and understanding. For communication apps, this can also compromise the privacy of the people users are communicating with.Going forward, we will introduce additional controls to ensure that users who genuinely wish to grant an app this extraordinary level of access can only do so with very explicit user action. Addressing this is critical. As AI agents become increasingly capable and autonomous, the risks associated with this level of access will grow substantially. We are committed to ensuring users cl",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "9ipypq",
+      "tags": [
+        "mac",
+        "security"
+      ]
+    },
+    "id": "ea23256b544647b11ff42d6a4c15e6831f2b52d2a59bf08b1909f6ea1111251a"
+  },
+  {
+    "source": "lobsters",
+    "title": "Greg Kroah-Hartman - Security in the LLM Age",
+    "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-10-03T06:57:02.831-05:00",
+    "fetched_at": "2026-10-03T15:17:41.206976+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "rghh9w",
+      "tags": [
+        "security",
+        "vibecoding",
+        "video"
+      ]
+    },
+    "id": "d0bacd5807e55bc87fbf03eab2445c04d45b2ba554e9f35e29762b82a7c99a13"
+  }
+]
