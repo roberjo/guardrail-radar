@@ -1,0 +1,99 @@
+[
+  {
+    "source": "lobsters",
+    "title": "A Mere Mortal's Introduction to JIT Vulnerabilities in JavaScript Engines",
+    "url": "https://trustfoundry.net/blog/jit-vulnerabilities-javascript-engines",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-04T06:53:51.930-05:00",
+    "fetched_at": "2026-10-04T16:02:23.128912+00:00",
+    "excerpt": "An accessible introduction to Just-in-Time compilation vulnerabilities in JavaScript engines and their relevance to browser security.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "hucih9",
+      "tags": [
+        "javascript",
+        "reversing",
+        "security"
+      ]
+    },
+    "id": "db3ac40f43b5fc0d7cb70380029e0549dab302d01eb819b9ace38241dc04ee7e"
+  },
+  {
+    "source": "lobsters",
+    "title": "BSides Orlando 2026 Badge",
+    "url": "https://github.com/bsidesorlando/2026-badge",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-10-03T13:57:32.782-05:00",
+    "fetched_at": "2026-10-04T16:02:23.128912+00:00",
+    "excerpt": "Contribute to bsidesorlando/2026-badge development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "opwgtj",
+      "tags": [
+        "hardware",
+        "security"
+      ]
+    },
+    "id": "c44731a0a2c08c65a5a9d70858b9648591fdc3eb4d6bb7d661e45150075dd881"
+  },
+  {
+    "source": "lobsters",
+    "title": "How to Hack Time, With C2PA",
+    "url": "https://www.da.vidbuchanan.co.uk/blog/hacking-time.html",
+    "raw_score": 22,
+    "comment_count": 2,
+    "posted_at": "2026-10-03T06:58:14.604-05:00",
+    "fetched_at": "2026-10-04T16:02:23.128912+00:00",
+    "excerpt": "By David Buchanan (aka retr0id), 2 nd October 2026",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "u8uvlr",
+      "tags": [
+        "cryptography",
+        "security"
+      ]
+    },
+    "id": "9baa27e59b041ecae4274e79983eb97a18e41a441cb57132943a4db9f18659ba"
+  },
+  {
+    "source": "lobsters",
+    "title": "Security in the LLM Age",
+    "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+    "raw_score": 9,
+    "comment_count": 0,
+    "posted_at": "2026-10-03T06:57:02.831-05:00",
+    "fetched_at": "2026-10-04T16:02:23.128912+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "rghh9w",
+      "tags": [
+        "security",
+        "vibecoding",
+        "video"
+      ]
+    },
+    "id": "d0bacd5807e55bc87fbf03eab2445c04d45b2ba554e9f35e29762b82a7c99a13"
+  },
+  {
+    "source": "lobsters",
+    "title": "I got targeted: Trying to get your credentials via a git post-checkout hook",
+    "url": "https://frankwiles.com/posts/i-got-targeted",
+    "raw_score": 122,
+    "comment_count": 37,
+    "posted_at": "2026-10-02T17:19:02.622-05:00",
+    "fetched_at": "2026-10-04T16:02:23.128912+00:00",
+    "excerpt": "Someone targeted me in an attempt to gain access or credentials because of my Open Source and/or consulting roles",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "cd5gdk",
+      "tags": [
+        "security",
+        "vcs"
+      ]
+    },
+    "id": "32a8ab1daa44c0a09425a5ba175c305ba9ec82fa7029043c2410f18554d2721e"
+  }
+]
