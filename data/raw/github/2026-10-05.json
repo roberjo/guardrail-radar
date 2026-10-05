@@ -1,0 +1,818 @@
+[
+  {
+    "source": "github",
+    "title": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "raw_score": 1022,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:05Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent. - Kilo-Org/kilocode",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 596,
+      "total_stars": 27499,
+      "topic": "ai-coding"
+    },
+    "id": "12d6cf689ec8de35682f658eb57f7f6f75337608daf3959293072b2aa24fc0c6"
+  },
+  {
+    "source": "github",
+    "title": "l4ci/rota",
+    "url": "https://github.com/l4ci/rota",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:44Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Run autonomous rounds of AI coding agents: an orchestrator assigns issues to Claude Code and Codex workers in their own worktrees, gates and merges their PRs, and keeps project memory in .rota/. - ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 23,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "fa448a65941ea903502e168458fb44226710036d888b45e8694b3d4f6c5aeb97"
+  },
+  {
+    "source": "github",
+    "title": "floating-astronaut/vibe-coding-kit",
+    "url": "https://github.com/floating-astronaut/vibe-coding-kit",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:54Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Replace your dev team. An OS for a coordinated Claude/Codex/Kimi team — docs-first lanes, zero-drift handoffs. Built by its own method. - floating-astronaut/vibe-coding-kit",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "507114ed68c4c208dccd1d77265eaa27fbe4c95254c2c986fa2ef245cde1efe4"
+  },
+  {
+    "source": "github",
+    "title": "LOLCODED/dispatch",
+    "url": "https://github.com/LOLCODED/dispatch",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:31Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Hands tickets to the agent CLIs you already use, isolates and verifies the work, and delivers a mergeable result. - LOLCODED/dispatch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "ai-coding"
+    },
+    "id": "b944bc89034dd4d76a9c09010012863a502383853bd6ac5e3113bcd43d1f725c"
+  },
+  {
+    "source": "github",
+    "title": "Ahmed-Ghazal55/ai-coding-prompt-java",
+    "url": "https://github.com/Ahmed-Ghazal55/ai-coding-prompt-java",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:50:14Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🚀 Boost coding efficiency with AI prompts. Streamline development processes and enhance code quality through structured knowledge assets. - Ahmed-Ghazal55/ai-coding-prompt-java",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "acc118921fee962762e2c2d1e5a536321b2da5b4b285bcddf69dfa1372e0b7b4"
+  },
+  {
+    "source": "github",
+    "title": "Gentleman-Programming/gentle-shell",
+    "url": "https://github.com/Gentleman-Programming/gentle-shell",
+    "raw_score": 709,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:48:40Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Gentle Shell is a Pi-native coding-agent harness for controlled development with Organic Driven Development, optional SDD/OpenSpec, subagents, TDD evidence, review guardrails, skills, and memory in...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 576,
+      "total_stars": 1204,
+      "topic": "ai-coding"
+    },
+    "id": "2564cb651794ea7772e09847f80a7ebc66e47d7dd111a759faec8aafbd80bc97"
+  },
+  {
+    "source": "github",
+    "title": "superplanehq/superplane",
+    "url": "https://github.com/superplanehq/superplane",
+    "raw_score": 895,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:05Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Open source factory for one-shot engineering. Contribute to superplanehq/superplane development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 415,
+      "total_stars": 7707,
+      "topic": "ai-coding"
+    },
+    "id": "02a1963208c6bd9b7089cce1b667e8cd9a875b5609c62995f2deaaa84344e2c9"
+  },
+  {
+    "source": "github",
+    "title": "yahyaDesoky/InfCode",
+    "url": "https://github.com/yahyaDesoky/InfCode",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:47:01Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🤖 Analyze and fix code issues automatically with InfCode, an intelligent Code Agent System achieving a 79.4% solution rate using LLMs. - yahyaDesoky/InfCode",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 5,
+      "topic": "ai-coding"
+    },
+    "id": "5edd28d0fe51f26e7812b6b8a72e45b860d924f9cdae2fb3afc51b32c3f78584"
+  },
+  {
+    "source": "github",
+    "title": "Jokesflow/mind-palace",
+    "url": "https://github.com/Jokesflow/mind-palace",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:50:18Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🧠 Persistent project memory for Claude Code. Decisions, conventions and open tasks auto-load into every session and survive /clear and compaction. Blind A/B: 10/10 vs 8.3/10 when continuing work. Z...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "39a79bb990287f7cc8276778f859f9e7f53b97db9414dd02ac41adf07b302ed5"
+  },
+  {
+    "source": "github",
+    "title": "opencue/cuecards",
+    "url": "https://github.com/opencue/cuecards",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:43:21Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Agent profile manager for Claude Code &amp; Codex. Per-directory profiles select which skills, MCP servers, and plugins load — automatically, before launch. Install: npm install -g cue-ai - opencue...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 6,
+      "topic": "ai-coding"
+    },
+    "id": "61bf10b5a6bf117fc878032c74ef787328c2e389ce43c14464356277f14589c2"
+  },
+  {
+    "source": "github",
+    "title": "Dicklesworthstone/dwarf_fortress_mcp",
+    "url": "https://github.com/Dicklesworthstone/dwarf_fortress_mcp",
+    "raw_score": 317,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:46Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "A semantic, transactional, replayable MCP control plane that lets autonomous AI agents operate Dwarf Fortress as a long-lived civilization. Safe-Rust phase-0B scaffold: MVCC world state, witnessed ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 23,
+      "topic": "llm-tools"
+    },
+    "id": "433f8b260526a6f54298e55d3f62efad1ae9f40d323e6bd7b5ac4355e153b53b"
+  },
+  {
+    "source": "github",
+    "title": "Jackalope-Dev/all-mcps",
+    "url": "https://github.com/Jackalope-Dev/all-mcps",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:34Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "The open directory for Model Context Protocol (MCP) servers - discover, evaluate, and install 22,000+ servers for Claude, Cursor, and AI agents. - Jackalope-Dev/all-mcps",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 10,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "568d53059c329c6c25207596ee886a939280a6ea0e0b25b875dbc31d48a2a94e"
+  },
+  {
+    "source": "github",
+    "title": "Arasz/ai-raccoon",
+    "url": "https://github.com/Arasz/ai-raccoon",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:41Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Give AI agents a memory that outlives the session: local-first SQLite per project,   hybrid search, workspace sandboxes, and optional cloud sync. - Arasz/ai-raccoon",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "fe1d11930fb12e696554282887df761d20fc4c9c1df23104e64497209f6b0e98"
+  },
+  {
+    "source": "github",
+    "title": "T-Crypt/speculum",
+    "url": "https://github.com/T-Crypt/speculum",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:49:33Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "monitor for a local LLM runtime (llama-swap, NInfer, Strata, more) - T-Crypt/speculum",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "5e65f685d89590ef733d433e47b6d60137b194cbea1e3b15144727e08d81ca14"
+  },
+  {
+    "source": "github",
+    "title": "branchbox/branchbox",
+    "url": "https://github.com/branchbox/branchbox",
+    "raw_score": 446,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:48:52Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Parallel, isolated dev environments for humans and AI coding agents. Real containers. Real databases. Zero collisions. - branchbox/branchbox",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 11,
+      "total_stars": 86,
+      "topic": "llm-tools"
+    },
+    "id": "96f449c0272db67cf843bee88d25f7a155192d8aaf8e150042808311b3ec05ae"
+  },
+  {
+    "source": "github",
+    "title": "cooldandg/tb-query",
+    "url": "https://github.com/cooldandg/tb-query",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:47:52Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "📊 Query TensorBoard event files directly with tb-query for fast analysis, statistics, and integration without needing a running TensorBoard server. - cooldandg/tb-query",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "7c34e2c4ad507535541383b90e3258c8aac0461f573a89c1ce8a7ec9aa792147"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 366,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:45:54Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 38,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 179,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:45:39Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 5,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "vesslina/mikrotik-harness",
+    "url": "https://github.com/vesslina/mikrotik-harness",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:43:33Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "MikroTik Harness - AI Agents A tool designed to configure MikroTik hardware using the LLM Agent, add your OpenAI compatible API keys or use local models via LM Studio. - vesslina/mikrotik-harness",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "llm-tools"
+    },
+    "id": "cdb1a4727194207460754867b322f1aabbffa17a45caa967d1970738d3aabab7"
+  },
+  {
+    "source": "github",
+    "title": "aisenseapi/aisense-free-public-rest-apis",
+    "url": "https://github.com/aisenseapi/aisense-free-public-rest-apis",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:43:04Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Free, public, no-auth REST APIs from AI SENSE AS — clients for OpenClaw, Python, JavaScript, OpenAI function calling, Claude, and many more - aisenseapi/aisense-free-public-rest-apis",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "588ee49e74e40af221b82b21744c812abb9bcc25919864ff36a8056713bb25b1"
+  },
+  {
+    "source": "github",
+    "title": "NestHunter/cloud-security-portfolio",
+    "url": "https://github.com/NestHunter/cloud-security-portfolio",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:09Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Central portfolio hub for my AWS and cloud security learning journey — labs, projects, and write-ups. - NestHunter/cloud-security-portfolio",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "7e70e65415eccb0b4dcb9abb7f7a88d016aae8b107f56020f33769759bcf19d1"
+  },
+  {
+    "source": "github",
+    "title": "vrozaksen/home-ops",
+    "url": "https://github.com/vrozaksen/home-ops",
+    "raw_score": 283,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:07Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Another Kubernetes repo — because one more won’t hurt. - vrozaksen/home-ops",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 28,
+      "total_stars": 16,
+      "topic": "terraform"
+    },
+    "id": "a97d8a4af456dd0001a63de5d8201c64e6d3663a2fb2aa0ad6e74e82d13f7227"
+  },
+  {
+    "source": "github",
+    "title": "dscalexandre/banking-fraud-data-ingestor",
+    "url": "https://github.com/dscalexandre/banking-fraud-data-ingestor",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:56Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Módulo de ingestão de dados bancários para detecção de fraudes via pipelines batch, CDC e streaming. - dscalexandre/banking-fraud-data-ingestor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "74a10884f9d5beccacbe33ec08169b2f5bd96b9db90cf5c67aa193f07fc9e1e7"
+  },
+  {
+    "source": "github",
+    "title": "UVE-QA/aws-devops-sdet-demo",
+    "url": "https://github.com/UVE-QA/aws-devops-sdet-demo",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:07Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "A deploy → test → approve → promote → destroy pipeline on AWS, which reports on itself and then deletes almost all of itself. - UVE-QA/aws-devops-sdet-demo",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "fce407f437825a3e0ade3481ce8997e06bc799d407152d79dcf653688e92cccc"
+  },
+  {
+    "source": "github",
+    "title": "The-DevOps-Daily/devops-daily",
+    "url": "https://github.com/The-DevOps-Daily/devops-daily",
+    "raw_score": 703,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:04Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "The latest news, tutorials, and guides for DevOps professionals. - The-DevOps-Daily/devops-daily",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 89,
+      "total_stars": 1131,
+      "topic": "terraform"
+    },
+    "id": "9685c48a77e373dd452d43ab8833fdf8ee42727f09e06722369c4a7e614ce19d"
+  },
+  {
+    "source": "github",
+    "title": "BananaPuke/pdf-brain",
+    "url": "https://github.com/BananaPuke/pdf-brain",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:59Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "📚 Index and enrich your PDFs and Markdown files locally for a powerful, unified knowledge base with semantic search capabilities. - BananaPuke/pdf-brain",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "terraform"
+    },
+    "id": "ecd786bed35924ffb91c5efa1a90f8b7690729ccb83f4057ece54400f4031009"
+  },
+  {
+    "source": "github",
+    "title": "0103juan/terraform-aws-platform",
+    "url": "https://github.com/0103juan/terraform-aws-platform",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:42Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Terraform modules for a service on AWS: VPC, EKS, RDS for PostgreSQL, ElastiCache, pod identity and GitHub OIDC, with tests that plan against a mocked provider - 0103juan/terraform-aws-platform",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "7494d032caca3e07331c34aee1a91dc3957506e65980fc6a19102e7f90a81c9e"
+  },
+  {
+    "source": "github",
+    "title": "devopscorner/demo",
+    "url": "https://github.com/devopscorner/demo",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:39Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Demo Repository for PoC (Proof-of-Concepts). Contribute to devopscorner/demo development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 4,
+      "topic": "terraform"
+    },
+    "id": "6a17ac36bdc7385edc04fdcd03756c3d95b6a1d26dfd24a0119e779ef22f68c2"
+  },
+  {
+    "source": "github",
+    "title": "chukwu-patrick/five-worker",
+    "url": "https://github.com/chukwu-patrick/five-worker",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:35Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🌐 Enhance your connectivity with the five-worker, supporting VLESS, TROJAN, XHTTP, Shadowsocks, and Socks5 protocols for seamless node access. - chukwu-patrick/five-worker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "terraform"
+    },
+    "id": "f9ae9b93384c1d32a8263efb3974a9f13c96e93afddd3b43cca8b20e7cd38824"
+  },
+  {
+    "source": "github",
+    "title": "Agnelo-72/devops-portfolio",
+    "url": "https://github.com/Agnelo-72/devops-portfolio",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:50:00Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "This repository showcases my DevOps hands-on project, including CI/CD pipelines, containerized environments, Infrastructure as Code (Terraform) and cloud automation (AWS).  - Agnelo-72/devops-portf...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "50ab120f06dd98ceaf46f69f3e456fcc599b0bee7f4ab521ca05c1a14bd5b03d"
+  },
+  {
+    "source": "github",
+    "title": "mviraj/KakeyaFiniteFields",
+    "url": "https://github.com/mviraj/KakeyaFiniteFields",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:04Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "📚 Formalize Kakeya sets in finite fields with Lean 4, establishing lower bounds on their size and advancing mathematical understanding in a structured way. - mviraj/KakeyaFiniteFields",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "5fae42651e23373328cf02e680223f05b19a96daf7f8382be41a40fe5955d039"
+  },
+  {
+    "source": "github",
+    "title": "magertron/orchestrator",
+    "url": "https://github.com/magertron/orchestrator",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:24Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Enterprise MCP Server Management. Contribute to magertron/orchestrator development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "619704032c2d13bfe2dee7faa35802e992ebf4ad32e24eee058cf11946b8f1de"
+  },
+  {
+    "source": "github",
+    "title": "barone-unuakpor/threat-intel-mailing-lists",
+    "url": "https://github.com/barone-unuakpor/threat-intel-mailing-lists",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:18Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "📧 Curate threat intelligence with mailing lists and newsletters for consistent updates critical to CTI analysts, SOC teams, and security researchers. - barone-unuakpor/threat-intel-mailing-lists",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "0baf7f25c7385b9edec6fd47425464736a8a6c19cac75a84ee7df76e5bd4369a"
+  },
+  {
+    "source": "github",
+    "title": "br-bruno/RWA-DeFi-Contract",
+    "url": "https://github.com/br-bruno/RWA-DeFi-Contract",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:53:14Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🏡 Tokenize real-world assets for real estate auctions and mortgage lending, enabling global lending and capital efficiency in decentralized finance. - br-bruno/RWA-DeFi-Contract",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "fd4694afdf8f8fe723122c06a11b2c624b5c23b17720ae04fd84b5b0d93840ac"
+  },
+  {
+    "source": "github",
+    "title": "vimatech-io/laravel-audit-log",
+    "url": "https://github.com/vimatech-io/laravel-audit-log",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:51:24Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Append-only, tenant-aware audit log for Laravel. Contribute to vimatech-io/laravel-audit-log development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "b869bc1b1701c4e29386d7b466824bcbd042315bbe88c33acf20adedbdb76585"
+  },
+  {
+    "source": "github",
+    "title": "aryanpatel142006/shredsafe",
+    "url": "https://github.com/aryanpatel142006/shredsafe",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:50:45Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Defensible disposal for financial advisors: AI-classified retention, Macie risk scoring, and a tamper-evident audit log on AWS (Bedrock, Macie, Lambda, S3 Object Lock). - aryanpatel142006/shredsafe",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "b986bdc6931c3d095a88ac925dacb0dbe49bad8f232ab540195a058bad346ea0"
+  },
+  {
+    "source": "github",
+    "title": "autional-cn/trust",
+    "url": "https://github.com/autional-cn/trust",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:50:22Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Autional 信任中心 —— 安全实践、数据保护与合规建设进展说明。. Contribute to autional-cn/trust development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "f67d50e01e04c133f9bad4919a1b0ec003d49404e90d7db03b6abb75ee4b7ca0"
+  },
+  {
+    "source": "github",
+    "title": "rahulgurujala/gst-validator",
+    "url": "https://github.com/rahulgurujala/gst-validator",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:48:59Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Validate Indian GSTINs and fetch taxpayer details from the GST portal. Typed Python library and CLI. - rahulgurujala/gst-validator",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "10a91d4bba1e34a2414877e3c67b1bf4abe66bdf68a62deef8ad3b2614e941dc"
+  },
+  {
+    "source": "github",
+    "title": "LuisFelipeextt/SAF",
+    "url": "https://github.com/LuisFelipeextt/SAF",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:48:15Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🛠️ Automate Stripe checkout form testing with SAF, featuring card generation, address management, and IP geolocation for efficient and accurate transactions. - LuisFelipeextt/SAF",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "b869a814ed5fee5c551b73d613e340763d4f4ba6b8653fbfd771cd839eaabbb3"
+  },
+  {
+    "source": "github",
+    "title": "kody32/eu-ai-act-guide",
+    "url": "https://github.com/kody32/eu-ai-act-guide",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:47:44Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "🌐 Navigate EU AI Act and GDPR compliance with this interactive guide, featuring risk assessments and tailored recommendations for startups and SMEs. - kody32/eu-ai-act-guide",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "bd2513f7830f53970a254fd1ec4e2d8aa83d44837efaa00268e167ebbc597387"
+  },
+  {
+    "source": "github",
+    "title": "douglascroti/conciliacao-cartoes-spring-kafka",
+    "url": "https://github.com/douglascroti/conciliacao-cartoes-spring-kafka",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:31Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Conciliação de cartões adquirente × emissor: S3 → Lambda → Kafka → Spring Batch → PostgreSQL. 1 milhão de linhas em ~100 s, idempotência, restart e testes com Testcontainers. 100% local com Docker ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "e656b49a93b6941d0b5cb334a18e5577c78f55f538ffe96030946dfb16ba2c6f"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:25Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "douglac/contaazul-mcp",
+    "url": "https://github.com/douglac/contaazul-mcp",
+    "raw_score": 256,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:18Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Conta Azul MCP — conecte o ERP Conta Azul ao Claude, Cursor e agentes de IA. Vendas, clientes, produtos, contas a pagar/receber, parcelas e NF-e em linguagem natural. 35 ferramentas, OAuth 2.0, lê ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 12,
+      "topic": "fintech"
+    },
+    "id": "5b53cad28e74c24508cf5de20230d299f3b0199f0d8ccab55bebfe23778efacd"
+  },
+  {
+    "source": "github",
+    "title": "a-bhimava/llm-credit-decision-audit",
+    "url": "https://github.com/a-bhimava/llm-credit-decision-audit",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:12Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Does an AI loan agent&#39;s stated denial reason match the reason it actually acted on? A causal audit harness that repairs the cited factor and replays the application to find out. LLM evaluation ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "328b2345294de2cefc48db716d427617b50a8c531b3361f79a26da4da5fbd9a1"
+  },
+  {
+    "source": "github",
+    "title": "baneeishaque/account-ledger-cli-kotlin",
+    "url": "https://github.com/baneeishaque/account-ledger-cli-kotlin",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:54:51Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "Highly performant, type-safe command-line accounting ledger built with Kotlin &amp; GraalVM, featuring hierarchical account management, automated balance sheet generation, and GitHub Gist synchroni...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 15,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "2073e12ad8da20896d43087bc1d0aba33d0757e89c08bb5c415450666641548f"
+  },
+  {
+    "source": "github",
+    "title": "luisdj10/QANTO",
+    "url": "https://github.com/luisdj10/QANTO",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:55Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "💻 Build and explore the Qanto Protocol, a Rust-based Layer-0 blockchain designed for post-quantum security and AI integration. - luisdj10/QANTO",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "ea6b5979a7b084a338c8d7cbfe9d6e20471268ae274c507230238eeaec889b32"
+  },
+  {
+    "source": "github",
+    "title": "dogaanismail/multi-agents-in-fintech-regulatory-compliance",
+    "url": "https://github.com/dogaanismail/multi-agents-in-fintech-regulatory-compliance",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:52:22Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "An AI-native, event-driven Digital Banking platform. 3 cooperative ML agents + a MADDPG orchestrator detecting AML across 22 microservices with XAI. - dogaanismail/multi-agents-in-fintech-regulator...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 31,
+      "total_stars": 3,
+      "topic": "fintech"
+    },
+    "id": "581f50da2c678c16fcb5b0b718a52cf4bc8d2b5e57668518cee4a07d730805d3"
+  },
+  {
+    "source": "github",
+    "title": "Ziadtareks/paysync-gateway",
+    "url": "https://github.com/Ziadtareks/paysync-gateway",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T19:49:06Z",
+    "fetched_at": "2026-10-05T19:54:10.974224+00:00",
+    "excerpt": "📲 24/7 SMS payment-verification gateway for Egyptian mobile wallets (Vodafone Cash, InstaPay). Polls your backend, matches wallet SMS, dispatches HMAC-signed results. Kotlin + Jetpack Compose. - Zi...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "fintech"
+    },
+    "id": "d3e2dda8e3381ecc1b939f1079c37f94e52658d3bc500bf6fe7a127c11f03c20"
+  }
+]

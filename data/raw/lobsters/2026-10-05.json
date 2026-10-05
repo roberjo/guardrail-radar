@@ -1,0 +1,38 @@
+[
+  {
+    "source": "lobsters",
+    "title": "From: anyone@icloud.com - Spoofing Arbitrary Apple iCloud Identities",
+    "url": "https://sec-consult.com/blog/detail/from-anyoneicloudcom-spoofing-arbitrary-apple-icloud-identities",
+    "raw_score": 7,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T01:50:55.660-05:00",
+    "fetched_at": "2026-10-05T19:49:08.831993+00:00",
+    "excerpt": "A case study on discovering two email spoofing vulnerabilities in Apple iCloud.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "jpwrmk",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "e05595196713da1376d4d401c1de2cb58af570abc9f6367ecdf3e03b04ef52dc"
+  },
+  {
+    "source": "lobsters",
+    "title": "RIP, vector database",
+    "url": "https://turbopuffer.com/blog/rip-vector-database",
+    "raw_score": -1,
+    "comment_count": 0,
+    "posted_at": "2026-10-04T23:51:15.138-05:00",
+    "fetched_at": "2026-10-05T19:49:08.831993+00:00",
+    "excerpt": "turbopuffer is pushing the frontier of search. To do that, we have to fundamentally redesign our storage architecture so the vector index is no longer primary.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0gtsir",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "ed68526f7a15f49a5107c6c991e1e0e04bdad645e6c78fbf8669552aead13fa6"
+  }
+]
