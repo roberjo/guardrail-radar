@@ -1,0 +1,58 @@
+[
+  {
+    "source": "lobsters",
+    "title": "AI Just Became Humanity’s Biggest Threat",
+    "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
+    "raw_score": -2,
+    "comment_count": 0,
+    "posted_at": "2026-10-06T06:17:45.095-05:00",
+    "fetched_at": "2026-10-06T17:28:48.728234+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vlzvvz",
+      "tags": [
+        "ai",
+        "video"
+      ]
+    },
+    "id": "e93253f54116f4cab88142e305eb9bc0d62f84c9e4a5506d02ad1c75c3f4b24b"
+  },
+  {
+    "source": "lobsters",
+    "title": "Two arm64-specific miscompiles induce vulnerabilities in curl",
+    "url": "https://mastodon.social/@bagder/117392573268225646",
+    "raw_score": 7,
+    "comment_count": 2,
+    "posted_at": "2026-10-06T02:52:24.425-05:00",
+    "fetched_at": "2026-10-06T17:28:48.728234+00:00",
+    "excerpt": "This week in #curl we get to experience not one, but two compiler bugs. All research by @vsz.\n\nTwo arm64-specific compiler optimization bugs, in gcc-15/16 and Rust respectively:\n\nhttps://github.com/curl/curl/issues/23237",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fu57cb",
+      "tags": [
+        "compilers",
+        "security"
+      ]
+    },
+    "id": "16806dc14c8271a8d0c6014c0a51be40b667aa70ff73659a92fd97ad62dfcbca"
+  },
+  {
+    "source": "lobsters",
+    "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+    "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability",
+    "raw_score": 8,
+    "comment_count": 0,
+    "posted_at": "2026-10-05T18:03:17.096-05:00",
+    "fetched_at": "2026-10-06T17:28:48.728234+00:00",
+    "excerpt": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gm2ziy",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "c657a4eeb7c1b1a54b97551f58ea622cd24586c24a98f3aea70950db1c2d44a2"
+  }
+]
