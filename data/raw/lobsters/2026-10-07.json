@@ -1,0 +1,169 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Hello, my name is Orca",
+    "url": "https://linnemanlabs.com/posts/hello-my-name-is-orca",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T12:28:43.768-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "Any unprivileged app can claim Orca's D-Bus name and read raw Wayland keystrokes - passwords included.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ffn6sm",
+      "tags": [
+        "a11y",
+        "linux",
+        "security"
+      ]
+    },
+    "id": "1783d540bfa96f8c4ba7b2e48f433325c479ed31301569c35a0fe90d8ed0857f"
+  },
+  {
+    "source": "lobsters",
+    "title": "Zeroization, part 1: Wiping can make things worse",
+    "url": "https://00f.net/2026/10/06/zeroization-1",
+    "raw_score": 4,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T11:22:50.826-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "A good hygiene when processing secrets is to wipe them after use.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "4hxxad",
+      "tags": [
+        "compilers",
+        "security"
+      ]
+    },
+    "id": "bdc7d350ae05f19b9f711869888a66cf9c74dda2f2c5c1230d447e03cda32209"
+  },
+  {
+    "source": "lobsters",
+    "title": "Cyber guardrails tax the defender, not the attacker",
+    "url": "https://winfunc.com/research/cyber-guardrails-tax-the-defender-not-the-attacker",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T10:05:37.340-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "Hugging Face had to fall back on an open-weight model to investigate an AI-run intrusion after Claude refused. That isn't a one-off.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "bdm3sy",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "217c9e574137816e55b7014749f3ba97a28f0dde5286027e70e5e413929f5d3d"
+  },
+  {
+    "source": "lobsters",
+    "title": "Twenty-two pending curl vulnerabilities",
+    "url": "https://daniel.haxx.se/blog/2026/10/07/twenty-two-pending-curl-vulnerabilities",
+    "raw_score": 8,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T10:04:10.849-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "On October 14 2026 we will ship curl 8.23.0. The next iteration in the never-ending series of version bumps from the curl project. We always think of the next release as the best version we ever did - and this time is no exception. Decades of collected experiences and meticulous polishing has lead us to … Continue reading Twenty-two pending curl vulnerabilities →",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "lu8hl9",
+      "tags": [
+        "release",
+        "security"
+      ]
+    },
+    "id": "d1a72d6ff6403f5429cd7ad369a357438e8dacb12046bdd24a8e1382f0d49d5f"
+  },
+  {
+    "source": "lobsters",
+    "title": "Best Books/Courses/Channels to Leapfrog on AI/ML Material",
+    "url": "https://lobste.rs/s/xff77a/best_books_courses_channels_leapfrog_on",
+    "raw_score": 3,
+    "comment_count": 1,
+    "posted_at": "2026-10-07T09:12:02.815-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "1 comment",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "xff77a",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "29b3791610079e4bf2bca8520e682e64f87bfac5d5a934a0841755beaae62cd8"
+  },
+  {
+    "source": "lobsters",
+    "title": "Chromium Hardening Guide",
+    "url": "https://rknf404.github.io/chromium-hardening-guide",
+    "raw_score": 3,
+    "comment_count": 2,
+    "posted_at": "2026-10-07T09:06:59.941-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "The following guide will assist in setting up and using a Chromium based browser with the flags and policies present in this repo. It will cover 3 main sections: selecting a browser (covering forks, options for different OSes and alternatives to Chromium should they be viable), applying policies (only for Linux and Windows, maybe MacOS, but notes for other OSes where applicable), and persisting flags (only covering a few OSes since not all of them support proper flag persistence). The primary focus will be on Linux and Windows , but notes for Android and MacOS will be spread throughout where it makes sense.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "qffffv",
+      "tags": [
+        "browsers",
+        "security"
+      ]
+    },
+    "id": "aea17cad239cb9126e2a69cb93402ba4f54691531767ae1073d74d409d99599e"
+  },
+  {
+    "source": "lobsters",
+    "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+    "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T08:39:28.274-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge and how we're responding.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0z17kf",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "6fd3a46f2d7c1938205dc35a1d2c2dc18e0060f79c0d831361735cffeb2e280d"
+  },
+  {
+    "source": "lobsters",
+    "title": "Sharing AI progress in mathematics",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+    "raw_score": -1,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T04:45:45.842-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "yo3xw9",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "00427e47df5ef3064509e152a77372922244883355c7072ea1ab24de41848a25"
+  },
+  {
+    "source": "lobsters",
+    "title": "That Time I Worked With a Laptop Thief (2025)",
+    "url": "https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief",
+    "raw_score": 82,
+    "comment_count": 19,
+    "posted_at": "2026-10-06T15:16:33.717-05:00",
+    "fetched_at": "2026-10-07T18:01:05.071323+00:00",
+    "excerpt": "Please don't be like this guy.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "0slgpl",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "99164513f51ca2207ace96eb2e71d87cc2e755ba2c631e007d11ea48f38be5ca"
+  }
+]

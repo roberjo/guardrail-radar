@@ -1,0 +1,801 @@
+[
+  {
+    "source": "github",
+    "title": "linny006/cursor-rules-live",
+    "url": "https://github.com/linny006/cursor-rules-live",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:40Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Live index of cursor-rules files from GitHub, updated every 15 minutes - linny006/cursor-rules-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 3,
+      "topic": "ai-coding"
+    },
+    "id": "2ee951415b21a6d29cd6951b52d89a7c3095fb604e329d0c7ff5cc8f55164719"
+  },
+  {
+    "source": "github",
+    "title": "linny006/skills-tracker",
+    "url": "https://github.com/linny006/skills-tracker",
+    "raw_score": 317,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:36Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Real-time tracking of every new GitHub 'skills' repo to capture the AI agent skill ecosystem trend - linny006/skills-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 23,
+      "topic": "ai-coding"
+    },
+    "id": "490fb02e63112cc1c6b6f3f420d284f04e35f341e4ee6dc7ef283e5be7fb110d"
+  },
+  {
+    "source": "github",
+    "title": "linny006/trending-claude-skills",
+    "url": "https://github.com/linny006/trending-claude-skills",
+    "raw_score": 482,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:14Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes - linny006/trending-claude-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 123,
+      "topic": "ai-coding"
+    },
+    "id": "dc52166f96658abee27f0980ebba5f659a2a93e847065979bfd5a2f17410fa10"
+  },
+  {
+    "source": "github",
+    "title": "MichaelKinsy/PiG",
+    "url": "https://github.com/MichaelKinsy/PiG",
+    "raw_score": 628,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:12Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "PiG (Pi in Go) is a faithful Go port of upstream Pi, the TypeScript codebase behind the Pi coding agent. It is a parity-bound translation, not a rewrite: upstream behavior is the contract, and Go i...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 11,
+      "total_stars": 535,
+      "topic": "ai-coding"
+    },
+    "id": "b12b5027384e54321378dc6287ff14af835eb1a11c0fa4061fed1cf031c5d37d"
+  },
+  {
+    "source": "github",
+    "title": "webamigos/RagenAI",
+    "url": "https://github.com/webamigos/RagenAI",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:50Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Open-source knowledge platform for companies: knowledge layer, RAG, permission-aware access, integrations, MCP. Every answer cites its source document. Any model: AWS Bedrock, Azure, Ollama, Portke...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 14,
+      "total_stars": 2,
+      "topic": "ai-coding"
+    },
+    "id": "c7832ec5aa9bfd915225ae0c05e984da5bdcb1d1a708f26056c291aedc9a4fe7"
+  },
+  {
+    "source": "github",
+    "title": "marcusquinn/aidevops",
+    "url": "https://github.com/marcusquinn/aidevops",
+    "raw_score": 600,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:01:00Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Vibe-Coding is easy. DevOps is hard. OpenCode &amp; Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI &amp; API stack for sp...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 29,
+      "total_stars": 406,
+      "topic": "ai-coding"
+    },
+    "id": "2f83a1b91c2ce96e084b513d5380d14610a5c87da1721b65b854260e6ff20a2e"
+  },
+  {
+    "source": "github",
+    "title": "superset-sh/superset",
+    "url": "https://github.com/superset-sh/superset",
+    "raw_score": 961,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:04Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Superset is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription. - superset-sh/superset",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 897,
+      "total_stars": 14964,
+      "topic": "ai-coding"
+    },
+    "id": "476695a4bb39f6258df6cb3d1a7a4011b73d1d0df453572a32f1401b5b7faa95"
+  },
+  {
+    "source": "github",
+    "title": "dceoy/ai-coding-agent-skills",
+    "url": "https://github.com/dceoy/ai-coding-agent-skills",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:55Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Agent skills for AI coders. Contribute to dceoy/ai-coding-agent-skills development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 4,
+      "topic": "ai-coding"
+    },
+    "id": "4d6f96621b9c3e9eeb74a86df769187faceb2de7120994e175c900831c190cb3"
+  },
+  {
+    "source": "github",
+    "title": "ericfitz/agentbus",
+    "url": "https://github.com/ericfitz/agentbus",
+    "raw_score": 160,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:40Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "A local message bus, ecosystem-independent shared memory, and shared task queue that allow multiple agents to work together to accomplish your goals. - ericfitz/agentbus",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 4,
+      "topic": "ai-coding"
+    },
+    "id": "72aca55ff67d3e63d24b94067f7ac3800c31640e44b67f68f181dfea4752ac16"
+  },
+  {
+    "source": "github",
+    "title": "imhamzakhan/context-flow-compressor",
+    "url": "https://github.com/imhamzakhan/context-flow-compressor",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:10Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Top Token-Saving AI Coding Tools 2026: Local Memory MCP Cuts Costs 90% - imhamzakhan/context-flow-compressor",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 1,
+      "topic": "ai-coding"
+    },
+    "id": "a833e22012055106d7efb0f7b6a713443f9d0e2108bffe88e67d97485f98176b"
+  },
+  {
+    "source": "github",
+    "title": "linny006/mcp-servers-live",
+    "url": "https://github.com/linny006/mcp-servers-live",
+    "raw_score": 256,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:55Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes - linny006/mcp-servers-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 12,
+      "topic": "llm-tools"
+    },
+    "id": "4410c79e9c839e38b7d00ef5449b89ebcbfbba3f3be7827a93a678ffa6caef5e"
+  },
+  {
+    "source": "github",
+    "title": "aisenseapi/aisense-free-public-rest-apis",
+    "url": "https://github.com/aisenseapi/aisense-free-public-rest-apis",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:40Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Free, public, no-auth REST APIs from AI SENSE AS — clients for OpenClaw, Python, JavaScript, OpenAI function calling, Claude, and many more - aisenseapi/aisense-free-public-rest-apis",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "588ee49e74e40af221b82b21744c812abb9bcc25919864ff36a8056713bb25b1"
+  },
+  {
+    "source": "github",
+    "title": "linny006/awesome-agent-skills",
+    "url": "https://github.com/linny006/awesome-agent-skills",
+    "raw_score": 368,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:39Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Curated, auto-updated awesome-list of vetted AI agent skills with quality ratings for Claude, GPT, a - linny006/awesome-agent-skills",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 9,
+      "total_stars": 39,
+      "topic": "llm-tools"
+    },
+    "id": "f55b18bd8d37f0cd4da7dbfc97d35002d7b2a016af2a0e32a50fac4b3f51cba5"
+  },
+  {
+    "source": "github",
+    "title": "linny006/prompt-tools-live",
+    "url": "https://github.com/linny006/prompt-tools-live",
+    "raw_score": 248,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:34Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Live-updating tracker of prompt engineering tools, libraries, and techniques — refreshed every 15 mi - linny006/prompt-tools-live",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 11,
+      "topic": "llm-tools"
+    },
+    "id": "71bbd071b1a2dfe018312434839baa274651c384d3852b5894cdbf0019689dff"
+  },
+  {
+    "source": "github",
+    "title": "linny006/llm-eval-tracker",
+    "url": "https://github.com/linny006/llm-eval-tracker",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:26Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub - linny006/llm-eval-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 6,
+      "topic": "llm-tools"
+    },
+    "id": "7e92f04f6712b2f6b95027f99c64aebade1e7d7973d31835c873006b856a0f51"
+  },
+  {
+    "source": "github",
+    "title": "linny006/rag-radar",
+    "url": "https://github.com/linny006/rag-radar",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:25Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes - linny006/rag-radar",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 3,
+      "topic": "llm-tools"
+    },
+    "id": "f9a2d5dbace30dd9a71f4dabbfd024131fd54285d7d570c30a817544050f5bf8"
+  },
+  {
+    "source": "github",
+    "title": "linny006/claude-code-plugin-tracker",
+    "url": "https://github.com/linny006/claude-code-plugin-tracker",
+    "raw_score": 194,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:22Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Live index of Claude Code extensions, hooks, and plugins — refreshed every 15 minutes from GitHub - linny006/claude-code-plugin-tracker",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 4,
+      "total_stars": 6,
+      "topic": "llm-tools"
+    },
+    "id": "5d81d46e32b071a920bb3198661b455c5b34069bf634f05389e1381d4e0297bc"
+  },
+  {
+    "source": "github",
+    "title": "MBarc/circuitoon",
+    "url": "https://github.com/MBarc/circuitoon",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:27Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Circuit diagrams AI agents can design, check and hand you. - MBarc/circuitoon",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "llm-tools"
+    },
+    "id": "15a70c10da99266e45ab673065b7222db7e27dc7bd47aeed0a14f24afd74b875"
+  },
+  {
+    "source": "github",
+    "title": "starcraft66/infrastructure",
+    "url": "https://github.com/starcraft66/infrastructure",
+    "raw_score": 373,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:54Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Infrastructure as code for my servers. Contribute to starcraft66/infrastructure development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 41,
+      "topic": "terraform"
+    },
+    "id": "72649c63d8b88cd725160909adcc67dc21a545f09aeb9a888dd748f4b3dc09cf"
+  },
+  {
+    "source": "github",
+    "title": "cloud-custodian/cloud-custodian",
+    "url": "https://github.com/cloud-custodian/cloud-custodian",
+    "raw_score": 871,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:37Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Rules engine for cloud security, cost optimization, and governance, DSL in yaml for policies to query, filter, and take actions on resources - cloud-custodian/cloud-custodian",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1779,
+      "total_stars": 6078,
+      "topic": "terraform"
+    },
+    "id": "98b31377f91d6cf815b0a7bd1ae4cf38de1f7b9944db18bc786136675717f98b"
+  },
+  {
+    "source": "github",
+    "title": "sauna-crossbar-41/Code-Terraform-Community-2026",
+    "url": "https://github.com/sauna-crossbar-41/Code-Terraform-Community-2026",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:26Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Standalone Community Edition of Code: Terraform with all content included. Offline, self-contained package — no additional software required. - sauna-crossbar-41/Code-Terraform-Community-2026",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "e2eafaeb56876688ea0fed4d4a7e4266008c57baaa36de63aa17124eec146c88"
+  },
+  {
+    "source": "github",
+    "title": "MatLock/UdeSA-lynq",
+    "url": "https://github.com/MatLock/UdeSA-lynq",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:25Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Job-search platform built as a microservice stack: Spring Boot services behind a single gateway, a React 19 web app, FastAPI services for the   LLM features — resume parsing, translation, skill mat...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "20bba0ba559adf7be4ca504cf7910633501461dd94e22143db637d0839b90f11"
+  },
+  {
+    "source": "github",
+    "title": "40net-cloud/fortinet-azure-solutions",
+    "url": "https://github.com/40net-cloud/fortinet-azure-solutions",
+    "raw_score": 443,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:05Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "A set of Azure Templates for getting you started in Azure with Fortinet solutions. This repository is a place for beta releases and work on the latest templates to be published on github.com/fortin...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 83,
+      "topic": "terraform"
+    },
+    "id": "bc617a9052404211fdc348b9e4cac2f7762e0931058bc6e11bd5d5f7ace86396"
+  },
+  {
+    "source": "github",
+    "title": "hashicorp/terraform-provider-azurerm",
+    "url": "https://github.com/hashicorp/terraform-provider-azurerm",
+    "raw_score": 851,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:14Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Terraform provider for Azure Resource Manager. Contribute to hashicorp/terraform-provider-azurerm development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2976,
+      "total_stars": 4975,
+      "topic": "terraform"
+    },
+    "id": "6071aeb9e1e577cf6627d862f757de9338d761f53557ef24ff4928d672ee854c"
+  },
+  {
+    "source": "github",
+    "title": "Sivakumar1529/terraform-provider-clickhouse",
+    "url": "https://github.com/Sivakumar1529/terraform-provider-clickhouse",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:06Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Terraform Provider for ClickHouse Cloud. Contribute to Sivakumar1529/terraform-provider-clickhouse development by creating an account on GitHub.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "77de019f3fb83c5b73e7b04856f34e0f54dad31e9cb8868e1fa9e00792a96761"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/stainless",
+    "url": "https://github.com/api-evangelist/stainless",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:25Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Stainless — independent third-party profile of a public API surface, by API Evangelist. Stainless is an API developer experience platform that generates best-in-class SDKs, interactive documentatio...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "0e6d83ad770af6bdc2412621125bb85f784ebc2118796edd67ac2805a4d29cd8"
+  },
+  {
+    "source": "github",
+    "title": "AaqibRaina/SquidOps",
+    "url": "https://github.com/AaqibRaina/SquidOps",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:15Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "SquidOps: Deploy Subsquid Indexers at Scale with Ease. - AaqibRaina/SquidOps",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "02d5d261d9c3b1ba1a5d01819f2c3117bb2a51c2e2c06b81512302731a615a97"
+  },
+  {
+    "source": "github",
+    "title": "waldoibarra/portfolio",
+    "url": "https://github.com/waldoibarra/portfolio",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:02Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "My very own portfolio website to showcase myself! ❤️ - waldoibarra/portfolio",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 2,
+      "total_stars": 0,
+      "topic": "terraform"
+    },
+    "id": "165f9fc3272e6f96f67358b96925e238bd4724ab42b136f7e8e5e39ef97b7633"
+  },
+  {
+    "source": "github",
+    "title": "magdsy020/iOS-Enterprise-Security-Framework",
+    "url": "https://github.com/magdsy020/iOS-Enterprise-Security-Framework",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:01:11Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "iOS Enterprise Security Framework offers a secure, modular library for encryption, auth, and MDM built with Swift 5.9 for iOS 15+, including AES 🐙 - magdsy020/iOS-Enterprise-Security-Framework",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "9a389fbfe5362587a79d026eb00b94be50622a0e18dd9f6ab7d9fe754ece7d19"
+  },
+  {
+    "source": "github",
+    "title": "asmamasrafi/cybersecurity-maturity-assessment",
+    "url": "https://github.com/asmamasrafi/cybersecurity-maturity-assessment",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:16Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Cybersecurity maturity assessment platform for SMEs based on the CMRPI/AUSIM framework. - asmamasrafi/cybersecurity-maturity-assessment",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "4b479d110f3d9f59bbb861187e0b8d041c26cd334c95c5491a1add56c12913eb"
+  },
+  {
+    "source": "github",
+    "title": "DataDog/dd-license-attribution",
+    "url": "https://github.com/DataDog/dd-license-attribution",
+    "raw_score": 256,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:57:23Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "A tool that uses several heuristics to try to get the licenses and copyright attributions of the 3rd party dependencies of a repository - DataDog/dd-license-attribution",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 12,
+      "topic": "compliance"
+    },
+    "id": "b73e084e5f7cb5b4b4a28f39fcff90e16862f1aa9509b27d023cc5dae775db30"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/a11oy",
+    "url": "https://github.com/szl-holdings/a11oy",
+    "raw_score": 69,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:57:13Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "a11oy — governed-AI Command Center. Deny by default. Signed receipts. Trust ceiling 0.97. Λ = Conjecture 1. - szl-holdings/a11oy",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 53,
+      "total_stars": 1,
+      "topic": "compliance"
+    },
+    "id": "413f56f31618e17f6356c644098e0e1b43d6551172e706d24fb9031830a384ed"
+  },
+  {
+    "source": "github",
+    "title": "szl-holdings/killinchu",
+    "url": "https://github.com/szl-holdings/killinchu",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:22Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Counter-UAS reference at /elite. Tracks, fusion, ROE, BFT, DSSE per interdiction. Public synthetic — no public effector. Λ = Conjecture 1. - szl-holdings/killinchu",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 7,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "2da5e8d72789fcf0228e4bebabdbf3da3ef872d4e85e10286bec15a1e499eb2e"
+  },
+  {
+    "source": "github",
+    "title": "xgr-network/XGR",
+    "url": "https://github.com/xgr-network/XGR",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:56:02Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Public Repository for documentation, public smart contracts and standardization - xgr-network/XGR",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 1,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "0a61c0c796f49857cc1d7bb65db76b7cc594f6634268bc4ee195e0d9e0ad8fd5"
+  },
+  {
+    "source": "github",
+    "title": "resper1965/n.iso",
+    "url": "https://github.com/resper1965/n.iso",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:54:23Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "n.iso — plataforma de adequação ISO 27001/27701 da ness. - resper1965/n.iso",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "d4e627214cdd55dd6a7df06fa4d90ae6a2ed8aa170cb3c8b91e12ab7c20ad2ec"
+  },
+  {
+    "source": "github",
+    "title": "matiasmaquieira96/prometiam-risk-mcp",
+    "url": "https://github.com/matiasmaquieira96/prometiam-risk-mcp",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:54:14Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "MCP server for European company data: Spain, France, the UK, Ireland, Poland, Norway, Finland, Sweden, Croatia, Belgium and Denmark. Official registry lookups, directors, UK beneficial ownership, c...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "compliance"
+    },
+    "id": "0de6f8b4ef13329eee87e5f470a90c1a276859c543a48f3eec383ad2d74f0b3e"
+  },
+  {
+    "source": "github",
+    "title": "divmora/gitlab-fleet-governor",
+    "url": "https://github.com/divmora/gitlab-fleet-governor",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:53:17Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Declarative policy-as-code tool for governing large-scale Gitlab instances. Validate, dry-run, and enforce push rules, protected branches, compliance frameworks, and more across your entire fleet. ...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 6,
+      "total_stars": 2,
+      "topic": "compliance"
+    },
+    "id": "721293ef5af1ddb6015c23ef61945dd35d385c43e37ca5ab1668505138a9c483"
+  },
+  {
+    "source": "github",
+    "title": "rehmatwadii/rehmatwadii",
+    "url": "https://github.com/rehmatwadii/rehmatwadii",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:01:14Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Muhammad Rehmatullah Wadi Wala — QA and business analysis portfolio. - rehmatwadii/rehmatwadii",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "48210b82381212100aa06e7e80c46fc1c83700648efc87c81989c350ac1bf7e8"
+  },
+  {
+    "source": "github",
+    "title": "chirag127/i2i-yield-watch",
+    "url": "https://github.com/chirag127/i2i-yield-watch",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:52Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Automated high-yield loan intelligence for i2iFunding. Scrapes every 5 min, sends Telegram/ntfy/Email/Discord alerts, live Firestore-backed dashboard. - chirag127/i2i-yield-watch",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 5,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "96e4cb915598dc8341bf31ed9b7e72b96e633b4ce3d95b9a8b21c41c7b3227c2"
+  },
+  {
+    "source": "github",
+    "title": "eduair94/cambio-uruguay",
+    "url": "https://github.com/eduair94/cambio-uruguay",
+    "raw_score": 207,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:01Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "cambio-uruguay.com: Uruguay exchange rates, rentals, used cars and prices. Public API, remote MCP server (29 tools, no key) and a Claude skill. - eduair94/cambio-uruguay",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 3,
+      "total_stars": 7,
+      "topic": "fintech"
+    },
+    "id": "147dac213978ec7306299e8060bc68e787adc6a12463dcef1941575c18b9c124"
+  },
+  {
+    "source": "github",
+    "title": "MatMridul/ARIA",
+    "url": "https://github.com/MatMridul/ARIA",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T18:00:34Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "ARIA - Adaptive Revenue Intelligence &amp; Action. An ATLAS-class payment revenue-recovery system: maps payment dependencies as a graph, observes degradation, traces failures to root cause with evi...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "37e8c1edb19bbd477a9131e89d51c3a1a8167d448b762af38b17e489e870bf62"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/stooq",
+    "url": "https://github.com/api-evangelist/stooq",
+    "raw_score": 138,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:50Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Stooq — independent third-party profile of a public API surface, by API Evangelist. Stooq is a Poland-based financial data platform offering free access to historical and current market data for gl...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 3,
+      "topic": "fintech"
+    },
+    "id": "0f498edc9c410baed47b84a7a9d10c2566cac644790cc2e2e278d28bf98daecf"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/stone",
+    "url": "https://github.com/api-evangelist/stone",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:43Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Stone — independent third-party profile of a public API surface, by API Evangelist. Stone is a Brazilian financial technology company offering REST APIs for payment processing, Pix instant payments...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "3f3e1724dd70346f2ec6e557ae24d28499ebdf2ad4bfff2e466a93e71efa597f"
+  },
+  {
+    "source": "github",
+    "title": "asiimwe3/derycode-website",
+    "url": "https://github.com/asiimwe3/derycode-website",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:59:16Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "A project by Asiimwe Derick (Derick Asiimwe / TraderDerick) — DeryCode Technologies, Uganda - asiimwe3/derycode-website",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "044dd5e6e86f009ecdcb12e7e4de98e7a8584fad582be2cd133ff498c85c23fc"
+  },
+  {
+    "source": "github",
+    "title": "tanmaykaper/Paper-Trading-Bot",
+    "url": "https://github.com/tanmaykaper/Paper-Trading-Bot",
+    "raw_score": 109,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:53Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "NSE swing-trading research platform — cross-sectional alpha scoring, LM-based news sentiment, and rigorous A/B backtesting. 100% free data, zero paid APIs. - tanmaykaper/Paper-Trading-Bot",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 2,
+      "topic": "fintech"
+    },
+    "id": "e6f2abd056137823aa9c25a0fb4f418f6ad3fed00a7648336325764bc17ad188"
+  },
+  {
+    "source": "github",
+    "title": "0xkhingx/Wavefree",
+    "url": "https://github.com/0xkhingx/Wavefree",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:43Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "application to help monitor debt and help with strategically repaying - 0xkhingx/Wavefree",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "ae667f8adf17a094a5708e872bddbe2bd71cb0467b8826bb7648d7407f4f34d4"
+  },
+  {
+    "source": "github",
+    "title": "api-evangelist/stash",
+    "url": "https://github.com/api-evangelist/stash",
+    "raw_score": 0,
+    "comment_count": 0,
+    "posted_at": "2026-10-07T17:58:40Z",
+    "fetched_at": "2026-10-07T18:01:04.415740+00:00",
+    "excerpt": "Stash — independent third-party profile of a public API surface, by API Evangelist. Stash is an investing and banking app that enables fractional share investing, automated portfolio building, bank...",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "open_issues_count": 0,
+      "total_stars": 0,
+      "topic": "fintech"
+    },
+    "id": "3d372e476a75cfe28405858bc241c837ad16ffc3d24005f99465c6fa61a85877"
+  }
+]
