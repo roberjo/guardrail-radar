@@ -1,0 +1,21 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Calling a function in C without naming it",
+    "url": "https://wiro.world/posts/calling-c-func-without-naming-it",
+    "raw_score": 56,
+    "comment_count": 15,
+    "posted_at": "2026-10-07T13:15:02.307-05:00",
+    "fetched_at": "2026-10-08T18:03:07.266153+00:00",
+    "excerpt": "My school has a controlled remote code execution environment to automatically grade the code we submit. The system checks execution, verifies proper formatting and surely has other checks not shown to the user (e.g. a code plagiarism detection tool 1 ). The interface reports results mismatches and compilation errors.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "ucwapn",
+      "tags": [
+        "c",
+        "security"
+      ]
+    },
+    "id": "acc0530cb3c02fe048020274c25e044a4e05c6654052910c63cdd335a4f5d5d1"
+  }
+]
