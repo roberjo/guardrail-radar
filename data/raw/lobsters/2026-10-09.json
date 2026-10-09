@@ -1,0 +1,76 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Telegram Desktop: one-click account takeover via IPC injection",
+    "url": "https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-10-09T06:26:00.043-05:00",
+    "fetched_at": "2026-10-09T17:36:19.013833+00:00",
+    "excerpt": "An unescaped separator in Telegram Desktop’s single-instance IPC lets one clicked link read arbitrary files off the disk and send them to the attacker, session files included.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "vq6ly4",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "7e1e24ae7a9d1b06e9ffbe60efd17e710ed2e3a0215f81c1facb2a9e62bbfd8b"
+  },
+  {
+    "source": "lobsters",
+    "title": "en-html.org is a Scam Site",
+    "url": "https://etbe.coker.com.au/2026/10/09/en-html-org-scam-site",
+    "raw_score": 2,
+    "comment_count": 1,
+    "posted_at": "2026-10-09T02:37:38.877-05:00",
+    "fetched_at": "2026-10-09T17:36:19.013833+00:00",
+    "excerpt": "Currently a scam group is sending out email to the administrators of web sites that link to a variety of dead domains. They claim to be the legitimate operators of the dead domains in question and …",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "85k8am",
+      "tags": [
+        "security",
+        "web"
+      ]
+    },
+    "id": "5134e95dc50c7fb7f2e0e646dd4c50fcd94df7ee97346a38ce4a405af4fbc8f0"
+  },
+  {
+    "source": "lobsters",
+    "title": "Whistle: Speech to Text in 16.9 MB",
+    "url": "https://cactuscompute.com/blog/whistle",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2026-10-09T00:35:51.919-05:00",
+    "fetched_at": "2026-10-09T17:36:19.013833+00:00",
+    "excerpt": "An open speech recognition model that runs on the same CPU engine as Needle. It transcribes seven languages, reaches the first token in 11 ms, and loads beside Needle so one binary turns a clip straight into tool calls.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "lpomuo",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "8e671fda16b4ef2f8e723ff198d4bee0366e171d5ba2a3096d223acbf9f9eed7"
+  },
+  {
+    "source": "lobsters",
+    "title": "64-Day Certificate Lifetimes Coming Feb 2027",
+    "url": "https://letsencrypt.org/2026/10/07/64-day-certs.html",
+    "raw_score": 31,
+    "comment_count": 16,
+    "posted_at": "2026-10-08T14:06:25.805-05:00",
+    "fetched_at": "2026-10-09T17:36:19.013833+00:00",
+    "excerpt": "On February 10, 2027, all Let’s Encrypt subscribers will move to certificates with 64 day lifetimes by default unless they select an even shorter lifetime (45 or 6 days, as previously announced). This means that any certificate we issue or renew on and after that date will have a 64 day validity period, and we expect the last 90-day certificate to expire on May 11, 2027. We will not revoke valid certificates as a part of this process.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "dcrosf",
+      "tags": [
+        "devops",
+        "security"
+      ]
+    },
+    "id": "a367a19c1bac15f8816150c73ca56e866c3d129d708a082d218ac88f91f256cb"
+  }
+]
