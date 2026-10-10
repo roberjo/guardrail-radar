@@ -1,0 +1,174 @@
+[
+  {
+    "source": "lobsters",
+    "title": "ÆPIC Leak - Architecturally Leaking Uninitialized Data from the Microarchitecture",
+    "url": "https://aepicleak.com/",
+    "raw_score": 5,
+    "comment_count": 0,
+    "posted_at": "2022-08-12T02:39:49.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "Architecturally Leaking Uninitialized Data from the Microarchitecture",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "yxxaji",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "87c381ccf8c00c3fe0b77ce3f088bbc5bf96614ef9164095c5979fc3a6e23748"
+  },
+  {
+    "source": "lobsters",
+    "title": "Open to a fault: On the passive compromise of TLS keys via transient errors",
+    "url": "https://www.usenix.org/system/files/sec22-sullivan.pdf",
+    "raw_score": 3,
+    "comment_count": 0,
+    "posted_at": "2022-08-11T19:05:48.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "",
+    "excerpt_status": "none",
+    "source_meta": {
+      "short_id": "6kx0p7",
+      "tags": [
+        "cryptography",
+        "pdf",
+        "security"
+      ]
+    },
+    "id": "af3cd43544dcba8b097d8108a0f380609c610d2ce7d5305387a779cc03e22b0e"
+  },
+  {
+    "source": "lobsters",
+    "title": "Aiven Security Agent for PostgreSQL",
+    "url": "https://aiven.io/blog/aiven-security-agent-for-postgresql",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2022-08-11T16:48:22.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "PostgreSQL extensions provide great functionality for users, but they are difficult to provide securely. Aiven has an open source solution to this problem!",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "pghzrz",
+      "tags": [
+        "databases",
+        "security"
+      ]
+    },
+    "id": "a62ddfc8105772b6f08816cfa73f5addaaeeefd3f6dd62bd1b226a038b6ddf13"
+  },
+  {
+    "source": "lobsters",
+    "title": "Insights related to recent cyber attack on Cisco",
+    "url": "https://blog.talosintelligence.com/2022/08/recent-cyber-attack.html",
+    "raw_score": 2,
+    "comment_count": 0,
+    "posted_at": "2022-08-11T13:41:46.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "Update History \nAug. 10, 2022\nAdding clarifying details on activity involving active directory.\nAug. 10, 2022\nUpdate made to the Cisco Response and Recommendations section related to MFA.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "fo35zk",
+      "tags": [
+        "security"
+      ]
+    },
+    "id": "2d87c690cfab1fde10c529a0377f309c627a29aeac25635164cb1a700c2a6e08"
+  },
+  {
+    "source": "lobsters",
+    "title": "No, you cannot trust third party code without reading it first",
+    "url": "https://unixsheikh.com/articles/no-you-cannot-trust-third-party-code-without-reading-it-first.html",
+    "raw_score": 7,
+    "comment_count": 10,
+    "posted_at": "2022-08-11T12:29:59.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "Published on 2022-08-11 . Modified on 2022-11-03 .",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "8fvpk1",
+      "tags": [
+        "practices",
+        "rant",
+        "security"
+      ]
+    },
+    "id": "4073c1196a810cf6da009f90a99f7a2d9ae2abe7a0cf4034520966df47ea3622"
+  },
+  {
+    "source": "lobsters",
+    "title": "baton drop (CVE-2022-21894): Secure Boot Security Feature Bypass Vulnerability",
+    "url": "https://github.com/Wack0/CVE-2022-21894",
+    "raw_score": 4,
+    "comment_count": 4,
+    "posted_at": "2022-08-11T12:27:07.000-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "baton drop (CVE-2022-21894): Secure Boot Security Feature Bypass Vulnerability - Wack0/CVE-2022-21894",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "igsath",
+      "tags": [
+        "security",
+        "windows"
+      ]
+    },
+    "id": "90c20c941af0a1d61839451847ebff596359ff56ad12b847008c9be1a9b0a3a7"
+  },
+  {
+    "source": "lobsters",
+    "title": "1-click MMI execution in Android",
+    "url": "https://karansaini.com/mmi-android",
+    "raw_score": 7,
+    "comment_count": 1,
+    "posted_at": "2026-10-10T02:20:53.136-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "An application with the CALL_PHONE permission can execute carrier MMI/USSD codes with no user confirmation. A vulnerable application with browsable deeplinks can trigger MMI execution with a single tap.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "txa6dj",
+      "tags": [
+        "android",
+        "security"
+      ]
+    },
+    "id": "e617252cf077cdc36c02f43ae7ced6470d5eabe715a1fe272286579107421b65"
+  },
+  {
+    "source": "lobsters",
+    "title": "Reporting vulnerabilities to Estonian companies",
+    "url": "https://www.youtube.com/watch?v=4gcSlBORoTI",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-10T09:56:06.382-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "roij3t",
+      "tags": [
+        "security",
+        "video"
+      ]
+    },
+    "id": "764810ffdce042a2777d3c9a13d9c4a8c54d396f1c13201cc654b36f305babe2"
+  },
+  {
+    "source": "lobsters",
+    "title": "Voxlocal: a minimal voice agent written in Rust",
+    "url": "https://samkhawase.com/blog/voxlocal-minimal-voice-agent",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-10T03:42:06.202-05:00",
+    "fetched_at": "2026-10-10T16:26:57.946621+00:00",
+    "excerpt": "Building Voxlocal, a minimal voice agent.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "gqaqgq",
+      "tags": [
+        "ai",
+        "programming",
+        "rust"
+      ]
+    },
+    "id": "3a5a32f64a524a9e99d2e6944a13c71a3af4a1212c31f0fda056bee618e91740"
+  }
+]
