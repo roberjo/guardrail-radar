@@ -1,0 +1,97 @@
+[
+  {
+    "source": "lobsters",
+    "title": "Hacking the Eufy Doorbell and Base Station",
+    "url": "https://adepts.of0x.cc/Eufy-DoorBell-hacking",
+    "raw_score": 1,
+    "comment_count": 1,
+    "posted_at": "2026-10-11T06:54:20.326-05:00",
+    "fetched_at": "2026-10-11T16:51:35.214999+00:00",
+    "excerpt": "Analyzing Eufy Security Ecosystem and reverse engineering of its doorbell component",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "e84scc",
+      "tags": [
+        "hardware",
+        "security"
+      ]
+    },
+    "id": "0a00f1cc6a2bbd8028bc0bf3af3b23e47b3d2ce52b6f7e7b586a29fec2908547"
+  },
+  {
+    "source": "lobsters",
+    "title": "Consistency is not a localized property",
+    "url": "https://n-the-loop.com/blog/consistency-is-not-a-localized-property",
+    "raw_score": 5,
+    "comment_count": 2,
+    "posted_at": "2026-10-10T19:51:28.569-05:00",
+    "fetched_at": "2026-10-11T16:51:35.214999+00:00",
+    "excerpt": "No single component can promise consistency. The Kafka spent years and\n  had rewrite significant parts of their tool proving this point. After all\n  that work, they still say the guarantee is yours to hold.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "rhy5zp",
+      "tags": [
+        "ai",
+        "databases",
+        "programming"
+      ]
+    },
+    "id": "480bcca465fd4f55f46ba27fbcb9101993d6a8f4712cdf16f56c61ca099b714b"
+  },
+  {
+    "source": "lobsters",
+    "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
+    "url": "https://arxiv.org/html/2610.05978v1",
+    "raw_score": 8,
+    "comment_count": 0,
+    "posted_at": "2026-10-10T17:25:14.935-05:00",
+    "fetched_at": "2026-10-11T16:51:35.214999+00:00",
+    "excerpt": "Content selection saved. Describe the issue below:",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "t2fxpt",
+      "tags": [
+        "ai"
+      ]
+    },
+    "id": "cd872c282baf5f96f803f5a50598a2c403d63d33f8a725f17553da832c98f5e3"
+  },
+  {
+    "source": "lobsters",
+    "title": "Reporting vulnerabilities to Estonian companies",
+    "url": "https://www.youtube.com/watch?v=4gcSlBORoTI",
+    "raw_score": 1,
+    "comment_count": 0,
+    "posted_at": "2026-10-10T09:56:06.382-05:00",
+    "fetched_at": "2026-10-11T16:51:35.214999+00:00",
+    "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "roij3t",
+      "tags": [
+        "security",
+        "video"
+      ]
+    },
+    "id": "764810ffdce042a2777d3c9a13d9c4a8c54d396f1c13201cc654b36f305babe2"
+  },
+  {
+    "source": "lobsters",
+    "title": "1-click MMI execution in Android",
+    "url": "https://karansaini.com/mmi-android",
+    "raw_score": 12,
+    "comment_count": 1,
+    "posted_at": "2026-10-10T02:20:53.136-05:00",
+    "fetched_at": "2026-10-11T16:51:35.214999+00:00",
+    "excerpt": "An application with the CALL_PHONE permission can execute carrier MMI/USSD codes with no user confirmation. A vulnerable application with browsable deeplinks can trigger MMI execution with a single tap.",
+    "excerpt_status": "ok",
+    "source_meta": {
+      "short_id": "txa6dj",
+      "tags": [
+        "android",
+        "security"
+      ]
+    },
+    "id": "e617252cf077cdc36c02f43ae7ced6470d5eabe715a1fe272286579107421b65"
+  }
+]
