@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import requests
 import yaml
@@ -40,7 +40,7 @@ def _search(term: str, session: requests.Session) -> list[dict]:
 
 def fetch_items(terms: list[str] | None = None) -> list[NormalizedItem]:
     terms = terms if terms is not None else _load_core_terms()
-    now = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(UTC).isoformat()
     seen_object_ids: set[str] = set()
     items: list[NormalizedItem] = []
 

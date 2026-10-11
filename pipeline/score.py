@@ -10,7 +10,7 @@ from __future__ import annotations
 import argparse
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from dateutil import parser as date_parser
 
@@ -22,7 +22,7 @@ CROSS_SOURCE_BONUS = 0.25
 def _hours_since(posted_at: str, now: datetime) -> float:
     posted = date_parser.isoparse(posted_at)
     if posted.tzinfo is None:
-        posted = posted.replace(tzinfo=timezone.utc)
+        posted = posted.replace(tzinfo=UTC)
     delta = now - posted
     return max(1.0, delta.total_seconds() / 3600.0)
 
@@ -39,7 +39,7 @@ def compute_item_score(item: dict, now: datetime) -> tuple[float, float]:
 
 
 def score_items(items: list[dict], now: datetime | None = None) -> list[dict]:
-    now = now or datetime.now(timezone.utc)
+    now = now or datetime.now(UTC)
     items = [dict(it) for it in items]
 
     valid_items = []

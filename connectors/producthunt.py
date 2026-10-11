@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import requests
 import yaml
@@ -148,9 +148,9 @@ def fetch_items() -> list[NormalizedItem]:
     window_days = cfg.get("window_days", 7)
     token = os.environ["PRODUCTHUNT_TOKEN"]
 
-    posted_after = (datetime.now(timezone.utc) - timedelta(days=window_days)).isoformat()
+    posted_after = (datetime.now(UTC) - timedelta(days=window_days)).isoformat()
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-    now = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(UTC).isoformat()
 
     items: list[NormalizedItem] = []
     seen_ids: set[str] = set()
