@@ -1,7 +1,7 @@
 # Dev/test-only deps — not installed by the daily-ingest, weekly-review-packet,
 # or weekly-verify-and-publish workflows (see requirements.txt for those).
 -r requirements.txt
-pytest>=8.0
+pytest>=9.1.1
 ruff>=0.16.10
 mypy>=2.4.0
 types-requests
