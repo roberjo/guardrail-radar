@@ -30,7 +30,7 @@ jobs:
           # the matrix above right now. Add both back here when it is.
           GH_SEARCH_TOKEN: ${{ secrets.GH_SEARCH_TOKEN }}
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           # Name must equal matrix.source (not prefixed) — download-artifact
           # extracts each artifact into path/<artifact-name>/, so this is
