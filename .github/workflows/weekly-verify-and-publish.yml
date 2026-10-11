@@ -74,7 +74,7 @@ jobs:
         with:
           commit_message: 'digest: ${{ github.event.inputs.iso_week }}'
           file_pattern: 'digest/*.md site/**'
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site/
       - uses: actions/deploy-pages@v4
