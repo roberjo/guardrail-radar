@@ -42,7 +42,7 @@ jobs:
       # subsequent ones by default. Without this, the one run where a human
       # most needs to see digest/verification/<week>.json (something got
       # blocked) is exactly the run where it would never get committed.
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
         if: always()
         with:
           commit_message: 'verify: ${{ github.event.inputs.iso_week }}'
@@ -70,7 +70,7 @@ jobs:
       # ("cannot pull with rebase: you have unstaged changes"), confirmed
       # live on the very next run after the fix above.
       - run: git pull --rebase --autostash origin main
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'digest: ${{ github.event.inputs.iso_week }}'
           file_pattern: 'digest/*.md site/**'

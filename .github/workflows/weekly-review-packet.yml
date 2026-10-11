@@ -47,7 +47,7 @@ jobs:
       - run: python -m pipeline.score --iso-week "${{ steps.week.outputs.iso_week }}"
       - run: python -m pipeline.filter --iso-week "${{ steps.week.outputs.iso_week }}"
       - run: python -m pipeline.render --target review-packet --iso-week "${{ steps.week.outputs.iso_week }}"
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'data: review packet for ${{ steps.week.outputs.iso_week }}'
           file_pattern: 'data/ranked/** digest/review/**'
