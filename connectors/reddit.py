@@ -10,7 +10,7 @@ from __future__ import annotations
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from urllib.parse import parse_qsl, urlsplit
 
 import requests
@@ -98,7 +98,7 @@ def fetch_items() -> list[NormalizedItem]:
     subreddits, listings = _load_config()
     keywords = _load_keywords()
 
-    now = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(UTC).isoformat()
     seen_ids: set[str] = set()
     items: list[NormalizedItem] = []
     last_request = 0.0
@@ -159,7 +159,7 @@ def fetch_items() -> list[NormalizedItem]:
                             raw_score=post.get("ups") or 0,
                             comment_count=post.get("num_comments") or 0,
                             posted_at=datetime.fromtimestamp(
-                                post.get("created_utc", 0), tz=timezone.utc
+                                post.get("created_utc", 0), tz=UTC
                             ).isoformat(),
                             fetched_at=now,
                             excerpt=excerpt,

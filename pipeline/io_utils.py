@@ -10,17 +10,17 @@ from __future__ import annotations
 import json
 import os
 from collections.abc import Iterable
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from pipeline.schema import NormalizedItem
 
 
 def today_str() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    return datetime.now(UTC).strftime("%Y-%m-%d")
 
 
 def iso_week_str(dt: datetime | None = None) -> str:
-    dt = dt or datetime.now(timezone.utc)
+    dt = dt or datetime.now(UTC)
     iso_year, iso_week, _ = dt.isocalendar()
     return f"{iso_year}-W{iso_week:02d}"
 

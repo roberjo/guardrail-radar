@@ -2,7 +2,7 @@
 
 import json
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from pipeline.io_utils import (
     iso_week_str,
@@ -15,17 +15,17 @@ from pipeline.schema import NormalizedItem
 
 
 def test_today_str_format():
-    assert today_str() == datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    assert today_str() == datetime.now(UTC).strftime("%Y-%m-%d")
 
 
 def test_iso_week_str_known_date():
     # 2026-01-01 is a Thursday, ISO week 1 of 2026.
-    dt = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    dt = datetime(2026, 1, 1, tzinfo=UTC)
     assert iso_week_str(dt) == "2026-W01"
 
 
 def test_iso_week_str_pads_single_digit_weeks():
-    dt = datetime(2026, 1, 5, tzinfo=timezone.utc)
+    dt = datetime(2026, 1, 5, tzinfo=UTC)
     week = iso_week_str(dt)
     assert week.split("-W")[1].isdigit()
     assert len(week.split("-W")[1]) == 2

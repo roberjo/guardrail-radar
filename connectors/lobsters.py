@@ -6,7 +6,7 @@ Public JSON feeds, no auth.
 from __future__ import annotations
 
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import requests
 import yaml
@@ -42,7 +42,7 @@ def _matches(story: dict, tags: list[str], keywords: list[str]) -> bool:
 def fetch_items() -> list[NormalizedItem]:
     tags = _load_tags()
     keywords = _load_keywords()
-    now = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(UTC).isoformat()
     seen_short_ids: set[str] = set()
     items: list[NormalizedItem] = []
 

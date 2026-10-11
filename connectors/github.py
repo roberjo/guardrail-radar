@@ -21,7 +21,7 @@ import math
 import os
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import requests
 import yaml
@@ -111,8 +111,8 @@ def fetch_items() -> list[NormalizedItem]:
     topics = cfg.get("topics", [])
     window_days = cfg.get("window_days", 30)
     headers = _headers()
-    since = datetime.now(timezone.utc) - timedelta(days=window_days)
-    now = datetime.now(timezone.utc).isoformat()
+    since = datetime.now(UTC) - timedelta(days=window_days)
+    now = datetime.now(UTC).isoformat()
 
     seen_full_names: set[str] = set()
     items: list[NormalizedItem] = []

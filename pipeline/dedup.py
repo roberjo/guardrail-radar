@@ -16,7 +16,7 @@ import glob
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from pipeline.io_utils import iso_week_str, read_json, write_json
 
@@ -58,7 +58,7 @@ def load_week_raw_items(iso_week: str | None = None) -> list[dict]:
     for path in sorted(glob.glob(os.path.join("data", "raw", "*", "*.json"))):
         date_str = os.path.basename(path)[: -len(".json")]
         try:
-            file_date = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            file_date = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=UTC)
         except ValueError:
             continue
         file_iso_year, file_iso_week, _ = file_date.isocalendar()

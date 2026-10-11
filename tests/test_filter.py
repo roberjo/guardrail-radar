@@ -1,13 +1,13 @@
 """Tests for pipeline.filter — see docs/technical-spec.md §11, §18."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from pipeline.filter import _velocity_threshold, filter_and_rank, passes_filter
 from pipeline.score import score_items
 
 CORE = ["copilot", "claude code", "cursor"]
 CONTEXT = ["compliance", "fintech", "audit"]
-NOW = datetime(2026, 1, 2, 0, 0, 0, tzinfo=timezone.utc)
+NOW = datetime(2026, 1, 2, 0, 0, 0, tzinfo=UTC)
 POSTED_AT = "2026-01-01T00:00:00Z"
 
 

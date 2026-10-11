@@ -1,10 +1,10 @@
 """Tests for pipeline.score — see docs/technical-spec.md §10, §18."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from pipeline.score import compute_item_score, score_items
 
-NOW = datetime(2026, 1, 2, 0, 0, 0, tzinfo=timezone.utc)  # 24h after posted_at below
+NOW = datetime(2026, 1, 2, 0, 0, 0, tzinfo=UTC)  # 24h after posted_at below
 POSTED_AT = "2026-01-01T00:00:00Z"
 
 
