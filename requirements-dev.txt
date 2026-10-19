@@ -2,7 +2,7 @@
 # or weekly-verify-and-publish workflows (see requirements.txt for those).
 -r requirements.txt
 pytest>=9.1.1
-ruff>=0.16.10
+ruff>=0.17.0
 mypy>=2.4.0
 types-requests
 types-PyYAML
